@@ -88,6 +88,7 @@
 .terms button{flex:none;min-width:88px;min-height:62px;border:0;border-bottom:2px solid transparent;background:none;text-align:center;color:#6b7770;padding:6px 12px}
 .terms button small{display:block;font-size:11px;margin-bottom:4px}.terms button strong{font:600 19px 'Songti SC','Noto Serif CJK SC','SimSun',serif}.terms button.active{color:var(--ink);border-bottom-color:var(--ink);background:#edf0e7}
 .season-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.season-card.card-1,.season-card:not(.card-1){min-height:310px}
+.season-card .card-photo-note{font-size:11px;line-height:1.4;color:#f5f0e4d9;margin:0 0 12px;letter-spacing:.03em}
 .map-toolbar{justify-content:flex-start;gap:12px}.map-toolbar #mapMonthLabel{font-weight:700;margin-right:auto}.map-toolbar #mapZoomBack{margin:0}.map-toolbar button{white-space:nowrap}
 .map-month-rail{width:84%;margin:0 auto 16px;display:flex;align-items:center;gap:8px}.map-month-rail>span{font-size:13px;letter-spacing:.15em;margin-right:8px}
 .map-months button{flex:none;min-width:68px;height:48px;border:0;border-bottom:2px solid transparent;background:none;color:#526b60;font-size:14px}

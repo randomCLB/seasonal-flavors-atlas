@@ -7,7 +7,7 @@ const chinaNow=chinaParts(new Date());
 const monthFoods=month=>foods.filter(f=>f.months.includes(month));
 let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,previousFocus=null;
 foods.forEach(f=>f.places=f.placeSeasons);
-const imageStyle=food=>food.image?`style="background-image:linear-gradient(0deg,rgba(9,36,29,.84),rgba(9,36,29,.03) 75%),url('${food.image}')"`:'style="background-image:linear-gradient(145deg,#365b4e,#16372e)"';
+const imageStyle=food=>food.cardImage||food.image?`style="background-image:linear-gradient(0deg,rgba(9,36,29,.84),rgba(9,36,29,.03) 75%),url('${food.cardImage||food.image}')"`:'style="background-image:linear-gradient(145deg,#365b4e,#16372e)"';
 const termSlugs=['xiaohan','dahan','lichun','yushui','jingzhe','chunfen','qingming','guyu','lixia','xiaoman','mangzhong','xiazhi','xiaoshu','dashu','liqiu','chushu','bailu','qiufen','hanlu','shuangjiang','lidong','xiaoxue','daxue','dongzhi'];
 const termLines=['寒气深了，热锅里找一口清甜。','岁末的冷，衬得鲜味更近。','春从枝头起，也从餐桌起。','雨落下来，嫩芽开始有了滋味。','泥土醒了，尝一尝新生的脆。','白昼渐长，把春天端上桌。','清明前后，山野里有清鲜。','谷雨润物，嫩叶正当时。','初夏开场，寻找水边与山间的新绿。','籽粒将满，味道也渐渐丰盈。','忙着生长的时节，趁鲜下锅。','日光最长，吃一口轻快的鲜。','暑气初起，脆嫩最能醒口。','盛夏深处，清爽的滋味在水边。','风里有一点凉，山果将熟。','热意渐退，尝初秋的鲜。','露水落下，果实与水生菜都在长。','昼夜平分，秋水与山果各有一口鲜。','凉意更深，适合慢慢寻味。','霜将落下，秋味愈发沉稳。','入冬之前，收一篮水乡与山林。','初雪欲来，热锅最懂鲜嫩。','雪意渐浓，留住晚秋的甜。','最长的夜，等一口回甘。'];
 const termNames=window.SOLAR_TERM_NAMES;
@@ -34,8 +34,8 @@ function renderSeason(){
  $('hero').innerHTML=`<div class="eyebrow">${isNow?'此时此刻 · ':''}${selectedTerm.year} 年 · ${range}</div><h1>${termNames[selectedTerm.index]}<span class="term-year"> / 二十四节气</span></h1><p>${termLines[selectedTerm.index]}</p><div class="hero-food-heading">${isNow?'现在可以尝的食材':'这一节气附近的食材'} · ${list.length} 味</div><div class="hero-food-list">${list.map(f=>`<button data-food="${f.id}">${f.name}<span>↗</span></button>`).join('')}</div>`;
  $('seasonKicker').textContent=`${termNames[selectedTerm.index]} · ${range}`;
  $('seasonHeading').textContent=isNow?'此时此刻，可以尝这些。':`沿着${termNames[selectedTerm.index]}找当季风物。`;
- $('seasonIntro').textContent=`${monthLabel(foodMonth)}的${list.length}味食材。点开看它的产地、上市时间和吃法。`;
- $('seasonCards').innerHTML=list.map((f,i)=>`<article class="season-card card-${i+1}" ${imageStyle(f)}><small>${f.region} · ${f.months.map(m=>String(m).padStart(2,'0')).join(' / ')} 月</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`).join('');
+ $('seasonIntro').textContent=`${foodMonth}月可尝的${list.length}味食材。点开看它的产地、上市时间和吃法。`;
+ $('seasonCards').innerHTML=list.map((f,i)=>`<article class="season-card card-${i+1}" ${imageStyle(f)}><small>${f.region} · ${f.months.map(m=>String(m).padStart(2,'0')).join(' / ')} 月</small><h3>${f.name}</h3><p>${f.short}</p>${f.cardNote?`<p class="card-photo-note">${f.cardNote}</p>`:''}<button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`).join('');
  document.querySelectorAll('#hero [data-food],#seasonCards [data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));
 }
 $('termPrev').onclick=()=>{selectedTerm=termEvents[Math.max(0,termEvents.findIndex(x=>x===selectedTerm)-1)];renderTermRail();renderSeason()};

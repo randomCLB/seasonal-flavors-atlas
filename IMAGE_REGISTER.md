@@ -1,6 +1,6 @@
 # 图片授权与缺口
 
-2026-09-25 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 文件信息，“站内尺寸”取实际文件。既有 WebP 曾缩小及转码；本轮新增的 JPEG 只缩小尺寸，未做生成式修复或增补细节。照片中的异地产区已在详情图注说明。
+2026-09-25 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 文件信息，“站内尺寸”取实际文件。照片中的异地产区已在详情图注说明。鸡头米详情另有一张明确标注的生成示意图；首页所用芡实植株图仍是真实照片。
 
 | 用途 | 站内文件与尺寸 | 原始尺寸 | 作者、来源、许可 | 修改 |
 | --- | --- | --- | --- | --- |
@@ -15,11 +15,18 @@
 | 软枣猕猴桃，同种异地形态参考 | `dist/assets/ruanzao.webp` 2400×1800 | 12000×9000 | [anagoria](https://commons.wikimedia.org/wiki/File:20240928_Kiwibeeren_-_actinidia_arguta_anagoria.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP |
 | 刺梨，同种异地形态参考 | `dist/assets/cili.jpg` 1920×1440 | 4032×3024 | [Michael Wolf](https://commons.wikimedia.org/wiki/File:Rosa_roxburghii_fruit_33597.JPG)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小，无修复；拍摄于奥地利林茨 |
 | 沙棘，同种异地形态参考 | `dist/assets/shajiguo.jpg` 1920×1280 | 5593×3729 | [Stephan Sprinz](https://commons.wikimedia.org/wiki/File:Sanddorn_(Hippophae_rhamnoides)_auf_Spiekeroog_02.jpg)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 缩小，无修复；拍摄于德国 Spiekeroog |
+| 芡实植株，鸡头米首页卡片及详情次图 | `dist/assets/jitoumi-plant.jpg` 1920×1256 | 4543×2972 | [Diego Delso](https://commons.wikimedia.org/wiki/File:Euryale_ferox,_Jard%C3%ADn_Bot%C3%A1nico,_M%C3%BAnich,_Alemania,_2013-09-08,_DD_01.JPG)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小；德国慕尼黑植物园拍摄，不能代表苏州鲜粒 |
+| 川梨花，棠梨花形态参考 | `dist/assets/tanglihua.jpg` 1920×2566 | 1966×2627 | [Frank Schulenburg](https://commons.wikimedia.org/wiki/File:Flowers_of_Pyrus_pashia.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 略缩小；美国加州植物园拍摄，不能涵盖棠梨花俗称下的其他梨属植物 |
+| 苦刺花，同种异地形态参考 | `dist/assets/kucihua.jpg` 1920×1280 | 4752×3168 | [Denis.prévôt](https://commons.wikimedia.org/wiki/File:Sophora_davidii_-_Floraison-2.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小；法国斯特拉斯堡植物园拍摄 |
+| 炒藕带，成菜实拍 | `dist/assets/oudai-cooked.jpg` 1920×1440 | 2779×2084 | [Zheng Zhou](https://commons.wikimedia.org/wiki/File:Fried_Lotus_Rootlet.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小；北京拍摄，原料产地未注明 |
+| 蒌蒿嫩茎，湖蒿同种异地形态参考 | `dist/assets/huhao.jpg` 1920×1440 | 4000×3000 | [François Nguyen](https://commons.wikimedia.org/wiki/File:Artemisia_selengensis_(1).jpg)，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | 缩小；江苏拍摄，未确认阳新品系 |
+| 塌棵菜植株，如皋黑塌菜同类形态参考 | `dist/assets/takecai.jpg` 1920×1440 | 4032×3024 | [Nesnad](https://commons.wikimedia.org/wiki/File:Brassica_rapa_subsp_narinosa_-_Kanagawa_Japan_2026_Jan_3.jpeg)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 缩小；日本神奈川拍摄，非如皋品种 |
+| 鲜鸡头米颗粒示意图，详情主图 | `dist/assets/jitoumi-illustration.png` 1536×1024 | 生成文件，无摄影原始尺寸 | OpenAI 图像生成工具，2026-09-25；非实物照片 | 根据鲜剥芡实粒的外观要求生成；未经实物逐颗核对，不作鉴种依据 |
 | 地图地形、水系 | `dist/assets/atlas-relief.webp` 1600×1100 | 数据来源见链接 | [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/)，公共领域 | 地形着色与文字叠加 |
 
 ## 尚缺原料实拍
 
-以下 15 味保留完整文字阅读，卡片使用纯色底，不以地形图充当食材照片。缺图前不标记为内容全部完成。
+以下 13 味仍缺与当地品种或食用原料匹配的主图，不标记为图片验收完成。其中鸡头米首页已用植株实拍，详情使用明确标注的示意图；洪湖藕带已有成菜图，阳新湖蒿和如皋黑塌菜已有同种或同类植物图，宝应慈姑首页及详情使用普通慈姑的形态参考图。其余 8 味卡片仍用纯色底。
 
 | 食材 | 要找的画面 | 核验重点 |
 | --- | --- | --- |
@@ -27,17 +34,15 @@
 | 鸡头米 | 苏州鲜剥芡实粒与带壳芡实果 | 不用干芡实、印度 makhana 替代鲜粒 |
 | 宝应慈姑 | 宝应东荡的老乌慈姑球茎 | 日本普通慈姑照片仅作次图参考，不能替代地方品种 |
 | 增城迟菜心 | 整株与粗茎切面 | 产地、品种，避免普通菜心代替 |
-| 棠梨花 | 已确认食用身份的鲜花 | 区分相似野生花 |
-| 苦刺花 | 鲜花及焯泡后的状态 | 明确植物身份及处理状态 |
 | 淮安蒲菜 | 香蒲嫩白茎芯 | 区分其他水生茎菜 |
 | 菊花脑 | 南京食用嫩叶 | 区分观赏菊及其他菊科叶菜 |
-| 洪湖藕带 | 新鲜细嫩藕带与切面 | 避免熟制泡椒藕带作原料图 |
+| 洪湖藕带 | 新鲜细嫩藕带与切面 | 已有成菜图，仍缺原料产地实拍 |
 | 猴腿菜 | 确认身份的可食嫩蕨茎 | 不能用相似蕨类代替 |
 | 刺竹笋 | 腾冲刺竹鲜笋与剥壳嫩芯 | 竹种要准确 |
-| 阳新湖蒿 | 青杆湖蒿净茎 | 不以泛泛藜蒿冒充地方品系 |
+| 阳新湖蒿 | 阳新青杆湖蒿净茎 | 已有江苏蒌蒿形态图，仍须确认地方品系 |
 | 璧山儿菜 | 整株与侧芽切面 | 核对璧山产地品种 |
 | 枞菌 | 经供货方确认的本地枞菌 | 俗名歧义大，不能只凭照片识别野菌 |
-| 如皋黑塌菜 | 贴地叶片与完整菜心 | 核对地方品种与产地 |
+| 如皋黑塌菜 | 当地品种的贴地叶片与完整菜心 | 已有日本同类塌棵菜图，仍须确认地方品种 |
 
 ## 后续照片验收
 

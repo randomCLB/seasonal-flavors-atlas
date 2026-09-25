@@ -54,6 +54,16 @@ for(const food of window.FOODS){
   if(food.id==='cili'){food.image='assets/cili.jpg';food.imageAlt='枝头成熟的刺梨果实';food.imageCaption='刺梨原果形态参考；照片拍摄于奥地利林茨，并非贵州清镇。'}
   if(food.id==='shajiguo'){food.image='assets/shajiguo.jpg';food.imageAlt='枝头橙黄色的沙棘果';food.imageCaption='沙棘原果形态参考；照片拍摄于德国 Spiekeroog。'}
 }
+const PHOTO_UPDATES={
+  cigu:{cardImage:'assets/cigu.webp',cardNote:'普通慈姑实拍 · 非宝应老乌品种'},
+  jitoumi:{cardImage:'assets/jitoumi-plant.jpg',cardNote:'芡实植株实拍 · 慕尼黑植物园',image:'assets/jitoumi-illustration.png',imageAlt:'鲜剥鸡头米颗粒的形态示意图，非实物摄影',imageCaption:'鲜剥鸡头米的形态示意图，非实物摄影；购买时仍需以实际鲜粒确认品种与状态。',images:[{src:'assets/jitoumi-plant.jpg',alt:'植物园水池里的芡实植株与浮叶',caption:'芡实植株实拍；德国慕尼黑植物园拍摄，并非苏州鲜剥鸡头米。'}]},
+  tanglihua:{image:'assets/tanglihua.jpg',cardNote:'川梨花实拍 · 非云南产地',imageAlt:'川梨枝头开放的白色花朵',imageCaption:'川梨花的植物形态参考；美国加州植物园拍摄。云南市场上的“棠梨花”也可能来自其他梨属植物，不能仅凭这张图鉴别。'},
+  kucihua:{image:'assets/kucihua.jpg',cardNote:'苦刺植株实拍 · 非云南产地',imageAlt:'苦刺开出的白紫色花与羽状复叶',imageCaption:'苦刺（Sophora davidii）开花形态参考；法国斯特拉斯堡植物园拍摄，非采摘或焯泡后的食用状态。'},
+  'honghu-oudai':{image:'assets/oudai-cooked.jpg',cardNote:'藕带成菜实拍 · 非洪湖产地',imageAlt:'一盘炒熟的藕带，能看到细嫩茎段和切面',imageCaption:'炒藕带成菜实拍；拍摄于北京，原料产地未注明，不代表洪湖鲜藕带原料。'},
+  'yangxin-huhao':{image:'assets/huhao.jpg',cardNote:'蒌蒿嫩茎实拍 · 非阳新品系',imageAlt:'市场上成捆摆放的蒌蒿嫩茎',imageCaption:'蒌蒿（Artemisia selengensis）嫩茎形态参考；摄于江苏，不能据此判断阳新青杆湖蒿品系。'},
+  'rugao-takecai':{image:'assets/takecai.jpg',cardNote:'塌棵菜实拍 · 非如皋品种',imageAlt:'日本拍摄的塌棵菜叶丛，叶片贴地展开',imageCaption:'同类塌棵菜（Brassica rapa subsp. narinosa）植株形态参考；摄于日本神奈川，非如皋黑塌菜品种。'}
+};
+for(const food of window.FOODS)if(PHOTO_UPDATES[food.id])Object.assign(food,PHOTO_UPDATES[food.id]);
 const PAIR_NOTES={
   'nanhu-ling':'白粥的柔软衬出熟菱肉的紧实。',
   tanglihua:'一点醋提起处理后留下的微苦，蒜与辣椒只添轻微辛香。',
