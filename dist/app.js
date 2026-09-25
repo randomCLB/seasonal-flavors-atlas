@@ -6,8 +6,8 @@ const chinaParts=date=>Object.fromEntries(new Intl.DateTimeFormat('zh-CN',{timeZ
 const chinaNow=chinaParts(new Date());
 const monthFoods=month=>foods.filter(f=>f.months.includes(month));
 let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,previousFocus=null;
-foods.forEach(f=>f.places=f.id==='foshougua-miao'?[{name:'花莲',lat:24,lon:121.6,months:[4,5]},{name:'贵州普定',lat:26.33,lon:105.75,months:[7]}]:[{name:f.region,lat:f.lat,lon:f.lon,months:f.months}]);
-const imageStyle=food=>food.image?`style="background-image:linear-gradient(0deg,rgba(9,36,29,.84),rgba(9,36,29,.03) 75%),url('${food.image}')"`:'style="background-image:linear-gradient(0deg,rgba(9,36,29,.78),rgba(9,36,29,.12)),url(\'assets/terrain.webp\')"';
+foods.forEach(f=>f.places=f.placeSeasons);
+const imageStyle=food=>food.image?`style="background-image:linear-gradient(0deg,rgba(9,36,29,.84),rgba(9,36,29,.03) 75%),url('${food.image}')"`:'style="background-image:linear-gradient(145deg,#365b4e,#16372e)"';
 const termSlugs=['xiaohan','dahan','lichun','yushui','jingzhe','chunfen','qingming','guyu','lixia','xiaoman','mangzhong','xiazhi','xiaoshu','dashu','liqiu','chushu','bailu','qiufen','hanlu','shuangjiang','lidong','xiaoxue','daxue','dongzhi'];
 const termLines=['寒气深了，热锅里找一口清甜。','岁末的冷，衬得鲜味更近。','春从枝头起，也从餐桌起。','雨落下来，嫩芽开始有了滋味。','泥土醒了，尝一尝新生的脆。','白昼渐长，把春天端上桌。','清明前后，山野里有清鲜。','谷雨润物，嫩叶正当时。','初夏开场，寻找水边与山间的新绿。','籽粒将满，味道也渐渐丰盈。','忙着生长的时节，趁鲜下锅。','日光最长，吃一口轻快的鲜。','暑气初起，脆嫩最能醒口。','盛夏深处，清爽的滋味在水边。','风里有一点凉，山果将熟。','热意渐退，尝初秋的鲜。','露水落下，果实与水生菜都在长。','昼夜平分，秋水与山果各有一口鲜。','凉意更深，适合慢慢寻味。','霜将落下，秋味愈发沉稳。','入冬之前，收一篮水乡与山林。','初雪欲来，热锅最懂鲜嫩。','雪意渐浓，留住晚秋的甜。','最长的夜，等一口回甘。'];
 const termNames=window.SOLAR_TERM_NAMES;
@@ -88,14 +88,16 @@ function renderMap(){
  $('mapList').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));
  if(window.innerWidth<=800){const wrap=document.querySelector('.map-wrap'),width=document.querySelector('.map-image').getBoundingClientRect().width,mean=visible.length?visible.reduce((sum,item)=>sum+mapPoint(mapProject(item.place),bounds).x,0)/visible.length:50;wrap.scrollLeft=width*mean/100-wrap.clientWidth/2}
 }
-function relatedFoods(f){return foods.filter(other=>other.id!==f.id).map(other=>({food:other,shared:other.flavor.filter(t=>f.flavor.includes(t))})).filter(x=>x.shared.length).sort((a,b)=>b.shared.length-a.shared.length||a.food.name.localeCompare(b.food.name,'zh')).slice(0,4).map(x=>({food:x.food,why:`同样有${x.shared.join('、')}口感`}))}
+const relationReasons={清甜:'都带轻微甜味',紧实:'咬起来都较紧实',软糯:'熟后都有软糯质地',粉糯:'熟后都有粉糯质地',草本:'都带明显草本香',脆嫩:'做熟后仍有脆嫩的一口',微苦:'都保留一点微苦',花香:'都能尝到花的气味',柔滑:'入口都偏柔滑',清淡:'味道都较淡',清酸:'都适合用酸味提亮',清香:'香气都偏轻',柔韧:'咬起来都略有韧性',柔软:'熟软或成熟后都很柔软',酸爽:'酸味都很鲜明',果香:'都带熟果香',微涩:'都能尝到些许涩感',鲜香:'熟后都有鲜味',柔嫩:'做熟后都柔嫩'};
+function relatedFoods(f){return foods.filter(other=>other.id!==f.id).map(other=>({food:other,shared:other.flavor.filter(t=>f.flavor.includes(t))})).filter(x=>x.shared.length).sort((a,b)=>b.shared.length-a.shared.length||a.food.name.localeCompare(b.food.name,'zh')).slice(0,4).map(x=>({food:x.food,why:relationReasons[x.shared[0]]||`都带${x.shared[0]}`}))}
 function detailHtml(f){
   const similar=relatedFoods(f);
-  return `<div class="detail-hero"><div class="detail-topline">${f.region} · ${f.months.map(m=>`${m}月`).join(' / ')}</div><h1>${f.name}</h1><p>${f.description}</p><div class="detail-tags">${f.flavor.map(t=>`<span>${t}</span>`).join('')}</div></div>
-  ${f.image?`<figure class="detail-photo"><img src="${f.image}" alt="${f.imageAlt}"><figcaption>${f.imageCaption}</figcaption></figure>`:''}
-  <div class="detail-body"><section><p class="detail-num">01 / 何时遇见</p><h2>什么时候最好遇见它</h2><p>${f.season}</p></section>
-  <section><p class="detail-num">02 / 怎么吃</p><h2>${f.recipeTitle}</h2>${f.safety?`<div class="safety"><strong>入口前先留意</strong><p>${f.safety}</p></div>`:''}<p>${f.recipe}</p><p class="pair-note">搭配的用意 · ${f.pair}</p></section>
-  <section><p class="detail-num">03 / 怎么找</p><h2>挑到合适的这一味</h2><p>${f.buy}</p><button class="copy-button" data-copy="${f.search}">复制搜索词 <strong>${f.search}</strong> <span aria-hidden="true">↗</span></button></section>
+  return `<div class="detail-hero"><div class="detail-topline">${f.region} · ${f.months.map(m=>`${m}月`).join(' / ')}</div><h1>${f.name}</h1><p>${f.intro||f.description}</p><div class="detail-tags">${f.flavor.map(t=>`<span>${t}</span>`).join('')}</div></div>
+  ${f.image?`<figure class="detail-photo"><img src="${f.image}" alt="${f.imageAlt}"><figcaption>${f.imageCaption}</figcaption></figure>`:''}${(f.images||[]).map(p=>`<figure class="detail-photo secondary-photo"><img src="${p.src}" alt="${p.alt}"><figcaption>${p.caption}</figcaption></figure>`).join('')}
+  <div class="detail-body"><section><p class="detail-num">01 / 认一认</p><h2>吃起来是什么样</h2><dl class="sensory"><div><dt>味道</dt><dd>${f.taste}</dd></div><div><dt>香气</dt><dd>${f.aroma}</dd></div><div><dt>质地</dt><dd>${f.texture}</dd></div></dl><p class="state-note">以上描述对应：${f.state}。</p></section>
+  <section><p class="detail-num">02 / 何时遇见</p><h2>什么时候最好遇见它</h2><p>${f.season}</p>${f.place?`<p>${f.place}</p>`:''}${f.context?`<p>${f.context}</p>`:''}</section>
+  <section><p class="detail-num">03 / 怎么吃 · 2 人份</p><h2>${f.recipeTitle}</h2>${f.safety?`<div class="safety"><strong>入口前先留意</strong><p>${f.safety}</p></div>`:''}<p><strong>准备</strong> · ${f.ingredients}</p><ol class="recipe-steps">${f.steps.map(s=>`<li>${s}</li>`).join('')}</ol><p><strong>做到什么程度</strong> · ${f.finish}</p><p><strong>最容易失手</strong> · ${f.pitfall}</p>${f.kitchen?`<p>${f.kitchen}</p>`:''}<p class="pair-note">搭配的用意 · ${f.pair}</p></section>
+  <section><p class="detail-num">04 / 怎么找</p><h2>挑到合适的这一味</h2><p>${f.buy}</p>${f.buyDetail?`<p>${f.buyDetail}</p>`:''}${f.market?`<p>${f.market}</p>`:''}<p><strong>带回家后</strong> · ${f.storage}</p><button class="copy-button" data-copy="${f.search}">复制搜索词 <strong>${f.search}</strong> <span aria-hidden="true">↗</span></button></section>
   <section class="detail-sources"><p class="detail-num">继续查阅</p><ol>${f.sources.map(([title,url])=>`<li><a href="${url}" target="_blank" rel="noopener">${title} ↗</a></li>`).join('')}</ol></section>
   <section class="detail-next"><p class="detail-num">换个口味</p><h2>喜欢这一口，还可以尝什么？</h2><div>${similar.map(({food,why})=>`<button data-food="${food.id}"><strong>${food.name}</strong><span>${why} ↗</span></button>`).join('')}</div></section></div>`;
 }
