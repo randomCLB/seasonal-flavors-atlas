@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142f2a">
+  <title>时令风物 · 小众食材地图</title>
+  <meta name="description" content="沿着月份、山川与风味，认识值得一试的小众食材。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23142f2a'/%3E%3Cpath d='M14 43c14-1 28-13 35-26-2 18-12 29-30 31' fill='none' stroke='%23e8dbb3' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="时令风物首页"><span class="brand-icon" aria-hidden="true">✦</span><span>时令风物</span></a>
+      <nav class="topnav" aria-label="主要导航">
+        <button class="nav-item is-active" data-view="season">此刻当季</button>
+        <button class="nav-item" data-view="map">山川来处</button>
+        <button class="nav-item" data-view="flavor">风味星图</button>
+      </nav>
+      <button class="search-trigger" id="searchTrigger" aria-label="搜索食材"><span class="search-glyph" aria-hidden="true">⌕</span><span>寻找食材</span></button>
+    </header>
+    <main id="app">
+      <section id="seasonView" class="view">
+        <section class="hero" id="hero"></section>
+        <section class="month-strip" aria-label="按月份浏览"><div class="strip-label">沿月份游逛</div><div class="months" id="months"></div></section>
+        <section class="section-intro"><div><p class="kicker" id="seasonKicker">本月风物</p><h2 id="seasonHeading"></h2></div><p id="seasonIntro"></p></section>
+        <section id="seasonCards" class="season-cards" aria-label="当月食材"></section>
+        <button class="map-prompt" id="mapPrompt">看看它们长在哪 <span aria-hidden="true">↗</span></button>
+      </section>
+      <section id="mapView" class="view" hidden>
+        <div class="inner-head"><p class="kicker">山川来处</p><h1>让食材回到它生长的地方。</h1><p>地点标记对应资料里的具体产区；月份切换后，当季的地点会亮起。</p></div>
+        <div class="map-toolbar"><span id="mapMonthLabel"></span><label class="map-month-select">月份 <select id="mapMonthSelect" aria-label="选择地图月份"></select></label><button id="mapSeasonButton">只看本月</button></div>
+        <div class="map-wrap"><div class="map-image" role="group" aria-label="中国及周边地区的自然地形图，范围东经72至136度、北纬16至54度"><div id="mapPins"></div></div><div class="map-note">自然地形底图 · 无行政边界<br>产地点依经纬度定位，位置仅作区域索引</div></div>
+        <div class="map-list" id="mapList"></div>
+      </section>
+      <section id="flavorView" class="view" hidden>
+        <div class="inner-head"><p class="kicker">换个口味</p><h1>沿着味道，认识下一种。</h1><p>拖动星图，点一个食材。连线只表示已记录的风味相近，不代表可以一起下锅。</p></div>
+        <div class="flavor-layout"><div class="flavor-space"><canvas id="flavorCanvas" aria-label="可拖动的三维风味星图"></canvas><p class="canvas-hint">拖动旋转 · 点击选择</p></div><aside class="flavor-aside" id="flavorAside"></aside></div>
+        <div class="flavor-mobile-list" id="flavorList" aria-label="风味星图的文字入口"></div>
+      </section>
+    </main>
+    <footer><div class="footer-main"><span class="footer-brand">时令风物</span><span>小众食材的季节、来处与吃法</span></div><p>本站是六种食材的首版样本。时令按页面所列产区记录，随年份和天气变化；“当地产季”不等于其他城市一定有货。</p><p class="credits">地形：<a href="https://www.naturalearthdata.com/downloads/50m-raster-data/50m-manual-shaded-relief/" target="_blank" rel="noopener">Natural Earth</a>（公共领域） · 佛手瓜苗照片：<a href="https://commons.wikimedia.org/wiki/File:Stir_fried_chayote_shoots_in_Taiwan.jpg" target="_blank" rel="noopener">LWYang</a>（<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>，尺寸调整） · 菱角照片：<a href="https://commons.wikimedia.org/wiki/File:Tender_water_chestnut.jpg" target="_blank" rel="noopener">Fumikas Sagisavas</a>（CC0）</p></footer>
+  </div>
+  <dialog id="detailDialog" class="detail-dialog"><button class="dialog-close" id="detailClose" aria-label="关闭食材详情">×</button><div id="detailContent"></div></dialog>
+  <dialog id="searchDialog" class="search-dialog"><div class="search-head"><label for="searchInput">寻找食材</label><button id="searchClose" aria-label="关闭搜索">×</button></div><input id="searchInput" type="search" autocomplete="off" placeholder="试试“鸡头米”或“龙须菜”"><div id="searchResults"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
