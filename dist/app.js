@@ -1,80 +1,93 @@
 const foods=window.FOODS;
 const byId=Object.fromEntries(foods.map(food=>[food.id,food]));
-const seasonTitles={1:'寒风里的菜薹，等一口回甜。',2:'过霜的叶菜，留到冬末。',3:'山野开花，春天也能入口。',4:'嫩茎与花朵，趁春天正好。',5:'山林和水边，都在冒新芽。',6:'荷塘里的脆，刚刚抽出来。',7:'水乡新茎，酸辣一炒。',8:'果实变软，湖荡里也有鲜粒。',9:'秋水与山果，各有一口鲜。',10:'沿着秋山，找果实和菌香。',11:'水田与竹林，正准备入冬。',12:'霜后的菜薹，热锅里最香。'};
-let selectedMonth=new Date().getMonth()+1;
-foods.forEach(f=>f.places=f.id==='foshougua-miao'?[{name:'花莲',lat:24.00,lon:121.60,months:[4,5]},{name:'贵州普定',lat:26.33,lon:105.75,months:[7]}]:[{name:f.region,lat:f.lat,lon:f.lon,months:f.months}]);
-let currentView='season';
-let mapOnlySeason=true;
-let previousFocus=null;
 const $=id=>document.getElementById(id);
-const featuredByMonth={1:'hongshan-caitai',2:'hongshan-caitai',4:'foshougua-miao',5:'foshougua-miao',6:'dier',7:'foshougua-miao',8:'bayuegua',9:'bayuegua',10:'bayuegua',11:'cigu',12:'hongshan-caitai'};
-const monthFoods=month=>foods.filter(f=>f.months.includes(month)).sort((a,b)=>(b.id===featuredByMonth[month])-(a.id===featuredByMonth[month]));
 const monthLabel=m=>`${String(m).padStart(2,'0')} 月`;
+const chinaParts=date=>Object.fromEntries(new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'numeric',day:'numeric'}).formatToParts(date).filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));
+const chinaNow=chinaParts(new Date());
+const monthFoods=month=>foods.filter(f=>f.months.includes(month));
+let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,previousFocus=null;
+foods.forEach(f=>f.places=f.id==='foshougua-miao'?[{name:'花莲',lat:24,lon:121.6,months:[4,5]},{name:'贵州普定',lat:26.33,lon:105.75,months:[7]}]:[{name:f.region,lat:f.lat,lon:f.lon,months:f.months}]);
 const imageStyle=food=>food.image?`style="background-image:linear-gradient(0deg,rgba(9,36,29,.84),rgba(9,36,29,.03) 75%),url('${food.image}')"`:'style="background-image:linear-gradient(0deg,rgba(9,36,29,.78),rgba(9,36,29,.12)),url(\'assets/terrain.webp\')"';
-function renderMonths(){
-  $('mapMonthSelect').innerHTML=Array.from({length:12},(_,i)=>`<option value="${i+1}" ${i+1===selectedMonth?'selected':''}>${i+1} 月</option>`).join('');
-  $('months').innerHTML=Array.from({length:12},(_,i)=>{const m=i+1;return `<button class="${m===selectedMonth?'active':''}" data-month="${m}" aria-label="${m}月" aria-current="${m===selectedMonth?'date':'false'}">${String(m).padStart(2,'0')}</button>`}).join('');
-  $('months').querySelectorAll('button').forEach(b=>b.onclick=()=>setMonth(Number(b.dataset.month)));
-  $('mapMonthSelect').onchange=e=>setMonth(Number(e.target.value));
+const termSlugs=['xiaohan','dahan','lichun','yushui','jingzhe','chunfen','qingming','guyu','lixia','xiaoman','mangzhong','xiazhi','xiaoshu','dashu','liqiu','chushu','bailu','qiufen','hanlu','shuangjiang','lidong','xiaoxue','daxue','dongzhi'];
+const termLines=['寒气深了，热锅里找一口清甜。','岁末的冷，衬得鲜味更近。','春从枝头起，也从餐桌起。','雨落下来，嫩芽开始有了滋味。','泥土醒了，尝一尝新生的脆。','白昼渐长，把春天端上桌。','清明前后，山野里有清鲜。','谷雨润物，嫩叶正当时。','初夏开场，寻找水边与山间的新绿。','籽粒将满，味道也渐渐丰盈。','忙着生长的时节，趁鲜下锅。','日光最长，吃一口轻快的鲜。','暑气初起，脆嫩最能醒口。','盛夏深处，清爽的滋味在水边。','风里有一点凉，山果将熟。','热意渐退，尝初秋的鲜。','露水落下，果实与水生菜都在长。','昼夜平分，秋水与山果各有一口鲜。','凉意更深，适合慢慢寻味。','霜将落下，秋味愈发沉稳。','入冬之前，收一篮水乡与山林。','初雪欲来，热锅最懂鲜嫩。','雪意渐浓，留住晚秋的甜。','最长的夜，等一口回甘。'];
+const termNames=window.SOLAR_TERM_NAMES;
+const termEvents=[];
+for(const [year,stamps] of Object.entries(window.SOLAR_TERM_TIMES))stamps.forEach((time,index)=>termEvents.push({year:Number(year),index,time}));
+termEvents.sort((a,b)=>a.time-b.time);
+const currentTerm=termEvents.reduce((found,event)=>event.time<=Date.now()?event:found,termEvents[0]);
+let selectedTerm=currentTerm;
+const dateText=time=>{const d=chinaParts(new Date(time));return `${d.month}月${d.day}日`};
+const termEnd=event=>termEvents[termEvents.findIndex(x=>x===event)+1];
+function renderTermRail(){
+ const events=termEvents.filter(x=>x.year===selectedTerm.year);
+ $('terms').innerHTML=events.map(event=>`<button class="${event.index===selectedTerm.index?'active':''}" data-term="${event.index}" aria-current="${event.index===selectedTerm.index?'date':'false'}"><small>${dateText(event.time)}</small><strong>${termNames[event.index]}</strong></button>`).join('');
+ $('terms').querySelectorAll('button').forEach(button=>button.onclick=()=>{selectedTerm=events[Number(button.dataset.term)];renderTermRail();renderSeason()});
+ $('terms').querySelector('.active')?.scrollIntoView({block:'nearest',inline:'center'});
 }
-function setMonth(month){mapFocus=null;selectedMonth=month;renderMonths();renderSeason();renderMap();if(currentView==='map'){$('mapMonthLabel').textContent=monthLabel(month)} }
 function renderSeason(){
-  const list=monthFoods(selectedMonth);const lead=list[0];
-  $('seasonKicker').textContent=`${monthLabel(selectedMonth)} · ${list.length} 味当季食材`;
-  $('seasonHeading').textContent=seasonTitles[selectedMonth];
-  $('seasonIntro').textContent='从一味开始，尝它的口感、学一种吃法，再沿着产地与风味继续逛。';
-  $('hero').innerHTML=`<div class="eyebrow">${monthLabel(selectedMonth)} / ${lead.region}</div><h1>这一口<br><em>${lead.name}。</em></h1><p>${lead.description}</p><button class="hero-cta" data-food="${lead.id}">认识${lead.name} <span aria-hidden="true">↗</span></button><div class="hero-photo ${lead.image?'':'hero-terrain'}"><img src="${lead.image||'assets/terrain.webp'}" alt="${lead.imageAlt||'中国山川地形'}"></div><div class="hero-index">01 / ${String(list.length).padStart(2,'0')} <span>本月风物</span></div>`;
-  $('seasonCards').innerHTML=list.map((f,i)=>`<article class="season-card card-${i+1}" ${imageStyle(f)}><small>${f.region} · ${f.months.map(m=>String(m).padStart(2,'0')).join(' / ')} 月</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`).join('');
-  $('seasonCards').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));
-  $('hero').querySelector('[data-food]').onclick=()=>openFood(lead.id);
+ const isNow=selectedTerm===currentTerm;
+ const foodMonth=isNow?chinaNow.month:chinaParts(new Date(selectedTerm.time+24*3600*1000)).month;
+ const list=monthFoods(foodMonth);
+ const ending=termEnd(selectedTerm);
+ const range=`${dateText(selectedTerm.time)}—${ending?dateText(ending.time):'下一节气'}`;
+ $('hero').style.backgroundImage=`linear-gradient(90deg,rgba(17,43,39,.82),rgba(17,43,39,.30)),url('assets/jieqi/${termSlugs[selectedTerm.index]}.svg')`;
+ $('hero').innerHTML=`<div class="eyebrow">${isNow?'此时此刻 · ':''}${selectedTerm.year} 年 · ${range}</div><h1>${termNames[selectedTerm.index]}<span class="term-year"> / 二十四节气</span></h1><p>${termLines[selectedTerm.index]}</p><div class="hero-food-heading">${isNow?'现在可以尝的食材':'这一节气附近的食材'} · ${list.length} 味</div><div class="hero-food-list">${list.map(f=>`<button data-food="${f.id}">${f.name}<span>↗</span></button>`).join('')}</div>`;
+ $('seasonKicker').textContent=`${termNames[selectedTerm.index]} · ${range}`;
+ $('seasonHeading').textContent=isNow?'此时此刻，可以尝这些。':`沿着${termNames[selectedTerm.index]}找当季风物。`;
+ $('seasonIntro').textContent=`${monthLabel(foodMonth)}的${list.length}味食材。点开看它的产地、上市时间和吃法。`;
+ $('seasonCards').innerHTML=list.map((f,i)=>`<article class="season-card card-${i+1}" ${imageStyle(f)}><small>${f.region} · ${f.months.map(m=>String(m).padStart(2,'0')).join(' / ')} 月</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`).join('');
+ document.querySelectorAll('#hero [data-food],#seasonCards [data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));
 }
-function setView(view){currentView=view;document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`${view}View`);document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('is-active',b.dataset.view===view));if(view==='map')renderMap();if(view==='flavor')renderFlavor();window.scrollTo({top:0,behavior:'instant'});}
+$('termPrev').onclick=()=>{selectedTerm=termEvents[Math.max(0,termEvents.findIndex(x=>x===selectedTerm)-1)];renderTermRail();renderSeason()};
+$('termNext').onclick=()=>{selectedTerm=termEvents[Math.min(termEvents.length-1,termEvents.findIndex(x=>x===selectedTerm)+1)];renderTermRail();renderSeason()};
+function setView(view){currentView=view;document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`${view}View`);document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('is-active',b.dataset.view===view));if(view==='map')renderMap();if(view==='flavor')renderFlavor();window.scrollTo({top:0,behavior:'instant'})}
 document.querySelectorAll('.nav-item').forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $('mapPrompt').onclick=()=>setView('map');
-const world={west:72,east:136,south:16,north:54};
-let mapFocus=null;
-const geoPoint=(place,bounds)=>({x:(place.lon-bounds.west)/(bounds.east-bounds.west)*100,y:(bounds.north-place.lat)/(bounds.north-bounds.south)*100});
-const anchors=[['北京',39.9,116.4],['上海',31.2,121.5],['武汉',30.6,114.3],['成都',30.7,104.1],['广州',23.1,113.3],['昆明',25.0,102.7],['苏州',31.3,120.6],['嘉兴',30.8,120.8]];
-function clusterPlaces(places){
-  const groups=[];
-  for(const item of places){
-    const hit=groups.find(group=>group.some(old=>{const a=geoPoint(item.place,world),b=geoPoint(old.place,world);return Math.abs(a.x-b.x)<4.8&&Math.abs(a.y-b.y)<4.0}));
-    if(hit)hit.push(item);else groups.push([item]);
-  }
-  return groups;
+const meta=window.MAP_META,fullView={left:0,top:0,width:meta.width,height:meta.height};
+function mapProject(place){const rad=Math.PI/180,rho=meta.F/Math.pow(Math.tan(Math.PI/4+place.lat*rad/2),meta.n),theta=meta.n*(place.lon*rad-meta.lambda0);return {x:meta.width/2+(rho*Math.sin(theta)-meta.centerX)*meta.scale,y:meta.height/2-(meta.rho0-rho*Math.cos(theta)-meta.centerY)*meta.scale}}
+function inView(p,b){return p.x>=b.left&&p.x<=b.left+b.width&&p.y>=b.top&&p.y<=b.top+b.height}
+function mapPoint(p,b){return {x:(p.x-b.left)/b.width*100,y:(p.y-b.top)/b.height*100}}
+const shortPlace=name=>name.replace(/^(内蒙古|黑龙江|浙江|江苏|湖北|湖南|陕西|贵州|北京|天津|上海|重庆|云南|四川|广东|广西|福建|江西|山东|山西|河南|河北|辽宁|吉林|安徽|海南|新疆|青海|宁夏|甘肃|西藏)/,'').replace(/[·\s]/g,'');
+const anchors=[['北京',39.9,116.4],['上海',31.2,121.5],['武汉',30.6,114.3],['成都',30.7,104.1],['广州',23.1,113.3],['昆明',25,102.7],['苏州',31.3,120.6],['嘉兴',30.8,120.8]];
+let mapGroups=[],popupTimer;
+function clusterPlaces(places){const groups=[];for(const item of places){const p=mapProject(item.place),hit=groups.find(group=>group.some(old=>{const q=mapProject(old.place);return Math.abs(p.x-q.x)<48&&Math.abs(p.y-q.y)<40}));if(hit)hit.push(item);else groups.push([item])}return groups}
+function renderMapMonths(){
+ $('mapMonths').innerHTML=Array.from({length:12},(_,i)=>`<button class="${selectedMonth===i+1&&mapOnlySeason?'active':''}" data-month="${i+1}" aria-current="${selectedMonth===i+1&&mapOnlySeason?'date':'false'}">${String(i+1).padStart(2,'0')}月</button>`).join('');
+ $('mapMonths').querySelectorAll('button').forEach(b=>b.onclick=()=>setMapMonth(Number(b.dataset.month)));
+ $('mapMonths').querySelector('.active')?.scrollIntoView({block:'nearest',inline:'center'});
 }
-function zoomMap(group){
-  const lat=group.reduce((v,x)=>v+x.place.lat,0)/group.length,lon=group.reduce((v,x)=>v+x.place.lon,0)/group.length;
-  const lonSpan=Math.max(...group.map(x=>x.place.lon))-Math.min(...group.map(x=>x.place.lon));
-  const latSpan=Math.max(...group.map(x=>x.place.lat))-Math.min(...group.map(x=>x.place.lat));
-  const width=Math.max(6.4,lonSpan+2,(latSpan+1.5)*64/38),height=width*38/64;
-  mapFocus={west:lon-width/2,east:lon+width/2,south:lat-height/2,north:lat+height/2};
-  renderMap();
-}
-function renderMap(){
-  const bounds=mapFocus||world;
-  $('mapMonthLabel').textContent=`${monthLabel(selectedMonth)} · ${monthFoods(selectedMonth).length} 味当季`;
-  $('mapSeasonButton').textContent=mapOnlySeason?'查看全部食材':'只看本月';
-  $('mapZoomBack').hidden=!mapFocus;
-  document.querySelector('.map-image').classList.toggle('regional',!!mapFocus);
-  const left=(bounds.west-72)/64*1920,top=(54-bounds.north)/38*1140,width=(bounds.east-bounds.west)/64*1920,height=(bounds.north-bounds.south)/38*1140;
-  $('mapBase').setAttribute('viewBox',`${left} ${top} ${width} ${height}`);
-  const list=mapOnlySeason?monthFoods(selectedMonth):foods;
-  const places=list.flatMap(f=>f.places.filter(p=>!mapOnlySeason||p.months.includes(selectedMonth)).map(p=>({food:f,place:p})));
-  const visible=places.filter(({place})=>place.lon>=bounds.west&&place.lon<=bounds.east&&place.lat>=bounds.south&&place.lat<=bounds.north);
-  const groups=mapFocus?visible.map(x=>[x]):clusterPlaces(visible);
-  $('mapPins').innerHTML=groups.map((group,i)=>{const lat=group.reduce((v,x)=>v+x.place.lat,0)/group.length,lon=group.reduce((v,x)=>v+x.place.lon,0)/group.length,p=geoPoint({lat,lon},bounds);const first=group[0],label=group.length>1?`${group.length} 味食材`:first.food.name;return `<button class="map-pin ${group.length>1?'map-cluster':''}" style="left:${p.x}%;top:${p.y}%" data-pin="${i}" aria-label="${label}${group.length>1?'，放大查看':''}"><span class="pin-dot"></span><span class="pin-label">${label}<small>${group.length>1?'点击放大':first.place.name}</small></span></button>`}).join('');
-  $('mapPins').querySelectorAll('[data-pin]').forEach(button=>button.onclick=()=>{const group=groups[Number(button.dataset.pin)];if(group.length>1)zoomMap(group);else openFood(group[0].food.id)});
-  $('mapAnchors').innerHTML=anchors.filter(([_,lat,lon])=>lat>=bounds.south&&lat<=bounds.north&&lon>=bounds.west&&lon<=bounds.east).map(([name,lat,lon])=>{const p=geoPoint({lat,lon},bounds);return `<span class="map-anchor" style="left:${p.x}%;top:${p.y}%">${name}</span>`}).join('');
-  $('mapScale').textContent=mapFocus?'约 50 公里':'约 500 公里';
-  const km=mapFocus?50:500;
-  $('mapScale').style.width=`${Math.min(30,km/(111*Math.cos(((bounds.north+bounds.south)/2)*Math.PI/180)*(bounds.east-bounds.west))*100)}%`;
-  $('mapList').innerHTML=places.map(({food:f,place})=>`<button data-food="${f.id}"><span>${place.name}</span><strong>${f.name}</strong><span>看吃法 ↗</span></button>`).join('');
-  $('mapList').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));
-  if(window.innerWidth<=800){const wrap=document.querySelector('.map-wrap');const width=document.querySelector('.map-image').getBoundingClientRect().width;const mean=visible.length?visible.reduce((sum,item)=>sum+geoPoint(item.place,bounds).x,0)/visible.length:50;wrap.scrollLeft=width*mean/100-wrap.clientWidth/2}
-}
-$('mapSeasonButton').onclick=()=>{mapOnlySeason=!mapOnlySeason;renderMap()};
+function setMapMonth(month){selectedMonth=month;mapOnlySeason=true;mapFocus=null;renderMap()}
+$('mapMonthPrev').onclick=()=>setMapMonth(selectedMonth===1?12:selectedMonth-1);
+$('mapMonthNext').onclick=()=>setMapMonth(selectedMonth===12?1:selectedMonth+1);
+$('mapMonths').addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();setMapMonth((selectedMonth-1+(e.deltaY>0?1:11))%12+1)}},{passive:false});
+$('mapSeasonButton').onclick=()=>{mapOnlySeason=!mapOnlySeason;mapFocus=null;renderMap()};
 $('mapZoomBack').onclick=()=>{mapFocus=null;renderMap()};
+function zoomMap(group){const points=group.map(x=>mapProject(x.place)),xs=points.map(p=>p.x),ys=points.map(p=>p.y),cx=(Math.min(...xs)+Math.max(...xs))/2,cy=(Math.min(...ys)+Math.max(...ys))/2,width=Math.max(220,Math.max(...xs)-Math.min(...xs)+120,(Math.max(...ys)-Math.min(...ys)+90)*meta.width/meta.height);mapFocus={left:cx-width/2,top:cy-width*meta.height/meta.width/2,width,height:width*meta.height/meta.width};renderMap()}
+function hideMapPopup(){clearTimeout(popupTimer);$('mapPopover').hidden=true}
+function openMapPopup(index){clearTimeout(popupTimer);const group=mapGroups[index],pin=$('mapPins').querySelector(`[data-pin="${index}"]`);if(!group||!pin)return;const pop=$('mapPopover');const unique=[...new Map(group.map(x=>[x.food.id,x])).values()];pop.innerHTML=`<div class="map-popover-title">${group.map(x=>shortPlace(x.place.name)).filter((x,i,a)=>a.indexOf(x)===i).join(' · ')}<button class="map-popover-close" aria-label="关闭">×</button></div><div class="map-popover-foods">${unique.map(x=>`<button data-food="${x.food.id}"><strong>${x.food.name}</strong><small>${x.place.name} · 看吃法 ↗</small></button>`).join('')}</div><button class="map-popover-zoom">放大这一带 ↗</button>`;const x=parseFloat(pin.style.left),y=parseFloat(pin.style.top);pop.style.left=`${Math.min(78,Math.max(6,x))}%`;pop.style.top=`${Math.min(76,Math.max(12,y))}%`;pop.hidden=false;pop.querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>{hideMapPopup();openFood(b.dataset.food)});pop.querySelector('.map-popover-zoom').onclick=()=>{hideMapPopup();zoomMap(group)};pop.querySelector('.map-popover-close').onclick=hideMapPopup}
+$('mapPopover').onmouseenter=()=>clearTimeout(popupTimer);
+$('mapPopover').onmouseleave=()=>{popupTimer=setTimeout(hideMapPopup,240)};
+document.addEventListener('pointerdown',e=>{if(!e.target.closest('#mapPopover,.map-pin'))hideMapPopup()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')hideMapPopup()});
+function renderMap(){
+ hideMapPopup();renderMapMonths();const bounds=mapFocus||fullView;
+ $('mapMonthLabel').textContent=mapOnlySeason?`${monthLabel(selectedMonth)} · ${monthFoods(selectedMonth).length} 味食材`:`全年 · ${foods.length} 味食材`;
+ $('mapSeasonButton').textContent=mapOnlySeason?'查看全年':'只看单月';
+ $('mapZoomBack').hidden=!mapFocus;
+ document.querySelector('.map-image').classList.toggle('regional',!!mapFocus);
+ $('mapBase').setAttribute('viewBox',`${bounds.left} ${bounds.top} ${bounds.width} ${bounds.height}`);
+ const list=mapOnlySeason?monthFoods(selectedMonth):foods;
+ const places=list.flatMap(f=>f.places.filter(p=>!mapOnlySeason||p.months.includes(selectedMonth)).map(p=>({food:f,place:p})));
+ const visible=places.filter(x=>inView(mapProject(x.place),bounds));
+ mapGroups=mapFocus?visible.map(x=>[x]):clusterPlaces(visible);
+ $('mapPins').innerHTML=mapGroups.map((group,i)=>{const positions=group.map(x=>mapProject(x.place)),p=mapPoint({x:positions.reduce((n,v)=>n+v.x,0)/positions.length,y:positions.reduce((n,v)=>n+v.y,0)/positions.length},bounds),name=group.length>1?`${group.length} 味食材`:group[0].food.name,city=group.length>1?[...new Set(group.map(x=>shortPlace(x.place.name)))].slice(0,2).join(' · '):shortPlace(group[0].place.name);return `<button class="map-pin ${group.length>1?'map-cluster':''}" style="left:${p.x}%;top:${p.y}%" data-pin="${i}" aria-label="${city}，${name}"><span class="pin-dot"></span><span class="pin-label">${name}<small>${city}</small></span></button>`}).join('');
+ $('mapPins').querySelectorAll('[data-pin]').forEach(button=>{const index=Number(button.dataset.pin),group=mapGroups[index];button.onclick=()=>group.length>1?openMapPopup(index):openFood(group[0].food.id);if(group.length>1){button.onmouseenter=()=>openMapPopup(index);button.onmouseleave=()=>{popupTimer=setTimeout(hideMapPopup,240)};button.onfocus=()=>openMapPopup(index)}});
+ $('mapAnchors').innerHTML=anchors.map(([name,lat,lon])=>({name,p:mapProject({lat,lon})})).filter(x=>inView(x.p,bounds)).map(({name,p})=>{const q=mapPoint(p,bounds);return `<span class="map-anchor" style="left:${q.x}%;top:${q.y}%">${name}</span>`}).join('');
+ const center=mapFocus?visible[0]?.place:{lat:32,lon:105};const km=mapFocus?50:500,delta=km/(111.32*Math.cos(center.lat*Math.PI/180));const p1=mapProject(center),p2=mapProject({...center,lon:center.lon+delta});$('mapScale').style.width=`${Math.min(35,Math.abs(p2.x-p1.x)/bounds.width*100)}%`;$('mapScale').textContent=`约 ${km} 公里`;
+ $('mapList').innerHTML=(mapFocus?visible:places).map(({food:f,place})=>`<button data-food="${f.id}"><span>${place.name}</span><strong>${f.name}</strong><span>看吃法 ↗</span></button>`).join('');
+ $('mapList').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));
+ if(window.innerWidth<=800){const wrap=document.querySelector('.map-wrap'),width=document.querySelector('.map-image').getBoundingClientRect().width,mean=visible.length?visible.reduce((sum,item)=>sum+mapPoint(mapProject(item.place),bounds).x,0)/visible.length:50;wrap.scrollLeft=width*mean/100-wrap.clientWidth/2}
+}
 function relatedFoods(f){return foods.filter(other=>other.id!==f.id).map(other=>({food:other,shared:other.flavor.filter(t=>f.flavor.includes(t))})).filter(x=>x.shared.length).sort((a,b)=>b.shared.length-a.shared.length||a.food.name.localeCompare(b.food.name,'zh')).slice(0,4).map(x=>({food:x.food,why:`同样有${x.shared.join('、')}口感`}))}
 function detailHtml(f){
   const similar=relatedFoods(f);
@@ -107,4 +120,4 @@ function drawStar(){const canvas=$('flavorCanvas');if(!canvas||currentView!=='fl
 }
 function renderFlavor(){const selected=byId[starSelected];const linked=relatedFoods(selected);$('flavorAside').innerHTML=`<p class="kicker">已选择 / ${selected.region}</p><h2>${selected.name}</h2><p>${selected.description}</p><div class="aside-tags">${selected.flavor.map(t=>`<span>${t}</span>`).join('')}</div><button class="aside-primary" data-food="${selected.id}">读${selected.name}的吃法 ↗</button><h3>顺着风味继续</h3>${linked.length?linked.map(({food,why})=>`<button class="relation" data-select="${food.id}"><strong>${food.name}</strong><span>${why}</span></button>`).join(''):'<p class="no-relation">目前没有经过记录的相近风味。转动星图继续找。</p>'}`;$('flavorList').innerHTML=foods.map(f=>`<button data-select="${f.id}" class="${f.id===starSelected?'active':''}">${f.name}<span>${f.flavor.join(' · ')}</span></button>`).join('');document.querySelectorAll('[data-select]').forEach(b=>b.onclick=()=>{starSelected=b.dataset.select;renderFlavor()});document.querySelector('#flavorAside [data-food]').onclick=()=>openFood(selected.id);drawStar()}
 const canvas=$('flavorCanvas');canvas.addEventListener('pointerdown',e=>{starDrag={x:e.clientX,y:e.clientY,moved:false};canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointermove',e=>{if(!starDrag)return;const dx=e.clientX-starDrag.x,dy=e.clientY-starDrag.y;if(Math.abs(dx)+Math.abs(dy)>2)starDrag.moved=true;rotY+=dx*.009;rotX=Math.max(-1,Math.min(1,rotX+dy*.009));starDrag.x=e.clientX;starDrag.y=e.clientY;drawStar()});canvas.addEventListener('pointerup',e=>{if(!starDrag?.moved){const rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;const hit=projected.find(n=>Math.hypot(n.x-x,n.y-y)<28);if(hit){starSelected=hit.id;renderFlavor()}}starDrag=null});window.addEventListener('resize',()=>{if(currentView==='flavor')drawStar()});
-renderMonths();renderSeason();renderMap();const deepLink=new URL(location.href).searchParams.get('food');if(deepLink&&byId[deepLink])openFood(deepLink,false);
+renderTermRail();renderSeason();renderMap();const deepLink=new URL(location.href).searchParams.get('food');if(deepLink&&byId[deepLink])openFood(deepLink,false);

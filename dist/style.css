@@ -69,3 +69,38 @@
 @media(max-width:800px){.map-image{width:760px;min-width:760px}.map-hint{width:100%;padding:0 7vw}}
 
 @media(max-width:800px){.search-trigger span.search-glyph{display:inline;font-size:27px;line-height:1}.search-trigger span:not(.search-glyph){display:none}}
+
+/* Solar-term home and proportionate atlas */
+.term-hero{height:auto;min-height:400px;padding:60px 8vw 56px;background-color:#2a4e45;background-size:cover;background-position:center;color:#fff}
+.term-hero:before,.term-hero:after{display:none}
+.term-hero .eyebrow{color:#f3e0a9;font-weight:700}
+.term-hero h1{font-size:clamp(4rem,7vw,6.5rem);margin:22px 0 12px}
+.term-year{font:400 15px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:.22em;vertical-align:middle;color:#f5e5bd}
+.term-hero p{width:auto;max-width:620px;margin:0 0 28px;color:#fff;font-size:18px;text-shadow:0 1px 7px #142f2a88}
+.hero-food-heading{position:relative;z-index:1;font-size:13px;letter-spacing:.12em;margin-bottom:12px;color:#ffedd0}
+.hero-food-list{position:relative;z-index:1;display:flex;gap:8px;flex-wrap:wrap;max-width:890px}
+.hero-food-list button{border:1px solid #ffeed9aa;background:#142f2ab8;color:#fff;padding:8px 12px;min-height:44px;display:flex;gap:18px;align-items:center}
+.hero-food-list button:hover,.hero-food-list button:focus-visible{background:#fff4dc;color:#142f2a}
+.term-strip{display:flex;align-items:center;gap:10px;min-height:105px;padding:13px 5vw;border-bottom:1px solid var(--line)}
+.term-strip .strip-label{margin-right:10px}
+.rail-arrow{flex:none;width:44px;min-width:44px;height:44px;padding:0!important;border:1px solid #c8cfc5!important;background:#faf8f1!important;color:var(--ink);font:30px Georgia!important;line-height:1!important}
+.terms,.map-months{display:flex;gap:4px;overflow-x:auto;scrollbar-width:thin;scroll-behavior:smooth;min-width:0;flex:1}
+.terms button{flex:none;min-width:88px;min-height:62px;border:0;border-bottom:2px solid transparent;background:none;text-align:center;color:#6b7770;padding:6px 12px}
+.terms button small{display:block;font-size:11px;margin-bottom:4px}.terms button strong{font:600 19px 'Songti SC','Noto Serif CJK SC','SimSun',serif}.terms button.active{color:var(--ink);border-bottom-color:var(--ink);background:#edf0e7}
+.season-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.season-card.card-1,.season-card:not(.card-1){min-height:310px}
+.map-toolbar{justify-content:flex-start;gap:12px}.map-toolbar #mapMonthLabel{font-weight:700;margin-right:auto}.map-toolbar #mapZoomBack{margin:0}.map-toolbar button{white-space:nowrap}
+.map-month-rail{width:84%;margin:0 auto 16px;display:flex;align-items:center;gap:8px}.map-month-rail>span{font-size:13px;letter-spacing:.15em;margin-right:8px}
+.map-months button{flex:none;min-width:68px;height:48px;border:0;border-bottom:2px solid transparent;background:none;color:#526b60;font-size:14px}
+.map-months button.active{background:#e7ede5;border-bottom-color:#193d35;color:#142f2a;font-weight:700}
+.map-image{aspect-ratio:1600/1100;background:#e8e9df}.map-image:after{display:none}
+#mapBase{width:100%;height:100%}.map-detail-rivers{display:none}.map-image.regional .map-detail-rivers{display:block}.map-image.regional #mapBase image{opacity:.55}
+.map-pin{z-index:3}.map-pin .pin-dot{background:#b27039;box-shadow:0 0 0 4px #fff9,0 2px 7px #18332988}.map-cluster .pin-dot{background:#274d42}
+.map-pin .pin-label{border:1px solid #d4ccaf;background:#fffdf1f0;color:#1e3f36;box-shadow:0 2px 12px #18332944}
+.map-pin:hover,.map-pin:focus-visible{z-index:5}.map-anchor{z-index:1;font-size:12px}.map-scale{right:25px;bottom:20px;min-width:82px;background:#fffaf0e0;border-bottom:3px solid #263e34}
+.map-popover{position:absolute;z-index:8;transform:translate(-50%,-4%);width:min(340px,38%);max-height:430px;overflow-y:auto;background:#fffdf4;border:1px solid #b6bda9;box-shadow:0 15px 35px #142f2a55;padding:15px;color:var(--ink)}
+.map-popover[hidden]{display:none}.map-popover-title{font-size:13px;font-weight:700;color:#60756a;margin-bottom:8px;padding-right:25px;line-height:1.5}.map-popover-close{position:absolute;top:7px;right:7px;border:0;background:transparent;color:var(--ink);width:34px;height:34px;font-size:23px}
+.map-popover-foods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.map-popover-foods button{min-height:62px;background:#edf1e8;border:0;padding:9px;text-align:left;color:var(--ink)}.map-popover-foods button:hover{background:#d7e3d5}.map-popover-foods strong{display:block;font-size:14px}.map-popover-foods small{display:block;font-size:11px;color:#5f7266;margin-top:4px}
+.map-popover-zoom{width:100%;margin-top:9px;min-height:42px;border:1px solid #274d42;background:#fffdf4;color:#274d42;text-align:left;padding:0 11px}
+@media(max-width:800px){.term-hero{min-height:0;padding:48px 7vw 42px}.term-hero h1{font-size:4.1rem}.term-hero p{font-size:16px}.term-strip{padding:12px 3vw}.term-strip .strip-label{display:none}.section-intro{padding-top:58px}.season-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.season-card.card-1,.season-card:not(.card-1){min-height:265px}.map-month-rail{width:100%;padding:0 4vw}.map-image{width:760px;min-width:760px;aspect-ratio:1600/1100}.map-pin .pin-label{font-size:11px;max-width:110px;white-space:normal}.map-popover{width:310px;max-height:350px;transform:translate(-50%,-15%)}.map-toolbar{display:flex;flex-wrap:wrap}.map-toolbar #mapMonthLabel{width:100%}}
+@media(max-width:520px){.term-hero h1{font-size:3.8rem}.term-year{display:block;margin-top:4px}.hero-food-list button{font-size:13px}.season-cards{grid-template-columns:1fr}.map-popover{position:sticky;left:10px!important;top:10px!important;transform:none;width:min(310px,calc(100vw - 20px));margin-top:-400px;max-height:370px}.map-popover-foods{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.map-popover{position:fixed;left:12px!important;right:12px;top:auto!important;bottom:74px;width:auto;max-height:45vh;margin:0;transform:none;z-index:50}.map-popover-foods{grid-template-columns:repeat(2,minmax(0,1fr))}.map-pin:not(.map-cluster) .pin-label{display:none}.map-cluster .pin-label{font-size:11px;max-width:88px}.map-anchor{display:none}}
