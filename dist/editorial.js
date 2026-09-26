@@ -73,6 +73,18 @@ const PAIR_NOTES={
 };
 for(const food of window.FOODS)if(PAIR_NOTES[food.id])food.pair=PAIR_NOTES[food.id];
 
+Object.assign(window.FOODS.find(food=>food.id==='cizhousun'),{
+  image:'assets/cizhousun-bamboo-shoot.jpg',
+  imageAlt:'生长中的竹笋，带笋箨和叶片',
+  imageCaption:'Phyllostachys parvifolia 竹笋形态参考；摄影者 Jodarom，CC BY 3.0。并非腾冲刺竹的地方品种实拍。',
+  cardNote:'竹笋形态参考 · 非腾冲刺竹实拍'
+});
+Object.assign(window.FOODS.find(food=>food.id==='congjun'),{
+  image:'assets/congjun-lactarius-deliciosus.jpg',
+  imageAlt:'松乳菇橙红色菌盖与菌褶，生于林地落枝间',
+  imageCaption:'松乳菇（Lactarius deliciosus）实拍；该种在湖南等地俗称枞菌之一，不能代表所有地方所称的枞菌。摄影者 Sandra Cohen-Rose、Colin Rose，CC BY 2.0。'
+});
+
 // 用户提供的候选图；原始出处、品种及拍摄地仍在核对。
 for(const food of window.FOODS){const candidate={"zengcheng-caixin": {"image": "assets/caixin-candidate.jpg", "imageAlt": "菜心植株候选图；具体品种及拍摄地未注明。", "imageCaption": "菜心植株候选图；具体品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "rugao-takecai": {"image": "assets/takecai-candidate.jpg", "imageAlt": "黑色贴地叶丛候选图；具体品种及拍摄地未注明。", "imageCaption": "黑色贴地叶丛候选图；具体品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "honghu-oudai": {"image": "assets/oudai-candidate.jpg", "imageAlt": "新鲜水生嫩茎候选图；原料产地未注明。", "imageCaption": "新鲜水生嫩茎候选图；原料产地未注明。", "cardNote": "形态参考 · 产地未注明"}, "houtui-cai": {"image": "assets/houtui-candidate.jpeg", "imageAlt": "嫩蕨茎候选图；物种与产地未核实，不作为采食鉴别依据。", "imageCaption": "嫩蕨茎候选图；物种与产地未核实，不作为采食鉴别依据。", "cardNote": "形态参考 · 产地未注明"}, "bishan-ercai": {"image": "assets/ercai-candidate.jpeg", "imageAlt": "儿菜植株候选图；拍摄地未注明。", "imageCaption": "儿菜植株候选图；拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "juhuanao": {"image": "assets/juhuanao-candidate.jpg", "imageAlt": "食用嫩叶候选图；品种及拍摄地未注明。", "imageCaption": "食用嫩叶候选图；品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "pucai": {"image": "assets/pucai-candidate.jpg", "imageAlt": "蒲菜茎芯及水生植株候选拼图；拍摄地未注明。", "imageCaption": "蒲菜茎芯及水生植株候选拼图；拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}}[food.id];if(candidate)Object.assign(food,candidate)}
 Object.assign(window.FOODS.find(food=>food.id==='nanhu-ling'),{
