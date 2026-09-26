@@ -5,6 +5,7 @@
 | 用途 | 站内文件与尺寸 | 原始尺寸 | 作者、来源、许可 | 修改 |
 | --- | --- | --- | --- | --- |
 | 佛手瓜苗主图，越南采收的嫩梢 | `dist/assets/chayote-raw.jpg` 1500×996 | 1500×996 | [Neil Palmer / CIAT](https://commons.wikimedia.org/wiki/File:Chayote_contd_11_lo_(4070398839).jpg)，[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | 原尺寸下载，无改动 |
+| 佛手瓜叶片与卷须，3D 加载失败时显示的实拍 | `dist/assets/chayote-leaf-tendril.webp` 1600×1067 | 5472×3648 | [Bijaya Kumar Shrestha / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Green_leaves_of_Chayote.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP；非食用嫩梢产地实拍，仅作同种植物形态参考 |
 | 佛手瓜苗成菜 | `dist/assets/chayote-shoots.webp` 2400×1831 | 3734×2848 | [LWYang](https://commons.wikimedia.org/wiki/File:Stir_fried_chayote_shoots_in_Taiwan.jpg)，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | 缩小、转 WebP |
 | 洪山菜薹 | `dist/assets/hongshan-caitai.webp` 1800×2400 | 3024×4032 | [ZhengZhou](https://commons.wikimedia.org/wiki/File:Hongshan_Caitai.jpeg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP |
 | 刺嫩芽，同种异地形态参考 | `dist/assets/cinenya.webp` 1920×2400 | 2240×2800 | [Melsj](https://commons.wikimedia.org/wiki/File:Korean_angelica-tree_shoots.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP |

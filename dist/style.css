@@ -132,3 +132,41 @@
 
 .map-image{cursor:default;touch-action:pan-y}.map-image.is-interactive{cursor:grab;touch-action:none}.map-image.is-interactive:active{cursor:grabbing}.bilibili-recipe-link{display:inline-flex;align-items:center;min-height:44px;margin-top:18px;padding:0 18px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:14px}.bilibili-recipe-link:hover{background:var(--ink);color:#fff}
 .map-image:focus-visible{outline:3px solid #d1ad69;outline-offset:3px}
+
+.season-card.food3d-card{background:#e8eee1;color:var(--ink);justify-content:flex-end}
+.food3d-card .food3d-stage{position:absolute;inset:0 0 0 34%;z-index:0;background:transparent}
+.food3d-card .food3d-copy{position:relative;z-index:1;max-width:53%;display:flex;flex-direction:column;align-items:flex-start;color:var(--ink)}
+.food3d-card .food3d-copy>button{color:var(--ink);border-color:#527466;background:#f8f9efcc}
+.food3d-card .food3d-copy>button:hover{background:var(--ink);color:#fff}
+.food3d-stage{position:relative;overflow:hidden;background:#dce9d8;min-height:320px}
+.food3d-stage>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:26% center;transition:opacity .35s}
+.food3d-stage.is-ready>img{opacity:0;pointer-events:none}
+.food3d-canvas{position:absolute;inset:0;width:100%;height:100%;cursor:grab}
+.food3d-stage.is-hovering .food3d-canvas{cursor:pointer}
+.food3d-stage.is-observing .food3d-canvas:active{cursor:grabbing}
+.food3d-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.food3d-controls[hidden]{display:none}
+.food3d-controls button{min-height:44px;padding:8px 12px;border:1px solid #668574;background:#f5f8ee;color:var(--ink);font:14px 'PingFang SC','Microsoft YaHei',sans-serif}
+.food3d-controls button:hover{background:var(--ink);color:#fff}
+.food3d-controls button[hidden]{display:none}
+.food3d-detail{padding:28px 7% 24px;background:#e6eee2}
+.food3d-detail-head{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:12px}
+.food3d-detail-head small{font-size:12px;letter-spacing:.16em;color:#607868}
+.food3d-detail-head h2{margin:5px 0 0;font:600 27px 'Songti SC','Noto Serif CJK SC','SimSun',serif}
+.food3d-detail .food3d-controls{margin:0}
+.food3d-detail .food3d-stage{height:min(54vh,480px);min-height:310px;background:transparent}
+.food3d-detail .food3d-stage>img{object-position:center}
+.food3d-detail-foot{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-top:12px;color:#526b5a;font-size:13px}
+.food3d-detail-foot button{min-height:44px;padding:7px 16px;border:1px solid #668574;background:#f5f8ee;color:var(--ink)}
+.food3d-detail-foot button:hover{background:var(--ink);color:#fff}
+@media(max-width:800px){
+ .season-card.food3d-card{min-height:535px;padding:22px}
+ .food3d-card .food3d-stage{inset:0 0 auto;height:310px;min-height:310px}
+ .food3d-card .food3d-copy{max-width:none;width:100%;padding-top:298px}
+ .food3d-card .food3d-copy>p{margin:5px 0 10px}
+ .food3d-detail{padding:23px 4vw 20px}
+ .food3d-detail-head{display:block}
+ .food3d-detail .food3d-controls{margin-top:10px}
+ .food3d-detail .food3d-stage{height:360px;min-height:300px}
+ .food3d-detail-foot{align-items:flex-start}
+}
