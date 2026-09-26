@@ -2,35 +2,22 @@ const foods=window.FOODS;
 const byId=Object.fromEntries(foods.map(food=>[food.id,food]));
 const $=id=>document.getElementById(id);
 const monthLabel=m=>`${String(m).padStart(2,'0')} 月`;
+const formatMonths=months=>{
+ if(months.length===12)return '全年';
+ const continuous=months.length>1&&months.every((m,i)=>i===0||m===(months[i-1]===12?1:months[i-1]+1));
+ if(continuous)return months.some((m,i)=>i>0&&m<months[i-1])?`${months[0]}月—次年${months[months.length-1]}月`:`${months[0]}—${months[months.length-1]}月`;
+ return months.map(m=>`${m}月`).join(' / ');
+};
+const foodSeasonLabel=food=>food.seasonLabel||formatMonths(food.months);
 const chinaParts=date=>Object.fromEntries(new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'numeric',day:'numeric'}).formatToParts(date).filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));
 const chinaNow=chinaParts(new Date());
 const monthFoods=month=>foods.filter(f=>f.months.includes(month));
-let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,previousFocus=null;
+let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,mapCategory='all',previousFocus=null;
 foods.forEach(f=>f.places=f.placeSeasons);
 const imageStyle=food=>food.cardImage||food.image?`style="background-image:linear-gradient(0deg,rgba(9,36,29,.84),rgba(9,36,29,.03) 75%),url('${food.cardImage||food.image}')"`:'style="background-image:linear-gradient(145deg,#365b4e,#16372e)"';
-const nameWithIcon=food=>`${food.name}<img class="food-name-icon" src="${food.icon||food.cardImage||food.image||''}" alt="" aria-hidden="true">`;
-let food3dViewer=null,food3dVersion=0,food3dOrientation=null;
-const food3dControls=()=>'<div class="food3d-controls"><button type="button" data-food3d-observe aria-pressed="false">转一转</button><button type="button" data-food3d-reset hidden>复位</button></div>';
-function stopFood3d(){food3dVersion++;if(food3dViewer){food3dOrientation=food3dViewer.getOrientation();food3dViewer.dispose();food3dViewer=null}}
-async function mountFood3d(host,onSelect){
-  stopFood3d();
-  if(!host)return;
-  const version=food3dVersion;
-  host.dataset.modelState='loading';
-  try{
-    const {createChayoteViewer}=await import('./food3d/viewer.js');
-    if(version!==food3dVersion||!host.isConnected)return;
-    food3dViewer=createChayoteViewer(host,onSelect,food3dOrientation);
-  }catch(error){
-    if(version!==food3dVersion||!host.isConnected)return;
-    host.querySelector('canvas')?.remove();
-    host.classList.remove('is-ready');
-    host.dataset.modelState='fallback';
-    host.parentElement.querySelector('.food3d-controls').hidden=true;
-    console.error('佛手瓜苗立体插画未能加载',error);
-  }
-}
-function mountSeasonFood3d(){const host=document.querySelector('#seasonCards [data-food3d-stage]');if(host&&currentView==='season'&&!$('detailDialog').open)mountFood3d(host,()=>openFood('foshougua-miao'))}
+const nameWithIcon=food=>food.icon?`${food.name}<img class="food-name-icon" src="${food.icon}" alt="" aria-hidden="true">`:food.name;
+const categoryNames={vegetable:'蔬菜',fruit:'水果',protein:'蛋白'};
+let selectedCategory='all';
 const termSlugs=['xiaohan','dahan','lichun','yushui','jingzhe','chunfen','qingming','guyu','lixia','xiaoman','mangzhong','xiazhi','xiaoshu','dashu','liqiu','chushu','bailu','qiufen','hanlu','shuangjiang','lidong','xiaoxue','daxue','dongzhi'];
 const termLines=['寒气深了，热锅里找一口清甜。','岁末的冷，衬得鲜味更近。','春从枝头起，也从餐桌起。','雨落下来，嫩芽开始有了滋味。','泥土醒了，尝一尝新生的脆。','白昼渐长，把春天端上桌。','清明前后，山野里有清鲜。','谷雨润物，嫩叶正当时。','初夏开场，寻找水边与山间的新绿。','籽粒将满，味道也渐渐丰盈。','忙着生长的时节，趁鲜下锅。','日光最长，吃一口轻快的鲜。','暑气初起，脆嫩最能醒口。','盛夏深处，清爽的滋味在水边。','风里有一点凉，山果将熟。','热意渐退，尝初秋的鲜。','露水落下，果实与水生菜都在长。','昼夜平分，秋水与山果各有一口鲜。','凉意更深，适合慢慢寻味。','霜将落下，秋味愈发沉稳。','入冬之前，收一篮水乡与山林。','初雪欲来，热锅最懂鲜嫩。','雪意渐浓，留住晚秋的甜。','最长的夜，等一口回甘。'];
 const termNames=window.SOLAR_TERM_NAMES;
@@ -51,6 +38,11 @@ function renderTermRail(){
  $('terms').querySelectorAll('button').forEach(button=>button.onclick=()=>{selectedTerm=termWindow[Number(button.dataset.term)];renderTermRail();renderSeason()});
  $('terms').querySelector('.active')?.scrollIntoView({block:'nearest',inline:'center'});
 }
+function renderCategoryFilter(list){
+ const choices=[['all','全部',list.length],...Object.entries(categoryNames).map(([key,label])=>[key,label,list.filter(food=>food.category===key).length])];
+ $('categoryFilter').innerHTML=choices.map(([key,label,count])=>`<button type="button" data-category="${key}" class="${selectedCategory===key?'active':''}" aria-pressed="${selectedCategory===key}">${label}<span>${count}</span></button>`).join('');
+ $('categoryFilter').querySelectorAll('[data-category]').forEach(button=>button.onclick=()=>{selectedCategory=button.dataset.category;renderSeason()});
+}
 function renderSeason(){
  const isNow=selectedTerm===currentTerm;
  const foodMonth=isNow?chinaNow.month:chinaParts(new Date(selectedTerm.time+24*3600*1000)).month;
@@ -61,17 +53,17 @@ function renderSeason(){
  $('hero').innerHTML=`<div class="eyebrow">${isNow?'此时此刻 · ':''}${selectedTerm.year} 年 · ${range}</div><h1>${termNames[selectedTerm.index]}<span class="term-year"> / 二十四节气</span></h1><p>${termLines[selectedTerm.index]}</p><div class="hero-food-heading">${isNow?'现在可以尝的食材':'这一节气附近的食材'} · ${list.length} 味</div><div class="hero-food-list">${list.map(f=>`<button data-food="${f.id}">${nameWithIcon(f)}<span>↗</span></button>`).join('')}</div>`;
  $('seasonKicker').textContent=`${termNames[selectedTerm.index]} · ${range}`;
  $('seasonHeading').textContent=isNow?'此时此刻，可以尝这些。':`沿着${termNames[selectedTerm.index]}找当季风物。`;
- $('seasonIntro').textContent=`${foodMonth}月可尝的${list.length}味食材。点开看它的产地、上市时间和吃法。`;
-  stopFood3d();
-  $('seasonCards').innerHTML=list.map((f,i)=>f.id==='foshougua-miao'
-    ?`<article class="season-card food3d-card card-${i+1}"><div class="food3d-stage" data-food3d-stage><img src="${f.cardImage||f.image}" alt="" aria-hidden="true"></div><div class="food3d-copy"><small>${f.cardLabel||f.region}</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button>${food3dControls()}</div></article>`
-    :`<article class="season-card card-${i+1}" ${imageStyle(f)}><small>${f.cardLabel||`${f.region} · ${f.months.map(m=>String(m).padStart(2,'0')).join(' / ')} 月`}</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`).join('');
+ const visibleList=selectedCategory==='all'?list:list.filter(food=>food.category===selectedCategory);
+ renderCategoryFilter(list);
+ $('seasonIntro').textContent=`${foodMonth}月可尝的${visibleList.length}味${selectedCategory==='all'?'食材':categoryNames[selectedCategory]}。点开看产地、时令和吃法。`;
+  $('seasonCards').innerHTML=visibleList.length?visibleList.map((f,i)=>f.id==='foshougua-miao'
+    ?`<article class="season-card photo-card card-${i+1}"><img class="season-card-photo" src="${f.cardImage||f.image}" alt="${f.cardImageAlt||f.imageAlt}" loading="lazy"><small>${f.cardLabel||f.region}</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`
+    :`<article class="season-card card-${i+1}" ${imageStyle(f)}><small>${f.cardLabel||`${f.region} · ${foodSeasonLabel(f)}`}</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`).join(''):`<p class="empty-month category-empty">这个时节还没有收录的${categoryNames[selectedCategory]}，可以换个时节看看。</p>`;
   document.querySelectorAll('#hero [data-food],#seasonCards [data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));
-  mountSeasonFood3d();
 }
 $('termPrev').onclick=()=>{selectedTerm=termWindow[Math.max(0,termWindow.indexOf(selectedTerm)-1)];renderTermRail();renderSeason()};
 $('termNext').onclick=()=>{selectedTerm=termWindow[Math.min(termWindow.length-1,termWindow.indexOf(selectedTerm)+1)];renderTermRail();renderSeason()};
-function setView(view){currentView=view;if(view!=='season')stopFood3d();if(view!=='map'){mapInteractionEnabled=false;document.querySelector('.map-image').classList.remove('is-interactive');$('mapHint').textContent='点击地图启用缩放和拖动；移到地图外，滚动页面。'}document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`${view}View`);document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('is-active',b.dataset.view===view));if(view==='map')renderMap();if(view==='flavor')renderFlavor();if(view==='season')mountSeasonFood3d();window.scrollTo({top:0,behavior:'instant'})}
+function setView(view){currentView=view;if(view!=='map'){mapInteractionEnabled=false;document.querySelector('.map-image').classList.remove('is-interactive');$('mapHint').textContent='点击地图启用缩放和拖动；移到地图外，滚动页面。'}document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`${view}View`);document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('is-active',b.dataset.view===view));if(view==='map')renderMap();if(view==='flavor')renderFlavor();window.scrollTo({top:0,behavior:'instant'})}
 document.querySelectorAll('.nav-item').forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $('mapPrompt').onclick=()=>setView('map');
 const meta=window.MAP_META,mapAspect=meta.width/meta.height;
@@ -96,6 +88,7 @@ $('mapMonthPrev').onclick=()=>setMapMonth(selectedMonth===1?12:selectedMonth-1);
 $('mapMonthNext').onclick=()=>setMapMonth(selectedMonth===12?1:selectedMonth+1);
 $('mapMonths').addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();setMapMonth((selectedMonth-1+(e.deltaY>0?1:11))%12+1)}},{passive:false});
 $('mapSeasonButton').onclick=()=>{mapOnlySeason=!mapOnlySeason;mapFocus=null;renderMap()};
+$('mapCategory').onchange=e=>{mapCategory=e.target.value;mapFocus=null;renderMap()};
 $('mapZoomBack').onclick=()=>{mapFocus=null;renderMap()};
 function clampMapView(view){const width=Math.min(homeView.width,Math.max(homeView.width*.28,view.width)),height=width/mapAspect;return {left:Math.min(homeView.left+homeView.width-width,Math.max(homeView.left,view.left)),top:Math.min(homeView.top+homeView.height-height,Math.max(homeView.top,view.top)),width,height}}
 function activateMap(){mapInteractionEnabled=true;const image=document.querySelector('.map-image');image.classList.add('is-interactive');image.focus();$('mapHint').textContent='按住地图拖动，滚轮缩放；移到地图外可滚动页面。'}
@@ -109,12 +102,14 @@ document.addEventListener('pointerdown',e=>{if(!e.target.closest('#mapPopover,.m
 document.addEventListener('keydown',e=>{if(e.key==='Escape')hideMapPopup()});
 function renderMap(){
  hideMapPopup();renderMapMonths();const bounds=mapFocus||homeView;
- $('mapMonthLabel').textContent=mapOnlySeason?`${monthLabel(selectedMonth)} · ${monthFoods(selectedMonth).length} 味食材`:`全年 · ${foods.length} 味食材`;
+ const monthList=mapOnlySeason?monthFoods(selectedMonth):foods;
+ const list=mapCategory==='all'?monthList:monthList.filter(food=>food.category===mapCategory);
+ $('mapCategory').value=mapCategory;
+ $('mapMonthLabel').textContent=`${mapOnlySeason?monthLabel(selectedMonth):'全年'} · ${list.length} 味${mapCategory==='all'?'食材':categoryNames[mapCategory]}`;
  $('mapSeasonButton').textContent=mapOnlySeason?'查看全年':'只看单月';
  $('mapZoomBack').hidden=!mapFocus;
  document.querySelector('.map-image').classList.toggle('regional',!!mapFocus);
  $('mapBase').setAttribute('viewBox',`${bounds.left} ${bounds.top} ${bounds.width} ${bounds.height}`);
- const list=mapOnlySeason?monthFoods(selectedMonth):foods;
  const places=list.flatMap(f=>f.places.filter(p=>!mapOnlySeason||p.months.includes(selectedMonth)).map(p=>({food:f,place:p})));
  const visible=places.filter(x=>inView(mapProject(x.place),bounds));
  mapGroups=mapFocus?visible.map(x=>[x]):clusterPlaces(visible);
@@ -139,23 +134,24 @@ const relationReasons={清甜:'都带轻微甜味',紧实:'咬起来都较紧实
 function relatedFoods(f){return foods.filter(other=>other.id!==f.id).map(other=>({food:other,shared:other.flavor.filter(t=>f.flavor.includes(t))})).filter(x=>x.shared.length).sort((a,b)=>b.shared.length-a.shared.length||a.food.name.localeCompare(b.food.name,'zh')).slice(0,4).map(x=>({food:x.food,why:relationReasons[x.shared[0]]||`都带${x.shared[0]}`}))}
 function detailHtml(f){
   const similar=relatedFoods(f);
-  return `<div class="detail-hero"><div class="detail-topline">${f.region} · ${f.months.map(m=>`${m}月`).join(' / ')}</div><h1>${nameWithIcon(f)}</h1><p>${f.intro||f.description}</p><div class="detail-tags">${f.flavor.map(t=>`<span>${t}</span>`).join('')}</div></div>
-  ${f.id==='foshougua-miao'?`<section class="food3d-detail"><div class="food3d-detail-head"><div><small>立体插画</small><h2>看看嫩叶与卷须</h2></div>${food3dControls()}</div><div class="food3d-stage" data-food3d-stage><img src="assets/chayote-leaf-tendril.webp" alt="佛手瓜叶片与卷须实拍"></div><div class="food3d-detail-foot"><span data-food3d-hint>拖动观察，轻点嫩梢看做法</span><button type="button" data-food3d-eat>看它怎么吃 ↗</button></div></section>`:''}
-  ${f.image?`<figure class="detail-photo"><img src="${f.image}" alt="${f.imageAlt}"><figcaption>${f.recipeTitle}</figcaption></figure>`:''}${(f.images||[]).map(p=>`<figure class="detail-photo secondary-photo"><img src="${p.src}" alt="${p.alt}"><figcaption>${f.recipeTitle}</figcaption></figure>`).join('')}
+  const seasonHeading=f.category==='protein'?(f.seasonBasis==='catch'?'什么时候捕捞':f.seasonBasis==='slaughter'?'什么时候宰杀上市':'什么时候采收上市'):f.category==='fruit'?'什么时候成熟':'什么时候采收';
+  return `<div class="detail-intro"><div class="detail-hero"><div class="detail-topline">${categoryNames[f.category]} · ${f.region} · ${foodSeasonLabel(f)}</div><h1>${nameWithIcon(f)}</h1><p>${f.intro||f.description}</p><div class="detail-tags">${f.flavor.map(t=>`<span>${t}</span>`).join('')}</div></div>
+  ${f.image?`<figure class="detail-photo"><img src="${f.image}" alt="${f.imageAlt}" fetchpriority="high"><figcaption>${f.imageCaption||f.cardNote||f.region}</figcaption></figure>`:''}</div>
+  ${(f.images||[]).length?`<div class="detail-gallery">${(f.images||[]).map(p=>`<figure><img src="${p.src}" alt="${p.alt}" loading="lazy"><figcaption>${p.caption||p.alt}</figcaption></figure>`).join('')}</div>`:''}
   <div class="detail-body"><section><p class="detail-num">01 / 认一认</p><h2>吃起来是什么样</h2><dl class="sensory"><div><dt>味道</dt><dd>${f.taste}</dd></div><div><dt>香气</dt><dd>${f.aroma}</dd></div><div><dt>质地</dt><dd>${f.texture}</dd></div></dl><p class="state-note">以上描述对应：${f.state}。</p></section>
-  <section><p class="detail-num">02 / 何时遇见</p><h2>什么时候最好遇见它</h2><p>${f.season}</p>${f.place?`<p>${f.place}</p>`:''}${f.context?`<p>${f.context}</p>`:''}${(f.articleImages||[]).map(p=>`<figure class="article-photo"><img src="${p.src}" alt="${p.alt}"><figcaption>${f.recipeTitle}</figcaption></figure>`).join('')}</section>
-  <section id="foodRecipe"><p class="detail-num">03 / 怎么吃 · 2 人份</p><h2>${f.recipeTitle}</h2>${f.safety?`<div class="safety"><strong>入口前先留意</strong><p>${f.safety}</p></div>`:''}<p><strong>准备</strong> · ${f.ingredients}</p><ol class="recipe-steps">${f.steps.map(s=>`<li>${s}</li>`).join('')}</ol><p><strong>做到什么程度</strong> · ${f.finish}</p><p><strong>最容易失手</strong> · ${f.pitfall}</p>${f.kitchen?`<p>${f.kitchen}</p>`:''}<p class="pair-note">搭配的用意 · ${f.pair}</p><a class="bilibili-recipe-link" href="https://search.bilibili.com/all?keyword=${encodeURIComponent(`${f.name} ${f.recipeTitle}`)}" target="_blank" rel="noopener noreferrer">去 B 站搜这道做法 ↗</a></section>
+  <section><p class="detail-num">02 / 何时遇见</p><h2>${seasonHeading}</h2><p>${f.season}</p>${f.place?`<p>${f.place}</p>`:''}${f.context?`<p>${f.context}</p>`:''}${(f.articleImages||[]).map(p=>`<figure class="article-photo"><img src="${p.src}" alt="${p.alt}" loading="lazy"><figcaption>${p.caption||p.alt}</figcaption></figure>`).join('')}</section>
+  <section id="foodRecipe"><p class="detail-num">03 / 怎么吃 · 2 人份</p><h2>${f.recipeTitle}</h2>${f.safety?`<div class="safety"><strong>入口前先留意</strong><p>${f.safety}</p></div>`:''}<p><strong>准备</strong> · ${f.ingredients}</p><ol class="recipe-steps">${f.steps.map(s=>`<li>${s}</li>`).join('')}</ol><p><strong>做到什么程度</strong> · ${f.finish}</p><p><strong>最容易失手</strong> · ${f.pitfall}</p>${f.kitchen?`<p>${f.kitchen}</p>`:''}<p class="pair-note">搭配的用意 · ${f.pair}</p><a class="bilibili-recipe-link" href="https://search.bilibili.com/all?keyword=${encodeURIComponent(f.name)}" target="_blank" rel="noopener noreferrer">去 B 站搜索“${f.name}” ↗</a></section>
   <section><p class="detail-num">04 / 怎么找</p><h2>挑到合适的这一味</h2><p>${f.buy}</p>${f.buyDetail?`<p>${f.buyDetail}</p>`:''}${f.market?`<p>${f.market}</p>`:''}<p><strong>带回家后</strong> · ${f.storage}</p><button class="copy-button" data-copy="${f.search}">复制搜索词 <strong>${f.search}</strong> <span aria-hidden="true">↗</span></button></section>
   <section class="detail-sources"><p class="detail-num">继续查阅</p><ol>${f.sources.map(([title,url])=>`<li><a href="${url}" target="_blank" rel="noopener">${title} ↗</a></li>`).join('')}</ol></section>
   <section class="detail-next"><p class="detail-num">换个口味</p><h2>喜欢这一口，还可以尝什么？</h2><div>${similar.map(({food,why})=>`<button data-food="${food.id}"><strong>${food.name}</strong><span>${why} ↗</span></button>`).join('')}</div></section></div>`;
 }
-function openFood(id,push=true){const f=byId[id];if(!f)return;stopFood3d();previousFocus=document.activeElement;$('detailContent').innerHTML=detailHtml(f);if(!$('detailDialog').open)$('detailDialog').showModal();$('detailDialog').scrollTop=0;$('detailContent').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));$('detailContent').querySelector('[data-copy]').onclick=async e=>{const value=e.currentTarget.dataset.copy;try{await navigator.clipboard.writeText(value);toast('搜索词已复制')}catch{toast(`搜索词：${value}`)}};if(f.id==='foshougua-miao'){$('detailContent').querySelector('[data-food3d-eat]').onclick=()=>document.getElementById('foodRecipe').scrollIntoView({block:'start',behavior:'smooth'});mountFood3d($('detailContent').querySelector('[data-food3d-stage]'),()=>document.getElementById('foodRecipe').scrollIntoView({block:'start',behavior:'smooth'}))}if(push){const url=new URL(location.href);url.searchParams.set('food',id);history.pushState({food:id},'',url)}}
-function closeFood(push=true){if(!$('detailDialog').open)return;stopFood3d();$('detailDialog').close();if(push){const url=new URL(location.href);url.searchParams.delete('food');history.pushState({},'',url)}previousFocus?.focus?.();mountSeasonFood3d()}
+function openFood(id,push=true){const f=byId[id];if(!f)return;previousFocus=document.activeElement;$('detailContent').innerHTML=detailHtml(f);if(!$('detailDialog').open)$('detailDialog').showModal();$('detailDialog').scrollTop=0;$('detailContent').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));$('detailContent').querySelector('[data-copy]').onclick=async e=>{const value=e.currentTarget.dataset.copy;try{await navigator.clipboard.writeText(value);toast('搜索词已复制')}catch{toast(`搜索词：${value}`)}};if(push){const url=new URL(location.href);url.searchParams.set('food',id);history.pushState({food:id},'',url)}}
+function closeFood(push=true){if(!$('detailDialog').open)return;$('detailDialog').close();if(push){const url=new URL(location.href);url.searchParams.delete('food');history.pushState({},'',url)}previousFocus?.focus?.()}
 $('detailClose').onclick=()=>closeFood();$('detailDialog').addEventListener('click',e=>{if(e.target===$('detailDialog'))closeFood()});$('detailDialog').addEventListener('cancel',e=>{e.preventDefault();closeFood()});window.addEventListener('popstate',()=>{const id=new URL(location.href).searchParams.get('food');if(id&&byId[id])openFood(id,false);else closeFood(false)});
 function toast(message){$('toast').textContent=message;$('toast').classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2300)}
 function renderSearch(query=''){
   const q=query.trim().toLowerCase();const matches=q?foods.filter(f=>[f.name,...f.alias,f.region].some(v=>v.toLowerCase().includes(q))):foods;
-  $('searchResults').innerHTML=matches.length?matches.map(f=>`<button data-food="${f.id}"><span><strong>${f.name}</strong><small>${f.alias.join(' · ')}</small></span><em>${f.region} ↗</em></button>`).join(''):'<p class="search-empty">还没有找到这味食材，试试它的别名。</p>';
+  $('searchResults').innerHTML=matches.length?matches.map(f=>`<button data-food="${f.id}"><span><strong>${f.name}</strong><small>${f.alias.join(' · ')}</small></span><em>${categoryNames[f.category]} · ${f.region} ↗</em></button>`).join(''):'<p class="search-empty">还没有找到这味食材，试试它的别名。</p>';
   $('searchResults').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>{$('searchDialog').close();openFood(b.dataset.food)});
 }
 $('searchTrigger').onclick=()=>{renderSearch();$('searchDialog').showModal();$('searchInput').value='';$('searchInput').focus()};$('searchClose').onclick=()=>$('searchDialog').close();$('searchInput').oninput=e=>renderSearch(e.target.value);$('searchDialog').addEventListener('click',e=>{if(e.target===$('searchDialog'))$('searchDialog').close()});
