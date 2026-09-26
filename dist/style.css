@@ -129,3 +129,6 @@
 .flavor-aside h2 .food-name-icon,.relation .food-name-icon{width:1em;height:1em;border-radius:50%;vertical-align:-.1em;object-fit:cover}
 .brand-icon svg{width:21px;height:21px;display:block}
 @media(max-width:800px){.map-wrap{width:100%;overflow:hidden}.map-image{width:100%;min-width:0;aspect-ratio:1600/1100}.map-toolbar{padding-left:7vw;padding-right:7vw}}
+
+.map-image{cursor:default;touch-action:pan-y}.map-image.is-interactive{cursor:grab;touch-action:none}.map-image.is-interactive:active{cursor:grabbing}.bilibili-recipe-link{display:inline-flex;align-items:center;min-height:44px;margin-top:18px;padding:0 18px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:14px}.bilibili-recipe-link:hover{background:var(--ink);color:#fff}
+.map-image:focus-visible{outline:3px solid #d1ad69;outline-offset:3px}
