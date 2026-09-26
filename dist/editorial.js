@@ -72,3 +72,17 @@ const PAIR_NOTES={
   'ruanzao-mihoutao':'原味酸奶柔和熟果的酸度，不掩盖薄皮与果肉的层次。'
 };
 for(const food of window.FOODS)if(PAIR_NOTES[food.id])food.pair=PAIR_NOTES[food.id];
+
+// 用户提供的候选图；原始出处、品种及拍摄地仍在核对。
+for(const food of window.FOODS){const candidate={"zengcheng-caixin": {"image": "assets/caixin-candidate.jpg", "imageAlt": "菜心植株候选图；具体品种及拍摄地未注明。", "imageCaption": "菜心植株候选图；具体品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "rugao-takecai": {"image": "assets/takecai-candidate.jpg", "imageAlt": "黑色贴地叶丛候选图；具体品种及拍摄地未注明。", "imageCaption": "黑色贴地叶丛候选图；具体品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "honghu-oudai": {"image": "assets/oudai-candidate.jpg", "imageAlt": "新鲜水生嫩茎候选图；原料产地未注明。", "imageCaption": "新鲜水生嫩茎候选图；原料产地未注明。", "cardNote": "形态参考 · 产地未注明"}, "houtui-cai": {"image": "assets/houtui-candidate.jpeg", "imageAlt": "嫩蕨茎候选图；物种与产地未核实，不作为采食鉴别依据。", "imageCaption": "嫩蕨茎候选图；物种与产地未核实，不作为采食鉴别依据。", "cardNote": "形态参考 · 产地未注明"}, "bishan-ercai": {"image": "assets/ercai-candidate.jpeg", "imageAlt": "儿菜植株候选图；拍摄地未注明。", "imageCaption": "儿菜植株候选图；拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "juhuanao": {"image": "assets/juhuanao-candidate.jpg", "imageAlt": "食用嫩叶候选图；品种及拍摄地未注明。", "imageCaption": "食用嫩叶候选图；品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "pucai": {"image": "assets/pucai-candidate.jpg", "imageAlt": "蒲菜茎芯及水生植株候选拼图；拍摄地未注明。", "imageCaption": "蒲菜茎芯及水生植株候选拼图；拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}}[food.id];if(candidate)Object.assign(food,candidate)}
+Object.assign(window.FOODS.find(food=>food.id==='nanhu-ling'),{
+  image:'assets/nanhu-ling-whole-news-2020-crop.jpg',
+  imageAlt:'白盘中的新鲜南湖菱，青绿色果壳两侧圆钝',
+  imageCaption:'新鲜南湖菱，图源《禾味：南湖菱角，水乡情调》。',
+  cardImage:'assets/nanhu-ling-xinhua-harvest-2021.jpg',
+  cardLabel:'嘉兴南湖 · 09—10月',
+  cardNote:'',
+  icon:'assets/nanhu-ling-generated-icon.png',
+  images:[],
+  articleImages:[{src:'assets/nanhu-ling-peeled-news-2020.jpg',alt:'剥壳后的南湖菱肉，白色、弯月形',caption:'剥壳后的菱肉。图片来自《禾味：南湖菱角，水乡情调》，拍摄者未署名。'}]
+});

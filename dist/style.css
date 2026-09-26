@@ -56,10 +56,15 @@
  .season-cards{grid-template-columns:1fr}
  .season-card.card-1,.season-card:not(.card-1){min-height:280px}
  .hero-photo{width:77vw;height:285px;right:0}
- .detail-photo img{max-height:48vh}
- .map-toolbar{grid-template-columns:1fr 1fr}
- .map-toolbar #mapZoomBack{margin:0}
+.detail-photo img{max-height:48vh}
+.map-toolbar{grid-template-columns:1fr 1fr}
+.map-toolbar #mapZoomBack{margin:0}
 }
+.food-name-icon{display:inline-block;width:.82em;height:.82em;margin-left:.14em;object-fit:contain;vertical-align:-.08em}
+.hero-food-list .food-name-icon{width:22px;height:22px;margin-left:0}
+.article-photo{width:min(100%,440px);margin:30px auto 0;padding:14px;background:#edf0e8}
+.article-photo img{display:block;width:100%;max-height:500px;object-fit:contain}
+.article-photo figcaption{margin-top:10px;color:#58695d;font-size:12px;line-height:1.6}
 
 #mapBase path{vector-effect:non-scaling-stroke}
 .map-image.regional #mapBase image{opacity:.24}
