@@ -1,6 +1,6 @@
 # 图片授权与缺口
 
-2026-09-26 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 文件信息，“站内尺寸”取实际文件。照片中的异地产区已在详情图注说明。鸡头米详情另有一张明确标注的生成示意图；首页所用芡实植株图仍是真实照片。现收录 32 味，暂用近似形态图或未明许可素材的条目另列缺口。
+2026-09-27 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 或发布方提供的信息，“站内尺寸”取实际文件。图片来源与形态差异记在本表，食材页面不显示图片来源说明。现收录 47 味，近似形态图或未明许可素材的条目另列缺口。
 
 | 用途 | 站内文件与尺寸 | 原始尺寸 | 作者、来源、许可 | 修改 |
 | --- | --- | --- | --- | --- |
@@ -34,6 +34,24 @@
 | 手抓羊肉成菜参考 | `dist/assets/atushi-winter-lamb.jpg` 1280×853 | 4032×2688 | [N509FZ / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shouzhuarou_at_Yangcun_Xiaoguan,_Urumqi_(20230921133450).jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 下载 1280 像素版本；乌鲁木齐餐馆拍摄，非阿图什冬宰现场或特定地方品种 |
 | 干巴菌，云南华宁形态参考 | `dist/assets/ganbajun.jpg` 1400×1050 | 1400×1050 | [wombata / Mushroom Observer / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2014-07-26_Thelephora_ganbajun_M._Zang_443675.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 原尺寸下载；摄影地云南华宁 |
 | 烟台海肠，单环刺螠形态参考 | `dist/assets/yantai-haichang.jpg` 1920×1080 | 4000×2248 | [Popolon / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Urechis_unicinctus.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 下载 1920 像素版本；山东威海水族馆个体，不是烟台捕捞或成菜照片 |
+| 武定金雀花，锦鸡儿花朵 | `dist/assets/wuding-jinquehua.jpg` 1920×1437 | 2288×1712 | [阿桥 HQ / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E9%87%91%E9%9B%80%E8%8A%B1(%E9%8C%A6%E9%9B%9E%E5%85%92)_Caragana_sinica_-%E6%B4%9B%E9%99%BD%E8%A5%BF%E8%8B%91%E5%85%AC%E5%9C%92_Luoyang_Botanical_Garden,_China-_(9216111658).jpg)，[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | 缩至 1920 像素；洛阳植物园拍摄，画面为锦鸡儿花朵 |
+| 霍山阳荷嫩苞，姜科花苞形态参考 | `dist/assets/huoshan-yanghe.jpg` 1920×1440 | 5184×3888 | [Jeanne-Hasenmuehle / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zingiber_mioga_Bl%C3%BCtenknospem.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩至 1920 像素；该照片为 Zingiber mioga 花苞，作为近似姜科形态参考，不是霍山阳荷实拍 |
+| 库车小白杏，杏树果实形态参考 | `dist/assets/kuche-xiaobaixing.jpg` 1920×1417 | 3250×2398 | [Zeynel Cebeci / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Apricot_fruits_on_tree,_Ni%C4%9Fde_2017-08-05_01-1.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩至 1920 像素；土耳其杏树实拍，非库车小白杏地方品种 |
+
+| 建德莼菜嫩芽与胶质 | `dist/assets/jiande-chuncai.jpg` 1000×1000 | 1000×1000 | [Daiju Azuma / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Brasenia_schreberi.jpg)，[CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/) | 原图；同种莼菜食用部位图 |
+| 高淳六月黄采收场景 | `dist/assets/gaochun-junhuang.jpg` 720×480 | 720×480 | [湖州新闻报道](https://zjnews.zjol.com.cn/zjnews/zjxw/202206/t20220626_24433351.shtml)，画面有新华社水印；该页未标开放许可 | 依用户要求暂作非商业展示；非高淳固城湖本地采收照片 |
+| 清蒸中华绒螯蟹 | `dist/assets/gaochun-junhuang-cooked.jpg` 1920×1440 | 3072×2304 | [J. Patrick Fischer / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gekochte_Wollhandkrabben.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩至 1920 像素；同种成菜 |
+| 薄壳贝类 | `dist/assets/chenghai-baoke.jpg` 1920×1440 | 2048×1536 | [Saryu Mae / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arcuatula_senhousia_174751390.jpg)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 缩小；同种贝类实拍，拍摄地新西兰 |
+| 茭白嫩茎 | `dist/assets/zhenlai-jiaobai.jpg` 1920×1440 | 2048×1536 | [Micromesistius / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wild_rice_stems.jpg)，[CC0](https://creativecommons.org/publicdomain/zero/1.0/) | 缩小；玉环市场的茭白食用部位，非镇赉产地照片 |
+| 莲藕食用部位 | `dist/assets/hanshou-yubiou.jpg` 1200×935 | 1200×935 | [FotoosRobin / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lotus_root.jpg)，[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | 原图；普通莲藕食用部位图 |
+| 水芹植株 | `dist/assets/shazhou-shuiqin.jpg` 1920×1427 | 2304×1712 | [KENPEI / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Oenanthe_javanica1.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小；同种水芹，拍摄于日本大阪 |
+| 白芹形态参考 | `dist/assets/liyang-baixin.jpg` 1920×1440 | 4032×3024 | [Qon Kua / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Java_water_dropwort_20231115_054107905.jpg)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 缩小；同种水芹，拍摄于越南，不是溧阳白芹地方实拍 |
+| 从化大芥菜市场照片 | `dist/assets/conghua-dajiecai.jpg` 640×426 | 640×426 | [从化区政府报道](https://www.conghua.gov.cn/ztzlzzyyzqgzdt/content/post_10012800.html)，画面水印为南方农村报；页面未标开放许可 | 依用户要求暂作非商业展示；缩图供首页卡片 |
+| 芥菜嫩茎切面 | `dist/assets/conghua-dajiecai-plant.jpg` 1920×1440 | 4896×3672 | [Kaeichongams / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_Vegetable_Brassica_juncea_%E8%8A%A5%E8%8F%9C_Chinese_mustard_F1219-6_DSC_(1).JPG)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小；同种芥菜食用部位参考 |
+| 大连海麻线（萱藻） | `dist/assets/dalian-haimaxian.jpg` 1639×1231 | 1639×1231 | [Cwmhiraeth / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Scytosiphon_lomentaria.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 原图；同种海藻实拍 |
+| 湿紫菜形态参考 | `dist/assets/jinjiang-toushui-zicai.jpg` 1920×1028 | 4130×2211 | [Rosser1954 / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Porphyra_umbilicalis_in_water._Laverbread._Edible_alga._Irvine,_North_Ayrshire.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小；同属可食紫菜，苏格兰拍摄，不是晋江头水实拍 |
+| 干紫菜片 | `dist/assets/jinjiang-gim-sheet.jpg` 1920×1920 | 4000×4000 | [Startandstar / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Korean_seaweed_Gim_(2).jpg)，[CC0](https://creativecommons.org/publicdomain/zero/1.0/) | 缩小；韩国紫菜片食用状态参考 |
+| 禾虫食用形态 | `dist/assets/zhuhai-hechong.jpg` 1920×1440 | 2848×2136 | [Khương Việt Hà / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nereididae_in_Cuisine_of_Vietnam_2.JPG)，公共领域 | 缩小；同种 Tylorrhynchus heterochaetus，越南拍摄 |
 
 ## 暂用图片：来源或许可待核
 
@@ -44,6 +62,7 @@
 | 南湖菱首页采收 | `dist/assets/nanhu-ling-xinhua-harvest-2021.jpg` 682×1023 | [新华网报道](https://www.news.cn/foto/2021-08/25/c_1211341160_3.htm)，新华社记者徐昱摄，嘉兴油车港镇；未修形，许可待核 |
 | 南湖菱详情整果 | `dist/assets/nanhu-ling-whole-news-2020-crop.jpg` 830×608 | [《禾味：南湖菱角，水乡情调》](https://www.sohu.com/a/423457895_120057430)，今朝多看点，摄影者未署名；由 1080×608 原图裁去两侧灰边，许可待核 |
 | 南湖菱剥壳果肉 | `dist/assets/nanhu-ling-peeled-news-2020.jpg` 1080×608 | 同上，原图未修，许可待核 |
+| 桐乡槜李，枝头鲜果 | `dist/assets/tongxiang-zhuili.jpg` 720×479 | [潮新闻图片](https://tidenews.com.cn/news.html?id=2737145)；新闻页未说明开放许可，按用户要求暂用于非商业页面；原图尺寸较小，后续可换高清授权图 |
 | 南湖菱名字图标 | `dist/assets/nanhu-ling-generated-icon.png` 1536×1024 | OpenAI 图像生成工具制作的卡通示意；不作为形态鉴别图 |
 | 增城迟菜心形态参考 | `dist/assets/caixin-candidate.jpg` 1080×720 | 用户提供的候选文件；作者、来源、拍摄地、地方品种及许可待核 |
 | 施甸羊奶果枝头照片 | `dist/assets/yangnaiguo-official.jpg` 1080×1440 | 1080×1440 | 段光炳、施甸融媒体中心，[施甸县政府报道](https://www.shidian.gov.cn/info/1111/3817443.htm)；网页未标明开放许可 | 原图下载，无改动；暂按用户要求使用，许可待核 |
@@ -57,7 +76,7 @@
 
 ## 尚缺原料实拍
 
-目前 32 味均已配置页面主图，可浏览所有条目。部分照片是同类或异地产区参考，不能据此确认地方品种；南湖菱新闻照片转载许可仍待确认。新加入条目的清晰度或场景缺口如下：
+目前 47 味均已配置页面主图，可浏览所有条目。部分照片是同类或异地产区参考，不能据此确认地方品种；南湖菱新闻照片转载许可仍待确认。新加入条目的清晰度或场景缺口如下：
 
 | 食材 | 要找的画面 | 核验重点 |
 | --- | --- | --- |
@@ -82,6 +101,21 @@
 | 施甸羊奶果 | 已有施甸枝头果实照片 | 清晰度足以看果形；网页未写开放许可，后续补有明确许可的原料照 |
 | 青海蕨麻 | 已有风干食用块根照片 | 原图仅 750×481 且未写开放许可；另查到同德县采挖报道配图为 800×450，蕨麻在画面中太小，未替换主图；后续补清晰的鲜根或食品级干品照片 |
 | 烟台海肠 | 已有山东威海同种实拍 | 水族馆水缸照片，不是烟台鲜捕或成菜图；后续补高分辨率、授权清楚的食用状态照片 |
+| 武定金雀花 | 已有锦鸡儿开花实拍 | 花种匹配，但不是武定食用采收状态；后续补本地鲜花或菜市场照片 |
+| 桐乡槜李 | 已有枝头鲜果照片 | 图片为地方新闻图，720×479 且许可未开放；后续补清晰、授权明确的成熟鲜果照片 |
+| 霍山阳荷嫩苞 | 已有姜科近似花苞图 | 当前照片为 Zingiber mioga；后续补 Zingiber striolatum 阳荷花苞实拍 |
+| 库车小白杏 | 已有杏树果实高清形态参考 | 当前照片为土耳其普通杏；后续补库车小白杏本地果园或鲜果实拍 |
+| 建德莼菜 | 已有莼菜嫩叶形态图 | 后续补建德鲜莼菜采收、清洗或汤品实拍 |
+| 高淳六月黄 | 已有当地采收报道图与同种熟蟹开放许可图 | 熟蟹图不是高淳菜品；后续补本地六月黄上桌图 |
+| 澄海薄壳米 | 已有同种薄壳贝形态图 | 后续补盐鸿鲜剥薄壳米及金不换炒薄壳米实拍 |
+| 镇赉寒地茭白 | 已有茭白市场形态图 | 当前照片拍摄于浙江玉环；后续补镇赉秋季茭白实拍 |
+| 汉寿玉臂藕 | 已有普通莲藕食用部位图 | 后续补汉寿玉臂藕长节藕体与脆炒成菜实拍 |
+| 沙洲竹梗芹 | 已有日本水芹同种形态图 | 后续补张家港竹节茎及冬季露地采收实拍 |
+| 溧阳白芹 | 已有水芹同种形态图 | 当前照片为越南水芹；后续补培土形成的溧阳白茎实拍 |
+| 从化大芥菜 | 已有从化市场新闻图和芥菜同种食用部位图 | 市场图分辨率较低且带媒体水印；后续补清晰授权的从化鲜菜实拍 |
+| 大连海麻线 | 已有萱藻同种实拍 | 后续补大连三月鲜藻采收与海麻线蒸包实拍 |
+| 晋江头水紫菜 | 已有可食紫菜湿藻与干片参考图 | 湿藻照片拍摄于苏格兰，干片为韩国紫菜；后续补晋江东石头水采收及汤品实拍 |
+| 珠海禾虫 | 已有同种禾虫形态与越南料理图 | 后续补珠海出造鲜货及本地蒸蛋成菜实拍 |
 
 ## 后续照片验收
 

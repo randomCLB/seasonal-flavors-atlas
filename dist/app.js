@@ -8,10 +8,10 @@ const formatMonths=months=>{
  if(continuous)return months.some((m,i)=>i>0&&m<months[i-1])?`${months[0]}月—次年${months[months.length-1]}月`:`${months[0]}—${months[months.length-1]}月`;
  return months.map(m=>`${m}月`).join(' / ');
 };
-const foodSeasonLabel=food=>food.seasonLabel||formatMonths(food.months);
+const foodSeasonLabel=food=>formatMonths(food.peakMonths);
 const chinaParts=date=>Object.fromEntries(new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'numeric',day:'numeric'}).formatToParts(date).filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));
 const chinaNow=chinaParts(new Date());
-const monthFoods=month=>foods.filter(f=>f.months.includes(month));
+const monthFoods=month=>foods.filter(f=>f.peakMonths.includes(month));
 let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,mapCategory='all',previousFocus=null;
 foods.forEach(f=>f.places=f.placeSeasons);
 const nameWithIcon=food=>food.name;
@@ -37,9 +37,8 @@ function rankSeasonFoods(month,event){
  const previousMonth=previous?chinaParts(new Date(previous.time+24*3600*1000)).month:month===1?12:month-1;
  const originalOrder=new Map(foods.map((food,index)=>[food.id,index]));
   return monthFoods(month).sort((a,b)=>{
-  const aNew=a.entryTerms?.includes(event.index)||!a.months.includes(previousMonth),bNew=b.entryTerms?.includes(event.index)||!b.months.includes(previousMonth);
-  const aPeak=a.peakMonths?.includes(month)||false,bPeak=b.peakMonths?.includes(month)||false;
-  return Number(bNew)-Number(aNew)||Number(bPeak)-Number(aPeak)||a.months.length-b.months.length||originalOrder.get(a.id)-originalOrder.get(b.id);
+  const aNew=a.entryTerms?.includes(event.index)||!a.peakMonths.includes(previousMonth),bNew=b.entryTerms?.includes(event.index)||!b.peakMonths.includes(previousMonth);
+  return Number(bNew)-Number(aNew)||a.peakMonths.length-b.peakMonths.length||a.months.length-b.months.length||originalOrder.get(a.id)-originalOrder.get(b.id);
  });
 }
 function seasonHasBegun(food,event){
@@ -150,13 +149,12 @@ mapImage.addEventListener('wheel',event=>{if(!mapInteractionEnabled)return;event
 function relatedFoods(f){return foods.filter(other=>other.id!==f.id).map(food=>({food,shared:food.flavor.filter(tag=>f.flavor.includes(tag)),other:food.flavor.filter(tag=>!f.flavor.includes(tag))})).filter(x=>x.shared.length).sort((a,b)=>b.shared.length-a.shared.length||a.food.name.localeCompare(b.food.name,'zh')).slice(0,4).map(x=>({food:x.food,why:`共同点：${x.shared.join('、')}${x.other.length?`；另有${x.other.slice(0,2).join('、')}`:''}`}))}
 function detailHtml(f){
   const similar=relatedFoods(f);
-  const seasonHeading=f.category==='protein'?(f.seasonBasis==='catch'?'什么时候捕捞':f.seasonBasis==='slaughter'?'什么时候宰杀上市':'什么时候采收上市'):f.category==='fruit'?'什么时候成熟':'什么时候采收';
   return `<div class="detail-intro"><div class="detail-hero"><div class="detail-topline">${categoryNames[f.category]} · ${f.region} · ${foodSeasonLabel(f)}</div><h1>${nameWithIcon(f)}</h1><p>${f.intro||f.description}</p><div class="detail-tags">${f.flavor.map(t=>`<span>${t}</span>`).join('')}</div></div>
   ${f.image?`<figure class="detail-photo"><img src="${f.image}" alt="${f.imageAlt}" fetchpriority="high">${f.imageNote?`<figcaption>${f.imageNote}</figcaption>`:''}</figure>`:''}</div>
   <div class="recipe-teaser"><span>第一次尝，建议做</span><strong>${f.recipeTitle}</strong><button data-food="${f.id}" data-recipe="true">直接看做法 ↘</button></div>
   ${(f.images||[]).length?`<div class="detail-gallery">${(f.images||[]).map(p=>`<figure><img src="${p.src}" alt="${p.alt}" loading="lazy">${p.note?`<figcaption>${p.note}</figcaption>`:''}</figure>`).join('')}</div>`:''}
   <div class="detail-body"><section><p class="detail-num">01 / 认一认</p><h2>吃起来是什么样</h2><dl class="sensory"><div><dt>味道</dt><dd>${f.taste}</dd></div><div><dt>香气</dt><dd>${f.aroma}</dd></div><div><dt>质地</dt><dd>${f.texture}</dd></div></dl><p class="state-note">以上描述对应：${f.state}。</p></section>
-  <section><p class="detail-num">02 / 何时遇见</p><h2>${seasonHeading}</h2><p>${f.season}</p>${f.place?`<p>${f.place}</p>`:''}${f.context?`<p>${f.context}</p>`:''}${(f.articleImages||[]).map(p=>`<figure class="article-photo"><img src="${p.src}" alt="${p.alt}" loading="lazy">${p.note?`<figcaption>${p.note}</figcaption>`:''}</figure>`).join('')}</section>
+  <section><p class="detail-num">02 / 何时遇见</p><h2>最值得尝的时节</h2><p><strong>${foodSeasonLabel(f)}</strong></p><p>${f.season}</p>${f.place?`<p>${f.place}</p>`:''}${f.context?`<p>${f.context}</p>`:''}${(f.articleImages||[]).map(p=>`<figure class="article-photo"><img src="${p.src}" alt="${p.alt}" loading="lazy">${p.note?`<figcaption>${p.note}</figcaption>`:''}</figure>`).join('')}</section>
   <section id="foodRecipe"><p class="detail-num">03 / 怎么吃 · 2 人份</p><h2>${f.recipeTitle}</h2>${f.safety?`<div class="safety"><strong>入口前先留意</strong><p>${f.safety}</p></div>`:''}<p><strong>准备</strong> · ${f.ingredients}</p><ol class="recipe-steps">${f.steps.map(s=>`<li>${s}</li>`).join('')}</ol><p><strong>做到什么程度</strong> · ${f.finish}</p><p><strong>最容易失手</strong> · ${f.pitfall}</p>${f.kitchen?`<p>${f.kitchen}</p>`:''}<p class="pair-note">搭配的用意 · ${f.pair}</p><a class="bilibili-recipe-link" href="https://search.bilibili.com/all?keyword=${encodeURIComponent(f.name)}" target="_blank" rel="noopener noreferrer">去 B 站搜索“${f.name}” ↗</a></section>
   <section><p class="detail-num">04 / 怎么找</p><h2>挑到合适的这一味</h2><p>${f.buy}</p>${f.buyDetail?`<p>${f.buyDetail}</p>`:''}${f.market?`<p>${f.market}</p>`:''}<p><strong>带回家后</strong> · ${f.storage}</p><button class="copy-button" data-copy="${f.search}">复制搜索词 <strong>${f.search}</strong> <span aria-hidden="true">↗</span></button></section>
   <section class="detail-sources"><p class="detail-num">继续查阅</p><ol>${f.sources.map(([title,url])=>`<li><a href="${url}" target="_blank" rel="noopener">${title} ↗</a></li>`).join('')}</ol></section>
