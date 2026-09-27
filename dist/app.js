@@ -8,7 +8,7 @@ const formatMonths=months=>{
  if(continuous)return months.some((m,i)=>i>0&&m<months[i-1])?`${months[0]}月—次年${months[months.length-1]}月`:`${months[0]}—${months[months.length-1]}月`;
  return months.map(m=>`${m}月`).join(' / ');
 };
-const foodSeasonLabel=food=>formatMonths(food.peakMonths);
+const foodSeasonLabel=food=>food.seasonPrecision==='season'&&food.seasonLabel?food.seasonLabel:formatMonths(food.peakMonths);
 const chinaParts=date=>Object.fromEntries(new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'numeric',day:'numeric'}).formatToParts(date).filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));
 const chinaNow=chinaParts(new Date());
 const monthFoods=month=>foods.filter(f=>f.peakMonths.includes(month));
