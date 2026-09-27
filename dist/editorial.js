@@ -63,7 +63,7 @@ for(const food of window.FOODS){
 }
 const PHOTO_UPDATES={
   cigu:{cardImage:'assets/cigu.webp',cardNote:'普通慈姑实拍 · 非宝应老乌品种'},
-  jitoumi:{cardImage:'assets/jitoumi-plant.jpg',cardNote:'芡实植株实拍 · 慕尼黑植物园',image:'assets/jitoumi-illustration.png',imageAlt:'鲜剥鸡头米颗粒的形态示意图，非实物摄影',imageCaption:'鲜剥鸡头米的形态示意图，非实物摄影；购买时仍需以实际鲜粒确认品种与状态。',images:[{src:'assets/jitoumi-plant.jpg',alt:'植物园水池里的芡实植株与浮叶',caption:'芡实植株实拍；德国慕尼黑植物园拍摄，并非苏州鲜剥鸡头米。'}]},
+  jitoumi:{cardImage:'assets/jitoumi-plant.jpg',cardImageAlt:'芡实植株的大型浮叶与紫色叶背，拍摄于慕尼黑植物园',cardImageCaption:'芡实植株实拍 · 慕尼黑植物园',cardNote:'芡实植株实拍 · 慕尼黑植物园',image:'assets/jitoumi-illustration.png',imageAlt:'鲜剥鸡头米颗粒的形态示意图，非实物摄影',imageCaption:'鲜剥鸡头米的形态示意图，非实物摄影；购买时仍需以实际鲜粒确认品种与状态。',images:[{src:'assets/jitoumi-plant.jpg',alt:'植物园水池里的芡实植株与浮叶',caption:'芡实植株实拍；德国慕尼黑植物园拍摄，并非苏州鲜剥鸡头米。'}]},
   tanglihua:{image:'assets/tanglihua.jpg',cardNote:'川梨花实拍 · 非云南产地',imageAlt:'川梨枝头开放的白色花朵',imageCaption:'川梨花的植物形态参考；美国加州植物园拍摄。云南市场上的“棠梨花”也可能来自其他梨属植物，不能仅凭这张图鉴别。'},
   kucihua:{image:'assets/kucihua.jpg',cardNote:'苦刺植株实拍 · 非云南产地',imageAlt:'苦刺开出的白紫色花与羽状复叶',imageCaption:'苦刺（Sophora davidii）开花形态参考；法国斯特拉斯堡植物园拍摄，非采摘或焯泡后的食用状态。'},
   'honghu-oudai':{image:'assets/oudai-cooked.jpg',cardNote:'藕带成菜实拍 · 非洪湖产地',imageAlt:'一盘炒熟的藕带，能看到细嫩茎段和切面',imageCaption:'炒藕带成菜实拍；拍摄于北京，原料产地未注明，不代表洪湖鲜藕带原料。'},

@@ -14,7 +14,6 @@ const chinaNow=chinaParts(new Date());
 const monthFoods=month=>foods.filter(f=>f.months.includes(month));
 let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,mapCategory='all',previousFocus=null;
 foods.forEach(f=>f.places=f.placeSeasons);
-const imageStyle=food=>food.cardImage||food.image?`style="background-image:linear-gradient(0deg,rgba(9,36,29,.84),rgba(9,36,29,.03) 75%),url('${food.cardImage||food.image}')"`:'style="background-image:linear-gradient(145deg,#365b4e,#16372e)"';
 const nameWithIcon=food=>food.icon?`${food.name}<img class="food-name-icon" src="${food.icon}" alt="" aria-hidden="true">`:food.name;
 const categoryNames={vegetable:'蔬菜',fruit:'水果',protein:'蛋白'};
 let selectedCategory='all';
@@ -33,6 +32,15 @@ const termWindow=termEvents.filter(event=>event.time>=cycleStart.time&&event.tim
 let selectedTerm=currentTerm;
 const dateText=(time,withYear=false)=>{const d=chinaParts(new Date(time));return `${withYear?`${d.year}年`:''}${d.month}月${d.day}日`};
 const termEnd=event=>termWindow[termWindow.indexOf(event)+1];
+function rankSeasonFoods(month,event){
+ const previous=termEvents[termEvents.indexOf(event)-1];
+ const previousMonth=previous?chinaParts(new Date(previous.time+24*3600*1000)).month:month===1?12:month-1;
+ const originalOrder=new Map(foods.map((food,index)=>[food.id,index]));
+ return monthFoods(month).sort((a,b)=>{
+  const aNew=!a.months.includes(previousMonth),bNew=!b.months.includes(previousMonth);
+  return Number(bNew)-Number(aNew)||a.months.length-b.months.length||originalOrder.get(a.id)-originalOrder.get(b.id);
+ });
+}
 function renderTermRail(){
  $('terms').innerHTML=termWindow.map((event,index)=>`<button class="${event===selectedTerm?'active':''}" data-term="${index}" aria-current="${event===selectedTerm?'date':'false'}"><small>${dateText(event.time,true)}</small><strong>${termNames[event.index]}</strong></button>`).join('');
  $('terms').querySelectorAll('button').forEach(button=>button.onclick=()=>{selectedTerm=termWindow[Number(button.dataset.term)];renderTermRail();renderSeason()});
@@ -46,19 +54,21 @@ function renderCategoryFilter(list){
 function renderSeason(){
  const isNow=selectedTerm===currentTerm;
  const foodMonth=isNow?chinaNow.month:chinaParts(new Date(selectedTerm.time+24*3600*1000)).month;
- const list=monthFoods(foodMonth);
+ const list=rankSeasonFoods(foodMonth,selectedTerm);
  const ending=termEnd(selectedTerm);
  const range=`${dateText(selectedTerm.time,true)}—${ending?dateText(ending.time,true):'下一节气'}`;
  $('hero').style.backgroundImage=`linear-gradient(90deg,rgba(17,43,39,.82),rgba(17,43,39,.30)),url('assets/jieqi/${termSlugs[selectedTerm.index]}.svg')`;
- $('hero').innerHTML=`<div class="eyebrow">${isNow?'此时此刻 · ':''}${selectedTerm.year} 年 · ${range}</div><h1>${termNames[selectedTerm.index]}<span class="term-year"> / 二十四节气</span></h1><p>${termLines[selectedTerm.index]}</p><div class="hero-food-heading">${isNow?'现在可以尝的食材':'这一节气附近的食材'} · ${list.length} 味</div><div class="hero-food-list">${list.map(f=>`<button data-food="${f.id}">${nameWithIcon(f)}<span>↗</span></button>`).join('')}</div>`;
- $('seasonKicker').textContent=`${termNames[selectedTerm.index]} · ${range}`;
- $('seasonHeading').textContent=isNow?'此时此刻，可以尝这些。':`沿着${termNames[selectedTerm.index]}找当季风物。`;
  const visibleList=selectedCategory==='all'?list:list.filter(food=>food.category===selectedCategory);
+ const [featured,...otherFoods]=visibleList;
+ const image=featured&&(featured.cardImage||featured.image);
+ const imageAlt=featured&&(featured.cardImageAlt||featured.imageAlt||`${featured.name}的照片`);
+ $('hero').innerHTML=featured?`<div class="season-feature-copy"><div class="season-feature-date">${isNow?'此刻可尝 · ':''}${termNames[selectedTerm.index]} · ${dateText(selectedTerm.time)}${ending?`—${dateText(ending.time)}`:''}</div><p class="season-feature-term">${termLines[selectedTerm.index]}</p><h1>${nameWithIcon(featured)}</h1><p class="season-feature-summary">${featured.short}</p><p class="season-feature-meta">${featured.region} · ${foodSeasonLabel(featured)}</p><button class="season-feature-cta" data-food="${featured.id}">看它怎么吃 <span aria-hidden="true">↗</span></button></div><figure class="season-feature-photo">${image?`<img src="${image}" alt="${imageAlt}" fetchpriority="high">${featured.cardImageCaption?`<figcaption>${featured.cardImageCaption}</figcaption>`:''}`:'<div class="season-feature-fallback" aria-hidden="true">当季风物</div>'}</figure><div class="season-feature-also">${otherFoods.length?`<p>同一时节，还可以尝</p><div>${otherFoods.slice(0,2).map(food=>`<button data-food="${food.id}"><strong>${nameWithIcon(food)}</strong><span>${food.short}</span><i aria-hidden="true">↗</i></button>`).join('')}</div>`:''}</div>`:`<div class="season-feature-empty"><p class="season-feature-date">${termNames[selectedTerm.index]} · ${range}</p><h1>这段时节，慢慢寻找新风味。</h1><p>${termLines[selectedTerm.index]}</p></div>`;
+ $('seasonKicker').textContent=`${termNames[selectedTerm.index]} · ${range}`;
+ $('seasonHeading').textContent=visibleList.length>3?'接着认识更多当季风物':`${termNames[selectedTerm.index]}的时令风味`;
  renderCategoryFilter(list);
- $('seasonIntro').textContent=`${foodMonth}月可尝的${visibleList.length}味${selectedCategory==='all'?'食材':categoryNames[selectedCategory]}。点开看产地、时令和吃法。`;
-  $('seasonCards').innerHTML=visibleList.length?visibleList.map((f,i)=>f.id==='foshougua-miao'
-    ?`<article class="season-card photo-card card-${i+1}"><img class="season-card-photo" src="${f.cardImage||f.image}" alt="${f.cardImageAlt||f.imageAlt}" loading="lazy"><small>${f.cardLabel||f.region}</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`
-    :`<article class="season-card card-${i+1}" ${imageStyle(f)}><small>${f.cardLabel||`${f.region} · ${foodSeasonLabel(f)}`}</small><h3>${f.name}</h3><p>${f.short}</p><button data-food="${f.id}" aria-label="阅读${f.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></article>`).join(''):`<p class="empty-month category-empty">这个时节还没有收录的${categoryNames[selectedCategory]}，可以换个时节看看。</p>`;
+ const remainingFoods=otherFoods.slice(2);
+ $('seasonIntro').textContent=selectedCategory==='all'?'从新入时令的鲜味开始，接着看看还有什么想尝。':`看看${categoryNames[selectedCategory]}里有哪些合时的滋味。`;
+ $('seasonCards').innerHTML=remainingFoods.length?remainingFoods.map(food=>`<article class="season-list-card"><figure class="season-list-photo">${food.cardImage||food.image?`<img src="${food.cardImage||food.image}" alt="${food.cardImageAlt||food.imageAlt||`${food.name}的照片`}" loading="lazy">${food.cardImageCaption?`<figcaption>${food.cardImageCaption}</figcaption>`:''}`:'<div class="season-list-image-empty" aria-hidden="true">时令风物</div>'}</figure><div><small>${food.cardLabel||food.region} · ${foodSeasonLabel(food)}</small><h3>${nameWithIcon(food)}</h3><p>${food.short}</p><button data-food="${food.id}" aria-label="阅读${food.name}详情">看它怎么吃 <span aria-hidden="true">↗</span></button></div></article>`).join(''):`<p class="empty-month category-empty">本节气适合尝的几味风物都在上面了。</p>`;
   document.querySelectorAll('#hero [data-food],#seasonCards [data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food));
 }
 $('termPrev').onclick=()=>{selectedTerm=termWindow[Math.max(0,termWindow.indexOf(selectedTerm)-1)];renderTermRail();renderSeason()};

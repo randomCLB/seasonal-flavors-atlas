@@ -153,6 +153,48 @@
 .food-name-icon{display:inline-block;width:1.05em;height:1.05em;margin-left:.25em;border-radius:50%;object-fit:cover;vertical-align:-.16em}
 .detail-photo{display:flex;flex-direction:column;justify-content:center;width:100%;max-width:900px;min-width:0;margin:0 auto;padding:0 7% 34px;background:transparent}
 .detail-photo img{display:block;align-self:center;width:auto;max-width:100%;height:auto;max-height:min(62vh,560px);object-fit:contain;background:#edf0e8}
+
+/* Food-first seasonal feature */
+#hero.term-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);grid-template-areas:"copy photo" "also photo";align-items:center;column-gap:clamp(28px,5vw,76px);row-gap:0;min-height:0;padding:42px 8vw 38px;background-color:#284d42;background-size:cover;background-position:center}
+.season-feature-copy{grid-area:copy;max-width:650px}
+.season-feature-date{margin:0;color:#f3e0a9;font-size:13px;line-height:1.5;letter-spacing:.12em}
+.season-feature-term{width:auto!important;margin:16px 0 4px!important;color:#e1e9df!important;font-size:14px!important;line-height:1.7!important;text-shadow:none!important}
+#hero .season-feature-copy h1{font:600 clamp(3rem,5.6vw,5.3rem)/1.12 'Songti SC','Noto Serif CJK SC','SimSun',serif;letter-spacing:.035em;margin:6px 0 14px}
+#hero .season-feature-copy .food-name-icon{width:.38em;height:.38em;margin-left:.13em;vertical-align:.12em}
+.season-feature-summary{width:auto!important;max-width:540px!important;margin:0 0 10px!important;color:#fff!important;font-size:18px!important;line-height:1.8!important;text-shadow:none!important}
+.season-feature-meta{margin:0 0 20px;color:#e6e8d8;font-size:13px;line-height:1.6}
+.season-feature-cta{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:48px;padding:0 18px;border:1px solid #eee4c9;background:#eee4c9;color:#173a31;font-size:15px}
+.season-feature-cta:hover{background:#fff8e9}
+.season-feature-photo{position:relative;grid-area:photo;align-self:stretch;min-height:320px;height:clamp(320px,36vw,450px);margin:0;overflow:hidden;background:#e5eadc;box-shadow:0 20px 45px #061b1640}
+.season-feature-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.season-feature-photo figcaption,.season-list-photo figcaption{position:absolute;right:0;bottom:0;left:0;margin:0;padding:8px 11px;background:#102921bf;color:#fff;font-size:11px;line-height:1.45}
+.season-feature-fallback{display:grid;place-items:center;width:100%;height:100%;background:linear-gradient(145deg,#9eaf94,#466859);color:#f5f0e4;font:600 40px 'Songti SC','Noto Serif CJK SC','SimSun',serif}
+.season-feature-also{grid-area:also;align-self:start;margin-top:22px}
+.season-feature-also>p{margin:0 0 9px;color:#f2e7cc;font-size:12px;letter-spacing:.12em}
+.season-feature-also>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.season-feature-also button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:5px;min-height:74px;padding:11px 32px 10px 12px;border:1px solid #f2ead299;background:#0d2b2480;color:#fff;text-align:left}
+.season-feature-also button:hover,.season-feature-also button:focus-visible{background:#f3ead6;color:#173a31}
+.season-feature-also strong{font-size:15px;font-weight:650;line-height:1.4}
+.season-feature-also strong .food-name-icon{width:1em;height:1em}
+.season-feature-also span{font-size:11px;line-height:1.45;opacity:.82;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.season-feature-also i{position:absolute;top:10px;right:11px;font:18px Georgia;font-style:normal}
+.season-feature-empty{grid-column:1/-1;min-height:280px;align-self:center}
+.season-feature-empty h1{font:600 clamp(2rem,4vw,3rem) 'Songti SC','Noto Serif CJK SC','SimSun',serif}
+.season-feature-empty p:last-child{color:#e4e8db}
+.season-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:0 8vw 90px}
+.season-list-card{display:grid;grid-template-columns:minmax(120px,34%) minmax(0,1fr);gap:17px;min-height:180px;padding:14px;background:#f1eee5;border:1px solid #e4dfd2}
+.season-list-photo{position:relative;display:block;min-width:0;min-height:150px;max-height:220px;margin:0;overflow:hidden;background:#dfe6dc}
+.season-list-photo>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.season-list-image-empty{display:grid;place-items:center;width:100%;height:100%;min-height:150px;color:#698073;font:16px 'Songti SC','Noto Serif CJK SC','SimSun',serif}
+.season-list-card>div{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:5px 4px 2px 0}
+.season-list-card small{font-size:11px;line-height:1.5;color:#66756c}
+.season-list-card h3{margin:8px 0 5px;font:600 24px/1.3 'Songti SC','Noto Serif CJK SC','SimSun',serif}
+.season-list-card h3 .food-name-icon{width:.8em;height:.8em}
+.season-list-card p{margin:0 0 12px;color:#43584e;font-size:13px;line-height:1.6}
+.season-list-card button{display:flex;align-items:center;gap:15px;min-height:40px;margin-top:auto;padding:0;border:0;border-bottom:1px solid #74877a;background:transparent;color:#193d35;font-size:13px}
+.season-list-card button:hover{color:#926b34;border-color:#926b34}
+@media(max-width:800px){#hero.term-hero{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);padding:32px 6vw;column-gap:24px}.season-feature-photo{height:340px;min-height:280px}.season-cards{grid-template-columns:1fr;padding:0 6vw 85px}}
+@media(max-width:520px){#hero.term-hero{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "photo" "also";gap:13px;padding:24px 7vw 25px}.season-feature-term{margin:9px 0 2px!important;font-size:13px!important}.season-feature-date{font-size:12px}.season-feature-summary{font-size:16px!important;line-height:1.6!important}.season-feature-meta{margin-bottom:13px}.season-feature-cta{min-height:44px}.season-feature-photo{width:100%;height:clamp(205px,59vw,250px);min-height:0;aspect-ratio:1.45;box-shadow:0 12px 28px #061b1640}.season-feature-also{margin-top:1px}.season-feature-also>div{gap:7px}.season-feature-also button{min-height:75px;padding:9px 25px 8px 9px}.season-feature-also strong{font-size:13px}.season-feature-also span{font-size:10px}.season-cards{grid-template-columns:1fr;gap:10px;padding:0 7vw 80px}.season-list-card{grid-template-columns:105px minmax(0,1fr);gap:12px;min-height:145px;padding:10px}.season-list-photo{min-height:125px;max-height:150px}.season-list-photo figcaption{padding:5px 6px;font-size:9px}.season-list-card h3{font-size:20px}.season-list-card p{font-size:12px;line-height:1.5}.season-list-card small{font-size:10px}.season-list-card button{min-height:36px}}
 .detail-photo figcaption{margin-top:9px;padding:0 6px;text-align:left;line-height:1.6}
 .detail-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:22px;padding:28px 7%;background:#eef0e8}
 .detail-gallery figure{min-width:0;margin:0}
