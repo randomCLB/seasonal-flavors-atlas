@@ -1,6 +1,6 @@
 # 图片授权与缺口
 
-2026-09-27 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 或发布方提供的信息，“站内尺寸”取实际文件。图片来源与形态差异记在本表，食材页面不显示图片来源说明。现收录 47 味，近似形态图或未明许可素材的条目另列缺口。
+2026-09-28 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 或发布方提供的信息，“站内尺寸”取实际文件。图片来源与形态差异记在本表，食材页面不显示图片来源说明。现收录 55 味；近似形态图或未明许可素材另列缺口。
 
 | 用途 | 站内文件与尺寸 | 原始尺寸 | 作者、来源、许可 | 修改 |
 | --- | --- | --- | --- | --- |
@@ -52,6 +52,15 @@
 | 湿紫菜形态参考 | `dist/assets/jinjiang-toushui-zicai.jpg` 1920×1028 | 4130×2211 | [Rosser1954 / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Porphyra_umbilicalis_in_water._Laverbread._Edible_alga._Irvine,_North_Ayrshire.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小；同属可食紫菜，苏格兰拍摄，不是晋江头水实拍 |
 | 干紫菜片 | `dist/assets/jinjiang-gim-sheet.jpg` 1920×1920 | 4000×4000 | [Startandstar / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Korean_seaweed_Gim_(2).jpg)，[CC0](https://creativecommons.org/publicdomain/zero/1.0/) | 缩小；韩国紫菜片食用状态参考 |
 | 禾虫食用形态 | `dist/assets/zhuhai-hechong.jpg` 1920×1440 | 2848×2136 | [Khương Việt Hà / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nereididae_in_Cuisine_of_Vietnam_2.JPG)，公共领域 | 缩小；同种 Tylorrhynchus heterochaetus，越南拍摄 |
+| 临潼火晶柿子，枝头成熟果 | `dist/assets/lintong-huojing.webp` 600×450 | 600×450 | [FreshPlaza 报道图片](https://www.freshplaza.com/north-america/article/9154223/production-of-chinese-fire-crystal-persimmons-returns-to-normal/)；页面未说明摄影者或开放许可 | 原尺寸转 WebP；对应火晶柿子，许可待确认 |
+| 连云港沙光鱼形态 | `dist/assets/lyg-shaguang-fish.webp` 1800×628 | 1800×628 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Acanthogobius_hasta.jpg)，CC0 | 原图转 WebP；同种鱼 |
+| 檀香橄榄枝头果实参考 | `dist/assets/minqing-tanxiang-olive.webp` 1920×1440 | 1920×1440 | [Pos Lam Wrowury Uemkpoa / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%AF%B6%E7%90%B3_Po_Lam_%E9%81%8B%E9%9A%86%E8%B7%AF_Wan_Lung_Road_tree_n_fruits_June_2021_SS2_04.jpg)，CC BY-SA 4.0 | 原尺寸转 WebP；Canarium 属果实参考，非闽清地方实拍 |
+| 长街蛏子贝壳形态 | `dist/assets/ninghai-changjie-clam-specimen.webp` 1350×1800 | 1350×1800 | [Littlesailfish / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Comparison_with_Sinonovacula_constricta_(left).jpg)，CC BY-SA 4.0 | 原尺寸转 WebP；Sinonovacula constricta 贝壳标本形态 |
+| 宁海滩涂蛏子采捕场景 | `dist/assets/ninghai-changjie-clam-harvest.webp` 600×400 | 600×400 | [中国宁波网](https://www.cnnb.com.cn/pic/003/010/597/00301059782_65c2ea99.jpg)，未说明开放许可 | 原尺寸转 WebP；新闻图片，暂用 |
+| 金堂鲜羊肚菌形态 | `dist/assets/jintang-morel.webp` 1800×1350 | 1800×1350 | [Tim Sage / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Morchella_importuna_112758.jpg)，CC BY-SA 3.0 | 缩小并转 WebP；Morchella importuna 实拍 |
+| 宁海白枇杷果肉与鲜果 | `dist/assets/ninghai-white-loquat.webp` 1080×810 | 1080×810 | [宁波电视台](https://www.ncmc.nbtv.cn/xwdsg/nb/40275612.shtml)；发布方未说明开放许可 | 原图转 WebP；页面实拍白肉与枝头果，许可待确认 |
+| 无核黄皮食用状态参考 | `dist/assets/yunan-wuhuangpi.webp` 1800×1350 | 1800×1350 | [Earth100 / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Seedless_Wampee.JPG)，CC BY 3.0 | 缩小并转 WebP；整果及剥开果实，非郁南产地实拍 |
+| 西双版纳木奶果成熟果 | `dist/assets/xishuangbanna-munaiguo.webp` 638×435 | 638×435 | [中国科学院西双版纳热带植物园](https://www.xtbg.ac.cn/2018/xwzx/ylxx/202210/t20221014_6527807.html)；页面未说明开放许可 | 原尺寸转 WebP；市场成熟果实照片，许可待确认 |
 
 ## 暂用图片：来源或许可待核
 
@@ -76,7 +85,7 @@
 
 ## 尚缺原料实拍
 
-目前 47 味均已配置页面主图，可浏览所有条目。部分照片是同类或异地产区参考，不能据此确认地方品种；南湖菱新闻照片转载许可仍待确认。新加入条目的清晰度或场景缺口如下：
+目前 55 味均已配置页面主图，可浏览所有条目。部分照片是同类或异地产区参考，不能据此确认地方品种；新加入的火晶柿子、宁海蛏子采捕图、宁海白枇杷和木奶果图片未标开放许可，仍待确认。新加入条目的清晰度或场景缺口如下：
 
 | 食材 | 要找的画面 | 核验重点 |
 | --- | --- | --- |
