@@ -13,7 +13,7 @@ concurrency:
 # Reviewed snapshot only: preview never replaces the stable site's root files.
 # Update this SHA deliberately after reviewing a newer v1.1 commit.
 env:
-  PREVIEW_SHA: eb5ee42afb9b91e19b0f605709effc467a418582
+  PREVIEW_SHA: 69626c1f62cef3b417723db977840a52b8710882
 jobs:
   deploy:
     environment:
@@ -41,6 +41,7 @@ jobs:
           node --check dist/lottery-core.js
           node --check dist/lottery-ui.js
           node --check dist/lottery-profiles.js
+          node --check dist/lottery-senses.js
           node --test tests/lottery.test.cjs
       - name: Compose stable root and isolated preview
         run: |
@@ -90,6 +91,7 @@ jobs:
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
           paths = ['index.html', 'preview/v1.1/lottery.html', 'preview/v1.1/lottery.css',
                    'preview/v1.1/lottery-core.js', 'preview/v1.1/lottery-ui.js',
+                   'preview/v1.1/lottery-senses.js', 'preview/v1.1/lottery-questions.css',
                    'preview/v1.1/lottery-profiles.js', 'preview/v1.1/solar-terms.js',
                    'preview/v1.1/data.js', 'preview/v1.1/editorial.js',
                    'preview/v1.1/editorial-notes.js', 'preview/v1.1/assets/chayote-shoots.webp']
