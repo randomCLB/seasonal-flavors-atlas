@@ -58,6 +58,7 @@
 | 蒜炒塌棵菜 | `dist/assets/rugao-tatsoi-japan.jpg` 1024×683 | 1024×683 | [献立日记「タアサイとにんにくの中華炒め」](https://conigliobianco2014.com/entry/2024/05/05/082921)，开放许可未注明 | 原图下载；日本同类塌棵菜，非如皋地方品种身份图 |
 | 香干炒水芹 | `dist/assets/shazhou-watercelery-gan.jpg` 744×992 | 744×992 | [下厨房「香干炒水芹」](https://m.xiachufang.com/recipe/104152485/)，开放许可未注明 | 原图下载；水芹产地未注明，非沙洲竹梗芹品种身份图；尺寸有限 |
 | 海菜花炒鸡蛋 | `dist/assets/eryuan-haicaihua-egg.jpg` 1400×1580 | 原图尺寸未注明 | [下厨房「水性杨花（海菜花）摊鸡蛋和凉拌菜」](https://m.xiachufang.com/recipe/107541403/)，开放许可未注明 | 使用网站缩图；食材称海菜花，产地与洱源品系未注明；仅作同类成菜参考 |
+| 大芥菜焖猪肉 | `dist/assets/conghua-mustard-pork.jpg` 800×600 | 800×600 | [Flambo「芥菜排骨」](https://flambo.com.tw/blogs/recipes/%E8%8A%A5%E8%8F%9C%E6%8E%92%E9%AA%A8-pork-ribs-with-gai-choy)，开放许可未注明 | 原图下载；同类鲜大芥菜与猪肉焖煮，非从化地方品种，主做法使用肉片而图中为排骨 |
 | 白肉枇杷剥开后果肉 | `dist/assets/ninghai-loquat-open.jpg` 767×574 | 767×574 | [三联生活周刊「白玉枇杷」](https://beta.lifeweek.com.cn/h5/article/detail.do?artId=246585)，开放许可未注明 | 原图下载，无改动；东山白玉枇杷，与宁海白不同产地品种，仅作白肉枇杷食用状态参考 |
 | 刺梨，同种异地形态参考 | `dist/assets/cili.jpg` 1920×1440 | 4032×3024 | [Michael Wolf](https://commons.wikimedia.org/wiki/File:Rosa_roxburghii_fruit_33597.JPG)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小，无修复；拍摄于奥地利林茨 |
 | 沙棘，同种异地形态参考 | `dist/assets/shajiguo.jpg` 1920×1280 | 5593×3729 | [Stephan Sprinz](https://commons.wikimedia.org/wiki/File:Sanddorn_(Hippophae_rhamnoides)_auf_Spiekeroog_02.jpg)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 缩小，无修复；拍摄于德国 Spiekeroog |
