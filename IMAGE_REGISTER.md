@@ -1,29 +1,74 @@
 # 图片授权与缺口
 
-2026-09-28 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 或发布方提供的信息，“站内尺寸”取实际文件。图片来源与形态差异记在本表，食材页面不显示图片来源说明。现收录 55 味；近似形态图或未明许可素材另列缺口。
+2026-09-29 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 或发布方提供的信息，“站内尺寸”取实际文件。图片来源与形态差异记在本表，食材页面不显示图片来源说明。现收录 55 味；详情页使用成菜图或水果剖面图，缺口见 `docs/FOOD_PHOTO_GAPS.md`。
 
 | 用途 | 站内文件与尺寸 | 原始尺寸 | 作者、来源、许可 | 修改 |
 | --- | --- | --- | --- | --- |
 | 佛手瓜苗主图，越南采收的嫩梢 | `dist/assets/chayote-raw.jpg` 1500×996 | 1500×996 | [Neil Palmer / CIAT](https://commons.wikimedia.org/wiki/File:Chayote_contd_11_lo_(4070398839).jpg)，[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | 原尺寸下载，无改动 |
-| 佛手瓜叶片与卷须，详情辅助形态参考 | `dist/assets/chayote-leaf-tendril.webp` 1600×1067 | 5472×3648 | [Bijaya Kumar Shrestha / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Green_leaves_of_Chayote.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP；非食用嫩梢采收照片，详情图注已说明 |
+| 佛手瓜叶片与卷须，资料留存 | `dist/assets/chayote-leaf-tendril.webp` 1600×1067 | 5472×3648 | [Bijaya Kumar Shrestha / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Green_leaves_of_Chayote.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP；非食用嫩梢采收照片，目前详情页不展示 |
 | 佛手瓜苗名字旁的小图标 | `dist/assets/foshougua-icon.svg` 48×48 | 手绘矢量 | 项目内绘制的卷须与叶片小图标 | 只作识别用小图，不覆盖或替代首页、详情实拍图 |
 | 佛手瓜苗成菜 | `dist/assets/chayote-shoots.webp` 2400×1831 | 3734×2848 | [LWYang](https://commons.wikimedia.org/wiki/File:Stir_fried_chayote_shoots_in_Taiwan.jpg)，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | 缩小、转 WebP |
 | 洪山菜薹 | `dist/assets/hongshan-caitai.webp` 1800×2400 | 3024×4032 | [ZhengZhou](https://commons.wikimedia.org/wiki/File:Hongshan_Caitai.jpeg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP |
+| 洪山菜薹成菜 | `dist/assets/hongshan-caitai-cooked.jpg` 1920×1439 | 3140×2354 | [Zheng Zhou](https://commons.wikimedia.org/wiki/File:Fried_Hongshan_Caitai_with_garlic_and_chili.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 使用 Commons 缩略图；北京拍摄的蒜辣炒菜薹，不代表本站菜谱中的精确配料 |
 | 刺嫩芽，同种异地形态参考 | `dist/assets/cinenya.webp` 1920×2400 | 2240×2800 | [Melsj](https://commons.wikimedia.org/wiki/File:Korean_angelica-tree_shoots.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP |
 | 普通慈姑形态参考，非宝应品种主图 | `dist/assets/cigu.webp` 2400×1800 | 4032×3024 | [Nesnad](https://commons.wikimedia.org/wiki/File:Kuwai_tubers_-_for_sale_-_2024_Dec_28.jpeg)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 缩小、转 WebP |
 | 地耳，野外形态参考 | `dist/assets/dier.webp` 2400×1629 | 3000×2036 | [Holger Krisp](https://commons.wikimedia.org/wiki/File:Cyanobacteria_Nostoc_commune.jpg)，[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | 缩小、转 WebP |
 | 干黄花菜 | `dist/assets/huanghuacai.webp` 2400×2400 | 2448×2448 | [François Nguyen](https://commons.wikimedia.org/wiki/File:Dried_day_lily.jpg)，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | 缩小、转 WebP |
 | 八月瓜，三叶木通果实参考 | `dist/assets/bayuegua.webp` 2400×1600 | 6000×4000 | [Alpsdake](https://commons.wikimedia.org/wiki/File:Akebia_trifoliata_(fruits_s6).jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP |
+| 八月瓜自然开裂剖面，详情图 | `dist/assets/bayuegua-cut.jpg` 1920×1440 | 4000×3000 | [Fumikas Sagisavas](https://commons.wikimedia.org/wiki/File:Akebia_melon_cut_in_half.jpg)，[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | 使用 Commons 1920px 缩略图；原图标注为 Stauntonia latifolia，属于“八月瓜”俗称覆盖范围的一种 |
 | 软枣猕猴桃，同种异地形态参考 | `dist/assets/ruanzao.webp` 2400×1800 | 12000×9000 | [anagoria](https://commons.wikimedia.org/wiki/File:20240928_Kiwibeeren_-_actinidia_arguta_anagoria.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小、转 WebP |
+| 软枣猕猴桃剖面 | `dist/assets/ruanzao-cut.jpg` 1569×1047 | 1569×1047 | [Rillke](https://commons.wikimedia.org/wiki/File:Actinidia_arguta_fruit_-_hardy_kiwi_-_Kiwibeere_01.jpg)，[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | 原图下载，无改动；同种果实摄于意大利，品种未注明 |
+| 临潼火晶柿子剖面 | `dist/assets/lintong-huojing-cut.jpg` 1080×720 | 1080×720 | [澎湃新闻·澎湃好物](https://www.thepaper.cn/newsDetail_forward_19977238)，网页未标开放许可 | 原图下载，无改动；依用户要求暂作非商业展示，许可仍需确认 |
+| 库车小白杏剖面 | `dist/assets/kuche-xiaobaixing-cut.jpg` 600×600 | 600×600 | [特色谷·库车特产](https://www.tesegu.com/techan/26158.html)，网页未标开放许可 | 原图下载，无改动；依用户要求暂作非商业展示，许可仍需确认；尺寸较小，后续需高清替换 |
+| 刺梨剖面 | `dist/assets/cili-cut.jpg` 600×400 | 600×400 | [新浪财经转载](https://finance.sina.cn/2024-11-07/detail-incvexcf2583703.d.html)，原摄影者与开放许可未标明 | 原图下载，无改动；依用户要求暂作非商业展示；尺寸较小，后续需高清替换 |
+| 郁南无核黄皮剖面 | `dist/assets/yunan-huangpi-cut.jpg` 571×407 | 571×407 | [新浪新闻转载](https://k.sina.cn/article_2189824074_8286104a00100oip3.html?from=food)，原摄影者与开放许可未标明 | 原图下载，无改动；依用户要求暂作非商业展示；尺寸较小，后续需高清替换 |
+| 木奶果自然裂开剖面 | `dist/assets/munaiguo-split.jpg` 1200×675 | 1200×675 | [东森财经新闻](https://fnc.ebc.net.tw/fncnews/life/60238)，开放许可未标明 | 原图下载，无改动；依用户要求暂作非商业展示；品种与西双版纳条目是否完全相同待核 |
+| 羊肚菌鸡汤成菜 | `dist/assets/jintang-morel-soup.jpg` 1080×604 | 1080×604 | [方太菜谱](https://hsadmin.fotile.com/h5happylife/article/detail.html?id=12252)，网页未标开放许可 | 原图下载，无改动；依用户要求暂作非商业展示；原料产地未注明 |
+| 沙光鱼豆腐汤成菜 | `dist/assets/lyg-shaguang-soup.jpg` 1600×2133 | 2448×3264 | [下厨房「鲜美无比的沙光鱼豆腐汤」· 小羽-12](https://m.xiachufang.com/recipe/103762004/)，网页未标开放许可 | 下载网站缩图，无其他修改；依用户要求暂作非商业展示；菜谱明确使用连云港沙光鱼 |
+| 海胆蒸蛋成菜 | `dist/assets/dalian-sea-urchin-egg2.jpg` 1440×1080 | 1440×1080 | [note「海胆蒸蛋」· 酒徒](https://note.com/chijintianxia/n/nf6fba060743b)，网页未标开放许可 | 原图下载，无改动；依用户要求暂作非商业展示；使用海胆黄，具体品种和产地未注明，不作为紫海胆身份照片 |
+| 菊花脑鸭蛋汤 | `dist/assets/juhuanao-egg-soup.jpg` 1400×1120 | 3024×2419 | [下厨房「菊花脑鸭蛋汤」](https://m.xiachufang.com/recipe/104656114/)，网页未标开放许可 | 使用网站缩图；依用户要求暂作非商业展示；食用嫩叶与鸭蛋清汤 |
+| 金雀花炒鸡蛋 | `dist/assets/wuding-jinquehua-eggs.jpg` 1400×1400 | 2160×2160 | [下厨房「金雀花炒鸡蛋」](https://m.xiachufang.com/recipe/106160763/)，网页未标开放许可 | 使用网站缩图；依用户要求暂作非商业展示；产地与花种未注明，仅作同类成菜图 |
+| 阳荷炒肉片 | `dist/assets/huoshan-yanghe-pork.jpg` 1400×1593 | 2250×2560 | [下厨房「安徽名菜洋荷姜炒肉片」](https://m.xiachufang.com/recipe/106884182/)，网页未标开放许可 | 使用网站缩图；依用户要求暂作非商业展示；原料产地未注明 |
+| 紫菜蛋花汤 | `dist/assets/jinjiang-zicai-soup.jpg` 1242×994 | 1242×994 | [下厨房「霞浦头水紫菜鸡蛋汤」](https://m.xiachufang.com/recipe/103520854/)，网页未标开放许可 | 使用网站图片；依用户要求暂作非商业展示；同类头水紫菜，不代表晋江东石产品 |
+| 蛏子蒸蛋 | `dist/assets/ninghai-razor-clam-egg.jpg` 1068×1236 | 1068×1236 | [下厨房「蛏子蒸蛋」](https://m.xiachufang.com/recipe/107705466/)，网页未标开放许可 | 使用网站图片；依用户要求暂作非商业展示；蛏子产地未注明 |
+| 金不换炒薄壳米 | `dist/assets/chenghai-baoke-rice.jpg` 864×1152 | 864×1152 | [下厨房「九层塔炒薄壳米」](https://m.xiachufang.com/recipe/105827432/)，网页未标开放许可 | 使用网站图片；依用户要求暂作非商业展示；贝肉产地未注明 |
+| 干巴菌青椒炒饭 | `dist/assets/ganbajun-rice.jpg` 1400×788 | 2160×1215 | [下厨房「青椒干巴菌炒饭」](https://m.xiachufang.com/recipe/101846175/)，网页未标开放许可 | 使用网站缩图；依用户要求暂作非商业展示；原料产地未注明 |
+| 清水煮儿菜 | `dist/assets/bishan-ercai-boiled.jpg` 1400×1400 | 2478×2478 | [下厨房「清水煮儿菜」](https://m.xiachufang.com/recipe/1082293/)，网页未标开放许可 | 使用网站缩图；依用户要求暂作非商业展示；品种产地未注明 |
+| 开洋蒲菜 | `dist/assets/pucai-shrimp.jpg` 768×730 | 768×730 | [下厨房「开洋蒲菜」](https://m.xiachufang.com/recipe/103078308/)，网页未标开放许可 | 使用网站图片；依用户要求暂作非商业展示；原料产地未注明 |
+| 凉拌刺竹笋 | `dist/assets/cizhousun-salad.jpg` 1400×929 | 2448×1624 | [下厨房「凉拌刺竹笋」](https://m.xiachufang.com/recipe/104126228/)，网页未标开放许可 | 使用网站缩图；依用户要求暂作非商业展示；原料产地未注明 |
+| 蒌蒿炒腊肉 | `dist/assets/yangxin-huhao-bacon.jpg` 1400×1867 | 1536×2048 | [下厨房「篱蒿炒腊肉」](https://m.xiachufang.com/recipe/101719762/)，网页未标开放许可 | 使用网站缩图；依用户要求暂作非商业展示；同类蒌蒿，非阳新品系身份图 |
+| 枞菌豆腐汤 | `dist/assets/congjun-tofu-soup.jpg` 1032×1087 | 1032×1087 | [下厨房「野生枞菌豆腐汤」](https://m.xiachufang.com/recipe/106469037/)，网页未标开放许可 | 使用网站图片；依用户要求暂作非商业展示；菌种与产地未注明，不作为野菌鉴别依据 |
+| 海肠捞饭 | `dist/assets/yantai-haichang-rice.jpg` 684×912 | 684×912 | [下厨房「烟台海肠捞饭」](https://m.xiachufang.com/recipe/104061847/)，网页未标开放许可 | 使用网站图片；依用户要求暂作非商业展示；照片分辨率较低，后续应替换 |
+| 茭白炒肉丝 | `dist/assets/zhenlai-jiaobai-pork.jpg` 1400×937 | 1616×1081 | [下厨房「茭白炒肉丝」](https://m.xiachufang.com/recipe/101843631/)，网页未标开放许可 | 使用网站缩图；依用户要求暂作非商业展示；原料产地未注明，原图带作者标记 |
+| 沙棘鲜果剖面 | `dist/assets/shajiguo-cut.jpg` 720×405 | 720×405 | [Finess サジー产品资料](https://item.rakuten.co.jp/finess-saji/c/0000000114/)，网页未标开放许可 | 原图下载，无改动；同类沙棘果实，产地与品种未注明，清晰度有限 |
+| 羊奶果剖面 | `dist/assets/yangnaiguo-cut.jpg` 1920×1440 | 4000×3000 | [Shwabb1 / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Elaeagnus_latifolia_(bastard_oleaster)_2.jpg)，[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | 使用 Commons 缩图；同种异地果实，非施甸拍摄 |
+| 福建鲜橄榄剖面 | `dist/assets/minqing-olive-cut.jpg` 1148×653 | 1148×653 | [福建省农业农村厅「福州橄榄」](https://nynct.fujian.gov.cn/ztzl/fsfsfnyp/202512/t20251215_7046515.htm)，开放许可未注明 | 原图下载，无改动；同类中国橄榄，具体品种未注明，不冒充檀香品种 |
+| 南湖菱剥壳成菜 | `dist/assets/nanhu-ling-peeled-cooked.jpg` 1400×933 | 原图尺寸未注明 | [下厨房「南湖菱」· 贝拉](https://m.xiachufang.com/recipe/105939491/)，开放许可未注明 | 使用网站缩图；依用户要求暂作非商业展示；保留照片原有署名 |
+| 慈姑烧肉 | `dist/assets/baoying-cigu-pork2.jpg` 1400×1400 | 原图尺寸未注明 | [下厨房「腐乳慈菇红烧肉」](https://m.xiachufang.com/recipe/107489524/)，开放许可未注明 | 使用网站缩图；原料产地与宝应品种未注明，仅作同类成菜图 |
+| 地耳蛋花汤 | `dist/assets/dier-egg-soup.jpg` 1400×1050 | 原图尺寸未注明 | [下厨房「地皮菜蛋花汤」](https://m.xiachufang.com/recipe/104177529/)，开放许可未注明 | 使用网站缩图；原料产地未注明 |
+| 猴腿菜炒肉 | `dist/assets/houtui-pork.jpg` 1152×2560 | 1152×2560 | [下厨房「猴腿炒肉」](https://m.xiachufang.com/recipe/107759459/)，开放许可未注明 | 原图下载；物种与产地未核，作为成菜参考，不用来鉴别野生蕨菜 |
+| 醋炒藕片 | `dist/assets/hanshou-ou-vinegar2.jpg` 800×532 | 800×532 | [下厨房「醋溜藕片」](https://m.xiachufang.com/recipe/1012060/)，开放许可未注明 | 原图下载；普通莲藕，非汉寿玉臂藕品种身份图；清晰度有限 |
+| 焯熟刺嫩芽 | `dist/assets/cinengya-cold-final.jpg` 1400×1867 | 原图长边 4096 | [下厨房「刺老芽凉拌」最后步骤图](https://m.xiachufang.com/recipe/107741329/)，开放许可未注明 | 使用网站缩图；原料产地未注明，不作野菜鉴别 |
+| 豆豉炒苦刺花 | `dist/assets/kucihua-douchi.jpg` 1280×1708 | 1280×1708 | [下厨房「豆豉炒苦刺花」](https://m.xiachufang.com/recipe/107767548/)，开放许可未注明 | 原图下载；配料含肉丁，产地未注明 |
+| 白芹炒香干 | `dist/assets/liyang-baiqin-gan.jpg` 1280×1706 | 1280×1706 | [下厨房「溧阳白芹炒香干」](https://m.xiachufang.com/recipe/107562260/)，开放许可未注明 | 原图下载；菜谱明确为溧阳白芹 |
+| 莼菜蛋花汤 | `dist/assets/jiande-chuncai-egg-final.jpg` 1000×750 | 1000×750 | [下厨房「莼菜蛋花羹」最后步骤图](https://m.xiachufang.com/recipe/103782253/)，开放许可未注明 | 原图下载；原料产地未注明，不代表建德品种身份 |
+| 海麻线蒸包 | `dist/assets/dalian-haimaxian-buns-final.jpg` 1152×864 | 1152×864 | [下厨房「海麻线包子（大连传统口味）」最后步骤图](https://m.xiachufang.com/recipe/106135010/)，开放许可未注明 | 原图下载；未切开，面皮可见深色海藻馅 |
+| 禾虫蒸蛋 | `dist/assets/zhuhai-hechong-egg-final.jpg` 1080×864 | 1080×864 | [下厨房「广东名菜：禾虫蒸蛋」最后步骤图](https://m.xiachufang.com/recipe/104225070/)，开放许可未注明 | 原图下载；禾虫产地未注明，非珠海品种身份证明 |
+| 白灼菜心 | `dist/assets/zengcheng-caixin-plem.jpg` 719×503 | 719×503 | [PLEM「白灼」](https://plem.com/article.php?i=526&nav=life-style-food)，开放许可未注明 | 原图下载；普通菜心，非增城迟菜心品种身份图；尺寸有限 |
+| 蒜炒塌棵菜 | `dist/assets/rugao-tatsoi-japan.jpg` 1024×683 | 1024×683 | [献立日记「タアサイとにんにくの中華炒め」](https://conigliobianco2014.com/entry/2024/05/05/082921)，开放许可未注明 | 原图下载；日本同类塌棵菜，非如皋地方品种身份图 |
+| 香干炒水芹 | `dist/assets/shazhou-watercelery-gan.jpg` 744×992 | 744×992 | [下厨房「香干炒水芹」](https://m.xiachufang.com/recipe/104152485/)，开放许可未注明 | 原图下载；水芹产地未注明，非沙洲竹梗芹品种身份图；尺寸有限 |
+| 海菜花炒鸡蛋 | `dist/assets/eryuan-haicaihua-egg.jpg` 1400×1580 | 原图尺寸未注明 | [下厨房「水性杨花（海菜花）摊鸡蛋和凉拌菜」](https://m.xiachufang.com/recipe/107541403/)，开放许可未注明 | 使用网站缩图；食材称海菜花，产地与洱源品系未注明；仅作同类成菜参考 |
+| 白肉枇杷剥开后果肉 | `dist/assets/ninghai-loquat-open.jpg` 767×574 | 767×574 | [三联生活周刊「白玉枇杷」](https://beta.lifeweek.com.cn/h5/article/detail.do?artId=246585)，开放许可未注明 | 原图下载，无改动；东山白玉枇杷，与宁海白不同产地品种，仅作白肉枇杷食用状态参考 |
 | 刺梨，同种异地形态参考 | `dist/assets/cili.jpg` 1920×1440 | 4032×3024 | [Michael Wolf](https://commons.wikimedia.org/wiki/File:Rosa_roxburghii_fruit_33597.JPG)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小，无修复；拍摄于奥地利林茨 |
 | 沙棘，同种异地形态参考 | `dist/assets/shajiguo.jpg` 1920×1280 | 5593×3729 | [Stephan Sprinz](https://commons.wikimedia.org/wiki/File:Sanddorn_(Hippophae_rhamnoides)_auf_Spiekeroog_02.jpg)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 缩小，无修复；拍摄于德国 Spiekeroog |
-| 芡实植株，鸡头米首页卡片及详情次图 | `dist/assets/jitoumi-plant.jpg` 1920×1256 | 4543×2972 | [Diego Delso](https://commons.wikimedia.org/wiki/File:Euryale_ferox,_Jard%C3%ADn_Bot%C3%A1nico,_M%C3%BAnich,_Alemania,_2013-09-08,_DD_01.JPG)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小；德国慕尼黑植物园拍摄，不能代表苏州鲜粒 |
+| 芡实植株，鸡头米首页卡片 | `dist/assets/jitoumi-plant.jpg` 1920×1256 | 4543×2972 | [Diego Delso](https://commons.wikimedia.org/wiki/File:Euryale_ferox,_Jard%C3%ADn_Bot%C3%A1nico,_M%C3%BAnich,_Alemania,_2013-09-08,_DD_01.JPG)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小；德国慕尼黑植物园拍摄，不能代表苏州鲜粒 |
+| 桂花糖水鸡头米成菜 | `dist/assets/jitoumi-soup.jpg` 1080×719 | 1080×719 | [凤凰网凰家尚品](https://mall.ifeng.com/c/8RW22jOXqa8)，网页未标开放许可 | 原图下载，无修改；依用户要求暂作非商业展示，许可仍需确认 |
 | 川梨花，棠梨花形态参考 | `dist/assets/tanglihua.jpg` 1920×2566 | 1966×2627 | [Frank Schulenburg](https://commons.wikimedia.org/wiki/File:Flowers_of_Pyrus_pashia.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 略缩小；美国加州植物园拍摄，不能涵盖棠梨花俗称下的其他梨属植物 |
 | 苦刺花，同种异地形态参考 | `dist/assets/kucihua.jpg` 1920×1280 | 4752×3168 | [Denis.prévôt](https://commons.wikimedia.org/wiki/File:Sophora_davidii_-_Floraison-2.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 缩小；法国斯特拉斯堡植物园拍摄 |
 | 炒藕带，成菜实拍 | `dist/assets/oudai-cooked.jpg` 1920×1440 | 2779×2084 | [Zheng Zhou](https://commons.wikimedia.org/wiki/File:Fried_Lotus_Rootlet.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 缩小；北京拍摄，原料产地未注明 |
 | 蒌蒿嫩茎，湖蒿同种异地形态参考 | `dist/assets/huhao.jpg` 1920×1440 | 4000×3000 | [François Nguyen](https://commons.wikimedia.org/wiki/File:Artemisia_selengensis_(1).jpg)，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | 缩小；江苏拍摄，未确认阳新品系 |
 | 塌棵菜植株，如皋黑塌菜同类形态参考 | `dist/assets/takecai.jpg` 1920×1440 | 4032×3024 | [Nesnad](https://commons.wikimedia.org/wiki/File:Brassica_rapa_subsp_narinosa_-_Kanagawa_Japan_2026_Jan_3.jpeg)，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | 缩小；日本神奈川拍摄，非如皋品种 |
-| 鲜鸡头米颗粒示意图，详情主图 | `dist/assets/jitoumi-illustration.png` 1536×1024 | 生成文件，无摄影原始尺寸 | OpenAI 图像生成工具，2026-09-25；非实物照片 | 根据鲜剥芡实粒的外观要求生成；未经实物逐颗核对，不作鉴种依据 |
+| 鲜鸡头米颗粒示意图，资料留存 | `dist/assets/jitoumi-illustration.png` 1536×1024 | 生成文件，无摄影原始尺寸 | OpenAI 图像生成工具，2026-09-25；非实物照片 | 根据鲜剥芡实粒的外观要求生成；详情页目前不展示 |
 | 地图地形、水系 | `dist/assets/atlas-relief.webp` 1600×1100 | 数据来源见链接 | [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/)，公共领域 | 地形着色与文字叠加 |
 | 枞菌形态参考：松乳菇 | `dist/assets/congjun-lactarius-deliciosus.jpg` 2283×2300 | 原图 2283×2300 | [Sandra Cohen-Rose、Colin Rose / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lactarius_deliciosus_(1169941953).jpg)，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | 原图下载，无改动；松乳菇是湖南“枞菌”俗称所指的常见种之一，不代表所有地方菌种 |
 | 竹笋形态参考 | `dist/assets/cizhousun-bamboo-shoot.jpg` 1598×1692 | 原图 1598×1692 | [Jodarom / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bamboo_shoot-phyllostachys_parvifolia-jx1241c.jpg)，[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | 原图下载，无改动；Phyllostachys parvifolia，非腾冲刺竹地方品种 |

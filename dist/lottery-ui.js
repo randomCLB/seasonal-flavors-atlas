@@ -12,9 +12,9 @@
   const avoidChoices=[['none','没有已知忌口'],['vegan','纯素（不含蛋奶蜂蜜）'],['meat','不吃肉'],['seafood','不吃水产'],['egg','避开蛋'],['milk','避开乳制品'],['soy','避开大豆'],['wheat','避开小麦'],['peanut','避开花生'],['sesame','避开芝麻']];
   const questions=[
     {title:'这趟，有什么一定不能出现？',hint:'不愿意吃或需要避开的，先排除。主料和配料一起检查；这不是过敏安全认证。'},
-    {title:'酸、甜、苦、辣、咸、鲜，你更偏哪几味？',hint:'选最喜欢的一两种味道，或选「都可以」。这里先不问口感。'},
-    {title:'咬下去，你喜欢什么质地？',hint:'清脆、软糯、多汁，是不同的偏好。最多选两项。'},
-    {title:'端上桌，你更想怎么吃？',hint:'选喜欢的一两种料理，不问做饭技术，也不问在哪里买。偏好用于排序，不当作忌口；凉拌仍须按菜谱做熟处理。'},
+    {title:'酸、甜、苦、辣、咸、鲜，你更偏哪几味？',hint:'喜欢的味道可以多选，也可以选「都可以」。这里先不问口感。'},
+    {title:'咬下去，你喜欢什么质地？',hint:'清脆、软糯、多汁，各选几种合心意的。'},
+    {title:'端上桌，你更想怎么吃？',hint:'料理方式可以多选，也可以选「都可以」。凉拌仍按菜谱做熟处理。'},
     {title:'这次，想猎奇到什么程度？',hint:'只调整对外形、气味和质感特点的推荐倾向，不判断你吃没吃过，也不放宽忌口。'}
   ];
   function notify(message,floating=false){clearTimeout(noticeTimer);$('status').textContent=message;$('status').classList.toggle('floating',floating);if(floating)noticeTimer=setTimeout(()=>{$('status').textContent='';$('status').classList.remove('floating');},6500);}
@@ -33,7 +33,7 @@
     $('question').innerHTML=`<h1 id="question-title" tabindex="-1">${q.title}</h1><p class="hint">${q.hint}</p>${body}`;
     $('previous').disabled=step===0;$('next').textContent=step===4?'揭开我的时令签 ↗':'下一问 →';
     $('question-title').focus({preventScroll:true});
-    $('question').onchange=e=>{if(!e.target.matches('input[type=checkbox]'))return;const group=e.target.name,all=group==='avoid'?'none':'any';const inputs=[...$('question').querySelectorAll(`input[name="${group}"]`)];if(e.target.value===all&&e.target.checked)inputs.filter(x=>x!==e.target).forEach(x=>x.checked=false);else if(e.target.checked)inputs.find(x=>x.value===all).checked=false;if(group!=='avoid'&&inputs.filter(x=>x.checked&&x.value!==all).length>2){e.target.checked=false;notify('这一问最多选两项，也可以选择「都可以」。');}if(inputs.every(x=>!x.checked))inputs.find(x=>x.value===all).checked=true;};
+    $('question').onchange=e=>{if(!e.target.matches('input[type=checkbox]'))return;const group=e.target.name,all=group==='avoid'?'none':'any';const inputs=[...$('question').querySelectorAll(`input[name="${group}"]`)];if(e.target.value===all&&e.target.checked)inputs.filter(x=>x!==e.target).forEach(x=>x.checked=false);else if(e.target.checked)inputs.find(x=>x.value===all).checked=false;if(inputs.every(x=>!x.checked))inputs.find(x=>x.value===all).checked=true;};
   }
   function capture(){
     const checked=name=>[...$('question').querySelectorAll(`input[name="${name}"]:checked`)].map(x=>x.value);
@@ -56,7 +56,7 @@
       if(!s.foodId)return `<article class="food-entry reveal">${term}<div class="empty-slot"><h2>这一签，先为你留白。</h2><p>${esc(s.reason)}</p></div></article>`;
       const f=byId[s.foodId],p=profiles[f.id];
       const reason=C.recommendationReason(f,p,plan.prefs);
-      return `<article class="food-entry reveal" data-slot="${esc(s.key)}">${term}<figure class="food-image"><img src="${esc(f.cardImage||f.image)}" alt="${esc(f.cardImageAlt||f.imageAlt||f.name)}" loading="lazy"><figcaption>${esc(f.cardImageNote||f.imageCaption||f.cardNote||'照片用于认识食材，商品以实际到货为准。')}</figcaption></figure><div class="food-copy"><p class="food-origin">${esc(s.place)} · ${families[p.family]} · ${s.eatDay} 暂定尝鲜</p><h2>${esc(f.name)}</h2><p class="reason">${esc(reason)}</p><p class="recipe">这一回试试 <a href="index.html?food=${encodeURIComponent(f.id)}" target="_blank" rel="noopener noreferrer">${esc(f.recipeTitle)} ↗</a></p><div class="food-note"><p><strong>买前：</strong>${esc(f.buy)}</p><p><strong>留意：</strong>${esc(f.safety||f.storage||'核对到货状态、商品配料和保存条件。')}</p><p>时令精度：${s.precision==='season'?'季节级近似':'月度或旬段参考'}，不保证该日正好上市。</p></div><div class="food-actions"><button class="text-button" data-swap="${esc(s.key)}">换这一味 ↻</button><button class="text-button" data-lock="${esc(s.key)}" aria-pressed="${!!s.locked}">${s.locked?'已留住 ✓':'留住它'}</button><button class="text-button" data-copy="${esc(f.id)}">复制采购词</button></div></div></article>`;
+      return `<article class="food-entry reveal" data-slot="${esc(s.key)}">${term}<figure class="food-image"><img src="${esc(f.cardImage||f.image)}" alt="${esc(f.cardImageAlt||f.imageAlt||f.name)}" loading="lazy"></figure><div class="food-copy"><p class="food-origin">${esc(s.place)} · ${families[p.family]} · ${s.eatDay} 暂定尝鲜</p><h2>${esc(f.name)}</h2><p class="reason">${esc(reason)}</p><p class="recipe">这一回试试 <a href="index.html?food=${encodeURIComponent(f.id)}" target="_blank" rel="noopener noreferrer">${esc(f.recipeTitle)} ↗</a></p><div class="food-note"><p><strong>买前：</strong>${esc(f.buy)}</p><p><strong>留意：</strong>${esc(f.safety||f.storage||'核对到货状态、商品配料和保存条件。')}</p><p>时令精度：${s.precision==='season'?'季节级近似':'月度或旬段参考'}，不保证该日正好上市。</p></div><div class="food-actions"><button class="text-button" data-swap="${esc(s.key)}">换这一味 ↻</button><button class="text-button" data-lock="${esc(s.key)}" aria-pressed="${!!s.locked}">${s.locked?'已留住 ✓':'留住它'}</button><button class="text-button" data-copy="${esc(f.id)}">复制采购词</button></div></div></article>`;
     }).join('');
   }
   $('begin').onclick=()=>{step=0;renderQuestion();};$('leave-quiz').onclick=()=>plan?renderResults():screen('welcome');
@@ -77,18 +77,13 @@
   };
   $('remember').onchange=()=>{persist(!$('remember').checked);$('forget').hidden=!$('remember').checked;};
   $('forget').onclick=()=>{$('remember').checked=false;persist(true);saved=null;$('resume').hidden=true;$('forget').hidden=true;notify('本机记录已清除。当前食单留在页面内，关闭后不再保存。',true);};
-  function calendarOptions(){return {zone:$('time-zone').value,clock:$('clock').value,lead:Number($('lead-days').value),included:[...$('calendar-rows').querySelectorAll('input[type=checkbox]:checked')].map(x=>x.value),eatDays:Object.fromEntries([...$('calendar-rows').querySelectorAll('input[type=date]')].map(x=>[x.dataset.key,x.value]))};}
-  function updateCalendar(){const options=calendarOptions();let errors=[];let rows=[];try{rows=C.calendarEvents(plan,foods,options);}catch(err){errors.push(err.message);}for(const s of plan.slots.filter(s=>s.foodId)){const target=$('calendar-rows').querySelector(`[data-preview="${s.key}"]`);const row=rows.find(x=>x.key===s.key);target.textContent=row?`${row.day} ${row.clock} 询货${row.late?'（原时间已过，已顺延）':''}`:options.included.includes(s.key)?'请检查日期':'本次不导出';}if(!options.included.length)errors.push('请至少勾选一个节气。');$('calendar-error').hidden=!errors.length;$('calendar-error').textContent=errors.join('\n');$('calendar-form').querySelector('[type=submit]').disabled=!!errors.length;return options;}
-  $('calendar-open').onclick=()=>{try{checkPlan(plan);const prev=plan.calendar||{};$('lead-days').value=String(prev.lead??3);$('clock').value=prev.clock||'19:00';$('time-zone').value=prev.zone||C.ZONE;
-    $('calendar-rows').innerHTML=plan.slots.filter(s=>s.foodId).map(s=>`<div class="calendar-row"><label><input type="checkbox" value="${s.key}" ${!prev.included||prev.included.includes(s.key)?'checked':''}><span>${esc(s.name)} · ${esc(byId[s.foodId].name)}<small data-preview="${s.key}"></small></span></label><label class="date-label">暂定尝鲜日<input type="date" data-key="${s.key}" value="${prev.eatDays?.[s.key]&&s.availableDays.includes(prev.eatDays[s.key])?prev.eatDays[s.key]:s.eatDay}" min="${s.availableDays[0]}" max="${s.availableDays.at(-1)}"></label></div>`).join('');
-    $('export-status').hidden=true;updateCalendar();$('calendar-dialog').showModal();
-  }catch(err){notify(err.message,true);}};
-  $('calendar-close').onclick=()=>$('calendar-dialog').close();$('calendar-dialog').addEventListener('click',e=>{if(e.target===$('calendar-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
-  $('calendar-form').onchange=()=>{const opts=updateCalendar();if(!Object.keys(plan.calendar||{}).length||JSON.stringify(opts)!==JSON.stringify(plan.calendar)){plan.calendar=opts;touched();}$('export-status').hidden=true;};
-  $('calendar-form').onsubmit=e=>{e.preventDefault();try{checkPlan(plan);const options=updateCalendar();if(!$('calendar-error').hidden)return;plan.calendar=options;const text=C.makeICS(plan,foods,options);const blob=new Blob([text],{type:'text/calendar;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`风物时令签-${C.dayAt(plan.createdAt)}.ics`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);persist();$('export-status').hidden=false;$('export-status').textContent=`已生成 ${options.included.length} 条日程文件，尚未确认写入你的日历。请在日历应用完成导入，并核对提醒和通知权限。再次导入可能产生重复。`;}catch(err){$('calendar-error').hidden=false;$('calendar-error').textContent=err.message;}};
+  function downloadCalendar(text,name){const blob=new Blob([text],{type:'text/calendar;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);}
+  $('calendar-open').onclick=async()=>{const status=$('calendar-status');status.hidden=false;status.textContent='正在准备日程…';try{checkPlan(plan);const options={zone:C.ZONE,clock:'19:00',lead:3},text=C.makeICS(plan,foods,options),name=`时令风物-${C.dayAt(plan.createdAt)}.ics`,file=new File([text],name,{type:'text/calendar;charset=utf-8'});
+    if(typeof navigator.share==='function'&&typeof navigator.canShare==='function'&&navigator.canShare({files:[file]})){await navigator.share({title:'时令风物采购提醒',text:'未来六个节气的食材询货提醒。选择日历应用并确认保存。',files:[file]});status.textContent='日程已交给系统分享菜单。选择日历应用并确认保存后，提醒才会加入日历。';}
+    else{downloadCalendar(text,name);status.textContent='这个浏览器没有系统日历分享入口，已下载日程。点开文件后，在日历应用中确认添加。';}
+  }catch(err){status.textContent=err.name==='AbortError'?'已取消，没有添加日程。':`日程没有交给日历：${err.message||'请稍后重试。'}`;}};
   try{const raw=localStorage.getItem(STORE);if(raw&&raw.length<100000){saved=checkPlan(JSON.parse(raw));$('resume').hidden=false;}}catch{notify('五问已更新，请按新版重新选择。旧食单仍保存在本机，勾选保存新版时才替换，不会把旧答案套到新问题。');$('clear-old').hidden=false;}
   $('clear-old').onclick=()=>{persist(true);saved=null;$('clear-old').hidden=true;$('resume').hidden=true;notify('旧记录已清除。');};
   $('resume').onclick=()=>{try{plan=checkPlan(saved);prefs=structuredClone(plan.prefs);$('remember').checked=true;renderResults();}catch(err){notify(err.message);}};
   try{$('term-preview').textContent=C.nextSix(events).map(s=>s.name).join('  ·  ');}catch(err){$('begin').disabled=true;notify(err.message);}
-  const deviceZone=Intl.DateTimeFormat().resolvedOptions().timeZone;if(deviceZone&&!Array.from($('time-zone').options).some(o=>o.value===deviceZone)){$('time-zone').add(new Option(`本机：${deviceZone}`,deviceZone));}
 })();

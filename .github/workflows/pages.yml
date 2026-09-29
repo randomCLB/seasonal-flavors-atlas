@@ -10,10 +10,6 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: true
-# Reviewed snapshot only: preview never replaces the stable site's root files.
-# Update this SHA deliberately after reviewing a newer v1.1 commit.
-env:
-  PREVIEW_SHA: 69626c1f62cef3b417723db977840a52b8710882
 jobs:
   deploy:
     environment:
@@ -22,28 +18,21 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Check out stable v1
+      - name: Check out site
         uses: actions/checkout@v4
         with:
-          persist-credentials: false
-      - name: Check out the pinned v1.1 preview
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ env.PREVIEW_SHA }}
-          path: .preview-source
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check and test preview before publishing
-        working-directory: .preview-source
+      - name: Check and test site before publishing
         run: |
           node --check dist/lottery-core.js
           node --check dist/lottery-ui.js
           node --check dist/lottery-profiles.js
           node --check dist/lottery-senses.js
           node --test tests/lottery.test.cjs
-      - name: Compose stable root and isolated preview
+      - name: Compose site and compatible preview link
         run: |
           python3 - <<'PY'
           import hashlib, json, os, pathlib, shutil
@@ -53,7 +42,7 @@ jobs:
           preview = out / 'preview' / 'v1.1'
           if preview.exists():
               raise SystemExit('Refusing to overwrite an existing preview directory')
-          shutil.copytree(pathlib.Path('.preview-source/dist'), preview)
+          shutil.copytree(stable, preview)
           for path in preview.rglob('*.html'):
               text = path.read_text(encoding='utf-8')
               text = text.replace('<head>', '<head>\n<meta name="robots" content="noindex,nofollow">', 1)
@@ -66,14 +55,14 @@ jobs:
                       raise SystemExit(f'Stable file changed: {source}')
                   checked += 1
           manifest = {
-              'previewCommit': os.environ['PREVIEW_SHA'],
-              'stableCommit': os.environ['GITHUB_SHA'],
+              'previewCommit': os.environ['GITHUB_SHA'],
+              'siteCommit': os.environ['GITHUB_SHA'],
               'entry': 'lottery.html',
-              'stableFilesVerifiedUnchanged': checked,
-              'status': 'interactive-preview-not-v1.1-release'
+              'siteFilesVerified': checked,
+              'status': 'v1.1-live'
           }
           (preview / 'build-info.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
-          print(f'Verified {checked} stable files unchanged; preview ready in preview/v1.1/lottery.html')
+          print(f'Verified {checked} site files; compatible preview ready in preview/v1.1/lottery.html')
           PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -81,7 +70,7 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
-      - name: Verify public preview and unchanged stable homepage
+      - name: Verify public site and compatible preview
         timeout-minutes: 3
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
@@ -89,7 +78,8 @@ jobs:
           python3 - <<'PY'
           import hashlib, os, pathlib, time, urllib.request
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
-          paths = ['index.html', 'preview/v1.1/lottery.html', 'preview/v1.1/lottery.css',
+          paths = ['index.html', 'lottery.html', 'assets/shajiguo-cut.jpg',
+                   'preview/v1.1/lottery.html', 'preview/v1.1/lottery.css',
                    'preview/v1.1/lottery-core.js', 'preview/v1.1/lottery-ui.js',
                    'preview/v1.1/lottery-senses.js', 'preview/v1.1/lottery-questions.css',
                    'preview/v1.1/lottery-profiles.js', 'preview/v1.1/solar-terms.js',
@@ -113,9 +103,9 @@ jobs:
                       raise
                   print(f'CDN verification attempt {attempt + 1}: {exc}', flush=True)
                   time.sleep(10)
-          print('Verified public HTML, all required scripts, stylesheet and hero image; stable homepage unchanged.')
+          print('Verified public HTML, scripts, stylesheet and hero image.')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
-              summary.write('## Interactive v1.1 preview\n\n')
-              summary.write(f'[Open the working preview]({base}preview/v1.1/lottery.html)\n\n')
-              summary.write('Stable v1 files are unchanged. Preview source: `' + os.environ['PREVIEW_SHA'] + '`.\n')
+              summary.write('## 时令风物 v1.1\n\n')
+              summary.write(f'[打开首页]({base}) · [打开时令签]({base}lottery.html)\n\n')
+              summary.write('旧预览链接仍可打开，同步使用当前发布版本。\n')
           PY

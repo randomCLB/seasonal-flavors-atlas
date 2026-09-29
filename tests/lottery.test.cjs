@@ -5,7 +5,7 @@ const ctx={window:{}};vm.createContext(ctx);
 for(const f of ['solar-terms','data','editorial','editorial-notes','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',f+'.js'),'utf8'),ctx);
 const foods=JSON.parse(JSON.stringify(ctx.window.FOODS)),profiles=JSON.parse(JSON.stringify(ctx.window.LOTTERY_PROFILES));
 const events=C.eventsFrom(ctx.window.SOLAR_TERM_TIMES,ctx.window.SOLAR_TERM_NAMES),now=Date.parse('2026-09-29T12:00:00Z');
-const prefs={avoid:[],excludeText:'',tastes:['sweet'],textures:['crisp'],cooking:['stirfry'],curiosity:1};
+const prefs={avoid:[],excludeText:'',tastes:[],textures:[],cooking:[],curiosity:1};
 const opts=(patch={})=>({foods,profiles,prefs,events,slots:C.nextSix(events,now),seed:'test-seed',...patch});
 const draw=patch=>C.draw(opts(patch));
 const food=id=>foods.find(f=>f.id===id);
@@ -13,14 +13,21 @@ const score=(id,p=prefs)=>C.scoreFood(food(id),profiles[id],p);
 function makePlan(){return {schema:2,id:'stable-plan',createdAt:now,updatedAt:now,revision:0,prefs,slots:draw()};}
 const neutral={...prefs,tastes:[],textures:[],cooking:[],curiosity:0};
 
+test('detail food photos belong to existing entries and ship with the site',()=>{
+ const ids=new Set(foods.map(f=>f.id));
+ for(const id of vm.runInContext('Object.keys(PHOTO_UPDATES)',ctx))assert.ok(ids.has(id),`unknown photo entry ${id}`);
+ for(const f of foods)for(const src of [f.dishImage,f.cutImage].filter(Boolean))assert.ok(fs.existsSync(path.join(root,'dist',src)),`${f.id}: ${src}`);
+});
+
 test('all 55 recipes and sensory source fingerprints match; disabled stay explicit',()=>{
  assert.equal(foods.length,55);assert.equal(Object.values(profiles).filter(p=>p.disabled).length,3);
  for(const f of foods){const p=profiles[f.id];assert.equal(C.signature(f),p.signature,f.id);assert.equal(C.sensorySignature(f),p.senses.signature,f.id);for(const [k,labels] of [['tastes',C.TASTES],['recipeTastes',C.TASTES],['textures',C.TEXTURES],['cooking',C.COOKING]])assert.ok(p.senses[k].every(t=>Object.hasOwn(labels,t)));assert.ok(p.senses.cooking.length>0);}
 });
 test('five-question schema exposes taste/texture/cooking/curiosity, not procurement or familiarity',()=>{
  assert.deepEqual(Object.keys(C.TASTES),['sour','sweet','bitter','spicy','salty','umami']);
- assert.equal(Object.keys(C.TEXTURES).length,5);assert.equal(Object.keys(C.COOKING).length,4);assert.equal(C.validatePrefs(prefs),prefs);
- assert.throws(()=>C.validatePrefs({avoid:[],flavors:['crisp'],effort:1,buy:'both',adventure:1}),/新版/);
+ assert.equal(Object.keys(C.TEXTURES).length,5);assert.equal(Object.keys(C.COOKING).length,5);assert.equal(C.validatePrefs(prefs),prefs);
+ const many={...prefs,tastes:Object.keys(C.TASTES),textures:Object.keys(C.TEXTURES),cooking:Object.keys(C.COOKING)};assert.equal(C.validatePrefs(many),many);
+ assert.throws(()=>C.validatePrefs({avoid:[],flavors:['crisp'],effort:1,buy:'both',adventure:1}),/味道/);
 });
 test('taste changes score independently of texture',()=>{
  assert.ok(score('lintong-huojing-shizi',{...neutral,tastes:['sweet']})>score('lintong-huojing-shizi',{...neutral,tastes:['sour']}));
@@ -30,9 +37,16 @@ test('texture changes score independently of taste',()=>{
  assert.ok(score('foshougua-miao',{...neutral,textures:['crisp']})>score('foshougua-miao',{...neutral,textures:['soft']}));
  assert.ok(score('juema',{...neutral,textures:['soft']})>score('juema',{...neutral,textures:['crisp']}));
 });
-test('cooking preference is genuine ranking, not effort or purchase filter',()=>{
+test('cooking preference filters to tagged methods, not effort or purchase',()=>{
  assert.ok(score('foshougua-miao',{...neutral,cooking:['stirfry']})>score('foshougua-miao',{...neutral,cooking:['soup']}));
- const slot=C.nextSix(events,now)[2];const a=C.poolFor(foods,profiles,{...neutral,cooking:['fresh']},slot,events),b=C.poolFor(foods,profiles,{...neutral,cooking:['soup']},slot,events);assert.deepEqual(a,b);
+ const slot=C.nextSix(events,now)[2];const a=C.poolFor(foods,profiles,{...neutral,cooking:['stirfry']},slot,events),b=C.poolFor(foods,profiles,{...neutral,cooking:['soup']},slot,events);assert.notDeepEqual(a,b);
+ for(const row of a)assert.ok(C.matchesPreferences(food(row.id),profiles[row.id],{...neutral,cooking:['stirfry']}));
+});
+test('every selected preference group must match a food or its declared recipe',()=>{
+ const f=food('honghu-oudai'),p=profiles[f.id];
+ assert.ok(C.matchesPreferences(f,p,{...neutral,tastes:['sour','sweet'],textures:['crisp','soft'],cooking:['stirfry','soup']}));
+ assert.ok(!C.matchesPreferences(f,p,{...neutral,tastes:['bitter'],textures:['crisp'],cooking:['stirfry']}));
+ const boiled=food('nanhu-ling');assert.ok(profiles[boiled.id].senses.cooking.includes('boil'));
 });
 test('sour/spicy seasoning is not attributed to raw lotus runners',()=>{
  const f=food('honghu-oudai'),p=profiles[f.id],pr={...neutral,tastes:['sour','spicy']},m=C.matchInfo(f,p,pr);
@@ -57,14 +71,27 @@ test('stale sensory descriptions receive no preference or curiosity bonus',()=>{
  const f=structuredClone(food('foshougua-miao'));f.texture='changed';
  assert.equal(C.scoreFood(f,profiles[f.id],prefs),2);assert.deepEqual(C.matchInfo(f,profiles[f.id],prefs).features,[]);
 });
-test('unmatched preference is explicitly disclosed',()=>{
+test('unmatched preferences keep a slot blank instead of recommending a mismatch',()=>{
  const f=food('kuche-xiaobaixing'),p={...neutral,tastes:['bitter'],textures:['soft'],cooking:['soup']};
- assert.match(C.recommendationReason(f,profiles[f.id],p),/未必正中/);
+ assert.ok(!C.matchesPreferences(f,profiles[f.id],p));
+ const slot=C.nextSix(events,now)[0],result=C.draw({foods:[f],profiles:{[f.id]:profiles[f.id]},prefs:p,events,slots:[slot],seed:'no-match'});
+ assert.equal(result[0].foodId,null);assert.match(result[0].reason,/符合所选口味/);
 });
 test('question UI contains five new headings and no legacy input controls',()=>{
  const s=fs.readFileSync(path.join(root,'dist/lottery-ui.js'),'utf8');
- assert.equal((s.match(/\{title:/g)||[]).length,5);assert.match(s,/酸、甜、苦、辣、咸、鲜/);assert.match(s,/咬下去/);assert.match(s,/端上桌/);assert.match(s,/猎奇到什么程度/);
+ assert.equal((s.match(/\{title:'[^']+？'/g)||[]).length,5);assert.match(s,/酸、甜、苦、辣、咸、鲜/);assert.match(s,/咬下去/);assert.match(s,/端上桌/);assert.match(s,/猎奇到什么程度/);assert.doesNotMatch(s,/最多选两项/);
  assert.doesNotMatch(s,/prefs\.(buy|effort|adventure|flavors)\b/);assert.match(s,/SCHEMA=2/);
+});
+test('question page has no stale static element references after simplifying calendar',()=>{
+ const html=fs.readFileSync(path.join(root,'dist/lottery.html'),'utf8'),ui=fs.readFileSync(path.join(root,'dist/lottery-ui.js'),'utf8');
+ const ids=new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1])),dynamic=new Set(['exclude-text','question-title']);
+ for(const [,id] of ui.matchAll(/\$\('([^']+)'\)/g))assert.ok(ids.has(id)||dynamic.has(id),`missing UI element: ${id}`);
+ assert.doesNotMatch(ui,/\$\('time-zone'\)/);assert.doesNotMatch(html,/<dialog\b|id="calendar-settings"/);
+});
+test('calendar action uses native file sharing when available and explains user confirmation',()=>{
+ const html=fs.readFileSync(path.join(root,'dist/lottery.html'),'utf8'),ui=fs.readFileSync(path.join(root,'dist/lottery-ui.js'),'utf8');
+ assert.match(ui,/navigator\.canShare\(\{files:\[file\]\}\)/);assert.match(ui,/navigator\.share\(/);assert.match(ui,/选择日历应用并确认保存/);assert.match(ui,/没有系统日历分享入口/);
+ assert.match(html,/id="calendar-open">添加到日历/);
 });
 test('next six terms excludes current term and crosses New Year',()=>{
  const s=C.nextSix(events,now);assert.equal(s.length,6);assert.equal(s[0].name,'寒露');assert.equal(s[5].name,'冬至');assert.ok(s[5].endDay.startsWith('2027'));assert.ok(s.every((x,i)=>x.time>now&&(!i||x.time===s[i-1].end)));
@@ -107,7 +134,7 @@ test('matching reserves singleton slots before plentiful slots',()=>{
 });
 test('12 months x 6 exclusions x 3 curiosity levels preserve restrictions and date windows',()=>{
  for(let m=1;m<=12;m++)for(const avoid of [[],['egg'],['milk'],['soy'],['seafood'],['vegan']])for(const curiosity of [0,1,2]){
- const p={...prefs,avoid,curiosity,cooking:[Object.keys(C.COOKING)[m%4]]},s=draw({prefs:p,slots:C.nextSix(events,Date.parse(`2027-${String(m).padStart(2,'0')}-01T00:00:00Z`)),seed:'sweep'+m}),ids=s.filter(x=>x.foodId).map(x=>x.foodId);assert.equal(new Set(ids).size,ids.length);for(const x of s.filter(x=>x.foodId)){assert.ok(C.eligible(food(x.foodId),profiles[x.foodId],p));assert.ok(x.eatDay>=x.startDay&&x.eatDay<=x.endDay);assert.ok(x.availableDays.includes(x.eatDay));}}
+ const p={...prefs,avoid,curiosity,cooking:[Object.keys(C.COOKING)[m%Object.keys(C.COOKING).length]]},s=draw({prefs:p,slots:C.nextSix(events,Date.parse(`2027-${String(m).padStart(2,'0')}-01T00:00:00Z`)),seed:'sweep'+m}),ids=s.filter(x=>x.foodId).map(x=>x.foodId);assert.equal(new Set(ids).size,ids.length);for(const x of s.filter(x=>x.foodId)){assert.ok(C.eligible(food(x.foodId),profiles[x.foodId],p));assert.ok(C.matchesPreferences(food(x.foodId),profiles[x.foodId],p));assert.ok(x.eatDay>=x.startDay&&x.eatDay<=x.endDay);assert.ok(x.availableDays.includes(x.eatDay));}}
 });
 test('time zones include China, Taipei and New York DST',()=>{
  assert.equal(C.stamp(C.zonedTime('2027-01-05','19:00','Asia/Shanghai')),'20270105T110000Z');assert.equal(C.zonedTime('2027-01-05','19:00','Asia/Taipei'),C.zonedTime('2027-01-05','19:00','Asia/Shanghai'));assert.equal(C.stamp(C.zonedTime('2027-07-05','19:00','America/New_York')),'20270705T230000Z');assert.throws(()=>C.zonedTime('2027-03-14','02:30','America/New_York'),/不存在/);
@@ -131,5 +158,5 @@ test('ICS escapes text injection and folds without splitting emoji',()=>{
  assert.equal(C.escapeText('a,b;c\\d\r\nEND:VEVENT'),'a\\,b\\;c\\\\d\\nEND:VEVENT');const s='DESCRIPTION:'+('青菜🍃'.repeat(30)),out=C.fold(s);assert.equal(out.replace(/\r\n /g,''),s);assert.ok(!Buffer.from(out).toString().includes('\ufffd'));
 });
 test('invalid new answers are rejected',()=>{
- for(const patch of [{avoid:['unrecognized']},{tastes:['sour','sweet','bitter']},{textures:['crisp','crisp']},{cooking:['telepathy']},{curiosity:99}])assert.throws(()=>C.validatePrefs({...prefs,...patch}));
+ for(const patch of [{avoid:['unrecognized']},{tastes:['unrecognized']},{textures:['crisp','crisp']},{cooking:['telepathy']},{curiosity:99}])assert.throws(()=>C.validatePrefs({...prefs,...patch}));
 });

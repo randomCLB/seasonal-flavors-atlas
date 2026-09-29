@@ -15,7 +15,7 @@ const EDITORIAL = {
     intro:'佛手瓜苗是佛手瓜藤蔓上可食的嫩梢、嫩叶和卷须，菜摊也可能写“佛手瓜尖”。炒熟后嫩叶柔软，细茎和卷须还有一点爽脆。它最动人的地方是从锅里出来仍有鲜亮的绿色；买到一把嫩苗，用蒜和盐就足够做一盘。',
     taste:'炒熟后是直接的青菜味，嫩梢带一点轻微回甜；老茎会粗硬，不能用重调味补救。',aroma:'生鲜时带草本气息，热锅里加蒜后香气更明显。',texture:'嫩叶柔软、细茎脆、卷须略有嚼劲；这三种质地在同一盘里。',state:'择去老茎并炒熟后',
     ingredients:'佛手瓜苗 300 克，蒜 2 瓣，食用油 1 汤匙，盐约 2 克。',steps:['掐掉折不断的粗老茎，嫩叶、细梢和卷须留下；多次冲洗叶背，沥干水。','蒜拍碎切末；炒锅烧热，倒油，蒜末下锅短炒到闻到香气。','放入佛手瓜苗，先翻动较粗的嫩茎，再把叶片翻到锅底；中大火炒到叶片塌软、嫩茎断生。','撒盐翻匀立即装盘；不要在锅里久焖。'],finish:'叶片熟透而颜色仍鲜亮，细茎能轻松咬断，盘底只有少量汁水。',pitfall:'苗没沥水就入锅，容易变成水煮菜；老茎没摘掉，炒再久也难咬。',buyDetail:'搜“佛手瓜苗”或“佛手瓜尖”；“龙须菜”可能指别的食材，搜时加上“佛手瓜”。叶片发黄、茎口黏软、捆内发热的不要买。',storage:'散开湿叶，用厨房纸轻包后装袋冷藏，尽量在一两天内炒；放得越久，嫩梢越易失水变韧。',
-    icon:'assets/foshougua-icon.svg',cardImage:'assets/chayote-raw.jpg',cardImageAlt:'越南西北部农户采收佛手瓜嫩梢；可见藤蔓生长环境',image:'assets/chayote-leaf-tendril.webp',imageAlt:'佛手瓜植株的叶片、细茎和卷须',imageCaption:'可食用的嫩叶、细茎与卷须形态参考；照片展示的是植株，非采收后的菜摊原料。',images:[{src:'assets/chayote-shoots.webp',alt:'炒熟后的佛手瓜苗，嫩叶与细茎清楚可见',caption:'炒熟后的佛手瓜苗；照片拍摄于台湾。'}]
+    icon:'assets/foshougua-icon.svg',cardImage:'assets/chayote-raw.jpg',cardImageAlt:'越南西北部农户采收佛手瓜嫩梢；可见藤蔓生长环境',image:'assets/chayote-leaf-tendril.webp',imageAlt:'佛手瓜植株的叶片、细茎和卷须',imageCaption:'可食用的嫩叶、细茎与卷须形态参考；照片展示的是植株，非采收后的菜摊原料。',dishImage:'assets/chayote-shoots.webp',dishImageAlt:'一盘炒熟的佛手瓜苗，嫩叶、细茎和卷须仍然清晰',dishCaption:'蒜香刚刚裹住嫩叶，细茎和卷须还带一点脆，趁热入口最鲜。'
   },
   cinenya:{taste:'焯后仍有细微的苦味，蘸酱会显得更柔和。',aroma:'嫩芽带植物的清气，气味不浓。',texture:'外层苞片偏硬，去掉后嫩芽有肉质感。',state:'去苞片、焯熟后',ingredients:'刺嫩芽 200 克，豆酱或黄豆酱 20 克，盐少许。',steps:['确认是来源明确的可食嫩芽，去苞片和硬根，洗净。','一锅水煮沸，下嫩芽焯到茎部熟透。','捞出过凉，沥水装盘，豆酱另放小碟；先蘸一点尝味。'],finish:'嫩芽熟透、仍能保持完整形态，不留生硬的根部。',pitfall:'苞片和硬根没去净，会把本来柔嫩的口感吃成纤维感。',storage:'鲜芽冷藏并尽快处理；焯熟的芽不要长时间常温放置。'},
   cigu:{taste:'熟后微甜，带一点水生块茎特有的回苦。',aroma:'土气在烧煮后变淡，肉汁更明显。',texture:'熟透后粉糯，边缘还能保持块状。',state:'炖烧至中心熟透后',ingredients:'宝应老乌慈姑净重 300 克，带少量肥肉的猪肉 180 克，姜 2 片，生抽 1 汤匙，清水约 300 毫升。',steps:['慈姑洗净削皮，切成约 2 厘米的块；猪肉切小块。','热锅把肉煸到表面变色、油脂析出，加姜和生抽翻匀。','倒入慈姑和水，烧开后转小火，加盖烧到慈姑中心粉糯、猪肉熟透。','开盖略收汤汁，尝味再决定是否补盐。'],finish:'筷子能穿过慈姑中心，块形仍完整，汤汁能裹住表面。',pitfall:'切得太大又收汁过早，外面入味而中心还硬。',storage:'带泥慈姑放阴凉通风处短放；削皮后尽快做熟。',images:[{src:'assets/cigu.webp',alt:'日本市场售卖的普通慈姑球茎',note:'普通慈姑'}]},
@@ -33,7 +33,7 @@ const EDITORIAL = {
   bayuegua:{
     intro:'八月瓜是木通属果实的俗称。熟果的果皮会自然裂开，露出白色、裹着许多黑籽的果肉；入口是柔软的甜，香气并不张扬。第一次买时，先认准“自然开口、果肉洁净”这两个信号，再决定要不要把它端上秋天的水果盘。',
     taste:'成熟果肉以甜为主，不熟的果子甜味弱，别指望放大量糖能补回成熟度。',aroma:'果肉有淡淡的熟果香，气味因种类和熟度而异。',texture:'白色果肉柔软滑润，黑籽很多；吃果肉时慢慢吐籽。',state:'自然成熟、果皮裂开后的鲜果',
-    place:'湖南张家界的地方介绍把八月瓜放在夏末到秋天；上海园林资料提示，多数木通果实在九至十月成熟并开裂。市场俗称可能覆盖不同木通属果实，因此不能凭照片把所有货都说成同一个品种。具体成熟日期随产区、物种和天气移动；裂开是成熟判断的一部分，霉斑和异味却不是。',
+    place:'湖南张家界的地方介绍把八月瓜放在夏末到秋天；上海园林资料提示，多数木通果实在九至十月成熟并开裂。市场俗称可能覆盖不同木通属果实，因此不能凭照片把所有货都说成同一个品种。具体成熟日期随产区、物种和天气移动；裂开是成熟判断的一部分，霉斑和异味却不是。',cutImage:'assets/bayuegua-cut.jpg',cutImageAlt:'自然开裂的八月瓜，露出白色果肉与黑籽',cutCaption:'紫红果皮裂开，雪白果肉裹着一颗颗黑籽；挖一勺慢慢尝，甜味柔和，果香轻轻的。',
     ingredients:'成熟八月瓜 2 个，原味酸奶 120 克（可选）。',steps:['看果皮是否自然裂开；挑无霉斑、裂口内果肉洁净、没有酸腐味的果。','流动水洗净外皮，擦干，从自然裂口轻轻掰开。','用小勺挖出白色果肉，少量入口，咀嚼时留意黑籽并吐出。','想做简单搭配，可把少量果肉铺在两小碗原味酸奶上，立即吃。'],finish:'果肉柔软、有成熟甜味，没有发酵异味；酸奶只是衬托，不必把整颗果压成泥。',pitfall:'看到“开口”就以为一定新鲜。裂口若有霉斑、渗液或明显酒酸味，应放弃。',buyDetail:'问清产地和所售木通种类；生硬未裂的果子与自然开裂的熟果不能按同一种即食状态处理。',storage:'熟果容易碰伤，带回后冷藏、尽快吃；切开后盖好冷藏，当天食用。'
   },
   'ruanzao-mihoutao':{taste:'熟果酸甜都明显，甜度随成熟度变化。',aroma:'回温后有比冷藏状态更明显的果香。',texture:'薄皮无毛，果肉柔软，中心有细小籽。',state:'洗净、稍软的熟果',ingredients:'软枣猕猴桃 200 克，原味酸奶 120 克（可选）。',steps:['挑果皮完整、无渗液的果；偏硬的放室温短暂后熟。','洗净，轻压果身，稍软即可连皮入口。','也可对半切，把果肉拌入两小碗原味酸奶。'],finish:'果肉软而未发酵，酸甜明晰，皮无明显韧感。',pitfall:'果实还硬就吃，酸味可能突出、香气不足。',storage:'偏硬果短放室温，熟软后冷藏并尽快吃。'},
@@ -100,7 +100,7 @@ const EDITORIAL = {
   'gaochun-liuyuehuang':{
     intro:'高淳六月黄是大闸蟹最后一次蜕壳前的童子蟹，壳薄、肉嫩，蟹黄已有鲜明的香气。它个头比成熟秋蟹小，蒸熟后轻轻掰开，蘸姜醋就能尝到鲜嫩的蟹味。',
     taste:'肉味鲜甜，蟹黄香气明显；和成熟秋蟹相比，味道更清爽。',aroma:'蒸熟后有清楚的蟹香，姜醋蘸料能带出香气。',texture:'壳薄，肉质细嫩，蟹黄柔软；不要期待秋蟹那种紧实饱满的肉量。',state:'活蟹蒸熟后',
-    place:'六月黄是大闸蟹成熟前的童子蟹，蟹体尚小、出肉较少；按小蟹的鲜嫩吃，别拿秋蟹的重量和饱满度作比较。',
+    place:'六月黄是大闸蟹成熟前的童子蟹，蟹体尚小、出肉较少；按小蟹的鲜嫩吃，别拿秋蟹的重量和饱满度作比较。',dishImage:'assets/gaochun-junhuang-cooked.jpg',dishImageAlt:'清蒸中华绒螯蟹，蟹壳蒸至橙红',dishCaption:'蟹壳蒸得橙红，蟹黄凝成柔软一瓣；姜醋轻轻蘸一点，趁热吃最鲜。',
     context:'选仍有活力、外壳完整的蟹，买回尽快蒸熟。蟹个头小，拆食时备把厨房剪会更方便；姜醋调淡些，吃得到蟹黄和嫩肉就好。蒸熟后沿蟹脐打开，再剪开蟹脚，更容易取出薄壳里的嫩肉。蒸锅水烧开后再上锅，蟹腹朝上摆放，蟹黄不易流出。',
     ingredients:'两人份：活六月黄 4 只（约 500 克），姜 4 片，黄酒 1 汤匙；姜末与香醋各少许作蘸料。',
     steps:['挑仍有活力的蟹，刷净蟹壳和蟹脚；姜切片。','蒸锅水烧开后把蟹腹部朝上放入，蟹身垫姜片，淋少量黄酒。','盖盖蒸至蟹壳转红、蟹肉和蟹黄完全凝固并热透；个头较大可适当延长。','稍晾后拆绳，配姜醋趁热吃。'],
@@ -264,8 +264,52 @@ for(const food of window.FOODS){
   if(food.id==='shajiguo'){food.image='assets/shajiguo.jpg';food.imageAlt='枝头橙黄色的沙棘果';food.imageCaption='沙棘原果形态参考；照片拍摄于德国 Spiekeroog。'}
 }
 const PHOTO_UPDATES={
+  'nanhu-ling':{dishImage:'assets/nanhu-ling-peeled-cooked.jpg',dishImageAlt:'煮熟剥壳的菱肉拌少许葱花盛盘',dishCaption:'剥去硬壳，熟菱肉白里透粉；趁温热吃，先是清甜，嚼下去有紧实的粉糯。'},
+  cigu:{dishImage:'assets/baoying-cigu-pork2.jpg',dishImageAlt:'慈姑和五花肉慢烧后盛在白碗中',dishCaption:'慈姑切块吸足肉汁，咬开仍带一点细密的粉感；一口慈姑一口肉，热着吃更香。'},
+  dier:{dishImage:'assets/dier-egg-soup.jpg',dishImageAlt:'地耳与蛋花煮成一碗热汤',dishCaption:'地耳洗净煮透，柔软地浮在蛋花汤里；一勺入口有滑嫩，也有清汤的鲜。'},
+  'houtui-cai':{dishImage:'assets/houtui-pork.jpg',dishImageAlt:'猴腿菜嫩茎与肉片炒熟装盘',dishCaption:'蕨茎焯熟后再和肉片快炒，嫩梗还有脆劲，微苦被热油和肉香衬得柔和。'},
+  'hanshou-yubiou':{dishImage:'assets/hanshou-ou-vinegar2.jpg',dishImageAlt:'醋炒藕片盛在深色盘中',dishCaption:'薄藕片在热锅里略微透亮，醋意刚好提起清甜；夹起来仍能听见脆响。'},
+  cinenya:{dishImage:'assets/cinengya-cold-final.jpg',dishImageAlt:'刺嫩芽焯熟后沥水装盘',dishCaption:'去掉硬苞片的嫩芽焯到熟透，蘸一点豆酱，微苦很快被咸香接住。'},
+  kucihua:{dishImage:'assets/kucihua-douchi.jpg',dishImageAlt:'苦刺花与豆豉、少量肉丁炒熟装盘',dishCaption:'处理好的苦刺花被豆豉炒出香气，花朵柔软，末尾留一点可辨的微苦。'},
+  'liyang-baixin':{dishImage:'assets/liyang-baiqin-gan.jpg',dishImageAlt:'白芹茎段与香干丝炒熟盛盘',dishCaption:'白芹的浅色茎段刚刚炒透，香干吸住锅里的咸香；一口仍有清脆。'},
+  'jiande-chuncai':{dishImage:'assets/jiande-chuncai-egg-final.jpg',dishImageAlt:'莼菜与蛋花煮成浅色热汤',dishCaption:'莼菜舒展开来，细滑胶质挂着蛋花；趁热舀一勺，汤鲜又轻。'},
+  'dalian-haimaxian':{dishImage:'assets/dalian-haimaxian-buns-final.jpg',dishImageAlt:'蒸熟的海麻线大包子装盘',dishCaption:'包子刚出笼，薄面皮里透出一层深绿；掰开热气里有海藻和肉馅的鲜香。'},
+  'zhuhai-hechong':{dishImage:'assets/zhuhai-hechong-egg-final.jpg',dishImageAlt:'禾虫与蛋液蒸熟后形成一盘蛋羹',dishCaption:'蛋羹蒸到凝固，禾虫的鲜味融进软嫩的蛋里；先舀一小口，尝它浓厚的河鲜味。'},
+  'zengcheng-caixin':{dishImage:'assets/zengcheng-caixin-plem.jpg',dishImageAlt:'白灼菜心茎叶，表面带少量油光',dishCaption:'粗茎白灼到刚熟，仍有脆劲；趁热淋一点油和生抽，青菜的清甜更显。'},
+  'rugao-takecai':{dishImage:'assets/rugao-tatsoi-japan.jpg',dishImageAlt:'塌棵菜叶与蒜片炒熟装在白盘中',dishCaption:'深绿叶片刚刚炒软，蒜片一香就出锅；菜心仍柔嫩，热着吃更甜。'},
+  'shazhou-zhugengqin':{dishImage:'assets/shazhou-watercelery-gan.jpg',dishImageAlt:'水芹茎段与香干丝快炒后盛盘',dishCaption:'水芹的嫩茎炒得亮绿，咬下去还脆；香干的咸香正好托住那股草本气。'},
+  'eryuan-haicaihua':{dishImage:'assets/eryuan-haicaihua-egg.jpg',dishImageAlt:'海菜花嫩茎和鸡蛋炒熟后装盘',dishCaption:'海菜花嫩茎裹住一点蛋香，热锅里刚炒熟，仍有柔滑与轻轻的脆。'},
+  'atushi-winter-lamb':{dishImage:'assets/atushi-winter-lamb.jpg',dishImageAlt:'清煮带骨羊肉切片，旁边配有清淡蘸料',dishCaption:'羊肉切片还带着温热，骨边肉香软嫩；先吃原味，再用一口清汤配馕，滋味厚实。'},
+  'hongshan-caitai':{dishImage:'assets/hongshan-caitai-cooked.jpg',dishImageAlt:'蒜香炒熟的洪山菜薹茎段盛在白瓷盘中',dishCaption:'菜薹嫩茎裹着薄薄油光，蒜香刚起，趁热咬下去仍有脆意。'},
+  'ruanzao-mihoutao':{cutImage:'assets/ruanzao-cut.jpg',cutImageAlt:'软枣猕猴桃切开后露出绿色果肉和细小黑籽',cutCaption:'薄皮不用剥，切开是亮绿的果肉和一圈细小黑籽；熟果咬下去酸甜多汁。'},
+  'lintong-huojing-shizi':{cutImage:'assets/lintong-huojing-cut.jpg',cutImageAlt:'掰开的临潼火晶柿子露出晶亮橙红果肉',cutCaption:'薄皮轻轻掰开，蜜亮的果肉几乎要流出来；等它软透，用小勺一口口舀着吃。'},
+  'kuche-xiaobaixing':{cutImage:'assets/kuche-xiaobaixing-cut.jpg',cutImageAlt:'库车小白杏掰开后露出黄白色果肉和果核',cutCaption:'浅黄果皮一掰就开，杏肉紧贴果核；熟透的一口细嫩多汁，带着清楚的杏香。'},
+  cili:{cutImage:'assets/cili-cut.jpg',cutImageAlt:'刺梨切面露出淡黄色果肉和密集果籽',cutCaption:'先削去刺，再切开去籽；果肉的酸味明亮，榨成汁配一点水更容易入口。'},
+  'yunan-seedless-huangpi':{cutImage:'assets/yunan-huangpi-cut.jpg',cutImageAlt:'郁南无核黄皮剖开后露出半透明果肉',cutCaption:'薄皮里是饱满的半透明果肉，酸甜先到，随后留一点黄皮特有的回甘。'},
+  'xishuangbanna-wood-milk-fruit':{cutImage:'assets/munaiguo-split.jpg',cutImageAlt:'木奶果果壳裂开，露出白色分瓣果肉',cutCaption:'果壳一开，白色果肉像几瓣小蒜；入口却是柔软多汁的酸甜。'},
+  'jintang-fresh-morel':{dishImage:'assets/jintang-morel-soup.jpg',dishImageAlt:'羊肚菌与鸡块在浅色汤中炖熟',dishCaption:'菌盖吸足鸡汤，咬下去柔软又带一点弹；一勺热汤先把菌香带出来。'},
+  'lyg-shaguang-fish':{dishImage:'assets/lyg-shaguang-soup.jpg',dishImageAlt:'砂锅里的沙光鱼豆腐汤，鱼肉与豆腐浸在乳白汤中',dishCaption:'鱼肉煮得细嫩，豆腐吸满奶白汤汁；先喝一口热汤，再慢慢剥鱼肉，留意细刺。'},
+  'dalian-zihaitan':{dishImage:'assets/dalian-sea-urchin-egg2.jpg',dishImageAlt:'一勺蒸熟的海胆蛋羹，能看到海胆与凝固蛋液',dishCaption:'蛋羹蒸到刚凝，海胆的鲜味融在柔软的蛋里；热热舀一勺，鲜味很快散开。'},
+  juhuanao:{dishImage:'assets/juhuanao-egg-soup.jpg',dishImageAlt:'菊花脑嫩叶与鸭蛋煮成一碗清汤',dishCaption:'嫩叶在热汤里刚刚舒展，鸭蛋花柔软，草本香从汤里慢慢冒出来。'},
+  'wuding-jinquehua':{dishImage:'assets/wuding-jinquehua-eggs.jpg',dishImageAlt:'食用金雀花花苞与鸡蛋快炒成菜',dishCaption:'金雀花花苞裹着松软的蛋，趁热夹一筷，先是蛋香，再有一点花的清甜。'},
+  'huoshan-yanghe':{dishImage:'assets/huoshan-yanghe-pork.jpg',dishImageAlt:'紫红阳荷嫩苞切片，与猪肉炒熟装盘',dishCaption:'肉片裹住热锅香，阳荷花苞还是脆的；咬开时，一点姜样辛香跟着出来。'},
+  'jinjiang-toushui-zicai':{dishImage:'assets/jinjiang-zicai-soup.jpg',dishImageAlt:'紫菜与蛋花煮成一碗清汤',dishCaption:'一小片紫菜泡开便铺满汤面，蛋花轻软；喝一口，海味先到，汤口却很清。'},
+  'ninghai-changjie-razor-clam':{dishImage:'assets/ninghai-razor-clam-egg.jpg',dishImageAlt:'蒸熟的蛏肉铺在嫩滑蛋羹上',dishCaption:'蛏肉蒸到刚熟，仍饱满柔嫩；蛋羹接住贝汁的鲜甜，舀一勺正好。'},
+  'chenghai-baoke':{dishImage:'assets/chenghai-baoke-rice.jpg',dishImageAlt:'去壳薄壳米与金不换炒熟，盛在白盘上',dishCaption:'一粒粒薄壳米裹着金不换的香，热锅快炒后，贝肉嫩滑、鲜味很集中。'},
+  ganbajun:{dishImage:'assets/ganbajun-rice.jpg',dishImageAlt:'青椒与干巴菌炒饭，装在白瓷盘中',dishCaption:'米粒被菌香裹住，青椒添一点清爽；趁热吃，干巴菌独有的浓香最清楚。'},
+  'bishan-ercai':{dishImage:'assets/bishan-ercai-boiled.jpg',dishImageAlt:'儿菜小芽清水煮熟，摆在白色盘中',dishCaption:'小芽煮到透，却没有软塌；先咬一口原味的清甜，再蘸一点辣。'},
+  pucai:{dishImage:'assets/pucai-shrimp.jpg',dishImageAlt:'白嫩蒲菜段与开洋烧熟，盛在浅盘中',dishCaption:'蒲菜嫩芯吸了开洋的鲜，入口仍有一点柔脆；盘底那口清亮的汁也值得尝。'},
+  cizhousun:{dishImage:'assets/cizhousun-salad.jpg',dishImageAlt:'刺竹笋切成细片拌入酸辣调味，盛在盘中',dishCaption:'笋片焯熟后仍爽脆，酸味一拌就醒口；挑嫩芯吃，别让老根坏了这一盘。'},
+  'yangxin-huhao':{dishImage:'assets/yangxin-huhao-bacon.jpg',dishImageAlt:'嫩蒌蒿茎与腊肉炒熟，盛在瓷盘中',dishCaption:'蒌蒿嫩茎还带脆响，腊肉煸出的咸香贴在茎上，趁热最有味。'},
+  congjun:{dishImage:'assets/congjun-tofu-soup.jpg',dishImageAlt:'枞菌和豆腐炖熟后盛在汤碗中',dishCaption:'菌盖煮得柔软，汤里浸着菌香；豆腐吸了一口鲜，连汤一起舀着吃。'},
+  'yantai-haichang':{dishImage:'assets/yantai-haichang-rice.jpg',dishImageAlt:'炒熟的海肠段与韭菜铺在米饭上',dishCaption:'脆弹海肠裹着韭菜香，热汁落进米饭里；拌开后一口有海味也有锅气。'},
+  'zhenlai-jiaobai':{dishImage:'assets/zhenlai-jiaobai-pork.jpg',dishImageAlt:'茭白丝与肉丝炒熟盛盘',dishCaption:'茭白丝炒得透亮，肉丝添一点咸鲜；夹一筷，先是脆，再是温和的甜。'},
+  shajiguo:{cutImage:'assets/shajiguo-cut.jpg',cutImageAlt:'两粒沙棘果切开后可见橙色果肉与深色果籽',cutCaption:'小小一粒，切开满是橙色果汁；直接尝酸得醒神，拌进原味酸奶会柔和许多。'},
+  yangnaiguo:{cutImage:'assets/yangnaiguo-cut.jpg',cutImageAlt:'羊奶果剖开后露出浅色果肉与长形果核',cutCaption:'红皮裹着不厚的果肉，大核一眼就看见；熟果酸中带甜，拌一点盐辣子格外开胃。'},
+  'minqing-tanxiang-olive':{cutImage:'assets/minqing-olive-cut.jpg',cutImageAlt:'新鲜中国橄榄剖开，露出淡色果肉与褐色硬核',cutCaption:'一口先尝到脆与微涩，慢慢咀嚼，甜味才从舌根回来。'},
+  'ninghai-white-loquat':{cutImage:'assets/ninghai-loquat-open.jpg',cutImageAlt:'白肉枇杷剥皮后可见浅白果肉与棕色果核',cutCaption:'薄皮一撕就开，浅白果肉嫩而多汁；去核后慢慢吃，清甜里带一点枇杷香。'},
   cigu:{cardImage:'assets/cigu.webp',cardNote:'普通慈姑实拍 · 非宝应老乌品种',cardImageNote:'普通慈姑'},
-  jitoumi:{cardImage:'assets/jitoumi-plant.jpg',cardImageAlt:'芡实植株的大型浮叶与紫色叶背，拍摄于慕尼黑植物园',cardImageCaption:'芡实植株实拍 · 慕尼黑植物园',cardNote:'芡实植株实拍 · 慕尼黑植物园',image:'assets/jitoumi-illustration.png',imageAlt:'鲜剥鸡头米颗粒的形态示意图，非实物摄影',imageCaption:'鲜剥鸡头米的形态示意图，非实物摄影；购买时仍需以实际鲜粒确认品种与状态。',imageNote:'形态示意',images:[{src:'assets/jitoumi-plant.jpg',alt:'植物园水池里的芡实植株与浮叶',caption:'芡实植株实拍；德国慕尼黑植物园拍摄，并非苏州鲜剥鸡头米。'}]},
+  jitoumi:{cardImage:'assets/jitoumi-plant.jpg',cardImageAlt:'芡实植株的大型浮叶与紫色叶背，拍摄于慕尼黑植物园',cardImageCaption:'芡实植株实拍 · 慕尼黑植物园',cardNote:'芡实植株实拍 · 慕尼黑植物园',image:'assets/jitoumi-illustration.png',imageAlt:'鲜剥鸡头米颗粒的形态示意图，非实物摄影',imageCaption:'鲜剥鸡头米的形态示意图，非实物摄影；购买时仍需以实际鲜粒确认品种与状态。',imageNote:'形态示意',dishImage:'assets/jitoumi-soup.jpg',dishImageAlt:'白瓷勺舀起桂花糖水里圆润的鲜鸡头米',dishCaption:'热糖水托着粒粒鸡头米，桂花只撒一点；舀起一勺，入口柔滑又轻弹。'},
   tanglihua:{image:'assets/tanglihua.jpg',cardNote:'川梨花实拍 · 非云南产地',imageAlt:'川梨枝头开放的白色花朵',imageCaption:'川梨花的植物形态参考；美国加州植物园拍摄。云南市场上的“棠梨花”也可能来自其他梨属植物，不能仅凭这张图鉴别。'},
   kucihua:{image:'assets/kucihua.jpg',cardNote:'苦刺植株实拍 · 非云南产地',imageAlt:'苦刺开出的白紫色花与羽状复叶',imageCaption:'苦刺（Sophora davidii）开花形态参考；法国斯特拉斯堡植物园拍摄，非采摘或焯泡后的食用状态。'},
   'honghu-oudai':{image:'assets/oudai-cooked.jpg',cardNote:'藕带成菜实拍 · 非洪湖产地',imageAlt:'一盘炒熟的藕带，能看到细嫩茎段和切面',imageCaption:'炒藕带成菜实拍；拍摄于北京，原料产地未注明，不代表洪湖鲜藕带原料。'},
@@ -295,7 +339,7 @@ Object.assign(window.FOODS.find(food=>food.id==='congjun'),{
 });
 
 // 用户提供的候选图；原始出处、品种及拍摄地仍在核对。
-for(const food of window.FOODS){const candidate={"zengcheng-caixin": {"image": "assets/caixin-candidate.jpg", "imageAlt": "菜心植株候选图；具体品种及拍摄地未注明。", "imageCaption": "菜心植株候选图；具体品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "rugao-takecai": {"image": "assets/takecai-candidate.jpg", "imageAlt": "黑色贴地叶丛候选图；具体品种及拍摄地未注明。", "imageCaption": "黑色贴地叶丛候选图；具体品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "honghu-oudai": {"image": "assets/oudai-candidate.jpg", "imageAlt": "新鲜水生嫩茎候选图；原料产地未注明。", "imageCaption": "新鲜水生嫩茎候选图；原料产地未注明。", "cardNote": "形态参考 · 产地未注明"}, "houtui-cai": {"image": "assets/houtui-candidate.jpeg", "imageAlt": "嫩蕨茎候选图；物种与产地未核实，不作为采食鉴别依据。", "imageCaption": "嫩蕨茎候选图；物种与产地未核实，不作为采食鉴别依据。", "cardNote": "形态参考 · 产地未注明"}, "bishan-ercai": {"image": "assets/ercai-candidate.jpeg", "imageAlt": "儿菜植株候选图；拍摄地未注明。", "imageCaption": "儿菜植株候选图；拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "juhuanao": {"image": "assets/juhuanao-candidate.jpg", "imageAlt": "食用嫩叶候选图；品种及拍摄地未注明。", "imageCaption": "食用嫩叶候选图；品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "pucai": {"image": "assets/pucai-candidate.jpg", "imageAlt": "蒲菜茎芯及水生植株候选拼图；拍摄地未注明。", "imageCaption": "蒲菜茎芯及水生植株候选拼图；拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}}[food.id];if(candidate)Object.assign(food,candidate)}
+for(const food of window.FOODS){const candidate={"zengcheng-caixin": {"image": "assets/caixin-candidate.jpg", "imageAlt": "菜心植株候选图；具体品种及拍摄地未注明。", "imageCaption": "菜心植株候选图；具体品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "rugao-takecai": {"image": "assets/takecai-candidate.jpg", "imageAlt": "黑色贴地叶丛候选图；具体品种及拍摄地未注明。", "imageCaption": "黑色贴地叶丛候选图；具体品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "honghu-oudai": {"image": "assets/oudai-candidate.jpg", "imageAlt": "新鲜水生嫩茎候选图；原料产地未注明。", "imageCaption": "新鲜水生嫩茎候选图；原料产地未注明。", "cardNote": "形态参考 · 产地未注明", "dishImage": "assets/oudai-cooked.jpg", "dishImageAlt": "一盘炒熟的藕带斜片，截面脆亮", "dishCaption": "藕带斜片裹着一点油光，米醋在最后提亮；一口咬下去，细嫩茎心仍然爽脆。"}, "houtui-cai": {"image": "assets/houtui-candidate.jpeg", "imageAlt": "嫩蕨茎候选图；物种与产地未核实，不作为采食鉴别依据。", "imageCaption": "嫩蕨茎候选图；物种与产地未核实，不作为采食鉴别依据。", "cardNote": "形态参考 · 产地未注明"}, "bishan-ercai": {"image": "assets/ercai-candidate.jpeg", "imageAlt": "儿菜植株候选图；拍摄地未注明。", "imageCaption": "儿菜植株候选图；拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "juhuanao": {"image": "assets/juhuanao-candidate.jpg", "imageAlt": "食用嫩叶候选图；品种及拍摄地未注明。", "imageCaption": "食用嫩叶候选图；品种及拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}, "pucai": {"image": "assets/pucai-candidate.jpg", "imageAlt": "蒲菜茎芯及水生植株候选拼图；拍摄地未注明。", "imageCaption": "蒲菜茎芯及水生植株候选图；拍摄地未注明。", "cardNote": "形态参考 · 产地未注明"}}[food.id];if(candidate)Object.assign(food,candidate)}
 Object.assign(window.FOODS.find(food=>food.id==='nanhu-ling'),{
   image:'assets/nanhu-ling-whole-news-2020-crop.jpg',
   imageAlt:'白盘中的新鲜南湖菱，青绿色果壳两侧圆钝',

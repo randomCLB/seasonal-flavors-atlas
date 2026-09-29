@@ -9,7 +9,7 @@
   const RESTRICTIONS = ['vegan','meat','seafood','egg','milk','soy','wheat','peanut','sesame'];
   const TASTES = {sour:'酸',sweet:'甜',bitter:'苦',spicy:'辣／辛',salty:'咸',umami:'鲜'};
   const TEXTURES = {crisp:'清脆爽口',soft:'软糯绵密',tender:'柔嫩细滑',chewy:'弹韧有嚼劲',juicy:'多汁水润'};
-  const COOKING = {fresh:'鲜吃、熟后凉拌',stirfry:'快炒、小炒',steam:'清蒸、白灼',soup:'汤羹、炖煮'};
+  const COOKING = {fresh:'鲜食、凉拌',stirfry:'快炒、煎炒',steam:'清蒸',boil:'水煮、焯熟',soup:'汤羹、炖煮、焖烧'};
   function hash(text) { let h=2166136261; for(let i=0;i<text.length;i++) h=Math.imul(h^text.charCodeAt(i),16777619); return (h>>>0).toString(16); }
   function signature(f) { return hash([f.recipeTitle||'',f.ingredients||'',(f.steps||[]).join('\n'),f.finish||'',f.safety||''].join('|')); }
   function random(seed) { let n=parseInt(hash(String(seed)),16); return ()=> {n+=0x6D2B79F5;let t=n;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296;}; }
@@ -21,7 +21,7 @@
   function validatePrefs(p) {
     if(!p||!Array.isArray(p.avoid)||p.avoid.some(x=>!RESTRICTIONS.includes(x)))throw Error('请重新确认忌口选项。');
     for(const [key,options,label] of [['tastes',TASTES,'味道'],['textures',TEXTURES,'质地'],['cooking',COOKING,'料理']]) {
-      if(!Array.isArray(p[key])||p[key].length>2||new Set(p[key]).size!==p[key].length||p[key].some(x=>!Object.hasOwn(options,x)))throw Error(`${label}最多选择两项，请按新版五问重新选择。`);
+      if(!Array.isArray(p[key])||new Set(p[key]).size!==p[key].length||p[key].some(x=>!Object.hasOwn(options,x)))throw Error(`${label}选项无效，请重新确认。`);
     }
     if(![0,1,2].includes(p.curiosity))throw Error('请选择猎奇程度。');
     if(typeof (p.excludeText||'')!=='string'||(p.excludeText||'').length>200)throw Error('其他忌口请限制在200字内。');
@@ -58,7 +58,7 @@
   function poolFor(foods,profiles,prefs,slot,events) {
     validatePrefs(prefs);const excluded=resolveExclusions(prefs.excludeText,foods);
     if(excluded.unknown.length)throw Error(`这些忌口尚未识别：${excluded.unknown.join('、')}。请选上面的限制或输入本站食材全名，不能忽略后继续。`);
-    return foods.filter(f=>eligible(f,profiles[f.id],prefs,excluded.ids)).map(f=>({id:f.id,days:candidateDays(f,profiles[f.id],slot,events)})).filter(x=>x.days.length);
+    return foods.filter(f=>eligible(f,profiles[f.id],prefs,excluded.ids)&&matchesPreferences(f,profiles[f.id],prefs)).map(f=>({id:f.id,days:candidateDays(f,profiles[f.id],slot,events)})).filter(x=>x.days.length);
   }
   // Tags describe the declared food state and recipe, never user familiarity.
   function sensorySignature(food) {return hash([food.taste||'',food.aroma||'',food.texture||'',food.state||'',(food.flavor||[]).join('|'),signature(food)].join('~'));}
@@ -66,6 +66,12 @@
     const p=profile?.senses;
     if(!p||p.signature!==sensorySignature(food))return {tastes:[],recipeTastes:[],textures:[],cooking:[],features:[]};
     return p;
+  }
+  function matchesPreferences(food,profile,prefs) {
+    const p=senses(food,profile);
+    return (!prefs.tastes.length||prefs.tastes.some(x=>p.tastes.includes(x)||p.recipeTastes.includes(x)))
+      &&(!prefs.textures.length||prefs.textures.some(x=>p.textures.includes(x)))
+      &&(!prefs.cooking.length||prefs.cooking.some(x=>p.cooking.includes(x)));
   }
   function matchInfo(food,profile,prefs) {
     const p=senses(food,profile),taste=prefs.tastes.filter(x=>p.tastes.includes(x));
@@ -81,7 +87,7 @@
     if(m.recipeTastes.length)parts.push(`这道做法带出你选的${m.recipeTastes.map(k=>TASTES[k]).join('、')}味（来自配料或调味）`);
     if(m.textures.length)parts.push(`质地偏${m.textures.map(k=>TEXTURES[k]).join('、')}`);
     if(m.cooking.length)parts.push(`做法属于你选的${m.cooking.map(k=>COOKING[k]).join('、')}`);
-    if(!parts.length)parts.push('这味符合本次忌口筛选与时令范围，口味未必正中所选，留作另一种选择');
+    if(!parts.length)parts.push('这味符合本次时令与忌口范围');
     if(prefs.curiosity>0&&m.features.length)parts.push(`值得留意的特点：${m.features.slice(0,2).join('；')}`);
     return parts.join('；')+'。';
   }
@@ -101,7 +107,7 @@
       const counts={};let points=0;for(const id of assigned){if(!id)continue;const family=profiles[id].family;points+=1000+scoreFood(byId[id],profiles[id],prefs)-(counts[family]||0)*2;counts[family]=(counts[family]||0)+1;}
       points+=rng()*1.5;if(points>bestScore){bestScore=points;best=assigned;}
     }
-    return slots.map((s,i)=>{const c=pools[i].find(c=>c.id===best[i]);if(!c)return {...s,foodId:null,reason:'本节气还没有符合这些条件、且不与其他签重复的食材。不会放宽忌口凑数。'};const preferred=addDays(s.startDay,4),pick=c.days.find(d=>d.day>=preferred)||c.days[0];return {...s,foodId:c.id,eatDay:pick.day,availableDays:c.days.map(d=>d.day),place:pick.place,source:pick.source,precision:pick.precision,locked:!!locked[s.key]};});
+    return slots.map((s,i)=>{const c=pools[i].find(c=>c.id===best[i]);if(!c)return {...s,foodId:null,reason:'这段时节没有同时符合所选口味、质地、料理方式和忌口的其他食材，先为你留白。'};const preferred=addDays(s.startDay,4),pick=c.days.find(d=>d.day>=preferred)||c.days[0];return {...s,foodId:c.id,eatDay:pick.day,availableDays:c.days.map(d=>d.day),place:pick.place,source:pick.source,precision:pick.precision,locked:!!locked[s.key]};});
   }
   function zonedTime(day,clock,zone) {
     if(!validDay(day)||!/^([01]\d|2[0-3]):[0-5]\d$/.test(clock))throw Error('提醒日期或时间无效');
@@ -134,5 +140,5 @@
     for(const e of rows)lines.push('BEGIN:VEVENT',`UID:${e.uid}`,`DTSTAMP:${dt}`,`LAST-MODIFIED:${dt}`,`SEQUENCE:${plan.revision||0}`,`DTSTART:${stamp(e.start)}`,`DTEND:${stamp(e.end)}`,`SUMMARY:${escapeText(e.title)}`,`DESCRIPTION:${escapeText(e.description)}`,`URL:${e.url}`,'STATUS:TENTATIVE','TRANSP:TRANSPARENT','CLASS:PRIVATE','BEGIN:VALARM','TRIGGER:PT0S','ACTION:DISPLAY',`DESCRIPTION:${escapeText(e.title)}`,'END:VALARM','END:VEVENT');
     lines.push('END:VCALENDAR');return lines.map(fold).join('\r\n')+'\r\n';
   }
-  return {DAY,ZONE,RESTRICTIONS,TASTES,TEXTURES,COOKING,hash,signature,random,dayAt,addDays,eventsFrom,nextSix,validatePrefs,resolveExclusions,eligible,candidateDays,poolFor,sensorySignature,senses,matchInfo,scoreFood,recommendationReason,draw,zonedTime,stamp,escapeText,fold,calendarEvents,makeICS};
+  return {DAY,ZONE,RESTRICTIONS,TASTES,TEXTURES,COOKING,hash,signature,random,dayAt,addDays,eventsFrom,nextSix,validatePrefs,resolveExclusions,eligible,candidateDays,poolFor,sensorySignature,senses,matchesPreferences,matchInfo,scoreFood,recommendationReason,draw,zonedTime,stamp,escapeText,fold,calendarEvents,makeICS};
 });
