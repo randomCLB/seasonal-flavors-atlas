@@ -1,0 +1,1 @@
+.preference-choices{grid-template-columns:repeat(2,minmax(0,1fr))}.preference-choices .choice{min-height:56px;padding:12px 10px;gap:9px}.preference-choices .choice span{min-width:0}.choice small{font-weight:400;line-height:1.8;margin-top:3px}@media(max-width:360px){.preference-choices{grid-template-columns:1fr}}

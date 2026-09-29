@@ -19,6 +19,7 @@ jobs:
           node --check dist/lottery-core.js
           node --check dist/lottery-ui.js
           node --check dist/lottery-profiles.js
+          node --check dist/lottery-senses.js
       - name: Test recommendation and calendar engine
         run: node --test tests/lottery.test.cjs
       - name: Attach standalone preview, without deploying Pages
