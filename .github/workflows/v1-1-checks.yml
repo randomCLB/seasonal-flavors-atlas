@@ -1,0 +1,30 @@
+name: Check v1.1 seasonal lottery
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [feature/v1.1-seasonal-lottery]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          node --check dist/lottery-core.js
+          node --check dist/lottery-ui.js
+          node --check dist/lottery-profiles.js
+          node --check dist/lottery-senses.js
+      - name: Test recommendation and calendar engine
+        run: node --test tests/lottery.test.cjs
+      - name: Attach standalone preview, without deploying Pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: fengwu-v1.1-preview
+          path: dist/
+          retention-days: 7
