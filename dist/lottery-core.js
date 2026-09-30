@@ -9,7 +9,7 @@
   const RESTRICTIONS = ['vegan','meat','seafood','egg','milk','soy','wheat','peanut','sesame'];
   const TASTES = {sour:'酸',sweet:'甜',bitter:'苦',spicy:'辣／辛',salty:'咸',umami:'鲜'};
   const TEXTURES = {crisp:'清脆爽口',soft:'软糯绵密',tender:'柔嫩细滑',chewy:'弹韧有嚼劲',juicy:'多汁水润'};
-  const COOKING = {fresh:'鲜食、凉拌',stirfry:'快炒、煎炒',steam:'清蒸',boil:'水煮、焯熟',soup:'汤羹、炖煮、焖烧'};
+  const COOKING = {fresh:'鲜食、凉拌、鲜果汁',stirfry:'快炒、煎炒',steam:'清蒸',boil:'水煮、焯熟',soup:'汤羹、炖煮、焖烧'};
   function hash(text) { let h=2166136261; for(let i=0;i<text.length;i++) h=Math.imul(h^text.charCodeAt(i),16777619); return (h>>>0).toString(16); }
   function signature(f) { return hash([f.recipeTitle||'',f.ingredients||'',(f.steps||[]).join('\n'),f.finish||'',f.safety||''].join('|')); }
   function random(seed) { let n=parseInt(hash(String(seed)),16); return ()=> {n+=0x6D2B79F5;let t=n;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296;}; }
@@ -136,7 +136,7 @@
   }
   function makeICS(plan,foods,options={},now=Date.now()) {
     const rows=calendarEvents(plan,foods,options,now);if(!rows.length)throw Error('没有勾选可导出的食材。');
-    const dt=stamp(plan.updatedAt||plan.createdAt),lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Fengwu//Seasonal Lottery 1.1//ZH','CALSCALE:GREGORIAN','X-WR-CALNAME:风物时令签'];
+    const dt=stamp(plan.updatedAt||plan.createdAt),lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Fengwu//Seasonal Lottery 1.1//ZH','CALSCALE:GREGORIAN','X-WR-CALNAME:风物时令抽签'];
     for(const e of rows)lines.push('BEGIN:VEVENT',`UID:${e.uid}`,`DTSTAMP:${dt}`,`LAST-MODIFIED:${dt}`,`SEQUENCE:${plan.revision||0}`,`DTSTART:${stamp(e.start)}`,`DTEND:${stamp(e.end)}`,`SUMMARY:${escapeText(e.title)}`,`DESCRIPTION:${escapeText(e.description)}`,`URL:${e.url}`,'STATUS:TENTATIVE','TRANSP:TRANSPARENT','CLASS:PRIVATE','BEGIN:VALARM','TRIGGER:PT0S','ACTION:DISPLAY',`DESCRIPTION:${escapeText(e.title)}`,'END:VALARM','END:VEVENT');
     lines.push('END:VCALENDAR');return lines.map(fold).join('\r\n')+'\r\n';
   }

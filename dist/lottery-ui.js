@@ -31,7 +31,7 @@
     }
     if(step===4)body=`<div class="choices">${[[0,'口味优先','先按味道和质地选，不额外追求特别。'],[1,'带点特别','外形、气味或口感有特点，也愿意试试。'],[2,'大胆猎奇','更想遇到有鲜明外形或风味特点的食材。']].map(([v,l,detail])=>`<label class="choice"><input type="radio" name="curiosity" value="${v}" ${prefs.curiosity===v?'checked':''}><span>${l}<small>${detail}</small></span></label>`).join('')}</div>`;
     $('question').innerHTML=`<h1 id="question-title" tabindex="-1">${q.title}</h1><p class="hint">${q.hint}</p>${body}`;
-    $('previous').disabled=step===0;$('next').textContent=step===4?'揭开我的时令签 ↗':'下一问 →';
+    $('previous').disabled=step===0;$('next').textContent=step===4?'揭开我的时令食单 ↗':'下一问 →';
     $('question-title').focus({preventScroll:true});
     $('question').onchange=e=>{if(!e.target.matches('input[type=checkbox]'))return;const group=e.target.name,all=group==='avoid'?'none':'any';const inputs=[...$('question').querySelectorAll(`input[name="${group}"]`)];if(e.target.value===all&&e.target.checked)inputs.filter(x=>x!==e.target).forEach(x=>x.checked=false);else if(e.target.checked)inputs.find(x=>x.value===all).checked=false;if(inputs.every(x=>!x.checked))inputs.find(x=>x.value===all).checked=true;};
   }

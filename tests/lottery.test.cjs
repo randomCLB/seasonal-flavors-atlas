@@ -16,7 +16,7 @@ const neutral={...prefs,tastes:[],textures:[],cooking:[],curiosity:0};
 test('detail food photos belong to existing entries and ship with the site',()=>{
  const ids=new Set(foods.map(f=>f.id));
  for(const id of vm.runInContext('Object.keys(PHOTO_UPDATES)',ctx))assert.ok(ids.has(id),`unknown photo entry ${id}`);
- for(const f of foods)for(const src of [f.dishImage,f.cutImage].filter(Boolean))assert.ok(fs.existsSync(path.join(root,'dist',src)),`${f.id}: ${src}`);
+ for(const f of foods){assert.ok(f.dishImage||f.cutImage,`${f.id}: missing edible image`);for(const src of [f.dishImage,f.cutImage].filter(Boolean))assert.ok(fs.existsSync(path.join(root,'dist',src)),`${f.id}: ${src}`);}
 });
 
 test('all 55 recipes and sensory source fingerprints match; disabled stay explicit',()=>{

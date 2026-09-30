@@ -129,6 +129,18 @@
 | 菊花脑形态参考 | `dist/assets/juhuanao-candidate.jpg` 1080×720 | 同上 |
 | 淮安蒲菜形态参考 | `dist/assets/pucai-candidate.jpg` 707×1200 | 同上 |
 
+## 生成的详情可食状态示意图（2026-09-30）
+
+以下五张由 OpenAI 图像生成工具制作，并非摄影作品或地方品种的实物鉴别照片。输入本站已登记的原料照片作为形态参考；输出由 1448×1086 PNG 转为同尺寸 WebP，未把像素放大。人工复核了可辨形态、单核槜李、拐枣肉质果梗与硬果实的区别。详情图片的替代文字标明“示意图”。
+
+| 食材与用途 | 本站文件 | 形态参考 | 生成约束与复核重点 |
+| --- | --- | --- | --- |
+| 棠梨花凉拌 | `dist/assets/tanglihua-salad-generated.webp` | `dist/assets/tanglihua.jpg`（川梨花，异地产地，来源见前表） | 小白花焯泡后拌醋、蒜、少量辣椒；不当作云南食用花身份照片 |
+| 盐池黄花菜炖羊肉 | `dist/assets/yanchi-huanghuacai-lamb-generated.webp` | `dist/assets/huanghuacai.webp`（干黄花菜原料，来源见前表） | 熟后仍为细长完整花蕾，避免误画成面条或鲜花瓣 |
+| 旬阳拐枣果梗清饮 | `dist/assets/xunyang-guizao-juice-generated.webp` | `dist/assets/xunyang-guizao.jpg`（枳椇实物，JMK，CC BY-SA 3.0） | 以膨大弯曲果梗和独立硬果实为主体，清饮作次要场景；不声称主要用途只有榨汁 |
+| 青海蕨麻米粥 | `dist/assets/juema-congee-generated.webp` | `dist/assets/juema-roots-enhanced.webp`（风干蕨麻，石渠县政府图，许可待核） | 短小纺锤状块根保留粗糙外皮，部分露出浅色内芯；粥中不添其他干果 |
+| 桐乡槜李剖面 | `dist/assets/tongxiang-zhuili-cut-generated.webp` | `dist/assets/tongxiang-zhuili.jpg`（桐乡枝头果，潮新闻图，转载许可待核） | 紫红果皮细斑、黄肉、单个硬核；不用普通李子异图冒充剖面实拍 |
+
 ## 尚缺原料实拍
 
 目前 55 味均已配置页面主图，可浏览所有条目。部分照片是同类或异地产区参考，不能据此确认地方品种；新加入的火晶柿子、宁海蛏子采捕图、宁海白枇杷和木奶果图片未标开放许可，仍待确认。新加入条目的清晰度或场景缺口如下：

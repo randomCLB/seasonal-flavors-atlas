@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="回答五个小问题，抽出未来六个节气的尝鲜食单，将采购线索带进日历。">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>时令签 · 时令风物</title>
+<title>时令抽签 · 时令风物</title>
 <link rel="stylesheet" href="lottery.css">
 <link rel="stylesheet" href="lottery-questions.css?v=q2-20260929">
 <script src="solar-terms.js" defer></script><script src="data.js" defer></script>
@@ -16,14 +16,14 @@
 <header class="masthead"><a class="brand" href="index.html">时令风物<span>山川有时，鲜味有期。</span></a><div><span class="edition">1.1 · 五问新版</span><a class="back-link" href="index.html">回去逛逛 ↗</a></div></header>
 <main id="main">
 <section id="welcome" class="welcome">
-  <div class="welcome-copy"><p class="eyebrow">一份食单，六次相遇</p><h1>把接下来的时令，<br>留给<span>一口鲜。</span></h1><p class="lead">答五个小问题，抽出未来六个节气的风物。<br>从味道、质地和料理，挑出合你心意的鲜。</p><button id="begin" class="primary">抽一份我的时令签 <span>↗</span></button><p class="fine">不注册，不读取日历。答案默认只留在这次浏览里。</p><button id="clear-old" class="text-button" hidden>清除旧版本机记录</button><button id="resume" class="text-button" hidden>打开上次留住的食单 →</button></div>
-  <figure class="still-life"><img src="assets/chayote-shoots.webp" alt="一盘带着嫩茎与卷须的佛手瓜苗"><figcaption><span>从一口合意的鲜，</span><span>走进下一段季节。</span></figcaption><div class="stamp" aria-hidden="true">时<br>令<br>签</div></figure>
+  <div class="welcome-copy"><p class="eyebrow">一份食单，六次相遇</p><h1>把接下来的时令，<br>留给<span>一口鲜。</span></h1><p class="lead">答五个小问题，抽出未来六个节气的风物。<br>从味道、质地和料理，挑出合你心意的鲜。</p><button id="begin" class="primary">开始时令抽签 <span>↗</span></button><p class="fine">不注册，不读取日历。答案默认只留在这次浏览里。</p><button id="clear-old" class="text-button" hidden>清除旧版本机记录</button><button id="resume" class="text-button" hidden>打开上次留住的食单 →</button></div>
+  <figure class="still-life"><img src="assets/chayote-shoots.webp" alt="一盘带着嫩茎与卷须的佛手瓜苗"><figcaption><span>从一口合意的鲜，</span><span>走进下一段季节。</span></figcaption><div class="stamp" aria-hidden="true">时<br>令<br>抽<br>签</div></figure>
   <div class="upcoming"><span>接下来，我们会经过</span><p id="term-preview"></p></div>
 </section>
 <section id="quiz" class="quiz" hidden aria-labelledby="question-title"><div class="question-meta"><span id="progress"></span><span>慢慢选，随时可以改。</span></div><form id="question-form"><div id="question"></div><div class="quiz-actions"><button type="button" id="previous" class="text-button">← 上一问</button><button type="submit" class="primary" id="next">下一问 →</button></div></form><button id="leave-quiz" class="text-button muted">先不抽了</button></section>
 <section id="results" hidden aria-labelledby="result-title"><div class="result-heading"><p class="eyebrow">你的六节气食单</p><h1 id="result-title">把新鲜，<span>一点点排进生活。</span></h1><p id="result-summary"></p><p class="fine" id="saved-date"></p><div class="result-actions"><button class="primary" id="calendar-open">添加到日历 ↗</button><button class="text-button" id="redraw">再抽未锁定的</button><button class="text-button" id="edit">改改五个答案</button></div><p id="calendar-status" class="notice" role="status" hidden></p><label class="remember"><input type="checkbox" id="remember">仅在这台设备记住食单与答案</label><button id="forget" class="text-button" hidden>清除本机记录</button></div><div id="food-list" class="food-list"></div><p class="footnote">抽签是风味发现，不是过敏安全认证。可选配料和无法确定成分的油、酱也参与保守排除；实际商品配料、生产环境、到货状态，请在购买时再次确认。暂缺合适候选的节气会留白，不拿忌口换热闹。</p></section>
 <p id="status" role="status" aria-live="polite" class="status"></p>
-<noscript><p class="notice">时令签需要浏览器启用 JavaScript。你仍可返回风物首页。</p></noscript>
+<noscript><p class="notice">时令抽签需要浏览器启用 JavaScript。你仍可返回风物首页。</p></noscript>
 </main>
 <footer>时令风物 · 先认一味，再留一味。<a href="credits.html">图片与资料</a></footer>
 </body></html>

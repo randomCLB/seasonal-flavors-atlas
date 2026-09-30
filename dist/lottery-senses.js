@@ -30,7 +30,7 @@
     "congjun": ["ce716c51","umami","","tender chewy","soup","菌盖和菌柄呈现不同质地"],
     "rugao-takecai": ["cff6ea0c","sweet","","tender","stirfry",""],
     "eryuan-haicaihua": ["db8a8d9d","sweet umami","","tender crisp","stirfry","嫩茎熟后既滑又脆"],
-    "xunyang-guizao": ["16499b60","sweet","","tender","fresh","入口的是膨大果梗；柔软略黏的质地"],
+    "xunyang-guizao": ["b28b39f4","sweet","","tender","fresh","入口的是膨大果梗；果梗打浆过滤成清饮"],
     "dalian-zihaitan": ["6ad371b8","salty umami","","tender","steam","海胆黄成瓣，质地细腻"],
     "atushi-winter-lamb": ["204f873","umami","","tender chewy","soup",""],
     "ganbajun": ["8a3b5aaf","umami salty sweet","","chewy","stirfry","菌体层叠；浓香带腌肉般的气息"],

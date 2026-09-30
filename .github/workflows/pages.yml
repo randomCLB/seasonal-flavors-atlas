@@ -106,6 +106,6 @@ jobs:
           print('Verified public HTML, scripts, stylesheet and hero image.')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
               summary.write('## 时令风物 v1.1\n\n')
-              summary.write(f'[打开首页]({base}) · [打开时令签]({base}lottery.html)\n\n')
+              summary.write(f'[打开首页]({base}) · [打开时令抽签]({base}lottery.html)\n\n')
               summary.write('旧预览链接仍可打开，同步使用当前发布版本。\n')
           PY
