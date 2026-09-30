@@ -1,0 +1,87 @@
+[
+  {
+    "file": "jianou-zhuilli-reference.webp",
+    "sourceFile": "Shelled_castanea_henryi.jpg",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Shelled_castanea_henryi.jpg",
+    "originalURL": "https://upload.wikimedia.org/wikipedia/commons/7/77/Shelled_castanea_henryi.jpg",
+    "author": "Fumikas Sagisavas",
+    "license": "CC0-1.0",
+    "originalSize": [
+      3000,
+      3000
+    ],
+    "size": [
+      1100,
+      1100
+    ],
+    "sha256": "149faf90f0f07c01f6c0ae76533471b8547f5286e14701c0c546ae79c51b7e16"
+  },
+  {
+    "file": "chongming-biandou-reference.webp",
+    "sourceFile": "Lablab-bean_pods.jpg",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lablab-bean_pods.jpg",
+    "originalURL": "https://upload.wikimedia.org/wikipedia/commons/6/65/Lablab-bean_pods.jpg",
+    "author": "Fumikas Sagisavas",
+    "license": "CC0-1.0",
+    "originalSize": [
+      3000,
+      3000
+    ],
+    "size": [
+      1100,
+      1100
+    ],
+    "sha256": "51907f2f7d478a30f28cf722ddc48878f0053880de9f906cce1b9956d42bb272"
+  },
+  {
+    "file": "chongming-taro-reference.webp",
+    "sourceFile": "Boiled_taro.png",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Boiled_taro.png",
+    "originalURL": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Boiled_taro.png",
+    "author": "Rtnf",
+    "license": "CC-BY-SA-4.0",
+    "originalSize": [
+      1773,
+      1000
+    ],
+    "size": [
+      1400,
+      790
+    ],
+    "sha256": "775e7520827ab1f6d052c4b87f4c24f29817174d313d530a4e5ac2da8ae55d9b"
+  },
+  {
+    "file": "xiangyin-jiaotou-reference.webp",
+    "sourceFile": "Allium_chinense_Rakkyo.JPG",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Allium_chinense_Rakkyo.JPG",
+    "originalURL": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Allium_chinense_Rakkyo.JPG",
+    "author": "Midori",
+    "license": "CC-BY-SA-3.0",
+    "originalSize": [
+      2848,
+      2136
+    ],
+    "size": [
+      1400,
+      1050
+    ],
+    "sha256": "9d8b9b9a0fbb35956ad72d270f1d349b4250dbc94777a6c4315a63da74003859"
+  },
+  {
+    "file": "wenzhou-pancai-reference.webp",
+    "sourceFile": "White_turnip_2017_A1.jpg",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:White_turnip_2017_A1.jpg",
+    "originalURL": "https://upload.wikimedia.org/wikipedia/commons/1/1c/White_turnip_2017_A1.jpg",
+    "author": "Fructibus",
+    "license": "CC0-1.0",
+    "originalSize": [
+      4608,
+      3456
+    ],
+    "size": [
+      1400,
+      1050
+    ],
+    "sha256": "af1ca1080054e31e1e0b1ea226f213a18f2aafa6b57b0545173e1d73ec2e7a58"
+  }
+]

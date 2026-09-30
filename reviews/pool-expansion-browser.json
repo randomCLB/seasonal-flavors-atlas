@@ -1,0 +1,315 @@
+{
+  "checks": [
+    {
+      "name": "desktop start",
+      "pass": true
+    },
+    {
+      "name": "desktop round1 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round1 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round2 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round2 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round3 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round3 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round4 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round4 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round5 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round5 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round6 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round6 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round7 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round7 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round8 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round8 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round9 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round9 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round10 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round10 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round11 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round11 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round12 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round12 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop round13 image loaded",
+      "pass": true
+    },
+    {
+      "name": "desktop round13 body fits",
+      "pass": true
+    },
+    {
+      "name": "desktop 13 distinct meals",
+      "pass": true
+    },
+    {
+      "name": "desktop full bag zero remaining",
+      "pass": true
+    },
+    {
+      "name": "desktop no boundary immediate repeat",
+      "pass": true
+    },
+    {
+      "name": "desktop next cycle acknowledged",
+      "pass": true
+    },
+    {
+      "name": "desktop recipe complete",
+      "pass": true
+    },
+    {
+      "name": "mobile start",
+      "pass": true
+    },
+    {
+      "name": "mobile round1 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round1 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round2 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round2 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round3 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round3 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round4 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round4 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round5 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round5 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round6 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round6 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round7 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round7 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round8 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round8 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round9 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round9 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round10 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round10 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round11 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round11 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round12 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round12 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile round13 image loaded",
+      "pass": true
+    },
+    {
+      "name": "mobile round13 body fits",
+      "pass": true
+    },
+    {
+      "name": "mobile 13 distinct meals",
+      "pass": true
+    },
+    {
+      "name": "mobile full bag zero remaining",
+      "pass": true
+    },
+    {
+      "name": "mobile no boundary immediate repeat",
+      "pass": true
+    },
+    {
+      "name": "mobile next cycle acknowledged",
+      "pass": true
+    },
+    {
+      "name": "mobile recipe complete",
+      "pass": true
+    },
+    {
+      "name": "main catalog 60",
+      "pass": true
+    },
+    {
+      "name": "jianou-zhuilli detail opens",
+      "pass": true
+    },
+    {
+      "name": "jianou-zhuilli recipe shown",
+      "pass": true
+    },
+    {
+      "name": "chongming-baibiandou detail opens",
+      "pass": true
+    },
+    {
+      "name": "chongming-baibiandou recipe shown",
+      "pass": true
+    },
+    {
+      "name": "chongming-xiangsu-yu detail opens",
+      "pass": true
+    },
+    {
+      "name": "chongming-xiangsu-yu recipe shown",
+      "pass": true
+    },
+    {
+      "name": "xiangyin-santang-jiaotou detail opens",
+      "pass": true
+    },
+    {
+      "name": "xiangyin-santang-jiaotou recipe shown",
+      "pass": true
+    },
+    {
+      "name": "wenzhou-pancai detail opens",
+      "pass": true
+    },
+    {
+      "name": "wenzhou-pancai recipe shown",
+      "pass": true
+    },
+    {
+      "name": "map view retained",
+      "pass": true
+    },
+    {
+      "name": "no unhandled script exceptions",
+      "pass": true
+    }
+  ],
+  "passed": 77,
+  "errors": [],
+  "scope": "Exact inline source, local image request responses, desktop/mobile Chromium viewports. Not live networking, a physical phone, or system calendar."
+}

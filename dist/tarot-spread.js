@@ -71,16 +71,14 @@
   function resolve({round,foods,profiles,events,now=Date.now(),avoid=[],excludeText='',history=[]}) {
     assertRound(round);if(round.phase!=='complete') throw Error('三张牌还未到齐。');
     const entries=selected(round),term=T.currentTerm(events,now),all=T.pool({foods,profiles,events,now,avoid,excludeText});
-    if(!all.length)return {empty:true,term,reason:'此刻没有同时符合忌口、时令及成菜资料的候选。牌阵可以重开，但不会放宽忌口。'};
-    let candidates=all.filter(x=>!history.slice(-2).includes(x.food.id));
-    if(!candidates.length)candidates=all.filter(x=>x.food.id!==history.at(-1));
-    if(!candidates.length)candidates=all;
+    if(!all.length)return {empty:true,term,reason:'此刻没有同时符合忌口、时令及配方配图资料的候选。牌阵可以重开，但不会放宽忌口。'};
+    const rotation=T.rotationCandidates(all,history),candidates=rotation.candidates;
     const signature=entries.map(e=>`${e.id}:${Number(e.reversed)}:${e.index}`).join('|');
     const rng=C.random(`${VERSION}:${round.seed}:${round.cut}:${signature}:${C.dayAt(now)}`);
     const weights=candidates.map(x=>affinity(x.food,profiles[x.food.id],entries).weight);
     let value=rng()*weights.reduce((a,b)=>a+b,0),chosen=candidates.at(-1);
     for(let i=0;i<candidates.length;i++){value-=weights[i];if(value<0){chosen=candidates[i];break;}}
-    const result={version:VERSION,cards:entries,foodId:chosen.food.id,term,day:C.dayAt(now),place:chosen.place,eligibleCount:all.length,repeated:chosen.food.id===history.at(-1)};
+    const result={version:VERSION,cards:entries,foodId:chosen.food.id,term,day:C.dayAt(now),place:chosen.place,eligibleCount:all.length,remainingCount:rotation.remainingCount,cycleRestarted:rotation.cycleRestarted,repeated:chosen.food.id===history.at(-1)};
     result.reading=interpret(entries,chosen.food,profiles[chosen.food.id]);
     return result;
   }

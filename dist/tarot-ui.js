@@ -18,7 +18,7 @@ function show(r){
  $('reading-date').textContent=`${r.day.replaceAll('-',' · ')} · ${r.term.name} · 你的餐桌占卜`;
  $('card-number').textContent=card.number;$('card-symbol').textContent=card.symbol;$('card-name').textContent=card.name;$('card-position').textContent=r.reversed?'逆位':'正位';$('card-key').textContent=card.key;
  $('dish-title').textContent=T.dishName(f);$('dish-origin').textContent=`用到 ${f.name} · ${r.place.place}`;
- const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};image.alt=f.dishImageAlt||`${f.name}成菜参考`;image.src=f.dishImage;
+ const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};const media=T.mediaFor(f);image.alt=media.alt;image.src=media.src;
  $('image-note').textContent=T.imageNote(f);for(const key of ['opening','connection','closing','omen'])$(key).textContent=r.reading[key];
  $('dish-sensory').textContent=f.dishCaption||f.short||'';
  $('season-note').textContent=`时令线索：${f.season} 当前推荐依据产地记录，不代表库存或当年成熟日已确认。`;
@@ -30,7 +30,7 @@ function show(r){
  $('recipe-storage').textContent=`带回家后：${f.storage||'按实际商品说明保存，尽快安排食用。'}`;
  const url=new URL('index.html',document.baseURI);url.searchParams.set('food',f.id);$('food-link').href=url.href;
  const source=$('season-source');try{const u=new URL(r.place.source);source.hidden=!['http:','https:'].includes(u.protocol);if(!source.hidden)source.href=u.href;}catch{source.hidden=true;}
- $('repeat-note').textContent=r.repeated?'目前没有其他符合忌口的当季菜，命运又把这一味送回桌上。':`这一轮有 ${r.eligibleCount} 道符合时令与忌口的菜入牌。再抽会尽量避开最近两道，不必将每张签都当真。`;
+ $('repeat-note').textContent=r.repeated?'目前没有其他符合忌口的当季菜，命运又把这一味送回桌上。':`这一轮有 ${r.eligibleCount} 道符合时令与忌口的菜入牌。再抽会先抽遍当季候选，再轮换，不必将每张签都当真。`;
  $('table').hidden=true;$('reveal').hidden=false;document.querySelector('.recipe-preview').open=false;$('manual-copy')?.remove();notify('');$('result-title').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});
 }
 async function choose(position,button){
@@ -38,7 +38,7 @@ async function choose(position,button){
  try{const avoid=[...$('avoid-options').querySelectorAll('input:checked')].map(x=>x.value),r=T.draw({foods,profiles,events,now:Date.now(),seed:roundSeed,position,avoid,excludeText:$('exclude-text').value.trim(),history});if(r.empty){error(r.reason);return;}
  setBusy(true);button.classList.add('chosen');$('spread').classList.add('is-drawing');notify('正在核对星盘与锅气…');
  await new Promise(resolve=>setTimeout(resolve,matchMedia('(prefers-reduced-motion: reduce)').matches?0:650));
- history.push(r.foodId);history=history.slice(-5);show(r);
+ history.push(r.foodId);show(r);
  }catch(e){error(e.message||'这张牌没有翻好，请重新洗牌。');notify('');}finally{setBusy(false);$('spread').classList.remove('is-drawing');}
 }
 try{

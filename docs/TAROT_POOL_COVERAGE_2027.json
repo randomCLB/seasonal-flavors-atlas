@@ -1,0 +1,821 @@
+{
+  "catalogCount": 60,
+  "sampling": "Each month 1st/15th/28th at 12:00 China time; no dietary exclusions. Counts are site-data coverage, not market availability.",
+  "minimum": 3,
+  "rows": [
+    {
+      "date": "2027-01-01",
+      "count": 9,
+      "ids": [
+        "cigu",
+        "zengcheng-caixin",
+        "hongshan-caitai",
+        "yangxin-huhao",
+        "bishan-ercai",
+        "rugao-takecai",
+        "atushi-winter-lamb",
+        "shazhou-zhugengqin",
+        "liyang-baixin"
+      ],
+      "names": [
+        "宝应慈姑",
+        "增城迟菜心",
+        "洪山菜薹",
+        "阳新湖蒿",
+        "璧山儿菜",
+        "如皋黑塌菜",
+        "阿图什冬宰羊肉",
+        "沙洲竹梗芹",
+        "溧阳白芹"
+      ]
+    },
+    {
+      "date": "2027-01-15",
+      "count": 9,
+      "ids": [
+        "cigu",
+        "zengcheng-caixin",
+        "hongshan-caitai",
+        "yangxin-huhao",
+        "bishan-ercai",
+        "rugao-takecai",
+        "atushi-winter-lamb",
+        "shazhou-zhugengqin",
+        "liyang-baixin"
+      ],
+      "names": [
+        "宝应慈姑",
+        "增城迟菜心",
+        "洪山菜薹",
+        "阳新湖蒿",
+        "璧山儿菜",
+        "如皋黑塌菜",
+        "阿图什冬宰羊肉",
+        "沙洲竹梗芹",
+        "溧阳白芹"
+      ]
+    },
+    {
+      "date": "2027-01-28",
+      "count": 9,
+      "ids": [
+        "cigu",
+        "zengcheng-caixin",
+        "hongshan-caitai",
+        "yangxin-huhao",
+        "bishan-ercai",
+        "rugao-takecai",
+        "atushi-winter-lamb",
+        "shazhou-zhugengqin",
+        "liyang-baixin"
+      ],
+      "names": [
+        "宝应慈姑",
+        "增城迟菜心",
+        "洪山菜薹",
+        "阳新湖蒿",
+        "璧山儿菜",
+        "如皋黑塌菜",
+        "阿图什冬宰羊肉",
+        "沙洲竹梗芹",
+        "溧阳白芹"
+      ]
+    },
+    {
+      "date": "2027-02-01",
+      "count": 3,
+      "ids": [
+        "hongshan-caitai",
+        "yangxin-huhao",
+        "bishan-ercai"
+      ],
+      "names": [
+        "洪山菜薹",
+        "阳新湖蒿",
+        "璧山儿菜"
+      ]
+    },
+    {
+      "date": "2027-02-15",
+      "count": 3,
+      "ids": [
+        "hongshan-caitai",
+        "yangxin-huhao",
+        "bishan-ercai"
+      ],
+      "names": [
+        "洪山菜薹",
+        "阳新湖蒿",
+        "璧山儿菜"
+      ]
+    },
+    {
+      "date": "2027-02-28",
+      "count": 4,
+      "ids": [
+        "hongshan-caitai",
+        "yangxin-huhao",
+        "bishan-ercai",
+        "jintang-fresh-morel"
+      ],
+      "names": [
+        "洪山菜薹",
+        "阳新湖蒿",
+        "璧山儿菜",
+        "金堂鲜羊肚菌"
+      ]
+    },
+    {
+      "date": "2027-03-01",
+      "count": 10,
+      "ids": [
+        "tanglihua",
+        "kucihua",
+        "juhuanao",
+        "yangnaiguo",
+        "juema",
+        "yantai-haichang",
+        "wuding-jinquehua",
+        "dalian-haimaxian",
+        "ninghai-changjie-razor-clam",
+        "jintang-fresh-morel"
+      ],
+      "names": [
+        "棠梨花",
+        "苦刺花",
+        "菊花脑",
+        "羊奶果",
+        "青海蕨麻",
+        "烟台海肠",
+        "武定金雀花",
+        "大连海麻线",
+        "宁海长街蛏子",
+        "金堂鲜羊肚菌"
+      ]
+    },
+    {
+      "date": "2027-03-15",
+      "count": 10,
+      "ids": [
+        "tanglihua",
+        "kucihua",
+        "juhuanao",
+        "yangnaiguo",
+        "juema",
+        "yantai-haichang",
+        "wuding-jinquehua",
+        "dalian-haimaxian",
+        "ninghai-changjie-razor-clam",
+        "jintang-fresh-morel"
+      ],
+      "names": [
+        "棠梨花",
+        "苦刺花",
+        "菊花脑",
+        "羊奶果",
+        "青海蕨麻",
+        "烟台海肠",
+        "武定金雀花",
+        "大连海麻线",
+        "宁海长街蛏子",
+        "金堂鲜羊肚菌"
+      ]
+    },
+    {
+      "date": "2027-03-28",
+      "count": 10,
+      "ids": [
+        "tanglihua",
+        "kucihua",
+        "juhuanao",
+        "yangnaiguo",
+        "juema",
+        "yantai-haichang",
+        "wuding-jinquehua",
+        "dalian-haimaxian",
+        "ninghai-changjie-razor-clam",
+        "jintang-fresh-morel"
+      ],
+      "names": [
+        "棠梨花",
+        "苦刺花",
+        "菊花脑",
+        "羊奶果",
+        "青海蕨麻",
+        "烟台海肠",
+        "武定金雀花",
+        "大连海麻线",
+        "宁海长街蛏子",
+        "金堂鲜羊肚菌"
+      ]
+    },
+    {
+      "date": "2027-04-01",
+      "count": 5,
+      "ids": [
+        "foshougua-miao",
+        "cinenya",
+        "pucai",
+        "eryuan-haicaihua",
+        "ninghai-changjie-razor-clam"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "刺嫩芽",
+        "淮安蒲菜",
+        "洱源海菜花",
+        "宁海长街蛏子"
+      ]
+    },
+    {
+      "date": "2027-04-15",
+      "count": 5,
+      "ids": [
+        "foshougua-miao",
+        "cinenya",
+        "pucai",
+        "eryuan-haicaihua",
+        "ninghai-changjie-razor-clam"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "刺嫩芽",
+        "淮安蒲菜",
+        "洱源海菜花",
+        "宁海长街蛏子"
+      ]
+    },
+    {
+      "date": "2027-04-28",
+      "count": 5,
+      "ids": [
+        "foshougua-miao",
+        "cinenya",
+        "pucai",
+        "eryuan-haicaihua",
+        "ninghai-changjie-razor-clam"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "刺嫩芽",
+        "淮安蒲菜",
+        "洱源海菜花",
+        "宁海长街蛏子"
+      ]
+    },
+    {
+      "date": "2027-05-01",
+      "count": 5,
+      "ids": [
+        "foshougua-miao",
+        "cinenya",
+        "pucai",
+        "honghu-oudai",
+        "eryuan-haicaihua"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "刺嫩芽",
+        "淮安蒲菜",
+        "洪湖藕带",
+        "洱源海菜花"
+      ]
+    },
+    {
+      "date": "2027-05-15",
+      "count": 5,
+      "ids": [
+        "foshougua-miao",
+        "cinenya",
+        "pucai",
+        "honghu-oudai",
+        "eryuan-haicaihua"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "刺嫩芽",
+        "淮安蒲菜",
+        "洪湖藕带",
+        "洱源海菜花"
+      ]
+    },
+    {
+      "date": "2027-05-28",
+      "count": 6,
+      "ids": [
+        "foshougua-miao",
+        "cinenya",
+        "pucai",
+        "honghu-oudai",
+        "eryuan-haicaihua",
+        "ninghai-white-loquat"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "刺嫩芽",
+        "淮安蒲菜",
+        "洪湖藕带",
+        "洱源海菜花",
+        "宁海白枇杷"
+      ]
+    },
+    {
+      "date": "2027-06-01",
+      "count": 5,
+      "ids": [
+        "honghu-oudai",
+        "tongxiang-zhuili",
+        "kuche-xiaobaixing",
+        "jiande-chuncai",
+        "xiangyin-santang-jiaotou"
+      ],
+      "names": [
+        "洪湖藕带",
+        "桐乡槜李",
+        "库车小白杏",
+        "建德莼菜",
+        "湘阴三塘鲜藠头"
+      ]
+    },
+    {
+      "date": "2027-06-15",
+      "count": 5,
+      "ids": [
+        "honghu-oudai",
+        "tongxiang-zhuili",
+        "kuche-xiaobaixing",
+        "jiande-chuncai",
+        "xiangyin-santang-jiaotou"
+      ],
+      "names": [
+        "洪湖藕带",
+        "桐乡槜李",
+        "库车小白杏",
+        "建德莼菜",
+        "湘阴三塘鲜藠头"
+      ]
+    },
+    {
+      "date": "2027-06-28",
+      "count": 5,
+      "ids": [
+        "honghu-oudai",
+        "tongxiang-zhuili",
+        "kuche-xiaobaixing",
+        "jiande-chuncai",
+        "xiangyin-santang-jiaotou"
+      ],
+      "names": [
+        "洪湖藕带",
+        "桐乡槜李",
+        "库车小白杏",
+        "建德莼菜",
+        "湘阴三塘鲜藠头"
+      ]
+    },
+    {
+      "date": "2027-07-01",
+      "count": 9,
+      "ids": [
+        "foshougua-miao",
+        "dier",
+        "congjun",
+        "dalian-zihaitan",
+        "ganbajun",
+        "gaochun-liuyuehuang",
+        "chenghai-baoke",
+        "yunan-seedless-huangpi",
+        "xishuangbanna-wood-milk-fruit"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "地耳",
+        "枞菌",
+        "大连紫海胆",
+        "干巴菌",
+        "高淳六月黄",
+        "澄海薄壳米",
+        "郁南无核黄皮",
+        "西双版纳木奶果"
+      ]
+    },
+    {
+      "date": "2027-07-15",
+      "count": 9,
+      "ids": [
+        "foshougua-miao",
+        "dier",
+        "congjun",
+        "dalian-zihaitan",
+        "ganbajun",
+        "gaochun-liuyuehuang",
+        "chenghai-baoke",
+        "yunan-seedless-huangpi",
+        "xishuangbanna-wood-milk-fruit"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "地耳",
+        "枞菌",
+        "大连紫海胆",
+        "干巴菌",
+        "高淳六月黄",
+        "澄海薄壳米",
+        "郁南无核黄皮",
+        "西双版纳木奶果"
+      ]
+    },
+    {
+      "date": "2027-07-28",
+      "count": 9,
+      "ids": [
+        "foshougua-miao",
+        "dier",
+        "congjun",
+        "dalian-zihaitan",
+        "ganbajun",
+        "gaochun-liuyuehuang",
+        "chenghai-baoke",
+        "yunan-seedless-huangpi",
+        "xishuangbanna-wood-milk-fruit"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "地耳",
+        "枞菌",
+        "大连紫海胆",
+        "干巴菌",
+        "高淳六月黄",
+        "澄海薄壳米",
+        "郁南无核黄皮",
+        "西双版纳木奶果"
+      ]
+    },
+    {
+      "date": "2027-08-01",
+      "count": 7,
+      "ids": [
+        "jitoumi",
+        "dier",
+        "congjun",
+        "dalian-zihaitan",
+        "ganbajun",
+        "chenghai-baoke",
+        "xishuangbanna-wood-milk-fruit"
+      ],
+      "names": [
+        "鸡头米",
+        "地耳",
+        "枞菌",
+        "大连紫海胆",
+        "干巴菌",
+        "澄海薄壳米",
+        "西双版纳木奶果"
+      ]
+    },
+    {
+      "date": "2027-08-15",
+      "count": 7,
+      "ids": [
+        "jitoumi",
+        "dier",
+        "congjun",
+        "dalian-zihaitan",
+        "ganbajun",
+        "chenghai-baoke",
+        "xishuangbanna-wood-milk-fruit"
+      ],
+      "names": [
+        "鸡头米",
+        "地耳",
+        "枞菌",
+        "大连紫海胆",
+        "干巴菌",
+        "澄海薄壳米",
+        "西双版纳木奶果"
+      ]
+    },
+    {
+      "date": "2027-08-28",
+      "count": 7,
+      "ids": [
+        "jitoumi",
+        "dier",
+        "congjun",
+        "dalian-zihaitan",
+        "ganbajun",
+        "chenghai-baoke",
+        "xishuangbanna-wood-milk-fruit"
+      ],
+      "names": [
+        "鸡头米",
+        "地耳",
+        "枞菌",
+        "大连紫海胆",
+        "干巴菌",
+        "澄海薄壳米",
+        "西双版纳木奶果"
+      ]
+    },
+    {
+      "date": "2027-09-01",
+      "count": 13,
+      "ids": [
+        "nanhu-ling",
+        "jitoumi",
+        "bayuegua",
+        "ruanzao-mihoutao",
+        "shajiguo",
+        "cili",
+        "huoshan-yanghe",
+        "zhenlai-jiaobai",
+        "hanshou-yubiou",
+        "jianou-zhuilli",
+        "chongming-baibiandou",
+        "chongming-xiangsu-yu",
+        "wenzhou-pancai"
+      ],
+      "names": [
+        "南湖菱",
+        "鸡头米",
+        "八月瓜",
+        "软枣猕猴桃",
+        "沙棘果",
+        "刺梨",
+        "霍山阳荷嫩苞",
+        "镇赉寒地茭白",
+        "汉寿玉臂藕",
+        "建瓯锥栗",
+        "崇明白扁豆鲜荚",
+        "崇明香酥芋",
+        "温州盘菜"
+      ]
+    },
+    {
+      "date": "2027-09-15",
+      "count": 13,
+      "ids": [
+        "nanhu-ling",
+        "jitoumi",
+        "bayuegua",
+        "ruanzao-mihoutao",
+        "shajiguo",
+        "cili",
+        "huoshan-yanghe",
+        "zhenlai-jiaobai",
+        "hanshou-yubiou",
+        "jianou-zhuilli",
+        "chongming-baibiandou",
+        "chongming-xiangsu-yu",
+        "wenzhou-pancai"
+      ],
+      "names": [
+        "南湖菱",
+        "鸡头米",
+        "八月瓜",
+        "软枣猕猴桃",
+        "沙棘果",
+        "刺梨",
+        "霍山阳荷嫩苞",
+        "镇赉寒地茭白",
+        "汉寿玉臂藕",
+        "建瓯锥栗",
+        "崇明白扁豆鲜荚",
+        "崇明香酥芋",
+        "温州盘菜"
+      ]
+    },
+    {
+      "date": "2027-09-28",
+      "count": 13,
+      "ids": [
+        "nanhu-ling",
+        "jitoumi",
+        "bayuegua",
+        "ruanzao-mihoutao",
+        "shajiguo",
+        "cili",
+        "huoshan-yanghe",
+        "zhenlai-jiaobai",
+        "hanshou-yubiou",
+        "jianou-zhuilli",
+        "chongming-baibiandou",
+        "chongming-xiangsu-yu",
+        "wenzhou-pancai"
+      ],
+      "names": [
+        "南湖菱",
+        "鸡头米",
+        "八月瓜",
+        "软枣猕猴桃",
+        "沙棘果",
+        "刺梨",
+        "霍山阳荷嫩苞",
+        "镇赉寒地茭白",
+        "汉寿玉臂藕",
+        "建瓯锥栗",
+        "崇明白扁豆鲜荚",
+        "崇明香酥芋",
+        "温州盘菜"
+      ]
+    },
+    {
+      "date": "2027-10-01",
+      "count": 8,
+      "ids": [
+        "nanhu-ling",
+        "cizhousun",
+        "juema",
+        "zhenlai-jiaobai",
+        "jianou-zhuilli",
+        "chongming-baibiandou",
+        "chongming-xiangsu-yu",
+        "wenzhou-pancai"
+      ],
+      "names": [
+        "南湖菱",
+        "刺竹笋",
+        "青海蕨麻",
+        "镇赉寒地茭白",
+        "建瓯锥栗",
+        "崇明白扁豆鲜荚",
+        "崇明香酥芋",
+        "温州盘菜"
+      ]
+    },
+    {
+      "date": "2027-10-15",
+      "count": 8,
+      "ids": [
+        "nanhu-ling",
+        "cizhousun",
+        "juema",
+        "zhenlai-jiaobai",
+        "jianou-zhuilli",
+        "chongming-baibiandou",
+        "chongming-xiangsu-yu",
+        "wenzhou-pancai"
+      ],
+      "names": [
+        "南湖菱",
+        "刺竹笋",
+        "青海蕨麻",
+        "镇赉寒地茭白",
+        "建瓯锥栗",
+        "崇明白扁豆鲜荚",
+        "崇明香酥芋",
+        "温州盘菜"
+      ]
+    },
+    {
+      "date": "2027-10-28",
+      "count": 11,
+      "ids": [
+        "nanhu-ling",
+        "cizhousun",
+        "juema",
+        "zhenlai-jiaobai",
+        "lintong-huojing-shizi",
+        "lyg-shaguang-fish",
+        "minqing-tanxiang-olive",
+        "jianou-zhuilli",
+        "chongming-baibiandou",
+        "chongming-xiangsu-yu",
+        "wenzhou-pancai"
+      ],
+      "names": [
+        "南湖菱",
+        "刺竹笋",
+        "青海蕨麻",
+        "镇赉寒地茭白",
+        "临潼火晶柿子",
+        "连云港沙光鱼",
+        "闽清檀香橄榄",
+        "建瓯锥栗",
+        "崇明白扁豆鲜荚",
+        "崇明香酥芋",
+        "温州盘菜"
+      ]
+    },
+    {
+      "date": "2027-11-01",
+      "count": 4,
+      "ids": [
+        "cizhousun",
+        "xunyang-guizao",
+        "lyg-shaguang-fish",
+        "minqing-tanxiang-olive"
+      ],
+      "names": [
+        "刺竹笋",
+        "旬阳拐枣",
+        "连云港沙光鱼",
+        "闽清檀香橄榄"
+      ]
+    },
+    {
+      "date": "2027-11-15",
+      "count": 4,
+      "ids": [
+        "cizhousun",
+        "xunyang-guizao",
+        "lyg-shaguang-fish",
+        "minqing-tanxiang-olive"
+      ],
+      "names": [
+        "刺竹笋",
+        "旬阳拐枣",
+        "连云港沙光鱼",
+        "闽清檀香橄榄"
+      ]
+    },
+    {
+      "date": "2027-11-28",
+      "count": 4,
+      "ids": [
+        "cizhousun",
+        "xunyang-guizao",
+        "lyg-shaguang-fish",
+        "minqing-tanxiang-olive"
+      ],
+      "names": [
+        "刺竹笋",
+        "旬阳拐枣",
+        "连云港沙光鱼",
+        "闽清檀香橄榄"
+      ]
+    },
+    {
+      "date": "2027-12-01",
+      "count": 8,
+      "ids": [
+        "cigu",
+        "zengcheng-caixin",
+        "yangxin-huhao",
+        "atushi-winter-lamb",
+        "shazhou-zhugengqin",
+        "liyang-baixin",
+        "conghua-dajiecai",
+        "jinjiang-toushui-zicai"
+      ],
+      "names": [
+        "宝应慈姑",
+        "增城迟菜心",
+        "阳新湖蒿",
+        "阿图什冬宰羊肉",
+        "沙洲竹梗芹",
+        "溧阳白芹",
+        "从化大芥菜",
+        "晋江头水紫菜"
+      ]
+    },
+    {
+      "date": "2027-12-15",
+      "count": 8,
+      "ids": [
+        "cigu",
+        "zengcheng-caixin",
+        "yangxin-huhao",
+        "atushi-winter-lamb",
+        "shazhou-zhugengqin",
+        "liyang-baixin",
+        "conghua-dajiecai",
+        "jinjiang-toushui-zicai"
+      ],
+      "names": [
+        "宝应慈姑",
+        "增城迟菜心",
+        "阳新湖蒿",
+        "阿图什冬宰羊肉",
+        "沙洲竹梗芹",
+        "溧阳白芹",
+        "从化大芥菜",
+        "晋江头水紫菜"
+      ]
+    },
+    {
+      "date": "2027-12-28",
+      "count": 8,
+      "ids": [
+        "cigu",
+        "zengcheng-caixin",
+        "yangxin-huhao",
+        "atushi-winter-lamb",
+        "shazhou-zhugengqin",
+        "liyang-baixin",
+        "conghua-dajiecai",
+        "jinjiang-toushui-zicai"
+      ],
+      "names": [
+        "宝应慈姑",
+        "增城迟菜心",
+        "阳新湖蒿",
+        "阿图什冬宰羊肉",
+        "沙洲竹梗芹",
+        "溧阳白芹",
+        "从化大芥菜",
+        "晋江头水紫菜"
+      ]
+    }
+  ]
+}
