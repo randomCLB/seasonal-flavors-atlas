@@ -1,0 +1,77 @@
+name: Apply reviewed tarot entry changes
+on:
+  push:
+    branches: [feature/tarot-default-entry]
+    paths: [.github/workflows/apply-tarot-default.yml]
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: github.repository == 'randomCLB/seasonal-flavors-atlas' && github.ref == 'refs/heads/feature/tarot-default-entry'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Apply exact reviewed substitutions to four presentation files
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          expected = {
+              'dist/index.html': '071de82d791d0dccb602c7da0ffcf8e173bd12d6',
+              'dist/app.js': 'eeddbb3366b84becb7758a2e9ab45cc7ff8a7969',
+              'dist/tarot.html': '56729ebe3315bff913a86924d9e4eeeb90efb92a',
+              'dist/lottery.html': '04ca017c32d2f8c1b06c29a7fd1f3440cb050d93',
+          }
+          def once(text, old, new):
+              if text.count(old) != 1:
+                  raise RuntimeError('Expected one exact match: '+old[:100])
+              return text.replace(old, new, 1)
+          contents = {}
+          for name, sha in expected.items():
+              raw = Path(name).read_bytes()
+              actual = hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
+              if actual != sha:
+                  raise RuntimeError('Source changed; refusing to overwrite '+name)
+              contents[name] = raw.decode('utf-8')
+          contents['dist/index.html'] = once(contents['dist/index.html'],
+              '<a class="nav-item" href="lottery.html">时令抽签</a>',
+              '<a class="nav-item" href="tarot.html" aria-label="时令抽签：塔罗三牌阵">时令抽签</a>')
+          contents['dist/index.html'] = once(contents['dist/index.html'],
+              'src="app.js"', 'src="app.js?v=tarot-default1"')
+          contents['dist/app.js'] = once(contents['dist/app.js'],
+              "document.querySelectorAll('.nav-item').forEach(b=>b.onclick=()=>setView(b.dataset.view));",
+              "document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));")
+          contents['dist/tarot.html'] = once(contents['dist/tarot.html'],
+              '<nav aria-label="抽签方式"><a href="lottery.html">风味签</a><a href="tarot.html" aria-current="page">塔罗签</a></nav>',
+              '<nav aria-label="抽签方式"><a href="tarot.html" aria-current="page">塔罗签</a><a href="lottery.html">风味签</a></nav>')
+          contents['dist/lottery.html'] = once(contents['dist/lottery.html'],
+              '<nav class="draw-modes" aria-label="抽签方式"><a href="lottery.html" aria-current="page">风味签 · 按喜好挑</a><a href="tarot.html">塔罗签 · 让命运挑 ↗</a></nav>',
+              '<nav class="draw-modes" aria-label="抽签方式"><a href="tarot.html">塔罗签 · 让命运挑 ↗</a><a href="lottery.html" aria-current="page">风味签 · 按喜好挑</a></nav>')
+          for old, new in [
+              ('<title>时令抽签 · 时令风物</title>', '<title>风味签 · 时令风物</title>'),
+              ('1.1 · 五问新版', '1.1 · 风味签'),
+              ('开始时令抽签', '开始风味签'),
+              ('时<br>令<br>抽<br>签', '风<br>味<br>签'),
+              ('时令抽签需要浏览器启用 JavaScript。', '风味签需要浏览器启用 JavaScript。'),
+          ]:
+              contents['dist/lottery.html'] = once(contents['dist/lottery.html'], old, new)
+          for name, text in contents.items():
+              Path(name).write_text(text, encoding='utf-8')
+          print('Applied reviewed entry changes; recommendation, food data, map and calendar files untouched.')
+          PY
+      - name: Test before committing
+        run: |
+          node --check dist/app.js
+          node --test tests/draw-navigation.test.cjs tests/lottery.test.cjs tests/tarot.test.cjs tests/tarot-spread.test.cjs
+      - name: Commit only reviewed presentation changes on the feature branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/index.html dist/app.js dist/tarot.html dist/lottery.html
+          git diff --cached --stat
+          git commit -m 'feat: make tarot the default draw and keep flavor secondary'
+          git push origin HEAD:refs/heads/feature/tarot-default-entry
