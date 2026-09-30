@@ -31,7 +31,10 @@ jobs:
           node --check dist/lottery-ui.js
           node --check dist/lottery-profiles.js
           node --check dist/lottery-senses.js
-          node --test tests/lottery.test.cjs
+          node --check dist/tarot-core.js
+          node --check dist/tarot-deck.js
+          node --check dist/tarot-ui.js
+          node --test tests/lottery.test.cjs tests/tarot.test.cjs
       - name: Compose site and compatible preview link
         run: |
           python3 - <<'PY'
@@ -79,6 +82,9 @@ jobs:
           import hashlib, os, pathlib, time, urllib.request
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
           paths = ['index.html', 'lottery.html', 'assets/shajiguo-cut.jpg',
+                   'tarot.html', 'tarot.css', 'tarot-deck.js', 'tarot-core.js', 'tarot-ui.js', 'draw-modes.css',
+                   'preview/v1.1/tarot.html', 'preview/v1.1/tarot.css',
+                   'preview/v1.1/tarot-deck.js', 'preview/v1.1/tarot-core.js', 'preview/v1.1/tarot-ui.js',
                    'preview/v1.1/lottery.html', 'preview/v1.1/lottery.css',
                    'preview/v1.1/lottery-core.js', 'preview/v1.1/lottery-ui.js',
                    'preview/v1.1/lottery-senses.js', 'preview/v1.1/lottery-questions.css',
@@ -103,9 +109,9 @@ jobs:
                       raise
                   print(f'CDN verification attempt {attempt + 1}: {exc}', flush=True)
                   time.sleep(10)
-          print('Verified public HTML, scripts, stylesheet and hero image.')
+          print('Verified public flavor and tarot HTML, all new runtime files, stylesheets and reference image.')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
               summary.write('## 时令风物 v1.1\n\n')
-              summary.write(f'[打开首页]({base}) · [打开时令抽签]({base}lottery.html)\n\n')
-              summary.write('旧预览链接仍可打开，同步使用当前发布版本。\n')
+              summary.write(f'[打开首页]({base}) · [风味签]({base}lottery.html) · [塔罗签]({base}tarot.html)\n\n')
+              summary.write('旧预览链接仍可打开，同步使用当前发布版本。塔罗入口、脚本和样式已进行HTTP及内容哈希核验。\n')
           PY
