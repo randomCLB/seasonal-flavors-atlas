@@ -22,5 +22,9 @@ jobs:
           node --check dist/tarot-ui.js
           node --check dist/tarot-spread.js
           node --check dist/tarot-spread-ui.js
-      - name: Test default navigation, flavor draw, tarot, and three-card spread
-        run: node --test tests/draw-navigation.test.cjs tests/lottery.test.cjs tests/tarot.test.cjs tests/tarot-spread.test.cjs
+      - name: Test default navigation, flavor draw, tarot, and expanded pool
+        run: node --test tests/*.test.cjs
+      - name: Verify reproducible yearly pool audit
+        run: |
+          node scripts/audit-tarot-pool.cjs 2027 > /tmp/tarot-pool.json
+          cmp docs/TAROT_POOL_COVERAGE_2027.json /tmp/tarot-pool.json
