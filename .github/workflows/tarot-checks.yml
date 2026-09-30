@@ -1,0 +1,23 @@
+name: Check tarot and preserve flavor draw
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [feature/v1.1-tarot]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check tarot syntax
+        run: |
+          node --check dist/tarot-deck.js
+          node --check dist/tarot-core.js
+          node --check dist/tarot-ui.js
+      - name: Test existing flavor draw and new tarot mode
+        run: node --test tests/lottery.test.cjs tests/tarot.test.cjs

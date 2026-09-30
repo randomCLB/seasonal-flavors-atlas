@@ -1,0 +1,18 @@
+/* Original food-oracle writing. Card names are a literary device, not predictions. */
+(function(root,factory){const data=factory();if(typeof module==='object'&&module.exports)module.exports=data;else root.FengwuTarotDeck=data;})(globalThis,function(){
+'use strict';
+return [
+ {id:'sun',name:'太阳',number:'XIX',symbol:'☉',key:'让好事显形',element:'火',families:['flower','vegetable'],up:'太阳翻过牌桌，将光落在那些不必再隐藏的事物上。今天不宜把所有值得高兴的事，都留给一个更合适的明天。',down:'逆位的太阳没有熄灭，只是暂时被安排在太多事情之后。牌面提醒：别等一切都完美，才允许自己感到满足。',closing:'把这道菜盛在最喜欢的盘子里。不是为了招待谁，而是给寻常的一天一个明亮的落款。',omen:'宜坦然享用，忌推迟快乐。'},
+ {id:'moon',name:'月亮',number:'XVIII',symbol:'☾',key:'给答案一点时间',element:'水',families:['seafood','algae'],up:'月亮浮在水面，倒影比月本身多了一层故事。有些事此刻还看不清，不必急着替它起一个结论。',down:'逆位的月亮把多余的猜测慢慢收回。不是每一种沉默都藏着深意，也不是每一餐都需要证明什么。',closing:'先把汤匙或筷子放稳，再尝第一口。今晚只解释眼前的滋味，把没有发生的剧情留在门外。',omen:'宜慢慢品尝，忌过度解读。'},
+ {id:'star',name:'星星',number:'XVII',symbol:'✧',key:'把微光留在身边',element:'水',families:['flower','vegetable'],up:'星星不负责把整片夜空点亮，它只让一小段路重新可见。眼前这份微小而确定的鲜味，便是牌面留给你的线索。',down:'逆位的星星提醒你，不必追逐别人的光点。先找回那些没有掌声，也愿意认真喜欢的小事。',closing:'给这道菜留几分钟安静的位置。不必许一个宏大的愿望，认真吃好这一口，也算与星光有约。',omen:'宜照顾小事，忌比较光芒。'},
+ {id:'temperance',name:'节制',number:'XIV',symbol:'♧',key:'不同，也能相宜',element:'水',families:['vegetable','flower'],up:'节制牌把两只杯子之间的水流接了起来。它不是劝你少要一点，而是允许不同的愿望，在同一张桌上各得其所。',down:'逆位的节制把天平放回桌面。为了迁就所有事物而失去自己的滋味，并不是真正的平衡。',closing:'这顿饭不必挑出谁是主角、谁该退让。留住食材的本味，也给搭配一点位置，分寸自会从筷子间出现。',omen:'宜各得其所，忌一味迁就。'},
+ {id:'fool',name:'愚者',number:'0',symbol:'✦',key:'先迈出小小一步',element:'风',families:['flower','vegetable'],up:'愚者带着轻便的行囊出发，口袋里没有一份详尽的人生菜单。今天的邀请很简单：先给一次小小的尝试留个位子。',down:'逆位的愚者不再为了显得勇敢而奔跑。你可以先问清楚、看明白，再决定要不要伸出筷子；迟疑并不会令风景失效。',closing:'不用答应从此爱上它，先尝一口就够了。世界没有要求你立刻写出一篇感想。',omen:'宜轻装尝试，忌强迫喜欢。'},
+ {id:'magician',name:'魔术师',number:'I',symbol:'✶',key:'让手边之物成事',element:'火',families:['vegetable','fungus'],up:'魔术师的桌面没有无穷无尽的材料，只有已经在手里的几样东西。今天的转机，藏在把它们真正用起来的那个动作里。',down:'逆位的魔术师收起了繁复的道具。你不必再寻找一个更厉害的工具，眼前这口锅已经够用了。',closing:'照着做法完成一次朴素的烹调。让最后一缕热气，替你说出那句迟迟没说的“已经做好了”。',omen:'宜动手完成，忌无限准备。'},
+ {id:'hermit',name:'隐者',number:'IX',symbol:'◇',key:'把声音调低一点',element:'土',families:['fungus','vegetable'],up:'隐者提着一盏只照亮近处的灯。牌面没有要求你躲开世界，只是邀请你把今天的音量调低一点。',down:'逆位的隐者推开门，允许一点热气进入自己的房间。独处不必变成拒绝滋味，安静也可以很丰盛。',closing:'先吃两口，再看消息。给这一餐一个不被打断的开头，比替远处的事多想一遍更合适。',omen:'宜专心吃饭，忌一心多用。'},
+ {id:'empress',name:'皇后',number:'III',symbol:'❦',key:'接住已经成熟的丰盛',element:'土',families:['fruit','vegetable'],up:'皇后的花园不以匆忙证明繁盛。到了时节，该成熟的自然有了自己的分量；你也不必为一次好好享用寻找理由。',down:'逆位的皇后把分给所有人的那一份，轻轻留回自己面前。照料日常时，也别忘了你是餐桌上的一位客人。',closing:'坐下来，把份量盛得刚刚好。丰盛不等于堆满，而是吃这一口时，不觉得自己在将就。',omen:'宜认真款待，忌习惯将就。'},
+ {id:'strength',name:'力量',number:'VIII',symbol:'∞',key:'柔和也是一种力量',element:'火',families:['meat','vegetable'],up:'力量牌没有把门撞开，而是让它缓缓转动。今天最有分量的动作，未必最用力；恰到好处，也是一种坚定。',down:'逆位的力量让紧握的手稍稍松开。不是所有事都值得再加一把火，有时候，守住本来的口感反而更难得。',closing:'按该有的火候做熟，不为赶时间把一切煮成同一种样子。温柔一点，并不会少掉这一餐的力量。',omen:'宜柔中有度，忌过分用力。'},
+ {id:'hanged',name:'倒吊人',number:'XII',symbol:'⊙',key:'换个角度，滋味就不同',element:'水',families:['vegetable','algae'],up:'倒吊人从另一个方向看见熟悉的景物。牌面不催你赶路，它更在意：同样一件事，是否还有另一种摆法。',down:'逆位的倒吊人不再把停顿当成必须付出的代价。换个角度之后，也可以及时回到自己的餐桌。',closing:'先照做法尝原本的一口，再决定要不要添调味。重新认识，不必从推翻一切开始。',omen:'宜换个角度，忌先入为主。'},
+ {id:'wheel',name:'命运之轮',number:'X',symbol:'☸',key:'时节到了，就去相遇',element:'风',families:['seafood','flower'],up:'命运之轮转过山川，把一个短暂的季节送到眼前。有些相遇不适合无限延期，因为新鲜本来就有自己的时刻表。',down:'逆位的命运之轮没有带来坏消息，它只是让你停止追赶每一种可能。挑中眼前这一口，已经是一次完整的选择。',closing:'先询问鲜货，再安排这一餐。季节负责来去，你负责在它经过时，认真打一次招呼。',omen:'宜应时相遇，忌总说下次。'},
+ {id:'world',name:'世界',number:'XXI',symbol:'◎',key:'给今天一个圆满的句号',element:'土',families:['meat','seafood'],up:'世界牌将散落的线索收成一个圆。今天不必再往清单上添一件事，完成一顿合意的饭，也能成为恰好的收尾。',down:'逆位的世界留下一小道开口，允许事情尚未十全十美。你不必等所有章节写完，才给自己盛一碗饭。',closing:'把这道菜端上桌，先坐稳，再开吃。今晚的圆满，不需要另一份证明。',omen:'宜好好收尾，忌无限加码。'}
+];
+});
