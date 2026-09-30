@@ -16,10 +16,11 @@ jobs:
           node-version: '22'
       - name: Check tarot syntax
         run: |
+          node --check dist/app.js
           node --check dist/tarot-deck.js
           node --check dist/tarot-core.js
           node --check dist/tarot-ui.js
           node --check dist/tarot-spread.js
           node --check dist/tarot-spread-ui.js
-      - name: Test existing flavor draw, tarot, and three-card spread
-        run: node --test tests/lottery.test.cjs tests/tarot.test.cjs tests/tarot-spread.test.cjs
+      - name: Test default navigation, flavor draw, tarot, and three-card spread
+        run: node --test tests/draw-navigation.test.cjs tests/lottery.test.cjs tests/tarot.test.cjs tests/tarot-spread.test.cjs
