@@ -2,9 +2,10 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#172927"><meta name="description" content="不问生辰，不测性格。翻一张塔罗签，让当季风物决定今晚吃什么。一本正经的餐桌占卜，仅供娱乐。">
+<meta name="theme-color" content="#172927"><meta name="description" content="不问生辰，不测性格。抽三张塔罗牌，让当季风物决定今晚吃什么。一本正经的餐桌占卜，仅供娱乐。">
 <title>塔罗签 · 时令风物</title><link rel="icon" href="data:,"><link rel="stylesheet" href="tarot.css?v=t1">
-<script src="solar-terms.js" defer></script><script src="data.js" defer></script><script src="editorial.js" defer></script><script src="editorial-notes.js" defer></script><script src="lottery-profiles.js" defer></script><script src="lottery-senses.js?v=q2-20260929" defer></script><script src="lottery-core.js?v=q2-20260929" defer></script><script src="tarot-deck.js?v=t1" defer></script><script src="tarot-core.js?v=t1" defer></script><script src="tarot-ui.js?v=t1" defer></script>
+<script src="solar-terms.js" defer></script><script src="data.js" defer></script><script src="editorial.js" defer></script><script src="editorial-notes.js" defer></script><script src="lottery-profiles.js" defer></script><script src="lottery-senses.js?v=q2-20260929" defer></script><script src="lottery-core.js?v=q2-20260929" defer></script><script src="tarot-deck.js?v=t1" defer></script><script src="tarot-core.js?v=t1" defer></script><script src="tarot-spread.js?v=spread1" defer></script><script src="tarot-spread-ui.js?v=spread1" defer></script>
+<link rel="stylesheet" href="tarot-spread.css?v=spread1">
 </head>
 <body>
 <a class="skip" href="#main">跳到牌桌</a>
@@ -13,23 +14,36 @@
 <section id="table" class="table" aria-labelledby="table-title">
  <p class="eyebrow">THE SEASONAL ORACLE · 餐桌占卜</p>
  <h1 id="table-title">此刻，命运想请你<br>吃<span>什么？</span></h1>
- <p class="lead">不问生辰，不测性格。<br class="mobile-only">翻一张牌，晚饭自有安排。</p>
+ <p class="lead">不问生辰，不测性格。<br class="mobile-only">洗牌、切牌、取三张，让线索慢慢成席。</p>
  <p id="season-line" class="season-line">正在翻开时令历书…</p>
- <div id="spread" class="spread" role="group" aria-label="选择一张背面朝上的牌">
-  <button class="card-back" data-position="0" aria-label="翻开左边的牌"><span class="card-edge"><span class="card-stars" aria-hidden="true">✦ · ✧</span><span class="back-orbit" aria-hidden="true">☾</span><span class="card-caption">山有来信</span><span class="card-bottom" aria-hidden="true">✧</span></span></button>
-  <button class="card-back" data-position="1" aria-label="翻开中间的牌"><span class="card-edge"><span class="card-stars" aria-hidden="true">✧ · ✦</span><span class="back-orbit" aria-hidden="true">☉</span><span class="card-caption">水有回音</span><span class="card-bottom" aria-hidden="true">✧</span></span></button>
-  <button class="card-back" data-position="2" aria-label="翻开右边的牌"><span class="card-edge"><span class="card-stars" aria-hidden="true">✦ · ✧</span><span class="back-orbit" aria-hidden="true">✧</span><span class="card-caption">风有归期</span><span class="card-bottom" aria-hidden="true">✧</span></span></button>
- </div>
- <p class="table-hint">凭第一眼选一张，不必解释。</p>
- <button type="button" id="shuffle" class="text-button">↻ 换一副牌</button>
+ <ol class="ritual-steps" aria-label="占卜进度"><li data-stage="ready" aria-current="step">01 洗牌</li><li data-stage="cut">02 切牌</li><li data-stage="drawing">03 取三张</li><li data-stage="complete">04 解牌</li></ol>
+ <section id="prepare-stage" class="prepare-stage" aria-label="洗牌开始">
+  <div class="deck-stack" aria-hidden="true"><i></i><i></i><i><span>☾</span><small>时令 · 十二张</small></i></div>
+  <p class="table-hint">心里留下一件小事。不必告诉牌桌。</p>
+  <button type="button" id="shuffle" class="primary">洗牌，开始占卜 ↻</button>
+ </section>
+ <section id="cut-stage" hidden aria-labelledby="cut-title"><h2 id="cut-title" class="stage-title" tabindex="-1">选一叠，作为开端。</h2><p class="table-hint">把这一叠移到最上方，牌序由此改变。</p>
+  <div class="cut-piles">
+   <button class="cut-pile" data-position="0" aria-label="从左叠切牌"><span aria-hidden="true">☾</span><small>左叠</small></button>
+   <button class="cut-pile" data-position="1" aria-label="从中叠切牌"><span aria-hidden="true">☾</span><small>中叠</small></button>
+   <button class="cut-pile" data-position="2" aria-label="从右叠切牌"><span aria-hidden="true">☾</span><small>右叠</small></button>
+  </div>
+ </section>
+ <section id="draw-stage" hidden aria-labelledby="draw-title"><h2 id="draw-title" class="stage-title" tabindex="-1">第一张，看看此刻。</h2><p id="draw-prompt" class="table-hint" aria-live="polite"></p>
+  <div id="tableau" class="tableau" aria-label="此刻、转机、指引三张牌位"></div>
+  <div id="spread" class="draw-deck" role="group" aria-label="十二张背牌，依次选择三张不同的牌"></div>
+  <div class="spread-actions"><button type="button" id="read-spread" class="primary" disabled>还差三张牌</button></div>
+ </section>
+ <button type="button" id="reset-round" class="text-button" hidden>↻ 重新洗这一副</button>
  <details id="restrictions" class="restrictions"><summary>有不能吃的？先放到牌桌外 <span id="avoid-count"></span></summary><div id="avoid-options" class="avoid-options"></div><label class="other">另外不吃的风物<input id="exclude-text" maxlength="200" placeholder="输入本站食材全名或别名，多个用逗号隔开"></label><p>只排除明确忌口，不再筛口味、质地或做法。实际商品的配料和交叉接触仍需核对。</p></details>
  <p id="table-error" class="error" role="alert" hidden></p>
 </section>
 <section id="reveal" class="reveal" hidden aria-labelledby="result-title">
- <div class="reveal-header"><p class="eyebrow" id="reading-date"></p><h1 id="result-title" tabindex="-1">牌已翻开，<span>请入席。</span></h1><button class="text-button" id="start-over">↶ 回到牌桌</button></div>
- <div class="reveal-stage"><article class="face-card" aria-label="抽到的塔罗牌"><span class="face-number" id="card-number"></span><span class="face-symbol" id="card-symbol" aria-hidden="true"></span><h2 id="card-name"></h2><p id="card-position"></p><span id="card-key" class="card-key"></span></article><figure class="dish-figure"><div class="photo-wrap"><img id="dish-image" alt=""><p id="image-failed" hidden>图片暂时走丢了，菜谱和签文仍在。</p><span class="photo-label">今日命定菜</span></div><figcaption><h2 id="dish-title"></h2><p id="dish-origin"></p><small id="image-note"></small> <a href="credits.html" target="_blank" rel="noopener">图片出处 ↗</a></figcaption></figure></div>
- <div class="reading-layout"><article class="reading"><p class="eyebrow">THE READING · 牌面解读</p><p id="opening" class="opening"></p><p id="connection"></p><p id="closing"></p><p id="omen" class="omen"></p></article><aside class="kitchen"><p class="eyebrow">命运负责开场 · 你负责开饭</p><h3>这一口，怎样落到桌上</h3><p id="dish-sensory"></p><p id="season-note" class="season-note"></p><p class="purchase-label">采购搜索词</p><button id="copy-search" class="search-word"></button><details class="recipe-preview"><summary>展开两人份做法与注意事项</summary><p id="recipe-ingredients"></p><ol id="recipe-steps"></ol><p id="recipe-finish"></p><p id="recipe-safety" class="safety"></p><p id="recipe-storage"></p><a id="season-source" target="_blank" rel="noopener">时令资料出处 ↗</a></details><a id="food-link" class="primary" href="index.html">认识这一味风物 ↗</a></aside></div>
- <div class="result-actions"><button id="again" class="primary">再问一次命运 ↻</button><button id="copy-reading" class="text-button">复制这张签 ↗</button></div><p id="repeat-note" class="repeat-note"></p>
+ <div class="reveal-header"><p class="eyebrow" id="reading-date"></p><h1 id="result-title" tabindex="-1">三牌已合，<span>请入席。</span></h1><button class="text-button" id="start-over">↶ 回到牌桌</button></div>
+ <div id="result-tableau" class="tableau result-tableau" aria-label="已抽出的三牌阵"></div>
+ <div class="reveal-stage"><figure class="dish-figure"><div class="photo-wrap"><img id="dish-image" alt=""><p id="image-failed" hidden>图片暂时走丢了，菜谱和签文仍在。</p><span class="photo-label">今日命定菜</span></div><figcaption><h2 id="dish-title"></h2><p id="dish-origin"></p><small id="image-note"></small> <a href="credits.html" target="_blank" rel="noopener">图片出处 ↗</a></figcaption></figure></div>
+ <div class="reading-layout"><article class="reading"><p class="eyebrow">THE READING · 合牌解读</p><p id="pattern" class="pattern"></p><p id="opening" class="opening"></p><p id="connection"></p><p id="closing"></p><p id="omen" class="omen"></p></article><aside class="kitchen"><p class="eyebrow">命运负责开场 · 你负责开饭</p><h3>这一口，怎样落到桌上</h3><p id="dish-sensory"></p><p id="season-note" class="season-note"></p><p class="purchase-label">采购搜索词</p><button id="copy-search" class="search-word"></button><details class="recipe-preview"><summary>展开两人份做法与注意事项</summary><p id="recipe-ingredients"></p><ol id="recipe-steps"></ol><p id="recipe-finish"></p><p id="recipe-safety" class="safety"></p><p id="recipe-storage"></p><a id="season-source" target="_blank" rel="noopener">时令资料出处 ↗</a></details><a id="food-link" class="primary" href="index.html">认识这一味风物 ↗</a></aside></div>
+ <div class="result-actions"><button id="again" class="primary">再开一副牌阵 ↻</button><button id="copy-reading" class="text-button">复制完整牌阵 ↗</button></div><p id="repeat-note" class="repeat-note"></p>
 </section>
 <p id="status" role="status" aria-live="polite"></p>
 <noscript><p class="error">牌桌需要 JavaScript 才能翻牌。<a href="index.html">仍可回风物首页</a>。</p></noscript>
