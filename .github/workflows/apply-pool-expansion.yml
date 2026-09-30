@@ -24,7 +24,7 @@ jobs:
           TRIGGER_SHA: ${{ github.sha }}
         run: |
           test "$(git rev-parse HEAD)" = "$TRIGGER_SHA"
-          test "$(git rev-parse HEAD^)" = f8e9b01550a33e5e9a9a500c469091d825aaa2e1
+          test "$(git rev-parse HEAD^)" = d4bb3357e146113c536838f66ad758ad0e5a4bc5
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -43,16 +43,17 @@ jobs:
           node --test tests/*.test.cjs | tee /tmp/expansion-tests.txt
           node scripts/audit-tarot-pool.cjs 2027 > /tmp/current-pool.json
           cmp docs/TAROT_POOL_COVERAGE_2027.json /tmp/current-pool.json
-      - name: Remove one-off transport helpers
+      - name: Remove transport payload; leave workflow writes to the connector
         run: |
           rm -rf .expansion-payload .expansion-media
-          rm .github/workflows/expansion-media-review.yml .github/workflows/bean-image-review.yml .github/workflows/apply-pool-expansion.yml
-      - name: Commit tested changes to this branch only
+          git restore --source=HEAD -- .github/workflows
+      - name: Commit tested application changes to this branch only
         env:
           TRIGGER_SHA: ${{ github.sha }}
         run: |
           test "$(git ls-remote origin refs/heads/feature/seasonal-pool-expansion | cut -f1)" = "$TRIGGER_SHA"
-          git add dist tests docs scripts reviews README.md IMAGE_REGISTER.md .github/workflows .expansion-payload
+          git add dist tests docs scripts reviews README.md IMAGE_REGISTER.md .expansion-payload
+          test -z "$(git diff --cached --name-only -- .github)"
           git diff --cached --stat
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
