@@ -202,3 +202,21 @@
 @media(max-width:800px){.map-pin .pin-label{display:none!important}.recipe-teaser{margin:18px 7% 4px}.recipe-teaser button{margin-left:0}.flavor-meaning{top:10px;left:10px;right:10px;font-size:11px}}
 
 .topnav .nav-item{text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center}
+
+
+/* A quiet desktop control, always within reach while reading on mobile. */
+.detail-actions{position:sticky;top:0;z-index:5;padding:10px 18px;background:#e4ebe1f5;border-bottom:1px solid #cbd5c8}
+.detail-action-buttons{display:flex;justify-content:flex-end;align-items:center;gap:10px}
+.detail-actions .dialog-close{position:static;margin:0;width:36px;height:36px;font-size:25px}
+.detail-share{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:0 13px;border:1px solid #7f9585;background:#f7f7ee;color:var(--ink);font:14px 'PingFang SC','Microsoft YaHei',sans-serif}
+.detail-share:hover{background:#fffaf0}.detail-share:disabled{opacity:.6;cursor:wait}
+.detail-share-status{margin:8px 0 0;font-size:13px;line-height:1.6;color:#315b4e;text-align:right}
+.detail-share-status:empty{display:none}
+.detail-share-fallback{margin-top:9px}.detail-share-fallback[hidden]{display:none}
+.detail-share-fallback label{display:block;margin-bottom:5px;font-size:12px;color:#43584e}
+.detail-share-fallback>div{display:flex;gap:8px}
+.detail-share-fallback input{width:100%;min-width:0;min-height:44px;padding:8px;border:1px solid #9aab9c;background:var(--paper);color:var(--ink);font-size:16px}
+.detail-share-fallback button{flex:none;min-height:44px;padding:0 12px;border:1px solid #7f9585;background:var(--paper);color:var(--ink)}
+.detail-share-fallback input:focus-visible{outline:2px solid #926b34;outline-offset:2px}
+#detailContent .detail-hero{padding-top:28px}
+@media(max-width:800px){.detail-actions{padding:10px 7vw;padding-top:max(10px,env(safe-area-inset-top))}.detail-share{min-height:44px;padding:0 18px;background:var(--ink);color:var(--paper);font-size:15px}.detail-share:hover{background:#285748}.detail-actions .dialog-close{width:44px;height:44px}.detail-share-status{text-align:left}#detailContent .detail-hero{padding-top:22px}}

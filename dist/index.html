@@ -7,7 +7,7 @@
   <title>时令风物 · 小众食材地图</title>
   <meta name="description" content="沿着节气、山川与风味，认识值得一试的小众食材。">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=food-share1">
 </head>
 <body>
   <div class="site-shell">
@@ -45,9 +45,16 @@
     </main>
     <footer><div class="footer-main"><span class="footer-brand">时令风物</span><span>小众食材的季节、来处与吃法</span></div><p>从当季的一口出发，沿着山川、湖荡和风味去找下一味。各地上市时间会随天气变化，买前可以向当地摊主确认。</p><p class="credits">地图资料：<a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener">Natural Earth</a>（公共领域） · 食材照片及授权：<a href="credits.html">查看图片来源</a></p></footer>
   </div>
-  <dialog id="detailDialog" class="detail-dialog"><button class="dialog-close" id="detailClose" aria-label="关闭食材详情">×</button><div id="detailContent"></div></dialog>
+  <dialog id="detailDialog" class="detail-dialog">
+    <div class="detail-actions">
+      <div class="detail-action-buttons"><button type="button" id="detailShare" class="detail-share" aria-label="分享这味风物"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M5 11v9h14v-9" stroke-linecap="round" stroke-linejoin="round"/></svg><span>分享</span></button><button type="button" class="dialog-close" id="detailClose" aria-label="关闭食材详情">×</button></div>
+      <p id="detailShareStatus" class="detail-share-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div id="detailShareFallback" class="detail-share-fallback" hidden><label for="detailShareLink">这味风物的链接</label><div><input id="detailShareLink" type="text" readonly autocomplete="off" spellcheck="false"><button type="button" id="detailCopyLink">复制链接</button></div></div>
+    </div>
+    <div id="detailContent"></div>
+  </dialog>
   <dialog id="searchDialog" class="search-dialog"><div class="search-head"><label for="searchInput">寻找食材</label><button id="searchClose" aria-label="关闭搜索">×</button></div><input id="searchInput" type="search" autocomplete="off" placeholder="搜食材、口感、香气、产地或做法"><div id="searchResults"></div></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="solar-terms.js"></script><script src="map-projection.js"></script><script src="data.js"></script><script src="editorial.js"></script><script src="editorial-notes.js?v=pool2-20260930"></script><script src="app.js?v=tarot-default1"></script>
+  <script src="solar-terms.js"></script><script src="map-projection.js"></script><script src="data.js"></script><script src="editorial.js"></script><script src="editorial-notes.js?v=pool2-20260930"></script><script src="food-share.js?v=1"></script><script src="app.js?v=food-share1"></script>
 </body>
 </html>
