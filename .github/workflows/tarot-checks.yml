@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [feature/v1.1-tarot]
+    branches: [feature/v1.1-tarot, feature/v1.1-tarot-spread]
 permissions:
   contents: read
 jobs:
@@ -19,5 +19,7 @@ jobs:
           node --check dist/tarot-deck.js
           node --check dist/tarot-core.js
           node --check dist/tarot-ui.js
-      - name: Test existing flavor draw and new tarot mode
-        run: node --test tests/lottery.test.cjs tests/tarot.test.cjs
+          node --check dist/tarot-spread.js
+          node --check dist/tarot-spread-ui.js
+      - name: Test existing flavor draw, tarot, and three-card spread
+        run: node --test tests/lottery.test.cjs tests/tarot.test.cjs tests/tarot-spread.test.cjs

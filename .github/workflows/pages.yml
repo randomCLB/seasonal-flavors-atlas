@@ -34,7 +34,9 @@ jobs:
           node --check dist/tarot-core.js
           node --check dist/tarot-deck.js
           node --check dist/tarot-ui.js
-          node --test tests/lottery.test.cjs tests/tarot.test.cjs
+          node --check dist/tarot-spread.js
+          node --check dist/tarot-spread-ui.js
+          node --test tests/lottery.test.cjs tests/tarot.test.cjs tests/tarot-spread.test.cjs
       - name: Compose site and compatible preview link
         run: |
           python3 - <<'PY'
@@ -83,6 +85,8 @@ jobs:
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
           paths = ['index.html', 'lottery.html', 'assets/shajiguo-cut.jpg',
                    'tarot.html', 'tarot.css', 'tarot-deck.js', 'tarot-core.js', 'tarot-ui.js', 'draw-modes.css',
+                   'tarot-spread.js', 'tarot-spread-ui.js', 'tarot-spread.css',
+                   'preview/v1.1/tarot-spread.js', 'preview/v1.1/tarot-spread-ui.js', 'preview/v1.1/tarot-spread.css',
                    'preview/v1.1/tarot.html', 'preview/v1.1/tarot.css',
                    'preview/v1.1/tarot-deck.js', 'preview/v1.1/tarot-core.js', 'preview/v1.1/tarot-ui.js',
                    'preview/v1.1/lottery.html', 'preview/v1.1/lottery.css',
