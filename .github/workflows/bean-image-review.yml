@@ -1,0 +1,36 @@
+name: Review green pod reference
+on:
+  push:
+    branches: [feature/seasonal-pool-expansion]
+    paths: [.github/workflows/bean-image-review.yml]
+permissions:
+  contents: read
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Install Pillow
+        run: python3 -m pip install Pillow==11.3.0
+      - name: Fetch reference
+        run: |
+          python3 - <<'PY'
+          import hashlib, io, json, pathlib, urllib.request, urllib.parse
+          from PIL import Image, ImageOps
+          filename='Hyacinth_bean_(Lablab_purpureus)_flower_and_pods_in_Bangladesh.jpg'
+          digest=hashlib.md5(filename.encode()).hexdigest()
+          url='https://upload.wikimedia.org/wikipedia/commons/'+digest[0]+'/'+digest[:2]+'/'+urllib.parse.quote(filename)
+          req=urllib.request.Request(url,headers={'User-Agent':'Fengwu/1.1 (https://github.com/randomCLB/seasonal-flavors-atlas; image review)'})
+          with urllib.request.urlopen(req,timeout=45) as r: data=r.read(15000001)
+          assert len(data)<=15000000
+          image=ImageOps.exif_transpose(Image.open(io.BytesIO(data))).convert('RGB')
+          out=pathlib.Path('review');out.mkdir()
+          image.thumbnail((1200,1400));image.save(out/'green-pods.webp','WEBP',quality=86,method=6)
+          info={'source':'https://commons.wikimedia.org/wiki/File:'+urllib.parse.quote(filename),'author':'Md. Mahian','license':'CC-BY-SA-4.0','size':image.size,'sha256':hashlib.sha256((out/'green-pods.webp').read_bytes()).hexdigest()}
+          (out/'manifest.json').write_text(json.dumps(info,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: green-pod-review
+          path: review/
+          retention-days: 7
