@@ -89,7 +89,7 @@ function renderSeason(){
 $('termPrev').onclick=()=>{selectedTerm=termWindow[Math.max(0,termWindow.indexOf(selectedTerm)-1)];renderTermRail();renderSeason()};
 $('termNext').onclick=()=>{selectedTerm=termWindow[Math.min(termWindow.length-1,termWindow.indexOf(selectedTerm)+1)];renderTermRail();renderSeason()};
 function setView(view){if(view===currentView)return;viewScrollTops[currentView]=window.scrollY;currentView=view;if(view!=='map'){mapInteractionEnabled=false;document.querySelector('.map-image').classList.remove('is-interactive');$('mapHint').textContent='电脑点一下地图后可滚轮缩放、按住拖动；手机直接单指拖动或双指缩放。地图外照常滚动页面。'}document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`${view}View`);document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('is-active',b.dataset.view===view));if(view==='map')renderMap();if(view==='flavor')renderFlavor();requestAnimationFrame(()=>window.scrollTo({top:viewScrollTops[view]||0,behavior:'instant'}))}
-document.querySelectorAll('.nav-item').forEach(b=>b.onclick=()=>setView(b.dataset.view));
+document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $('mapPrompt').onclick=()=>setView('map');
 const meta=window.MAP_META,mapAspect=meta.width/meta.height;
 function mapProject(place){const rad=Math.PI/180,rho=meta.F/Math.pow(Math.tan(Math.PI/4+place.lat*rad/2),meta.n),theta=meta.n*(place.lon*rad-meta.lambda0);return {x:meta.width/2+(rho*Math.sin(theta)-meta.centerX)*meta.scale,y:meta.height/2-(meta.rho0-rho*Math.cos(theta)-meta.centerY)*meta.scale}}
