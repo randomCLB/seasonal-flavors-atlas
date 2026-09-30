@@ -1,6 +1,6 @@
 # 时令风物
 
-沿二十四节气、产地和口感认识中国各地较少见的时令食材。目前收录 55 味：蔬菜 34 味、水果 13 味、蛋白类 8 味。食材详情包含处理、吃法和选购信息。
+沿二十四节气、产地和口感认识中国各地较少见的时令食材。目前收录 60 味：蔬菜 38 味、水果 14 味、水产与肉 8 味。食材详情包含处理、吃法和选购信息。
 
 ## 本地打开
 
@@ -17,3 +17,7 @@
 ## 地图与节气资料
 
 地图海岸、河流和湖泊取自 [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) 公共领域资料，以 Lambert 等角圆锥投影绘制。节气时刻在中国时区显示，静态数据由 [lunar-javascript](https://github.com/6tail/lunar-javascript) 生成，并核对 [香港天文台节气表](https://www.hko.gov.hk/en/gts/time/24solarterms.htm)。
+
+## 塔罗牌池与轮换
+
+默认抽签为塔罗三牌阵。新增5种地方食材，并将12种已有鲜果的可食状态图显式接入；原料参考与熟制照片分开标记。同一页面内先抽遍当前合格候选再轮换，刷新重新开始。不会放宽忌口或改写时令凑数。详见[扩充说明](docs/TAROT_POOL_EXPANSION.md)与[全年牌池采样](docs/TAROT_POOL_COVERAGE_2027.json)。运行 `node scripts/audit-tarot-pool.cjs 2027` 可复算。

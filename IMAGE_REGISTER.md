@@ -187,3 +187,15 @@
 ## 后续照片验收
 
 优先找原始长边至少 1600 像素、柔和自然光、形态可辨的免费授权素材。每张入库前记录作者、来源、许可、拍摄地、品种判断、原始尺寸及修改；再检查卡片裁切和手机详情大图。缺成菜照片时不拼凑别的菜，也不标作“亲测”。
+
+## 牌池扩充的许可参考图
+
+以下5张缩小并转为WebP，未放大，改作保留原许可。均不是对应地方品种的认证实拍。白扁豆图片含紫边荚，不代表崇明白扁豆颜色与品相；盘菜图片为普通芜菁，不能据此鉴别温州盘菜品种；熟芋参考不是本配方实拍。网页同步列出作者与许可。
+
+| 文件 | 作者与来源 | 许可 | 展示尺寸 |
+| --- | --- | --- | --- |
+| `jianou-zhuilli-reference.webp` | [Fumikas Sagisavas](https://commons.wikimedia.org/wiki/File:Shelled_castanea_henryi.jpg) | [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) | 1100 × 1100 |
+| `chongming-biandou-reference.webp` | [Fumikas Sagisavas](https://commons.wikimedia.org/wiki/File:Lablab-bean_pods.jpg) | [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) | 1100 × 1100 |
+| `chongming-taro-reference.webp` | [Rtnf](https://commons.wikimedia.org/wiki/File:Boiled_taro.png) | [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 1400 × 790 |
+| `xiangyin-jiaotou-reference.webp` | [Midori](https://commons.wikimedia.org/wiki/File:Allium_chinense_Rakkyo.JPG) | [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 1400 × 1050 |
+| `wenzhou-pancai-reference.webp` | [Fructibus](https://commons.wikimedia.org/wiki/File:White_turnip_2017_A1.jpg) | [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) | 1400 × 1050 |

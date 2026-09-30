@@ -12,7 +12,7 @@ function seed(){if(globalThis.crypto?.randomUUID)return crypto.randomUUID();retu
 function notify(message,floating=false){clearTimeout(noticeTimer);$('status').textContent=message;$('status').classList.toggle('floating',floating);if(floating)noticeTimer=setTimeout(()=>{$('status').classList.remove('floating');$('status').textContent='';},5500);}
 function error(message){$('table-error').textContent=message;$('table-error').hidden=!message;}
 function restrictions(){return {avoid:[...$('avoid-options').querySelectorAll('input:checked')].map(x=>x.value),excludeText:$('exclude-text').value.trim()};}
-function checkPool(){const all=T.pool({foods,profiles,events,now:Date.now(),...restrictions()});if(!all.length)throw Error('此刻没有符合所选忌口、时令及成菜资料的菜。可以调整非必要的选择，但不要放宽真正的忌口。');}
+function checkPool(){const all=T.pool({foods,profiles,events,now:Date.now(),...restrictions()});if(!all.length)throw Error('此刻没有符合所选忌口、时令及配方配图资料的菜。可以调整非必要的选择，但不要放宽真正的忌口。');}
 function refreshSeason(){const now=Date.now(),term=T.currentTerm(events,now);$('season-line').textContent=`${C.dayAt(now).replaceAll('-',' · ')} · ${term.name} · 三牌餐桌阵`;}
 function syncControls(){
  const phase=round?.phase||'ready';$('table').dataset.phase=phase;$('table').setAttribute('aria-busy',String(busy));
@@ -69,7 +69,7 @@ function show(r){
  $('result-tableau').innerHTML=r.cards.map((entry,i)=>cardMarkup(entry,i)).join('');
  $('pattern').textContent=r.reading.pattern;
  $('dish-title').textContent=T.dishName(f);$('dish-origin').textContent=`用到 ${f.name} · ${r.place.place}`;
- const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};image.alt=f.dishImageAlt||`${f.name}成菜参考`;image.src=f.dishImage;
+ const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};const media=T.mediaFor(f);image.alt=media.alt;image.src=media.src;document.querySelector('.photo-label').textContent=media.kind==='ingredient'?'今日命定菜 · 原料参考':media.kind==='fresh'?'今日命定味 · 鲜果参考':'今日命定菜';
  $('image-note').textContent=T.imageNote(f);for(const key of ['opening','connection','closing','omen'])$(key).textContent=r.reading[key];
  $('dish-sensory').textContent=f.dishCaption||f.short||'';
  $('season-note').textContent=`时令线索：${f.season} 当前推荐依据产地记录，不代表库存或当年成熟日已确认。`;
@@ -81,12 +81,12 @@ function show(r){
  $('recipe-storage').textContent=`带回家后：${f.storage||'按实际商品说明保存，尽快安排食用。'}`;
  const url=new URL('index.html',document.baseURI);url.searchParams.set('food',f.id);$('food-link').href=url.href;
  const source=$('season-source');try{const u=new URL(r.place.source);source.hidden=!['http:','https:'].includes(u.protocol);if(!source.hidden)source.href=u.href;}catch{source.hidden=true;}
- $('repeat-note').textContent=r.repeated?'此刻没有其他符合忌口的候选，新的牌阵仍将这一味留在桌上。':`这轮有 ${r.eligibleCount} 道当季菜参与。重新开局会尽量避开最近两道，签文仅供娱乐。`;
+ $('repeat-note').textContent=r.repeated?'此刻没有其他符合忌口的候选，新的牌阵仍将这一味留在桌上。':`当前有 ${r.eligibleCount} 道当季选择，本轮还可遇见 ${r.remainingCount} 道不同的。${r.cycleRestarted?'上一轮已抽完，新一轮开始。':'抽遍这一轮，再开始轮换。'}刷新页面会开启新记录。签文仅供娱乐。`;
  $('table').hidden=true;$('reveal').hidden=false;document.querySelector('.recipe-preview').open=false;$('manual-copy')?.remove();notify('');$('result-title').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});
 }
 async function reveal(){
  if(busy||round?.phase!=='complete')return;error('');
- try{const r=S.resolve({round,foods,profiles,events,now:Date.now(),...restrictions(),history});if(r.empty){error(r.reason);return;}busy=true;syncControls();notify('三张线索正在合成这一餐。');await pause(350);history.push(r.foodId);history=history.slice(-5);show(r);}
+ try{const r=S.resolve({round,foods,profiles,events,now:Date.now(),...restrictions(),history});if(r.empty){error(r.reason);return;}busy=true;syncControls();notify('三张线索正在合成这一餐。');await pause(350);history.push(r.foodId);show(r);}
  catch(e){error(e.message||'解牌暂未完成，请重新洗牌。');notify('');}
  finally{busy=false;syncControls();}
 }

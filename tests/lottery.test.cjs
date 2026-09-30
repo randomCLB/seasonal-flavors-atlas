@@ -16,11 +16,11 @@ const neutral={...prefs,tastes:[],textures:[],cooking:[],curiosity:0};
 test('detail food photos belong to existing entries and ship with the site',()=>{
  const ids=new Set(foods.map(f=>f.id));
  for(const id of vm.runInContext('Object.keys(PHOTO_UPDATES)',ctx))assert.ok(ids.has(id),`unknown photo entry ${id}`);
- for(const f of foods){assert.ok(f.dishImage||f.cutImage,`${f.id}: missing edible image`);for(const src of [f.dishImage,f.cutImage].filter(Boolean))assert.ok(fs.existsSync(path.join(root,'dist',src)),`${f.id}: ${src}`);}
+ for(const f of foods){assert.ok(f.dishImage||f.cutImage||f.tarotImage?.src,`${f.id}: missing edible image`);for(const src of [f.dishImage,f.cutImage,f.tarotImage?.src].filter(Boolean))assert.ok(fs.existsSync(path.join(root,'dist',src)),`${f.id}: ${src}`);}
 });
 
-test('all 55 recipes and sensory source fingerprints match; disabled stay explicit',()=>{
- assert.equal(foods.length,55);assert.equal(Object.values(profiles).filter(p=>p.disabled).length,3);
+test('all 60 recipes and sensory source fingerprints match; disabled stay explicit',()=>{
+ assert.equal(foods.length,60);assert.equal(Object.values(profiles).filter(p=>p.disabled).length,3);
  for(const f of foods){const p=profiles[f.id];assert.equal(C.signature(f),p.signature,f.id);assert.equal(C.sensorySignature(f),p.senses.signature,f.id);for(const [k,labels] of [['tastes',C.TASTES],['recipeTastes',C.TASTES],['textures',C.TEXTURES],['cooking',C.COOKING]])assert.ok(p.senses[k].every(t=>Object.hasOwn(labels,t)));assert.ok(p.senses.cooking.length>0);}
 });
 test('five-question schema exposes taste/texture/cooking/curiosity, not procurement or familiarity',()=>{

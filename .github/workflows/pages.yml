@@ -37,7 +37,9 @@ jobs:
           node --check dist/tarot-ui.js
           node --check dist/tarot-spread.js
           node --check dist/tarot-spread-ui.js
-          node --test tests/draw-navigation.test.cjs tests/lottery.test.cjs tests/tarot.test.cjs tests/tarot-spread.test.cjs
+          node --test tests/*.test.cjs
+          node scripts/audit-tarot-pool.cjs 2027 > /tmp/tarot-pool.json
+          cmp docs/TAROT_POOL_COVERAGE_2027.json /tmp/tarot-pool.json
       - name: Compose site and compatible preview link
         run: |
           python3 - <<'PY'
@@ -86,6 +88,10 @@ jobs:
           import hashlib, os, pathlib, time, urllib.request
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
           paths = ['index.html', 'app.js', 'lottery.html', 'assets/shajiguo-cut.jpg',
+                   'editorial-notes.js', 'lottery-profiles.js', 'lottery-senses.js', 'credits.html',
+                   'assets/jianou-zhuilli-reference.webp', 'assets/chongming-biandou-reference.webp',
+                   'assets/chongming-taro-reference.webp', 'assets/xiangyin-jiaotou-reference.webp',
+                   'assets/wenzhou-pancai-reference.webp',
                    'tarot.html', 'tarot.css', 'tarot-deck.js', 'tarot-core.js', 'tarot-ui.js', 'draw-modes.css',
                    'tarot-spread.js', 'tarot-spread-ui.js', 'tarot-spread.css',
                    'preview/v1.1/index.html', 'preview/v1.1/app.js', 'preview/v1.1/build-info.json',
@@ -116,9 +122,9 @@ jobs:
                       raise
                   print(f'CDN verification attempt {attempt + 1}: {exc}', flush=True)
                   time.sleep(10)
-          print('Verified tarot-default homepage, both draw modes, runtime files and compatible preview.')
+          print('Verified tarot-default homepage, expanded food data and photos, both draw modes, runtime files and compatible preview.')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
               summary.write('## 时令风物 v1.1\n\n')
               summary.write(f'[打开首页]({base}) · [塔罗签（默认）]({base}tarot.html) · [风味签]({base}lottery.html)\n\n')
-              summary.write('首页抽签默认进入塔罗三牌阵，风味签保留为第二入口。旧预览链接仍可使用。页面、脚本和样式已通过HTTP及内容哈希核验。\n')
+              summary.write('目录60味；塔罗使用完整候选轮换。首页抽签默认进入塔罗三牌阵，风味签保留为第二入口。新食材数据与5张许可参考图、页面、脚本均通过HTTP及内容哈希核验。\n')
           PY

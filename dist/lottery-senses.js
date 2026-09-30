@@ -69,3 +69,5 @@
     };
   }
 })();
+
+(function(){const rows={"jianou-zhuilli":["53c1a414","sweet","","soft","soup","尖小的栗果；熟后粉糯"],"chongming-baibiandou":["35620feb","sweet","","tender","boil","熟荚柔嫩；不可当作生脆蔬菜"],"chongming-xiangsu-yu":["63e64c36","sweet","","soft","steam","剥皮后酥糯绵密"],"xiangyin-santang-jiaotou":["7a64912f","spicy","salty umami","crisp","stirfry","鲜鳞茎有葱蒜样辛香"],"wenzhou-pancai":["4ae86f03","sweet","","tender soft","soup","圆盘般根块；熟后柔软"]};const list=s=>s?s.split(" "):[];for(const [id,[signature,tastes,recipeTastes,textures,cooking,features]] of Object.entries(rows)){window.LOTTERY_PROFILES[id].senses={signature,tastes:list(tastes),recipeTastes:list(recipeTastes),textures:list(textures),cooking:list(cooking),features:features?features.split("；"):[]};}})();
