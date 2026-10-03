@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-02",
+  "scope": "补齐五味可食状态图，独立生成；不新增食材，不改变时令、产区与配方",
+  "tool": "OpenAI built-in imagegen",
+  "searchQueries": [
+    "温州 盘菜 年糕汤 图片",
+    "崇明 白扁豆 香酥芋 蒸 图片",
+    "建瓯 锥栗 小米粥 图片",
+    "湘阴 鲜藠头 炒肉 图片"
+  ],
+  "photoSearchLimit": "有限公开网页与图片搜索，并非穷尽；未找到匹配且授权明确的成菜照片。本轮未新增第三方摄影资产。",
+  "images": [
+    {
+      "id": "jianou-zhuilli",
+      "file": "assets/jianou-zhuili-congee-generated.webp",
+      "title": "锥栗小米粥",
+      "alt": "小米粥里煮熟切小的锥栗仁，生成示意图",
+      "prompt": "Create one wide 3:2 photorealistic-natural food illustration for a Chinese seasonal food atlas, not an actual local photograph. Subject: 锥栗小米粥, cooked Castanea henryi chestnut kernels in millet congee. A simple matte ivory ceramic bowl filled with thick golden pale-yellow millet porridge, tiny cooked millet grains individually discernible, with many irregular bite-sized soft pale golden chestnut chunks embedded and a few visible on top, chestnut chunks about 1 cm, starchy crumbly slightly uneven edges, NOT giant whole chestnuts, NOT walnuts, NOT corn, NOT rice porridge. Ingredients ONLY peeled fresh chestnut kernels, millet, water; no sugar, red dates, goji, nuts in shell, meat, green garnish or milk. Restrained natural warm colors, moist soft appetizing texture. Plain pale wooden table, subtle linen, soft window daylight, 45 degree close view of complete bowl with comfortable clear margin, food centered to survive horizontal and square crops. No text, logos, watermarks, people, collage or decorative raw ingredients. An independently generated serving suggestion, not proof of cultivar or origin.",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "license": "独立生成的项目示意图；未输入第三方照片，不宣称为实物摄影或品种认证",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Shelled_castanea_henryi.jpg",
+        "https://fjnews.fjsen.com/2023-09/21/content_31416088.htm"
+      ],
+      "photoDecision": "现有CC0为锥栗原料，不是小米粥；搜索到的粥为普通栗子商品图，不能当作锥栗配方实拍。",
+      "size": [
+        1536,
+        1024
+      ],
+      "changes": "仅转WebP，质量88；未放大、未裁切",
+      "visualQA": "人工查看生成原图：主体食材和配方对应；无文字水印；无非配方装饰配料。手机390×844逐页读取，图片成功解码，详情无横向溢出。",
+      "sha256": "7d3eff0dd0dbae70824b81f66f18203ede12eb9eeb180fd764a726e66a57321c"
+    },
+    {
+      "id": "chongming-baibiandou",
+      "file": "assets/chongming-biandou-garlic-generated.webp",
+      "title": "蒜香熟煮白扁豆",
+      "alt": "充分熟透的绿色弯月形扁豆荚拌炒蒜末，生成示意图",
+      "prompt": "Create one wide 3:2 natural-light realistic food illustration for a Chinese seasonal food atlas. Subject: 蒜香熟煮崇明白扁豆鲜荚, fully boiled tender green lablab bean pods then warmed with finely minced garlic and a little rapeseed oil and salt. Ingredient morphology: green smooth broad FLAT crescent-shaped Lablab purpureus pods, 4-6 cm long, curved tapering ends, each subtly bulges around 2-4 immature seeds; no purple pod edges, no white pods, no peas, no edamame fuzz, no cylindrical green beans, no snap peas' pointed leaf wings. The entire pods and seeds have been thoroughly cooked, softly slumped subdued olive-green to muted yellow-green with naturally creased surfaces, NEVER brilliant raw-green or crisp-looking. A modest home-cooked portion piled in a plain offwhite shallow ceramic plate. Small ivory minced garlic pieces and subtle oil glisten; no sauce, meat, chili, sesame, green garnish or extraneous ingredients. Plain pale wooden table, soft side window light, 45 degree close view, full plate with comfortable neutral margins, centered food for square crop, believable understated colors and appetizing soft texture. No text, watermark, logos, humans, collage. Illustration of the recipe, not actual local produce photography or cultivar authentication.",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "license": "独立生成的项目示意图；未输入第三方照片，不宣称为实物摄影或品种认证",
+      "sources": [
+        "https://m.cqn.com.cn/zj/content/2020-04/22/content_8552364.htm",
+        "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"
+      ],
+      "photoDecision": "现有CC0原料有紫边，与地方绿色弯月形鲜荚不同；本轮未找到形态、菜谱和可用许可同时明确的成菜照片。",
+      "size": [
+        1536,
+        1024
+      ],
+      "changes": "仅转WebP，质量88；未放大、未裁切",
+      "visualQA": "人工查看生成原图：主体食材和配方对应；无文字水印；无非配方装饰配料。手机390×844逐页读取，图片成功解码，详情无横向溢出。",
+      "sha256": "75fd26a92b8a461de753c2b08d3c2fc1914dc50ab1547ecbcdde47a7c75a2db2"
+    },
+    {
+      "id": "chongming-xiangsu-yu",
+      "file": "assets/chongming-taro-steamed-generated.webp",
+      "title": "原味蒸香酥芋",
+      "alt": "带皮蒸熟的小芋艿与剥开的粉糯白肉，生成示意图",
+      "prompt": "Create one wide 3:2 photorealistic-natural food illustration of 原味蒸崇明香酥芋 for a Chinese seasonal-food website. This is a generated serving suggestion, not cultivar identification or an actual local photograph. A plain matte ivory shallow plate holds eight small fully steam-cooked taro cormels, 4-6 cm long, slender slightly curved kidney-shaped or elongated ovoid rather than large round balls, rough thin brown fibrous ringed skins and a subtle reddish-brown end on some intact cormels. Four have their skin partly peeled back, revealing soft warm creamy WHITE starchy flesh; one peeled cormel broken into two shows a powdery gently crumbly cooked center, completely cooked through, NOT translucent jelly and NOT purple-speckled large taro variety, NOT potatoes, not eggs, not giant slices. Keep all cormels coherently small, attractive honest home food. A tiny simple pinch bowl of plain salt at far side, no sugar glaze, sauces, butter, leaves or garnish. Soft natural window daylight, pale wooden table, 45-degree close view with entire plate visible and quiet margins, centered arrangement suited to square crop. Slight subtle warmth and steam, realistic restrained colors, no text, no logos, no watermark, no human hands, no collage.",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "license": "独立生成的项目示意图；未输入第三方照片，不宣称为实物摄影或品种认证",
+      "sources": [
+        "https://www.shcm.gov.cn/xwzx/002013/20250828/b3d21f62-8fa8-4993-a7b6-14dc7b1ac051.html",
+        "https://commons.wikimedia.org/wiki/File:Boiled_taro.png"
+      ],
+      "photoDecision": "现有CC BY-SA 4.0是普通熟芋参考，不是地方品种；崇明政府报道原料照片未标明开放许可，生成小芋艿蒸熟剥开状态。",
+      "size": [
+        1536,
+        1024
+      ],
+      "changes": "仅转WebP，质量88；未放大、未裁切",
+      "visualQA": "人工查看生成原图：主体食材和配方对应；无文字水印；无非配方装饰配料。手机390×844逐页读取，图片成功解码，详情无横向溢出。",
+      "sha256": "2fa31bfef7eb7667c21bae82151b691cf86c209ded2500862ee6d9104cbf3887"
+    },
+    {
+      "id": "xiangyin-santang-jiaotou",
+      "file": "assets/xiangyin-jiaotou-pork-generated.webp",
+      "title": "鲜藠头炒肉片",
+      "alt": "白色鲜藠头鳞茎薄片与熟猪里脊片，生成示意图",
+      "prompt": "Create one wide 3:2 photorealistic-natural Chinese home food illustration for a seasonal-food atlas. Subject: 鲜藠头炒肉片, fresh Allium chinense / rakkyo small white BULBS sliced and stir-fried with fully cooked thin pork tenderloin slices and two ginger slices, a little rapeseed oil, salt, water. A modest portion on a simple offwhite ceramic shallow plate. Hero ingredient is ivory white bulb slices, 1-2 cm long, small oval or elongated teardrop outlines with subtle concentric layered translucent edges, soft glossy but still holding shape. NOT green garlic shoots, NOT green scallion stems, NOT large onion rings, NOT separate garlic cloves, NOT pickled whole bulbs, NOT lily petals. Thin cooked pale tan pork lean slices about 3 cm, no pink raw centers, ginger a minor background. White bulbs more abundant than pork. No soy sauce, chili, green garnish, sesame, starch sauce or bacon; only minimal clear cooking juices, not soup. Pale wooden table, soft side window daylight, 45-degree close view, full plate visible, central food with quiet margins suited to square crop, natural modest home food and restrained realistic colors. No typography, watermark, logo, people, collage or decorative raw ingredients. Independently generated recipe illustration, not an actual photograph or provenance claim.",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "license": "独立生成的项目示意图；未输入第三方照片，不宣称为实物摄影或品种认证",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Allium_chinense_Rakkyo.JPG",
+        "https://www.sohu.com/a/387182313_99926993"
+      ],
+      "photoDecision": "现有CC BY-SA 3.0是原料；搜索的炒肉图多带青茎或辣椒浓酱，开放许可未明确，不对应本站白鳞茎配方。",
+      "size": [
+        1536,
+        1024
+      ],
+      "changes": "仅转WebP，质量88；未放大、未裁切",
+      "visualQA": "人工查看生成原图：主体食材和配方对应；无文字水印；无非配方装饰配料。手机390×844逐页读取，图片成功解码，详情无横向溢出。",
+      "sha256": "aa9323aa7ce9cbac0b5738ea4fa031b95b56d99965b595e49849f6db54553ad5"
+    },
+    {
+      "id": "wenzhou-pancai",
+      "file": "assets/wenzhou-pancai-ricecake-soup-generated.webp",
+      "title": "盘菜年糕汤",
+      "alt": "清汤中的熟盘菜薄片与白色米年糕片，生成示意图",
+      "prompt": "Create one wide 3:2 photorealistic-natural food illustration of 温州盘菜年糕汤 for a Chinese seasonal-food website. An independently generated serving suggestion, not an actual local photograph or origin certification. A plain ivory ceramic bowl of clear lightly golden vegetable broth containing ONLY cooked turnip root slices and plain white rice cake slices, water and salt. Peeled 温州盘菜 is a white flattened turnip root; its small irregular thin wedges / quarter-round slices in the soup are off-white semi-translucent, softly fibrous natural vegetable surfaces, slightly irregular thin edges, about 2-3 cm across. Rice cakes are smooth opaque white oblong-to-oval flat slices 3-4 cm long, round-soft edges, cooked soft yet individually distinct, not rice noodles, dumplings or cubes. Ensure root slices visibly differentiated from the denser opaque polished rice cakes; both prominent and discernible through clear broth. No meat, mushrooms, seafood, egg, cabbage, pickled greens, herbs, scallions, sesame, sauce or garnish. Modest comforting home meal, soft steam understated, pale wooden table and calm neutral linen, natural window daylight, 45 degree close view, whole bowl visible with quiet margins and food centered for square cropping. No lettering, logos, watermark, hands, collage or separate raw turnips.",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "license": "独立生成的项目示意图；未输入第三方照片，不宣称为实物摄影或品种认证",
+      "sources": [
+        "https://m.xiachufang.com/recipe/1013011/",
+        "https://news.66wz.com/system/2020/01/20/105226192.shtml"
+      ],
+      "photoDecision": "现有CC0白芜菁不是地方盘菜；搜索的汤图有雪菜、笋或额外荤料，找到的盘菜炒年糕也不对应本站清汤配方，未见可复用开放许可。",
+      "size": [
+        1536,
+        1024
+      ],
+      "changes": "仅转WebP，质量88；未放大、未裁切",
+      "visualQA": "人工查看生成原图：主体食材和配方对应；无文字水印；无非配方装饰配料。手机390×844逐页读取，图片成功解码，详情无横向溢出。",
+      "sha256": "2fd8db5be2e1debe5d1600e205a2e4cad07f8a73d28258a15fe12e34a1e8ff05"
+    }
+  ],
+  "checks": {
+    "foods": 67,
+    "edibleDetailImages": 67,
+    "testsPassed": 143,
+    "tarotCoverageUnchanged": true
+  }
+}

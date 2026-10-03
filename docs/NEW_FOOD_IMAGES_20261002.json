@@ -1,0 +1,291 @@
+{
+  "date": "2026-10-02",
+  "images": [
+    {
+      "file": "assets/jiaozhou-kailing-suo-raw.webp",
+      "role": "市场梭鱼形态参考",
+      "kind": "photo",
+      "author": "许秉智 / 青岛日报",
+      "source": "https://www.dailyqd.com/guanhai/369154_1.html",
+      "originalURL": "https://img.guanhai.com.cn/a/10001/202502/00cd046218c3f9cac8a4f9abf04c97b3.jpeg",
+      "license": "开放许可未注明；既有非商业试览要求，非自由图库授权",
+      "originalSize": [
+        400,
+        533
+      ],
+      "size": [
+        400,
+        533
+      ],
+      "sha256": "ca687f0f3df36e3d081c4bddc50519ded18b7b002eaf95dc7643aee8dc8f71a1",
+      "changes": "仅转WebP，未放大、未裁切；水印保留",
+      "identityNote": "市场货源混合，不能作为大沽河捕捞证明"
+    },
+    {
+      "file": "assets/taitung-atemoya-raw.webp",
+      "role": "台湾凤梨释迦整果",
+      "kind": "photo",
+      "author": "a-giâu",
+      "source": "https://commons.wikimedia.org/wiki/File:Atemola_(cross_of_Annona_cherimola_and_Annona_squamosa).jpg",
+      "originalURL": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Atemola_%28cross_of_Annona_cherimola_and_Annona_squamosa%29.jpg",
+      "license": "CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/",
+      "originalSize": [
+        816,
+        730
+      ],
+      "size": [
+        816,
+        730
+      ],
+      "sha256": "aa2cc382d541f73988b9bc41153b6d5fb56dd6ee932389d80cf2d201767b9a07",
+      "changes": "仅转WebP，未放大、未裁切；水印保留",
+      "identityNote": "2004年台湾拍摄，未定位台东县或具体冬果批次"
+    },
+    {
+      "file": "assets/yanshi-yintiao-raw.webp",
+      "role": "银条地下茎原料",
+      "kind": "photo",
+      "author": "摄影者未署名 / 全国农产品地理标志查询系统",
+      "source": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/466/nid/3289",
+      "originalURL": "https://www.sinogi.cn/db/Upload/gongshi/20190703/20190703152658_76654.jpg",
+      "license": "开放许可未注明；既有非商业试览要求，非自由图库授权",
+      "originalSize": [
+        660,
+        381
+      ],
+      "size": [
+        660,
+        381
+      ],
+      "sha256": "d99a6014c93d16d9dd1406f81543789700974c709b534ae8c32d6fb8a6ee3af3",
+      "changes": "仅转WebP，未放大、未裁切；水印保留",
+      "identityNote": "随偃师银条地理标志记录发布"
+    },
+    {
+      "file": "assets/shangyu-cherry-raw.webp",
+      "role": "上虞樱桃采摘",
+      "kind": "photo",
+      "author": "陈德文 / 绍兴市上虞区融媒体中心 / 新华网",
+      "source": "https://www.zj.news.cn/20240421/42f7a36e441e4ae09e80ad45c8d2568e/c.html",
+      "originalURL": "http://www.zj.news.cn/20240421/42f7a36e441e4ae09e80ad45c8d2568e/2024042142f7a36e441e4ae09e80ad45c8d2568e_202404212cbb8eb9040449409a9b3939fe13124e.jpg",
+      "license": "开放许可未注明；既有非商业试览要求，非自由图库授权",
+      "originalSize": [
+        900,
+        597
+      ],
+      "size": [
+        900,
+        597
+      ],
+      "sha256": "738909d55b370e789055bacb3bae0c595923722500aaeba6582d3bce5590ea20",
+      "changes": "仅转WebP，未放大、未裁切；水印保留",
+      "identityNote": "当地主要种植短柄樱桃，但报道亦有其他品种，照片不能认证具体品系"
+    },
+    {
+      "file": "assets/harbin-honeyberry-raw.webp",
+      "role": "蓝靛果实物形态",
+      "kind": "photo",
+      "author": "周静 / 黑龙江日报",
+      "source": "https://finance.sina.com.cn/jjxw/2025-07-05/doc-infekhfv2384827.shtml",
+      "originalURL": "https://n.sinaimg.cn/spider20250705/543/w768h575/20250705/d6df-8fd01c6ffd2bdae29e7c260466a8fa63.jpg",
+      "license": "开放许可未注明；既有非商业试览要求，非自由图库授权",
+      "originalSize": [
+        768,
+        575
+      ],
+      "size": [
+        768,
+        575
+      ],
+      "sha256": "1efff10555d29124f29c0bb870a3e6819df7f56d81306cbe9a6afe48a97764a5",
+      "changes": "仅转WebP，未放大、未裁切；水印保留",
+      "identityNote": "保留原有手机水印；照片未认证蓝精灵或乌蓝品系"
+    },
+    {
+      "file": "assets/shanzhou-nianzhuan-raw.webp",
+      "role": "陕州现制碾转",
+      "kind": "photo",
+      "author": "许松斌 / 河南经济报、三门峡日报",
+      "source": "https://www.hnjjbs.com/article/2026-06/178062497758909.html",
+      "originalURL": "https://media.zyjjw.cn/zycf/data/attachment/forum/202606/04/182635ay5cym8yb5lmkfd1.jpg",
+      "license": "开放许可未注明；既有非商业试览要求，非自由图库授权",
+      "originalSize": [
+        600,
+        400
+      ],
+      "size": [
+        600,
+        400
+      ],
+      "sha256": "a655acb5ca7540b7b22a210e54ace95027cd1dfcba705c1e898e2bd080de16c0",
+      "changes": "仅转WebP，未放大、未裁切；水印保留",
+      "identityNote": "现制售卖状态；六月报道不能证明六月仍有田间新麦"
+    },
+    {
+      "file": "assets/minqin-shacong-field.webp",
+      "role": "民勤露地沙葱",
+      "kind": "photo",
+      "author": "金奉乾 / 新甘肃·甘肃日报",
+      "source": "https://m.thepaper.cn/baijiahao_31042304",
+      "originalURL": "https://imagepphcloud.thepaper.cn/pph/image/351/37/323.jpg",
+      "license": "版权所有，未获开放转载许可；仅进入本地试览候选包",
+      "originalSize": [
+        1080,
+        569
+      ],
+      "size": [
+        1080,
+        569
+      ],
+      "sha256": "23297a95c9017885c3541d4bd4973ee2a48736d8bd5aeed2c9f9887ce18a5ec8",
+      "changes": "仅转WebP，未放大、未裁切；水印保留",
+      "identityNote": "2025年6月22日民勤大坝镇八一村，保留画面作者标记"
+    },
+    {
+      "file": "assets/minqin-shacong-eggs.webp",
+      "role": "沙葱炒鸡蛋",
+      "kind": "photo",
+      "author": "摄影者未署名 / 甘肃经济信息网",
+      "source": "https://www.gsei.com.cn/html/1280/2018-08-27/content-209577.html",
+      "originalURL": "https://attach.gsei.com.cn/uploadfile/2018/08/27/20180827170059855001.jpg",
+      "license": "开放许可未注明；既有非商业试览要求，非自由图库授权",
+      "originalSize": [
+        640,
+        480
+      ],
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "ec4aa58415a68048711e6240df01ea6ec94f4934d9504a728705ab92f84dd9c4",
+      "changes": "仅转WebP，未放大、未裁切；水印保留",
+      "identityNote": "鸡蛋、沙葱与红椒成菜，不证明本站精确用量"
+    },
+    {
+      "file": "assets/jiaozhou-kailing-suo-steamed-generated.webp",
+      "role": "切面/成菜示意图",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "source": "https://www.dailyqd.com/guanhai/369154_1.html",
+      "reference": "assets/jiaozhou-kailing-suo-raw.webp",
+      "license": "项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除",
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "7f6a32a54b99f3dc47383614bbb10ae4617b0cebbf2b5771abc7c9d3682b3661",
+      "changes": "生成后仅转WebP；未放大",
+      "prompt": "Create a realistic appetizing cooked-dish illustration, using the reference only for the grey-silver mullet skin color and size. Serve Chinese ginger and scallion STEAMED MULLET CUT INTO THREE THICK CROSS-CUT SECTIONS, skin-on, about 3cm thick each, arranged on a plain ivory plate. Each piece has cooked opaque white tender flaky flesh, a small central spine section, grey-silver scaled skin visible around outside. No whole fish, no head, no tail, no invented fins, no fish-shaped decoration. A few real thin ginger strips and green scallion lengths, small amount of light clear steaming juices, no soy sauce black glaze, no red chilies, no herb salad. Macro natural window lighting, wide 3:2 horizontal composition, meal looks home-cooked rather than stylized fine dining, pale wooden tabletop with rice bowl subtly at back. No letters or logos.",
+      "identityNote": "按形态与菜谱人工检查，非实物摄影，非品种认证"
+    },
+    {
+      "file": "assets/taitung-atemoya-cut-generated.webp",
+      "role": "切面/成菜示意图",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "source": "https://commons.wikimedia.org/wiki/File:Atemola_(cross_of_Annona_cherimola_and_Annona_squamosa).jpg",
+      "reference": "assets/taitung-atemoya-raw.webp",
+      "license": "参考照片及改作沿用 CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/",
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "86ad141892dab4683e80b2b51d665aa1e4bcb7a31d2d0073219c57350398ff0c",
+      "changes": "生成后仅转WebP；未放大",
+      "prompt": "Use case: photorealistic-natural. Asset type: seasonal food website cut-fruit illustration. Supporting reference image is an atemoya / 凤梨释迦 whole fruit: preserve its green broad rounded bumps and asymmetrical heart-like shape, NOT sugar-apple separated round scales, NOT soursop long spikes. Create a natural-daylight editorial food photograph-style illustration of one ripe atemoya cut longitudinally into two halves on an ivory plate, one half slightly nearer camera, pale wooden table. Fruit roughly 12 cm long. Show thin green knobbly rind, a continuous dense juicy ivory-white creamy flesh with subtle natural fibres; several large smooth dark-brown/black elongated oval seeds at irregular natural positions inside the flesh, simple central fibrous core. No fine many-seeded pomegranate honeycomb, no holes or pits all over, no huge central mango pit, no orange/yellow flesh. A small spoon beside the plate hints at scooping. Whole halves visible, 45 degree close angle, wide horizontal composition, restrained light and natural texture. No leaves, no ornamental flowers, no text, no watermark.",
+      "identityNote": "按形态与菜谱人工检查，非实物摄影，非品种认证"
+    },
+    {
+      "file": "assets/yanshi-yintiao-salad-generated.webp",
+      "role": "切面/成菜示意图",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "source": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/466/nid/3289",
+      "reference": "assets/yanshi-yintiao-raw.webp",
+      "license": "项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除",
+      "originalSize": [
+        1650,
+        953
+      ],
+      "size": [
+        1650,
+        953
+      ],
+      "sha256": "8f8aa880e9b22d0ddda3336c60dde217ea46adf010701ca04d76c4b89ca788f5",
+      "changes": "生成后仅转WebP；未放大",
+      "prompt": "Use case: photorealistic-natural. Asset type: seasonal food website dish illustration, not an identity reference. Reference image shows unwashed Yanshi yintiao edible underground stems; use ONLY its thin straight cylindrical morphology as reference, NOT dirt or background. Create a natural-light, believable Chinese home kitchen food photograph-style illustration: 凉拌偃师银条 in a plain shallow ivory ceramic plate on light wooden table. The edible stems are washed creamy-white slender smooth cylinders, chopstick thickness about 5 mm, cut into 3 cm lengths, mostly straight with a few gentle bends, rounded natural ends, subtle irregular nodes, NOT spiral segmented crosnes, NOT bean sprouts, NOT bamboo shoots, NOT vermicelli or noodles. Simple dressing with white vinegar, salt, a little sesame oil; sparse very fine ginger julienne and red sweet pepper strips, no soy sauce, no scallions. Crisp juicy white stems remain the clear hero, lightly glistening not translucent jelly. Forty-five-degree close view, whole plate visible with calm margin, wide horizontal composition. Soft daylight, realistic restrained colors, no writing, no watermark, no people.",
+      "identityNote": "按形态与菜谱人工检查，非实物摄影，非品种认证"
+    },
+    {
+      "file": "assets/shangyu-cherry-cut-generated.webp",
+      "role": "切面/成菜示意图",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "source": "https://www.zj.news.cn/20240421/42f7a36e441e4ae09e80ad45c8d2568e/c.html",
+      "reference": "assets/shangyu-cherry-raw.webp",
+      "license": "项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除",
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "9079ee4d96b1d50f3c077ef076676d201985ee7f452c009d2e427325f8a3424b",
+      "changes": "生成后仅转WebP；未放大",
+      "prompt": "Create a natural-light food illustration for a Chinese seasonal-food website, photograph-like but understood as an illustration. Reference the actual short-stalk Chinese cherries in the supplied image: small 1.5-2 cm uneven round pink-to-orange-red fruits, thin translucent delicate shiny skin, very short slender green stalks, NOT giant dark-red Bing cherries. A simple matte ivory shallow plate holds a modest handful of these small cherries plus THREE halves, carefully cut through the flesh around and beside the SINGLE pale-tan smooth stone. Some halves show one smooth single rounded tan pit; other halves show ONE clean rounded hollow where the pit was removed, no clusters or multiple seeds. Flesh is pale warm yellow-pink, moist and delicate, less dense than sweet cherries; cut edges naturally juicy. Fill most of wide 3:2 frame with the modest fruit plate, neutral pale wood table, soft window light, appetizing and unadorned, no typography, no logos, no busy leaves, no artificial super-gloss.",
+      "identityNote": "按形态与菜谱人工检查，非实物摄影，非品种认证"
+    },
+    {
+      "file": "assets/harbin-honeyberry-cut-generated.webp",
+      "role": "切面/成菜示意图",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "source": "https://finance.sina.com.cn/jjxw/2025-07-05/doc-infekhfv2384827.shtml",
+      "reference": "assets/harbin-honeyberry-raw.webp",
+      "license": "项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除",
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "4476e57b76d07510266ebf9edad03df645d8810ef32d54a2f2f01027e58a776f",
+      "changes": "生成后仅转WebP；未放大",
+      "prompt": "Create a realistic food illustration of ready-to-eat honeyberries, Lonicera caerulea, based on the reference's actual elongated fruit shape. A small neutral ceramic plate holds bluish-black elongated oval berries with pale dusty blue bloom, about 2 to 3 cm long, some slightly crooked or blunt-ended, not grapes and not round blueberries. Foreground shows TWO berries cut lengthwise, exposing moist dark purple-red pulp with a FEW tiny cream-colored seeds embedded in the pulp, no central hard stone, no huge seeds, no radial citrus wedges. Two separate berries sliced across reveal small irregular deep reddish-purple oval cross sections. Fruit stays naturally dark and matte, preserve soft pale bloom on intact skin. Close 3:2 horizontal view under soft window light on pale wood, plain plate, no mint, no yogurt, no sugar or cream, no text. Image is an appetizing cut-fruit illustration, not an invented actual local photograph.",
+      "identityNote": "按形态与菜谱人工检查，非实物摄影，非品种认证"
+    },
+    {
+      "file": "assets/shanzhou-nianzhuan-eggs-generated.webp",
+      "role": "切面/成菜示意图",
+      "kind": "generated",
+      "author": "OpenAI imagegen",
+      "source": "https://www.hnjjbs.com/article/2026-06/178062497758909.html",
+      "reference": "assets/shanzhou-nianzhuan-raw.webp",
+      "license": "项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除",
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "73c42f5c5474d1ee0c70e93cded97f895d3d3f408ee30b0f14c4773db7072ef6",
+      "changes": "生成后仅转WebP；未放大",
+      "prompt": "Use case: photorealistic-natural. Asset type: seasonal food website dish illustration. Supporting reference photograph shows authentic freshly stone-milled green-wheat 碾转; faithfully preserve morphology, NOT packaging. Create a natural-light Chinese home food photograph-style illustration of 碾转炒鸡蛋, 2-person portion in plain white shallow ceramic plate on pale wood table. 碾转 consists of numerous short irregular coarse crumbly greenish-beige wheat strips mostly 0.5–2 cm long with uneven torn ends and grainy rough surface, as seen in the reference; NOT long noodles, NOT rice grains, NOT pasta tubes, NOT uniform worms. Mix with fully cooked soft golden yellow scrambled egg chunks and a few bright green scallion pieces, no meat, no peppers, no sauces, no garnish clutter. Dish still pale olive-beige because cooking changes chlorophyll, never fluorescent grass green. Steam and thin sheen of oil only subtle. Forty-five-degree close view, whole plate visible, horizontal composition, soft natural window light, recognizable ingredient detail, no text, no watermark.",
+      "identityNote": "按形态与菜谱人工检查，非实物摄影，非品种认证"
+    }
+  ]
+}

@@ -38,11 +38,16 @@
     const avoid=new Set(prefs.avoid);if(avoid.has('vegan'))['meat','seafood','egg','milk','honey'].forEach(x=>avoid.add(x));
     return ![...profile.avoid,...(profile.uncertain||[])].some(x=>avoid.has(x));
   }
+  function isPeakDay(food,day) {
+    if(!(food.peakMonths||[]).includes(Number(day.slice(5,7))))return false;
+    const md=day.slice(5);
+    return !food.peakWindows?.length||food.peakWindows.some(([start,end])=>start<=end?md>=start&&md<=end:md>=start||md<=end);
+  }
   function candidateDays(food,profile,slot,events) {
     const places=food.placeSeasons||[],result=[];
     for(let d=slot.startDay;d<=slot.endDay;d=addDays(d,1)) {
       const [year,month,date]=d.split('-').map(Number);
-      if(!(food.peakMonths||[]).includes(month)||date<(profile.notBefore?.[month]||1))continue;
+      if(!isPeakDay(food,d)||date<(profile.notBefore?.[month]||1))continue;
       const start=profile.startTerm??food.seasonStartTerm;
       if(Number.isInteger(start)){
         const anchorYear=start>=17&&month<9?year-1:year;
@@ -140,5 +145,5 @@
     for(const e of rows)lines.push('BEGIN:VEVENT',`UID:${e.uid}`,`DTSTAMP:${dt}`,`LAST-MODIFIED:${dt}`,`SEQUENCE:${plan.revision||0}`,`DTSTART:${stamp(e.start)}`,`DTEND:${stamp(e.end)}`,`SUMMARY:${escapeText(e.title)}`,`DESCRIPTION:${escapeText(e.description)}`,`URL:${e.url}`,'STATUS:TENTATIVE','TRANSP:TRANSPARENT','CLASS:PRIVATE','BEGIN:VALARM','TRIGGER:PT0S','ACTION:DISPLAY',`DESCRIPTION:${escapeText(e.title)}`,'END:VALARM','END:VEVENT');
     lines.push('END:VCALENDAR');return lines.map(fold).join('\r\n')+'\r\n';
   }
-  return {DAY,ZONE,RESTRICTIONS,TASTES,TEXTURES,COOKING,hash,signature,random,dayAt,addDays,eventsFrom,nextSix,validatePrefs,resolveExclusions,eligible,candidateDays,poolFor,sensorySignature,senses,matchesPreferences,matchInfo,scoreFood,recommendationReason,draw,zonedTime,stamp,escapeText,fold,calendarEvents,makeICS};
+  return {DAY,ZONE,RESTRICTIONS,TASTES,TEXTURES,COOKING,hash,signature,random,dayAt,addDays,eventsFrom,nextSix,validatePrefs,resolveExclusions,eligible,isPeakDay,candidateDays,poolFor,sensorySignature,senses,matchesPreferences,matchInfo,scoreFood,recommendationReason,draw,zonedTime,stamp,escapeText,fold,calendarEvents,makeICS};
 });

@@ -63,7 +63,7 @@
     },
     {
       "date": "2027-01-28",
-      "count": 11,
+      "count": 10,
       "ids": [
         "cigu",
         "zengcheng-caixin",
@@ -74,7 +74,6 @@
         "atushi-winter-lamb",
         "shazhou-zhugengqin",
         "liyang-baixin",
-        "wenzhou-pancai",
         "taitung-winter-atemoya"
       ],
       "names": [
@@ -87,36 +86,32 @@
         "阿图什冬宰羊肉",
         "沙洲竹梗芹",
         "溧阳白芹",
-        "温州盘菜",
         "台东冬果凤梨释迦"
       ]
     },
     {
       "date": "2027-02-01",
-      "count": 5,
+      "count": 4,
       "ids": [
         "hongshan-caitai",
         "yangxin-huhao",
         "bishan-ercai",
-        "wenzhou-pancai",
         "taitung-winter-atemoya"
       ],
       "names": [
         "洪山菜薹",
         "阳新湖蒿",
         "璧山儿菜",
-        "温州盘菜",
         "台东冬果凤梨释迦"
       ]
     },
     {
       "date": "2027-02-15",
-      "count": 6,
+      "count": 5,
       "ids": [
         "hongshan-caitai",
         "yangxin-huhao",
         "bishan-ercai",
-        "wenzhou-pancai",
         "jiaozhou-kailing-suo",
         "taitung-winter-atemoya"
       ],
@@ -124,20 +119,18 @@
         "洪山菜薹",
         "阳新湖蒿",
         "璧山儿菜",
-        "温州盘菜",
         "胶州湾开凌梭",
         "台东冬果凤梨释迦"
       ]
     },
     {
       "date": "2027-02-28",
-      "count": 7,
+      "count": 6,
       "ids": [
         "hongshan-caitai",
         "yangxin-huhao",
         "bishan-ercai",
         "jintang-fresh-morel",
-        "wenzhou-pancai",
         "jiaozhou-kailing-suo",
         "taitung-winter-atemoya"
       ],
@@ -146,7 +139,6 @@
         "阳新湖蒿",
         "璧山儿菜",
         "金堂鲜羊肚菌",
-        "温州盘菜",
         "胶州湾开凌梭",
         "台东冬果凤梨释迦"
       ]

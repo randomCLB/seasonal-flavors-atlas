@@ -220,3 +220,7 @@
 .detail-share-fallback input:focus-visible{outline:2px solid #926b34;outline-offset:2px}
 #detailContent .detail-hero{padding-top:28px}
 @media(max-width:800px){.detail-actions{padding:10px 7vw;padding-top:max(10px,env(safe-area-inset-top))}.detail-share{min-height:44px;padding:0 18px;background:var(--ink);color:var(--paper);font-size:15px}.detail-share:hover{background:#285748}.detail-actions .dialog-close{width:44px;height:44px}.detail-share-status{text-align:left}#detailContent .detail-hero{padding-top:22px}}
+@media(max-width:800px){.search-trigger{min-width:44px;justify-content:center}.recipe-teaser button{min-height:44px}}
+@media(max-width:900px) and (max-height:500px) and (orientation:landscape){.detail-actions .dialog-close{width:44px;height:44px}.detail-share,.recipe-teaser button{min-height:44px}}
+
+.origin-details{max-width:690px;margin-top:28px}.origin-details article{border-top:1px solid #d9ded4;padding:18px 0}.origin-details h4{margin:0 0 10px;font-size:18px}.origin-details article p{margin:8px 0;line-height:1.8}.origin-details a{color:#315b4e;text-underline-offset:3px}

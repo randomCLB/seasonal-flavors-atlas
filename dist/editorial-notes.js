@@ -126,6 +126,723 @@ const EDITORIAL_FINISH={
 for(const food of window.FOODS)if(EDITORIAL_FINISH[food.id])food.market+=EDITORIAL_FINISH[food.id];
 
 // Reviewed seasonal expansion: documented fresh batches, not year-round inventory.
-window.FOODS.push(...[{"id":"jianou-zhuilli","name":"建瓯锥栗","alias":["锥栗","尖栗"],"region":"福建建瓯","lat":27.02,"lon":118.3,"months":[9,10],"peakMonths":[9,10],"description":"个头尖小的锥栗，煮软后添进米粥，一口粉糯带着坚果香。","intro":"个头尖小的锥栗，煮软后添进米粥，一口粉糯带着坚果香。","short":"个头尖小的锥栗，煮软后添进米粥，一口粉糯带着坚果香。","category":"fruit","seasonBasis":"harvest","seasonPrecision":"month","season":"建瓯九月有新栗交易报道，十月有采收报道。本词条对应当季鲜锥栗，不把全年栗仁零食或冷冻库存当作刚采的新栗。具体批次需向商家确认。","taste":"熟仁有温和甜味，不靠额外加糖。","aroma":"熟后是轻柔的坚果香。","texture":"煮熟的栗仁粉糯，粥里的碎块仍有颗粒感。","flavor":["清甜","粉糯"],"state":"剥壳鲜栗仁充分煮熟后","place":"锥栗与日常大粒板栗不要只凭大小混称。这里选的是建瓯产区的锥栗鲜货；它的卖点是地方坚果风味，并未宣称只有几天能运。","context":"","recipeTitle":"锥栗小米粥","recipe":"确认买到的是锥栗鲜仁；挑去霉变、虫蛀和异味的栗仁，洗净后切成小块。；小米淘洗后与栗仁、清水同入锅，煮开后转小火；不时搅动锅底。；煮到小米开花、栗仁中心完全软熟；水量不足时添开水，分成两碗。","ingredients":"剥壳鲜锥栗仁 150 克，小米 60 克，清水约 800 毫升。","steps":["确认买到的是锥栗鲜仁；挑去霉变、虫蛀和异味的栗仁，洗净后切成小块。","小米淘洗后与栗仁、清水同入锅，煮开后转小火；不时搅动锅底。","煮到小米开花、栗仁中心完全软熟；水量不足时添开水，分成两碗。"],"finish":"栗块能被勺背压开，没有生硬的芯；粥浓稀按喜好调整。","pitfall":"把带壳栗子整颗投入粥中；本配方用量指去壳后的鲜栗仁。","pair":"小米提供柔和的粥底，栗仁留下粉糯颗粒和坚果香。","buy":"核对“建瓯锥栗”而不只是普通板栗；买前问当季鲜货、剥壳日与寄送状态。","search":"建瓯 锥栗 新鲜 剥壳栗仁","storage":"鲜仁按商品说明冷藏并尽快做；要久放时分装冷冻，不把常温零食与鲜仁混为一谈。","safety":"对栗子有已知过敏的人不要尝试。完整栗仁有噎食风险，应切小并按用餐者情况处理；霉变栗仁丢弃。","sources":[["福建日报：九月建瓯新栗交易","https://fjnews.fjsen.com/2023-09/21/content_31416088.htm"],["中国新闻网：十月建瓯锥栗采收报道","https://news.ifeng.com/c/8dZeoxYUC97"],["锥栗形态照片与CC0授权","https://commons.wikimedia.org/wiki/File:Shelled_castanea_henryi.jpg"]],"image":"assets/jianou-zhuilli-reference.webp","imageAlt":"锥栗坚果外观参考，不是建瓯产地实拍","imageCaption":"Fumikas Sagisavas 摄，Wikimedia Commons，CC0。锥栗外观参考，拍摄地不是建瓯。","cardImage":"assets/jianou-zhuilli-reference.webp","cardImageAlt":"锥栗坚果外观参考，不是建瓯产地实拍","cardImageNote":"食材形态参考，非地方品种实拍","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"福建建瓯","lat":27.02,"lon":118.3,"months":[9,10],"precision":"month","source":"https://fjnews.fjsen.com/2023-09/21/content_31416088.htm"}],"tarotImage":{"src":"assets/jianou-zhuilli-reference.webp","alt":"锥栗坚果外观参考，不是建瓯产地实拍","kind":"ingredient","note":"Fumikas Sagisavas 摄，Wikimedia Commons，CC0。锥栗外观参考，拍摄地不是建瓯。 本图展示原料，不是本食谱的装盘照片。"},"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。"},{"id":"chongming-baibiandou","name":"崇明白扁豆鲜荚","alias":["崇明白扁豆","白扁豆鲜荚"],"region":"上海崇明","lat":31.62,"lon":121.47,"months":[9,10],"peakMonths":[9,10],"description":"弯弯的绿色嫩豆荚，先煮透再拌入蒜香，吃它软嫩而不烂的一口。","intro":"弯弯的绿色嫩豆荚，先煮透再拌入蒜香，吃它软嫩而不烂的一口。","short":"弯弯的绿色嫩豆荚，先煮透再拌入蒜香，吃它软嫩而不烂的一口。","category":"vegetable","seasonBasis":"harvest","seasonPrecision":"month","season":"崇明秋鲜报道记录白扁豆在售，十月菜场报道也能见到。本轮采用九至十月鲜荚窗口；全年干白扁豆与此处的嫩荚不是同一种商品状态。","taste":"嫩荚熟后味道温和，略有蔬菜的清甜。","aroma":"熟后豆香轻，蒜只作衬托。","texture":"煮透后荚肉柔嫩，不能追求生脆。","flavor":["清甜","柔嫩"],"state":"新鲜嫩荚充分煮熟后","place":"“白扁豆”不意味着鲜荚通体白色；嫩荚与干种子的食用方式不同。本词条只讲鲜嫩荚。","context":"","recipeTitle":"蒜香熟煮白扁豆","recipe":"择去两端和粗筋，洗净嫩荚；老荚与干种子不照这份菜谱替换。；嫩荚放入足量沸水，持续煮至荚肉和荚内豆粒彻底熟透、无生硬处与生豆气；不能只焯一下就捞起。；捞出沥水。另锅用油小火炒香蒜末，加入已经煮透的豆荚和盐拌匀，再加热后上桌。","ingredients":"白扁豆鲜嫩荚 300 克，蒜 2 瓣，盐约 2 克，明确成分的菜籽油 8 毫升，清水适量。","steps":["择去两端和粗筋，洗净嫩荚；老荚与干种子不照这份菜谱替换。","嫩荚放入足量沸水，持续煮至荚肉和荚内豆粒彻底熟透、无生硬处与生豆气；不能只焯一下就捞起。","捞出沥水。另锅用油小火炒香蒜末，加入已经煮透的豆荚和盐拌匀，再加热后上桌。"],"finish":"荚和豆粒都已熟软，没有夹生部位；不要以仍然脆生为目标。","pitfall":"为保翠绿缩短熟制；短炒和简单焯水不能代替彻底煮熟。","pair":"蒜香贴住熟嫩的豆荚，少量盐即可，不必用浓酱掩盖豆香。","buy":"搜索时写“鲜嫩荚”，避免买到药食用途的干白扁豆；确认崇明产地、嫩度和采摘日期。","search":"崇明 白扁豆 新鲜 嫩荚","storage":"收到后按商家说明冷藏并尽快处理；发黏、腐烂和有异味的不用。","safety":"扁豆不可生食或半生食，荚和豆粒都必须充分熟透。不要凉拌生荚，也不要靠尝生豆判断熟度。已知对这类豆过敏者避开。","sources":[["上观新闻：崇明秋鲜白扁豆与香酥芋","https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"],["看看新闻：十月崇明秋日鲜货","https://www.kankanews.com/detail/kKyJrEZoaye"],["中国质量新闻网：崇明白扁豆与香酥芋地方产品","https://m.cqn.com.cn/zj/content/2020-04/22/content_8552364.htm"],["淄博市疾控中心：鲜豆必须烧熟煮透","https://zbcdc.zibo.gov.cn/art/2025/7/18/art_19936_2935565.html"],["鲜荚照片与CC0授权","https://commons.wikimedia.org/wiki/File:Lablab-bean_pods.jpg"]],"image":"assets/chongming-biandou-reference.webp","imageAlt":"带紫边的扁豆鲜荚形态参考，非崇明白扁豆品种实拍","imageCaption":"Fumikas Sagisavas 摄，Wikimedia Commons，CC0。同种扁豆鲜荚参考，照片有紫边荚，不代表崇明白扁豆的颜色与品相；非产地认证图。","cardImage":"assets/chongming-biandou-reference.webp","cardImageAlt":"带紫边的扁豆鲜荚形态参考，非崇明白扁豆品种实拍","cardImageNote":"食材形态参考，非地方品种实拍","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"上海崇明","lat":31.62,"lon":121.47,"months":[9,10],"precision":"month","source":"https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"}],"tarotImage":{"src":"assets/chongming-biandou-reference.webp","alt":"带紫边的扁豆鲜荚形态参考，非崇明白扁豆品种实拍","kind":"ingredient","note":"Fumikas Sagisavas 摄，Wikimedia Commons，CC0。同种扁豆鲜荚参考，照片有紫边荚，不代表崇明白扁豆的颜色与品相；非产地认证图。 本图展示原料，不是本食谱的装盘照片。"},"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。"},{"id":"chongming-xiangsu-yu","name":"崇明香酥芋","alias":["香酥芋","崇明芋艿"],"region":"上海崇明","lat":31.62,"lon":121.47,"months":[9,10],"peakMonths":[9,10],"description":"热气里剥开小芋艿，先尝一口酥糯，再蘸一点盐。","intro":"热气里剥开小芋艿，先尝一口酥糯，再蘸一点盐。","short":"热气里剥开小芋艿，先尝一口酥糯，再蘸一点盐。","category":"vegetable","seasonBasis":"harvest","seasonPrecision":"month","season":"崇明秋鲜与十月市场报道中均有香酥芋。本轮以九至十月新收芋艿作入口；其他时段的储藏货不自动视作新收鲜货。","taste":"熟芋本味温和，带轻微回甜。","aroma":"趁热有淡淡的芋香。","texture":"蒸透后酥糯绵密，不追求脆。","flavor":["粉糯","清甜"],"state":"新鲜芋艿充分蒸熟后","place":"地方产品资料将香酥芋与红梗芋艿联系起来。页面照片只帮助认识熟芋状态，不能凭它验证商家卖的是不是这个地方品种。","context":"","recipeTitle":"原味蒸香酥芋","recipe":"刷洗芋艿表面的泥，去掉腐烂或明显损坏的；大小差异很大时分批做。；带皮放进蒸屉，水开后充分蒸到中心熟软；可用筷子插入最大的一颗检查。；稍晾后剥皮，先尝本味，再按喜好蘸少量盐。","ingredients":"大小接近的鲜香酥芋 400 克，水适量，盐少许（蘸用）。","steps":["刷洗芋艿表面的泥，去掉腐烂或明显损坏的；大小差异很大时分批做。","带皮放进蒸屉，水开后充分蒸到中心熟软；可用筷子插入最大的一颗检查。","稍晾后剥皮，先尝本味，再按喜好蘸少量盐。"],"finish":"最大的一颗也能轻松插透，剥开后中心没有生硬块。","pitfall":"只看小芋头熟了就一起出锅；不同大小需要分别检查。","pair":"少量盐衬出芋香；第一次吃不必先裹一层厚糖浆。","buy":"问清崇明香酥芋品种与当季采收，不把任何小芋头都当成它；挑实心、无腐烂和酸味的。","search":"崇明 香酥芋 芋艿 当季","storage":"依收到的鲜货状态和商家说明保存，保持表面干爽，尽快蒸；熟芋冷却后及时冷藏。","safety":"芋艿需要充分熟制，不要生吃。处理生芋皮易有刺激感，可戴手套；这不是野生植物辨食指南。","sources":[["上观新闻：崇明秋鲜白扁豆与香酥芋","https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"],["看看新闻：十月崇明秋日鲜货","https://www.kankanews.com/detail/kKyJrEZoaye"],["中国质量新闻网：香酥芋红梗芋艿品种说明","https://m.cqn.com.cn/zj/content/2020-04/22/content_8552364.htm"],["熟芋艿照片与授权","https://commons.wikimedia.org/wiki/File:Boiled_taro.png"]],"image":"assets/chongming-taro-reference.webp","imageAlt":"熟芋艿参考照片，非崇明香酥芋品种实拍","imageCaption":"Rtnf 摄，Wikimedia Commons，CC BY-SA 4.0；缩小转为WebP。熟芋艿参考，不代表崇明品种或本食谱实拍。","cardImage":"assets/chongming-taro-reference.webp","cardImageAlt":"熟芋艿参考照片，非崇明香酥芋品种实拍","cardImageNote":"熟制形态参考，非产地实拍","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"上海崇明","lat":31.62,"lon":121.47,"months":[9,10],"precision":"month","source":"https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"}],"tarotImage":{"src":"assets/chongming-taro-reference.webp","alt":"熟芋艿参考照片，非崇明香酥芋品种实拍","kind":"dish","note":"Rtnf 摄，Wikimedia Commons，CC BY-SA 4.0；缩小转为WebP。熟芋艿参考，不代表崇明品种或本食谱实拍。"},"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。"},{"id":"xiangyin-santang-jiaotou","name":"湘阴三塘鲜藠头","alias":["三塘藠头","湘阴藠头","藠头"],"region":"湖南湘阴 · 三塘","lat":28.73,"lon":112.84,"months":[6],"peakMonths":[6],"description":"白色小鳞茎自带葱蒜般的辛香，与肉片快炒，不必等它进泡菜坛。","intro":"白色小鳞茎自带葱蒜般的辛香，与肉片快炒，不必等它进泡菜坛。","short":"白色小鳞茎自带葱蒜般的辛香，与肉片快炒，不必等它进泡菜坛。","category":"vegetable","seasonBasis":"harvest","seasonPrecision":"month","season":"湘阴三塘有六月收获的明确报道；六月采收与加工后的全年销售分开记录。本站推荐当季鲜藠头，不用盐渍、糖醋或整年冷库货充当正在采收的鲜货。","taste":"鲜鳞茎有辛味，炒熟后更温和；咸味来自调味。","aroma":"葱蒜一类的辛香是这一味的特征。","texture":"炒熟的薄片仍有清爽的咬感。","flavor":["辛香","脆嫩"],"state":"鲜鳞茎切片炒熟后","place":"当地报道记录过外地冷库带来的运输成本，以及在产地建设冷库后扩大销路的过程。这支持鲜货流通故事，不被改写成未经考证的古代贡品传说。","context":"","recipeTitle":"鲜藠头炒肉片","recipe":"去根和外层老膜，将藠头洗净切片；确认买到鲜货而非盐渍货。；肉切薄片，生肉器具与即食食物分开。热锅下油和姜，把肉片炒至熟透。；加入藠头片和少量清水翻炒到熟，调盐后出锅；不要为了生脆而省略熟制。","ingredients":"鲜藠头净鳞茎 180 克，猪里脊 120 克，姜 2 片，菜籽油 10 毫升，盐约 2 克，清水少许。","steps":["去根和外层老膜，将藠头洗净切片；确认买到鲜货而非盐渍货。","肉切薄片，生肉器具与即食食物分开。热锅下油和姜，把肉片炒至熟透。","加入藠头片和少量清水翻炒到熟，调盐后出锅；不要为了生脆而省略熟制。"],"finish":"肉片熟透，藠头片已熟但未煮烂，仍有葱蒜样香气。","pitfall":"把已经很咸的盐渍藠头按鲜货用量直接替换，味道和处理都不相同。","pair":"肉片的厚实与藠头的辛香相配，这份不加浓酱，先尝到鳞茎本味。","buy":"写清“湘阴三塘、新鲜、非盐渍”，询问当季采收和冷链安排；用量是去根去叶后的净鳞茎。","search":"湘阴 三塘 藠头 新鲜 非盐渍","storage":"鲜货按商家冷藏说明保存并尽快炒；不要照腌菜的常温保存方式放鲜藠头。","safety":"肉片需要充分熟透；处理生肉后清洗手和器具。对藠头有已知过敏或明确忌口者避开。","sources":[["长沙晚报：六月藠头采收与产地冷库","https://arts.icswb.com/h/168/20240311/861281.html"],["红网：六月三塘藠头丰收","https://yy.rednet.cn/content/646040/60/16033938.html"],["藠头形态照片与授权","https://commons.wikimedia.org/wiki/File:Allium_chinense_Rakkyo.JPG"]],"image":"assets/xiangyin-jiaotou-reference.webp","imageAlt":"去叶的藠头白色鳞茎形态参考","imageCaption":"Midori 摄，Wikimedia Commons，CC BY-SA 3.0；缩小转为WebP。同种藠头参考，非湘阴产地实拍。","cardImage":"assets/xiangyin-jiaotou-reference.webp","cardImageAlt":"去叶的藠头白色鳞茎形态参考","cardImageNote":"食材形态参考，非地方品种实拍","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"湖南湘阴 · 三塘","lat":28.73,"lon":112.84,"months":[6],"precision":"month","source":"https://arts.icswb.com/h/168/20240311/861281.html"}],"tarotImage":{"src":"assets/xiangyin-jiaotou-reference.webp","alt":"去叶的藠头白色鳞茎形态参考","kind":"ingredient","note":"Midori 摄，Wikimedia Commons，CC BY-SA 3.0；缩小转为WebP。同种藠头参考，非湘阴产地实拍。 本图展示原料，不是本食谱的装盘照片。"},"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。"},{"id":"wenzhou-pancai","name":"温州盘菜","alias":["盘菜","温州芜菁"],"region":"宁夏引种产区 · 温州盘菜","lat":38.8,"lon":106.5,"months":[9,10],"peakMonths":[9,10],"description":"圆盘般的芜菁切片煮进年糕汤，清甜的菜和软糯的米年糕各占一口。","intro":"圆盘般的芜菁切片煮进年糕汤，清甜的菜和软糯的米年糕各占一口。","short":"圆盘般的芜菁切片煮进年糕汤，清甜的菜和软糯的米年糕各占一口。","category":"vegetable","seasonBasis":"harvest","seasonPrecision":"month","season":"温州本地传统批次与异地秋收批次不是同一个时间。本轮仅纳入报道明确记录的宁夏引种盘菜：九月采收、十月在温州市场上市；不把秋季记录套到温州本地产地，也不据此填全年最佳期。","taste":"熟后温和清甜，调味不过重。","aroma":"保留轻微蔬菜气息。","texture":"根块熟软，年糕软糯，质地可以分辨。","flavor":["清甜","柔软"],"state":"鲜盘菜切片煮熟后","place":"地图点只作宁夏引种区域入口，并非具体农场定位。当地种植批次与地名指向的饮食文化分开表达，后续取得本地采收证据再增加温州产地窗口。","context":"","recipeTitle":"盘菜年糕汤","recipe":"盘菜洗净，薄削粗皮后切小片；纯米年糕切片，按包装要求预处理。；清水煮开，先下盘菜煮至根块熟软、没有生硬芯。；加入年糕煮到软糯但仍成片，调盐后分碗。","ingredients":"鲜盘菜 300 克，原味纯米年糕 200 克，清水约 700 毫升，盐约 2 克。","steps":["盘菜洗净，薄削粗皮后切小片；纯米年糕切片，按包装要求预处理。","清水煮开，先下盘菜煮至根块熟软、没有生硬芯。","加入年糕煮到软糯但仍成片，调盐后分碗。"],"finish":"盘菜熟软，年糕无硬芯，汤里还看得见各自的形状。","pitfall":"年糕过早下锅久煮成糊；先熟盘菜，再放年糕。","pair":"盘菜给清汤添蔬菜本味，年糕让这一碗更饱满；这是家常配方建议。","buy":"确认是温州盘菜品种，并问清实际种植地；秋批可为宁夏引种货，不能要求商家凭温州菜名冒称温州原产。","search":"温州 盘菜 新鲜 宁夏 产地","storage":"鲜根块按商家说明保存，切开后密封冷藏并尽快煮；年糕依包装要求保存。","safety":"年糕黏韧，按用餐者需要切小、充分煮软。购买年糕应核对是否纯米配方及交叉接触，不把“年糕”二字当作无过敏原保证。","sources":[["温州都市报：宁夏引种盘菜九月采收、十月上市","https://news.66wz.com/system/2025/10/15/105703549.shtml"],["温州都市报：盘菜的地方吃法","https://zjnews.zjol.com.cn/zjnews/202501/t20250102_30747645.shtml"],["白色芜菁参考图与CC0授权","https://commons.wikimedia.org/wiki/File:White_turnip_2017_A1.jpg"]],"image":"assets/wenzhou-pancai-reference.webp","imageAlt":"白色芜菁根块形态参考，非温州盘菜地方品种实拍","imageCaption":"Fructibus 摄，Wikimedia Commons，CC0。白色芜菁外观参考，非温州地方品种或宁夏产地实拍。","cardImage":"assets/wenzhou-pancai-reference.webp","cardImageAlt":"白色芜菁根块形态参考，非温州盘菜地方品种实拍","cardImageNote":"食材形态参考，非地方品种实拍","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"宁夏引种产区 · 温州盘菜","lat":38.8,"lon":106.5,"months":[9,10],"precision":"month","source":"https://news.66wz.com/system/2025/10/15/105703549.shtml"}],"tarotImage":{"src":"assets/wenzhou-pancai-reference.webp","alt":"白色芜菁根块形态参考，非温州盘菜地方品种实拍","kind":"ingredient","note":"Fructibus 摄，Wikimedia Commons，CC0。白色芜菁外观参考，非温州地方品种或宁夏产地实拍。 本图展示原料，不是本食谱的装盘照片。"},"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。"}]);
+window.FOODS.push(...[{"id":"jianou-zhuilli","name":"建瓯锥栗","alias":["锥栗","尖栗"],"region":"福建建瓯","lat":27.02,"lon":118.3,"months":[9,10],"peakMonths":[9,10],"description":"个头尖小的锥栗，煮软后添进米粥，一口粉糯带着坚果香。","intro":"个头尖小的锥栗，煮软后添进米粥，一口粉糯带着坚果香。","short":"个头尖小的锥栗，煮软后添进米粥，一口粉糯带着坚果香。","category":"fruit","seasonBasis":"harvest","seasonPrecision":"month","season":"建瓯九月有新栗交易报道，十月有采收报道。本词条对应当季鲜锥栗，不把全年栗仁零食或冷冻库存当作刚采的新栗。具体批次需向商家确认。","taste":"熟仁有温和甜味，不靠额外加糖。","aroma":"熟后是轻柔的坚果香。","texture":"煮熟的栗仁粉糯，粥里的碎块仍有颗粒感。","flavor":["清甜","粉糯"],"state":"剥壳鲜栗仁充分煮熟后","place":"锥栗与日常大粒板栗不要只凭大小混称。这里选的是建瓯产区的锥栗鲜货；它的卖点是地方坚果风味，并未宣称只有几天能运。","context":"","recipeTitle":"锥栗小米粥","recipe":"确认买到的是锥栗鲜仁；挑去霉变、虫蛀和异味的栗仁，洗净后切成小块。；小米淘洗后与栗仁、清水同入锅，煮开后转小火；不时搅动锅底。；煮到小米开花、栗仁中心完全软熟；水量不足时添开水，分成两碗。","ingredients":"剥壳鲜锥栗仁 150 克，小米 60 克，清水约 800 毫升。","steps":["确认买到的是锥栗鲜仁；挑去霉变、虫蛀和异味的栗仁，洗净后切成小块。","小米淘洗后与栗仁、清水同入锅，煮开后转小火；不时搅动锅底。","煮到小米开花、栗仁中心完全软熟；水量不足时添开水，分成两碗。"],"finish":"栗块能被勺背压开，没有生硬的芯；粥浓稀按喜好调整。","pitfall":"把带壳栗子整颗投入粥中；本配方用量指去壳后的鲜栗仁。","pair":"小米提供柔和的粥底，栗仁留下粉糯颗粒和坚果香。","buy":"核对“建瓯锥栗”而不只是普通板栗；买前问当季鲜货、剥壳日与寄送状态。","search":"建瓯 锥栗 新鲜 剥壳栗仁","storage":"鲜仁按商品说明冷藏并尽快做；要久放时分装冷冻，不把常温零食与鲜仁混为一谈。","safety":"对栗子有已知过敏的人不要尝试。完整栗仁有噎食风险，应切小并按用餐者情况处理；霉变栗仁丢弃。","sources":[["福建日报：九月建瓯新栗交易","https://fjnews.fjsen.com/2023-09/21/content_31416088.htm"],["中国新闻网：十月建瓯锥栗采收报道","https://news.ifeng.com/c/8dZeoxYUC97"],["锥栗形态照片与CC0授权","https://commons.wikimedia.org/wiki/File:Shelled_castanea_henryi.jpg"]],"image":"assets/jianou-zhuilli-reference.webp","imageAlt":"锥栗坚果外观参考，不是建瓯产地实拍","imageCaption":"Fumikas Sagisavas 摄，Wikimedia Commons，CC0。锥栗外观参考，拍摄地不是建瓯。","cardImage":"assets/jianou-zhuili-congee-generated.webp","cardImageAlt":"小米粥里煮熟切小的锥栗仁，生成示意图","cardImageNote":"生成示意图，非实物摄影","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"福建建瓯","lat":27.02,"lon":118.3,"months":[9,10],"precision":"month","source":"https://fjnews.fjsen.com/2023-09/21/content_31416088.htm"}],"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。","dishImage":"assets/jianou-zhuili-congee-generated.webp","dishImageAlt":"小米粥里煮熟切小的锥栗仁，生成示意图","dishCaption":"锥栗小米粥 · 生成示意图，非实物摄影；按本站配方制作的画面，不用于品种或产地鉴别。"},{"id":"chongming-baibiandou","name":"崇明白扁豆鲜荚","alias":["崇明白扁豆","白扁豆鲜荚"],"region":"上海崇明","lat":31.62,"lon":121.47,"months":[9,10],"peakMonths":[9,10],"description":"弯弯的绿色嫩豆荚，先煮透再拌入蒜香，吃它软嫩而不烂的一口。","intro":"弯弯的绿色嫩豆荚，先煮透再拌入蒜香，吃它软嫩而不烂的一口。","short":"弯弯的绿色嫩豆荚，先煮透再拌入蒜香，吃它软嫩而不烂的一口。","category":"vegetable","seasonBasis":"harvest","seasonPrecision":"month","season":"崇明秋鲜报道记录白扁豆在售，十月菜场报道也能见到。本轮采用九至十月鲜荚窗口；全年干白扁豆与此处的嫩荚不是同一种商品状态。","taste":"嫩荚熟后味道温和，略有蔬菜的清甜。","aroma":"熟后豆香轻，蒜只作衬托。","texture":"煮透后荚肉柔嫩，不能追求生脆。","flavor":["清甜","柔嫩"],"state":"新鲜嫩荚充分煮熟后","place":"“白扁豆”不意味着鲜荚通体白色；嫩荚与干种子的食用方式不同。本词条只讲鲜嫩荚。","context":"","recipeTitle":"蒜香熟煮白扁豆","recipe":"择去两端和粗筋，洗净嫩荚；老荚与干种子不照这份菜谱替换。；嫩荚放入足量沸水，持续煮至荚肉和荚内豆粒彻底熟透、无生硬处与生豆气；不能只焯一下就捞起。；捞出沥水。另锅用油小火炒香蒜末，加入已经煮透的豆荚和盐拌匀，再加热后上桌。","ingredients":"白扁豆鲜嫩荚 300 克，蒜 2 瓣，盐约 2 克，明确成分的菜籽油 8 毫升，清水适量。","steps":["择去两端和粗筋，洗净嫩荚；老荚与干种子不照这份菜谱替换。","嫩荚放入足量沸水，持续煮至荚肉和荚内豆粒彻底熟透、无生硬处与生豆气；不能只焯一下就捞起。","捞出沥水。另锅用油小火炒香蒜末，加入已经煮透的豆荚和盐拌匀，再加热后上桌。"],"finish":"荚和豆粒都已熟软，没有夹生部位；不要以仍然脆生为目标。","pitfall":"为保翠绿缩短熟制；短炒和简单焯水不能代替彻底煮熟。","pair":"蒜香贴住熟嫩的豆荚，少量盐即可，不必用浓酱掩盖豆香。","buy":"搜索时写“鲜嫩荚”，避免买到药食用途的干白扁豆；确认崇明产地、嫩度和采摘日期。","search":"崇明 白扁豆 新鲜 嫩荚","storage":"收到后按商家说明冷藏并尽快处理；发黏、腐烂和有异味的不用。","safety":"扁豆不可生食或半生食，荚和豆粒都必须充分熟透。不要凉拌生荚，也不要靠尝生豆判断熟度。已知对这类豆过敏者避开。","sources":[["上观新闻：崇明秋鲜白扁豆与香酥芋","https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"],["看看新闻：十月崇明秋日鲜货","https://www.kankanews.com/detail/kKyJrEZoaye"],["中国质量新闻网：崇明白扁豆与香酥芋地方产品","https://m.cqn.com.cn/zj/content/2020-04/22/content_8552364.htm"],["淄博市疾控中心：鲜豆必须烧熟煮透","https://zbcdc.zibo.gov.cn/art/2025/7/18/art_19936_2935565.html"],["鲜荚照片与CC0授权","https://commons.wikimedia.org/wiki/File:Lablab-bean_pods.jpg"]],"image":"assets/chongming-biandou-reference.webp","imageAlt":"带紫边的扁豆鲜荚形态参考，非崇明白扁豆品种实拍","imageCaption":"Fumikas Sagisavas 摄，Wikimedia Commons，CC0。同种扁豆鲜荚参考，照片有紫边荚，不代表崇明白扁豆的颜色与品相；非产地认证图。","cardImage":"assets/chongming-biandou-garlic-generated.webp","cardImageAlt":"充分熟透的绿色弯月形扁豆荚拌炒蒜末，生成示意图","cardImageNote":"生成示意图，非实物摄影","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"上海崇明","lat":31.62,"lon":121.47,"months":[9,10],"precision":"month","source":"https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"}],"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。","dishImage":"assets/chongming-biandou-garlic-generated.webp","dishImageAlt":"充分熟透的绿色弯月形扁豆荚拌炒蒜末，生成示意图","dishCaption":"蒜香熟煮白扁豆 · 生成示意图，非实物摄影；按本站配方制作的画面，不用于品种或产地鉴别。"},{"id":"chongming-xiangsu-yu","name":"崇明香酥芋","alias":["香酥芋","崇明芋艿"],"region":"上海崇明","lat":31.62,"lon":121.47,"months":[9,10],"peakMonths":[9,10],"description":"热气里剥开小芋艿，先尝一口酥糯，再蘸一点盐。","intro":"热气里剥开小芋艿，先尝一口酥糯，再蘸一点盐。","short":"热气里剥开小芋艿，先尝一口酥糯，再蘸一点盐。","category":"vegetable","seasonBasis":"harvest","seasonPrecision":"month","season":"崇明秋鲜与十月市场报道中均有香酥芋。本轮以九至十月新收芋艿作入口；其他时段的储藏货不自动视作新收鲜货。","taste":"熟芋本味温和，带轻微回甜。","aroma":"趁热有淡淡的芋香。","texture":"蒸透后酥糯绵密，不追求脆。","flavor":["粉糯","清甜"],"state":"新鲜芋艿充分蒸熟后","place":"地方产品资料将香酥芋与红梗芋艿联系起来。页面照片只帮助认识熟芋状态，不能凭它验证商家卖的是不是这个地方品种。","context":"","recipeTitle":"原味蒸香酥芋","recipe":"刷洗芋艿表面的泥，去掉腐烂或明显损坏的；大小差异很大时分批做。；带皮放进蒸屉，水开后充分蒸到中心熟软；可用筷子插入最大的一颗检查。；稍晾后剥皮，先尝本味，再按喜好蘸少量盐。","ingredients":"大小接近的鲜香酥芋 400 克，水适量，盐少许（蘸用）。","steps":["刷洗芋艿表面的泥，去掉腐烂或明显损坏的；大小差异很大时分批做。","带皮放进蒸屉，水开后充分蒸到中心熟软；可用筷子插入最大的一颗检查。","稍晾后剥皮，先尝本味，再按喜好蘸少量盐。"],"finish":"最大的一颗也能轻松插透，剥开后中心没有生硬块。","pitfall":"只看小芋头熟了就一起出锅；不同大小需要分别检查。","pair":"少量盐衬出芋香；第一次吃不必先裹一层厚糖浆。","buy":"问清崇明香酥芋品种与当季采收，不把任何小芋头都当成它；挑实心、无腐烂和酸味的。","search":"崇明 香酥芋 芋艿 当季","storage":"依收到的鲜货状态和商家说明保存，保持表面干爽，尽快蒸；熟芋冷却后及时冷藏。","safety":"芋艿需要充分熟制，不要生吃。处理生芋皮易有刺激感，可戴手套；这不是野生植物辨食指南。","sources":[["上观新闻：崇明秋鲜白扁豆与香酥芋","https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"],["看看新闻：十月崇明秋日鲜货","https://www.kankanews.com/detail/kKyJrEZoaye"],["中国质量新闻网：香酥芋红梗芋艿品种说明","https://m.cqn.com.cn/zj/content/2020-04/22/content_8552364.htm"],["熟芋艿照片与授权","https://commons.wikimedia.org/wiki/File:Boiled_taro.png"]],"image":"assets/chongming-taro-reference.webp","imageAlt":"熟芋艿参考照片，非崇明香酥芋品种实拍","imageCaption":"Rtnf 摄，Wikimedia Commons，CC BY-SA 4.0；缩小转为WebP。熟芋艿参考，不代表崇明品种或本食谱实拍。","cardImage":"assets/chongming-taro-steamed-generated.webp","cardImageAlt":"带皮蒸熟的小芋艿与剥开的粉糯白肉，生成示意图","cardImageNote":"生成示意图，非实物摄影","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"上海崇明","lat":31.62,"lon":121.47,"months":[9,10],"precision":"month","source":"https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumq5510676.shtml"}],"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。","dishImage":"assets/chongming-taro-steamed-generated.webp","dishImageAlt":"带皮蒸熟的小芋艿与剥开的粉糯白肉，生成示意图","dishCaption":"原味蒸香酥芋 · 生成示意图，非实物摄影；按本站配方制作的画面，不用于品种或产地鉴别。"},{"id":"xiangyin-santang-jiaotou","name":"湘阴三塘鲜藠头","alias":["三塘藠头","湘阴藠头","藠头"],"region":"湖南湘阴 · 三塘","lat":28.73,"lon":112.84,"months":[6],"peakMonths":[6],"description":"白色小鳞茎自带葱蒜般的辛香，与肉片快炒，不必等它进泡菜坛。","intro":"白色小鳞茎自带葱蒜般的辛香，与肉片快炒，不必等它进泡菜坛。","short":"白色小鳞茎自带葱蒜般的辛香，与肉片快炒，不必等它进泡菜坛。","category":"vegetable","seasonBasis":"harvest","seasonPrecision":"month","season":"湘阴三塘有六月收获的明确报道；六月采收与加工后的全年销售分开记录。本站推荐当季鲜藠头，不用盐渍、糖醋或整年冷库货充当正在采收的鲜货。","taste":"鲜鳞茎有辛味，炒熟后更温和；咸味来自调味。","aroma":"葱蒜一类的辛香是这一味的特征。","texture":"炒熟的薄片仍有清爽的咬感。","flavor":["辛香","脆嫩"],"state":"鲜鳞茎切片炒熟后","place":"当地报道记录过外地冷库带来的运输成本，以及在产地建设冷库后扩大销路的过程。这支持鲜货流通故事，不被改写成未经考证的古代贡品传说。","context":"","recipeTitle":"鲜藠头炒肉片","recipe":"去根和外层老膜，将藠头洗净切片；确认买到鲜货而非盐渍货。；肉切薄片，生肉器具与即食食物分开。热锅下油和姜，把肉片炒至熟透。；加入藠头片和少量清水翻炒到熟，调盐后出锅；不要为了生脆而省略熟制。","ingredients":"鲜藠头净鳞茎 180 克，猪里脊 120 克，姜 2 片，菜籽油 10 毫升，盐约 2 克，清水少许。","steps":["去根和外层老膜，将藠头洗净切片；确认买到鲜货而非盐渍货。","肉切薄片，生肉器具与即食食物分开。热锅下油和姜，把肉片炒至熟透。","加入藠头片和少量清水翻炒到熟，调盐后出锅；不要为了生脆而省略熟制。"],"finish":"肉片熟透，藠头片已熟但未煮烂，仍有葱蒜样香气。","pitfall":"把已经很咸的盐渍藠头按鲜货用量直接替换，味道和处理都不相同。","pair":"肉片的厚实与藠头的辛香相配，这份不加浓酱，先尝到鳞茎本味。","buy":"写清“湘阴三塘、新鲜、非盐渍”，询问当季采收和冷链安排；用量是去根去叶后的净鳞茎。","search":"湘阴 三塘 藠头 新鲜 非盐渍","storage":"鲜货按商家冷藏说明保存并尽快炒；不要照腌菜的常温保存方式放鲜藠头。","safety":"肉片需要充分熟透；处理生肉后清洗手和器具。对藠头有已知过敏或明确忌口者避开。","sources":[["长沙晚报：六月藠头采收与产地冷库","https://arts.icswb.com/h/168/20240311/861281.html"],["红网：六月三塘藠头丰收","https://yy.rednet.cn/content/646040/60/16033938.html"],["藠头形态照片与授权","https://commons.wikimedia.org/wiki/File:Allium_chinense_Rakkyo.JPG"]],"image":"assets/xiangyin-jiaotou-reference.webp","imageAlt":"去叶的藠头白色鳞茎形态参考","imageCaption":"Midori 摄，Wikimedia Commons，CC BY-SA 3.0；缩小转为WebP。同种藠头参考，非湘阴产地实拍。","cardImage":"assets/xiangyin-jiaotou-pork-generated.webp","cardImageAlt":"白色鲜藠头鳞茎薄片与熟猪里脊片，生成示意图","cardImageNote":"生成示意图，非实物摄影","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"湖南湘阴 · 三塘","lat":28.73,"lon":112.84,"months":[6],"precision":"month","source":"https://arts.icswb.com/h/168/20240311/861281.html"}],"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。","dishImage":"assets/xiangyin-jiaotou-pork-generated.webp","dishImageAlt":"白色鲜藠头鳞茎薄片与熟猪里脊片，生成示意图","dishCaption":"鲜藠头炒肉片 · 生成示意图，非实物摄影；按本站配方制作的画面，不用于品种或产地鉴别。"},{"id":"wenzhou-pancai","name":"温州盘菜","seasonLabel":"温州春节前后 / 宁夏引种九至十月","alias":["盘菜","温州芜菁"],"region":"浙江温州","lat":27.99,"lon":120.7,"months":[1,2,9,10],"peakMonths":[1,2,9,10],"description":"圆盘般的芜菁切片煮进年糕汤，清甜的菜和软糯的米年糕各占一口。","intro":"圆盘般的芜菁切片煮进年糕汤，清甜的菜和软糯的米年糕各占一口。","short":"圆盘般的芜菁切片煮进年糕汤，清甜的菜和软糯的米年糕各占一口。","category":"vegetable","seasonBasis":"harvest","seasonPrecision":"season","season":"温州本地盘菜是冬季蔬菜，报道记录一月下旬起、春节前后陆续上市；本站以一至二月作冬批月份入口，具体采收需向商家确认。宁夏引种秋批九月采收、十月在温州市场上市，两地窗口分别记录；冷藏货供应至清明不等于一直在采收。","taste":"熟后温和清甜，调味不过重。","aroma":"保留轻微蔬菜气息。","texture":"根块熟软，年糕软糯，质地可以分辨。","flavor":["清甜","柔软"],"state":"鲜盘菜切片煮熟后","place":"温州盘菜是温州选育的地方蔬菜，温州地区乐清、瑞安、文成等地有种植报道。主地图入口保留在浙江温州；宁夏贺兰另列为异地引种入口，秋批返销温州。两处坐标只表示产区，均非具体农场定位。","context":"","recipeTitle":"盘菜年糕汤","recipe":"盘菜洗净，薄削粗皮后切小片；纯米年糕切片，按包装要求预处理。；清水煮开，先下盘菜煮至根块熟软、没有生硬芯。；加入年糕煮到软糯但仍成片，调盐后分碗。","ingredients":"鲜盘菜 300 克，原味纯米年糕 200 克，清水约 700 毫升，盐约 2 克。","steps":["盘菜洗净，薄削粗皮后切小片；纯米年糕切片，按包装要求预处理。","清水煮开，先下盘菜煮至根块熟软、没有生硬芯。","加入年糕煮到软糯但仍成片，调盐后分碗。"],"finish":"盘菜熟软，年糕无硬芯，汤里还看得见各自的形状。","pitfall":"年糕过早下锅久煮成糊；先熟盘菜，再放年糕。","pair":"盘菜给清汤添蔬菜本味，年糕让这一碗更饱满；这是家常配方建议。","buy":"确认是温州盘菜品种，并问清实际种植地与采收时间。冬批优先核对温州本地鲜货；秋批可为宁夏引种货，不凭菜名认定温州原产，也不把冷藏库存称为刚采收。","search":"温州 盘菜 本地 冬季 新鲜 产地","storage":"鲜根块按商家说明保存，切开后密封冷藏并尽快煮；年糕依包装要求保存。","safety":"年糕黏韧，按用餐者需要切小、充分煮软。购买年糕应核对是否纯米配方及交叉接触，不把“年糕”二字当作无过敏原保证。","sources":[["温州商报：本地冬季盘菜、温州种植地与宁夏引种分批","https://news.66wz.com/system/2020/01/20/105226192.shtml"],["玉环发布：浙南冬批与贺兰引种盘菜的口感描述","https://tz.zjol.com.cn/tzxw/202512/t20251229_31427043.shtml"],["温州都市报：宁夏引种盘菜九月采收、十月上市","https://news.66wz.com/system/2025/10/15/105703549.shtml"],["温州都市报：盘菜的地方吃法","https://zjnews.zjol.com.cn/zjnews/202501/t20250102_30747645.shtml"],["白色芜菁参考图与CC0授权","https://commons.wikimedia.org/wiki/File:White_turnip_2017_A1.jpg"]],"image":"assets/wenzhou-pancai-reference.webp","imageAlt":"白色芜菁根块形态参考，非温州盘菜地方品种实拍","imageCaption":"Fructibus 摄，Wikimedia Commons，CC0。白色芜菁外观参考，非温州地方品种或宁夏产地实拍。","cardImage":"assets/wenzhou-pancai-ricecake-soup-generated.webp","cardImageAlt":"清汤中的熟盘菜薄片与白色米年糕片，生成示意图","cardImageNote":"生成示意图，非实物摄影","images":[],"articleImages":[],"kitchen":"本站家常做法建议，未将这份用量和步骤标作地方古方。","market":"","placeSeasons":[{"name":"浙江温州","lat":27.99,"lon":120.7,"months":[1,2],"precision":"month","source":"https://news.66wz.com/system/2020/01/20/105226192.shtml","seasonNote":"冬季，约一月下旬起、春节前后陆续上市。","flavorNote":"冬季成熟后的盘菜偏甜糯，肉质细、少筋。","flavorSource":"https://news.66wz.com/system/2020/01/20/105226192.shtml"},{"name":"宁夏贺兰 · 温州盘菜引种","lat":38.55,"lon":106.35,"months":[9,10],"precision":"month","source":"https://news.66wz.com/system/2025/10/15/105703549.shtml","seasonNote":"秋季，九月采收、十月在温州市场上市。","flavorNote":"有脆口的特点；报道中与玉环冬批相比，甜糯感较弱。","flavorSource":"https://tz.zjol.com.cn/tzxw/202512/t20251229_31427043.shtml"}],"seasonEvidence":"地方报道记录的采收或在售月份；未精确到某日，不代表全年均可买到或某日风味最佳。","dishImage":"assets/wenzhou-pancai-ricecake-soup-generated.webp","dishImageAlt":"清汤中的熟盘菜薄片与白色米年糕片，生成示意图","dishCaption":"盘菜年糕汤 · 生成示意图，非实物摄影；按本站配方制作的画面，不用于品种或产地鉴别。"}]);
 const TAROT_FRUIT_MEDIA = {"bayuegua":{"src":"assets/bayuegua-cut.jpg","alt":"自然开裂的八月瓜，露出白色果肉与黑籽","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"ruanzao-mihoutao":{"src":"assets/ruanzao-cut.jpg","alt":"软枣猕猴桃切开后露出绿色果肉和细小黑籽","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"shajiguo":{"src":"assets/shajiguo-cut.jpg","alt":"两粒沙棘果切开后可见橙色果肉与深色果籽","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"cili":{"src":"assets/cili-cut.jpg","alt":"刺梨切面露出淡黄色果肉和密集果籽","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"yangnaiguo":{"src":"assets/yangnaiguo-cut.jpg","alt":"羊奶果剖开后露出浅色果肉与长形果核","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"tongxiang-zhuili":{"src":"assets/tongxiang-zhuili-cut-generated.webp","alt":"槜李整果与剖开后黄色果肉、单颗果核的示意图","kind":"fresh","note":"生成示意图，非实物摄影；展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"kuche-xiaobaixing":{"src":"assets/kuche-xiaobaixing-cut.jpg","alt":"库车小白杏掰开后露出黄白色果肉和果核","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"lintong-huojing-shizi":{"src":"assets/lintong-huojing-cut.jpg","alt":"掰开的临潼火晶柿子露出晶亮橙红果肉","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"minqing-tanxiang-olive":{"src":"assets/minqing-olive-cut.jpg","alt":"新鲜中国橄榄剖开，露出淡色果肉与褐色硬核","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"ninghai-white-loquat":{"src":"assets/ninghai-loquat-open.jpg","alt":"白肉枇杷剥皮后可见浅白果肉与棕色果核","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"yunan-seedless-huangpi":{"src":"assets/yunan-huangpi-cut.jpg","alt":"郁南无核黄皮剖开后露出半透明果肉","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"},"xishuangbanna-wood-milk-fruit":{"src":"assets/munaiguo-split.jpg","alt":"木奶果果壳裂开，露出白色分瓣果肉","kind":"fresh","note":"展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"}};
 for(const food of window.FOODS)if(TAROT_FRUIT_MEDIA[food.id])food.tarotImage=TAROT_FRUIT_MEDIA[food.id];
+
+// New seasonal foods; supply-only months are excluded from peak windows.
+window.FOODS.push(...[
+  {
+    "id": "jiaozhou-kailing-suo",
+    "name": "胶州湾开凌梭",
+    "alias": [
+      "开凌梭",
+      "开凌梭鱼",
+      "鮻鱼"
+    ],
+    "region": "山东青岛 · 大沽河入海口",
+    "lat": 36.17,
+    "lon": 120.16,
+    "category": "protein",
+    "months": [
+      2,
+      3
+    ],
+    "peakWindows": [
+      [
+        "02-01",
+        "03-10"
+      ]
+    ],
+    "seasonStartTerm": 2,
+    "entryTerms": [
+      2
+    ],
+    "seasonLabel": "立春至惊蛰前后",
+    "intro": "开凌梭不是另一种鱼，而是赶在冰解开春时捕到的梭鱼。它身形修长、银灰带亮，清蒸后能拨开细白的肉瓣，鱼皮下留着一点润泽。第一次尝，不必用厚重酱汁遮住它：姜葱托底，先吃一口热鱼肉，再蘸少许盐汁，鲜味就很清楚。",
+    "short": "趁开春清蒸一尾，细白鱼肉带着润泽的鲜。",
+    "taste": "清蒸鱼肉有柔和的鲜味，少量盐即可提味；不是腌鱼的重咸。",
+    "aroma": "热气里是鱼鲜与姜葱香，明显土腥或酸败气味不应靠调料掩盖。",
+    "texture": "充分蒸熟后细嫩、易拨成肉瓣，皮下略润；有鱼刺，不能整口吞。",
+    "flavor": [
+      "鲜香",
+      "细嫩"
+    ],
+    "state": "清蒸至熟透后",
+    "season": "青岛一带的开凌梭，值得赶的是立春至惊蛰前后的初春鲜味。离开这段时节，市场仍可能有梭鱼，但不是同一口开春滋味；天气、凌汛和到货批次会影响实际窗口。",
+    "place": "这次锁定大沽河入海口一带的鲜货。青岛市场也销售外地养殖梭鱼，问清捕捞或养殖地点，再决定是否为这一口产地鲜味下单。",
+    "recipeTitle": "姜葱清蒸开凌梭",
+    "ingredients": "整尾鲜梭鱼约 500 克，姜 10 克，葱 1 根，盐约 2 克，清水 1 汤匙。",
+    "steps": [
+      "请摊主去鳞、鳃和内脏；回家冲净腹腔残血，擦干。切成约 3 厘米厚的鱼段，生鱼器具与熟食分开。",
+      "姜切片、葱切段，铺一半在盘底，将鱼放上，再放剩余姜葱；盐与清水调开，淋在鱼身上。",
+      "蒸锅水充分烧开后放鱼，盖好，中大火蒸约 12—15 分钟；时间随鱼身厚度调整，厚处未熟便继续蒸。",
+      "检查最厚处鱼肉完全不透明、能轻松分开；中心温度达到 63°C 后取出，拣去蒸老的姜葱，趁热分食。"
+    ],
+    "finish": "厚处没有透明生肉，鱼肉能拨成细白肉瓣，盘汁清亮。",
+    "pitfall": "冷水上锅后只按固定分钟数取出，厚处可能没熟；必须查看鱼肉或测中心温度。",
+    "pair": "姜葱提香，少量盐汁托出鱼鲜；调味留轻些，才尝得到肉本身的细嫩。",
+    "buy": "看鳃色、眼睛和腹部状态，挑肉身有弹性、无破肚和异味的鲜货。问清产地、捕捞时间及冷链，不只认“青岛发货”。",
+    "search": "大沽河 胶州湾 开凌梭 鲜鱼 产地",
+    "storage": "到货即冷藏，尽量当天做；不能及时吃就分装冷冻，解冻在冰箱里完成。",
+    "safety": "梭鱼应充分熟制，中心达到 63°C；留意细刺。已知鱼类过敏者避开。",
+    "sources": [
+      [
+        "青岛日报：开凌梭的时节、产地与市场货源",
+        "https://www.dailyqd.com/guanhai/369154_1.html"
+      ],
+      [
+        "观海新闻：立春至惊蛰的鲜味窗口",
+        "https://m.guanhai.com.cn/p/304556.html"
+      ],
+      [
+        "美国食品药品管理局：鱼类熟制温度",
+        "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely"
+      ]
+    ],
+    "image": "assets/jiaozhou-kailing-suo-raw.webp",
+    "imageAlt": "市场里银灰色修长的梭鱼",
+    "dishImage": "assets/jiaozhou-kailing-suo-steamed-generated.webp",
+    "dishImageAlt": "姜葱清蒸梭鱼段的成菜示意图",
+    "dishCaption": "拨开银灰鱼皮，下面是细白的热鱼肉；蘸一点盘里的姜葱汁，鲜味轻而清楚。",
+    "description": "开凌梭不是另一种鱼，而是赶在冰解开春时捕到的梭鱼。它身形修长、银灰带亮，清蒸后能拨开细白的肉瓣，鱼皮下留着一点润泽。第一次尝，不必用厚重酱汁遮住它：姜葱托底，先吃一口热鱼肉，再蘸少许盐汁，鲜味就很清楚。",
+    "peakMonths": [
+      2,
+      3
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "approximate-window",
+    "cardImage": "assets/jiaozhou-kailing-suo-raw.webp",
+    "cardImageAlt": "市场里银灰色修长的梭鱼",
+    "recipe": "整尾鲜梭鱼约 500 克，姜 10 克，葱 1 根，盐约 2 克，清水 1 汤匙。",
+    "context": "",
+    "kitchen": "",
+    "images": [],
+    "articleImages": [],
+    "placeSeasons": [
+      {
+        "name": "山东青岛 · 大沽河入海口",
+        "lat": 36.17,
+        "lon": 120.16,
+        "months": [
+          2,
+          3
+        ],
+        "precision": "approximate-window",
+        "source": "https://www.dailyqd.com/guanhai/369154_1.html"
+      }
+    ]
+  },
+  {
+    "id": "taitung-winter-atemoya",
+    "name": "台东冬果凤梨释迦",
+    "alias": [
+      "凤梨释迦",
+      "鳳梨釋迦",
+      "冬果释迦"
+    ],
+    "region": "台湾台东 · 卑南",
+    "lat": 22.8,
+    "lon": 121.08,
+    "category": "fruit",
+    "months": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "peakWindows": [
+      [
+        "12-21",
+        "03-10"
+      ]
+    ],
+    "entryTerms": [
+      23
+    ],
+    "seasonLabel": "约十二月下旬至三月上旬",
+    "intro": "凤梨释迦名字里有凤梨，却不需要把它当菠萝吃。等果身软下来，剖开是绵密的乳白果肉，甜里有一点轻酸，舀一口带着汁，细滑中又有些弹性。台东冬果正好让寒冷时节的果盘多一种选择：不用烹煮，也不用再加糖，等到合适的熟度就很好吃。",
+    "short": "等冬果软熟，舀一口乳白果肉，甜里透着轻酸。",
+    "taste": "软熟果肉甜中带轻酸，未熟时甜味和柔软度都不足。",
+    "aroma": "切开后果香才明显，带柔和的热带果香；发酵酒味不是成熟的目标。",
+    "texture": "果肉绵密多汁，兼有一点弹性；绿色果皮与黑色种子不吃。",
+    "flavor": [
+      "酸甜",
+      "细滑",
+      "多汁"
+    ],
+    "state": "整果软熟后去皮、去籽鲜食",
+    "season": "台东凤梨释迦以冬果为主。这里推荐约十二月下旬至三月上旬的品质较稳批次，不把可延续至四月的全部供货期都列作赏味重点。每批果实还要等到软熟，硬果收到当天未必适合入口。",
+    "place": "卑南是台东主要种植地之一。购买时认清“凤梨释迦”，它与鳞片分得很开的普通大目释迦不同；产地和批次要看商品说明。",
+    "recipeTitle": "软熟凤梨释迦果盏",
+    "ingredients": "凤梨释迦 1 枚约 500—600 克；两人分食，另备小勺。",
+    "steps": [
+      "到货先检查有没有裂口、湿烂或异味。仍坚硬的完整果实放通风阴凉处，轻按果身判断软化，不反复捏伤。",
+      "整体微软、果香出现后，流水洗净果皮并擦干；用洁净刀沿纵向剖成两半。",
+      "用勺舀取白肉，剔掉每一颗黑籽和较硬的中心纤维，先直接品尝。",
+      "喜欢凉一点的口感，可在软熟后短暂冷藏再吃；不要让没软的硬果一直待在冰箱里。"
+    ],
+    "finish": "白肉柔软可舀、甜中有轻酸，没有硬芯、霉味或发酵味。",
+    "pitfall": "硬果一到就冷藏或切开，软化不充分，吃到的会是生硬果肉。",
+    "pair": "先吃原味；也可配一小块无糖冰块保持凉爽，不额外加糖掩盖那一点果酸。",
+    "buy": "找台东卑南冬果凤梨释迦，询问成熟状态、发货日期及到货后软化办法。果形不必完美，裂果、流汁、大片湿黑斑更要留意。",
+    "search": "台东 卑南 凤梨释迦 冬果 鲜果",
+    "storage": "硬果阴凉通风放至软熟；软熟后冷藏并尽快吃，切开去籽的果肉当天食用。",
+    "safety": "黑色种子和果皮不食用；给儿童分食时先逐一去籽。霉烂或明显发酵的果实丢弃。",
+    "sources": [
+      [
+        "农业部释迦主题馆：冬果品质与产期调节",
+        "https://kmweb.moa.gov.tw/subject/news.php?id=1693&news_id=64764&print=Y"
+      ],
+      [
+        "农粮署东区分署：风味、产季与购买",
+        "https://erb.afa.gov.tw/index.php?article_id=31236&code=list&flag=detail&ids=454"
+      ]
+    ],
+    "image": "assets/taitung-atemoya-raw.webp",
+    "imageAlt": "绿色果皮表面有隆起的凤梨释迦整果",
+    "cutImage": "assets/taitung-atemoya-cut-generated.webp",
+    "cutImageAlt": "凤梨释迦切开后乳白果肉与黑籽的示意图",
+    "cutCaption": "果身等到微软再剖开，乳白果肉一勺就能舀起；挑去黑籽，凉凉吃一口甜与轻酸。",
+    "description": "凤梨释迦名字里有凤梨，却不需要把它当菠萝吃。等果身软下来，剖开是绵密的乳白果肉，甜里有一点轻酸，舀一口带着汁，细滑中又有些弹性。台东冬果正好让寒冷时节的果盘多一种选择：不用烹煮，也不用再加糖，等到合适的熟度就很好吃。",
+    "peakMonths": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "approximate-window",
+    "cardImage": "assets/taitung-atemoya-raw.webp",
+    "cardImageAlt": "绿色果皮表面有隆起的凤梨释迦整果",
+    "recipe": "凤梨释迦 1 枚约 500—600 克；两人分食，另备小勺。",
+    "context": "",
+    "kitchen": "",
+    "images": [],
+    "articleImages": [],
+    "placeSeasons": [
+      {
+        "name": "台湾台东 · 卑南",
+        "lat": 22.8,
+        "lon": 121.08,
+        "months": [
+          12,
+          1,
+          2,
+          3
+        ],
+        "precision": "approximate-window",
+        "source": "https://kmweb.moa.gov.tw/subject/news.php?id=1693&news_id=64764&print=Y"
+      }
+    ],
+    "tarotImage": {
+      "src": "assets/taitung-atemoya-cut-generated.webp",
+      "alt": "凤梨释迦切开后乳白果肉与黑籽的示意图",
+      "kind": "fresh",
+      "note": "鲜果可食状态示意图，非实物摄影；制作记录见图片资料页。"
+    }
+  },
+  {
+    "id": "yanshi-fresh-yintiao",
+    "name": "偃师鲜银条",
+    "alias": [
+      "银条",
+      "银苗菜",
+      "银根菜",
+      "二细银条"
+    ],
+    "region": "河南洛阳 · 偃师山化",
+    "lat": 34.78,
+    "lon": 112.78,
+    "category": "vegetable",
+    "months": [
+      12,
+      1
+    ],
+    "peakWindows": [
+      [
+        "12-11",
+        "01-10"
+      ]
+    ],
+    "entryTerms": [
+      22
+    ],
+    "seasonLabel": "约大雪至小寒",
+    "intro": "鲜银条藏在地下，挖出时像一把细白的小枝。洗净、折成短段、焯熟再拌，入口先是清脆，随后才有淡淡的甜；它没有莲藕那样的孔眼，也不是盘成螺旋的地蚕。冬天拿一盘姜醋银条配热菜，脆意与酸香很利落，正适合第一次认识这一口河洛鲜味。",
+    "short": "细白地下茎，姜醋一拌，冬天也有清脆的一口。",
+    "taste": "焯熟后本味淡甜，白醋提酸，少量盐让味道更清楚。",
+    "aroma": "食材气味较轻，姜丝和芝麻油带来香气，酱汁太重容易盖住本味。",
+    "texture": "细长地下茎脆嫩多汁、纤维感轻，久煮会失去爽脆。",
+    "flavor": [
+      "清甜",
+      "脆嫩"
+    ],
+    "state": "新鲜地下茎洗净、焯熟后",
+    "season": "偃师银条从霜后开始可采，但这次赏味重点放在大雪至小寒附近的新挖鲜货，约十二月中下旬到一月上旬。十一月已有采挖，罐头和腌品也可常年供应，均不等于这段新鲜脆嫩的状态。",
+    "place": "山化及伊洛河一带有成片种植。当地的二细银条是细长的食用地下茎，容易折断；商品名相似时，先看形态、产地及是否盐渍。",
+    "recipeTitle": "姜醋拌鲜银条",
+    "ingredients": "鲜银条 200 克，姜 5 克，红甜椒 20 克，白醋 2 茶匙，芝麻油 1 茶匙，盐约 1 克。",
+    "steps": [
+      "银条冲净泥沙，去掉伤烂段，折成约 3 厘米小段；姜和红甜椒切细丝。",
+      "洁净锅里多放水，煮沸后下银条，煮至熟透再捞起；以脆嫩熟口为准，不只在水里沾一下。",
+      "用洁净凉开水降温，充分沥水；白醋、盐和芝麻油调成拌汁。",
+      "加入姜丝、红甜椒丝及拌汁，轻轻翻匀，现拌现吃。"
+    ],
+    "finish": "银条白净、入口已熟仍脆，盘底不过分积水，姜醋香清楚。",
+    "pitfall": "没沥干就拌，水把调味冲淡；久煮又会把这盘最值得尝的脆意煮没。",
+    "pair": "姜丝添辛香，白醋让淡甜更清晰；不用酱油把白色染深。",
+    "buy": "选细长、乳白、有弹性、无黏液和酸味的新挖银条，说明要鲜品、非罐头非腌制。不要把螺旋状地蚕或普通豆芽当作同一味。",
+    "search": "偃师 山化 二细银条 鲜品 新挖 非腌制",
+    "storage": "按鲜蔬冷藏，防止失水，尽快处理；已洗或已焯的不要久放，凉拌后当天吃完。",
+    "safety": "泥沙要洗净并焯熟；拌汁含芝麻油，芝麻过敏者避开。",
+    "sources": [
+      [
+        "地理标志质量控制技术规范：产区、采收及姜醋拌法",
+        "https://www.sinogi.cn/wap/index.php/product/zxshow/id/466/nid/3289"
+      ],
+      [
+        "河南日报：山化镇十一月采挖记录",
+        "https://www.sohu.com/a/609553672_121375869"
+      ],
+      [
+        "市种业发展中心资料：大雪至小寒收获重点",
+        "https://www.sohu.com/a/1028970658_121106991"
+      ]
+    ],
+    "image": "assets/yanshi-yintiao-raw.webp",
+    "imageAlt": "新挖的细白银条地下茎，表面仍带泥土",
+    "dishImage": "assets/yanshi-yintiao-salad-generated.webp",
+    "dishImageAlt": "细白银条配姜丝和红甜椒的凉拌示意图",
+    "dishCaption": "细白短段沥干后裹住一点姜醋汁，轻轻咬下去仍脆；配一口热菜，酸香更醒口。",
+    "description": "鲜银条藏在地下，挖出时像一把细白的小枝。洗净、折成短段、焯熟再拌，入口先是清脆，随后才有淡淡的甜；它没有莲藕那样的孔眼，也不是盘成螺旋的地蚕。冬天拿一盘姜醋银条配热菜，脆意与酸香很利落，正适合第一次认识这一口河洛鲜味。",
+    "peakMonths": [
+      12,
+      1
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "approximate-window",
+    "cardImage": "assets/yanshi-yintiao-raw.webp",
+    "cardImageAlt": "新挖的细白银条地下茎，表面仍带泥土",
+    "recipe": "鲜银条 200 克，姜 5 克，红甜椒 20 克，白醋 2 茶匙，芝麻油 1 茶匙，盐约 1 克。",
+    "context": "",
+    "kitchen": "",
+    "images": [],
+    "articleImages": [],
+    "placeSeasons": [
+      {
+        "name": "河南洛阳 · 偃师山化",
+        "lat": 34.78,
+        "lon": 112.78,
+        "months": [
+          12,
+          1
+        ],
+        "precision": "approximate-window",
+        "source": "https://www.sinogi.cn/wap/index.php/product/zxshow/id/466/nid/3289"
+      }
+    ]
+  },
+  {
+    "id": "shangyu-duanbing-cherry",
+    "name": "上虞下管短柄樱桃",
+    "alias": [
+      "下管樱桃",
+      "短柄樱桃",
+      "上虞樱桃"
+    ],
+    "region": "浙江绍兴 · 下管洙凤",
+    "lat": 29.8,
+    "lon": 120.9,
+    "category": "fruit",
+    "months": [
+      4,
+      5
+    ],
+    "peakWindows": [
+      [
+        "04-21",
+        "05-10"
+      ]
+    ],
+    "entryTerms": [
+      7
+    ],
+    "seasonLabel": "约四月下旬至五月初",
+    "intro": "下管短柄樱桃是一种让人想赶去树边吃的小果。红亮薄皮轻轻一咬，果汁便先出来，甜里留一点轻酸。它的魅力不是硕大耐放，而是成熟后细嫩、多汁，碰伤也快；赶上虞南这段短短的果季，买一小盒现洗现吃，比把它熬成甜酱更能尝到鲜味。",
+    "short": "一批熟果常只有约一周，薄皮轻咬，酸甜汁水就出来。",
+    "taste": "成熟果酸甜相衬，以甜味为主；偏生果酸更明显。",
+    "aroma": "淡淡果香，香气不需要酒或糖来烘托。",
+    "texture": "果皮薄、肉质娇嫩、多汁，轻微挤压也容易出汁；中心有硬核。",
+    "flavor": [
+      "酸甜",
+      "细嫩",
+      "多汁"
+    ],
+    "state": "成熟鲜果洗净、去核后",
+    "season": "下管不同果园、品种和年景的成熟批次集中在四月下旬至五月初，单批熟果可采时间常只有约一周。等到整盒果实都软烂，就已经错过这一口；采摘前询问当年的成熟情况。",
+    "place": "洙凤是下管樱桃产地之一，当地主栽短柄樱桃。购买时问清品种，不把同镇后来上市的其他樱桃或耐运输大樱桃混作同一味。",
+    "recipeTitle": "短柄樱桃鲜果小盘",
+    "ingredients": "成熟短柄樱桃 250 克；两人分食，不另加糖。",
+    "steps": [
+      "收到后先挑出裂口、压伤流汁或有霉斑的果实，检查盒底是否积汁；只洗本次要吃的量。",
+      "保留果柄，流水轻轻冲洗，沥干后再摘柄，减少果汁流失。",
+      "用洁净小刀剖开几颗，去掉硬核，先尝熟度；余下的现剥去核分食。",
+      "如果要稍凉一点，完整果实短暂冷藏后再洗、再去核，配清淡温茶即可。"
+    ],
+    "finish": "皮薄肉嫩、汁水酸甜，果肉没有软烂或发酵味，硬核已剔除。",
+    "pitfall": "提前去柄、泡水或一整盒堆压久放，娇嫩果实容易损伤、流汁。",
+    "pair": "温淡茶清口，不给鲜果加糖；先留住成熟果自己的酸甜。",
+    "buy": "询问下管短柄品种、采摘日期和运输时长，优先附近现摘或短途冷链。挑皮色自然、果柄未干枯、盒底不积汁的小盒。",
+    "search": "上虞 下管 洙凤 短柄樱桃 当季 鲜果",
+    "storage": "整果冷藏、轻放，尽快吃；洗过或剖开的当天食用，不放在常温果盘里慢慢等。",
+    "safety": "硬核不吃；给幼童分食须去核并切小，霉烂果丢弃。",
+    "sources": [
+      [
+        "新华网：下管主栽短柄樱桃、成熟窗口及运输",
+        "https://www.zj.news.cn/20240421/42f7a36e441e4ae09e80ad45c8d2568e/c.html"
+      ]
+    ],
+    "image": "assets/shangyu-cherry-raw.webp",
+    "imageAlt": "枝头成熟的红色下管樱桃",
+    "cutImage": "assets/shangyu-cherry-cut-generated.webp",
+    "cutImageAlt": "小红樱桃剖开后露出柔嫩果肉和单颗果核的示意图",
+    "cutCaption": "薄皮一剖开，柔嫩果肉贴着一颗小硬核；去核后现吃，留住这一口短季酸甜。",
+    "description": "下管短柄樱桃是一种让人想赶去树边吃的小果。红亮薄皮轻轻一咬，果汁便先出来，甜里留一点轻酸。它的魅力不是硕大耐放，而是成熟后细嫩、多汁，碰伤也快；赶上虞南这段短短的果季，买一小盒现洗现吃，比把它熬成甜酱更能尝到鲜味。",
+    "peakMonths": [
+      4,
+      5
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "approximate-window",
+    "cardImage": "assets/shangyu-cherry-raw.webp",
+    "cardImageAlt": "枝头成熟的红色下管樱桃",
+    "recipe": "成熟短柄樱桃 250 克；两人分食，不另加糖。",
+    "context": "",
+    "kitchen": "",
+    "images": [],
+    "articleImages": [],
+    "placeSeasons": [
+      {
+        "name": "浙江绍兴 · 下管洙凤",
+        "lat": 29.8,
+        "lon": 120.9,
+        "months": [
+          4,
+          5
+        ],
+        "precision": "approximate-window",
+        "source": "https://www.zj.news.cn/20240421/42f7a36e441e4ae09e80ad45c8d2568e/c.html"
+      }
+    ],
+    "tarotImage": {
+      "src": "assets/shangyu-cherry-cut-generated.webp",
+      "alt": "小红樱桃剖开后露出柔嫩果肉和单颗果核的示意图",
+      "kind": "fresh",
+      "note": "鲜果可食状态示意图，非实物摄影；制作记录见图片资料页。"
+    }
+  },
+  {
+    "id": "harbin-fresh-honeyberry",
+    "name": "哈尔滨鲜食蓝靛果",
+    "alias": [
+      "蓝靛果",
+      "蓝果忍冬",
+      "鲜食蓝靛果"
+    ],
+    "region": "黑龙江哈尔滨 · 寒地栽培基地",
+    "lat": 45.76,
+    "lon": 126.67,
+    "category": "fruit",
+    "months": [
+      6,
+      7
+    ],
+    "peakWindows": [
+      [
+        "06-11",
+        "07-10"
+      ]
+    ],
+    "entryTerms": [
+      10
+    ],
+    "seasonLabel": "约六月中下旬至七月初",
+    "intro": "蓝靛果乍看像拉长的蓝莓，外面覆一层淡淡果粉，里面却是容易染色的紫红果汁。成熟鲜食品种酸甜、多汁，轻咬就能尝到那股明亮的果酸。它不像干果那样耐搁：挑对品种，收到一小盒完整冷鲜果，直接吃几颗，才最能认识这一口寒地浆果。",
+    "short": "修长蓝紫小果，薄皮一咬，酸甜紫红汁水就出来。",
+    "taste": "鲜食品种成熟后酸甜明显，部分加工品种更酸或带涩，不宜只按蓝色外观购买。",
+    "aroma": "轻淡浆果香，果酸比香气更突出；不靠香精或浓甜酱。",
+    "texture": "薄皮柔嫩、汁多，挤压后容易破皮流汁；小籽随果肉一同入口。",
+    "flavor": [
+      "酸甜",
+      "多汁",
+      "细嫩"
+    ],
+    "state": "成熟鲜食品种洗净后鲜食",
+    "season": "哈尔滨栽培蓝靛果在六月中下旬进入成熟期，部分鲜果批次可接到七月初。鲜食窗口随品种与年景变动，买时问清本批果实的熟度；冷冻原果、果汁和果酱的全年供应不进入这个赏味窗口。",
+    "place": "这里介绍哈尔滨寒地基地的鲜食商品，不把大兴安岭野生果七月的时节搬到所有基地。购买时说明要适合鲜吃的品种，例如蓝精灵、乌蓝，并确认当地当季批次。",
+    "recipeTitle": "蓝靛果原味鲜果碟",
+    "ingredients": "冷鲜蓝靛果 200 克；两人分食。",
+    "steps": [
+      "收货先查看冷链和盒底，挑掉破皮流汁、霉烂或有发酵味的果实，余下轻轻平铺。",
+      "取本次食用量，在筛网里用流动清水轻冲，不揉搓，也不长时间浸泡。",
+      "沥水后先直接尝几颗，辨认本批果实的酸甜与软硬；用小勺分食，避免手指挤压。",
+      "留下的完整未洗果回到冷藏；果汁容易染色，接触台面后及时擦洗。"
+    ],
+    "finish": "蓝紫果皮完整、入口多汁酸甜，没有酒味和软烂发黏。",
+    "pitfall": "把适合加工的偏酸果当成熟鲜食品种买，或常温快递到货后又放几天。",
+    "pair": "先尝原味，也可配清淡温茶；不加糖才能知道这盒果本来的酸甜。",
+    "buy": "问清鲜食用途、品种、采摘日期和发货产地，挑果粉自然、完整不积汁的小包装。不要只凭“野生”“花青素”宣传选择。",
+    "search": "哈尔滨 蓝靛果 鲜食 蓝精灵 乌蓝 冷鲜",
+    "storage": "未洗完整果低温轻放，收到后尽快吃；洗过的当次吃完。需要久放时分装冷冻，但口感会改变。",
+    "safety": "不凭相似蓝色果实自行采食野生忍冬；购买明确食用种和品种，洗净后食用。",
+    "sources": [
+      [
+        "东北农业大学：六月基地鲜果品种及采收",
+        "https://yyxy.neau.edu.cn/info/1137/1672.htm"
+      ],
+      [
+        "园艺学报：哈尔滨蓝果忍冬品种成熟记录",
+        "https://www.ahs.ac.cn/CN/volumn/volumn_270.shtml"
+      ],
+      [
+        "黑龙江日报：鲜食品种、冷链与七月鲜果上市",
+        "https://finance.sina.com.cn/jjxw/2025-07-05/doc-infekhfv2384827.shtml"
+      ]
+    ],
+    "image": "assets/harbin-honeyberry-raw.webp",
+    "imageAlt": "覆着浅色果粉的修长蓝紫蓝靛果",
+    "cutImage": "assets/harbin-honeyberry-cut-generated.webp",
+    "cutImageAlt": "蓝靛果剖开的紫红果肉与细小种子示意图",
+    "cutCaption": "一粒修长小果里满是紫红汁水，先尝几颗原味，再决定要不要留一小盒给明天。",
+    "description": "蓝靛果乍看像拉长的蓝莓，外面覆一层淡淡果粉，里面却是容易染色的紫红果汁。成熟鲜食品种酸甜、多汁，轻咬就能尝到那股明亮的果酸。它不像干果那样耐搁：挑对品种，收到一小盒完整冷鲜果，直接吃几颗，才最能认识这一口寒地浆果。",
+    "peakMonths": [
+      6,
+      7
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "approximate-window",
+    "cardImage": "assets/harbin-honeyberry-raw.webp",
+    "cardImageAlt": "覆着浅色果粉的修长蓝紫蓝靛果",
+    "recipe": "冷鲜蓝靛果 200 克；两人分食。",
+    "context": "",
+    "kitchen": "",
+    "images": [],
+    "articleImages": [],
+    "placeSeasons": [
+      {
+        "name": "黑龙江哈尔滨 · 寒地栽培基地",
+        "lat": 45.76,
+        "lon": 126.67,
+        "months": [
+          6,
+          7
+        ],
+        "precision": "approximate-window",
+        "source": "https://yyxy.neau.edu.cn/info/1137/1672.htm"
+      }
+    ],
+    "tarotImage": {
+      "src": "assets/harbin-honeyberry-cut-generated.webp",
+      "alt": "蓝靛果剖开的紫红果肉与细小种子示意图",
+      "kind": "fresh",
+      "note": "鲜果可食状态示意图，非实物摄影；制作记录见图片资料页。"
+    }
+  },
+  {
+    "id": "shanzhou-green-wheat-nianzhuan",
+    "name": "陕州新麦碾转",
+    "alias": [
+      "碾转",
+      "捻捻转",
+      "青麦仁",
+      "新麦碾转"
+    ],
+    "region": "河南三门峡 · 陕州观音堂",
+    "lat": 34.72,
+    "lon": 111.38,
+    "category": "vegetable",
+    "months": [
+      5
+    ],
+    "peakWindows": [
+      [
+        "05-11",
+        "05-31"
+      ]
+    ],
+    "entryTerms": [
+      9
+    ],
+    "seasonLabel": "约五月小满前后",
+    "intro": "麦子还没完全黄熟时，饱满的青麦仁能先变成一口鲜。陕州的碾转是把麦仁处理后石磨碾出的短碎条，颜色青中带灰，热锅里一炒，谷物香就出来了。它不是面条，也不需要煮成糊：配一盘松软鸡蛋，短条保留一点咬劲，尝的是新麦还带水气的味道。",
+    "short": "小满前后，把新麦碾成短碎条，和鸡蛋一起趁热炒。",
+    "taste": "新麦有轻柔谷物甜味，盐提香；不是靠额外糖做的甜点。",
+    "aroma": "加热后麦香明显，鸡蛋添蛋香，调料过多会盖住新麦的味道。",
+    "texture": "短碎条略有嚼劲，吸水多了容易黏成一团；鸡蛋柔软。",
+    "flavor": [
+      "麦香",
+      "柔韧",
+      "清甜"
+    ],
+    "state": "当年青麦制成碾转并炒熟后",
+    "season": "赏味重点是小满前后灌浆饱满的新麦，约五月中下旬。购买时说明要当年青麦制作的批次；用冷冻麦仁随时现磨的碾转也可以买到，但“今天现磨”不等于“今天现采”。",
+    "place": "观音堂一带保留石磨制作和售卖习惯。地方特色在新麦状态与碾制吃法，原料并不是只有这里能种；这里只介绍陕州的新麦批次。",
+    "recipeTitle": "新麦碾转炒鸡蛋",
+    "ingredients": "新制碾转 250 克，鸡蛋 2 枚，葱 10 克，菜籽油 12 毫升，盐约 2 克，清水 1—2 汤匙。",
+    "steps": [
+      "问清碾转是否已经熟制；短条轻轻抖散，鸡蛋打匀，葱切小段。生制品先按商家说明蒸熟，不直接当即食食品。",
+      "热锅下半份油，将蛋液炒至完全凝固成块，盛出备用。",
+      "下剩余油和葱段，再放碾转，中火翻炒；需要时沿锅边补少量水，炒至短条全部热透，保持松散。",
+      "倒回鸡蛋，调盐翻匀，装盘趁热分食。"
+    ],
+    "finish": "短条热透、松散略韧，蛋块熟而柔软，没有黏团和生麦芯。",
+    "pitfall": "把短碎条当面条大量加水煮，容易黏散，麦香和咬劲都丢了。",
+    "pair": "鸡蛋给新麦添柔软与鲜香，葱只放少量，让热麦香仍是主角。",
+    "buy": "询问青麦采收年份、冷冻状态和碾转是否熟制；挑无酸味、无黏液的冷鲜产品，非加工即食状态须先做熟。",
+    "search": "陕州 观音堂 新麦 碾转 当年 青麦仁",
+    "storage": "按商家冷藏说明保存并尽快加热；想留久些可分装冷冻，解冻后一次吃完，不反复冻融。",
+    "safety": "原料为小麦，含麸质；配方含鸡蛋。两者有过敏或明确忌口者避开，生制碾转与鸡蛋均须做熟。",
+    "sources": [
+      [
+        "河南经济报：观音堂碾转制作及小满青麦",
+        "https://www.hnjjbs.com/article/2026-06/178062497758909.html"
+      ],
+      [
+        "三门峡日报：新麦采收与冷冻全年供应的区别",
+        "https://szb.ismx.cn/smxrb/images/2026-06/05/07/smxrb2026060507.pdf"
+      ]
+    ],
+    "image": "assets/shanzhou-nianzhuan-raw.webp",
+    "imageAlt": "石磨碾出的青灰色短碎条碾转",
+    "dishImage": "assets/shanzhou-nianzhuan-eggs-generated.webp",
+    "dishImageAlt": "短碎条碾转与鸡蛋炒熟装盘的示意图",
+    "dishCaption": "短短的碾转裹住一点热油，蛋块松软；趁热夹一口，新麦香和蛋香一起出来。",
+    "description": "麦子还没完全黄熟时，饱满的青麦仁能先变成一口鲜。陕州的碾转是把麦仁处理后石磨碾出的短碎条，颜色青中带灰，热锅里一炒，谷物香就出来了。它不是面条，也不需要煮成糊：配一盘松软鸡蛋，短条保留一点咬劲，尝的是新麦还带水气的味道。",
+    "peakMonths": [
+      5
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "approximate-window",
+    "cardImage": "assets/shanzhou-nianzhuan-raw.webp",
+    "cardImageAlt": "石磨碾出的青灰色短碎条碾转",
+    "recipe": "新制碾转 250 克，鸡蛋 2 枚，葱 10 克，菜籽油 12 毫升，盐约 2 克，清水 1—2 汤匙。",
+    "context": "",
+    "kitchen": "",
+    "images": [],
+    "articleImages": [],
+    "placeSeasons": [
+      {
+        "name": "河南三门峡 · 陕州观音堂",
+        "lat": 34.72,
+        "lon": 111.38,
+        "months": [
+          5
+        ],
+        "precision": "approximate-window",
+        "source": "https://www.hnjjbs.com/article/2026-06/178062497758909.html"
+      }
+    ]
+  },
+  {
+    "id": "minqin-field-shacong",
+    "name": "民勤露地鲜沙葱",
+    "alias": [
+      "沙葱",
+      "民勤沙葱",
+      "蒙古韭"
+    ],
+    "region": "甘肃武威 · 民勤大坝八一村",
+    "lat": 38.61,
+    "lon": 103.11,
+    "category": "vegetable",
+    "months": [
+      6,
+      7
+    ],
+    "peakWindows": [
+      [
+        "06-21",
+        "07-10"
+      ]
+    ],
+    "entryTerms": [
+      11
+    ],
+    "seasonLabel": "约六月下旬至七月上旬露地批次",
+    "intro": "沙葱的细叶像缩小的葱，香气却在葱与韭之间。民勤露地新割的一把，洗净切段，和鸡蛋一快炒，绿色细叶贴着金黄蛋块，入口柔嫩又有轻轻的脆。它不是让人挑战生吃辣味的食材；少量热油把辛香托出来，一碗米饭就能接住这盘西北鲜菜。",
+    "short": "细叶带葱韭间的辛香，和鸡蛋快炒，鲜嫩利落。",
+    "taste": "鲜叶略辛，炒熟后温和，配鸡蛋有咸鲜而不是重辣。",
+    "aroma": "葱与韭之间的草本辛香，加热后更明显。",
+    "texture": "叶片细而嫩，短时炒熟后有柔嫩与轻脆；老叶纤维较多。",
+    "flavor": [
+      "辛香",
+      "脆嫩",
+      "鲜香"
+    ],
+    "state": "露地鲜叶与鸡蛋充分炒熟后",
+    "season": "民勤露地沙葱在六月下旬至七月上旬有集中采收记录，这里选新割嫩叶的批次。当地温室与露地结合已经四季生产，全年有货不等于全年都是同一段露地鲜味。",
+    "place": "大坝镇八一村及周边有成片基地。商品里的沙葱酱、腌沙葱和干制品是另一种吃法，这次要买未经盐渍的新鲜细叶。",
+    "recipeTitle": "沙葱炒鸡蛋",
+    "ingredients": "鲜沙葱 150 克，鸡蛋 2 枚，红甜椒 20 克，菜籽油 10 毫升，盐约 2 克。",
+    "steps": [
+      "拣去黄叶、粗老叶，洗净根端泥沙，沥水后切约 3 厘米段；红甜椒切细丝，鸡蛋加少量盐打匀。",
+      "热锅下半份油，倒蛋液炒至完全凝固，划成松软蛋块，盛出。",
+      "下剩余油，先炒红甜椒丝，再放沙葱中大火快炒至熟；有生硬辛味便继续炒，不为鲜绿而留生。",
+      "倒回鸡蛋，调余下盐，翻匀热透后立即装盘。"
+    ],
+    "finish": "细叶已熟而不发黄糜软，蛋块完全凝固，盘底不积水。",
+    "pitfall": "叶上带水就下锅，温度被拉低，细叶容易在水里焖软，香气也淡了。",
+    "pair": "鸡蛋接住葱韭样的辛香，少量甜椒添脆感；不加浓酱，把嫩叶本味留出来。",
+    "buy": "问清民勤大坝产地、露地批次与采割时间，挑细叶鲜绿、切口不干、无黏软异味的鲜品。不能用腌沙葱原量替换。",
+    "search": "民勤 大坝 沙葱 露地 新鲜 非腌制",
+    "storage": "保持冷藏、防失水，到货后尽快炒；洗过的充分沥干，别密封闷在水里。",
+    "safety": "配方含鸡蛋，须充分炒熟；有鸡蛋过敏或明确忌口者避开。",
+    "sources": [
+      [
+        "甘肃日报：民勤露地沙葱集中采收及四季设施生产",
+        "https://gansu.gansudaily.com.cn/system/2025/07/04/031210025.shtml"
+      ],
+      [
+        "新甘肃客户端：六月二十二日八一村露地采收",
+        "https://m.thepaper.cn/baijiahao_31042304"
+      ],
+      [
+        "甘肃经济信息网：沙葱风味与鸡蛋吃法",
+        "https://www.gsei.com.cn/html/1280/2018-08-27/content-209577.html"
+      ]
+    ],
+    "image": "assets/minqin-shacong-field.webp",
+    "imageAlt": "民勤基地成片生长的细叶沙葱",
+    "dishImage": "assets/minqin-shacong-eggs.webp",
+    "dishImageAlt": "鲜沙葱与鸡蛋、红椒炒熟后盛在白盘中",
+    "dishCaption": "细叶贴着金黄蛋块，热油托出葱韭样辛香；米饭刚盛好，这盘也该出锅了。",
+    "description": "沙葱的细叶像缩小的葱，香气却在葱与韭之间。民勤露地新割的一把，洗净切段，和鸡蛋一快炒，绿色细叶贴着金黄蛋块，入口柔嫩又有轻轻的脆。它不是让人挑战生吃辣味的食材；少量热油把辛香托出来，一碗米饭就能接住这盘西北鲜菜。",
+    "peakMonths": [
+      6,
+      7
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "approximate-window",
+    "cardImage": "assets/minqin-shacong-field.webp",
+    "cardImageAlt": "民勤基地成片生长的细叶沙葱",
+    "recipe": "鲜沙葱 150 克，鸡蛋 2 枚，红甜椒 20 克，菜籽油 10 毫升，盐约 2 克。",
+    "context": "",
+    "kitchen": "",
+    "images": [],
+    "articleImages": [],
+    "placeSeasons": [
+      {
+        "name": "甘肃武威 · 民勤大坝八一村",
+        "lat": 38.61,
+        "lon": 103.11,
+        "months": [
+          6,
+          7
+        ],
+        "precision": "approximate-window",
+        "source": "https://gansu.gansudaily.com.cn/system/2025/07/04/031210025.shtml"
+      }
+    ]
+  }
+]);

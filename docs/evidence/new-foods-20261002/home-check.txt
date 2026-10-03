@@ -1,0 +1,21 @@
+### Result
+{"heroImage":{"loaded":true,"width":900,"src":"assets/shangyu-cherry-raw.webp"},"seasonal":{"hero":"shangyu-duanbing-cherry","list":["shangyu-duanbing-cherry","ninghai-changjie-razor-clam","cinenya","pucai","eryuan-haicaihua","foshougua-miao","zhuhai-hechong"]},"pageErrors":[]}
+### Ran Playwright code
+```js
+await (async (page) => {
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.setViewportSize({width:390,height:844});
+ await page.goto('http://127.0.0.1:8770/');
+ await page.getByRole('button',{name:'2027年4月20日 谷雨',exact:true}).click();
+ const hero=page.locator('#hero img');
+ await hero.evaluate(im=>im.decode());
+ await page.screenshot({path:'output/new-foods/mobile-guyu.png'});
+ const info=await hero.evaluate(im=>({loaded:im.naturalWidth>0,width:im.naturalWidth,src:im.getAttribute('src')}));
+ const seasonal=await page.evaluate(()=>({hero:document.querySelector('#hero [data-food]')?.dataset.food,list:[...document.querySelectorAll('#seasonCards .season-list-name')].map(b=>b.dataset.food)}));
+ if(!info.loaded||!seasonal.list.includes(seasonal.hero))throw Error('home image/list mismatch');
+ return {heroImage:info,seasonal,pageErrors:errors};
+})(page);
+```
+### Page
+- Page URL: http://127.0.0.1:8770/
+- Page Title: 时令风物 · 小众食材地图

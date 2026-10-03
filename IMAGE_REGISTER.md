@@ -199,3 +199,36 @@
 | `chongming-taro-reference.webp` | [Rtnf](https://commons.wikimedia.org/wiki/File:Boiled_taro.png) | [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 1400 × 790 |
 | `xiangyin-jiaotou-reference.webp` | [Midori](https://commons.wikimedia.org/wiki/File:Allium_chinense_Rakkyo.JPG) | [CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 1400 × 1050 |
 | `wenzhou-pancai-reference.webp` | [Fructibus](https://commons.wikimedia.org/wiki/File:White_turnip_2017_A1.jpg) | [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) | 1400 × 1050 |
+
+## 2026-10-02 新品批次：7味、14张本地图片
+
+详细原图网址、尺寸、SHA-256及生成提示词见 [新品图片清单](docs/NEW_FOOD_IMAGES_20261002.json)。所有图片仅转格式，不放大或裁切；照片不能代替商品产地证明。
+
+| 文件 | 用途、作者与来源 | 许可/身份范围 |
+| --- | --- | --- |
+| `assets/jiaozhou-kailing-suo-raw.webp` 400×533 | 市场梭鱼形态参考；许秉智 / 青岛日报；[来源](https://www.dailyqd.com/guanhai/369154_1.html) | 开放许可未注明；既有非商业试览要求，非自由图库授权；市场货源混合，不能作为大沽河捕捞证明 |
+| `assets/taitung-atemoya-raw.webp` 816×730 | 台湾凤梨释迦整果；a-giâu；[来源](https://commons.wikimedia.org/wiki/File:Atemola_(cross_of_Annona_cherimola_and_Annona_squamosa).jpg) | CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/；2004年台湾拍摄，未定位台东县或具体冬果批次 |
+| `assets/yanshi-yintiao-raw.webp` 660×381 | 银条地下茎原料；摄影者未署名 / 全国农产品地理标志查询系统；[来源](https://www.sinogi.cn/wap/index.php/product/zxshow/id/466/nid/3289) | 开放许可未注明；既有非商业试览要求，非自由图库授权；随偃师银条地理标志记录发布 |
+| `assets/shangyu-cherry-raw.webp` 900×597 | 上虞樱桃采摘；陈德文 / 绍兴市上虞区融媒体中心 / 新华网；[来源](https://www.zj.news.cn/20240421/42f7a36e441e4ae09e80ad45c8d2568e/c.html) | 开放许可未注明；既有非商业试览要求，非自由图库授权；当地主要种植短柄樱桃，但报道亦有其他品种，照片不能认证具体品系 |
+| `assets/harbin-honeyberry-raw.webp` 768×575 | 蓝靛果实物形态；周静 / 黑龙江日报；[来源](https://finance.sina.com.cn/jjxw/2025-07-05/doc-infekhfv2384827.shtml) | 开放许可未注明；既有非商业试览要求，非自由图库授权；保留原有手机水印；照片未认证蓝精灵或乌蓝品系 |
+| `assets/shanzhou-nianzhuan-raw.webp` 600×400 | 陕州现制碾转；许松斌 / 河南经济报、三门峡日报；[来源](https://www.hnjjbs.com/article/2026-06/178062497758909.html) | 开放许可未注明；既有非商业试览要求，非自由图库授权；现制售卖状态；六月报道不能证明六月仍有田间新麦 |
+| `assets/minqin-shacong-field.webp` 1080×569 | 民勤露地沙葱；金奉乾 / 新甘肃·甘肃日报；[来源](https://m.thepaper.cn/baijiahao_31042304) | 版权所有，未获开放转载许可；仅进入本地试览候选包；2025年6月22日民勤大坝镇八一村，保留画面作者标记 |
+| `assets/minqin-shacong-eggs.webp` 640×480 | 沙葱炒鸡蛋；摄影者未署名 / 甘肃经济信息网；[来源](https://www.gsei.com.cn/html/1280/2018-08-27/content-209577.html) | 开放许可未注明；既有非商业试览要求，非自由图库授权；鸡蛋、沙葱与红椒成菜，不证明本站精确用量 |
+| `assets/jiaozhou-kailing-suo-steamed-generated.webp` 1536×1024 | 切面/成菜示意图；OpenAI imagegen；[来源](https://www.dailyqd.com/guanhai/369154_1.html) | 项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除；按形态与菜谱人工检查，非实物摄影，非品种认证 |
+| `assets/taitung-atemoya-cut-generated.webp` 1536×1024 | 切面/成菜示意图；OpenAI imagegen；[来源](https://commons.wikimedia.org/wiki/File:Atemola_(cross_of_Annona_cherimola_and_Annona_squamosa).jpg) | 参考照片及改作沿用 CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/；按形态与菜谱人工检查，非实物摄影，非品种认证 |
+| `assets/yanshi-yintiao-salad-generated.webp` 1650×953 | 切面/成菜示意图；OpenAI imagegen；[来源](https://www.sinogi.cn/wap/index.php/product/zxshow/id/466/nid/3289) | 项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除；按形态与菜谱人工检查，非实物摄影，非品种认证 |
+| `assets/shangyu-cherry-cut-generated.webp` 1536×1024 | 切面/成菜示意图；OpenAI imagegen；[来源](https://www.zj.news.cn/20240421/42f7a36e441e4ae09e80ad45c8d2568e/c.html) | 项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除；按形态与菜谱人工检查，非实物摄影，非品种认证 |
+| `assets/harbin-honeyberry-cut-generated.webp` 1536×1024 | 切面/成菜示意图；OpenAI imagegen；[来源](https://finance.sina.com.cn/jjxw/2025-07-05/doc-infekhfv2384827.shtml) | 项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除；按形态与菜谱人工检查，非实物摄影，非品种认证 |
+| `assets/shanzhou-nianzhuan-eggs-generated.webp` 1536×1024 | 切面/成菜示意图；OpenAI imagegen；[来源](https://www.hnjjbs.com/article/2026-06/178062497758909.html) | 项目生成示意图；参考图授权状态见对应实拍记录，不宣称照片权利已清除；按形态与菜谱人工检查，非实物摄影，非品种认证 |
+
+## 2026-10-02 成菜缺图补齐：5张独立生成画面
+
+有限公开搜索未找到匹配食材、现有配方且可用授权明确的成菜照片。本轮使用内置 OpenAI imagegen，不输入第三方照片；仅转WebP，未放大、未裁切。完整搜索记录、参考资料、提示词、尺寸与SHA-256见 [本轮图片记录](docs/IMAGE_COMPLETION_20261002.json)。此前5张原料/熟芋参考图保留在资产库及历史记录中，当前列表、详情首屏与抽签改用以下画面。
+
+| 文件 | 成菜画面 | 尺寸 | 身份说明 |
+| --- | --- | --- | --- |
+| `assets/jianou-zhuili-congee-generated.webp` | 锥栗小米粥 | 1536 × 1024 | 生成示意图，非实物摄影；不用于品种或产地鉴别 |
+| `assets/chongming-biandou-garlic-generated.webp` | 蒜香熟煮白扁豆 | 1536 × 1024 | 生成示意图，非实物摄影；不用于品种或产地鉴别 |
+| `assets/chongming-taro-steamed-generated.webp` | 原味蒸香酥芋 | 1536 × 1024 | 生成示意图，非实物摄影；不用于品种或产地鉴别 |
+| `assets/xiangyin-jiaotou-pork-generated.webp` | 鲜藠头炒肉片 | 1536 × 1024 | 生成示意图，非实物摄影；不用于品种或产地鉴别 |
+| `assets/wenzhou-pancai-ricecake-soup-generated.webp` | 盘菜年糕汤 | 1536 × 1024 | 生成示意图，非实物摄影；不用于品种或产地鉴别 |

@@ -1,0 +1,44 @@
+### Ran Playwright code
+```js
+await (async (page) => {
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const rows=[];
+ await page.setViewportSize({width:1440,height:1000});
+ await page.goto('http://127.0.0.1:8770/');
+ const ids=await page.evaluate(()=>window.FOODS.filter(f=>f.peakWindows).map(f=>f.id));
+ for(const width of [1440,390]){
+  await page.setViewportSize({width,height:width===390?844:1000});
+  for(const id of ids){
+   await page.goto('http://127.0.0.1:8770/?food='+id);
+   const row=await page.evaluate(async id=>{
+    const f=window.FOODS.find(f=>f.id===id),dialog=document.getElementById('detailDialog');
+    const images=await Promise.all(Array.from(dialog.querySelectorAll('img')).map(async im=>{try{await im.decode()}catch{}return {src:im.getAttribute('src'),loaded:im.naturalWidth>0,width:im.naturalWidth,height:im.naturalHeight}}));
+    return {id,width:innerWidth,open:dialog.open,title:dialog.querySelector('h1')?.textContent===f.name,recipe:dialog.querySelector('#foodRecipe')?.textContent.includes(f.recipeTitle),share:document.getElementById('detailShare').getAttribute('aria-label').includes(f.name),overflow:dialog.scrollWidth-dialog.clientWidth,images};
+   },id);
+   rows.push(row);
+   if(!row.open||!row.title||!row.recipe||!row.share||row.overflow>1||row.images.some(im=>!im.loaded))throw Error(JSON.stringify(row));
+   if((width===1440&&id==='shangyu-duanbing-cherry')||(width===390&&['jiaozhou-kailing-suo','harbin-fresh-honeyberry'].includes(id)))await page.screenshot({path:'output/new-foods/'+width+'-'+id+'.png'});
+   await page.getByRole('button',{name:'直接看做法 ↘'}).click();
+   await page.waitForFunction(()=>{const y=document.getElementById('foodRecipe')?.getBoundingClientRect().top;return y>=0&&y<=250});
+   const top=await page.locator('#foodRecipe').evaluate(el=>el.getBoundingClientRect().top);
+   if(top<0||top>250)throw Error('recipe jump '+id+': '+top);
+  }
+ }
+ await page.goto('http://127.0.0.1:8770/');
+ await page.getByRole('button',{name:'2027年4月20日 谷雨',exact:true}).click();
+ const cherry=await page.locator('#seasonCards [data-food="shangyu-duanbing-cherry"]').count();
+ if(!cherry)throw Error('missing cherry in GuYu');
+ await page.screenshot({path:'output/new-foods/mobile-guyu.png'});
+ await page.getByRole('button',{name:'搜索食材',exact:true}).click();
+ await page.locator('#searchInput').fill('蓝靛果');
+ await page.locator('#searchResults [data-food="harbin-fresh-honeyberry"]').click();
+ const found=await page.locator('#detailContent h1').textContent();
+ if(found!=='哈尔滨鲜食蓝靛果')throw Error('search did not open new ingredient');
+ console.log(JSON.stringify({checks:rows,solarTermCherry:true,search:true,pageErrors:errors},null,2));
+ if(errors.length)throw Error(errors.join('\n'));
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:8770/?food=harbin-fresh-honeyberry
+- Page Title: 时令风物 · 小众食材地图

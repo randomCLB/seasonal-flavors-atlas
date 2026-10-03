@@ -2,7 +2,7 @@
 
 内部制作清单，不在食客页面显示。详情页只用做好的菜品图；水果用剖面或自然开裂图。原料植株图不代替这张图。
 
-当前 55/55 味都有详情首屏的可食状态画面：50 味沿用原有图片，5 味新增依据原料参考图制作的示意图。示意图不用于食材身份鉴别；后续找到身份与授权均明确的照片时优先替换。
+当前 67/67 味都有详情首屏的可食状态画面，现有照片与明确标注的生成示意图并用。本轮补齐此前仅有参考图的五味，并同步列表与抽签画面。示意图不用于食材身份鉴别；后续找到身份与授权均明确的照片时优先替换。
 
 ## 已有可食状态图
 
@@ -71,5 +71,24 @@
 | 旬阳拐枣 | 肉质果梗与清饮 | `assets/xunyang-guizao-juice-generated.webp` |
 | 青海蕨麻 | 蕨麻米粥 | `assets/juema-congee-generated.webp` |
 | 桐乡槜李 | 鲜果剖面 | `assets/tongxiang-zhuili-cut-generated.webp` |
+
+## 2026-10-02 已补齐的新增词条
+
+| 食材 | 可食状态画面 | 文件 |
+| --- | --- | --- |
+| 胶州开凌梭 | 清蒸梭鱼，生成示意图 | `assets/jiaozhou-kailing-suo-steamed-generated.webp` |
+| 台东冬果凤梨释迦 | 鲜果剖面，生成示意图 | `assets/taitung-atemoya-cut-generated.webp` |
+| 偃师鲜银条 | 凉拌银条，生成示意图 | `assets/yanshi-yintiao-salad-generated.webp` |
+| 上虞短柄樱桃 | 鲜果切面，生成示意图 | `assets/shangyu-cherry-cut-generated.webp` |
+| 哈尔滨鲜蓝靛果 | 鲜果切面，生成示意图 | `assets/harbin-honeyberry-cut-generated.webp` |
+| 陕州青麦碾转 | 碾转炒鸡蛋，生成示意图 | `assets/shanzhou-nianzhuan-eggs-generated.webp` |
+| 民勤露地沙葱 | 沙葱炒鸡蛋，来源照片 | `assets/minqin-shacong-eggs.webp` |
+| 建瓯锥栗 | 锥栗小米粥，生成示意图 | `assets/jianou-zhuili-congee-generated.webp` |
+| 崇明白扁豆鲜荚 | 蒜香熟煮白扁豆，生成示意图 | `assets/chongming-biandou-garlic-generated.webp` |
+| 崇明香酥芋 | 原味蒸芋艿，生成示意图 | `assets/chongming-taro-steamed-generated.webp` |
+| 湘阴三塘鲜藠头 | 鲜鳞茎炒肉片，生成示意图 | `assets/xiangyin-jiaotou-pork-generated.webp` |
+| 温州盘菜 | 盘菜年糕汤，生成示意图 | `assets/wenzhou-pancai-ricecake-soup-generated.webp` |
+
+前七味记录见 `NEW_FOOD_IMAGES_20261002.json`；后五味的有限搜索范围、未采用照片原因、生成提示词、尺寸与校验值见 `IMAGE_COMPLETION_20261002.json`。
 
 后续仍优先寻找身份相符、可随站点本地提供且授权明确的照片；同类食材照片不冒充地方品种，植物生境照不充当成菜图。生成示意图只作餐桌画面，不作为实拍或采食鉴别依据。
