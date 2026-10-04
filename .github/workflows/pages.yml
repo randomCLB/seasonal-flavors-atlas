@@ -87,7 +87,7 @@ jobs:
           python3 - <<'PY'
           import hashlib, os, pathlib, time, urllib.request
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
-          paths = ['index.html', 'app.js', 'lottery.html', 'assets/shajiguo-cut.jpg',
+          paths = ['fengwu-design.css', *[f'assets/tarot/{card}.webp' for card in ['sun','moon','star','temperance','fool','magician','hermit','empress','strength','hanged','wheel','world']], 'index.html', 'app.js', 'lottery.html', 'assets/shajiguo-cut.jpg',
                    'editorial-notes.js', 'lottery-profiles.js', 'lottery-senses.js', 'credits.html',
                    'assets/jianou-zhuilli-reference.webp', 'assets/chongming-biandou-reference.webp',
                    'assets/chongming-taro-reference.webp', 'assets/xiangyin-jiaotou-reference.webp',
@@ -126,5 +126,5 @@ jobs:
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
               summary.write('## 时令风物 v1.1\n\n')
               summary.write(f'[打开首页]({base}) · [塔罗签（默认）]({base}tarot.html) · [风味签]({base}lottery.html)\n\n')
-              summary.write('目录60味；塔罗使用完整候选轮换。首页抽签默认进入塔罗三牌阵，风味签保留为第二入口。新食材数据与5张许可参考图、页面、脚本均通过HTTP及内容哈希核验。\n')
+              summary.write('目录67味；塔罗使用完整候选轮换。首页抽签默认进入塔罗三牌阵，风味签保留为第二入口。目录、12张原创牌面、杂志版样式、页面和脚本均通过HTTP及内容哈希核验。\n')
           PY

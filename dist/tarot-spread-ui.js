@@ -22,11 +22,11 @@ function syncControls(){
  document.querySelectorAll('[data-pick]').forEach(el=>el.disabled=busy||phase!=='drawing'||round.draws.includes(Number(el.dataset.pick)));
  $('read-spread').disabled=busy||phase!=='complete';
 }
-function cardMarkup(entry,index,animate=false){
+function cardMarkup(entry,index,animate=false,insight=true){
  const role=S.ROLES[index];
  if(!entry)return `<article class="tableau-slot empty-slot"><p class="slot-title"><span>${role.number}</span> ${role.name}</p><div class="empty-card" aria-label="${role.name}牌位，等待抽牌"><span aria-hidden="true">✧</span><p>${role.question}</p></div></article>`;
  const card=T.deck.find(c=>c.id===entry.id),text=S.cardText({...entry,slot:index});
- return `<article class="tableau-slot ${animate?'just-revealed':''}"><p class="slot-title"><span>${role.number}</span> ${role.name}</p><div class="face-card spread-face ${entry.reversed?'is-reversed':''}" aria-label="${esc(role.name+'：'+card.name+'，'+text.position)}"><span class="face-number">${card.number}</span><span class="face-symbol" aria-hidden="true">${card.symbol}</span><h2>${card.name}</h2><p>${text.position}</p><span class="card-key">${card.key}</span></div><details class="card-insight"><summary>读这张牌 <span aria-hidden="true">＋</span></summary><p>${esc(text.text)}</p></details></article>`;
+ return `<article class="tableau-slot ${animate?'just-revealed':''}"><p class="slot-title"><span>${role.number}</span> ${role.name}</p><div class="face-card spread-face ${entry.reversed?'is-reversed':''}" aria-label="${esc(role.name+'：'+card.name+'，'+text.position)}"><span class="face-number">${card.number}</span><img class="card-art" src="assets/tarot/${card.id}.webp" alt="" width="512" height="768"><h2>${card.name}</h2><p>${text.position}</p><span class="card-key">${card.key}</span></div>${insight?`<details class="card-insight"><summary>读这张牌 <span aria-hidden="true">＋</span></summary><p>${esc(text.text)}</p></details>`:''}</article>`;
 }
 function renderDraw(animate=-1){
  const entries=S.selected(round),open=[...$('tableau').querySelectorAll('.card-insight')].map(el=>el.open);
@@ -66,7 +66,8 @@ async function copy(text,message){
 function show(r){
  const f=byId[r.foodId];result=r;
  $('reading-date').textContent=`${r.day.replaceAll('-',' · ')} · ${r.term.name} · 三牌餐桌阵`;
- $('result-tableau').innerHTML=r.cards.map((entry,i)=>cardMarkup(entry,i)).join('');
+ $('result-tableau').innerHTML=r.cards.map((entry,i)=>cardMarkup(entry,i,false,false)).join('');
+ $('result-insights').innerHTML=r.cards.map((entry,i)=>{const text=S.cardText({...entry,slot:i});return `<details class="card-insight"><summary>${S.ROLES[i].name} · ${text.name} · ${text.position}<span aria-hidden="true">＋</span></summary><p>${esc(text.text)}</p></details>`}).join('');
  $('pattern').textContent=r.reading.pattern;
  $('dish-title').textContent=T.dishName(f);$('dish-origin').textContent=`用到 ${f.name} · ${r.place.place}`;
  const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};const media=T.mediaFor(f);image.alt=media.alt;image.src=media.src;document.querySelector('.photo-label').textContent=media.kind==='ingredient'?'今日命定菜 · 原料参考':media.kind==='fresh'?'今日命定味 · 鲜果参考':'今日命定菜';
