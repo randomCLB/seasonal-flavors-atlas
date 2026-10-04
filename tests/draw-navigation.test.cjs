@@ -62,5 +62,5 @@ test('both mode links and homepage draw work under root and compatible preview p
   }
 });
 test('updated homepage loads the scoped navigation binding with a new cache key', () => {
-  assert.match(read('index.html'), /src="app\.js\?v=season-counts-20261003"/);
+  assert.match(read('index.html'), /src="app\.js\?v=editorial-art-20261004"/);
 });

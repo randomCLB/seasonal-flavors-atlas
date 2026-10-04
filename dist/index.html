@@ -8,6 +8,7 @@
   <meta name="description" content="沿着节气、山川与风味，认识值得一试的小众食材。">
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css?v=origin-flavors-20261002">
+  <link rel="stylesheet" href="fengwu-design.css?v=20261004">
 </head>
 <body>
   <div class="site-shell">
@@ -24,7 +25,7 @@
     <main id="app">
       <section id="seasonView" class="view">
         <section class="hero term-hero" id="hero"></section>
-        <section class="term-strip" aria-label="按节气浏览"><div class="strip-label">沿节气游逛</div><button id="termPrev" class="rail-arrow" aria-label="上一节气">‹</button><div class="terms" id="terms"></div><button id="termNext" class="rail-arrow" aria-label="下一节气">›</button></section>
+        <section class="term-strip" aria-label="按节气浏览"><div class="strip-label"><span>沿节气游逛</span><strong id="termBookmark"></strong></div><button id="termPrev" class="rail-arrow" aria-label="上一节气">‹</button><button id="termNext" class="rail-arrow" aria-label="下一节气">›</button><details class="term-almanac"><summary>翻开全年节气 <span aria-hidden="true">＋</span></summary><div class="terms" id="terms"></div></details></section>
         <section class="section-intro"><div><p class="kicker" id="seasonKicker">本月风物</p><h2 id="seasonHeading"></h2></div><p id="seasonIntro"></p></section>
         <nav id="categoryFilter" class="category-filter" aria-label="按食材类别筛选"></nav>
         <section id="seasonCards" class="season-cards" aria-label="本节气当季食材"></section>
@@ -55,6 +56,6 @@
   </dialog>
   <dialog id="searchDialog" class="search-dialog"><div class="search-head"><label for="searchInput">寻找食材</label><button id="searchClose" aria-label="关闭搜索">×</button></div><input id="searchInput" type="search" autocomplete="off" placeholder="搜食材、口感、香气、产地或做法"><div id="searchResults"></div></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="solar-terms.js"></script><script src="map-projection.js"></script><script src="data.js"></script><script src="editorial.js"></script><script src="editorial-notes.js?v=image-completion-20261002"></script><script src="food-share.js?v=1"></script><script src="lottery-core.js?v=additions-20261002"></script><script src="app.js?v=season-counts-20261003"></script>
+  <script src="solar-terms.js"></script><script src="map-projection.js"></script><script src="data.js"></script><script src="editorial.js"></script><script src="editorial-notes.js?v=image-completion-20261002"></script><script src="food-share.js?v=1"></script><script src="lottery-core.js?v=additions-20261002"></script><script src="app.js?v=editorial-art-20261004"></script>
 </body>
 </html>
