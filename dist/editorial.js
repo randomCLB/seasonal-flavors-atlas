@@ -262,7 +262,7 @@ for(const food of window.FOODS){
      {name:'贵州普定',lat:26.33,lon:105.75,months:[7],precision:'month',source:'https://gz.people.com.cn/n2/2026/0721/c194849-41645206.html'}]:
     [{name:food.region,lat:food.lat,lon:food.lon,months:food.peakMonths,precision:food.seasonPrecision||'month',source:food.sources[0][1]}];
   if(food.id==='cili'){food.image='assets/cili.jpg';food.imageAlt='枝头成熟的刺梨果实';food.imageCaption='刺梨原果形态参考；照片拍摄于奥地利林茨，并非贵州清镇。'}
-  if(food.id==='shajiguo'){food.image='assets/shajiguo.jpg';food.imageAlt='枝头橙黄色的沙棘果';food.imageCaption='沙棘原果形态参考；照片拍摄于德国 Spiekeroog。'}
+  if(food.id==='shajiguo'){food.image='assets/shajiguo.jpg';food.imageAlt='枝头簇生的橙黄色沙棘果';food.imageCaption='沙棘原果形态参考；拍摄于德国 Spiekeroog，非敖汉产地实拍。'}
 }
 const PHOTO_UPDATES={
   'nanhu-ling':{dishImage:'assets/nanhu-ling-peeled-cooked.jpg',dishImageAlt:'煮熟剥壳的菱肉拌少许葱花盛盘',dishCaption:'剥去硬壳，熟菱肉白里透粉；趁温热吃，先是清甜，嚼下去有紧实的粉糯。'},
