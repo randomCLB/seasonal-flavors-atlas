@@ -1,54 +1,40 @@
-# 食品实拍图清晰度优化记录
+# 食品实拍图清晰度与版面复核
 
-基于 GitHub `main` 的 `60f2d2d5e809f184420e7f33e207fe9e097269a5`。改动限于食品照片的尺寸信息、裁切方式和沙棘响应式加载；没有改网站整体样式、食品数据或卡牌图片。
+依据仓库基线 `main@60f2d2d5e809f184420e7f33e207fe9e097269a5`；此前未提交状态先行保留。此次只处理食品实拍、图片响应式加载、食品图片说明，以及用户指出的节气插图尺寸和笋图可辨识度；不改卡牌插画和全站风格。
 
-## 改动与来源
+## 本轮可见改动
 
-| 图片 | 原有状态 | 本次处理 | 来源与许可 |
-| --- | --- | --- | --- |
-| 沙棘首页大图、详情辨识图 | 首页使用 `shajiguo-cut.jpg`（720×405、50,624 B）并在近方形画框中 `cover`；详情辨识图也用较小图 | 改用枝头整果实拍；由原片等比例生成 400、800、1200、1600 px 宽 WebP，加入 `srcset`/`sizes`/宽高，按显示槽位和密度选择；首页大图优先加载，列表继续懒加载；辨识图完整显示 | Stephan Sprinz / Wikimedia Commons，[原图及记录](https://commons.wikimedia.org/wiki/File:Sanddorn_(Hippophae_rhamnoides)_auf_Spiekeroog_02.jpg)，CC BY 4.0。原片 5593×3729，保存在 `source-images/shajiguo-original-commons.jpg`。拍摄于德国 Spiekeroog，仅作同种形态参考，不代表敖汉产地。 |
-
-原片已有嵌入 sRGB 配置。本次只做 Lanczos 等比例缩小、转 sRGB WebP（质量 90）；不裁切、不降噪、不锐化、不重绘、不生成细节。原片 SHA-256、署名和许可也记录于 `IMAGE_REGISTER.md` 与站内图片出处页。
-
-| 输出文件 | 尺寸 | 文件体积 |
-| --- | ---: | ---: |
-| `shajiguo-400.webp` | 400×267 | 33,198 B |
-| `shajiguo-800.webp` | 800×533 | 86,756 B |
-| `shajiguo-1200.webp` | 1200×800 | 147,378 B |
-| `shajiguo-1600.webp` | 1600×1067 | 212,882 B |
-
-## 重点照片盘点
-
-| 文件 | 源图/当前尺寸 | 展示与裁切 | 来源和许可 | 结论 |
-| --- | --- | --- | --- | --- |
-| `shajiguo-cut.jpg` | 720×405 | 首页原先近方形 `cover`；详情约 335×189（390px）或 752×423（1440px） | Finess 产品资料；未标开放许可，摄影者及品种信息待核 | 首页不再用。保留详情原图，等待许可明确、同品种且同食用部位的高清照片。1440px/DPR2 下源像素不足。 |
-| `lintong-huojing.webp` | 600×450 | 详情辨识图完整显示，不裁切 | FreshPlaza 报道图；作者及开放许可未注明，登记尺寸即 600×450 | 未找到有许可依据的同图高清原片；保留，待替换。现有 `lintong-huojing-cut.jpg` 为另一张 1080×720 详情食用状态图，不冒充同一原片。 |
-| `juema-roots-enhanced.webp` | 750×481；原文件 `juema-roots.png` 同尺寸 | 详情辨识图完整显示 | 石渠县政府页面配图；摄影者与开放许可未注明 | 登记显示它已做过轻微对比度、锐度增强。本次不再锐化、不放大、不改图，待高清授权来源。 |
-| `cizhousun-salad.jpg` | 站内 1400×929；登记原图 2448×1624 | 列表/详情使用既有裁切 | 下厨房用户食谱；页面未标开放许可。现图嵌入 Display P3 配置 | 未取得清晰许可前不复制原图或替换。若授权核实，应按原图尺寸裁切并保留/正确转换色彩配置。 |
-
-上述重点文件的 `width`/`height` 属性现按登记尺寸填写，避免加载时版面跳动。沙棘、临潼火晶柿、蕨麻和刺竹笋的辨识图改为完整显示，防止辨识部位被裁掉；不对已经增强过的蕨麻图叠加滤镜。
-
-## 前后检查
-
-Playwright 模拟浏览器，390、320、1440 CSS px，DPR 2。截图是 JPEG 90 的浏览器截图；320px 下另以根字号 200% 做布局放大模拟。没有使用微信或真机验收。
-
-| 视图 | 改前 | 改后 |
+| 区域 | 修改 | 证据与许可 |
 | --- | --- | --- |
-| 首页 390px | [截图](photo-clarity-evidence/before-home-390.jpg) | [截图](photo-clarity-evidence/after-home-390.jpg) |
-| 首页 1440px | [截图](photo-clarity-evidence/before-home-1440.jpg) | [截图](photo-clarity-evidence/after-home-1440.jpg) |
-| 列表 390px | [截图](photo-clarity-evidence/before-list-390.jpg) | [截图](photo-clarity-evidence/after-list-390.jpg) |
-| 列表 1440px | [截图](photo-clarity-evidence/before-list-1440.jpg) | [截图](photo-clarity-evidence/after-list-1440.jpg) |
-| 沙棘详情 390px / 1440px | — | [390px](photo-clarity-evidence/after-detail-390.jpg) · [1440px](photo-clarity-evidence/after-detail-1440.jpg) |
-| 首页 320px / 文字放大模拟 | — | [320px](photo-clarity-evidence/after-home-320.jpg) · [200% 模拟](photo-clarity-evidence/after-text-200-320.jpg) |
+| 沙棘首页主图及详情辨识图 | 首页原为 720×405 剖面照，在近方形主图框中 `cover` 后果实细节不足。换成同种沙棘果实近景，原图 2012×3006；生成 400、800、1280、1600px 宽 sRGB WebP，保持原比例，加入 `srcset`/`sizes` 和尺寸属性。画框仍按 `cover` 局部显示；原图和完整比例版本保留。 | [Hans Hillewaert 原图及授权](https://commons.wikimedia.org/wiki/File:Hippophae_rhamnoides.jpg)，CC BY-SA 3.0；比利时 De Haan 拍摄，仅为同种形态参考，不代表敖汉产地。原图保存在 `docs/source-images/shajiguo-original-commons.jpg`，SHA-256 和衍生文件记录见 `IMAGE_REGISTER.md`。 |
+| 刺竹笋列表卡与详情辨识图 | 列表卡以前优先显示凉拌笋条，食材本身不醒目。现在展示多支新鲜去壳竹笋实拍，并生成 400、800、1200px WebP 版本；成菜照片仍按原用途留在详情。 | [Gaurav Dhwaj Khadka 原图及授权](https://commons.wikimedia.org/wiki/File:Bamboo_Shoot.jpg)，CC BY-SA 4.0；尼泊尔加德满都市场照片。照片未标竹种，故明确标为通用形态参考，不声称是腾冲刺竹品种。原图和 SHA-256 见 `IMAGE_REGISTER.md`。 |
+| 节气插段 | 保留原有节气 SVG 插画与文字，图片由统一小方块放大为主图，并依节气索引设置四种高度，手机端改为上下编排。当前秋分图在 390px 视口为 305×176px，在 1440px 视口为 388×184px。 | 沿用现有矢量插画，没有替换成生成图或新增不明来源照片。截图见下方。 |
 
-主图加载核对：390px/DPR2 选择 800w（文件 86,756 B），1440px/DPR2 选择 1600w（212,882 B）；首张列表大图在 390px 选择 1200w（147,378 B），且懒加载。320px/DPR2 选择 800w。页面滚动宽度在 320、390、1440px 均与视口相同。裁切后的编辑卡片使用单独 `sizes` 估算；小卡片仍使用较轻版本。浏览器按网络和缓存条件可以选择更大的候选图。
+衍生图均为常规等比例 Lanczos 缩小、WebP 质量 90，并嵌入 sRGB 配置；没有 AI 重绘、纹理重建、降噪或锐化。沙棘输出文件体积：400w 47,312 B、800w 125,294 B、1280w 239,698 B、1600w 338,866 B；鲜笋：400w 25,188 B、800w 62,936 B、1200w 103,990 B。
 
-相较原首页图 50,624 B，新的首屏图增加约 36 KB（390px）或 162 KB（1440px）；详情及首屏外图片仍由实际图片元素按需加载，不会把四种尺寸同时下载。这里记录的是本地静态文件体积与模拟页面行为，不代表微信内网速或真实加载耗时。
+## 加载和版面检查
 
-色彩检查未发现本次色彩处理偏移；沙棘果簇、叶片轮廓来自原始照片本身。现存切面图仍偏软，不能靠放大或锐化补足；需待授权清楚的高清实拍来源。
+Playwright + 本机 Chrome 模拟浏览器，视口 320/390/1440 CSS px、DPR 2；没有将模拟验收描述为微信或真机测试。
 
-## 验证
+| 检查项 | 结果 |
+| --- | --- |
+| 沙棘主图 `currentSrc` | 390px 与 320px 选 800w；1440px 选 1280w。主图 `loading=eager`、`fetchpriority=high`。 |
+| 刺竹笋卡片 `currentSrc` | 390px 选 400w；1440px 选 800w。详情辨识图分别选 800w、1200w，并完整展示。 |
+| 页面宽度 | 320、390、1440px 与布局根宽一致；根字号放大至 200% 的 320px 模拟也未产生横向溢出。 |
+| 页面截图 | [改前首页 390](photo-clarity-evidence/before-home-390.jpg) · [改后首页 390](photo-clarity-evidence/after-home-390.jpg) · [改前首页 1440](photo-clarity-evidence/before-home-1440.jpg) · [改后首页 1440](photo-clarity-evidence/after-home-1440.jpg) · [改后 320](photo-clarity-evidence/after-home-320.jpg) · [320 根字号 200% 模拟](photo-clarity-evidence/after-text-200-320.jpg) |
+| 用户指出的区域 | [刺竹笋卡片 390](photo-clarity-evidence/after-cizhousun-card-390.jpg) · [刺竹笋卡片 1440](photo-clarity-evidence/after-cizhousun-card-1440.jpg) · [节气插段 390](photo-clarity-evidence/after-interlude-390.jpg) · [节气插段 1440](photo-clarity-evidence/after-interlude-1440.jpg) · [竹笋详情 390](photo-clarity-evidence/after-cizhousun-detail-390.jpg) · [竹笋详情 1440](photo-clarity-evidence/after-cizhousun-detail-1440.jpg) |
 
-- `node --test tests/*.test.cjs`：145 项通过。
-- 模拟浏览器确认：首页主图 `fetchpriority=high`；非首屏列表图懒加载；390、320、1440px 无横向溢出。
-- 详情辨识图使用 `contain`，不裁去枝叶/果实；沙棘剖面图仍使用原尺寸文件。
+本机静态服务器上进行了布局、加载来源和截图复核。320/390/1440 的实测是模拟浏览器结果；没有推断微信缓存、网络速度或真实设备表现。
+
+## 仍待核实或替换
+
+| 图片 | 当前情况 | 后续处理 |
+| --- | --- | --- |
+| `shajiguo-cut.jpg`，720×405 | 原图来源页未标开放许可；仍留作剖面食用状态图。 | 找到同照片的高分辨率原图及许可前，不放大或锐化；当前首页已不再使用。 |
+| `lintong-huojing.webp`，600×450 | 高清屏辨识图像素仍不足，现有来源未能确认可授权的高清原图。 | 继续找可核同图原片；不以异品种照片冒充临潼火晶柿。 |
+| `juema-roots-enhanced.webp`，750×481 | 已经增强过，原始图源的再分发许可未明。 | 不重复锐化、不放大；等有许可的高清原图。 |
+| `cizhousun-salad.jpg`，1400×929 | 原图登记为 2448×1624，但下厨房页面未标开放许可；清晰许可待确认。 | 不复制受限原图。新卡片照片只作竹笋形态参考，地方刺竹品种照片仍待授权来源。 |
+
+## 测试
+
+`node --test tests/*.test.cjs`：145 项通过。修改没有触碰内容、抽取规则或塔罗行为。页面源文件和图片仍在审阅分支；本记录不代表已合并或发布。

@@ -64,23 +64,26 @@ function featuredAssignment(category){
 // Curated image roles affect presentation only; food facts and draw rules stay in the source data.
 const wholeSubjects=new Set(['lyg-shaguang-fish','ninghai-changjie-razor-clam','jintang-fresh-morel','shajiguo','lintong-huojing-shizi','juema','cizhousun']);
 const imageDimensions={'assets/shajiguo-cut.jpg':[720,405],'assets/lintong-huojing.webp':[600,450],'assets/juema-roots-enhanced.webp':[750,481],'assets/cizhousun-salad.jpg':[1400,929]};
-const shajiguoSrcset='assets/shajiguo-400.webp 400w, assets/shajiguo-800.webp 800w, assets/shajiguo-1200.webp 1200w, assets/shajiguo-1600.webp 1600w';
+const shajiguoSrcset='assets/shajiguo-400.webp 400w, assets/shajiguo-800.webp 800w, assets/shajiguo-1280.webp 1280w, assets/shajiguo-1600.webp 1600w';
+const shootSrcset='assets/cizhousun-shoot-400.webp 400w, assets/cizhousun-shoot-800.webp 800w, assets/cizhousun-shoot-1200.webp 1200w';
 function foodImageAttrs(src,slot='card'){
  if(src==='assets/shajiguo-400.webp'){
   const sizes={hero:'(max-width:520px) 86vw, (max-width:800px) 90vw, (max-width:1400px) 43vw, 603px','feature-card':'(max-width:520px) 110vw, (max-width:800px) 100vw, (max-width:1400px) 43vw, 603px',card:'(max-width:520px) 31vw, 16vw',recognition:'(max-width:520px) 86vw, (max-width:800px) 80vw, 405px',aside:'350px'};
-  return `srcset="${shajiguoSrcset}" sizes="${sizes[slot]||'100vw'}" width="400" height="267" decoding="async"`;
+  return `srcset="${shajiguoSrcset}" sizes="${sizes[slot]||'100vw'}" width="400" height="598" decoding="async"`;
  }
+ if(src==='assets/cizhousun-shoot-400.webp')return `srcset="${shootSrcset}" sizes="${slot==='recognition'?'(max-width:800px) 80vw, 405px':'(max-width:520px) 31vw, 16vw'}" width="400" height="300" decoding="async"`;
  const dimensions=imageDimensions[src];
  return dimensions?`width="${dimensions[0]}" height="${dimensions[1]}" decoding="async"`:'';
 }
 function foodVisual(food,role='appetite'){
  const homeFruitPhoto=role==='appetite'&&food.id==='shajiguo';
- const edible=role==='appetite'&&!homeFruitPhoto&&(food.dishImage||food.cutImage);
- const originalSrc=homeFruitPhoto?food.image:edible||(role==='recognition'?food.image:food.cardImage)||food.image||food.cardImage;
+ const homeShootPhoto=role==='appetite'&&food.id==='cizhousun';
+ const edible=role==='appetite'&&!homeFruitPhoto&&!homeShootPhoto&&(food.dishImage||food.cutImage);
+ const originalSrc=homeFruitPhoto||homeShootPhoto?food.image:edible||(role==='recognition'?food.image:food.cardImage)||food.image||food.cardImage;
  const src=originalSrc==='assets/shajiguo.jpg'?'assets/shajiguo-400.webp':originalSrc;
- const alt=homeFruitPhoto?food.imageAlt:edible?(food.dishImage?food.dishImageAlt:food.cutImageAlt):(role==='recognition'?food.imageAlt:food.cardImageAlt)||food.imageAlt||food.name;
+ const alt=homeFruitPhoto||homeShootPhoto?food.imageAlt:edible?(food.dishImage?food.dishImageAlt:food.cutImageAlt):(role==='recognition'?food.imageAlt:food.cardImageAlt)||food.imageAlt||food.name;
  const generated=/generated|示意/.test(`${src} ${alt}`);
- return {src,alt,fit:role==='recognition'&&wholeSubjects.has(food.id)?'contain':'cover',note:generated?'生成示意 · 非实物摄影':homeFruitPhoto?food.imageCaption:edible?(food.dishImage?'成菜参考':'鲜果可食状态'):food.cardNote||food.imageCaption||'形态参考 · 非产地鉴别'};
+ return {src,alt,fit:role==='recognition'&&wholeSubjects.has(food.id)?'contain':'cover',note:generated?'生成示意 · 非实物摄影':homeFruitPhoto?food.imageCaption:homeShootPhoto?food.cardNote:edible?(food.dishImage?'成菜参考':'鲜果可食状态'):food.cardNote||food.imageCaption||'形态参考 · 非产地鉴别'};
 }
 function renderTermRail(){
  $('terms').innerHTML=termWindow.map((event,index)=>`<button class="${event===selectedTerm?'active':''}" data-term="${index}" aria-current="${event===selectedTerm?'date':'false'}"><small>${dateText(event.time,true)}</small><strong>${termNames[event.index]}</strong></button>`).join('');
@@ -116,7 +119,7 @@ function renderSeason(){
  $('seasonIntro').textContent=visibleList.length?'有些鲜味，要等到这个时节。挑一味，认一认，再把它端上桌。':`这个节气暂时没有${categoryNames[selectedCategory]}风物。`;
  $('seasonCards').innerHTML=visibleList.length?visibleList.map((food,index)=>{
  const media=foodVisual(food,index<3?'appetite':'recognition');
- return `<article class="season-list-card ${index===0?'editorial-feature':index<3?'editorial-side':'editorial-brief'}"><figure class="season-list-photo">${media.src?`<button data-food="${food.id}" class="season-list-image-button" aria-label="查看${food.name}详情"><img src="${media.src}" alt="${media.alt}" ${foodImageAttrs(media.src,index===0?'feature-card':'card')} style="object-fit:${media.fit}" loading="lazy" decoding="async"></button>`:'<div class="season-list-image-empty" aria-hidden="true">时令风物</div>'}<figcaption class="photo-credit">${media.note}</figcaption></figure><div><small>${foodSeasonMeta(food,foodMonth,food.cardLabel||food.region)}</small><h3><button data-food="${food.id}" class="season-list-name">${nameWithIcon(food)}</button></h3><p>${food.short}</p><button data-food="${food.id}" data-recipe="true" aria-label="直接看${food.name}做法">看它怎么吃 <span aria-hidden="true">↗</span></button></div></article>${index===2?`<aside class="season-interlude"><img src="assets/jieqi/${termSlugs[selectedTerm.index]}.svg" alt="" loading="lazy"><div><p class="kicker">山川有时 · 鲜味有期</p><p>${termLines[selectedTerm.index]}</p></div><a href="tarot.html">今晚吃什么？问问牌桌 ↗</a></aside>`:''}`;
+ return `<article class="season-list-card ${index===0?'editorial-feature':index<3?'editorial-side':'editorial-brief'}"><figure class="season-list-photo">${media.src?`<button data-food="${food.id}" class="season-list-image-button" aria-label="查看${food.name}详情"><img src="${media.src}" alt="${media.alt}" ${foodImageAttrs(media.src,index===0?'feature-card':'card')} style="object-fit:${media.fit}" loading="lazy" decoding="async"></button>`:'<div class="season-list-image-empty" aria-hidden="true">时令风物</div>'}<figcaption class="photo-credit">${media.note}</figcaption></figure><div><small>${foodSeasonMeta(food,foodMonth,food.cardLabel||food.region)}</small><h3><button data-food="${food.id}" class="season-list-name">${nameWithIcon(food)}</button></h3><p>${food.short}</p><button data-food="${food.id}" data-recipe="true" aria-label="直接看${food.name}做法">看它怎么吃 <span aria-hidden="true">↗</span></button></div></article>${index===2?`<aside class="season-interlude term-art-${selectedTerm.index%4}"><img src="assets/jieqi/${termSlugs[selectedTerm.index]}.svg" alt="" loading="lazy"><div><p class="kicker">山川有时 · 鲜味有期</p><p>${termLines[selectedTerm.index]}</p></div><a href="tarot.html">今晚吃什么？问问牌桌 ↗</a></aside>`:''}`;
  }).join(''):`<p class="empty-month category-empty">本节气适合尝的几味风物都在上面了。</p>`;
   document.querySelectorAll('#hero [data-food],#seasonCards [data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food,true,b.dataset.recipe==='true'));
 }
