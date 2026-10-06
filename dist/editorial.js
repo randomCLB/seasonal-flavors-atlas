@@ -262,7 +262,7 @@ for(const food of window.FOODS){
      {name:'贵州普定',lat:26.33,lon:105.75,months:[7],precision:'month',source:'https://gz.people.com.cn/n2/2026/0721/c194849-41645206.html'}]:
     [{name:food.region,lat:food.lat,lon:food.lon,months:food.peakMonths,precision:food.seasonPrecision||'month',source:food.sources[0][1]}];
   if(food.id==='cili'){food.image='assets/cili.jpg';food.imageAlt='枝头成熟的刺梨果实';food.imageCaption='刺梨原果形态参考；照片拍摄于奥地利林茨，并非贵州清镇。'}
-  if(food.id==='shajiguo'){food.image='assets/shajiguo.jpg';food.imageAlt='枝头橙黄色的沙棘果';food.imageCaption='沙棘原果形态参考；照片拍摄于德国 Spiekeroog。'}
+  if(food.id==='shajiguo'){food.image='assets/shajiguo.jpg';food.imageAlt='橙黄色沙棘果实成簇贴着枝条生长，果皮表面和叶片清晰可见';food.imageCaption='沙棘果近景形态参考；摄影者 Hans Hillewaert，拍摄于比利时 De Haan，CC BY-SA 3.0；非敖汉产地实拍。'}
 }
 const PHOTO_UPDATES={
   'nanhu-ling':{dishImage:'assets/nanhu-ling-peeled-cooked.jpg',dishImageAlt:'煮熟剥壳的菱肉拌少许葱花盛盘',dishCaption:'剥去硬壳，熟菱肉白里透粉；趁温热吃，先是清甜，嚼下去有紧实的粉糯。'},
@@ -328,10 +328,10 @@ const PAIR_NOTES={
 for(const food of window.FOODS)if(PAIR_NOTES[food.id])food.pair=PAIR_NOTES[food.id];
 
 Object.assign(window.FOODS.find(food=>food.id==='cizhousun'),{
-  image:'assets/cizhousun-bamboo-shoot.jpg',
-  imageAlt:'生长中的竹笋，带笋箨和叶片',
-  imageCaption:'Phyllostachys parvifolia 竹笋形态参考；摄影者 Jodarom，CC BY 3.0。并非腾冲刺竹的地方品种实拍。',
-  cardNote:'竹笋形态参考 · 非腾冲刺竹实拍'
+  image:'assets/cizhousun-shoot-400.webp',
+  imageAlt:'市场上并排摆放的数支新鲜去壳竹笋，淡黄色笋肉清晰可见',
+  imageCaption:'新鲜竹笋形态参考；摄影者 Gaurav Dhwaj Khadka，拍摄于尼泊尔加德满都，CC BY-SA 4.0；非腾冲刺竹地方品种实拍。',
+  cardNote:'新鲜竹笋实拍参考 · 非腾冲刺竹实拍'
 });
 Object.assign(window.FOODS.find(food=>food.id==='congjun'),{
   image:'assets/congjun-lactarius-deliciosus.jpg',

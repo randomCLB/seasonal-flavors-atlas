@@ -41,7 +41,8 @@ async def main():
    await page.goto('http://localhost:8766/index.html?food=shajiguo')
    # All catalog entries use the same opening path as season, map, search and related buttons.
    results=await page.evaluate("""()=>window.FOODS.map(f=>{openFood(f.id,false);return {id:f.id,label:document.getElementById('detailShare').getAttribute('aria-label'),title:document.querySelector('#detailContent h1').textContent,url:FoodShare.shareData(f,location.href).url}})""")
-   check(f'{width}: all 60 detail share targets',len(results)==60 and all(r['label']=='分享'+r['title'] and r['url'].endswith('?food='+r['id']) for r in results))
+   expected_count=await page.evaluate('window.FOODS.length')
+   check(f'{width}: all {expected_count} detail share targets',len(results)==expected_count and len({r['id'] for r in results})==expected_count and all(r['label']=='分享'+r['title'] and r['url'].endswith('?food='+r['id']) for r in results))
    check(f'{width}: no JavaScript exceptions',not errors)
    await page.close()
   await browser.close()
