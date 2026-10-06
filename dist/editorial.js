@@ -329,9 +329,9 @@ for(const food of window.FOODS)if(PAIR_NOTES[food.id])food.pair=PAIR_NOTES[food.
 
 Object.assign(window.FOODS.find(food=>food.id==='cizhousun'),{
   image:'assets/cizhousun-shoot-400.webp',
-  imageAlt:'市场上并排摆放的数支新鲜去壳竹笋，淡黄色笋肉清晰可见',
-  imageCaption:'新鲜竹笋形态参考；摄影者 Gaurav Dhwaj Khadka，拍摄于尼泊尔加德满都，CC BY-SA 4.0；非腾冲刺竹地方品种实拍。',
-  cardNote:'新鲜竹笋实拍参考 · 非腾冲刺竹实拍'
+  imageAlt:'菜市场筐中整支带壳的毛笋，尖端、层叠笋壳与完整笋身可见',
+  imageCaption:'整支带壳毛笋形态参考；常州拍摄，非腾冲刺竹品种照片。',
+  cardNote:'整支带壳鲜笋 · 通用形态参考'
 });
 Object.assign(window.FOODS.find(food=>food.id==='congjun'),{
   image:'assets/congjun-lactarius-deliciosus.jpg',
