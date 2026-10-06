@@ -1,6 +1,6 @@
 # 图片授权与缺口
 
-2026-09-29 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 或发布方提供的信息，“站内尺寸”取实际文件。图片来源与形态差异记在本表，食材页面不显示图片来源说明。现收录 55 味；详情页使用成菜图或水果剖面图，缺口见 `docs/FOOD_PHOTO_GAPS.md`。
+2026-10-06 核对。站内仅使用本地文件；表中“原始尺寸”取自 Wikimedia Commons 或发布方提供的信息，“站内尺寸”取实际文件。来源说明默认收起，在图片悬停或键盘聚焦时显示；授权记录见 credits。现收录 55 味；详情页使用成菜图或水果剖面图，缺口见 `docs/FOOD_PHOTO_GAPS.md`。
 
 | 用途 | 站内文件与尺寸 | 原始尺寸 | 作者、来源、许可 | 修改 |
 | --- | --- | --- | --- | --- |
@@ -73,7 +73,7 @@
 | 鲜鸡头米颗粒示意图，资料留存 | `dist/assets/jitoumi-illustration.png` 1536×1024 | 生成文件，无摄影原始尺寸 | OpenAI 图像生成工具，2026-09-25；非实物照片 | 根据鲜剥芡实粒的外观要求生成；详情页目前不展示 |
 | 地图地形、水系 | `dist/assets/atlas-relief.webp` 1600×1100 | 数据来源见链接 | [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/)，公共领域 | 地形着色与文字叠加 |
 | 枞菌形态参考：松乳菇 | `dist/assets/congjun-lactarius-deliciosus.jpg` 2283×2300 | 原图 2283×2300 | [Sandra Cohen-Rose、Colin Rose / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lactarius_deliciosus_(1169941953).jpg)，[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | 原图下载，无改动；松乳菇是湖南“枞菌”俗称所指的常见种之一，不代表所有地方菌种 |
-| 新鲜竹笋形态参考 | `dist/assets/cizhousun-shoot-400.webp` 400×300、`cizhousun-shoot-800.webp` 800×600、`cizhousun-shoot-1200.webp` 1200×900 | 源图 `docs/source-images/bamboo-shoots-original-commons.jpg` 4032×3024 | [Gaurav Dhwaj Khadka / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bamboo_Shoot.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 市场上数支去壳新鲜竹笋的实拍，拍摄于尼泊尔加德满都，竹种未注明；只作通用竹笋形态参考，不声称是腾冲刺竹。源图 SHA-256：`62e964c06f7f4d5ecd20c46dc3889e608b187bd2e2c8946f0e2a3ee19e799523`；响应式版本按 CC BY-SA 4.0 发布，按比例转为 sRGB WebP（Pillow Lanczos、质量 90），未增强纹理 |
+| 整支带壳毛笋形态参考 | `dist/assets/cizhousun-shoot-400.webp` 400×533、`cizhousun-shoot-800.webp` 800×1067、`cizhousun-shoot-1200.webp` 1200×1600 | 源图 `docs/source-images/bamboo-shoots-whole-cc0.jpg` 3000×4000 | [Fumikas Sagisavas / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bamboo_shoots.jpg)，[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | Commons 原文仅标注 Bamboo shoots；筐装整支带壳毛笋实拍，图像地理标签位于常州，竹种未注明；只作竹笋通用形态参考，不声称是腾冲刺竹。源图 SHA-256：`8a1430ab655ca381a863cc82e87e8d229b5500b40164e34ef89c4a325ad92010`；衍生版本按比例转为 sRGB WebP（Pillow Lanczos、质量 90），未增强纹理。此前加德满都去壳笋照片及原图仅留在源档，不再用于站点 |
 | 洱源海菜花，生境与花形参考 | `dist/assets/eryuan-haicaihua.jpg` 2592×1944 | 2592×1944 | [阿桥 HQ / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E8%8F%9C%E8%8A%B1_Ottelia_acuminata_-%E9%BA%97%E6%B1%9F%E9%BB%91%E9%BE%99%E6%BD%AD%E5%85%AC%E5%9B%AD_Lijiang,_China-_(9229896728).jpg)，[CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | 原尺寸下载；丽江黑龙潭拍摄，图中为花与生境，不是洱源食用嫩茎 |
 | 旬阳拐枣，肉质果梗参考 | `dist/assets/xunyang-guizao.jpg` 920×1050 | 920×1050 | [JMK / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hovenia_dulcis,_fruit.jpg)，[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | 原尺寸下载；拍摄地未注明，不代表旬阳地方实拍 |
 | 大连紫海胆，整只形态参考 | `dist/assets/dalian-purple-urchin.jpg` 1280×1106 | 3275×2831 | [Totti / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Strongylocentrotus_nudus.jpg)，[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 下载 1280 像素版本；日本水族馆个体，非大连渔获 |
