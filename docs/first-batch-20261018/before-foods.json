@@ -1,0 +1,1051 @@
+[
+  {
+    "id": "cigu",
+    "name": "宝应慈姑",
+    "alias": [
+      "慈姑",
+      "茨菇",
+      "茨菰"
+    ],
+    "region": "江苏扬州 · 宝应",
+    "lat": 33.24,
+    "lon": 119.31,
+    "months": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "season": "宝应东荡六镇出产的本地老乌慈姑，十一月中旬至次年四月上旬可采；到货日随年景而变。",
+    "description": "宝应东荡的老乌慈姑，熟后有粉糯口感与轻微回苦，适合慢慢烧。",
+    "short": "冬春的老乌慈姑，和肉一起烧到粉糯。",
+    "flavor": [
+      "粉糯",
+      "微苦"
+    ],
+    "state": "炖烧至中心熟透后",
+    "image": null,
+    "imageAlt": "",
+    "imageCaption": "",
+    "recipeTitle": "和肉一起慢烧",
+    "recipe": "削去外皮，切块后与已经煸出香味的肉同烧，直到慈姑完全熟透、内部变得粉糯。",
+    "pair": "肉汁的浓厚与慈姑的粉糯互相衬托。",
+    "buy": "搜索“宝应慈姑”或“宝应老乌慈姑”，核对宝应东荡产地及本地老乌品种。",
+    "search": "宝应 老乌 慈姑 鲜货",
+    "safety": "慈姑属于水生食材，清洗后应充分做熟。",
+    "seasonStartTerm": 20,
+    "entryTerms": [
+      20
+    ],
+    "sources": [
+      [
+        "国家知识产权局：宝应慈姑产地与老乌品种",
+        "https://www.cnipa.gov.cn/attach/0/20250826010509.pdf"
+      ],
+      [
+        "江苏农产品资料：宝应慈姑采收期",
+        "https://www.zgnjx.org.cn/zyk/ncpdbknew/art/2023/art_5d70fe423a3842a0932ab2b51079bc37.html"
+      ],
+      [
+        "上海虹口区政府：慈姑烧肉吃法",
+        "https://www.shhk.gov.cn/xwzx/002008/002008040/20221114/624e1e8d-2f5a-451d-810e-49ed7c5818fe.html"
+      ]
+    ],
+    "peakMonths": [
+      12,
+      1
+    ],
+    "category": "vegetable",
+    "seasonBasis": "harvest",
+    "taste": "熟后微甜，带一点水生块茎特有的回苦。",
+    "aroma": "土气在烧煮后变淡，肉汁更明显。",
+    "texture": "熟透后粉糯，边缘还能保持块状。",
+    "ingredients": "宝应老乌慈姑净重 300 克，带少量肥肉的猪肉 180 克，姜 2 片，生抽 1 汤匙，清水约 300 毫升。",
+    "steps": [
+      "慈姑洗净削皮，切成约 2 厘米的块；猪肉切小块。",
+      "热锅把肉煸到表面变色、油脂析出，加姜和生抽翻匀。",
+      "倒入慈姑和水，烧开后转小火，加盖烧到慈姑中心粉糯、猪肉熟透。",
+      "开盖略收汤汁，尝味再决定是否补盐。"
+    ],
+    "finish": "筷子能穿过慈姑中心，块形仍完整，汤汁能裹住表面。",
+    "pitfall": "切得太大又收汁过早，外面入味而中心还硬。",
+    "storage": "带泥慈姑放阴凉通风处短放；削皮后尽快做熟。",
+    "images": [
+      {
+        "src": "assets/cigu.webp",
+        "alt": "日本市场售卖的普通慈姑球茎",
+        "note": "普通慈姑"
+      }
+    ],
+    "placeSeasons": [
+      {
+        "name": "江苏扬州 · 宝应",
+        "lat": 33.24,
+        "lon": 119.31,
+        "months": [
+          12,
+          1
+        ],
+        "precision": "month",
+        "source": "https://www.cnipa.gov.cn/attach/0/20250826010509.pdf"
+      }
+    ],
+    "cardImage": "assets/cigu.webp",
+    "cardNote": "普通慈姑实拍 · 非宝应老乌品种",
+    "cardImageNote": "普通慈姑",
+    "dishImage": "assets/baoying-cigu-pork2.jpg",
+    "dishImageAlt": "慈姑和五花肉慢烧后盛在白碗中",
+    "dishCaption": "慈姑切块吸足肉汁，咬开仍带一点细密的粉感；一口慈姑一口肉，热着吃更香。",
+    "context": "慈姑的“粉糯”来自水田球茎熟透后的质地，和蘑菇的滑软完全不同。宝应慈姑以本地老乌品种为核心，购买时先核对产地与品种，不能只凭外形把普通慈姑认成宝应货。餐馆菜单里写“茨菇”的，多是同一食材的另一种写法。带泥鲜货看外皮是否完整，去皮货更要留意切面有没有发黑或发黏。",
+    "kitchen": "这锅菜适合让慈姑与肉汁一起慢慢烧。肉先煸出一点油脂，慈姑下锅后有水和锅盖帮助熟透，最后再把汤收浓。调味宜在接近完成时确认：肉和生抽都带咸，先下足盐容易把慈姑那点微甜压掉。下筷前切开最大的一块，中心不硬才算好。",
+    "market": "慈姑个头有大有小，买回切成相近尺寸会比严格计时更可靠。不要把削皮、切块后的慈姑长时间泡在温水里等菜；备好肉再处理慈姑，颜色和质地都较容易保持。"
+  },
+  {
+    "id": "zengcheng-caixin",
+    "name": "增城迟菜心",
+    "alias": [],
+    "region": "广东广州 · 增城",
+    "lat": 23.29,
+    "lon": 113.83,
+    "months": [
+      12,
+      1
+    ],
+    "flavor": [
+      "清甜",
+      "脆嫩"
+    ],
+    "description": "长得比普通菜心高，冬天抽薹后，粗茎里藏着清甜。",
+    "short": "冬日高茎菜心，先尝一口清甜的菜薹。",
+    "season": "广州增城冬季上市，常见采收期在十二月至次年一月。",
+    "recipeTitle": "白灼后淋一点热油",
+    "recipe": "洗净菜薹，粗茎纵切，沸水短时汆熟；捞起淋少量热油和盐，别把清甜盖住。",
+    "buy": "找“增城迟菜心”，挑茎色鲜亮、切口新鲜、叶片不萎蔫的。",
+    "search": "增城迟菜心 新鲜",
+    "sources": [
+      [
+        "广州市政府：增城迟菜心",
+        "https://www.gz.gov.cn/zt/lhxsdxczx/gzsn/tpxw/content/post_8294274.html"
+      ],
+      [
+        "增城区农业农村局：采收季",
+        "https://www.zc.gov.cn/gzzcnync/gkmlpt/content/10/10586/post_10586813.html?jump=true"
+      ]
+    ],
+    "state": "白灼熟后",
+    "pair": "热油带出菜香，盐只需一点。",
+    "image": "assets/caixin-candidate.jpg",
+    "imageAlt": "菜心植株候选图；具体品种及拍摄地未注明。",
+    "imageCaption": "菜心植株候选图；具体品种及拍摄地未注明。",
+    "imageNote": "",
+    "safety": "",
+    "seasonLabel": "",
+    "seasonPrecision": "month",
+    "seasonBasis": "harvest",
+    "seasonStartTerm": null,
+    "entryTerms": [],
+    "peakMonths": [
+      12,
+      1
+    ],
+    "category": "vegetable",
+    "taste": "粗茎煮熟后有明显的清甜。",
+    "aroma": "叶片热熟后是温和的青菜香。",
+    "texture": "纵切的茎芯爽脆，嫩叶柔软。",
+    "ingredients": "增城迟菜心 350 克，食用油 1 汤匙，盐 2 克，生抽半汤匙。",
+    "steps": [
+      "摘去老叶，粗茎从中间纵切，洗净沥水。",
+      "一大锅水煮沸，加少许盐和油，先放茎，稍后放叶。",
+      "煮到茎芯熟而仍脆，捞出沥水装盘。",
+      "淋少量生抽与热油即可。"
+    ],
+    "finish": "茎芯能轻松咬断，叶片仍绿，盘底不积一大滩水。",
+    "pitfall": "整根粗茎和叶子同一时间下锅，叶子过熟而茎芯还硬。",
+    "storage": "叶菜冷藏、尽快吃；装袋前保持叶面干爽。",
+    "placeSeasons": [
+      {
+        "name": "广东广州 · 增城",
+        "lat": 23.29,
+        "lon": 113.83,
+        "months": [
+          12,
+          1
+        ],
+        "precision": "month",
+        "source": "https://www.gz.gov.cn/zt/lhxsdxczx/gzsn/tpxw/content/post_8294274.html"
+      }
+    ],
+    "dishImage": "assets/zengcheng-caixin-plem.jpg",
+    "dishImageAlt": "白灼菜心茎叶，表面带少量油光",
+    "dishCaption": "粗茎白灼到刚熟，仍有脆劲；趁热淋一点油和生抽，青菜的清甜更显。",
+    "cardNote": "形态参考 · 产地未注明",
+    "context": "迟菜心的名字说的是冬季上市节奏，最有辨识度的仍是粗茎里脆甜的茎芯。与普通菜心相比，能不能买到“增城”产地且品相合适的批次，比只盯着菜名重要。冬天遇到整株，先看切口是否湿润、叶片是否挺立；茎很粗却已空心或发硬的，白灼之后也很难变嫩。",
+    "kitchen": "白灼时把粗茎纵切，是让热水更快到达中心，不必为了等茎熟而把叶片煮暗。沥水后再淋热油与少量生抽，调味会附在菜身上，也不会把盘底冲成咸汤。第一口尝茎芯，再尝叶片，比较两处的甜与柔。若想保留菜心本味，蒜和蚝油都不是必须。",
+    "market": "商品名里“迟菜心”和普通“菜心”常混用，买前可让卖家提供整株与切口照片、确认产地与采收日。叶菜到家别整袋闷湿；散开冷藏，越早做越容易得到脆茎与嫩叶。先看整株形态，再问这一把菜是何时采下来的；只写“广东菜心”的商品，还不能确认是增城迟菜心。"
+  },
+  {
+    "id": "cizhousun",
+    "name": "刺竹笋",
+    "alias": [],
+    "region": "云南保山 · 腾冲",
+    "lat": 25.02,
+    "lon": 98.5,
+    "months": [
+      10,
+      11
+    ],
+    "flavor": [
+      "脆嫩",
+      "清香"
+    ],
+    "description": "秋天才冒出的竹笋，剥掉外壳，留下干净的嫩芯。",
+    "short": "剥壳焯熟，凉拌一盘秋笋。",
+    "season": "云南腾冲和石屏的地方报道记录农历九月至十月前后的秋季出笋。",
+    "recipeTitle": "酸木瓜醋拌刺竹笋",
+    "recipe": "笋去壳切片，先焯熟、沥干；加蒜、辣椒、香菜与少量酸木瓜醋拌匀。",
+    "buy": "买已去壳鲜笋仍需确认采收时间和冷藏状态；发黏、有异味的不买。",
+    "search": "腾冲 刺竹笋 鲜笋",
+    "sources": [
+      [
+        "腾冲市政府：刺竹笋",
+        "https://www.tengchong.gov.cn/info/1015/5774883.htm"
+      ],
+      [
+        "石屏县政府：秋季竹笋",
+        "https://www.hhsp.gov.cn/info/1051/464681.htm"
+      ]
+    ],
+    "state": "剥壳、焯熟后",
+    "pair": "酸木瓜醋提亮竹笋的清香，辣椒留一点暖意。",
+    "image": "assets/cizhousun-shoot-400.webp",
+    "imageAlt": "菜市场筐中整支带壳的毛笋，尖端、层叠笋壳与完整笋身可见",
+    "imageCaption": "整支带壳毛笋形态参考；常州拍摄，非腾冲刺竹品种照片。",
+    "imageNote": "",
+    "safety": "鲜竹笋先焯熟再拌，勿把生笋直接入凉菜。",
+    "seasonLabel": "",
+    "seasonPrecision": "month",
+    "seasonBasis": "harvest",
+    "seasonStartTerm": null,
+    "entryTerms": [],
+    "peakMonths": [
+      10,
+      11
+    ],
+    "category": "vegetable",
+    "taste": "竹笋本身味道淡，酸木瓜醋让酸味更明显。",
+    "aroma": "焯后留下清淡笋香。",
+    "texture": "嫩芯爽脆，外壳和老根必须去掉。",
+    "ingredients": "刺竹笋净笋 300 克，酸木瓜醋 2 茶匙，蒜 1 瓣，香菜少许，盐适量。",
+    "steps": [
+      "剥去外壳和老根，把嫩芯切薄片，洗净。",
+      "沸水下笋片，煮到中心熟透，捞出沥干放凉。",
+      "加酸木瓜醋、蒜末、香菜与盐拌匀，静置片刻再尝味。"
+    ],
+    "finish": "每片熟透仍脆，酸味明亮而不刺口。",
+    "pitfall": "笋片厚薄悬殊，小片软了大块仍生硬。",
+    "storage": "鲜笋到手尽快剥壳处理，冷藏短放；切面发黏有异味不要吃。",
+    "placeSeasons": [
+      {
+        "name": "云南保山 · 腾冲",
+        "lat": 25.02,
+        "lon": 98.5,
+        "months": [
+          10,
+          11
+        ],
+        "precision": "month",
+        "source": "https://www.tengchong.gov.cn/info/1015/5774883.htm"
+      }
+    ],
+    "dishImage": "assets/cizhousun-salad.jpg",
+    "dishImageAlt": "刺竹笋切成细片拌入酸辣调味，盛在盘中",
+    "dishCaption": "笋片焯熟后仍爽脆，酸味一拌就醒口；挑嫩芯吃，别让老根坏了这一盘。",
+    "cardNote": "整支带壳鲜笋 · 通用形态参考",
+    "context": "刺竹笋的秋季出笋，使它在常见的春笋、冬笋之外多了一个值得等的时段。产区报道以农历月份描述时令，换算到公历会随年份变化，所以页面只给秋季范围，不制造某一天“最佳”的错觉。买笋先看嫩芯和根部，厚重外壳不是可吃部分，净笋重量会明显少于整笋。",
+    "kitchen": "酸木瓜醋拌笋，酸味用于提起笋的清淡，不是为了盖住生笋的刺激。先把笋片煮透，沥干放凉，再拌蒜与醋；若一锅笋片厚薄不一，厚的可先下水，薄的稍后入锅。香菜只需一点作收尾。吃到发涩发硬的大片，多半是老根没去净或处理不足。",
+    "market": "市场上“云南野笋”可能指很多竹种，若想要刺竹笋，问清具体竹种、产地和处理状态。盐渍笋、发酵笋与这份鲜笋凉拌法有不同的脱盐和清洗步骤。笋的外壳往往占去不少重量，菜谱里的三百克指剥壳后的嫩芯，不是带壳整笋。"
+  },
+  {
+    "id": "jinjiang-toushui-zicai",
+    "name": "晋江头水紫菜",
+    "alias": [
+      "东石头水紫菜"
+    ],
+    "region": "福建泉州 · 晋江东石",
+    "lat": 24.72,
+    "lon": 118.44,
+    "months": [
+      11,
+      12,
+      1
+    ],
+    "flavor": [
+      "海鲜",
+      "鲜香",
+      "柔软"
+    ],
+    "description": "“头水”指一茬紫菜第一次长成、第一次采割，口感比后续批次更幼嫩细滑。晋江东石冬季采收头水紫菜，晒干后香气鲜明，煮汤时只需一小片就很提鲜。",
+    "short": "第一次采割的紫菜细嫩滑口，冬季鲜收。",
+    "season": "晋江东石头水紫菜以冬季首批最幼嫩，泡开薄软鲜香，煮汤最合适。",
+    "recipeTitle": "紫菜蛋花汤",
+    "recipe": "头水紫菜干品 8 克，鸡蛋 2 个，清水 550 毫升，葱花少许，盐约 2 克，香油几滴。",
+    "buy": "搜索“晋江东石头水紫菜”，核对产地和采割批次，购买干片时查看包装的防潮说明。",
+    "search": "晋江 东石 头水紫菜",
+    "sources": [
+      [
+        "晋江市人民政府：头水紫菜采收旺季与嫩滑口感",
+        "https://www.jinjiang.gov.cn/xxgk/jjyw/202512/t20251209_3239496.htm"
+      ]
+    ],
+    "state": "泡软并煮熟后",
+    "pair": "紫菜添鲜，鸡蛋让汤口更柔和。",
+    "image": "assets/jinjiang-gim-sheet.jpg",
+    "imageAlt": "深绿黑色的干紫菜片",
+    "imageCaption": "",
+    "imageNote": "",
+    "safety": "",
+    "seasonLabel": "",
+    "seasonPrecision": "month",
+    "seasonBasis": "harvest",
+    "seasonStartTerm": null,
+    "entryTerms": [],
+    "peakMonths": [
+      12
+    ],
+    "category": "vegetable",
+    "intro": "“头水”是紫菜长成后的第一次采割，口感比后续批次更幼嫩细滑。鲜品上岸后常及时加工成干紫菜；煮汤时下锅时间短，能留下海藻鲜香和柔软，不必加很多调味。",
+    "taste": "鲜咸温和，汤里有清楚的海藻鲜味。",
+    "aroma": "干片带淡淡海香，热汤一冲香气更明显。",
+    "texture": "泡开后薄软滑嫩，头水批次纤维感较轻。",
+    "place": "东石“头水”是紫菜长成后的第一次采割，属于采收批次而非新的品种；当季鲜紫菜多及时加工成干片，干片耐储存。",
+    "context": "买干紫菜看产地和采割批次，选干燥松散、没有霉味的；汤中最后下锅，煮开就关火，细片不容易化散。头水干紫菜海味较集中，汤里盐少放些；只需快速冲去浮尘，不必长时间浸泡。蛋液等紫菜泡开、汤水重新沸起时淋入，蛋花会更匀，也不容易结团。做好的汤趁热喝，干紫菜吸水后很快变软。",
+    "ingredients": "两人份：头水紫菜干品 8 克，鸡蛋 2 个，清水 550 毫升，葱花少许，盐约 2 克，香油几滴。",
+    "steps": [
+      "紫菜掰成小片，快速冲去浮尘后沥水；鸡蛋打散。",
+      "清水烧开，加盐，放入紫菜煮到完全泡软、汤色转深。",
+      "缓缓淋入蛋液，待蛋花凝固、汤再次滚起就关火。",
+      "撒葱花，滴几滴香油，趁热喝。"
+    ],
+    "finish": "紫菜片柔软展开，蛋花凝固，汤里没有干硬紫菜芯。",
+    "pitfall": "紫菜久煮会碎散、鲜香变弱；先泡软，入汤后煮开即关火。",
+    "buyDetail": "选干燥松散、颜色自然、没有霉味的紫菜片；受潮结团的不要买。",
+    "storage": "干紫菜密封避光、防潮保存；开封后扎紧袋口，若出现霉味或受潮发黏就不要食用。",
+    "placeSeasons": [
+      {
+        "name": "福建泉州 · 晋江东石",
+        "lat": 24.72,
+        "lon": 118.44,
+        "months": [
+          12
+        ],
+        "precision": "month",
+        "source": "https://www.jinjiang.gov.cn/xxgk/jjyw/202512/t20251209_3239496.htm"
+      }
+    ],
+    "dishImage": "assets/jinjiang-zicai-soup.jpg",
+    "dishImageAlt": "紫菜与蛋花煮成一碗清汤",
+    "dishCaption": "一小片紫菜泡开便铺满汤面，蛋花轻软；喝一口，海味先到，汤口却很清。"
+  },
+  {
+    "id": "lintong-huojing-shizi",
+    "name": "临潼火晶柿子",
+    "alias": [
+      "临潼柿子",
+      "火晶柿"
+    ],
+    "region": "陕西西安 · 临潼",
+    "lat": 34.37,
+    "lon": 109.21,
+    "months": [
+      10
+    ],
+    "flavor": [
+      "蜜甜",
+      "细腻",
+      "柔软"
+    ],
+    "description": "临潼火晶柿子个头小、熟后橙红透亮，果肉软得像蜜冻，甜味集中。它要等到熟软才有这一口细甜；青硬时的涩，与脆柿完全不是一种吃法。",
+    "short": "十月熟软的小柿子，掀开果皮用勺舀着吃。",
+    "season": "临潼火晶柿子通常在十月中下旬成熟；采下后继续后熟，等果肉轻轻一按有弹软感时最适合鲜食。每年日期随气温变化。",
+    "recipeTitle": "等软熟，用勺子舀着吃",
+    "recipe": "成熟火晶柿子 4 枚；可配原味酸奶 100 克。",
+    "buy": "挑果皮完整、橙红发亮、果肩饱满的小果；若到手仍偏硬，放在阴凉处后熟，裂口、渗汁或有酒味的不要买。",
+    "search": "临潼 火晶柿子 鲜果",
+    "sources": [
+      [
+        "华商网：临潼火晶柿子十月成熟",
+        "https://news.hsw.cn/system/2019/1101/1126219.shtml"
+      ],
+      [
+        "FreshPlaza：火晶柿子鲜果与熟度",
+        "https://www.freshplaza.com/north-america/article/9154223/production-of-chinese-fire-crystal-persimmons-returns-to-normal/"
+      ]
+    ],
+    "state": "完全软熟后，掀皮用勺舀食",
+    "pair": "原味酸奶带一点轻酸，衬出柿肉的蜜甜；不必另加糖。",
+    "image": "assets/lintong-huojing.webp",
+    "imageAlt": "树上成熟的临潼火晶柿子",
+    "imageCaption": "",
+    "imageNote": "",
+    "safety": "",
+    "seasonLabel": "十月软熟期",
+    "seasonPrecision": "month",
+    "seasonBasis": "maturity",
+    "seasonStartTerm": null,
+    "entryTerms": [],
+    "peakMonths": [
+      10
+    ],
+    "category": "fruit",
+    "intro": "临潼火晶柿子个头小，熟透后果皮橙红发亮，果肉细软浓甜。它最适合等到轻轻一按会弹软时吃；掀开薄皮，用小勺舀着吃，甜味像一小口蜜冻。",
+    "taste": "完全软熟后甜味浓，酸味很轻；未熟的果子涩味明显。",
+    "aroma": "熟果有温和的柿香，带一点蜂蜜般的甜香。",
+    "texture": "果肉细腻软滑，熟透后几乎不用咀嚼；硬果则脆而涩。",
+    "place": "",
+    "ingredients": "成熟火晶柿子 4 枚；原味酸奶 100 克（可选）。",
+    "steps": [
+      "先洗净果皮并擦干，检查有没有裂口、渗汁或发酵气味。",
+      "轻轻按果身，已经弹软的掀开果蒂附近薄皮，用小勺舀果肉吃。",
+      "若果子偏硬，放阴凉处继续后熟，每天摸一次；软熟后再冷藏。",
+      "想搭配酸奶时，把少量果肉舀入无糖酸奶，不必再加糖。"
+    ],
+    "finish": "果肉均匀软滑、没有明显涩口的硬芯，甜味清楚但没有酒味。",
+    "pitfall": "把硬果当脆柿直接吃，容易涩；火晶柿子要等软熟，裂口渗汁或有酒味则已变质。",
+    "buyDetail": "",
+    "storage": "硬果放阴凉通风处后熟；软熟果放冰箱冷藏并尽快吃，避免堆压。",
+    "placeSeasons": [
+      {
+        "name": "陕西西安 · 临潼",
+        "lat": 34.37,
+        "lon": 109.21,
+        "months": [
+          10
+        ],
+        "precision": "month",
+        "source": "https://news.hsw.cn/system/2019/1101/1126219.shtml"
+      }
+    ],
+    "cutImage": "assets/lintong-huojing-cut.jpg",
+    "cutImageAlt": "掰开的临潼火晶柿子露出晶亮橙红果肉",
+    "cutCaption": "薄皮轻轻掰开，蜜亮的果肉几乎要流出来；等它软透，用小勺一口口舀着吃。",
+    "tarotImage": {
+      "src": "assets/lintong-huojing-cut.jpg",
+      "alt": "掰开的临潼火晶柿子露出晶亮橙红果肉",
+      "kind": "fresh",
+      "note": "展示鲜果可食状态，并非此配方的完整装盘照片；酸奶、糖等可选配料未必在图中。原摄影和许可见图片资料页。"
+    }
+  },
+  {
+    "id": "lyg-shaguang-fish",
+    "name": "连云港沙光鱼",
+    "alias": [
+      "连云港沙光"
+    ],
+    "region": "江苏连云港",
+    "lat": 34.6,
+    "lon": 119.22,
+    "months": [
+      10,
+      11
+    ],
+    "flavor": [
+      "鲜甜",
+      "细嫩",
+      "鲜香"
+    ],
+    "description": "沙光鱼是连云港沿海秋末冬初常吃的一口小海鲜，鱼肉细嫩、鲜味清楚。当地有“十月沙光赛羊汤”的说法，这里的十月指农历十月；霜降前后鱼体长成，正是尝鲜的好时段。",
+    "short": "霜降前后鱼肉肥嫩，和豆腐煮一锅清汤。",
+    "season": "连云港地方资料记载，沙光鱼到霜降时体形长成；当地俗语称“十月沙光赛羊汤”，这里的十月指农历十月。秋末至初冬鱼肉肥美，具体日子随海况变化。",
+    "recipeTitle": "沙光鱼豆腐汤",
+    "recipe": "沙光鱼 350 克，嫩豆腐 200 克，姜 3 片，葱 1 根，热水 600 毫升，食用油 1 茶匙，盐约 2 克。",
+    "buy": "挑鱼眼清亮、鱼身完整有弹性、鳃色鲜红且无酸腐异味的鲜鱼；询问捕捞或到货时间，别把冷冻鱼当作当日鲜捕。",
+    "search": "连云港 沙光鱼 鲜鱼",
+    "sources": [
+      [
+        "连云港市人民政府：沙光鱼形态与秋末冬初吃法",
+        "https://www.lyg.gov.cn/zglygzfmhwz/szgc/content/efda9c3f-ea1e-4220-a6bb-476e14af6120.htm"
+      ]
+    ],
+    "state": "鱼肉完全熟透后",
+    "pair": "豆腐吸进鱼汤的鲜味，姜葱压住腥气但不盖住鱼肉。",
+    "image": "assets/lyg-shaguang-fish.webp",
+    "imageAlt": "连云港沙光鱼的细长鱼身",
+    "imageCaption": "",
+    "imageNote": "",
+    "safety": "鱼汤煮至鱼肉完全不透明、容易剥离鱼刺；吃时留意细刺，鱼鲜到手后及时冷藏。",
+    "seasonLabel": "霜降至初冬",
+    "seasonPrecision": "season",
+    "seasonBasis": "maturity",
+    "seasonStartTerm": null,
+    "entryTerms": [],
+    "peakMonths": [
+      10,
+      11
+    ],
+    "category": "protein",
+    "intro": "连云港沙光鱼体形细长，鱼肉洁白细嫩，鲜味清楚。冬季鱼肉更肥美，煮一锅豆腐汤就能尝出它的鲜甜；鱼身不大、细刺较多，吃时慢一点，先把鱼肉沿骨剥开。",
+    "taste": "鱼肉鲜甜清淡，汤里有海鲜的鲜味而不厚重。",
+    "aroma": "生鱼有清爽海水气息，煮熟后是温和的鱼鲜香。",
+    "texture": "肉质细嫩，煮久容易散；小鱼刺较多。",
+    "place": "",
+    "ingredients": "沙光鱼 350 克，嫩豆腐 200 克，姜 3 片，葱 1 根，热水 600 毫升，食用油 1 茶匙，盐约 2 克。",
+    "steps": [
+      "鱼去内脏后冲净，擦干；豆腐切块，葱切段。",
+      "锅烧热放油和姜片，鱼两面略煎至表面变色。",
+      "加入热水，大火煮开后转中火煮约 8 分钟，再放豆腐煮 4 分钟。",
+      "鱼肉全熟、汤色变白后加盐，撒葱段；上桌前检查鱼肉并提醒留意细刺。"
+    ],
+    "finish": "鱼肉不透明、能沿骨轻轻剥开，豆腐吸入鲜汤但仍保持块形。",
+    "pitfall": "鱼煮太久会散成碎肉；用热水下锅，鱼肉熟透后就放豆腐并及时关火。",
+    "buyDetail": "",
+    "storage": "鲜鱼到手立即冷藏，当天烹调；暂不吃可尽快冷冻，解冻后不要反复冻融。",
+    "placeSeasons": [
+      {
+        "name": "江苏连云港",
+        "lat": 34.6,
+        "lon": 119.22,
+        "months": [
+          10,
+          11
+        ],
+        "precision": "season",
+        "source": "https://www.lyg.gov.cn/zglygzfmhwz/szgc/content/efda9c3f-ea1e-4220-a6bb-476e14af6120.htm"
+      }
+    ],
+    "dishImage": "assets/lyg-shaguang-soup.jpg",
+    "dishImageAlt": "砂锅里的沙光鱼豆腐汤，鱼肉与豆腐浸在乳白汤中",
+    "dishCaption": "鱼肉煮得细嫩，豆腐吸满奶白汤汁；先喝一口热汤，再慢慢剥鱼肉，留意细刺。"
+  },
+  {
+    "id": "lancang-nannai-duoyi",
+    "name": "澜沧南乃多依果",
+    "alias": [
+      "南乃多依果",
+      "澜沧甜多依",
+      "鲜食多依果"
+    ],
+    "region": "云南普洱 · 澜沧上允南乃",
+    "lat": 23,
+    "lon": 99.85,
+    "category": "fruit",
+    "months": [
+      10
+    ],
+    "peakMonths": [
+      10
+    ],
+    "seasonBasis": "harvest",
+    "seasonPrecision": "month",
+    "seasonLabel": "十月有鲜果采收记录",
+    "season": "南乃村十月底的产地报道记录引种鲜食多依果正在采收，果肉细腻、香脆多汁、酸里带甜。品种名未公开，本站不把其他地区的极酸野果、加工果或不同多依种直接混作同一批鲜果。",
+    "description": "枝头青绿透红的小果，切开后是一口清脆的酸甜。澜沧上允南乃村种的是引种鲜食品系，地方报道形容它香脆多汁；先洗净切瓣原味吃，才能认识这一批多依的果香。",
+    "intro": "枝头青绿透红的小果，切开后是一口清脆的酸甜。澜沧上允南乃村种的是引种鲜食品系，地方报道形容它香脆多汁；先洗净切瓣原味吃，才能认识这一批多依的果香。",
+    "short": "青绿透红的小果，切瓣尝一口脆润酸甜。",
+    "taste": "酸里带甜；成熟度和鲜食品系会影响酸涩强弱。",
+    "aroma": "清新的青果香。",
+    "texture": "鲜果肉脆、多汁，果芯与硬籽需要剔除。",
+    "flavor": [
+      "酸甜",
+      "脆嫩",
+      "多汁"
+    ],
+    "state": "成熟鲜食品系多依果清洗、去芯去籽后",
+    "recipeTitle": "南乃多依鲜果小碟",
+    "ingredients": "成熟鲜食南乃多依果 250 克，饮用水适量（清洗用）。",
+    "recipe": "成熟鲜食南乃多依果 250 克，饮用水适量（清洗用）。",
+    "steps": [
+      "认准来源明确的澜沧南乃鲜食品系，挑成熟、无破损霉烂的果子；流水洗净。",
+      "切成易入口的小瓣，去掉硬果芯、籽和损伤部分；发现腐败异味时不食用。",
+      "分两小碟先尝原味。初次认识不加辣椒粉或糖浆，以免只记住蘸料的味道。"
+    ],
+    "finish": "果芯与硬籽已去除，果肉仍脆润，切面无腐败。",
+    "pitfall": "把报道中的鲜食品系与任何名叫“酸多依”的野果混同，或用加工果代替鲜果。",
+    "pair": "这份只尝原味，让酸、甜、果香分开出现。",
+    "buy": "询问澜沧上允南乃产地、鲜食品系与采收日期；不凭“多依”二字认定果味相同。",
+    "storage": "完整鲜果冷藏防失水，切瓣后及时食用；不要把湿果久闷在常温袋中。",
+    "safety": "果芯和硬籽去掉再吃；不凭网站配图自行辨认、采摘未知野果。",
+    "search": "澜沧南乃多依果 新鲜 产地",
+    "sources": [
+      [
+        "普洱日报：南乃村鲜食多依品系、十月采收及口感",
+        "https://www.puerw.cn/content/202510/31/c460801.html"
+      ],
+      [
+        "生物多样性：多依属中文名及不同多依植物背景",
+        "https://www.biodiversity-science.net/CN/10.17520/biods.2018254"
+      ]
+    ],
+    "place": "地图坐标表示产区范围，不指向具体农场。",
+    "context": "",
+    "kitchen": "这是一份便于家里尝鲜的两人份做法，调味先少后多。",
+    "market": "",
+    "image": "assets/lancang-nannai-duoyi-serving-generated.webp",
+    "imageAlt": "澜沧南乃多依果的鲜果生成示意图，非产地或品种实拍",
+    "imageCaption": "生成示意图，非实物摄影；用于展示鲜食或熟食状态，不作物种、品种和产地鉴别。",
+    "cardImage": "assets/lancang-nannai-duoyi-serving-generated.webp",
+    "cardImageAlt": "澜沧南乃多依果鲜食画面生成示意图，非实物摄影",
+    "cardNote": "生成示意 · 非实物摄影",
+    "cardImageNote": "生成示意图，非实物摄影",
+    "images": [],
+    "articleImages": [],
+    "seasonEvidence": "南乃村十月底的产地报道记录引种鲜食多依果正在采收，果肉细腻、香脆多汁、酸里带甜。品种名未公开，本站不把其他地区的极酸野果、加工果或不同多依种直接混作同一批鲜果。",
+    "placeSeasons": [
+      {
+        "name": "云南普洱 · 澜沧上允南乃",
+        "lat": 23,
+        "lon": 99.85,
+        "months": [
+          10
+        ],
+        "precision": "month",
+        "source": "https://www.puerw.cn/content/202510/31/c460801.html"
+      }
+    ],
+    "cutImage": "assets/lancang-nannai-duoyi-serving-generated.webp",
+    "cutImageAlt": "澜沧南乃多依果成熟鲜果生成示意图，非品种实拍",
+    "cutCaption": "南乃多依鲜果小碟 · 生成示意图，非实物摄影；图中整果或切瓣展示鲜食状态，食用前仍须清洗并去核。",
+    "tarotImage": {
+      "src": "assets/lancang-nannai-duoyi-serving-generated.webp",
+      "alt": "澜沧南乃多依果鲜果生成示意图，非实物摄影",
+      "kind": "fresh",
+      "note": "生成示意图，非实物摄影；展示成熟鲜果，不用于品种或产地鉴定。"
+    }
+  },
+  {
+    "id": "helan-luosicai",
+    "name": "贺兰鲜螺丝菜",
+    "alias": [
+      "鲜草石蚕",
+      "宝塔菜",
+      "地溜子"
+    ],
+    "region": "宁夏银川 · 贺兰金贵镇、常信乡",
+    "lat": 38.55,
+    "lon": 106.35,
+    "category": "vegetable",
+    "months": [
+      11
+    ],
+    "peakMonths": [
+      11
+    ],
+    "seasonBasis": "harvest",
+    "seasonPrecision": "month",
+    "seasonLabel": "十一月有鲜货采收记录",
+    "seasonPhase": {
+      "label": "正在开季",
+      "note": "地方报道记录 11 月田间采收；不是瓶装酱菜。"
+    },
+    "season": "宁夏地方报道记录贺兰螺丝菜于十一月采收并以鲜货销售。报道日期说明常年窗口，不代表 2026 年上市日已确认。",
+    "description": "一节节乳白地下块茎绕出螺旋，名字带“蚕”却不是虫。新鲜草石蚕洗净后脆嫩，外形就足够让人记住。",
+    "intro": "一节节乳白地下块茎绕出螺旋，名字带“蚕”却不是虫。新鲜草石蚕洗净后脆嫩，外形就足够让人记住。",
+    "short": "鲜挖地下块茎，脆嫩的螺旋形小菜。",
+    "taste": "清淡微甜，适合少量盐和醋提味。",
+    "aroma": "清新的根茎气息。",
+    "texture": "鲜品爽脆；熟后更柔软。",
+    "flavor": [
+      "脆嫩",
+      "清甜"
+    ],
+    "state": "新鲜草石蚕充分洗净并熟制后",
+    "recipeTitle": "清炒鲜螺丝菜",
+    "ingredients": "鲜螺丝菜 250 克，蒜 1 瓣，食用油 10 毫升，盐约 2 克，清水适量。",
+    "steps": [
+      "逐节搓洗鲜螺丝菜，去掉泥土和破损部分。",
+      "沸水中煮至全熟，捞起沥干。",
+      "少油炒香蒜末，放入螺丝菜翻炒至热透，加盐调味。"
+    ],
+    "finish": "每节都熟透，仍保留清脆口感。",
+    "pitfall": "把鲜货与瓶装酱菜混为一类，或只焯不熟。",
+    "pair": "蒜与少量醋衬出根茎清甜；先尝原味再加醋。",
+    "buy": "搜索“贺兰螺丝菜 鲜货”，确认鲜挖带泥或清洗鲜品；排除瓶装腌菜。",
+    "storage": "鲜货冷藏并尽快烹调，按商家说明处理。",
+    "safety": "彻底洗净并熟制；不采食身份不明的野生块茎。",
+    "search": "贺兰螺丝菜 鲜货 新鲜",
+    "sources": [
+      [
+        "宁夏日报：贺兰鲜螺丝菜采收与鲜货销售",
+        "https://nx.people.com.cn/BIG5/n2/2023/1112/c192482-40637450.html"
+      ]
+    ],
+    "image": "assets/helan-luosicai-generated.webp",
+    "imageAlt": "鲜螺丝菜地下块茎生成示意图，非贺兰产地实拍",
+    "imageCaption": "生成示意图，非实物摄影；仅展示鲜螺丝菜形态，不作产地鉴别。",
+    "cardImage": "assets/helan-luosicai-generated.webp",
+    "cardImageAlt": "洗净鲜螺丝菜的生成示意图，非实物摄影",
+    "cardNote": "生成示意 · 非实物摄影",
+    "images": [],
+    "articleImages": [],
+    "place": "地图点表示贺兰产区范围，不指向具体农场。",
+    "context": "草石蚕又称螺丝菜；“宝塔菜”也常指加工后的腌渍产品，采购时请核对商品状态。",
+    "kitchen": "本站家常做法建议，不代表地方古方。",
+    "placeSeasons": [
+      {
+        "name": "宁夏银川 · 贺兰",
+        "lat": 38.55,
+        "lon": 106.35,
+        "months": [
+          11
+        ],
+        "precision": "month",
+        "source": "https://nx.people.com.cn/BIG5/n2/2023/1112/c192482-40637450.html"
+      }
+    ],
+    "seasonEvidence": "宁夏地方报道有十一月田间采收记录；该历史批次不代表 2026 年具体上市日期。",
+    "dishImage": "assets/helan-luosicai-generated.webp",
+    "dishImageAlt": "清炒鲜螺丝菜生成示意图，非实物摄影",
+    "dishCaption": "清炒鲜螺丝菜 · 生成示意图，非实物摄影。"
+  },
+  {
+    "id": "lanzhou-xianbaihe",
+    "name": "兰州鲜甜百合",
+    "alias": [
+      "七里河鲜百合",
+      "兰州鲜百合"
+    ],
+    "region": "甘肃兰州 · 七里河西果园",
+    "lat": 36.05,
+    "lon": 103.72,
+    "category": "vegetable",
+    "months": [
+      11
+    ],
+    "peakMonths": [
+      11
+    ],
+    "seasonBasis": "harvest",
+    "seasonPrecision": "month",
+    "seasonLabel": "十一月有鲜鳞茎采挖记录",
+    "seasonPhase": {
+      "label": "正在开季",
+      "note": "历史现场报道记录 11 月 1 日采挖；不等同 2026 年上市日。"
+    },
+    "season": "兰州晚报记录七里河西果园于十一月开挖鲜百合。这里说的是当季鲜鳞茎，不是干百合常年供应；历史报道不代表 2026 年具体上市日。",
+    "description": "刚从土里挖出的百合鳞片厚实、色白清甜。鲜百合可以清炒或蒸熟尝本味，与干品煲汤的风味和状态不同。",
+    "intro": "刚从土里挖出的百合鳞片厚实、色白清甜。鲜百合可以清炒或蒸熟尝本味，与干品煲汤的风味和状态不同。",
+    "short": "鲜鳞片清炒或清蒸，尝七里河这一口清甜。",
+    "taste": "清甜细腻，少盐即可。",
+    "aroma": "淡雅清香。",
+    "texture": "鲜鳞片柔嫩、熟后细糯。",
+    "flavor": [
+      "清甜",
+      "细腻"
+    ],
+    "state": "新鲜可食百合鳞片洗净并熟制后",
+    "recipeTitle": "清蒸鲜百合",
+    "ingredients": "鲜百合鳞片 250 克，盐少许，食用油 5 毫升。",
+    "steps": [
+      "挑去变色、破损鳞片，逐片洗净沥干。",
+      "铺入盘中，水开后蒸约 6–8 分钟，按鳞片厚薄调整至熟透。",
+      "趁热拌少量盐与油，先尝原味。"
+    ],
+    "finish": "鳞片熟透柔软，仍完整不散。",
+    "pitfall": "把鲜鳞茎换成干百合按同一时间蒸煮。",
+    "pair": "清蒸少调味，让鲜鳞片的甜味先被尝到。",
+    "buy": "确认七里河兰州百合、鲜鳞茎及采挖批次，勿用干百合替代。",
+    "storage": "鲜百合冷藏并尽早食用；以卖家建议为准。",
+    "safety": "食用前去除腐败变色鳞片并充分清洗熟制。",
+    "search": "兰州 七里河 鲜百合 采挖",
+    "sources": [
+      [
+        "兰州晚报：七里河百合采收现场（11 月 1 日）",
+        "https://finance.sina.com.cn/jjxw/2023-11-03/doc-imzthcta0382103.shtml"
+      ]
+    ],
+    "image": "assets/lanzhou-xianbaihe-generated.webp",
+    "imageAlt": "新鲜兰州百合鳞片生成示意图，非产地实拍",
+    "imageCaption": "生成示意图，非实物摄影；仅展示鲜百合食用状态。",
+    "cardImage": "assets/lanzhou-xianbaihe-generated.webp",
+    "cardImageAlt": "清蒸鲜百合生成示意图，非实物摄影",
+    "cardNote": "生成示意 · 非实物摄影",
+    "images": [],
+    "articleImages": [],
+    "place": "地图点表示七里河产区范围，不指向具体农田。",
+    "context": "鲜百合的鳞片厚实细腻；全年可买到的干百合另属商品状态。",
+    "kitchen": "本站清蒸做法建议。",
+    "placeSeasons": [
+      {
+        "name": "甘肃兰州 · 七里河西果园",
+        "lat": 36.05,
+        "lon": 103.72,
+        "months": [
+          11
+        ],
+        "precision": "month",
+        "source": "https://finance.sina.com.cn/jjxw/2023-11-03/doc-imzthcta0382103.shtml"
+      }
+    ],
+    "seasonEvidence": "兰州晚报报道记录 11 月 1 日现场采挖；不代表 2026 年具体上市日期。",
+    "dishImage": "assets/lanzhou-xianbaihe-generated.webp",
+    "dishImageAlt": "清蒸鲜百合生成示意图，非实物摄影",
+    "dishCaption": "清蒸鲜百合 · 生成示意图，非实物摄影。"
+  },
+  {
+    "id": "binchuan-renong1-yuganzi",
+    "name": "宾川“热农1号”余甘子",
+    "alias": [
+      "热农1号余甘子",
+      "宾川余甘子"
+    ],
+    "region": "云南大理 · 宾川",
+    "lat": 25.83,
+    "lon": 100.58,
+    "category": "fruit",
+    "months": [
+      10,
+      11
+    ],
+    "peakMonths": [
+      10,
+      11
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "approximate-window",
+    "seasonLabel": "十月末至十一月中旬较佳赏味期",
+    "seasonPhase": {
+      "label": "处于较佳赏味期",
+      "note": "宾川连续三年采收批次比较支持这一窗口；仅适用于“热农1号”，不外推到其他产区或品种。"
+    },
+    "season": "研究比较宾川连续三年的不同采收批次，支持“热农1号”余甘子十月末至十一月中旬为较佳采收与品质窗口。不要把结论套用于其他品种，也不据此推定 2026 年上市日。",
+    "description": "这不是笼统的“秋冬油甘”。宾川“热农1号”在适期呈饱满果形，入口从青酸转向回甘；采收批次和品种都要核对。",
+    "intro": "这不是笼统的“秋冬油甘”。宾川“热农1号”在适期呈饱满果形，入口从青酸转向回甘；采收批次和品种都要核对。",
+    "short": "锁定宾川品种与批次，尝青酸之后的回甘。",
+    "taste": "入口酸涩，细嚼后回甘。",
+    "aroma": "清淡的青果香。",
+    "texture": "果肉紧实多汁。",
+    "flavor": [
+      "酸涩",
+      "回甘",
+      "爽脆"
+    ],
+    "state": "成熟鲜果洗净去核后",
+    "recipeTitle": "去核鲜尝热农1号余甘子",
+    "ingredients": "成熟鲜余甘子 160 克，饮用水适量（清洗用）。",
+    "steps": [
+      "核对品种为“热农1号”，挑去破损果并洗净。",
+      "沿果核切下果肉，小口鲜尝；先不蘸盐或糖。",
+      "如入口酸涩较明显，可配清水慢慢品尝。"
+    ],
+    "finish": "果肉无腐败或霉变，先尝酸感，再体会回甘。",
+    "pitfall": "把任何产地余甘子或亮脆品种都写成热农1号的最佳期。",
+    "pair": "清水不会遮住果实由酸转甘的变化。",
+    "buy": "询问宾川产区、“热农1号”品种和采收批次；普通余甘子不得冒充。",
+    "storage": "鲜果按商家建议冷藏并尽快食用。",
+    "safety": "食用前充分清洗、去核；对果实过敏者避免尝试。",
+    "search": "宾川 热农1号 余甘子 鲜果",
+    "sources": [
+      [
+        "食品工业科技：热农1号余甘子不同采收批次品质研究",
+        "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2022060331"
+      ]
+    ],
+    "image": "assets/binchuan-renong1-yuganzi-generated.webp",
+    "imageAlt": "热农1号余甘子鲜果生成示意图，非品种实拍",
+    "imageCaption": "生成示意图，非实物摄影；不能用于热农1号品种鉴别。",
+    "cardImage": "assets/binchuan-renong1-yuganzi-generated.webp",
+    "cardImageAlt": "宾川余甘子鲜果生成示意图，非实物摄影",
+    "cardNote": "生成示意 · 非品种实拍",
+    "images": [],
+    "articleImages": [],
+    "place": "地图点表示宾川产区范围，不指向具体基地。",
+    "context": "保山“亮脆”是另一晚熟品种，已单独收录；两者的产地与成熟窗口不互换。",
+    "kitchen": "本站建议直接鲜尝，不代表地方固定吃法。",
+    "placeSeasons": [
+      {
+        "name": "云南大理 · 宾川",
+        "lat": 25.83,
+        "lon": 100.58,
+        "months": [
+          10,
+          11
+        ],
+        "precision": "approximate-window",
+        "source": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2022060331",
+        "seasonNote": "十月末至十一月中旬为研究中较佳采收窗口。"
+      }
+    ],
+    "seasonEvidence": "宾川“热农1号”三年分期采收比较；研究结论不外推至其他品种或产区。",
+    "dishImage": "assets/binchuan-renong1-yuganzi-generated.webp",
+    "dishImageAlt": "宾川余甘子鲜果生成示意图，非实物摄影",
+    "dishCaption": "余甘子鲜果 · 生成示意图，非实物摄影。"
+  },
+  {
+    "id": "xiaolan-shiju-huaban",
+    "name": "小榄鲜食菊花瓣",
+    "alias": [
+      "小榄食用菊",
+      "鲜食菊花瓣"
+    ],
+    "region": "广东中山 · 小榄",
+    "lat": 22.67,
+    "lon": 113.24,
+    "category": "vegetable",
+    "months": [
+      11
+    ],
+    "peakMonths": [
+      11
+    ],
+    "seasonBasis": "quality",
+    "seasonPrecision": "month",
+    "seasonLabel": "十一月凉季赏味期",
+    "seasonPhase": {
+      "label": "处于凉季赏味期",
+      "note": "地方报道指向 11 月、尤其下旬；改良食用菊也有全年供应批次。"
+    },
+    "season": "中山地方报道将十一月、尤其下旬列为小榄食用菊的鲜食赏味期。改良品种已有全年供应，故这里写作凉季值得尝，不宣称一年只在十一月供应。",
+    "description": "这里吃的是食用栽培菊花饱满的鲜花瓣，不是干菊花茶，也不是菊花脑嫩叶。花瓣清甜带香，可入汤或配鸡肉。",
+    "intro": "这里吃的是食用栽培菊花饱满的鲜花瓣，不是干菊花茶，也不是菊花脑嫩叶。花瓣清甜带香，可入汤或配鸡肉。",
+    "short": "鲜花瓣清甜带香，做一道小榄菊花捞鸡。",
+    "taste": "花瓣柔和清甜。",
+    "aroma": "菊花香清楚但不浓烈。",
+    "texture": "鲜瓣柔嫩，受热后易软。",
+    "flavor": [
+      "清甜",
+      "花香",
+      "柔嫩"
+    ],
+    "state": "确认食用栽培来源、洗净并短时熟制的鲜花瓣",
+    "recipeTitle": "鲜菊花瓣鸡汤",
+    "ingredients": "食用菊鲜花瓣 30 克，熟鸡肉 180 克，清鸡汤 500 毫升，盐少许。",
+    "steps": [
+      "只选明确标注食用栽培的鲜菊，摘取花瓣并充分清洗。",
+      "鸡汤加热至沸腾，放熟鸡肉煮透。",
+      "关小火后放入花瓣短时加热至熟，少量盐调味即食。"
+    ],
+    "finish": "鸡肉充分热透，花瓣刚熟仍柔嫩。",
+    "pitfall": "用观赏盆菊、干花茶或菊花脑嫩叶代替食用菊花瓣。",
+    "pair": "清鸡汤衬出鲜花香，不加重口香料。",
+    "buy": "只买明确标识为食用栽培、可食用鲜花瓣的产品；不买观赏菊替代。",
+    "storage": "花瓣冷藏、保持干爽并尽快食用。",
+    "safety": "仅使用正规食用栽培菊；清洗并熟制。花粉过敏者谨慎避开。",
+    "search": "小榄 食用菊 鲜花瓣",
+    "sources": [
+      [
+        "中山日报：小榄食用菊十一月赏味期",
+        "https://zsrbapp.zsnews.cn/home/content/newsContent/0/698508"
+      ],
+      [
+        "花城：改良食用菊有全年供应批次",
+        "https://huacheng.gz-cmc.com/pages/2025/04/13/SF1367115245f2c667938749099886b1.html"
+      ]
+    ],
+    "image": "assets/xiaolan-shiju-huaban-generated.webp",
+    "imageAlt": "食用菊鲜花瓣鸡汤生成示意图，非产地实拍",
+    "imageCaption": "生成示意图，非实物摄影；食用菊请以正规食用栽培产品为准。",
+    "cardImage": "assets/xiaolan-shiju-huaban-generated.webp",
+    "cardImageAlt": "小榄鲜食菊花瓣生成示意图，非实物摄影",
+    "cardNote": "生成示意 · 非实物摄影",
+    "images": [],
+    "articleImages": [],
+    "place": "地图点表示小榄产区范围，不指向具体农场。",
+    "context": "鲜食花瓣、干菊花茶与菊花脑嫩叶是不同商品和食用形态。",
+    "kitchen": "本站家常做法建议。",
+    "placeSeasons": [
+      {
+        "name": "广东中山 · 小榄",
+        "lat": 22.67,
+        "lon": 113.24,
+        "months": [
+          11
+        ],
+        "precision": "month",
+        "source": "https://zsrbapp.zsnews.cn/home/content/newsContent/0/698508",
+        "seasonNote": "十一月，尤其下旬，是地方报道所述赏味期。"
+      }
+    ],
+    "seasonEvidence": "地方赏味报道指向十一月下旬；改良食用菊另有全年供应报道。",
+    "dishImage": "assets/xiaolan-shiju-huaban-generated.webp",
+    "dishImageAlt": "鲜菊花瓣鸡汤生成示意图，非实物摄影",
+    "dishCaption": "鲜菊花瓣鸡汤 · 生成示意图，非实物摄影。"
+  },
+  {
+    "id": "taitung-luoshen-calyx",
+    "name": "台东鲜洛神花萼",
+    "alias": [
+      "台东洛神葵鲜花萼",
+      "鲜洛神花萼"
+    ],
+    "region": "台湾台东 · 金峰、卑南初鹿",
+    "lat": 22.76,
+    "lon": 120.96,
+    "category": "fruit",
+    "months": [
+      10,
+      11
+    ],
+    "peakMonths": [
+      10,
+      11
+    ],
+    "seasonBasis": "harvest",
+    "seasonPrecision": "month",
+    "seasonLabel": "十月末至十一月采收期",
+    "seasonPhase": {
+      "label": "当月有鲜货",
+      "note": "金峰与初鹿皆有覆盖 11 月的采收体验或产季资料。"
+    },
+    "season": "农业易游网资料列出金峰十月至十一月、卑南初鹿十月末至十一月的采收体验。食用部位是去籽后肥厚的红色花萼，不是花瓣；历年窗口不等于 2026 年具体上市日。",
+    "description": "剥开红色肥厚花萼，里面藏着籽荚；酸味明亮，适合蜜渍或做果酱。吃的是花萼，不是花瓣，也不等同全年干花茶。",
+    "intro": "剥开红色肥厚花萼，里面藏着籽荚；酸味明亮，适合蜜渍或做果酱。吃的是花萼，不是花瓣，也不等同全年干花茶。",
+    "short": "去籽鲜花萼酸亮鲜红，不是花瓣或干茶。",
+    "taste": "酸味鲜明，可按口味少量加糖。",
+    "aroma": "清爽的酸果香。",
+    "texture": "厚实花萼煮后柔韧。",
+    "flavor": [
+      "酸亮",
+      "果香"
+    ],
+    "state": "去籽、洗净并加热处理的鲜洛神花萼",
+    "recipeTitle": "鲜洛神花萼蜜煮",
+    "ingredients": "鲜洛神花萼 200 克，清水 150 毫升，冰糖 60 克（按酸度调整）。",
+    "steps": [
+      "确认食用部位为鲜红花萼，去除籽荚，洗净沥干。",
+      "花萼与清水入锅煮软，再加入冰糖小火熬至透亮。",
+      "冷却后冷藏，取用干净器具，尽快食用。"
+    ],
+    "finish": "花萼熟软，糖浆清亮；按个人口味调整甜度。",
+    "pitfall": "把花瓣或全年干洛神茶当作当季鲜花萼。",
+    "pair": "清水与少量糖平衡酸味，保留花萼本身的果酸。",
+    "buy": "核对台东产区及鲜花萼状态；蜜饯、干茶不是鲜货。",
+    "storage": "熬好后密封冷藏，使用洁净器具并尽快食用。",
+    "safety": "去籽并熟制；鲜品清洗干净。",
+    "search": "台东 洛神 花萼 鲜货",
+    "sources": [
+      [
+        "农业易游网：金峰与卑南初鹿洛神采收季",
+        "https://ezgo.ardswc.gov.tw/zh-tw/seasonal-food/3230/"
+      ]
+    ],
+    "image": "assets/taitung-luoshen-calyx-generated.webp",
+    "imageAlt": "去籽洛神花萼生成示意图，非台东产地实拍",
+    "imageCaption": "生成示意图，非实物摄影；食用部位为去籽花萼。",
+    "cardImage": "assets/taitung-luoshen-calyx-generated.webp",
+    "cardImageAlt": "鲜洛神花萼生成示意图，非实物摄影",
+    "cardNote": "生成示意 · 非实物摄影",
+    "images": [],
+    "articleImages": [],
+    "place": "地图点表示台东产区范围，不指向具体农场。",
+    "context": "鲜花萼与干燥花萼、籽荚是不同状态；食用部分不是花瓣。",
+    "kitchen": "本站蜜煮做法建议。",
+    "placeSeasons": [
+      {
+        "name": "台湾台东 · 金峰、卑南初鹿",
+        "lat": 22.76,
+        "lon": 120.96,
+        "months": [
+          10,
+          11
+        ],
+        "precision": "month",
+        "source": "https://ezgo.ardswc.gov.tw/zh-tw/seasonal-food/3230/"
+      }
+    ],
+    "seasonEvidence": "农业易游网记录的历年采收体验窗口，不代表 2026 年具体上市日。",
+    "dishImage": "assets/taitung-luoshen-calyx-generated.webp",
+    "dishImageAlt": "洛神花萼蜜煮生成示意图，非实物摄影",
+    "dishCaption": "洛神花萼蜜煮 · 生成示意图，非实物摄影。"
+  }
+]
