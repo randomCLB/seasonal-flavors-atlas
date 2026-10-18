@@ -8,13 +8,15 @@
 <link rel="stylesheet" href="lottery.css">
 <link rel="stylesheet" href="lottery-questions.css?v=q2-20260929">
 <script src="solar-terms.js" defer></script><script src="data.js" defer></script>
-<script src="editorial.js" defer></script><script src="editorial-notes.js?v=image-completion-20261002" defer></script>
-<script src="lottery-profiles.js?v=origin-flavors-20261002" defer></script><script src="lottery-senses.js?v=pool2-20260930" defer></script><script src="lottery-core.js?v=additions-20261002" defer></script><script src="lottery-ui.js?v=q2-20260929" defer></script>
+<script src="editorial.js" defer></script><script src="editorial-notes.js?v=yunnan-20261015" defer></script><script src="november-additions.js?v=20261016" defer></script><script src="core-refinements.js?v=20261018" defer></script>
+<script src="lottery-profiles.js?v=november-20261016" defer></script><script src="lottery-senses.js?v=november-20261016" defer></script><script src="lottery-core.js?v=additions-20261002" defer></script><script src="food-purchase.js?v=20261018" defer></script><script src="food-records.js?v=20261018" defer></script><script src="result-share.js?v=20261018" defer></script><script src="lottery-ui.js?v=social-20261018" defer></script>
 <link rel="stylesheet" href="draw-modes.css?v=tarot1">
+<link rel="stylesheet" href="food-purchase.css?v=20261018">
+<link rel="stylesheet" href="social-experience.css?v=20261018">
 </head>
 <body>
 <a href="#main" class="skip">跳到食单</a>
-<header class="masthead"><a class="brand" href="index.html">时令风物<span>山川有时，鲜味有期。</span></a><div><span class="edition">1.1 · 风味签</span><a class="back-link" href="index.html">回去逛逛 ↗</a></div></header>
+<header class="masthead"><a class="brand" href="index.html">时令风物<span>山川有时，鲜味有期。</span></a><div><button class="records-trigger" data-open-records>我的尝鲜<small data-record-count></small></button><a class="back-link" href="index.html">回去逛逛 ↗</a></div></header>
 <nav class="draw-modes" aria-label="抽签方式"><a href="tarot.html">塔罗签 · 让命运挑 ↗</a><a href="lottery.html" aria-current="page">风味签 · 按喜好挑</a></nav>
 <main id="main">
 <section id="welcome" class="welcome">
@@ -23,7 +25,7 @@
   <div class="upcoming"><span>接下来，我们会经过</span><p id="term-preview"></p></div>
 </section>
 <section id="quiz" class="quiz" hidden aria-labelledby="question-title"><div class="question-meta"><span id="progress"></span><span>慢慢选，随时可以改。</span></div><form id="question-form"><div id="question"></div><div class="quiz-actions"><button type="button" id="previous" class="text-button">← 上一问</button><button type="submit" class="primary" id="next">下一问 →</button></div></form><button id="leave-quiz" class="text-button muted">先不抽了</button></section>
-<section id="results" hidden aria-labelledby="result-title"><div class="result-heading"><p class="eyebrow">你的六节气食单</p><h1 id="result-title">把新鲜，<span>一点点排进生活。</span></h1><p id="result-summary"></p><p class="fine" id="saved-date"></p><div class="result-actions"><button class="primary" id="calendar-open">添加到日历 ↗</button><button class="text-button" id="redraw">再抽未锁定的</button><button class="text-button" id="edit">改改五个答案</button></div><p id="calendar-status" class="notice" role="status" hidden></p><label class="remember"><input type="checkbox" id="remember">仅在这台设备记住食单与答案</label><button id="forget" class="text-button" hidden>清除本机记录</button></div><div id="food-list" class="food-list"></div><p class="footnote">抽签是风味发现，不是过敏安全认证。可选配料和无法确定成分的油、酱也参与保守排除；实际商品配料、生产环境、到货状态，请在购买时再次确认。暂缺合适候选的节气会留白，不拿忌口换热闹。</p></section>
+<section id="results" hidden aria-labelledby="result-title"><div class="result-heading"><p class="eyebrow">你的六节气食单</p><h1 id="result-title">把新鲜，<span>一点点排进生活。</span></h1><p id="result-summary"></p><p class="fine" id="saved-date"></p><div class="result-actions"><button class="primary" id="calendar-open">添加到日历 ↗</button><button class="primary" id="share-result">分享这份食单 ↗</button><button class="text-button" id="new-plan" hidden>抽一份我的食单 ↗</button><button class="text-button" id="redraw">再抽未锁定的</button><button class="text-button" id="edit">改改五个答案</button></div><p id="calendar-status" class="notice" role="status" hidden></p><label class="remember"><input type="checkbox" id="remember">仅在这台设备记住食单与答案</label><button id="forget" class="text-button" hidden>清除本机记录</button></div><div id="food-list" class="food-list"></div><p class="footnote">抽签是风味发现，不是过敏安全认证。可选配料和无法确定成分的油、酱也参与保守排除；实际商品配料、生产环境、到货状态，请在购买时再次确认。暂缺合适候选的节气会留白，不拿忌口换热闹。</p></section>
 <p id="status" role="status" aria-live="polite" class="status"></p>
 <noscript><p class="notice">风味签需要浏览器启用 JavaScript。你仍可返回风物首页。</p></noscript>
 </main>

@@ -1,0 +1,26 @@
+.food-purchase{color:inherit;min-width:0;text-align:left;font-size:14px;line-height:1.75}
+.food-purchase>summary{display:flex;align-items:center;justify-content:space-between;gap:24px;width:fit-content;min-height:44px;padding:8px 18px;border:1px solid currentColor;cursor:pointer;list-style:none;letter-spacing:.06em;background:transparent}
+.food-purchase>summary::-webkit-details-marker{display:none}
+.food-purchase>summary:hover,.food-purchase[open]>summary{background:color-mix(in srgb,currentColor 7%,transparent)}
+.food-purchase>summary span{transition:transform .2s}
+.food-purchase[open]>summary span{transform:rotate(45deg)}
+.purchase-content{border-top:1px solid color-mix(in srgb,currentColor 25%,transparent);margin-top:14px;padding:16px 0 5px;max-width:620px}
+.purchase-query{font-family:inherit;font-size:16px;margin:0 0 14px;overflow-wrap:anywhere}
+.purchase-links{display:flex;flex-wrap:wrap;gap:8px}
+.purchase-links a{display:inline-flex;align-items:center;min-height:44px;padding:5px 12px;border:1px solid color-mix(in srgb,currentColor 45%,transparent);color:inherit;text-decoration:none;font-size:13px}
+.purchase-links a:hover{background:color-mix(in srgb,currentColor 9%,transparent)}
+.purchase-disclaimer{font-size:12px;opacity:.78;margin:10px 0 18px}
+.purchase-label{font-size:12px;letter-spacing:.08em;margin-bottom:8px}
+.purchase-content ul{padding-left:1.3em;margin:0 0 12px}
+.purchase-content li{margin:5px 0}
+.purchase-route{font-size:13px;opacity:.85}
+.purchase-copy{display:inline-block;min-height:44px;background:transparent;color:inherit;border:0;border-bottom:1px solid currentColor;padding:5px 0;font-size:13px;font-family:inherit;cursor:pointer}
+.purchase-status{font-size:12px;margin:8px 0 0;min-height:0}
+.purchase-status:empty{display:none}
+.purchase-fallback{display:block;font-size:12px;margin-top:12px}
+.purchase-fallback[hidden]{display:none}
+.purchase-fallback textarea{display:block;box-sizing:border-box;width:100%;margin-top:5px;padding:10px;font:inherit;font-size:14px;border:1px solid currentColor;background:transparent;color:inherit;resize:vertical}
+.food-purchase :focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.food-image figcaption{font-size:11px;line-height:1.6;padding-top:7px;opacity:.75}
+.food-actions+.food-purchase{margin-top:18px}
+@media(prefers-reduced-motion:reduce){.food-purchase>summary span{transition:none}}

@@ -21,7 +21,8 @@ test('every map origin has plausible regional coordinates, declared sources and 
    const province=Object.keys(bounds).find(name=>p.name.startsWith(name));assert.ok(province,`${f.id}: ${p.name}`);
    const [south,north,west,east]=bounds[province];assert.ok(p.lat>=south&&p.lat<=north&&p.lon>=west&&p.lon<=east,`${f.id}: ${p.name} (${p.lat}, ${p.lon})`);
    assert.ok(f.sources.some(s=>s[1]===p.source),`${f.id}: undeclared origin source`);
-   assert.ok(p.months.length&&p.months.every(m=>f.months.includes(m)),`${f.id}: origin months`);
+   if(f.seasonPrecision==='plant-stage'){assert.deepEqual(p.months,[]);assert.ok(profiles[f.id].disabled,`${f.id}: unverified season cannot enter draws`);}
+   else assert.ok(p.months.length&&p.months.every(m=>f.months.includes(m)),`${f.id}: origin months`);
   }
  }
 });

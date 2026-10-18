@@ -8,7 +8,10 @@
   <meta name="description" content="沿着节气、山川与风味，认识值得一试的小众食材。">
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css?v=origin-flavors-20261002">
-  <link rel="stylesheet" href="fengwu-design.css?v=20261004">
+  <link rel="stylesheet" href="fengwu-design.css?v=visual-refinement-20261013-v6">
+<link rel="stylesheet" href="food-purchase.css?v=20261018">
+<link rel="stylesheet" href="food-detail.css?v=social-20261018">
+<link rel="stylesheet" href="social-experience.css?v=20261018">
 </head>
 <body>
   <div class="site-shell">
@@ -20,7 +23,7 @@
         <a class="nav-item" href="tarot.html" aria-label="时令抽签：塔罗三牌阵">时令抽签</a>
         <button class="nav-item" data-view="flavor">风味星图</button>
       </nav>
-      <button class="search-trigger" id="searchTrigger" aria-label="搜索食材"><span class="search-glyph" aria-hidden="true">⌕</span><span>寻找食材</span></button>
+      <div class="atlas-tools"><button class="records-trigger" data-open-records>我的尝鲜<small data-record-count></small></button><button class="search-trigger" id="searchTrigger" aria-label="搜索食材"><span class="search-glyph" aria-hidden="true">⌕</span><span>寻找食材</span></button></div>
     </header>
     <main id="app">
       <section id="seasonView" class="view">
@@ -29,7 +32,13 @@
         <section class="section-intro"><div><p class="kicker" id="seasonKicker">本月风物</p><h2 id="seasonHeading"></h2></div><p id="seasonIntro"></p></section>
         <nav id="categoryFilter" class="category-filter" aria-label="按食材类别筛选"></nav>
         <section id="seasonCards" class="season-cards" aria-label="本节气当季食材"></section>
-        <button class="map-prompt" id="mapPrompt">看看它们长在哪 <span aria-hidden="true">↗</span></button>
+        <section class="season-explore" aria-labelledby="exploreHeading">
+          <div class="explore-heading"><p class="kicker">再走一步 · 继续寻味</p><h2 id="exploreHeading">循着山川，或听凭一点缘分。</h2></div>
+          <div class="explore-doors">
+            <button class="explore-door explore-map" id="mapPrompt"><span class="explore-art" aria-hidden="true"><img src="assets/terrain.webp" alt="" loading="lazy"><i></i></span><span class="explore-copy"><small>从一味，走向一方水土</small><strong>山川来处</strong><span>沿地图，寻它生长的地方。</span><em>展开风物地图 <b aria-hidden="true">↗</b></em></span></button>
+            <a class="explore-door explore-draw" href="tarot.html"><span class="explore-art" aria-hidden="true"><img src="assets/tarot/star.webp" alt="" loading="lazy"></span><span class="explore-copy"><small>把今晚的一餐，交给偶然</small><strong>时令抽签</strong><span>翻一张牌，遇见当季的一味。</span><em>翻开今日食签 <b aria-hidden="true">↗</b></em></span></a>
+          </div>
+        </section>
       </section>
       <section id="mapView" class="view" hidden>
 <div class="inner-head"><p class="kicker">山川来处</p><h1>沿着山川，找一口鲜。</h1><p>选一个月份，看看那时各地有什么可吃。点地图上的位置，查看当地食材。</p></div>
@@ -56,6 +65,6 @@
   </dialog>
   <dialog id="searchDialog" class="search-dialog"><div class="search-head"><label for="searchInput">寻找食材</label><button id="searchClose" aria-label="关闭搜索">×</button></div><input id="searchInput" type="search" autocomplete="off" placeholder="搜食材、口感、香气、产地或做法"><div id="searchResults"></div></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="solar-terms.js"></script><script src="map-projection.js"></script><script src="data.js"></script><script src="editorial.js?v=food-photo-clarity-20261004"></script><script src="editorial-notes.js?v=image-completion-20261002"></script><script src="food-share.js?v=1"></script><script src="lottery-core.js?v=additions-20261002"></script><script src="app.js?v=food-photo-clarity-20261004"></script>
+  <script src="solar-terms.js"></script><script src="map-projection.js"></script><script src="data.js"></script><script src="editorial.js?v=food-photo-clarity-20261004"></script><script src="editorial-notes.js?v=yunnan-20261015"></script><script src="november-additions.js?v=20261016"></script><script src="core-refinements.js?v=20261018"></script><script src="food-share.js?v=1"></script><script src="lottery-core.js?v=additions-20261002"></script><script src="food-purchase.js?v=20261018"></script><script src="food-records.js?v=20261018"></script><script src="food-detail.js?v=20261018"></script><script src="app.js?v=core-20261018"></script>
 </body>
 </html>

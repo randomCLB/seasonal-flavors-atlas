@@ -4,9 +4,10 @@ const root=path.join(__dirname,'..'),C=require('../dist/lottery-core.js'),T=requ
 vm.createContext(ctx);
 for(const n of ['solar-terms','data','editorial','editorial-notes','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',n+'.js'),'utf8'),ctx);
 const foods=JSON.parse(JSON.stringify(ctx.window.FOODS)),profiles=JSON.parse(JSON.stringify(ctx.window.LOTTERY_PROFILES)),events=C.eventsFrom(ctx.window.SOLAR_TERM_TIMES,ctx.window.SOLAR_TERM_NAMES);
-const additions=foods.filter(f=>f.peakWindows),byId=Object.fromEntries(additions.map(f=>[f.id,f]));
+const originalAdditions=new Set(['jiaozhou-kailing-suo','taitung-winter-atemoya','yanshi-fresh-yintiao','shangyu-duanbing-cherry','harbin-fresh-honeyberry','shanzhou-green-wheat-nianzhuan','minqin-field-shacong']);
+const additions=foods.filter(f=>originalAdditions.has(f.id)),byId=Object.fromEntries(additions.map(f=>[f.id,f]));
 test('seven additions are unique, complete, local illustrated and separately sourced',()=>{
- assert.equal(additions.length,7);assert.equal(new Set(foods.map(f=>f.id)).size,67);
+ assert.equal(additions.length,7);assert.equal(new Set(foods.map(f=>f.id)).size,76);
  for(const f of additions){
   const p=profiles[f.id];assert.equal(C.signature(f),p.signature,f.id);assert.equal(C.sensorySignature(f),p.senses.signature,f.id);
   assert.ok(f.sources.length>=1&&f.placeSeasons.every(p=>p.source&&p.precision==='approximate-window'));

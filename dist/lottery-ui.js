@@ -51,14 +51,23 @@
     $('result-summary').textContent=`${filled.length} 味风物，${count} 种不同体验。从下一个节气开始，不含此刻正在经历的节气。${filled.length<6?'有些位置暂时留白，绝不放宽忌口凑数。':''}`;
     $('saved-date').textContent=`这份签抽于 ${C.dayAt(plan.createdAt)}。节气按中国标准时间，食材日期以产区资料为线索。`;
     $('calendar-open').disabled=!filled.length;$('forget').hidden=!$('remember').checked;
+    $('new-plan').hidden=!plan.shared;for(const id of ['edit','redraw'])$(id).hidden=!!plan.shared;
+    $('remember').closest('label').hidden=!!plan.shared;
+    if(plan.shared){$('result-summary').textContent=`来自分享 · ${filled.length} 味风物。以下为原食单的六个节气、食材与暂定日期，未重新抽取，也未按你的忌口筛选。`;$('calendar-open').hidden=true;$('forget').hidden=true;}
+    else $('calendar-open').hidden=false;
     $('food-list').innerHTML=plan.slots.map((s,i)=>{
       const term=`<div class="term"><div class="term-number">${String(i+1).padStart(2,'0')}</div><h3 class="term-name">${esc(s.name)}</h3><p class="term-dates">${s.startDay.slice(5).replace('-',' / ')}<br>至 ${s.endDay.slice(5).replace('-',' / ')}<br>${s.year}</p></div>`;
       if(!s.foodId)return `<article class="food-entry reveal">${term}<div class="empty-slot"><h2>这一签，先为你留白。</h2><p>${esc(s.reason)}</p></div></article>`;
       const f=byId[s.foodId],p=profiles[f.id];
-      const reason=C.recommendationReason(f,p,plan.prefs);
-      return `<article class="food-entry reveal" data-slot="${esc(s.key)}">${term}<figure class="food-image"><img src="${esc(f.cardImage||f.image)}" alt="${esc(f.cardImageAlt||f.imageAlt||f.name)}" loading="lazy"></figure><div class="food-copy"><p class="food-origin">${esc(s.place)} · ${families[p.family]} · ${s.eatDay} 暂定尝鲜</p><h2>${esc(f.name)}</h2><p class="reason">${esc(reason)}</p><p class="recipe">这一回试试 <a href="index.html?food=${encodeURIComponent(f.id)}" target="_blank" rel="noopener noreferrer">${esc(f.recipeTitle)} ↗</a></p><div class="food-note"><p><strong>买前：</strong>${esc(f.buy)}</p><p><strong>留意：</strong>${esc(f.safety||f.storage||'核对到货状态、商品配料和保存条件。')}</p><p>时令精度：${s.precision==='season'?'季节级近似':'月度或旬段参考'}，不保证该日正好上市。</p></div><div class="food-actions"><button class="text-button" data-swap="${esc(s.key)}">换这一味 ↻</button><button class="text-button" data-lock="${esc(s.key)}" aria-pressed="${!!s.locked}">${s.locked?'已留住 ✓':'留住它'}</button><button class="text-button" data-copy="${esc(f.id)}">复制采购词</button></div></div></article>`;
+      const reason=plan.shared?s.recommendation:C.recommendationReason(f,p,plan.prefs);
+      return `<article class="food-entry reveal" data-slot="${esc(s.key)}">${term}<figure class="food-image"><img src="${esc(f.cardImage||f.image)}" alt="${esc(f.cardImageAlt||f.imageAlt||f.name)}" loading="lazy"><figcaption>${esc(f.cardNote||f.imageCaption||'形态参考 · 非产地鉴别')}</figcaption></figure><div class="food-copy"><p class="food-origin">${esc(s.place)} · ${families[p.family]} · ${s.eatDay} 暂定尝鲜</p><h2>${esc(s.foodName||f.name)}</h2><p class="reason">${esc(reason)}</p><p class="recipe">这一回试试 <a href="index.html?food=${encodeURIComponent(f.id)}" target="_blank" rel="noopener noreferrer">${esc(f.recipeTitle)} ↗</a></p><div class="food-note"><p><strong>买前：</strong>${esc(f.buy)}</p><p><strong>留意：</strong>${esc(f.safety||f.storage||'核对到货状态、商品配料和保存条件。')}</p><p>时令精度：${s.precision==='season'?'季节级近似':'月度或旬段参考'}，不保证该日正好上市。</p></div><div class="food-actions"><button class="text-button" data-swap="${esc(s.key)}">换这一味 ↻</button><button class="text-button" data-lock="${esc(s.key)}" aria-pressed="${!!s.locked}">${s.locked?'已留住 ✓':'留住它'}</button></div>${window.FoodPurchase.render(f)}</div></article>`;
     }).join('');
+    window.FoodPurchase.bind($('food-list'));
+    $('food-list').querySelectorAll('.food-entry[data-slot]').forEach(el=>{const s=plan.slots.find(s=>s.key===el.dataset.slot);el.querySelector('.food-copy').insertAdjacentHTML('beforeend',window.FoodRecords.render(byId[s.foodId]));});window.FoodRecords.bind();
+    if(plan.shared)$('food-list').querySelectorAll('.food-actions').forEach(el=>el.hidden=true);
   }
+  $('share-result').onclick=()=>{if(plan)window.ResultShare.open(window.ResultShare.planSnapshot(plan,foods,s=>plan.shared?s.recommendation:C.recommendationReason(byId[s.foodId],profiles[s.foodId],plan.prefs)));};
+  $('new-plan').onclick=()=>{window.ResultShare.clear();plan=null;step=0;renderQuestion();};
   $('begin').onclick=()=>{step=0;renderQuestion();};$('leave-quiz').onclick=()=>plan?renderResults():screen('welcome');
   $('previous').onclick=()=>{try{capture();}catch{}if(step>0)step--;renderQuestion();};
   $('question-form').onsubmit=e=>{e.preventDefault();try{capture();if(step<4){step++;renderQuestion();}else newPlan();}catch(err){notify(err.message);}};
@@ -66,7 +75,7 @@
   $('redraw').onclick=()=>{try{const locked=Object.fromEntries(plan.slots.filter(s=>s.locked).map(s=>[s.key,s.foodId]));const old=plan.slots;plan.seed=seed();const next=C.draw({foods,profiles,prefs:plan.prefs,events,slots:old,seed:plan.seed,locked});plan.slots=next.map((s,i)=>old[i].locked?old[i]:s);touched();renderResults();notify('未锁定的签已重新安排；候选较少时，可能再遇到同一味。',true);}catch(err){notify(err.message,true);}};
   $('food-list').onclick=async e=>{
     const b=e.target.closest('button');if(!b)return;
-    if(b.dataset.copy){const text=byId[b.dataset.copy].search;try{await navigator.clipboard.writeText(text);notify(`已复制：${text}`,true);}catch{notify(`可手动复制：${text}`,true);}return;}
+
     const key=b.dataset.lock||b.dataset.swap,slot=plan.slots.find(s=>s.key===key);if(!slot)return;
     if(b.dataset.lock){slot.locked=!slot.locked;touched();b.textContent=slot.locked?'已留住 ✓':'留住它';b.setAttribute('aria-pressed',String(slot.locked));return;}
     if(slot.locked){notify('这一味已留住，先解锁再换。',true);return;}
@@ -86,4 +95,6 @@
   $('clear-old').onclick=()=>{persist(true);saved=null;$('clear-old').hidden=true;$('resume').hidden=true;notify('旧记录已清除。');};
   $('resume').onclick=()=>{try{plan=checkPlan(saved);prefs=structuredClone(plan.prefs);$('remember').checked=true;renderResults();}catch(err){notify(err.message);}};
   try{$('term-preview').textContent=C.nextSix(events).map(s=>s.name).join('  ·  ');}catch(err){$('begin').disabled=true;notify(err.message);}
+  const sharedToken=window.ResultShare.token(location.href);
+  if(sharedToken!==null){screen('loading');window.ResultShare.decode(sharedToken).then(s=>{plan=window.ResultShare.restorePlan(s,foods,events);renderResults();}).catch(e=>window.ResultShare.error(e.message));}
 })();

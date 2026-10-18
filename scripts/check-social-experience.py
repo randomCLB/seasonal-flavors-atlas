@@ -1,0 +1,216 @@
+"""Browser acceptance for local intentions and immutable result sharing.
+Uses isolated browser contexts; no publication or native app delivery.
+"""
+import json
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / 'output/second-batch-validation'
+OUT.mkdir(parents=True, exist_ok=True)
+BASE = 'http://127.0.0.1:8776/'
+report = {'checks': [], 'limitations': ['Desktop Chromium with mobile viewport/text simulation, not physical phones.', 'Native share success/cancellation and clipboard failure are simulated. PNG downloads and fresh-context replay are real.', 'Local preview URLs are not publicly reachable. No deployment.']}
+
+def check(name, ok):
+    report['checks'].append({'name': name, 'passed': bool(ok)})
+    (OUT / 'browser-checks.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    assert ok, name
+
+def draw_tarot(page):
+    page.goto(BASE + 'tarot.html')
+    page.locator('#shuffle').click()
+    page.locator('.cut-pile').first.click()
+    for _ in range(3):
+        page.locator('#spread [data-pick]:not(:disabled)').first.click()
+    page.locator('#read-spread').click()
+    page.wait_for_selector('#reveal:not([hidden])')
+
+def draw_plan(page):
+    page.goto(BASE + 'lottery.html')
+    page.locator('#begin').click()
+    for _ in range(5):
+        page.locator('#next').click()
+    page.wait_for_selector('#results:not([hidden])')
+
+def tarot_result(page):
+    return page.evaluate("""()=>({cards:document.querySelector('#result-tableau').innerText,dish:document.querySelector('#dish-title').textContent,reading:['pattern','opening','connection','closing','omen','result-insights'].map(id=>document.getElementById(id).textContent)})""")
+
+def plan_result(page):
+    return page.evaluate("""()=>[...document.querySelectorAll('#food-list .food-entry')].map(e=>({term:e.querySelector('.term').textContent,food:e.querySelector('h2').textContent,origin:e.querySelector('.food-origin')?.textContent,reason:e.querySelector('.reason')?.textContent}))""")
+
+def open_share(page, name):
+    page.locator('#share-result').click()
+    page.wait_for_selector('.share-card-actions:not([hidden])')
+    url = page.locator('.share-card-link textarea').input_value()
+    with page.expect_download() as info:
+        page.locator('.share-download').click()
+    info.value.save_as(OUT / (name + '.png'))
+    check(name + ': actual PNG file downloaded', (OUT / (name + '.png')).stat().st_size > 10000)
+    return url
+
+with sync_playwright() as p:
+    browser = p.chromium.launch()
+    context = browser.new_context(viewport={'width': 1305, 'height': 871}, reduced_motion='reduce')
+    context.add_init_script("Date.now=()=>Date.parse('2026-10-18T04:00:00Z')")
+    page = context.new_page()
+    errors = []
+    page.on('pageerror', lambda e: errors.append(str(e)))
+    page.goto(BASE + 'index.html')
+    figure = page.locator('.season-list-photo.has-image-note').first
+    page.mouse.move(1, 1)
+    check('image note hidden before hover', figure.locator('.photo-credit').evaluate('(e)=>getComputedStyle(e).opacity') == '0')
+    figure.hover()
+    page.wait_for_timeout(250)
+    check('image note visible on hover', figure.locator('.photo-credit').evaluate('(e)=>getComputedStyle(e).opacity') == '1')
+    page.mouse.move(1, 1)
+    figure.locator('button').focus()
+    page.wait_for_timeout(250)
+    check('image note visible on keyboard focus', figure.locator('.photo-credit').evaluate('(e)=>getComputedStyle(e).opacity') == '1')
+
+    page.goto(BASE + 'index.html?food=lintong-huojing-shizi')
+    want = page.locator('#detailContent [data-record-state=want]')
+    tried = page.locator('#detailContent [data-record-state=tried]')
+    want.click()
+    check('want is selected', want.get_attribute('aria-pressed') == 'true')
+    page.reload()
+    check('want survives reload', want.get_attribute('aria-pressed') == 'true')
+    tried.click()
+    check('tried replaces want', tried.get_attribute('aria-pressed') == 'true' and want.get_attribute('aria-pressed') == 'false')
+    page.locator('#detailClose').click()
+    page.locator('[data-open-records]').click()
+    check('central tried list contains marked food', page.locator('[data-record-filter=tried] small').inner_text() == '1')
+    page.locator('[data-record-filter=tried]').click()
+    page.screenshot(path=str(OUT / 'records-desktop.png'))
+    page.locator('.records-list [data-record-state=tried]').click()
+    check('record can be cancelled centrally', page.locator('.records-empty').is_visible())
+    page.keyboard.press('Escape')
+    check('record dialog closes and restores trigger focus', page.locator('.records-dialog').is_hidden() and page.locator('[data-open-records]').evaluate('(e)=>e===document.activeElement'))
+
+    draw_tarot(page)
+    original = tarot_result(page)
+    page.locator('#copy-search [data-record-state=want]').click()
+    check('tarot ingredient can be recorded', page.locator('#copy-search [data-record-state=want]').get_attribute('aria-pressed') == 'true')
+    tarot_url = open_share(page, 'tarot-card')
+    check('tarot share does not change original result', original == tarot_result(page))
+    page.screenshot(path=str(OUT / 'tarot-share-desktop.png'))
+    page.locator('.share-close').click()
+    check('share close returns focus to result action', page.locator('#share-result').evaluate('(e)=>e===document.activeElement'))
+
+    fresh = browser.new_context(viewport={'width': 1305, 'height': 871}, reduced_motion='reduce')
+    fresh.add_init_script("Date.now=()=>Date.parse('2027-06-15T04:00:00Z')")
+    recipient = fresh.new_page()
+    recipient.on('pageerror', lambda e: errors.append(str(e)))
+    recipient.goto(tarot_url)
+    recipient.wait_for_selector('#reveal:not([hidden])')
+    check('new context and later clock restore exact tarot result', tarot_result(recipient) == original)
+    check('shared tarot explicitly shows original date', '2026 · 10 · 18' in recipient.locator('#reading-date').inner_text())
+    check('personal want record does not leak to recipient', recipient.locator('[data-record-state=want]').get_attribute('aria-pressed') == 'false')
+    recipient.reload()
+    recipient.wait_for_selector('#reveal:not([hidden])')
+    check('shared tarot survives refresh unchanged', tarot_result(recipient) == original)
+    recipient.locator('#again').click()
+    check('intentional restart clears shared URL', '#result=' not in recipient.url and recipient.locator('#table').is_visible())
+
+    draw_plan(page)
+    original_plan = plan_result(page)
+    page.locator('[data-lock]').first.click()
+    page.locator('#remember').check()
+    plan_url = open_share(page, 'six-term-card')
+    page.screenshot(path=str(OUT / 'plan-share-desktop.png'))
+    page.locator('.share-close').click()
+    recipient.goto(plan_url)
+    recipient.wait_for_selector('#results:not([hidden])')
+    check('new context restores all six original slots, dates and reasons', plan_result(recipient) == original_plan)
+    check('shared plan does not display private answer controls', recipient.locator('#edit').is_hidden() and recipient.locator('#redraw').is_hidden() and recipient.locator('.remember').is_hidden())
+    check('shared plan can record ingredient independently', recipient.locator('.food-record-controls').count() == recipient.locator('.food-entry[data-slot]').count())
+    recipient.reload()
+    recipient.wait_for_selector('#results:not([hidden])')
+    check('shared six-term plan survives refresh', plan_result(recipient) == original_plan)
+    recipient.locator('#new-plan').click()
+    check('recipient can intentionally begin own quiz', '#result=' not in recipient.url and recipient.locator('#quiz').is_visible())
+    page.reload()
+    page.locator('#resume').click()
+    check('own local plan still resumes with original six foods', plan_result(page) == original_plan)
+    with page.expect_download() as info:
+        page.locator('#calendar-open').click()
+    info.value.save_as(OUT / 'six-term.ics')
+    check('own calendar export still downloads six events', (OUT / 'six-term.ics').read_text().count('BEGIN:VEVENT') == 6)
+
+    denied = browser.new_context(viewport={'width': 390, 'height': 844}, reduced_motion='reduce')
+    denied.add_init_script("Object.defineProperty(navigator,'clipboard',{value:{writeText:async()=>{throw Error('denied')}}});Storage.prototype.setItem=function(){throw Error('denied')};")
+    mobile = denied.new_page()
+    mobile.goto(BASE + 'index.html?food=lintong-huojing-shizi')
+    mobile.locator('[data-record-state=want]').click()
+    check('denied local storage is explained without claiming persistence', '仅本页有效' in mobile.locator('.record-feedback').inner_text())
+    mobile.locator('#detailClose').click()
+    mobile.locator('[data-open-records]').click()
+    check('temporary records remain usable when storage denied', mobile.locator('.record-entry').count() == 1)
+    check('mobile record dialog fits viewport', mobile.locator('.records-dialog').evaluate('(e)=>e.scrollWidth<=e.clientWidth'))
+    mobile.screenshot(path=str(OUT / 'records-mobile.png'))
+    mobile.goto(tarot_url)
+    mobile.wait_for_selector('#reveal:not([hidden])')
+    check('mobile tarot replay matches original', tarot_result(mobile) == original)
+    mobile.locator('#share-result').click()
+    mobile.wait_for_selector('.share-card-actions:not([hidden])')
+    mobile.locator('.share-copy').click()
+    check('clipboard denied reveals exact selectable link', mobile.locator('.share-card-link textarea').input_value() == tarot_url and mobile.locator('.share-card-link textarea').evaluate('(e)=>e.selectionEnd===e.value.length&&e.selectionStart===0'))
+    check('mobile share dialog fits viewport', mobile.locator('.share-result-dialog').evaluate('(e)=>e.scrollWidth<=e.clientWidth'))
+    mobile.screenshot(path=str(OUT / 'tarot-share-mobile.png'))
+    mobile.locator('.share-close').click()
+    check('no horizontal overflow on mobile tarot result', mobile.evaluate('document.documentElement.scrollWidth<=innerWidth'))
+    mobile.goto(plan_url)
+    mobile.wait_for_selector('#results:not([hidden])')
+    check('mobile plan replay matches original', plan_result(mobile) == original_plan)
+    check('no horizontal overflow on mobile six-term plan', mobile.evaluate('document.documentElement.scrollWidth<=innerWidth'))
+    mobile.screenshot(path=str(OUT / 'plan-mobile.png'), full_page=True)
+    mobile.goto(BASE + 'tarot.html#result=1z.broken')
+    mobile.wait_for_selector('.social-error')
+    check('broken tarot link reports error and never auto-draws', mobile.locator('#reveal').is_hidden() and mobile.locator('#table').is_hidden())
+    mobile.goto(BASE + 'lottery.html#result=1j.e30')
+    mobile.wait_for_selector('.social-error')
+    check('invalid plan link never substitutes current food plan', mobile.locator('#results').is_hidden())
+
+    # Controlled native share: validate the payload and cancellation behavior.
+    recipient.goto(tarot_url)
+    recipient.wait_for_selector('#reveal:not([hidden])')
+    recipient.evaluate("""()=>{navigator.canShare=()=>true;navigator.share=async(data)=>{window.sharedPayload={text:data.text,title:data.title,type:data.files[0].type,size:data.files[0].size};throw new DOMException('cancel','AbortError')};}""")
+    recipient.locator('#share-result').click()
+    recipient.wait_for_selector('.share-card-actions:not([hidden])')
+    recipient.locator('.share-native').click()
+    check('native share receives actual PNG and replay link together', recipient.evaluate('sharedPayload.type==="image/png"&&sharedPayload.size>10000&&sharedPayload.text.includes("#result=")'))
+    check('native cancellation is stated and keeps original result', '已取消' in recipient.locator('.share-result-dialog [role=status]').inner_text() and tarot_result(recipient) == original)
+    recipient.evaluate("navigator.share=async()=>{}")
+    recipient.locator('.share-native').click()
+    check('native resolution does not claim message delivery', '是否发送' in recipient.locator('.share-result-dialog [role=status]').inner_text())
+    recipient.locator('.share-close').click()
+    # Records synchronize between existing tabs without sharing personal state in URLs.
+    recipient.locator('[data-record-state=want]').click()
+    other = fresh.new_page()
+    other.goto(BASE + 'index.html')
+    other.locator('[data-open-records]').click()
+    check('records follow user between site pages', other.locator('.record-entry').count() == 1)
+    other.locator('.records-list [data-record-state=tried]').click()
+    recipient.wait_for_selector('[data-record-state=tried][aria-pressed=true]')
+    check('open tabs synchronize record changes', recipient.locator('[data-record-state=want]').get_attribute('aria-pressed') == 'false')
+    # Narrow screen and enlarged text, with actual keyboard traversal inside the dialog.
+    recipient.set_viewport_size({'width': 320, 'height': 740})
+    recipient.locator('[data-open-records]').click()
+    recipient.locator('[data-record-filter=tried]').click()
+    recipient.evaluate("""()=>{for(const e of document.querySelectorAll('.records-dialog *')){if(e.children.length===0)e.style.fontSize=parseFloat(getComputedStyle(e).fontSize)*2+'px'}}""")
+    check('320px with doubled record text has no horizontal dialog overflow', recipient.locator('.records-dialog').evaluate('(e)=>e.scrollWidth<=e.clientWidth'))
+    recipient.keyboard.press('Tab')
+    check('keyboard focus stays inside records dialog', recipient.evaluate('document.querySelector(".records-dialog").contains(document.activeElement)'))
+    recipient.locator('.records-list [data-record-state=tried]').scroll_into_view_if_needed()
+    check('enlarged record actions remain reachable inside scrolling dialog', recipient.locator('.records-list [data-record-state=tried]').evaluate('(e)=>{const b=e.getBoundingClientRect(),d=e.closest("dialog").getBoundingClientRect();return b.top>=d.top&&b.bottom<=d.bottom}'))
+    recipient.screenshot(path=str(OUT / 'records-320-text200.png'))
+    recipient.keyboard.press('Escape')
+    recipient.goto(plan_url)
+    recipient.wait_for_selector('#results:not([hidden])')
+    recipient.locator('#share-result').click()
+    recipient.wait_for_selector('.share-card-actions:not([hidden])')
+    check('320px share dialog fits viewport', recipient.locator('.share-result-dialog').evaluate('(e)=>e.scrollWidth<=e.clientWidth'))
+    check('no page JavaScript errors', not errors)
+    report['links'] = {'tarot': tarot_url, 'plan': plan_url}
+    (OUT / 'browser-checks.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    browser.close()
+print(json.dumps({'passed': len(report['checks']), 'output': str(OUT)}, ensure_ascii=False))

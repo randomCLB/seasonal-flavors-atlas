@@ -195,3 +195,283 @@ Object.assign(window.LOTTERY_PROFILES,{
     }
   }
 });
+
+// Yunnan additions reviewed 2026-10-15.
+Object.assign(window.LOTTERY_PROFILES, {
+  "baoshan-liangcui-emblica": {
+    "avoid": [],
+    "effort": 0,
+    "family": "fruit",
+    "signature": "c3344930",
+    "senses": {
+      "signature": "ea40d9c",
+      "tastes": [
+        "sour",
+        "bitter",
+        "sweet"
+      ],
+      "recipeTastes": [],
+      "textures": [
+        "crisp"
+      ],
+      "cooking": [
+        "fresh"
+      ],
+      "features": [
+        "晚熟的浅绿圆果",
+        "先酸涩再回甘"
+      ]
+    }
+  },
+  "ninger-tongxin-sweet-shoot": {
+    "avoid": [
+      "meat"
+    ],
+    "effort": 1,
+    "family": "vegetable",
+    "signature": "796e3100",
+    "senses": {
+      "signature": "30cc6609",
+      "tastes": [
+        "sweet",
+        "umami"
+      ],
+      "recipeTastes": [
+        "salty"
+      ],
+      "textures": [
+        "crisp",
+        "tender"
+      ],
+      "cooking": [
+        "soup"
+      ],
+      "features": [
+        "春末的食用甜竹笋",
+        "清汤里保留笋的轻脆"
+      ]
+    }
+  },
+  "yongsheng-fresh-kapok": {
+    "avoid": [
+      "soy"
+    ],
+    "uncertain": [
+      "wheat"
+    ],
+    "effort": 1,
+    "family": "flower",
+    "signature": "ff328fd2",
+    "senses": {
+      "signature": "8b6592ce",
+      "tastes": [
+        "bitter"
+      ],
+      "recipeTastes": [
+        "salty",
+        "umami"
+      ],
+      "textures": [
+        "crisp",
+        "chewy"
+      ],
+      "cooking": [
+        "boil",
+        "stirfry"
+      ],
+      "features": [
+        "红花里取出的细束花蕊",
+        "鲜花蕊熟后仍有轻脆"
+      ]
+    }
+  },
+  "jianshui-caoya": {
+    "avoid": [
+      "meat"
+    ],
+    "effort": 1,
+    "family": "vegetable",
+    "signature": "54bea674",
+    "senses": {
+      "signature": "4874a041",
+      "tastes": [
+        "sweet"
+      ],
+      "recipeTastes": [
+        "salty",
+        "umami"
+      ],
+      "textures": [
+        "crisp",
+        "tender"
+      ],
+      "cooking": [
+        "stirfry"
+      ],
+      "features": [
+        "乳白象牙形嫩根状茎",
+        "水生菜的柔脆口感"
+      ]
+    }
+  },
+  "tonghai-fresh-sour-quince": {
+    "avoid": [
+      "meat"
+    ],
+    "effort": 1,
+    "family": "fruit",
+    "signature": "19817555",
+    "senses": {
+      "signature": "bf255152",
+      "tastes": [
+        "sour"
+      ],
+      "recipeTastes": [
+        "salty",
+        "umami"
+      ],
+      "textures": [
+        "soft",
+        "tender"
+      ],
+      "cooking": [
+        "soup"
+      ],
+      "features": [
+        "以鲜果酸香入汤",
+        "与甜番木瓜的用途不同"
+      ]
+    }
+  },
+  "lancang-nannai-duoyi": {
+    "avoid": [],
+    "effort": 0,
+    "family": "fruit",
+    "signature": "db244614",
+    "senses": {
+      "signature": "13eca5ad",
+      "tastes": [
+        "sour",
+        "sweet"
+      ],
+      "recipeTastes": [],
+      "textures": [
+        "crisp",
+        "juicy"
+      ],
+      "cooking": [
+        "fresh"
+      ],
+      "features": [
+        "青绿透红的地方鲜果",
+        "鲜食品系的脆与多汁"
+      ]
+    }
+  },
+  "longyang-pupiao-allium-root": {
+    "avoid": [
+      "meat"
+    ],
+    "effort": 1,
+    "family": "vegetable",
+    "signature": "827e19cc",
+    "senses": {
+      "signature": "8a10b847",
+      "tastes": [
+        "spicy"
+      ],
+      "recipeTastes": [
+        "salty",
+        "umami"
+      ],
+      "textures": [
+        "chewy",
+        "crisp"
+      ],
+      "cooking": [
+        "boil",
+        "stirfry"
+      ],
+      "features": [
+        "入口的是成束肉质根",
+        "葱韭样辛香来自根部"
+      ]
+    }
+  },
+  "banna-banana-blossom": {
+    "avoid": [
+      "meat"
+    ],
+    "effort": 1,
+    "family": "flower",
+    "signature": "5515faa7",
+    "senses": {
+      "signature": "3bae51ef",
+      "tastes": [
+        "bitter"
+      ],
+      "recipeTastes": [
+        "salty",
+        "umami"
+      ],
+      "textures": [
+        "tender",
+        "chewy"
+      ],
+      "cooking": [
+        "soup"
+      ],
+      "features": [
+        "食用的是嫩花序而非香蕉果",
+        "层层苞片里的柔嫩内层"
+      ]
+    },
+    "disabled": "已收录供查阅；尚无足以确定当地最佳月份的证据，暂不自动推荐。"
+  },
+  "ximeng-bamboo-worm": {
+    "avoid": [
+      "meat"
+    ],
+    "uncertain": [
+      "seafood"
+    ],
+    "effort": 2,
+    "family": "insect",
+    "signature": "9f16fae8",
+    "senses": {
+      "signature": "3b8bbaa9",
+      "tastes": [
+        "umami"
+      ],
+      "recipeTastes": [
+        "salty"
+      ],
+      "textures": [
+        "crisp",
+        "tender"
+      ],
+      "cooking": [
+        "boil",
+        "stirfry"
+      ],
+      "features": [
+        "竹节中生活的食用昆虫",
+        "熟制后外层干香"
+      ]
+    }
+  }
+});
+
+// Reviewed November additions 2026-10-16.
+Object.assign(window.LOTTERY_PROFILES,{
+  "helan-luosicai":{"signature":"91225d48","avoid":[],"effort":1,"family":"vegetable"},
+  "lanzhou-xianbaihe":{"signature":"72a13301","avoid":[],"effort":1,"family":"vegetable"},
+  "binchuan-renong1-yuganzi":{"signature":"87388ad5","avoid":[],"effort":0,"family":"fruit"},
+  "xiaolan-shiju-huaban":{"signature":"1705c649","avoid":["meat"],"effort":1,"family":"flower"},
+  "taitung-luoshen-calyx":{"signature":"1ecb8ef6","avoid":[],"effort":1,"family":"fruit"},
+  "luoping-hongguoshen":{"signature":"940d0c97","avoid":[],"effort":0,"family":"fruit"},
+  "heshi-xianfenge":{"signature":"14c42a9a","avoid":["meat","seafood"],"effort":2,"family":"vegetable"},
+  "xikou-xindongsun":{"signature":"89c900ec","avoid":[],"effort":1,"family":"vegetable"},
+  "rongan-jingju":{"signature":"7471ed82","avoid":[],"effort":0,"family":"fruit"},
+  "sanmen-qingxie":{"signature":"e382e398","avoid":["meat"],"effort":1,"family":"seafood"}
+});

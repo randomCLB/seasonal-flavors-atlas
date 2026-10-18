@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const C=require('../dist/lottery-core.js'),root=path.join(__dirname,'../dist');
 function fixture(){
- const nodes=new Map(),document={getElementById:id=>{if(!nodes.has(id))nodes.set(id,{style:{},querySelectorAll:()=>[]});return nodes.get(id)},querySelectorAll:()=>[]};
+ const nodes=new Map(),document={getElementById:id=>{if(!nodes.has(id))nodes.set(id,{style:{},classList:{toggle(){}},querySelectorAll:()=>[]});return nodes.get(id)},querySelectorAll:()=>[]};
  class Clock extends Date{constructor(...args){super(...(args.length?args:['2026-10-03T04:00:00Z']))}static now(){return Date.parse('2026-10-03T04:00:00Z')}}
  const ctx={window:{FengwuLottery:C},document,Date:Clock};vm.createContext(ctx);
  for(const name of ['solar-terms','data','editorial','editorial-notes'])vm.runInContext(fs.readFileSync(path.join(root,name+'.js'),'utf8'),ctx);

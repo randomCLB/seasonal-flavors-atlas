@@ -10,7 +10,7 @@ function preferences(avoid=[],excludeText=''){const prefs={avoid,excludeText,tas
 // Only explicit serving/ingredient references are accepted; never use an arbitrary habitat image.
 function validImage(src){return typeof src==='string'&&/^assets\/[a-zA-Z0-9._/-]+$/.test(src)&&!src.includes('..');}
 function mediaFor(f){
- if(f.dishImage){if(!validImage(f.dishImage))return null;return {src:f.dishImage,alt:f.dishImageAlt||`${f.name}成菜参考`,kind:'dish',note:''};}
+ if(f.dishImage){if(!validImage(f.dishImage))return null;return {src:f.dishImage,alt:f.dishImageAlt||`${f.name}成菜参考`,kind:'dish',note:f.dishCredit||''};}
  const m=f.tarotImage;
  if(!m||!['fresh','dish','ingredient'].includes(m.kind)||!validImage(m.src)||typeof m.alt!=='string'||!m.alt.trim()||typeof m.note!=='string'||!m.note.trim())return null;
  return {src:m.src,alt:m.alt,kind:m.kind,note:m.note};

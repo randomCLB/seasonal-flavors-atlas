@@ -1,0 +1,32 @@
+#detailContent{padding:18px 36px 0}
+.reader-overview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.18fr);gap:38px;align-items:start;padding:8px 0 22px}
+.reader-lead h1,.reader-section h2,.reader-content h3,.reader-next h2,.reader-next button strong{font-family:"Songti SC","STSong","SimSun",serif;font-weight:500}
+.reader-portrait{margin:0;min-width:0}
+.reader-portrait>img{display:block;width:100%;height:280px;background:#eeeade;object-position:center}
+.reader-portrait figcaption{font-size:11px;line-height:1.6;color:#53675f;margin-top:9px}
+.reader-portrait a,.reader-content a{color:inherit;text-underline-offset:4px}
+.reader-lead{min-width:0}.reader-kicker{font-size:12px;letter-spacing:.08em;color:#53675f;margin:0 0 14px}
+.reader-lead h1{font-size:clamp(27px,3.2vw,42px);line-height:1.35;margin:0 0 12px;overflow-wrap:anywhere}
+.reader-season{font-size:12px;letter-spacing:.04em;color:#866339;margin:0 0 14px}
+.reader-expectation{font-size:17px;line-height:1.8;margin:0 0 9px}
+.reader-state{font-size:12px;line-height:1.7;color:#53675f;margin:0 0 18px}
+.reader-actions{display:flex;align-items:flex-start;flex-wrap:wrap;gap:12px}
+.reader-actions:has(.food-purchase[open]){display:block}.reader-actions:has(.food-purchase[open])>.reader-recipe-button{margin-top:12px}
+.reader-recipe-button{min-height:44px;display:flex;gap:25px;align-items:center;justify-content:space-between;padding:8px 18px;color:#f7f3e8;background:#173d34;border:1px solid #173d34;font:inherit;font-size:14px;cursor:pointer;letter-spacing:.06em}
+.reader-recipe-button:hover{background:#2e5648}.reader-recipe-button:focus-visible{outline:2px solid #866339;outline-offset:4px}
+.reader-evidence{font-size:12px;line-height:1.75;color:#53675f;margin:0 0 20px}
+.reader-safety{border-left:2px solid #a17d45;padding:10px 16px;background:#efecdf;margin:0 0 24px;font-size:13px;line-height:1.75}
+.reader-safety strong{font-size:12px;letter-spacing:.08em}.reader-safety p{margin:4px 0 0}
+.reader-section{border-top:1px solid #d6d2c4}.reader-section:last-child{border-bottom:1px solid #d6d2c4}
+.reader-section>summary{display:flex;gap:18px;align-items:center;list-style:none;cursor:pointer;min-height:72px;padding:14px 4px;background:linear-gradient(90deg,#f1eee3,transparent);box-sizing:border-box}
+.reader-section>summary::-webkit-details-marker{display:none}.reader-section>summary>span:first-child{font-size:11px;color:#866339;letter-spacing:.1em}
+.reader-section>summary>h2{font-size:22px;margin:0;flex:1;font-weight:500}.reader-section>summary>span:last-child{font-size:19px;font-weight:400;color:#866339;transition:transform .2s}
+.reader-section[open]>summary>span:last-child{transform:rotate(45deg)}.reader-section>summary:hover{background:#eeebdf}.reader-section>summary:focus-visible{outline:2px solid #866339;outline-offset:-2px}
+.reader-content{padding:8px 35px 28px;font-size:15px;line-height:1.9}.reader-content h3{font-size:20px;margin:18px 0 10px}.reader-content p{margin:12px 0}
+.reader-content .sensory{margin-top:0}.reader-content .sensory>div{padding:10px 0}.reader-content .sensory dd{margin:0}.reader-content .state-note{font-size:12px;color:#53675f}
+.reader-dish{margin:24px 0 8px}.reader-dish img{max-height:360px;width:100%;object-fit:contain;background:#eeebdf}.reader-dish figcaption{font-size:12px;color:#53675f;line-height:1.6}
+.reader-sources{padding-left:1.3em;font-size:13px}.reader-sources li{margin:8px 0}
+.reader-next{padding:32px 0}.reader-next>h2{font-size:22px;font-weight:500}.reader-next>div{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.reader-next button{border:0;border-bottom:1px solid #b4bdb1;background:#f0eee3;padding:16px;text-align:left;color:inherit;cursor:pointer}.reader-next button strong,.reader-next button span{display:block}.reader-next button strong{font-family:inherit;font-size:17px}.reader-next button span{font-size:12px;line-height:1.8;margin-top:6px}
+@media(max-width:650px){#detailContent{padding:12px 18px 0}.reader-overview{grid-template-columns:1fr;gap:17px}.reader-portrait>img{height:180px}.reader-portrait figcaption{font-size:10px}.reader-kicker{margin-bottom:8px;font-size:11px}.reader-lead h1{font-size:28px;margin-bottom:8px}.reader-season{margin-bottom:9px}.reader-expectation{font-size:15px;margin-bottom:6px}.reader-state{margin-bottom:12px;font-size:11px}.reader-content{padding:5px 5px 24px}.reader-section>summary{gap:12px;min-height:64px}.reader-section>summary>h2{font-size:20px}.reader-next>div{grid-template-columns:1fr}.reader-evidence{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.reader-section>summary>span:last-child{transition:none}}
