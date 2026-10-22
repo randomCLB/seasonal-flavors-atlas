@@ -3,6 +3,7 @@
  'use strict';
  const esc=value=>root.FoodPurchase.esc(value);
  function html(f,{recognition,seasonLabel,category,originHtml,similar,imageAttrs}){
+  f={...f,...root.EDITORIAL_DETAILS?.[f.id]};
   const comparison=f.comparison;
   const hasEdible=(f.dishImage||f.cutImage)&&!f.tarotImage?.kind?.match(/ingredient|fresh/);
   const edible=f.dishImage||f.cutImage;

@@ -1,0 +1,5944 @@
+{
+  "generatedAt": "2026-10-22T12:00:40.593Z",
+  "fixedClock": "2026-10-22T12:00:00Z",
+  "baselineCommit": "ed7bdb1c2862680c37d4ded106d736e5f92529ac",
+  "scope": "24 displayed homepage season lists (all categories), 2026 autumn equinox through 2027 white dew. Baseline files, food data, image rules and app are read from HEAD; current files are read from the worktree. Both versions are assessed with the same revised SeasonSelection.group definition. Adjacent overlap is repeated food IDs divided by current-term total; the first term compares with its pre-cycle selected candidate pool, matching the app planner.",
+  "baseline": {
+    "catalogCount": 354,
+    "editorialHolds": {},
+    "nonEmptyTerms": 24,
+    "duplicateTerms": 0,
+    "duplicateFamilies": 0,
+    "duplicateExcessEntries": 0,
+    "maxAdjacentRepeatRate": 0.5,
+    "uniqueFeatureCount": 24,
+    "desiredFeaturesPresent": 0,
+    "rows": [
+      {
+        "term": "秋分",
+        "year": 2026,
+        "index": 17,
+        "startDay": "2026-09-23",
+        "endDay": "2026-10-07",
+        "count": 20,
+        "repeatCount": 10,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "lancang-nannai-duoyi",
+          "name": "澜沧南乃多依果",
+          "family": "lancang-nannai-duoyi",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "lintong-huojing-shizi",
+            "name": "临潼火晶柿子",
+            "family": "persimmon"
+          },
+          {
+            "id": "lancang-nannai-duoyi",
+            "name": "澜沧南乃多依果",
+            "family": "lancang-nannai-duoyi"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "minqing-tanxiang-olive",
+            "name": "闽清檀香橄榄",
+            "family": "minqing-tanxiang-olive"
+          },
+          {
+            "id": "binchuan-renong1-yuganzi",
+            "name": "宾川“热农1号”余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "taitung-luoshen-calyx",
+            "name": "台东鲜洛神花萼",
+            "family": "taitung-luoshen-calyx"
+          },
+          {
+            "id": "taiwan-qiufen-northeast-shrimp",
+            "name": "台湾东北部秋分鲜虾",
+            "family": "taiwan-qiufen-northeast-shrimp"
+          },
+          {
+            "id": "juema",
+            "name": "青海蕨麻",
+            "family": "juema"
+          },
+          {
+            "id": "ruanzao-mihoutao",
+            "name": "软枣猕猴桃",
+            "family": "ruanzao-mihoutao"
+          },
+          {
+            "id": "shajiguo",
+            "name": "沙棘果",
+            "family": "shajiguo"
+          },
+          {
+            "id": "longyang-pupiao-allium-root",
+            "name": "隆阳蒲缥苤菜根",
+            "family": "longyang-pupiao-allium-root"
+          },
+          {
+            "id": "hanshou-yubiou",
+            "name": "汉寿玉臂藕",
+            "family": "hanshou-yubiou"
+          },
+          {
+            "id": "bayuegua",
+            "name": "八月瓜",
+            "family": "bayuegua"
+          },
+          {
+            "id": "cili",
+            "name": "刺梨",
+            "family": "rose-fruit"
+          },
+          {
+            "id": "huoshan-yanghe",
+            "name": "霍山阳荷嫩苞",
+            "family": "huoshan-yanghe"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "chongming-baibiandou",
+            "name": "崇明白扁豆鲜荚",
+            "family": "chongming-baibiandou"
+          },
+          {
+            "id": "yanqing-baleng-crisp-haitang",
+            "name": "延庆八棱脆海棠",
+            "family": "crabapple"
+          }
+        ],
+        "repeatedFoodIds": [
+          "ruanzao-mihoutao",
+          "shajiguo",
+          "longyang-pupiao-allium-root",
+          "hanshou-yubiou",
+          "bayuegua",
+          "cili",
+          "huoshan-yanghe",
+          "nanhu-ling",
+          "jianou-zhuilli",
+          "chongming-baibiandou"
+        ]
+      },
+      {
+        "term": "寒露",
+        "year": 2026,
+        "index": 18,
+        "startDay": "2026-10-08",
+        "endDay": "2026-10-22",
+        "count": 31,
+        "repeatCount": 12,
+        "repeatRate": 0.3870967741935484,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "lintong-huojing-shizi",
+          "name": "临潼火晶柿子",
+          "family": "persimmon",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "lintong-huojing-shizi",
+            "name": "临潼火晶柿子",
+            "family": "persimmon"
+          },
+          {
+            "id": "lancang-nannai-duoyi",
+            "name": "澜沧南乃多依果",
+            "family": "lancang-nannai-duoyi"
+          },
+          {
+            "id": "laiyang-pear",
+            "name": "莱阳梨",
+            "family": "pear"
+          },
+          {
+            "id": "junan-jinqiuhongmi-peach",
+            "name": "莒南团林金秋红蜜桃",
+            "family": "peach"
+          },
+          {
+            "id": "taiwan-hanlu-whitebelly-mackerel",
+            "name": "台湾寒露白腹鰆",
+            "family": "whitebelly-seerfish"
+          },
+          {
+            "id": "huishui-hanlu-autumn-tea-2026",
+            "name": "惠水寒露秋茶",
+            "family": "tea"
+          },
+          {
+            "id": "bomi-gutong-crisp-red-plum",
+            "name": "波密古通脆红李",
+            "family": "plum"
+          },
+          {
+            "id": "caidian-ehong4-early-caitai",
+            "name": "武汉蔡甸鄂红4号早熟菜薹",
+            "family": "red-caitai"
+          },
+          {
+            "id": "keelung-hanlu-cuttlefish",
+            "name": "基隆寒露目贼（乌贼）",
+            "family": "cuttlefish"
+          },
+          {
+            "id": "changning-hanlu-camellia-seed-oil",
+            "name": "常宁寒露籽茶油",
+            "family": "changning-hanlu-camellia-seed-oil"
+          },
+          {
+            "id": "lixian-hanlu-qincui-apple",
+            "name": "理县秦脆苹果",
+            "family": "apple"
+          },
+          {
+            "id": "suzhou-guangfu-hanlu-late-osmanthus",
+            "name": "苏州光福寒露晚桂",
+            "family": "suzhou-guangfu-hanlu-late-osmanthus"
+          },
+          {
+            "id": "fuzhou-hanlu-razor-clam-dry",
+            "name": "福州寒露蛏干",
+            "family": "fuzhou-hanlu-razor-clam-dry"
+          },
+          {
+            "id": "fuzhou-hanlu-liaozai-clam",
+            "name": "福州寒露蟟仔（蚬类俗名）",
+            "family": "fuzhou-hanlu-liaozai-clam"
+          },
+          {
+            "id": "ningbo-zhanqi-dafeng-early-orange",
+            "name": "宁波瞻岐大丰早橘",
+            "family": "citrus"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "minqing-tanxiang-olive",
+            "name": "闽清檀香橄榄",
+            "family": "minqing-tanxiang-olive"
+          },
+          {
+            "id": "binchuan-renong1-yuganzi",
+            "name": "宾川“热农1号”余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "taitung-luoshen-calyx",
+            "name": "台东鲜洛神花萼",
+            "family": "taitung-luoshen-calyx"
+          },
+          {
+            "id": "banan-wubu-pomelo",
+            "name": "巴南五布柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "juema",
+            "name": "青海蕨麻",
+            "family": "juema"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "chongming-baibiandou",
+            "name": "崇明白扁豆鲜荚",
+            "family": "chongming-baibiandou"
+          },
+          {
+            "id": "chongming-xiangsu-yu",
+            "name": "崇明香酥芋",
+            "family": "chongming-xiangsu-yu"
+          },
+          {
+            "id": "ximeng-bamboo-worm",
+            "name": "西盟鲜竹虫",
+            "family": "ximeng-bamboo-worm"
+          },
+          {
+            "id": "yanqing-baleng-crisp-haitang",
+            "name": "延庆八棱脆海棠",
+            "family": "crabapple"
+          },
+          {
+            "id": "zhenlai-jiaobai",
+            "name": "镇赉寒地茭白",
+            "family": "water-bamboo"
+          },
+          {
+            "id": "sanmen-qingxie",
+            "name": "三门青蟹",
+            "family": "mud-crab"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          }
+        ],
+        "repeatedFoodIds": [
+          "lintong-huojing-shizi",
+          "lancang-nannai-duoyi",
+          "cizhousun",
+          "lyg-shaguang-fish",
+          "minqing-tanxiang-olive",
+          "binchuan-renong1-yuganzi",
+          "taitung-luoshen-calyx",
+          "juema",
+          "nanhu-ling",
+          "jianou-zhuilli",
+          "chongming-baibiandou",
+          "yanqing-baleng-crisp-haitang"
+        ]
+      },
+      {
+        "term": "霜降",
+        "year": 2026,
+        "index": 19,
+        "startDay": "2026-10-23",
+        "endDay": "2026-11-06",
+        "count": 22,
+        "repeatCount": 11,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "helan-luosicai",
+          "name": "贺兰鲜螺丝菜",
+          "family": "helan-luosicai",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "helan-luosicai",
+            "name": "贺兰鲜螺丝菜",
+            "family": "helan-luosicai"
+          },
+          {
+            "id": "lanzhou-xianbaihe",
+            "name": "兰州鲜甜百合",
+            "family": "lanzhou-xianbaihe"
+          },
+          {
+            "id": "xiaolan-shiju-huaban",
+            "name": "小榄鲜食菊花瓣",
+            "family": "xiaolan-shiju-huaban"
+          },
+          {
+            "id": "luoping-hongguoshen",
+            "name": "罗平红果参",
+            "family": "luoping-hongguoshen"
+          },
+          {
+            "id": "heshi-xianfenge",
+            "name": "合水鲜粉葛",
+            "family": "heshi-xianfenge"
+          },
+          {
+            "id": "heze-shannong-crisp-pear",
+            "name": "菏泽山农酥梨",
+            "family": "pear"
+          },
+          {
+            "id": "wuding-fawowo-winter-peach",
+            "name": "武定发窝冬桃",
+            "family": "peach"
+          },
+          {
+            "id": "xunyang-guizao",
+            "name": "旬阳拐枣",
+            "family": "xunyang-guizao"
+          },
+          {
+            "id": "xikou-xindongsun",
+            "name": "溪口新冬笋",
+            "family": "moso-bamboo-shoot"
+          },
+          {
+            "id": "rongan-jingju",
+            "name": "融安脆蜜／滑皮金桔",
+            "family": "kumquat"
+          },
+          {
+            "id": "tainan-madou-frost-white-pomelo",
+            "name": "台南麻豆霜降白柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "lintong-huojing-shizi",
+            "name": "临潼火晶柿子",
+            "family": "persimmon"
+          },
+          {
+            "id": "lancang-nannai-duoyi",
+            "name": "澜沧南乃多依果",
+            "family": "lancang-nannai-duoyi"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "minqing-tanxiang-olive",
+            "name": "闽清檀香橄榄",
+            "family": "minqing-tanxiang-olive"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "chongming-baibiandou",
+            "name": "崇明白扁豆鲜荚",
+            "family": "chongming-baibiandou"
+          },
+          {
+            "id": "chongming-xiangsu-yu",
+            "name": "崇明香酥芋",
+            "family": "chongming-xiangsu-yu"
+          },
+          {
+            "id": "ximeng-bamboo-worm",
+            "name": "西盟鲜竹虫",
+            "family": "ximeng-bamboo-worm"
+          },
+          {
+            "id": "binchuan-renong1-yuganzi",
+            "name": "宾川“热农1号”余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "taitung-luoshen-calyx",
+            "name": "台东鲜洛神花萼",
+            "family": "taitung-luoshen-calyx"
+          }
+        ],
+        "repeatedFoodIds": [
+          "lintong-huojing-shizi",
+          "lancang-nannai-duoyi",
+          "nanhu-ling",
+          "lyg-shaguang-fish",
+          "minqing-tanxiang-olive",
+          "jianou-zhuilli",
+          "chongming-baibiandou",
+          "chongming-xiangsu-yu",
+          "ximeng-bamboo-worm",
+          "binchuan-renong1-yuganzi",
+          "taitung-luoshen-calyx"
+        ]
+      },
+      {
+        "term": "立冬",
+        "year": 2026,
+        "index": 20,
+        "startDay": "2026-11-07",
+        "endDay": "2026-11-21",
+        "count": 16,
+        "repeatCount": 8,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "lanzhou-xianbaihe",
+          "name": "兰州鲜甜百合",
+          "family": "lanzhou-xianbaihe",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "helan-luosicai",
+            "name": "贺兰鲜螺丝菜",
+            "family": "helan-luosicai"
+          },
+          {
+            "id": "lanzhou-xianbaihe",
+            "name": "兰州鲜甜百合",
+            "family": "lanzhou-xianbaihe"
+          },
+          {
+            "id": "xiaolan-shiju-huaban",
+            "name": "小榄鲜食菊花瓣",
+            "family": "xiaolan-shiju-huaban"
+          },
+          {
+            "id": "luoping-hongguoshen",
+            "name": "罗平红果参",
+            "family": "luoping-hongguoshen"
+          },
+          {
+            "id": "heshi-xianfenge",
+            "name": "合水鲜粉葛",
+            "family": "heshi-xianfenge"
+          },
+          {
+            "id": "huangbohai-yingzhuaxia",
+            "name": "黄渤海灯笼红虾",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "cangnan-lidong-four-seasons-pomelo",
+            "name": "苍南四季柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "qingdao-shuangdongmi-peach",
+            "name": "青岛“双冬蜜”极晚熟桃",
+            "family": "peach"
+          },
+          {
+            "id": "qixia-lidong-winter-after-apple",
+            "name": "栖霞“冬后”苹果",
+            "family": "apple"
+          },
+          {
+            "id": "yongjia-hesheng-red-persimmon",
+            "name": "永嘉鹤盛红柿",
+            "family": "persimmon"
+          },
+          {
+            "id": "xunyang-guizao",
+            "name": "旬阳拐枣",
+            "family": "xunyang-guizao"
+          },
+          {
+            "id": "lanxi-huitan-sugarcane",
+            "name": "兰溪汇潭甘蔗",
+            "family": "sugarcane"
+          },
+          {
+            "id": "rongan-jingju",
+            "name": "融安脆蜜／滑皮金桔",
+            "family": "kumquat"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "sanmen-qingxie",
+            "name": "三门青蟹",
+            "family": "mud-crab"
+          }
+        ],
+        "repeatedFoodIds": [
+          "helan-luosicai",
+          "lanzhou-xianbaihe",
+          "xiaolan-shiju-huaban",
+          "luoping-hongguoshen",
+          "heshi-xianfenge",
+          "xunyang-guizao",
+          "rongan-jingju",
+          "lyg-shaguang-fish"
+        ]
+      },
+      {
+        "term": "小雪",
+        "year": 2026,
+        "index": 21,
+        "startDay": "2026-11-22",
+        "endDay": "2026-12-06",
+        "count": 24,
+        "repeatCount": 12,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "wenzhou-sanyang-ougan",
+          "name": "温州三垟瓯柑",
+          "family": "citrus",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "wenzhou-sanyang-ougan",
+            "name": "温州三垟瓯柑",
+            "family": "citrus"
+          },
+          {
+            "id": "conghua-dajiecai",
+            "name": "从化大芥菜",
+            "family": "conghua-dajiecai"
+          },
+          {
+            "id": "jinjiang-toushui-zicai",
+            "name": "晋江头水紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard",
+            "name": "宁波鄞州冬菜雪菜",
+            "family": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          },
+          {
+            "id": "cigu",
+            "name": "宝应慈姑",
+            "family": "cigu"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          },
+          {
+            "id": "helan-luosicai",
+            "name": "贺兰鲜螺丝菜",
+            "family": "helan-luosicai"
+          },
+          {
+            "id": "lanzhou-xianbaihe",
+            "name": "兰州鲜甜百合",
+            "family": "lanzhou-xianbaihe"
+          },
+          {
+            "id": "xiaolan-shiju-huaban",
+            "name": "小榄鲜食菊花瓣",
+            "family": "xiaolan-shiju-huaban"
+          },
+          {
+            "id": "luoping-hongguoshen",
+            "name": "罗平红果参",
+            "family": "luoping-hongguoshen"
+          },
+          {
+            "id": "heshi-xianfenge",
+            "name": "合水鲜粉葛",
+            "family": "heshi-xianfenge"
+          },
+          {
+            "id": "huangbohai-yingzhuaxia",
+            "name": "黄渤海灯笼红虾",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "yongjia-hesheng-red-persimmon",
+            "name": "永嘉鹤盛红柿",
+            "family": "persimmon"
+          },
+          {
+            "id": "xunyang-guizao",
+            "name": "旬阳拐枣",
+            "family": "xunyang-guizao"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "minqing-tanxiang-olive",
+            "name": "闽清檀香橄榄",
+            "family": "minqing-tanxiang-olive"
+          },
+          {
+            "id": "binchuan-renong1-yuganzi",
+            "name": "宾川“热农1号”余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "taitung-luoshen-calyx",
+            "name": "台东鲜洛神花萼",
+            "family": "taitung-luoshen-calyx"
+          },
+          {
+            "id": "rongan-jingju",
+            "name": "融安脆蜜／滑皮金桔",
+            "family": "kumquat"
+          },
+          {
+            "id": "sanmen-qingxie",
+            "name": "三门青蟹",
+            "family": "mud-crab"
+          }
+        ],
+        "repeatedFoodIds": [
+          "helan-luosicai",
+          "lanzhou-xianbaihe",
+          "xiaolan-shiju-huaban",
+          "luoping-hongguoshen",
+          "heshi-xianfenge",
+          "huangbohai-yingzhuaxia",
+          "yongjia-hesheng-red-persimmon",
+          "xunyang-guizao",
+          "cizhousun",
+          "lyg-shaguang-fish",
+          "rongan-jingju",
+          "sanmen-qingxie"
+        ]
+      },
+      {
+        "term": "大雪",
+        "year": 2026,
+        "index": 22,
+        "startDay": "2026-12-07",
+        "endDay": "2026-12-21",
+        "count": 14,
+        "repeatCount": 7,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "baoshan-liangcui-emblica",
+          "name": "保山亮脆余甘子",
+          "family": "emblica",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "baoshan-liangcui-emblica",
+            "name": "保山亮脆余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "linwu-liping-golden-pomelo",
+            "name": "临武黎坪黄金贡柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "conghua-dajiecai",
+            "name": "从化大芥菜",
+            "family": "conghua-dajiecai"
+          },
+          {
+            "id": "jinjiang-toushui-zicai",
+            "name": "晋江头水紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "yanshi-fresh-yintiao",
+            "name": "偃师鲜银条",
+            "family": "yanshi-fresh-yintiao"
+          },
+          {
+            "id": "luogang-sweet-orange",
+            "name": "广州萝岗橙",
+            "family": "citrus"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          },
+          {
+            "id": "cigu",
+            "name": "宝应慈姑",
+            "family": "cigu"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          },
+          {
+            "id": "xikou-xindongsun",
+            "name": "溪口新冬笋",
+            "family": "moso-bamboo-shoot"
+          }
+        ],
+        "repeatedFoodIds": [
+          "conghua-dajiecai",
+          "jinjiang-toushui-zicai",
+          "zengcheng-caixin",
+          "atushi-winter-lamb",
+          "shazhou-zhugengqin",
+          "cigu",
+          "yangxin-huhao"
+        ]
+      },
+      {
+        "term": "冬至",
+        "year": 2026,
+        "index": 23,
+        "startDay": "2026-12-22",
+        "endDay": "2027-01-04",
+        "count": 18,
+        "repeatCount": 9,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "huadu-jingtang-lotusroot",
+          "name": "花都京塘莲藕",
+          "family": "huadu-jingtang-lotusroot",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "huadu-jingtang-lotusroot",
+            "name": "花都京塘莲藕",
+            "family": "huadu-jingtang-lotusroot"
+          },
+          {
+            "id": "ningbo-youdai",
+            "name": "宁波北洋油带鱼",
+            "family": "hairtail"
+          },
+          {
+            "id": "bomi-winter-muli",
+            "name": "波密冬至木梨",
+            "family": "pear"
+          },
+          {
+            "id": "xinhui-xinghuang-water-chestnut",
+            "name": "新会兴篁村鲜马蹄",
+            "family": "water-chestnut"
+          },
+          {
+            "id": "shantou-haojiang-liqian-dongjingwan",
+            "name": "濠江里前东京丸",
+            "family": "shantou-haojiang-liqian-dongjingwan"
+          },
+          {
+            "id": "yunyang-winter-solstice-red-orange",
+            "name": "云阳红橙",
+            "family": "citrus"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          },
+          {
+            "id": "baoshan-liangcui-emblica",
+            "name": "保山亮脆余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "conghua-dajiecai",
+            "name": "从化大芥菜",
+            "family": "conghua-dajiecai"
+          },
+          {
+            "id": "jinjiang-toushui-zicai",
+            "name": "晋江头水紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "yanshi-fresh-yintiao",
+            "name": "偃师鲜银条",
+            "family": "yanshi-fresh-yintiao"
+          },
+          {
+            "id": "xikou-xindongsun",
+            "name": "溪口新冬笋",
+            "family": "moso-bamboo-shoot"
+          },
+          {
+            "id": "rongan-jingju",
+            "name": "融安脆蜜／滑皮金桔",
+            "family": "kumquat"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          }
+        ],
+        "repeatedFoodIds": [
+          "taitung-winter-atemoya",
+          "baoshan-liangcui-emblica",
+          "conghua-dajiecai",
+          "jinjiang-toushui-zicai",
+          "zengcheng-caixin",
+          "yanshi-fresh-yintiao",
+          "xikou-xindongsun",
+          "atushi-winter-lamb",
+          "shazhou-zhugengqin"
+        ]
+      },
+      {
+        "term": "小寒",
+        "year": 2027,
+        "index": 0,
+        "startDay": "2027-01-05",
+        "endDay": "2027-01-19",
+        "count": 17,
+        "repeatCount": 7,
+        "repeatRate": 0.4117647058823529,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "zizhong-xiaohan-early-blood-orange",
+          "name": "资中早熟血橙",
+          "family": "citrus",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "zizhong-xiaohan-early-blood-orange",
+            "name": "资中早熟血橙",
+            "family": "citrus"
+          },
+          {
+            "id": "luquan-greenhouse-toon-first-pick",
+            "name": "鹿泉温室香椿·元旦头茬",
+            "family": "toon-shoot"
+          },
+          {
+            "id": "beian-xiaohan-white-lover-strawberry",
+            "name": "北安“白色恋人”白草莓",
+            "family": "beian-xiaohan-white-lover-strawberry"
+          },
+          {
+            "id": "fuling-yuzao100-mustard-stem",
+            "name": "涪陵渝早100青菜头",
+            "family": "fuling-yuzao100-mustard-stem"
+          },
+          {
+            "id": "xinzhou-qubeihu-gongdeng-water-chestnut",
+            "name": "新洲曲背湖宫灯荸荠",
+            "family": "water-chestnut"
+          },
+          {
+            "id": "jiangan-changsha-xiaohan-early-tea-first-pick",
+            "name": "江安长沙村峨眉问春早茶首采",
+            "family": "tea"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "ntpc-northeast-cape-thorn-purple-algae",
+            "name": "贡寮东北角刺紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "yanshi-fresh-yintiao",
+            "name": "偃师鲜银条",
+            "family": "yanshi-fresh-yintiao"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          },
+          {
+            "id": "cigu",
+            "name": "宝应慈姑",
+            "family": "cigu"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "bishan-ercai",
+          "wenzhou-pancai",
+          "zengcheng-caixin",
+          "yanshi-fresh-yintiao",
+          "atushi-winter-lamb",
+          "shazhou-zhugengqin",
+          "taitung-winter-atemoya"
+        ]
+      },
+      {
+        "term": "大寒",
+        "year": 2027,
+        "index": 1,
+        "startDay": "2027-01-20",
+        "endDay": "2027-02-03",
+        "count": 18,
+        "repeatCount": 9,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "fuling-yuzao100-mustard-stem",
+          "name": "涪陵渝早100青菜头",
+          "family": "fuling-yuzao100-mustard-stem",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "fuling-yuzao100-mustard-stem",
+            "name": "涪陵渝早100青菜头",
+            "family": "fuling-yuzao100-mustard-stem"
+          },
+          {
+            "id": "qingdao-youreka-greenhouse-blueberry",
+            "name": "青岛大棚优瑞卡蓝莓",
+            "family": "qingdao-youreka-greenhouse-blueberry"
+          },
+          {
+            "id": "miyun-houchangjiawu-yuanwei1-tomato",
+            "name": "密云后焦家坞原味1号番茄",
+            "family": "miyun-houchangjiawu-yuanwei1-tomato"
+          },
+          {
+            "id": "lingshan-dahan-spring-tea-first-pick",
+            "name": "灵山春茶·大寒前后首采",
+            "family": "tea"
+          },
+          {
+            "id": "huangpi-luzui-water-chestnut",
+            "name": "黄陂陆咀荸荠",
+            "family": "water-chestnut"
+          },
+          {
+            "id": "jintang-fresh-morel",
+            "name": "金堂鲜羊肚菌",
+            "family": "jintang-fresh-morel"
+          },
+          {
+            "id": "fushun-niuyake-greenhouse-dahan",
+            "name": "抚顺新宾棚室刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "ntpc-northeast-cape-thorn-purple-algae",
+            "name": "贡寮东北角刺紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "shawan-yuba-red-stropharia",
+            "name": "沙湾喻坝赤松茸",
+            "family": "shawan-yuba-red-stropharia"
+          },
+          {
+            "id": "pujiang-dahan-chunjian",
+            "name": "蒲江春见（耙耙柑）",
+            "family": "citrus"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          },
+          {
+            "id": "cigu",
+            "name": "宝应慈姑",
+            "family": "cigu"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          }
+        ],
+        "repeatedFoodIds": [
+          "fuling-yuzao100-mustard-stem",
+          "ntpc-northeast-cape-thorn-purple-algae",
+          "zengcheng-caixin",
+          "bishan-ercai",
+          "atushi-winter-lamb",
+          "shazhou-zhugengqin",
+          "cigu",
+          "rugao-takecai",
+          "yangxin-huhao"
+        ]
+      },
+      {
+        "term": "立春",
+        "year": 2027,
+        "index": 2,
+        "startDay": "2027-02-04",
+        "endDay": "2027-02-18",
+        "count": 11,
+        "repeatCount": 5,
+        "repeatRate": 0.45454545454545453,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "wusheng-dayagan-lichun",
+          "name": "武胜大雅柑",
+          "family": "citrus",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "wusheng-dayagan-lichun",
+            "name": "武胜大雅柑",
+            "family": "citrus"
+          },
+          {
+            "id": "yaan-chuancai3-lichun-first-pick",
+            "name": "雅安川茶3号立春头采",
+            "family": "tea"
+          },
+          {
+            "id": "jintang-fresh-morel",
+            "name": "金堂鲜羊肚菌",
+            "family": "jintang-fresh-morel"
+          },
+          {
+            "id": "jiaozhou-kailing-suo",
+            "name": "胶州湾开凌梭",
+            "family": "jiaozhou-kailing-suo"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "hongshan-caitai",
+            "name": "洪山菜薹",
+            "family": "red-caitai"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "jintang-fresh-morel",
+          "xinshe-dahan-early-loquat",
+          "bishan-ercai",
+          "rugao-takecai",
+          "yangxin-huhao"
+        ]
+      },
+      {
+        "term": "雨水",
+        "year": 2027,
+        "index": 3,
+        "startDay": "2027-02-19",
+        "endDay": "2027-03-05",
+        "count": 20,
+        "repeatCount": 9,
+        "repeatRate": 0.45,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "tanglihua",
+          "name": "棠梨花",
+          "family": "tanglihua",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "tanglihua",
+            "name": "棠梨花",
+            "family": "tanglihua"
+          },
+          {
+            "id": "yangnaiguo",
+            "name": "羊奶果",
+            "family": "yangnaiguo"
+          },
+          {
+            "id": "yongsheng-fresh-kapok",
+            "name": "永胜鲜攀枝花",
+            "family": "yongsheng-fresh-kapok"
+          },
+          {
+            "id": "kucihua",
+            "name": "苦刺花",
+            "family": "kucihua"
+          },
+          {
+            "id": "yantai-haichang",
+            "name": "烟台海肠",
+            "family": "yantai-haichang"
+          },
+          {
+            "id": "wuding-jinquehua",
+            "name": "武定金雀花",
+            "family": "wuding-jinquehua"
+          },
+          {
+            "id": "dalian-haimaxian",
+            "name": "大连海麻线",
+            "family": "dalian-haimaxian"
+          },
+          {
+            "id": "juhuanao",
+            "name": "菊花脑",
+            "family": "juhuanao"
+          },
+          {
+            "id": "ninghai-changjie-razor-clam",
+            "name": "宁海长街蛏子",
+            "family": "ninghai-changjie-razor-clam"
+          },
+          {
+            "id": "juema",
+            "name": "青海蕨麻",
+            "family": "juema"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "jintang-fresh-morel",
+            "name": "金堂鲜羊肚菌",
+            "family": "jintang-fresh-morel"
+          },
+          {
+            "id": "jiaozhou-kailing-suo",
+            "name": "胶州湾开凌梭",
+            "family": "jiaozhou-kailing-suo"
+          },
+          {
+            "id": "hongshan-caitai",
+            "name": "洪山菜薹",
+            "family": "red-caitai"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          },
+          {
+            "id": "pujiang-dahan-chunjian",
+            "name": "蒲江春见（耙耙柑）",
+            "family": "citrus"
+          }
+        ],
+        "repeatedFoodIds": [
+          "xinshe-dahan-early-loquat",
+          "jintang-fresh-morel",
+          "jiaozhou-kailing-suo",
+          "hongshan-caitai",
+          "bishan-ercai",
+          "rugao-takecai",
+          "yangxin-huhao",
+          "wenzhou-pancai",
+          "taitung-winter-atemoya"
+        ]
+      },
+      {
+        "term": "惊蛰",
+        "year": 2027,
+        "index": 4,
+        "startDay": "2027-03-06",
+        "endDay": "2027-03-20",
+        "count": 12,
+        "repeatCount": 6,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "yangnaiguo",
+          "name": "羊奶果",
+          "family": "yangnaiguo",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "tanglihua",
+            "name": "棠梨花",
+            "family": "tanglihua"
+          },
+          {
+            "id": "yangnaiguo",
+            "name": "羊奶果",
+            "family": "yangnaiguo"
+          },
+          {
+            "id": "yongsheng-fresh-kapok",
+            "name": "永胜鲜攀枝花",
+            "family": "yongsheng-fresh-kapok"
+          },
+          {
+            "id": "eshan-jingzhe-mulberry-flower",
+            "name": "峨山鲜桑葚花",
+            "family": "eshan-jingzhe-mulberry-flower"
+          },
+          {
+            "id": "suao-jingzhe-huahui",
+            "name": "苏澳惊蛰花辉",
+            "family": "suao-jingzhe-huahui"
+          },
+          {
+            "id": "guangnan-mianhao-baba",
+            "name": "广南面蒿粑",
+            "family": "guangnan-mianhao-baba"
+          },
+          {
+            "id": "kucihua",
+            "name": "苦刺花",
+            "family": "kucihua"
+          },
+          {
+            "id": "yantai-haichang",
+            "name": "烟台海肠",
+            "family": "yantai-haichang"
+          },
+          {
+            "id": "wuding-jinquehua",
+            "name": "武定金雀花",
+            "family": "wuding-jinquehua"
+          },
+          {
+            "id": "minhou-chayuan-highland-spring-shoot",
+            "name": "闽侯茶苑高山春笋",
+            "family": "minhou-chayuan-highland-spring-shoot"
+          },
+          {
+            "id": "qingdao-shazikou-li-xia-shrimp-2026",
+            "name": "青岛沙子口春捕蛎虾（鹰爪虾）",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "fengqing-xinhua-walnut-flowers",
+            "name": "凤庆新华乡鲜核桃花",
+            "family": "fengqing-xinhua-walnut-flowers"
+          }
+        ],
+        "repeatedFoodIds": [
+          "tanglihua",
+          "yangnaiguo",
+          "yongsheng-fresh-kapok",
+          "kucihua",
+          "yantai-haichang",
+          "wuding-jinquehua"
+        ]
+      },
+      {
+        "term": "春分",
+        "year": 2027,
+        "index": 5,
+        "startDay": "2027-03-21",
+        "endDay": "2027-04-04",
+        "count": 24,
+        "repeatCount": 7,
+        "repeatRate": 0.2916666666666667,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "baojing-huangjincha-spring-equinox-bulk",
+          "name": "保靖黄金茶",
+          "family": "tea",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "baojing-huangjincha-spring-equinox-bulk",
+            "name": "保靖黄金茶",
+            "family": "tea"
+          },
+          {
+            "id": "fuzhou-chunfen-baili-fish",
+            "name": "福州春分白鱱鱼",
+            "family": "fuzhou-chunfen-baili-fish"
+          },
+          {
+            "id": "fuzhou-chunfen-chunbihhao",
+            "name": "福州春碧蒿（春分野苋菜）",
+            "family": "fuzhou-chunfen-chunbihhao"
+          },
+          {
+            "id": "ningbo-xikou-spring-mao-bamboo-shoot",
+            "name": "奉化溪口黄泥拱毛笋",
+            "family": "moso-bamboo-shoot"
+          },
+          {
+            "id": "qingdao-shazikou-li-xia",
+            "name": "青岛沙子口蛎虾",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "fengqing-xinhua-walnut-flowers",
+            "name": "凤庆新华乡鲜核桃花",
+            "family": "fengqing-xinhua-walnut-flowers"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "tanglihua",
+            "name": "棠梨花",
+            "family": "tanglihua"
+          },
+          {
+            "id": "yangnaiguo",
+            "name": "羊奶果",
+            "family": "yangnaiguo"
+          },
+          {
+            "id": "yongsheng-fresh-kapok",
+            "name": "永胜鲜攀枝花",
+            "family": "yongsheng-fresh-kapok"
+          },
+          {
+            "id": "kucihua",
+            "name": "苦刺花",
+            "family": "kucihua"
+          },
+          {
+            "id": "yantai-haichang",
+            "name": "烟台海肠",
+            "family": "yantai-haichang"
+          },
+          {
+            "id": "wuding-jinquehua",
+            "name": "武定金雀花",
+            "family": "wuding-jinquehua"
+          },
+          {
+            "id": "dalian-haimaxian",
+            "name": "大连海麻线",
+            "family": "dalian-haimaxian"
+          },
+          {
+            "id": "juhuanao",
+            "name": "菊花脑",
+            "family": "juhuanao"
+          },
+          {
+            "id": "ninghai-changjie-razor-clam",
+            "name": "宁海长街蛏子",
+            "family": "ninghai-changjie-razor-clam"
+          },
+          {
+            "id": "jintang-fresh-morel",
+            "name": "金堂鲜羊肚菌",
+            "family": "jintang-fresh-morel"
+          },
+          {
+            "id": "juema",
+            "name": "青海蕨麻",
+            "family": "juema"
+          },
+          {
+            "id": "pujiang-dahan-chunjian",
+            "name": "蒲江春见（耙耙柑）",
+            "family": "citrus"
+          }
+        ],
+        "repeatedFoodIds": [
+          "fengqing-xinhua-walnut-flowers",
+          "tanglihua",
+          "yangnaiguo",
+          "yongsheng-fresh-kapok",
+          "kucihua",
+          "yantai-haichang",
+          "wuding-jinquehua"
+        ]
+      },
+      {
+        "term": "清明",
+        "year": 2027,
+        "index": 6,
+        "startDay": "2027-04-05",
+        "endDay": "2027-04-19",
+        "count": 10,
+        "repeatCount": 5,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "huizhou-chengkan-qingming-tea-shoot",
+          "name": "徽州呈坎茶笋",
+          "family": "huizhou-chengkan-qingming-tea-shoot",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "huizhou-chengkan-qingming-tea-shoot",
+            "name": "徽州呈坎茶笋",
+            "family": "huizhou-chengkan-qingming-tea-shoot"
+          },
+          {
+            "id": "pearl-river-qingming-cao-shrimp",
+            "name": "珠江口清明曹虾",
+            "family": "pearl-river-qingming-cao-shrimp"
+          },
+          {
+            "id": "guangzhou-qingming-jiaocai",
+            "name": "广州清明菜荞",
+            "family": "guangzhou-qingming-jiaocai"
+          },
+          {
+            "id": "panyu-qingming-sugarcane",
+            "name": "番禺清明蔗",
+            "family": "sugarcane"
+          },
+          {
+            "id": "wulong-taiwan-long-mulberry",
+            "name": "武隆台湾长果桑",
+            "family": "mulberry"
+          },
+          {
+            "id": "fengqing-xinhua-walnut-flowers",
+            "name": "凤庆新华乡鲜核桃花",
+            "family": "fengqing-xinhua-walnut-flowers"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          }
+        ],
+        "repeatedFoodIds": [
+          "fengqing-xinhua-walnut-flowers",
+          "cinenya",
+          "pucai",
+          "eryuan-haicaihua",
+          "foshougua-miao"
+        ]
+      },
+      {
+        "term": "谷雨",
+        "year": 2027,
+        "index": 7,
+        "startDay": "2027-04-20",
+        "endDay": "2027-05-05",
+        "count": 14,
+        "repeatCount": 4,
+        "repeatRate": 0.2857142857142857,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "shangyu-duanbing-cherry",
+          "name": "上虞下管短柄樱桃",
+          "family": "cherry",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "houtui-cai",
+            "name": "猴腿菜",
+            "family": "houtui-cai"
+          },
+          {
+            "id": "shangyu-duanbing-cherry",
+            "name": "上虞下管短柄樱桃",
+            "family": "cherry"
+          },
+          {
+            "id": "lanshan-baidieling-guyu-tea",
+            "name": "蓝山百叠岭谷雨茶",
+            "family": "tea"
+          },
+          {
+            "id": "honghu-oudai",
+            "name": "洪湖藕带",
+            "family": "honghu-oudai"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "tonglu-late-april-gaojie-bamboo",
+            "name": "桐庐高节竹笋",
+            "family": "tonglu-late-april-gaojie-bamboo"
+          },
+          {
+            "id": "ninghai-changjie-razor-clam",
+            "name": "宁海长街蛏子",
+            "family": "ninghai-changjie-razor-clam"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "pujiang-dahan-chunjian",
+            "name": "蒲江春见（耙耙柑）",
+            "family": "citrus"
+          }
+        ],
+        "repeatedFoodIds": [
+          "cinenya",
+          "pucai",
+          "eryuan-haicaihua",
+          "foshougua-miao"
+        ]
+      },
+      {
+        "term": "立夏",
+        "year": 2027,
+        "index": 8,
+        "startDay": "2027-05-06",
+        "endDay": "2027-05-20",
+        "count": 17,
+        "repeatCount": 7,
+        "repeatRate": 0.4117647058823529,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "houtui-cai",
+          "name": "猴腿菜",
+          "family": "houtui-cai",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "houtui-cai",
+            "name": "猴腿菜",
+            "family": "houtui-cai"
+          },
+          {
+            "id": "shanzhou-green-wheat-nianzhuan",
+            "name": "陕州新麦碾转",
+            "family": "shanzhou-green-wheat-nianzhuan"
+          },
+          {
+            "id": "ninger-tongxin-sweet-shoot",
+            "name": "宁洱同心甜笋",
+            "family": "sweet-bamboo-shoot"
+          },
+          {
+            "id": "lixian-highland-cherry",
+            "name": "理县高原甜樱桃",
+            "family": "cherry"
+          },
+          {
+            "id": "fengxian-shihai-2026-japanese-sweet-mulberry",
+            "name": "奉贤石海村日本甜果桑",
+            "family": "mulberry"
+          },
+          {
+            "id": "qiongshan-sanmenpo-xiantaoli",
+            "name": "琼山三门坡仙桃荔",
+            "family": "peach"
+          },
+          {
+            "id": "shidian-lixia-qingmei",
+            "name": "施甸立夏青梅",
+            "family": "green-plum"
+          },
+          {
+            "id": "jiangmen-duruang-lixiang-cool-gourd",
+            "name": "江门杜阮凉瓜",
+            "family": "jiangmen-duruang-lixiang-cool-gourd"
+          },
+          {
+            "id": "wenzhou-lingkun-baizhuogua",
+            "name": "温州灵昆白啄瓜",
+            "family": "wenzhou-lingkun-baizhuogua"
+          },
+          {
+            "id": "enping-naji-tainung17-pineapple",
+            "name": "恩平那吉金钻17号凤梨",
+            "family": "enping-naji-tainung17-pineapple"
+          },
+          {
+            "id": "ankang-yinghu-daxing-loquat",
+            "name": "安康瀛湖“大五星”枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "honghu-oudai",
+            "name": "洪湖藕带",
+            "family": "honghu-oudai"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          }
+        ],
+        "repeatedFoodIds": [
+          "houtui-cai",
+          "honghu-oudai",
+          "jianshui-caoya",
+          "cinenya",
+          "pucai",
+          "eryuan-haicaihua",
+          "foshougua-miao"
+        ]
+      },
+      {
+        "term": "小满",
+        "year": 2027,
+        "index": 9,
+        "startDay": "2027-05-21",
+        "endDay": "2027-06-05",
+        "count": 18,
+        "repeatCount": 9,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "tongxiang-zhuili",
+          "name": "桐乡槜李",
+          "family": "plum",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "tongxiang-zhuili",
+            "name": "桐乡槜李",
+            "family": "plum"
+          },
+          {
+            "id": "kuche-xiaobaixing",
+            "name": "库车小白杏",
+            "family": "kuche-xiaobaixing"
+          },
+          {
+            "id": "xiangyin-santang-jiaotou",
+            "name": "湘阴三塘鲜藠头",
+            "family": "xiangyin-santang-jiaotou"
+          },
+          {
+            "id": "shanzhou-green-wheat-nianzhuan",
+            "name": "陕州新麦碾转",
+            "family": "shanzhou-green-wheat-nianzhuan"
+          },
+          {
+            "id": "tonghai-fresh-sour-quince",
+            "name": "通海鲜酸木瓜",
+            "family": "tonghai-fresh-sour-quince"
+          },
+          {
+            "id": "enping-naji-tainung17-pineapple",
+            "name": "恩平那吉金钻17号凤梨",
+            "family": "enping-naji-tainung17-pineapple"
+          },
+          {
+            "id": "jiande-chuncai",
+            "name": "建德莼菜",
+            "family": "water-shield"
+          },
+          {
+            "id": "yanchi-huanghuacai",
+            "name": "盐池黄花菜",
+            "family": "yanchi-huanghuacai"
+          },
+          {
+            "id": "suzhou-june-yellow-late-may-market",
+            "name": "苏州六月黄",
+            "family": "june-yellow-crab"
+          },
+          {
+            "id": "tangqi-tangbei-late-loquat",
+            "name": "塘栖塘北露天枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "houtui-cai",
+            "name": "猴腿菜",
+            "family": "houtui-cai"
+          },
+          {
+            "id": "ninger-tongxin-sweet-shoot",
+            "name": "宁洱同心甜笋",
+            "family": "sweet-bamboo-shoot"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "honghu-oudai",
+            "name": "洪湖藕带",
+            "family": "honghu-oudai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          }
+        ],
+        "repeatedFoodIds": [
+          "shanzhou-green-wheat-nianzhuan",
+          "enping-naji-tainung17-pineapple",
+          "houtui-cai",
+          "ninger-tongxin-sweet-shoot",
+          "cinenya",
+          "pucai",
+          "honghu-oudai",
+          "eryuan-haicaihua",
+          "foshougua-miao"
+        ]
+      },
+      {
+        "term": "芒种",
+        "year": 2027,
+        "index": 10,
+        "startDay": "2027-06-06",
+        "endDay": "2027-06-20",
+        "count": 12,
+        "repeatCount": 6,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "kuche-xiaobaixing",
+          "name": "库车小白杏",
+          "family": "kuche-xiaobaixing",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "kuche-xiaobaixing",
+            "name": "库车小白杏",
+            "family": "kuche-xiaobaixing"
+          },
+          {
+            "id": "xiangyin-santang-jiaotou",
+            "name": "湘阴三塘鲜藠头",
+            "family": "xiangyin-santang-jiaotou"
+          },
+          {
+            "id": "tonghai-fresh-sour-quince",
+            "name": "通海鲜酸木瓜",
+            "family": "tonghai-fresh-sour-quince"
+          },
+          {
+            "id": "chaoyang-xilu-wusu-waxberry",
+            "name": "潮阳西胪乌酥核杨梅",
+            "family": "waxberry"
+          },
+          {
+            "id": "wuhan-hannan-fresh-sweet-corn",
+            "name": "武汉汉南鲜食甜玉米",
+            "family": "wuhan-hannan-fresh-sweet-corn"
+          },
+          {
+            "id": "jinghe-bajiahu-mangzhong-pearl-nectarine",
+            "name": "精河八家户珍珠油桃",
+            "family": "peach"
+          },
+          {
+            "id": "zhenning-honey-plum",
+            "name": "镇宁蜂糖李",
+            "family": "plum"
+          },
+          {
+            "id": "enping-naji-tainung17-pineapple",
+            "name": "恩平那吉金钻17号凤梨",
+            "family": "enping-naji-tainung17-pineapple"
+          },
+          {
+            "id": "jiande-chuncai",
+            "name": "建德莼菜",
+            "family": "water-shield"
+          },
+          {
+            "id": "yanchi-huanghuacai",
+            "name": "盐池黄花菜",
+            "family": "yanchi-huanghuacai"
+          },
+          {
+            "id": "harbin-fresh-honeyberry",
+            "name": "哈尔滨鲜食蓝靛果",
+            "family": "harbin-fresh-honeyberry"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "kuche-xiaobaixing",
+          "xiangyin-santang-jiaotou",
+          "tonghai-fresh-sour-quince",
+          "enping-naji-tainung17-pineapple",
+          "jiande-chuncai",
+          "yanchi-huanghuacai"
+        ]
+      },
+      {
+        "term": "夏至",
+        "year": 2027,
+        "index": 11,
+        "startDay": "2027-06-21",
+        "endDay": "2027-07-06",
+        "count": 22,
+        "repeatCount": 9,
+        "repeatRate": 0.4090909090909091,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "yunan-seedless-huangpi",
+          "name": "郁南无核黄皮",
+          "family": "yunan-seedless-huangpi",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "yunan-seedless-huangpi",
+            "name": "郁南无核黄皮",
+            "family": "yunan-seedless-huangpi"
+          },
+          {
+            "id": "yubei-xiazhi-sugar-peach",
+            "name": "渝北夏至糖桃",
+            "family": "peach"
+          },
+          {
+            "id": "gaochun-liuyuehuang",
+            "name": "高淳六月黄",
+            "family": "june-yellow-crab"
+          },
+          {
+            "id": "enping-naji-tainung17-pineapple",
+            "name": "恩平那吉金钻17号凤梨",
+            "family": "enping-naji-tainung17-pineapple"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          },
+          {
+            "id": "xishuangbanna-wood-milk-fruit",
+            "name": "西双版纳木奶果",
+            "family": "xishuangbanna-wood-milk-fruit"
+          },
+          {
+            "id": "minqin-field-shacong",
+            "name": "民勤露地鲜沙葱",
+            "family": "minqin-field-shacong"
+          },
+          {
+            "id": "dalian-zihaitan",
+            "name": "大连紫海胆",
+            "family": "dalian-zihaitan"
+          },
+          {
+            "id": "dier",
+            "name": "地耳",
+            "family": "dier"
+          },
+          {
+            "id": "congjun",
+            "name": "枞菌",
+            "family": "congjun"
+          },
+          {
+            "id": "ganbajun",
+            "name": "干巴菌",
+            "family": "ganbajun"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          },
+          {
+            "id": "kuche-xiaobaixing",
+            "name": "库车小白杏",
+            "family": "kuche-xiaobaixing"
+          },
+          {
+            "id": "xiangyin-santang-jiaotou",
+            "name": "湘阴三塘鲜藠头",
+            "family": "xiangyin-santang-jiaotou"
+          },
+          {
+            "id": "tonghai-fresh-sour-quince",
+            "name": "通海鲜酸木瓜",
+            "family": "tonghai-fresh-sour-quince"
+          },
+          {
+            "id": "wuhan-hannan-fresh-sweet-corn",
+            "name": "武汉汉南鲜食甜玉米",
+            "family": "wuhan-hannan-fresh-sweet-corn"
+          },
+          {
+            "id": "jiande-chuncai",
+            "name": "建德莼菜",
+            "family": "water-shield"
+          },
+          {
+            "id": "yanchi-huanghuacai",
+            "name": "盐池黄花菜",
+            "family": "yanchi-huanghuacai"
+          },
+          {
+            "id": "harbin-fresh-honeyberry",
+            "name": "哈尔滨鲜食蓝靛果",
+            "family": "harbin-fresh-honeyberry"
+          },
+          {
+            "id": "honghu-oudai",
+            "name": "洪湖藕带",
+            "family": "honghu-oudai"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "enping-naji-tainung17-pineapple",
+          "kuche-xiaobaixing",
+          "xiangyin-santang-jiaotou",
+          "tonghai-fresh-sour-quince",
+          "wuhan-hannan-fresh-sweet-corn",
+          "jiande-chuncai",
+          "yanchi-huanghuacai",
+          "harbin-fresh-honeyberry",
+          "jianshui-caoya"
+        ]
+      },
+      {
+        "term": "小暑",
+        "year": 2027,
+        "index": 12,
+        "startDay": "2027-07-07",
+        "endDay": "2027-07-22",
+        "count": 6,
+        "repeatCount": 3,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "taixing-sucui1-early-pear",
+          "name": "泰兴苏翠1号早熟梨",
+          "family": "pear",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "yunan-seedless-huangpi",
+            "name": "郁南无核黄皮",
+            "family": "yunan-seedless-huangpi"
+          },
+          {
+            "id": "taixing-sucui1-early-pear",
+            "name": "泰兴苏翠1号早熟梨",
+            "family": "pear"
+          },
+          {
+            "id": "pinggu-zhongpan9-xiaoshu-peach",
+            "name": "平谷中蟠9号桃",
+            "family": "peach"
+          },
+          {
+            "id": "gaochun-liuyuehuang",
+            "name": "高淳六月黄",
+            "family": "june-yellow-crab"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          },
+          {
+            "id": "dongguan-tangxia-shixia-longan",
+            "name": "东莞塘厦石硖龙眼",
+            "family": "longan"
+          }
+        ],
+        "repeatedFoodIds": [
+          "yunan-seedless-huangpi",
+          "gaochun-liuyuehuang",
+          "chenghai-baoke"
+        ]
+      },
+      {
+        "term": "大暑",
+        "year": 2027,
+        "index": 13,
+        "startDay": "2027-07-23",
+        "endDay": "2027-08-07",
+        "count": 18,
+        "repeatCount": 4,
+        "repeatRate": 0.2222222222222222,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "wenchuan-qingcui-plum",
+          "name": "汶川青脆李",
+          "family": "plum",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "wenchuan-qingcui-plum",
+            "name": "汶川青脆李",
+            "family": "plum"
+          },
+          {
+            "id": "huocheng-xiangfei-crabapple",
+            "name": "霍城香妃海棠果",
+            "family": "crabapple"
+          },
+          {
+            "id": "dengkou-wallace-melon",
+            "name": "磴口华莱士瓜",
+            "family": "dengkou-wallace-melon"
+          },
+          {
+            "id": "songjiang-cangqiao-crystal-pear",
+            "name": "松江仓桥水晶梨",
+            "family": "pear"
+          },
+          {
+            "id": "nanhui-daxue-water-honey-peach",
+            "name": "南汇水蜜桃",
+            "family": "peach"
+          },
+          {
+            "id": "jitoumi",
+            "name": "鸡头米",
+            "family": "jitoumi"
+          },
+          {
+            "id": "yunan-seedless-huangpi",
+            "name": "郁南无核黄皮",
+            "family": "yunan-seedless-huangpi"
+          },
+          {
+            "id": "gaochun-liuyuehuang",
+            "name": "高淳六月黄",
+            "family": "june-yellow-crab"
+          },
+          {
+            "id": "yanchi-huanghuacai",
+            "name": "盐池黄花菜",
+            "family": "yanchi-huanghuacai"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          },
+          {
+            "id": "xishuangbanna-wood-milk-fruit",
+            "name": "西双版纳木奶果",
+            "family": "xishuangbanna-wood-milk-fruit"
+          },
+          {
+            "id": "dongguan-tangxia-shixia-longan",
+            "name": "东莞塘厦石硖龙眼",
+            "family": "longan"
+          },
+          {
+            "id": "dalian-zihaitan",
+            "name": "大连紫海胆",
+            "family": "dalian-zihaitan"
+          },
+          {
+            "id": "dier",
+            "name": "地耳",
+            "family": "dier"
+          },
+          {
+            "id": "congjun",
+            "name": "枞菌",
+            "family": "congjun"
+          },
+          {
+            "id": "ganbajun",
+            "name": "干巴菌",
+            "family": "ganbajun"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "yunan-seedless-huangpi",
+          "gaochun-liuyuehuang",
+          "chenghai-baoke",
+          "dongguan-tangxia-shixia-longan"
+        ]
+      },
+      {
+        "term": "立秋",
+        "year": 2027,
+        "index": 14,
+        "startDay": "2027-08-08",
+        "endDay": "2027-08-22",
+        "count": 6,
+        "repeatCount": 3,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "shidian-autumn-longzhu-shoot",
+          "name": "施甸秋龙竹笋",
+          "family": "shidian-autumn-longzhu-shoot",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "shidian-autumn-longzhu-shoot",
+            "name": "施甸秋龙竹笋",
+            "family": "shidian-autumn-longzhu-shoot"
+          },
+          {
+            "id": "taiwan-lichiu-penghu-shrimp",
+            "name": "台湾立秋澎湖虾类",
+            "family": "taiwan-lichiu-penghu-shrimp"
+          },
+          {
+            "id": "fengxian-nanqiao-early-water-red-caltrop",
+            "name": "奉贤南桥早熟水红菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "huocheng-xiangfei-crabapple",
+            "name": "霍城香妃海棠果",
+            "family": "crabapple"
+          },
+          {
+            "id": "jitoumi",
+            "name": "鸡头米",
+            "family": "jitoumi"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          }
+        ],
+        "repeatedFoodIds": [
+          "huocheng-xiangfei-crabapple",
+          "jitoumi",
+          "chenghai-baoke"
+        ]
+      },
+      {
+        "term": "处暑",
+        "year": 2027,
+        "index": 15,
+        "startDay": "2027-08-23",
+        "endDay": "2027-09-07",
+        "count": 24,
+        "repeatCount": 3,
+        "repeatRate": 0.125,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "ruanzao-mihoutao",
+          "name": "软枣猕猴桃",
+          "family": "ruanzao-mihoutao",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "ruanzao-mihoutao",
+            "name": "软枣猕猴桃",
+            "family": "ruanzao-mihoutao"
+          },
+          {
+            "id": "shajiguo",
+            "name": "沙棘果",
+            "family": "shajiguo"
+          },
+          {
+            "id": "longyang-pupiao-allium-root",
+            "name": "隆阳蒲缥苤菜根",
+            "family": "longyang-pupiao-allium-root"
+          },
+          {
+            "id": "shidian-autumn-longzhu-shoot",
+            "name": "施甸秋龙竹笋",
+            "family": "shidian-autumn-longzhu-shoot"
+          },
+          {
+            "id": "bayuegua",
+            "name": "八月瓜",
+            "family": "bayuegua"
+          },
+          {
+            "id": "cili",
+            "name": "刺梨",
+            "family": "rose-fruit"
+          },
+          {
+            "id": "huoshan-yanghe",
+            "name": "霍山阳荷嫩苞",
+            "family": "huoshan-yanghe"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "chongming-baibiandou",
+            "name": "崇明白扁豆鲜荚",
+            "family": "chongming-baibiandou"
+          },
+          {
+            "id": "chongming-xiangsu-yu",
+            "name": "崇明香酥芋",
+            "family": "chongming-xiangsu-yu"
+          },
+          {
+            "id": "zhenlai-jiaobai",
+            "name": "镇赉寒地茭白",
+            "family": "water-bamboo"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "sanmen-qingxie",
+            "name": "三门青蟹",
+            "family": "mud-crab"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          },
+          {
+            "id": "xishuangbanna-wood-milk-fruit",
+            "name": "西双版纳木奶果",
+            "family": "xishuangbanna-wood-milk-fruit"
+          },
+          {
+            "id": "dongguan-tangxia-shixia-longan",
+            "name": "东莞塘厦石硖龙眼",
+            "family": "longan"
+          },
+          {
+            "id": "jitoumi",
+            "name": "鸡头米",
+            "family": "jitoumi"
+          },
+          {
+            "id": "dalian-zihaitan",
+            "name": "大连紫海胆",
+            "family": "dalian-zihaitan"
+          },
+          {
+            "id": "dier",
+            "name": "地耳",
+            "family": "dier"
+          },
+          {
+            "id": "congjun",
+            "name": "枞菌",
+            "family": "congjun"
+          },
+          {
+            "id": "ganbajun",
+            "name": "干巴菌",
+            "family": "ganbajun"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "shidian-autumn-longzhu-shoot",
+          "chenghai-baoke",
+          "jitoumi"
+        ]
+      },
+      {
+        "term": "白露",
+        "year": 2027,
+        "index": 16,
+        "startDay": "2027-09-08",
+        "endDay": "2027-09-22",
+        "count": 16,
+        "repeatCount": 8,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "shajiguo",
+          "name": "沙棘果",
+          "family": "shajiguo",
+          "inList": true,
+          "desiredId": null,
+          "isEditorialChoice": null,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "ruanzao-mihoutao",
+            "name": "软枣猕猴桃",
+            "family": "ruanzao-mihoutao"
+          },
+          {
+            "id": "shajiguo",
+            "name": "沙棘果",
+            "family": "shajiguo"
+          },
+          {
+            "id": "longyang-pupiao-allium-root",
+            "name": "隆阳蒲缥苤菜根",
+            "family": "longyang-pupiao-allium-root"
+          },
+          {
+            "id": "miaoli-xihu-wendan",
+            "name": "苗栗西湖文旦",
+            "family": "pomelo"
+          },
+          {
+            "id": "jiangning-bailu-white-dew-tea",
+            "name": "南京江宁白露龙针",
+            "family": "tea"
+          },
+          {
+            "id": "shexian-qizili-hickory",
+            "name": "歙县杞梓里山核桃",
+            "family": "hickory"
+          },
+          {
+            "id": "suzhou-bailu-ginkgo",
+            "name": "苏州白露鲜白果",
+            "family": "suzhou-bailu-ginkgo"
+          },
+          {
+            "id": "hanshou-yubiou",
+            "name": "汉寿玉臂藕",
+            "family": "hanshou-yubiou"
+          },
+          {
+            "id": "bayuegua",
+            "name": "八月瓜",
+            "family": "bayuegua"
+          },
+          {
+            "id": "cili",
+            "name": "刺梨",
+            "family": "rose-fruit"
+          },
+          {
+            "id": "anlu-bailu-huaguoshan-fig",
+            "name": "安陆花果山无花果",
+            "family": "fig"
+          },
+          {
+            "id": "huoshan-yanghe",
+            "name": "霍山阳荷嫩苞",
+            "family": "huoshan-yanghe"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "ximeng-bamboo-worm",
+            "name": "西盟鲜竹虫",
+            "family": "ximeng-bamboo-worm"
+          },
+          {
+            "id": "tongling-white-ginger",
+            "name": "铜陵白姜",
+            "family": "tongling-white-ginger"
+          }
+        ],
+        "repeatedFoodIds": [
+          "ruanzao-mihoutao",
+          "shajiguo",
+          "longyang-pupiao-allium-root",
+          "bayuegua",
+          "cili",
+          "huoshan-yanghe",
+          "nanhu-ling",
+          "jianou-zhuilli"
+        ]
+      }
+    ]
+  },
+  "current": {
+    "catalogCount": 354,
+    "editorialHolds": {
+      "suao-jingzhe-huahui": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "suao-jingzhe-muhou": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "suao-jingzhe-dingmian": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "keelung-jingzhe-jiaranyu": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "keelung-jingzhe-wenyu": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "taiwan-hanlu-whitebelly-mackerel": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "taiwan-lichiu-penghu-shrimp": "来源仅列虾类渔讯，具体虾种与可辨认商品待确认",
+      "taiwan-qiufen-northeast-shrimp": "来源仅列虾类渔讯，具体虾种与可辨认商品待确认",
+      "fuzhou-hanlu-liaozai-clam": "来源仅列蚬类地方俗名，具体品类与可辨认商品待确认"
+    },
+    "nonEmptyTerms": 24,
+    "duplicateTerms": 0,
+    "duplicateFamilies": 0,
+    "duplicateExcessEntries": 0,
+    "maxAdjacentRepeatRate": 0.5,
+    "uniqueFeatureCount": 24,
+    "desiredFeaturesPresent": 24,
+    "rows": [
+      {
+        "term": "秋分",
+        "year": 2026,
+        "index": 17,
+        "startDay": "2026-09-23",
+        "endDay": "2026-10-07",
+        "count": 18,
+        "repeatCount": 9,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "bayuegua",
+          "name": "八月瓜",
+          "family": "bayuegua",
+          "inList": true,
+          "desiredId": "bayuegua",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "lintong-huojing-shizi",
+            "name": "临潼火晶柿子",
+            "family": "persimmon"
+          },
+          {
+            "id": "lancang-nannai-duoyi",
+            "name": "澜沧南乃多依果",
+            "family": "lancang-nannai-duoyi"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "minqing-tanxiang-olive",
+            "name": "闽清檀香橄榄",
+            "family": "minqing-tanxiang-olive"
+          },
+          {
+            "id": "binchuan-renong1-yuganzi",
+            "name": "宾川“热农1号”余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "taitung-luoshen-calyx",
+            "name": "台东鲜洛神花萼",
+            "family": "taitung-luoshen-calyx"
+          },
+          {
+            "id": "juema",
+            "name": "青海蕨麻",
+            "family": "juema"
+          },
+          {
+            "id": "ruanzao-mihoutao",
+            "name": "软枣猕猴桃",
+            "family": "ruanzao-mihoutao"
+          },
+          {
+            "id": "shajiguo",
+            "name": "沙棘果",
+            "family": "shajiguo"
+          },
+          {
+            "id": "longyang-pupiao-allium-root",
+            "name": "隆阳蒲缥苤菜根",
+            "family": "longyang-pupiao-allium-root"
+          },
+          {
+            "id": "hanshou-yubiou",
+            "name": "汉寿玉臂藕",
+            "family": "hanshou-yubiou"
+          },
+          {
+            "id": "bayuegua",
+            "name": "八月瓜",
+            "family": "bayuegua"
+          },
+          {
+            "id": "cili",
+            "name": "刺梨",
+            "family": "rose-fruit"
+          },
+          {
+            "id": "huoshan-yanghe",
+            "name": "霍山阳荷嫩苞",
+            "family": "huoshan-yanghe"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "yanqing-baleng-crisp-haitang",
+            "name": "延庆八棱脆海棠",
+            "family": "crabapple"
+          }
+        ],
+        "repeatedFoodIds": [
+          "ruanzao-mihoutao",
+          "shajiguo",
+          "longyang-pupiao-allium-root",
+          "hanshou-yubiou",
+          "bayuegua",
+          "cili",
+          "huoshan-yanghe",
+          "nanhu-ling",
+          "jianou-zhuilli"
+        ]
+      },
+      {
+        "term": "寒露",
+        "year": 2026,
+        "index": 18,
+        "startDay": "2026-10-08",
+        "endDay": "2026-10-22",
+        "count": 29,
+        "repeatCount": 11,
+        "repeatRate": 0.3793103448275862,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "ximeng-bamboo-worm",
+          "name": "西盟鲜竹虫",
+          "family": "ximeng-bamboo-worm",
+          "inList": true,
+          "desiredId": "ximeng-bamboo-worm",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "lintong-huojing-shizi",
+            "name": "临潼火晶柿子",
+            "family": "persimmon"
+          },
+          {
+            "id": "lancang-nannai-duoyi",
+            "name": "澜沧南乃多依果",
+            "family": "lancang-nannai-duoyi"
+          },
+          {
+            "id": "laiyang-pear",
+            "name": "莱阳梨",
+            "family": "pear"
+          },
+          {
+            "id": "junan-jinqiuhongmi-peach",
+            "name": "莒南团林金秋红蜜桃",
+            "family": "peach"
+          },
+          {
+            "id": "huishui-hanlu-autumn-tea-2026",
+            "name": "惠水寒露秋茶",
+            "family": "tea"
+          },
+          {
+            "id": "bomi-gutong-crisp-red-plum",
+            "name": "波密古通脆红李",
+            "family": "plum"
+          },
+          {
+            "id": "caidian-ehong4-early-caitai",
+            "name": "武汉蔡甸鄂红4号早熟菜薹",
+            "family": "red-caitai"
+          },
+          {
+            "id": "keelung-hanlu-cuttlefish",
+            "name": "基隆寒露目贼（乌贼）",
+            "family": "cuttlefish"
+          },
+          {
+            "id": "changning-hanlu-camellia-seed-oil",
+            "name": "常宁寒露籽茶油",
+            "family": "changning-hanlu-camellia-seed-oil"
+          },
+          {
+            "id": "lixian-hanlu-qincui-apple",
+            "name": "理县秦脆苹果",
+            "family": "apple"
+          },
+          {
+            "id": "suzhou-guangfu-hanlu-late-osmanthus",
+            "name": "苏州光福寒露晚桂",
+            "family": "suzhou-guangfu-hanlu-late-osmanthus"
+          },
+          {
+            "id": "fuzhou-hanlu-razor-clam-dry",
+            "name": "福州寒露蛏干",
+            "family": "fuzhou-hanlu-razor-clam-dry"
+          },
+          {
+            "id": "ningbo-zhanqi-dafeng-early-orange",
+            "name": "宁波瞻岐大丰早橘",
+            "family": "citrus"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "minqing-tanxiang-olive",
+            "name": "闽清檀香橄榄",
+            "family": "minqing-tanxiang-olive"
+          },
+          {
+            "id": "binchuan-renong1-yuganzi",
+            "name": "宾川“热农1号”余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "taitung-luoshen-calyx",
+            "name": "台东鲜洛神花萼",
+            "family": "taitung-luoshen-calyx"
+          },
+          {
+            "id": "banan-wubu-pomelo",
+            "name": "巴南五布柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "juema",
+            "name": "青海蕨麻",
+            "family": "juema"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "chongming-baibiandou",
+            "name": "崇明白扁豆鲜荚",
+            "family": "chongming-baibiandou"
+          },
+          {
+            "id": "chongming-xiangsu-yu",
+            "name": "崇明香酥芋",
+            "family": "chongming-xiangsu-yu"
+          },
+          {
+            "id": "ximeng-bamboo-worm",
+            "name": "西盟鲜竹虫",
+            "family": "ximeng-bamboo-worm"
+          },
+          {
+            "id": "yanqing-baleng-crisp-haitang",
+            "name": "延庆八棱脆海棠",
+            "family": "crabapple"
+          },
+          {
+            "id": "zhenlai-jiaobai",
+            "name": "镇赉寒地茭白",
+            "family": "water-bamboo"
+          },
+          {
+            "id": "sanmen-qingxie",
+            "name": "三门青蟹",
+            "family": "mud-crab"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          }
+        ],
+        "repeatedFoodIds": [
+          "lintong-huojing-shizi",
+          "lancang-nannai-duoyi",
+          "cizhousun",
+          "lyg-shaguang-fish",
+          "minqing-tanxiang-olive",
+          "binchuan-renong1-yuganzi",
+          "taitung-luoshen-calyx",
+          "juema",
+          "nanhu-ling",
+          "jianou-zhuilli",
+          "yanqing-baleng-crisp-haitang"
+        ]
+      },
+      {
+        "term": "霜降",
+        "year": 2026,
+        "index": 19,
+        "startDay": "2026-10-23",
+        "endDay": "2026-11-06",
+        "count": 22,
+        "repeatCount": 11,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "xunyang-guizao",
+          "name": "旬阳拐枣",
+          "family": "xunyang-guizao",
+          "inList": true,
+          "desiredId": "xunyang-guizao",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "helan-luosicai",
+            "name": "贺兰鲜螺丝菜",
+            "family": "helan-luosicai"
+          },
+          {
+            "id": "lanzhou-xianbaihe",
+            "name": "兰州鲜甜百合",
+            "family": "lanzhou-xianbaihe"
+          },
+          {
+            "id": "xiaolan-shiju-huaban",
+            "name": "小榄鲜食菊花瓣",
+            "family": "xiaolan-shiju-huaban"
+          },
+          {
+            "id": "luoping-hongguoshen",
+            "name": "罗平红果参",
+            "family": "luoping-hongguoshen"
+          },
+          {
+            "id": "heshi-xianfenge",
+            "name": "合水鲜粉葛",
+            "family": "heshi-xianfenge"
+          },
+          {
+            "id": "heze-shannong-crisp-pear",
+            "name": "菏泽山农酥梨",
+            "family": "pear"
+          },
+          {
+            "id": "wuding-fawowo-winter-peach",
+            "name": "武定发窝冬桃",
+            "family": "peach"
+          },
+          {
+            "id": "xunyang-guizao",
+            "name": "旬阳拐枣",
+            "family": "xunyang-guizao"
+          },
+          {
+            "id": "xikou-xindongsun",
+            "name": "溪口新冬笋",
+            "family": "moso-bamboo-shoot"
+          },
+          {
+            "id": "rongan-jingju",
+            "name": "融安脆蜜／滑皮金桔",
+            "family": "kumquat"
+          },
+          {
+            "id": "tainan-madou-frost-white-pomelo",
+            "name": "台南麻豆霜降白柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "lintong-huojing-shizi",
+            "name": "临潼火晶柿子",
+            "family": "persimmon"
+          },
+          {
+            "id": "lancang-nannai-duoyi",
+            "name": "澜沧南乃多依果",
+            "family": "lancang-nannai-duoyi"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "minqing-tanxiang-olive",
+            "name": "闽清檀香橄榄",
+            "family": "minqing-tanxiang-olive"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "chongming-baibiandou",
+            "name": "崇明白扁豆鲜荚",
+            "family": "chongming-baibiandou"
+          },
+          {
+            "id": "chongming-xiangsu-yu",
+            "name": "崇明香酥芋",
+            "family": "chongming-xiangsu-yu"
+          },
+          {
+            "id": "ximeng-bamboo-worm",
+            "name": "西盟鲜竹虫",
+            "family": "ximeng-bamboo-worm"
+          },
+          {
+            "id": "binchuan-renong1-yuganzi",
+            "name": "宾川“热农1号”余甘子",
+            "family": "emblica"
+          }
+        ],
+        "repeatedFoodIds": [
+          "lintong-huojing-shizi",
+          "lancang-nannai-duoyi",
+          "nanhu-ling",
+          "cizhousun",
+          "lyg-shaguang-fish",
+          "minqing-tanxiang-olive",
+          "jianou-zhuilli",
+          "chongming-baibiandou",
+          "chongming-xiangsu-yu",
+          "ximeng-bamboo-worm",
+          "binchuan-renong1-yuganzi"
+        ]
+      },
+      {
+        "term": "立冬",
+        "year": 2026,
+        "index": 20,
+        "startDay": "2026-11-07",
+        "endDay": "2026-11-21",
+        "count": 18,
+        "repeatCount": 9,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "helan-luosicai",
+          "name": "贺兰鲜螺丝菜",
+          "family": "helan-luosicai",
+          "inList": true,
+          "desiredId": "helan-luosicai",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "helan-luosicai",
+            "name": "贺兰鲜螺丝菜",
+            "family": "helan-luosicai"
+          },
+          {
+            "id": "lanzhou-xianbaihe",
+            "name": "兰州鲜甜百合",
+            "family": "lanzhou-xianbaihe"
+          },
+          {
+            "id": "xiaolan-shiju-huaban",
+            "name": "小榄鲜食菊花瓣",
+            "family": "xiaolan-shiju-huaban"
+          },
+          {
+            "id": "luoping-hongguoshen",
+            "name": "罗平红果参",
+            "family": "luoping-hongguoshen"
+          },
+          {
+            "id": "heshi-xianfenge",
+            "name": "合水鲜粉葛",
+            "family": "heshi-xianfenge"
+          },
+          {
+            "id": "huangbohai-yingzhuaxia",
+            "name": "黄渤海灯笼红虾",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "cangnan-lidong-four-seasons-pomelo",
+            "name": "苍南四季柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "qingdao-shuangdongmi-peach",
+            "name": "青岛“双冬蜜”极晚熟桃",
+            "family": "peach"
+          },
+          {
+            "id": "qixia-lidong-winter-after-apple",
+            "name": "栖霞“冬后”苹果",
+            "family": "apple"
+          },
+          {
+            "id": "yongjia-hesheng-red-persimmon",
+            "name": "永嘉鹤盛红柿",
+            "family": "persimmon"
+          },
+          {
+            "id": "guangning-lidong-ma-bamboo-shoot",
+            "name": "广宁洲仔麻竹笋",
+            "family": "ma-bamboo-shoot"
+          },
+          {
+            "id": "xunyang-guizao",
+            "name": "旬阳拐枣",
+            "family": "xunyang-guizao"
+          },
+          {
+            "id": "lanxi-huitan-sugarcane",
+            "name": "兰溪汇潭甘蔗",
+            "family": "sugarcane"
+          },
+          {
+            "id": "xikou-xindongsun",
+            "name": "溪口新冬笋",
+            "family": "moso-bamboo-shoot"
+          },
+          {
+            "id": "rongan-jingju",
+            "name": "融安脆蜜／滑皮金桔",
+            "family": "kumquat"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "taitung-luoshen-calyx",
+            "name": "台东鲜洛神花萼",
+            "family": "taitung-luoshen-calyx"
+          },
+          {
+            "id": "sanmen-qingxie",
+            "name": "三门青蟹",
+            "family": "mud-crab"
+          }
+        ],
+        "repeatedFoodIds": [
+          "helan-luosicai",
+          "lanzhou-xianbaihe",
+          "xiaolan-shiju-huaban",
+          "luoping-hongguoshen",
+          "heshi-xianfenge",
+          "xunyang-guizao",
+          "xikou-xindongsun",
+          "rongan-jingju",
+          "cizhousun"
+        ]
+      },
+      {
+        "term": "小雪",
+        "year": 2026,
+        "index": 21,
+        "startDay": "2026-11-22",
+        "endDay": "2026-12-06",
+        "count": 24,
+        "repeatCount": 12,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "xiaolan-shiju-huaban",
+          "name": "小榄鲜食菊花瓣",
+          "family": "xiaolan-shiju-huaban",
+          "inList": true,
+          "desiredId": "xiaolan-shiju-huaban",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "wenzhou-sanyang-ougan",
+            "name": "温州三垟瓯柑",
+            "family": "citrus"
+          },
+          {
+            "id": "conghua-dajiecai",
+            "name": "从化大芥菜",
+            "family": "conghua-dajiecai"
+          },
+          {
+            "id": "jinjiang-toushui-zicai",
+            "name": "晋江头水紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard",
+            "name": "宁波鄞州冬菜雪菜",
+            "family": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          },
+          {
+            "id": "cigu",
+            "name": "宝应慈姑",
+            "family": "cigu"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          },
+          {
+            "id": "helan-luosicai",
+            "name": "贺兰鲜螺丝菜",
+            "family": "helan-luosicai"
+          },
+          {
+            "id": "lanzhou-xianbaihe",
+            "name": "兰州鲜甜百合",
+            "family": "lanzhou-xianbaihe"
+          },
+          {
+            "id": "xiaolan-shiju-huaban",
+            "name": "小榄鲜食菊花瓣",
+            "family": "xiaolan-shiju-huaban"
+          },
+          {
+            "id": "luoping-hongguoshen",
+            "name": "罗平红果参",
+            "family": "luoping-hongguoshen"
+          },
+          {
+            "id": "heshi-xianfenge",
+            "name": "合水鲜粉葛",
+            "family": "heshi-xianfenge"
+          },
+          {
+            "id": "huangbohai-yingzhuaxia",
+            "name": "黄渤海灯笼红虾",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "yongjia-hesheng-red-persimmon",
+            "name": "永嘉鹤盛红柿",
+            "family": "persimmon"
+          },
+          {
+            "id": "xunyang-guizao",
+            "name": "旬阳拐枣",
+            "family": "xunyang-guizao"
+          },
+          {
+            "id": "cizhousun",
+            "name": "刺竹笋",
+            "family": "thorn-bamboo-shoot"
+          },
+          {
+            "id": "lyg-shaguang-fish",
+            "name": "连云港沙光鱼",
+            "family": "lyg-shaguang-fish"
+          },
+          {
+            "id": "minqing-tanxiang-olive",
+            "name": "闽清檀香橄榄",
+            "family": "minqing-tanxiang-olive"
+          },
+          {
+            "id": "binchuan-renong1-yuganzi",
+            "name": "宾川“热农1号”余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "taitung-luoshen-calyx",
+            "name": "台东鲜洛神花萼",
+            "family": "taitung-luoshen-calyx"
+          },
+          {
+            "id": "xikou-xindongsun",
+            "name": "溪口新冬笋",
+            "family": "moso-bamboo-shoot"
+          },
+          {
+            "id": "rongan-jingju",
+            "name": "融安脆蜜／滑皮金桔",
+            "family": "kumquat"
+          }
+        ],
+        "repeatedFoodIds": [
+          "helan-luosicai",
+          "lanzhou-xianbaihe",
+          "xiaolan-shiju-huaban",
+          "luoping-hongguoshen",
+          "heshi-xianfenge",
+          "huangbohai-yingzhuaxia",
+          "yongjia-hesheng-red-persimmon",
+          "xunyang-guizao",
+          "cizhousun",
+          "taitung-luoshen-calyx",
+          "xikou-xindongsun",
+          "rongan-jingju"
+        ]
+      },
+      {
+        "term": "大雪",
+        "year": 2026,
+        "index": 22,
+        "startDay": "2026-12-07",
+        "endDay": "2026-12-21",
+        "count": 12,
+        "repeatCount": 6,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "baoshan-liangcui-emblica",
+          "name": "保山亮脆余甘子",
+          "family": "emblica",
+          "inList": true,
+          "desiredId": "baoshan-liangcui-emblica",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "baoshan-liangcui-emblica",
+            "name": "保山亮脆余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "linwu-liping-golden-pomelo",
+            "name": "临武黎坪黄金贡柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "conghua-dajiecai",
+            "name": "从化大芥菜",
+            "family": "conghua-dajiecai"
+          },
+          {
+            "id": "jinjiang-toushui-zicai",
+            "name": "晋江头水紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "yanshi-fresh-yintiao",
+            "name": "偃师鲜银条",
+            "family": "yanshi-fresh-yintiao"
+          },
+          {
+            "id": "luogang-sweet-orange",
+            "name": "广州萝岗橙",
+            "family": "citrus"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          },
+          {
+            "id": "cigu",
+            "name": "宝应慈姑",
+            "family": "cigu"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "conghua-dajiecai",
+          "jinjiang-toushui-zicai",
+          "zengcheng-caixin",
+          "atushi-winter-lamb",
+          "shazhou-zhugengqin",
+          "cigu"
+        ]
+      },
+      {
+        "term": "冬至",
+        "year": 2026,
+        "index": 23,
+        "startDay": "2026-12-22",
+        "endDay": "2027-01-04",
+        "count": 23,
+        "repeatCount": 10,
+        "repeatRate": 0.43478260869565216,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "shantou-haojiang-liqian-dongjingwan",
+          "name": "濠江里前东京丸",
+          "family": "shantou-haojiang-liqian-dongjingwan",
+          "inList": true,
+          "desiredId": "shantou-haojiang-liqian-dongjingwan",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "huadu-jingtang-lotusroot",
+            "name": "花都京塘莲藕",
+            "family": "huadu-jingtang-lotusroot"
+          },
+          {
+            "id": "ningbo-youdai",
+            "name": "宁波北洋油带鱼",
+            "family": "hairtail"
+          },
+          {
+            "id": "bomi-winter-muli",
+            "name": "波密冬至木梨",
+            "family": "pear"
+          },
+          {
+            "id": "xinhui-xinghuang-water-chestnut",
+            "name": "新会兴篁村鲜马蹄",
+            "family": "water-chestnut"
+          },
+          {
+            "id": "shantou-haojiang-liqian-dongjingwan",
+            "name": "濠江里前东京丸",
+            "family": "shantou-haojiang-liqian-dongjingwan"
+          },
+          {
+            "id": "yunyang-winter-solstice-red-orange",
+            "name": "云阳红橙",
+            "family": "citrus"
+          },
+          {
+            "id": "hongshan-caitai",
+            "name": "洪山菜薹",
+            "family": "red-caitai"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          },
+          {
+            "id": "baoshan-liangcui-emblica",
+            "name": "保山亮脆余甘子",
+            "family": "emblica"
+          },
+          {
+            "id": "conghua-dajiecai",
+            "name": "从化大芥菜",
+            "family": "conghua-dajiecai"
+          },
+          {
+            "id": "jinjiang-toushui-zicai",
+            "name": "晋江头水紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "yanshi-fresh-yintiao",
+            "name": "偃师鲜银条",
+            "family": "yanshi-fresh-yintiao"
+          },
+          {
+            "id": "xikou-xindongsun",
+            "name": "溪口新冬笋",
+            "family": "moso-bamboo-shoot"
+          },
+          {
+            "id": "rongan-jingju",
+            "name": "融安脆蜜／滑皮金桔",
+            "family": "kumquat"
+          },
+          {
+            "id": "yongtai-lianshan-shipaiju-you",
+            "name": "永泰连山石牌橘柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          },
+          {
+            "id": "cigu",
+            "name": "宝应慈姑",
+            "family": "cigu"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          }
+        ],
+        "repeatedFoodIds": [
+          "taitung-winter-atemoya",
+          "baoshan-liangcui-emblica",
+          "conghua-dajiecai",
+          "jinjiang-toushui-zicai",
+          "zengcheng-caixin",
+          "yanshi-fresh-yintiao",
+          "atushi-winter-lamb",
+          "shazhou-zhugengqin",
+          "cigu",
+          "rugao-takecai"
+        ]
+      },
+      {
+        "term": "小寒",
+        "year": 2027,
+        "index": 0,
+        "startDay": "2027-01-05",
+        "endDay": "2027-01-19",
+        "count": 14,
+        "repeatCount": 7,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "yanshi-fresh-yintiao",
+          "name": "偃师鲜银条",
+          "family": "yanshi-fresh-yintiao",
+          "inList": true,
+          "desiredId": "yanshi-fresh-yintiao",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "zizhong-xiaohan-early-blood-orange",
+            "name": "资中早熟血橙",
+            "family": "citrus"
+          },
+          {
+            "id": "luquan-greenhouse-toon-first-pick",
+            "name": "鹿泉温室香椿·元旦头茬",
+            "family": "toon-shoot"
+          },
+          {
+            "id": "beian-xiaohan-white-lover-strawberry",
+            "name": "北安“白色恋人”白草莓",
+            "family": "beian-xiaohan-white-lover-strawberry"
+          },
+          {
+            "id": "fuling-yuzao100-mustard-stem",
+            "name": "涪陵渝早100青菜头",
+            "family": "fuling-yuzao100-mustard-stem"
+          },
+          {
+            "id": "xinzhou-qubeihu-gongdeng-water-chestnut",
+            "name": "新洲曲背湖宫灯荸荠",
+            "family": "water-chestnut"
+          },
+          {
+            "id": "jiangan-changsha-xiaohan-early-tea-first-pick",
+            "name": "江安长沙村峨眉问春早茶首采",
+            "family": "tea"
+          },
+          {
+            "id": "hongshan-caitai",
+            "name": "洪山菜薹",
+            "family": "red-caitai"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "ntpc-northeast-cape-thorn-purple-algae",
+            "name": "贡寮东北角刺紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "yanshi-fresh-yintiao",
+            "name": "偃师鲜银条",
+            "family": "yanshi-fresh-yintiao"
+          },
+          {
+            "id": "yongtai-lianshan-shipaiju-you",
+            "name": "永泰连山石牌橘柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          }
+        ],
+        "repeatedFoodIds": [
+          "hongshan-caitai",
+          "bishan-ercai",
+          "wenzhou-pancai",
+          "zengcheng-caixin",
+          "yanshi-fresh-yintiao",
+          "yongtai-lianshan-shipaiju-you",
+          "atushi-winter-lamb"
+        ]
+      },
+      {
+        "term": "大寒",
+        "year": 2027,
+        "index": 1,
+        "startDay": "2027-01-20",
+        "endDay": "2027-02-03",
+        "count": 22,
+        "repeatCount": 8,
+        "repeatRate": 0.36363636363636365,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "bishan-ercai",
+          "name": "璧山儿菜",
+          "family": "child-mustard",
+          "inList": true,
+          "desiredId": "bishan-ercai",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "fuling-yuzao100-mustard-stem",
+            "name": "涪陵渝早100青菜头",
+            "family": "fuling-yuzao100-mustard-stem"
+          },
+          {
+            "id": "qingdao-youreka-greenhouse-blueberry",
+            "name": "青岛大棚优瑞卡蓝莓",
+            "family": "qingdao-youreka-greenhouse-blueberry"
+          },
+          {
+            "id": "miyun-houchangjiawu-yuanwei1-tomato",
+            "name": "密云后焦家坞原味1号番茄",
+            "family": "miyun-houchangjiawu-yuanwei1-tomato"
+          },
+          {
+            "id": "lingshan-dahan-spring-tea-first-pick",
+            "name": "灵山春茶·大寒前后首采",
+            "family": "tea"
+          },
+          {
+            "id": "huangpi-luzui-water-chestnut",
+            "name": "黄陂陆咀荸荠",
+            "family": "water-chestnut"
+          },
+          {
+            "id": "jintang-fresh-morel",
+            "name": "金堂鲜羊肚菌",
+            "family": "jintang-fresh-morel"
+          },
+          {
+            "id": "fushun-niuyake-greenhouse-dahan",
+            "name": "抚顺新宾棚室刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "ntpc-northeast-cape-thorn-purple-algae",
+            "name": "贡寮东北角刺紫菜",
+            "family": "seaweed"
+          },
+          {
+            "id": "shawan-yuba-red-stropharia",
+            "name": "沙湾喻坝赤松茸",
+            "family": "shawan-yuba-red-stropharia"
+          },
+          {
+            "id": "pujiang-dahan-chunjian",
+            "name": "蒲江春见（耙耙柑）",
+            "family": "citrus"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "zengcheng-caixin",
+            "name": "增城迟菜心",
+            "family": "choy-sum"
+          },
+          {
+            "id": "yongtai-lianshan-shipaiju-you",
+            "name": "永泰连山石牌橘柚",
+            "family": "pomelo"
+          },
+          {
+            "id": "hongshan-caitai",
+            "name": "洪山菜薹",
+            "family": "red-caitai"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "atushi-winter-lamb",
+            "name": "阿图什冬宰羊肉",
+            "family": "atushi-winter-lamb"
+          },
+          {
+            "id": "shazhou-zhugengqin",
+            "name": "沙洲竹梗芹",
+            "family": "water-celery"
+          },
+          {
+            "id": "cigu",
+            "name": "宝应慈姑",
+            "family": "cigu"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "fuling-yuzao100-mustard-stem",
+          "ntpc-northeast-cape-thorn-purple-algae",
+          "zengcheng-caixin",
+          "yongtai-lianshan-shipaiju-you",
+          "hongshan-caitai",
+          "bishan-ercai",
+          "atushi-winter-lamb",
+          "wenzhou-pancai"
+        ]
+      },
+      {
+        "term": "立春",
+        "year": 2027,
+        "index": 2,
+        "startDay": "2027-02-04",
+        "endDay": "2027-02-18",
+        "count": 6,
+        "repeatCount": 3,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "jiaozhou-kailing-suo",
+          "name": "胶州湾开凌梭",
+          "family": "jiaozhou-kailing-suo",
+          "inList": true,
+          "desiredId": "jiaozhou-kailing-suo",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "wusheng-dayagan-lichun",
+            "name": "武胜大雅柑",
+            "family": "citrus"
+          },
+          {
+            "id": "yaan-chuancai3-lichun-first-pick",
+            "name": "雅安川茶3号立春头采",
+            "family": "tea"
+          },
+          {
+            "id": "jintang-fresh-morel",
+            "name": "金堂鲜羊肚菌",
+            "family": "jintang-fresh-morel"
+          },
+          {
+            "id": "jiaozhou-kailing-suo",
+            "name": "胶州湾开凌梭",
+            "family": "jiaozhou-kailing-suo"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "hongshan-caitai",
+            "name": "洪山菜薹",
+            "family": "red-caitai"
+          }
+        ],
+        "repeatedFoodIds": [
+          "jintang-fresh-morel",
+          "xinshe-dahan-early-loquat",
+          "hongshan-caitai"
+        ]
+      },
+      {
+        "term": "雨水",
+        "year": 2027,
+        "index": 3,
+        "startDay": "2027-02-19",
+        "endDay": "2027-03-05",
+        "count": 20,
+        "repeatCount": 4,
+        "repeatRate": 0.2,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "wuding-jinquehua",
+          "name": "武定金雀花",
+          "family": "wuding-jinquehua",
+          "inList": true,
+          "desiredId": "wuding-jinquehua",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "tanglihua",
+            "name": "棠梨花",
+            "family": "tanglihua"
+          },
+          {
+            "id": "yangnaiguo",
+            "name": "羊奶果",
+            "family": "yangnaiguo"
+          },
+          {
+            "id": "yongsheng-fresh-kapok",
+            "name": "永胜鲜攀枝花",
+            "family": "yongsheng-fresh-kapok"
+          },
+          {
+            "id": "kucihua",
+            "name": "苦刺花",
+            "family": "kucihua"
+          },
+          {
+            "id": "yantai-haichang",
+            "name": "烟台海肠",
+            "family": "yantai-haichang"
+          },
+          {
+            "id": "wuding-jinquehua",
+            "name": "武定金雀花",
+            "family": "wuding-jinquehua"
+          },
+          {
+            "id": "dalian-haimaxian",
+            "name": "大连海麻线",
+            "family": "dalian-haimaxian"
+          },
+          {
+            "id": "juhuanao",
+            "name": "菊花脑",
+            "family": "juhuanao"
+          },
+          {
+            "id": "ninghai-changjie-razor-clam",
+            "name": "宁海长街蛏子",
+            "family": "ninghai-changjie-razor-clam"
+          },
+          {
+            "id": "juema",
+            "name": "青海蕨麻",
+            "family": "juema"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "jintang-fresh-morel",
+            "name": "金堂鲜羊肚菌",
+            "family": "jintang-fresh-morel"
+          },
+          {
+            "id": "jiaozhou-kailing-suo",
+            "name": "胶州湾开凌梭",
+            "family": "jiaozhou-kailing-suo"
+          },
+          {
+            "id": "hongshan-caitai",
+            "name": "洪山菜薹",
+            "family": "red-caitai"
+          },
+          {
+            "id": "bishan-ercai",
+            "name": "璧山儿菜",
+            "family": "child-mustard"
+          },
+          {
+            "id": "rugao-takecai",
+            "name": "如皋黑塌菜",
+            "family": "tatsoi"
+          },
+          {
+            "id": "yangxin-huhao",
+            "name": "阳新湖蒿",
+            "family": "yangxin-huhao"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "taitung-winter-atemoya",
+            "name": "台东冬果凤梨释迦",
+            "family": "taitung-winter-atemoya"
+          },
+          {
+            "id": "pujiang-dahan-chunjian",
+            "name": "蒲江春见（耙耙柑）",
+            "family": "citrus"
+          }
+        ],
+        "repeatedFoodIds": [
+          "xinshe-dahan-early-loquat",
+          "jintang-fresh-morel",
+          "jiaozhou-kailing-suo",
+          "hongshan-caitai"
+        ]
+      },
+      {
+        "term": "惊蛰",
+        "year": 2027,
+        "index": 4,
+        "startDay": "2027-03-06",
+        "endDay": "2027-03-20",
+        "count": 12,
+        "repeatCount": 6,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "yongsheng-fresh-kapok",
+          "name": "永胜鲜攀枝花",
+          "family": "yongsheng-fresh-kapok",
+          "inList": true,
+          "desiredId": "yongsheng-fresh-kapok",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "tanglihua",
+            "name": "棠梨花",
+            "family": "tanglihua"
+          },
+          {
+            "id": "yangnaiguo",
+            "name": "羊奶果",
+            "family": "yangnaiguo"
+          },
+          {
+            "id": "yongsheng-fresh-kapok",
+            "name": "永胜鲜攀枝花",
+            "family": "yongsheng-fresh-kapok"
+          },
+          {
+            "id": "eshan-jingzhe-mulberry-flower",
+            "name": "峨山鲜桑葚花",
+            "family": "eshan-jingzhe-mulberry-flower"
+          },
+          {
+            "id": "guangnan-mianhao-baba",
+            "name": "广南面蒿粑",
+            "family": "guangnan-mianhao-baba"
+          },
+          {
+            "id": "kucihua",
+            "name": "苦刺花",
+            "family": "kucihua"
+          },
+          {
+            "id": "yantai-haichang",
+            "name": "烟台海肠",
+            "family": "yantai-haichang"
+          },
+          {
+            "id": "wuding-jinquehua",
+            "name": "武定金雀花",
+            "family": "wuding-jinquehua"
+          },
+          {
+            "id": "minhou-chayuan-highland-spring-shoot",
+            "name": "闽侯茶苑高山春笋",
+            "family": "minhou-chayuan-highland-spring-shoot"
+          },
+          {
+            "id": "linan-early-spring-leizun",
+            "name": "杭州临安雷笋",
+            "family": "lei-bamboo-shoot"
+          },
+          {
+            "id": "qingdao-shazikou-li-xia-shrimp-2026",
+            "name": "青岛沙子口春捕蛎虾（鹰爪虾）",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "fengqing-xinhua-walnut-flowers",
+            "name": "凤庆新华乡鲜核桃花",
+            "family": "fengqing-xinhua-walnut-flowers"
+          }
+        ],
+        "repeatedFoodIds": [
+          "tanglihua",
+          "yangnaiguo",
+          "yongsheng-fresh-kapok",
+          "kucihua",
+          "yantai-haichang",
+          "wuding-jinquehua"
+        ]
+      },
+      {
+        "term": "春分",
+        "year": 2027,
+        "index": 5,
+        "startDay": "2027-03-21",
+        "endDay": "2027-04-04",
+        "count": 27,
+        "repeatCount": 9,
+        "repeatRate": 0.3333333333333333,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "name": "凤庆新华乡鲜核桃花",
+          "family": "fengqing-xinhua-walnut-flowers",
+          "inList": true,
+          "desiredId": "fengqing-xinhua-walnut-flowers",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "baojing-huangjincha-spring-equinox-bulk",
+            "name": "保靖黄金茶",
+            "family": "tea"
+          },
+          {
+            "id": "conghua-lutian-bitter-shoot",
+            "name": "从化吕田苦笋",
+            "family": "bitter-bamboo-shoot"
+          },
+          {
+            "id": "fuzhou-chunfen-baili-fish",
+            "name": "福州春分白鱱鱼",
+            "family": "fuzhou-chunfen-baili-fish"
+          },
+          {
+            "id": "fuzhou-chunfen-chunbihhao",
+            "name": "福州春碧蒿（春分野苋菜）",
+            "family": "fuzhou-chunfen-chunbihhao"
+          },
+          {
+            "id": "ningbo-xikou-spring-mao-bamboo-shoot",
+            "name": "奉化溪口黄泥拱毛笋",
+            "family": "moso-bamboo-shoot"
+          },
+          {
+            "id": "minhou-chayuan-highland-spring-shoot",
+            "name": "闽侯茶苑高山春笋",
+            "family": "minhou-chayuan-highland-spring-shoot"
+          },
+          {
+            "id": "qingdao-shazikou-li-xia",
+            "name": "青岛沙子口蛎虾",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "fengqing-xinhua-walnut-flowers",
+            "name": "凤庆新华乡鲜核桃花",
+            "family": "fengqing-xinhua-walnut-flowers"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "tanglihua",
+            "name": "棠梨花",
+            "family": "tanglihua"
+          },
+          {
+            "id": "yangnaiguo",
+            "name": "羊奶果",
+            "family": "yangnaiguo"
+          },
+          {
+            "id": "yongsheng-fresh-kapok",
+            "name": "永胜鲜攀枝花",
+            "family": "yongsheng-fresh-kapok"
+          },
+          {
+            "id": "kucihua",
+            "name": "苦刺花",
+            "family": "kucihua"
+          },
+          {
+            "id": "yantai-haichang",
+            "name": "烟台海肠",
+            "family": "yantai-haichang"
+          },
+          {
+            "id": "wuding-jinquehua",
+            "name": "武定金雀花",
+            "family": "wuding-jinquehua"
+          },
+          {
+            "id": "dalian-haimaxian",
+            "name": "大连海麻线",
+            "family": "dalian-haimaxian"
+          },
+          {
+            "id": "juhuanao",
+            "name": "菊花脑",
+            "family": "juhuanao"
+          },
+          {
+            "id": "ninghai-changjie-razor-clam",
+            "name": "宁海长街蛏子",
+            "family": "ninghai-changjie-razor-clam"
+          },
+          {
+            "id": "jintang-fresh-morel",
+            "name": "金堂鲜羊肚菌",
+            "family": "jintang-fresh-morel"
+          },
+          {
+            "id": "linan-early-spring-leizun",
+            "name": "杭州临安雷笋",
+            "family": "lei-bamboo-shoot"
+          },
+          {
+            "id": "juema",
+            "name": "青海蕨麻",
+            "family": "juema"
+          },
+          {
+            "id": "pujiang-dahan-chunjian",
+            "name": "蒲江春见（耙耙柑）",
+            "family": "citrus"
+          }
+        ],
+        "repeatedFoodIds": [
+          "minhou-chayuan-highland-spring-shoot",
+          "fengqing-xinhua-walnut-flowers",
+          "tanglihua",
+          "yangnaiguo",
+          "yongsheng-fresh-kapok",
+          "kucihua",
+          "yantai-haichang",
+          "wuding-jinquehua",
+          "linan-early-spring-leizun"
+        ]
+      },
+      {
+        "term": "清明",
+        "year": 2027,
+        "index": 6,
+        "startDay": "2027-04-05",
+        "endDay": "2027-04-19",
+        "count": 10,
+        "repeatCount": 5,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "eryuan-haicaihua",
+          "name": "洱源海菜花",
+          "family": "eryuan-haicaihua",
+          "inList": true,
+          "desiredId": "eryuan-haicaihua",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "huizhou-chengkan-qingming-tea-shoot",
+            "name": "徽州呈坎茶笋",
+            "family": "huizhou-chengkan-qingming-tea-shoot"
+          },
+          {
+            "id": "conghua-lutian-bitter-shoot",
+            "name": "从化吕田苦笋",
+            "family": "bitter-bamboo-shoot"
+          },
+          {
+            "id": "pearl-river-qingming-cao-shrimp",
+            "name": "珠江口清明曹虾",
+            "family": "pearl-river-qingming-cao-shrimp"
+          },
+          {
+            "id": "guangzhou-qingming-jiaocai",
+            "name": "广州清明菜荞",
+            "family": "guangzhou-qingming-jiaocai"
+          },
+          {
+            "id": "panyu-qingming-sugarcane",
+            "name": "番禺清明蔗",
+            "family": "sugarcane"
+          },
+          {
+            "id": "minhou-chayuan-highland-spring-shoot",
+            "name": "闽侯茶苑高山春笋",
+            "family": "minhou-chayuan-highland-spring-shoot"
+          },
+          {
+            "id": "wulong-taiwan-long-mulberry",
+            "name": "武隆台湾长果桑",
+            "family": "mulberry"
+          },
+          {
+            "id": "qingdao-shazikou-li-xia",
+            "name": "青岛沙子口蛎虾",
+            "family": "eagle-claw-shrimp"
+          },
+          {
+            "id": "fengqing-xinhua-walnut-flowers",
+            "name": "凤庆新华乡鲜核桃花",
+            "family": "fengqing-xinhua-walnut-flowers"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          }
+        ],
+        "repeatedFoodIds": [
+          "conghua-lutian-bitter-shoot",
+          "minhou-chayuan-highland-spring-shoot",
+          "qingdao-shazikou-li-xia",
+          "fengqing-xinhua-walnut-flowers",
+          "eryuan-haicaihua"
+        ]
+      },
+      {
+        "term": "谷雨",
+        "year": 2027,
+        "index": 7,
+        "startDay": "2027-04-20",
+        "endDay": "2027-05-05",
+        "count": 18,
+        "repeatCount": 3,
+        "repeatRate": 0.16666666666666666,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "cinenya",
+          "name": "刺嫩芽",
+          "family": "aralia-shoot",
+          "inList": true,
+          "desiredId": "cinenya",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "houtui-cai",
+            "name": "猴腿菜",
+            "family": "houtui-cai"
+          },
+          {
+            "id": "ninger-tongxin-sweet-shoot",
+            "name": "宁洱同心甜笋",
+            "family": "sweet-bamboo-shoot"
+          },
+          {
+            "id": "shangyu-duanbing-cherry",
+            "name": "上虞下管短柄樱桃",
+            "family": "cherry"
+          },
+          {
+            "id": "lanshan-baidieling-guyu-tea",
+            "name": "蓝山百叠岭谷雨茶",
+            "family": "tea"
+          },
+          {
+            "id": "wulong-taiwan-long-mulberry",
+            "name": "武隆台湾长果桑",
+            "family": "mulberry"
+          },
+          {
+            "id": "honghu-oudai",
+            "name": "洪湖藕带",
+            "family": "honghu-oudai"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          },
+          {
+            "id": "xinshe-dahan-early-loquat",
+            "name": "新社头柜早熟枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "tonglu-late-april-gaojie-bamboo",
+            "name": "桐庐高节竹笋",
+            "family": "tonglu-late-april-gaojie-bamboo"
+          },
+          {
+            "id": "conghua-lutian-bitter-shoot",
+            "name": "从化吕田苦笋",
+            "family": "bitter-bamboo-shoot"
+          },
+          {
+            "id": "ninghai-changjie-razor-clam",
+            "name": "宁海长街蛏子",
+            "family": "ninghai-changjie-razor-clam"
+          },
+          {
+            "id": "linan-early-spring-leizun",
+            "name": "杭州临安雷笋",
+            "family": "lei-bamboo-shoot"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "pujiang-dahan-chunjian",
+            "name": "蒲江春见（耙耙柑）",
+            "family": "citrus"
+          }
+        ],
+        "repeatedFoodIds": [
+          "wulong-taiwan-long-mulberry",
+          "conghua-lutian-bitter-shoot",
+          "eryuan-haicaihua"
+        ]
+      },
+      {
+        "term": "立夏",
+        "year": 2027,
+        "index": 8,
+        "startDay": "2027-05-06",
+        "endDay": "2027-05-20",
+        "count": 17,
+        "repeatCount": 8,
+        "repeatRate": 0.47058823529411764,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "jianshui-caoya",
+          "name": "建水草芽",
+          "family": "jianshui-caoya",
+          "inList": true,
+          "desiredId": "jianshui-caoya",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "houtui-cai",
+            "name": "猴腿菜",
+            "family": "houtui-cai"
+          },
+          {
+            "id": "shanzhou-green-wheat-nianzhuan",
+            "name": "陕州新麦碾转",
+            "family": "shanzhou-green-wheat-nianzhuan"
+          },
+          {
+            "id": "ninger-tongxin-sweet-shoot",
+            "name": "宁洱同心甜笋",
+            "family": "sweet-bamboo-shoot"
+          },
+          {
+            "id": "lixian-highland-cherry",
+            "name": "理县高原甜樱桃",
+            "family": "cherry"
+          },
+          {
+            "id": "fengxian-shihai-2026-japanese-sweet-mulberry",
+            "name": "奉贤石海村日本甜果桑",
+            "family": "mulberry"
+          },
+          {
+            "id": "qiongshan-sanmenpo-xiantaoli",
+            "name": "琼山三门坡仙桃荔",
+            "family": "peach"
+          },
+          {
+            "id": "shidian-lixia-qingmei",
+            "name": "施甸立夏青梅",
+            "family": "green-plum"
+          },
+          {
+            "id": "jiangmen-duruang-lixiang-cool-gourd",
+            "name": "江门杜阮凉瓜",
+            "family": "jiangmen-duruang-lixiang-cool-gourd"
+          },
+          {
+            "id": "wenzhou-lingkun-baizhuogua",
+            "name": "温州灵昆白啄瓜",
+            "family": "wenzhou-lingkun-baizhuogua"
+          },
+          {
+            "id": "enping-naji-tainung17-pineapple",
+            "name": "恩平那吉金钻17号凤梨",
+            "family": "enping-naji-tainung17-pineapple"
+          },
+          {
+            "id": "ankang-yinghu-daxing-loquat",
+            "name": "安康瀛湖“大五星”枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "honghu-oudai",
+            "name": "洪湖藕带",
+            "family": "honghu-oudai"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          }
+        ],
+        "repeatedFoodIds": [
+          "houtui-cai",
+          "ninger-tongxin-sweet-shoot",
+          "honghu-oudai",
+          "jianshui-caoya",
+          "cinenya",
+          "pucai",
+          "eryuan-haicaihua",
+          "foshougua-miao"
+        ]
+      },
+      {
+        "term": "小满",
+        "year": 2027,
+        "index": 9,
+        "startDay": "2027-05-21",
+        "endDay": "2027-06-05",
+        "count": 18,
+        "repeatCount": 9,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "shanzhou-green-wheat-nianzhuan",
+          "name": "陕州新麦碾转",
+          "family": "shanzhou-green-wheat-nianzhuan",
+          "inList": true,
+          "desiredId": "shanzhou-green-wheat-nianzhuan",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "tongxiang-zhuili",
+            "name": "桐乡槜李",
+            "family": "plum"
+          },
+          {
+            "id": "kuche-xiaobaixing",
+            "name": "库车小白杏",
+            "family": "kuche-xiaobaixing"
+          },
+          {
+            "id": "xiangyin-santang-jiaotou",
+            "name": "湘阴三塘鲜藠头",
+            "family": "xiangyin-santang-jiaotou"
+          },
+          {
+            "id": "shanzhou-green-wheat-nianzhuan",
+            "name": "陕州新麦碾转",
+            "family": "shanzhou-green-wheat-nianzhuan"
+          },
+          {
+            "id": "tonghai-fresh-sour-quince",
+            "name": "通海鲜酸木瓜",
+            "family": "tonghai-fresh-sour-quince"
+          },
+          {
+            "id": "enping-naji-tainung17-pineapple",
+            "name": "恩平那吉金钻17号凤梨",
+            "family": "enping-naji-tainung17-pineapple"
+          },
+          {
+            "id": "jiande-chuncai",
+            "name": "建德莼菜",
+            "family": "water-shield"
+          },
+          {
+            "id": "yanchi-huanghuacai",
+            "name": "盐池黄花菜",
+            "family": "yanchi-huanghuacai"
+          },
+          {
+            "id": "suzhou-june-yellow-late-may-market",
+            "name": "苏州六月黄",
+            "family": "june-yellow-crab"
+          },
+          {
+            "id": "tangqi-tangbei-late-loquat",
+            "name": "塘栖塘北露天枇杷",
+            "family": "loquat"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "houtui-cai",
+            "name": "猴腿菜",
+            "family": "houtui-cai"
+          },
+          {
+            "id": "ninger-tongxin-sweet-shoot",
+            "name": "宁洱同心甜笋",
+            "family": "sweet-bamboo-shoot"
+          },
+          {
+            "id": "cinenya",
+            "name": "刺嫩芽",
+            "family": "aralia-shoot"
+          },
+          {
+            "id": "pucai",
+            "name": "淮安蒲菜",
+            "family": "pucai"
+          },
+          {
+            "id": "honghu-oudai",
+            "name": "洪湖藕带",
+            "family": "honghu-oudai"
+          },
+          {
+            "id": "eryuan-haicaihua",
+            "name": "洱源海菜花",
+            "family": "eryuan-haicaihua"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          }
+        ],
+        "repeatedFoodIds": [
+          "shanzhou-green-wheat-nianzhuan",
+          "enping-naji-tainung17-pineapple",
+          "houtui-cai",
+          "ninger-tongxin-sweet-shoot",
+          "cinenya",
+          "pucai",
+          "honghu-oudai",
+          "eryuan-haicaihua",
+          "foshougua-miao"
+        ]
+      },
+      {
+        "term": "芒种",
+        "year": 2027,
+        "index": 10,
+        "startDay": "2027-06-06",
+        "endDay": "2027-06-20",
+        "count": 12,
+        "repeatCount": 6,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "tonghai-fresh-sour-quince",
+          "name": "通海鲜酸木瓜",
+          "family": "tonghai-fresh-sour-quince",
+          "inList": true,
+          "desiredId": "tonghai-fresh-sour-quince",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "kuche-xiaobaixing",
+            "name": "库车小白杏",
+            "family": "kuche-xiaobaixing"
+          },
+          {
+            "id": "xiangyin-santang-jiaotou",
+            "name": "湘阴三塘鲜藠头",
+            "family": "xiangyin-santang-jiaotou"
+          },
+          {
+            "id": "tonghai-fresh-sour-quince",
+            "name": "通海鲜酸木瓜",
+            "family": "tonghai-fresh-sour-quince"
+          },
+          {
+            "id": "chaoyang-xilu-wusu-waxberry",
+            "name": "潮阳西胪乌酥核杨梅",
+            "family": "waxberry"
+          },
+          {
+            "id": "wuhan-hannan-fresh-sweet-corn",
+            "name": "武汉汉南鲜食甜玉米",
+            "family": "wuhan-hannan-fresh-sweet-corn"
+          },
+          {
+            "id": "jinghe-bajiahu-mangzhong-pearl-nectarine",
+            "name": "精河八家户珍珠油桃",
+            "family": "peach"
+          },
+          {
+            "id": "zhenning-honey-plum",
+            "name": "镇宁蜂糖李",
+            "family": "plum"
+          },
+          {
+            "id": "enping-naji-tainung17-pineapple",
+            "name": "恩平那吉金钻17号凤梨",
+            "family": "enping-naji-tainung17-pineapple"
+          },
+          {
+            "id": "jiande-chuncai",
+            "name": "建德莼菜",
+            "family": "water-shield"
+          },
+          {
+            "id": "yanchi-huanghuacai",
+            "name": "盐池黄花菜",
+            "family": "yanchi-huanghuacai"
+          },
+          {
+            "id": "harbin-fresh-honeyberry",
+            "name": "哈尔滨鲜食蓝靛果",
+            "family": "harbin-fresh-honeyberry"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "kuche-xiaobaixing",
+          "xiangyin-santang-jiaotou",
+          "tonghai-fresh-sour-quince",
+          "enping-naji-tainung17-pineapple",
+          "jiande-chuncai",
+          "yanchi-huanghuacai"
+        ]
+      },
+      {
+        "term": "夏至",
+        "year": 2027,
+        "index": 11,
+        "startDay": "2027-06-21",
+        "endDay": "2027-07-06",
+        "count": 23,
+        "repeatCount": 9,
+        "repeatRate": 0.391304347826087,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "harbin-fresh-honeyberry",
+          "name": "哈尔滨鲜食蓝靛果",
+          "family": "harbin-fresh-honeyberry",
+          "inList": true,
+          "desiredId": "harbin-fresh-honeyberry",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "yunan-seedless-huangpi",
+            "name": "郁南无核黄皮",
+            "family": "yunan-seedless-huangpi"
+          },
+          {
+            "id": "yubei-xiazhi-sugar-peach",
+            "name": "渝北夏至糖桃",
+            "family": "peach"
+          },
+          {
+            "id": "gaochun-liuyuehuang",
+            "name": "高淳六月黄",
+            "family": "june-yellow-crab"
+          },
+          {
+            "id": "enping-naji-tainung17-pineapple",
+            "name": "恩平那吉金钻17号凤梨",
+            "family": "enping-naji-tainung17-pineapple"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          },
+          {
+            "id": "xishuangbanna-wood-milk-fruit",
+            "name": "西双版纳木奶果",
+            "family": "xishuangbanna-wood-milk-fruit"
+          },
+          {
+            "id": "minqin-field-shacong",
+            "name": "民勤露地鲜沙葱",
+            "family": "minqin-field-shacong"
+          },
+          {
+            "id": "dalian-zihaitan",
+            "name": "大连紫海胆",
+            "family": "dalian-zihaitan"
+          },
+          {
+            "id": "dier",
+            "name": "地耳",
+            "family": "dier"
+          },
+          {
+            "id": "congjun",
+            "name": "枞菌",
+            "family": "congjun"
+          },
+          {
+            "id": "ganbajun",
+            "name": "干巴菌",
+            "family": "ganbajun"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          },
+          {
+            "id": "tongxiang-zhuili",
+            "name": "桐乡槜李",
+            "family": "plum"
+          },
+          {
+            "id": "kuche-xiaobaixing",
+            "name": "库车小白杏",
+            "family": "kuche-xiaobaixing"
+          },
+          {
+            "id": "xiangyin-santang-jiaotou",
+            "name": "湘阴三塘鲜藠头",
+            "family": "xiangyin-santang-jiaotou"
+          },
+          {
+            "id": "tonghai-fresh-sour-quince",
+            "name": "通海鲜酸木瓜",
+            "family": "tonghai-fresh-sour-quince"
+          },
+          {
+            "id": "wuhan-hannan-fresh-sweet-corn",
+            "name": "武汉汉南鲜食甜玉米",
+            "family": "wuhan-hannan-fresh-sweet-corn"
+          },
+          {
+            "id": "jiande-chuncai",
+            "name": "建德莼菜",
+            "family": "water-shield"
+          },
+          {
+            "id": "yanchi-huanghuacai",
+            "name": "盐池黄花菜",
+            "family": "yanchi-huanghuacai"
+          },
+          {
+            "id": "harbin-fresh-honeyberry",
+            "name": "哈尔滨鲜食蓝靛果",
+            "family": "harbin-fresh-honeyberry"
+          },
+          {
+            "id": "honghu-oudai",
+            "name": "洪湖藕带",
+            "family": "honghu-oudai"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "enping-naji-tainung17-pineapple",
+          "kuche-xiaobaixing",
+          "xiangyin-santang-jiaotou",
+          "tonghai-fresh-sour-quince",
+          "wuhan-hannan-fresh-sweet-corn",
+          "jiande-chuncai",
+          "yanchi-huanghuacai",
+          "harbin-fresh-honeyberry",
+          "jianshui-caoya"
+        ]
+      },
+      {
+        "term": "小暑",
+        "year": 2027,
+        "index": 12,
+        "startDay": "2027-07-07",
+        "endDay": "2027-07-22",
+        "count": 6,
+        "repeatCount": 3,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "chenghai-baoke",
+          "name": "澄海薄壳米",
+          "family": "chenghai-baoke",
+          "inList": true,
+          "desiredId": "chenghai-baoke",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "yunan-seedless-huangpi",
+            "name": "郁南无核黄皮",
+            "family": "yunan-seedless-huangpi"
+          },
+          {
+            "id": "taixing-sucui1-early-pear",
+            "name": "泰兴苏翠1号早熟梨",
+            "family": "pear"
+          },
+          {
+            "id": "pinggu-zhongpan9-xiaoshu-peach",
+            "name": "平谷中蟠9号桃",
+            "family": "peach"
+          },
+          {
+            "id": "gaochun-liuyuehuang",
+            "name": "高淳六月黄",
+            "family": "june-yellow-crab"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          },
+          {
+            "id": "dongguan-tangxia-shixia-longan",
+            "name": "东莞塘厦石硖龙眼",
+            "family": "longan"
+          }
+        ],
+        "repeatedFoodIds": [
+          "yunan-seedless-huangpi",
+          "gaochun-liuyuehuang",
+          "chenghai-baoke"
+        ]
+      },
+      {
+        "term": "大暑",
+        "year": 2027,
+        "index": 13,
+        "startDay": "2027-07-23",
+        "endDay": "2027-08-07",
+        "count": 18,
+        "repeatCount": 4,
+        "repeatRate": 0.2222222222222222,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "name": "西双版纳木奶果",
+          "family": "xishuangbanna-wood-milk-fruit",
+          "inList": true,
+          "desiredId": "xishuangbanna-wood-milk-fruit",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "wenchuan-qingcui-plum",
+            "name": "汶川青脆李",
+            "family": "plum"
+          },
+          {
+            "id": "huocheng-xiangfei-crabapple",
+            "name": "霍城香妃海棠果",
+            "family": "crabapple"
+          },
+          {
+            "id": "dengkou-wallace-melon",
+            "name": "磴口华莱士瓜",
+            "family": "dengkou-wallace-melon"
+          },
+          {
+            "id": "songjiang-cangqiao-crystal-pear",
+            "name": "松江仓桥水晶梨",
+            "family": "pear"
+          },
+          {
+            "id": "nanhui-daxue-water-honey-peach",
+            "name": "南汇水蜜桃",
+            "family": "peach"
+          },
+          {
+            "id": "jitoumi",
+            "name": "鸡头米",
+            "family": "jitoumi"
+          },
+          {
+            "id": "yunan-seedless-huangpi",
+            "name": "郁南无核黄皮",
+            "family": "yunan-seedless-huangpi"
+          },
+          {
+            "id": "gaochun-liuyuehuang",
+            "name": "高淳六月黄",
+            "family": "june-yellow-crab"
+          },
+          {
+            "id": "yanchi-huanghuacai",
+            "name": "盐池黄花菜",
+            "family": "yanchi-huanghuacai"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          },
+          {
+            "id": "xishuangbanna-wood-milk-fruit",
+            "name": "西双版纳木奶果",
+            "family": "xishuangbanna-wood-milk-fruit"
+          },
+          {
+            "id": "dongguan-tangxia-shixia-longan",
+            "name": "东莞塘厦石硖龙眼",
+            "family": "longan"
+          },
+          {
+            "id": "dalian-zihaitan",
+            "name": "大连紫海胆",
+            "family": "dalian-zihaitan"
+          },
+          {
+            "id": "dier",
+            "name": "地耳",
+            "family": "dier"
+          },
+          {
+            "id": "congjun",
+            "name": "枞菌",
+            "family": "congjun"
+          },
+          {
+            "id": "ganbajun",
+            "name": "干巴菌",
+            "family": "ganbajun"
+          },
+          {
+            "id": "foshougua-miao",
+            "name": "佛手瓜苗",
+            "family": "foshougua-miao"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "yunan-seedless-huangpi",
+          "gaochun-liuyuehuang",
+          "chenghai-baoke",
+          "dongguan-tangxia-shixia-longan"
+        ]
+      },
+      {
+        "term": "立秋",
+        "year": 2027,
+        "index": 14,
+        "startDay": "2027-08-08",
+        "endDay": "2027-08-22",
+        "count": 4,
+        "repeatCount": 2,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "jitoumi",
+          "name": "鸡头米",
+          "family": "jitoumi",
+          "inList": true,
+          "desiredId": "jitoumi",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "shidian-autumn-longzhu-shoot",
+            "name": "施甸秋龙竹笋",
+            "family": "shidian-autumn-longzhu-shoot"
+          },
+          {
+            "id": "fengxian-nanqiao-early-water-red-caltrop",
+            "name": "奉贤南桥早熟水红菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "huocheng-xiangfei-crabapple",
+            "name": "霍城香妃海棠果",
+            "family": "crabapple"
+          },
+          {
+            "id": "jitoumi",
+            "name": "鸡头米",
+            "family": "jitoumi"
+          }
+        ],
+        "repeatedFoodIds": [
+          "huocheng-xiangfei-crabapple",
+          "jitoumi"
+        ]
+      },
+      {
+        "term": "处暑",
+        "year": 2027,
+        "index": 15,
+        "startDay": "2027-08-23",
+        "endDay": "2027-09-07",
+        "count": 24,
+        "repeatCount": 2,
+        "repeatRate": 0.08333333333333333,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "ganbajun",
+          "name": "干巴菌",
+          "family": "ganbajun",
+          "inList": true,
+          "desiredId": "ganbajun",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "ruanzao-mihoutao",
+            "name": "软枣猕猴桃",
+            "family": "ruanzao-mihoutao"
+          },
+          {
+            "id": "shajiguo",
+            "name": "沙棘果",
+            "family": "shajiguo"
+          },
+          {
+            "id": "longyang-pupiao-allium-root",
+            "name": "隆阳蒲缥苤菜根",
+            "family": "longyang-pupiao-allium-root"
+          },
+          {
+            "id": "shidian-autumn-longzhu-shoot",
+            "name": "施甸秋龙竹笋",
+            "family": "shidian-autumn-longzhu-shoot"
+          },
+          {
+            "id": "bayuegua",
+            "name": "八月瓜",
+            "family": "bayuegua"
+          },
+          {
+            "id": "cili",
+            "name": "刺梨",
+            "family": "rose-fruit"
+          },
+          {
+            "id": "huoshan-yanghe",
+            "name": "霍山阳荷嫩苞",
+            "family": "huoshan-yanghe"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "chongming-baibiandou",
+            "name": "崇明白扁豆鲜荚",
+            "family": "chongming-baibiandou"
+          },
+          {
+            "id": "chongming-xiangsu-yu",
+            "name": "崇明香酥芋",
+            "family": "chongming-xiangsu-yu"
+          },
+          {
+            "id": "zhenlai-jiaobai",
+            "name": "镇赉寒地茭白",
+            "family": "water-bamboo"
+          },
+          {
+            "id": "zhuhai-hechong",
+            "name": "珠海禾虫",
+            "family": "zhuhai-hechong"
+          },
+          {
+            "id": "sanmen-qingxie",
+            "name": "三门青蟹",
+            "family": "mud-crab"
+          },
+          {
+            "id": "wenzhou-pancai",
+            "name": "温州盘菜",
+            "family": "wenzhou-pancai"
+          },
+          {
+            "id": "chenghai-baoke",
+            "name": "澄海薄壳米",
+            "family": "chenghai-baoke"
+          },
+          {
+            "id": "xishuangbanna-wood-milk-fruit",
+            "name": "西双版纳木奶果",
+            "family": "xishuangbanna-wood-milk-fruit"
+          },
+          {
+            "id": "dongguan-tangxia-shixia-longan",
+            "name": "东莞塘厦石硖龙眼",
+            "family": "longan"
+          },
+          {
+            "id": "jitoumi",
+            "name": "鸡头米",
+            "family": "jitoumi"
+          },
+          {
+            "id": "dalian-zihaitan",
+            "name": "大连紫海胆",
+            "family": "dalian-zihaitan"
+          },
+          {
+            "id": "dier",
+            "name": "地耳",
+            "family": "dier"
+          },
+          {
+            "id": "congjun",
+            "name": "枞菌",
+            "family": "congjun"
+          },
+          {
+            "id": "ganbajun",
+            "name": "干巴菌",
+            "family": "ganbajun"
+          },
+          {
+            "id": "jianshui-caoya",
+            "name": "建水草芽",
+            "family": "jianshui-caoya"
+          }
+        ],
+        "repeatedFoodIds": [
+          "shidian-autumn-longzhu-shoot",
+          "jitoumi"
+        ]
+      },
+      {
+        "term": "白露",
+        "year": 2027,
+        "index": 16,
+        "startDay": "2027-09-08",
+        "endDay": "2027-09-22",
+        "count": 18,
+        "repeatCount": 9,
+        "repeatRate": 0.5,
+        "repeatRateDenominator": "current-term-total",
+        "duplicateFamilyCount": 0,
+        "duplicateExcessCount": 0,
+        "duplicateFamilies": [],
+        "feature": {
+          "id": "huoshan-yanghe",
+          "name": "霍山阳荷嫩苞",
+          "family": "huoshan-yanghe",
+          "inList": true,
+          "desiredId": "huoshan-yanghe",
+          "isEditorialChoice": true,
+          "hasSourceSupportedPeakDay": true
+        },
+        "foods": [
+          {
+            "id": "ruanzao-mihoutao",
+            "name": "软枣猕猴桃",
+            "family": "ruanzao-mihoutao"
+          },
+          {
+            "id": "shajiguo",
+            "name": "沙棘果",
+            "family": "shajiguo"
+          },
+          {
+            "id": "longyang-pupiao-allium-root",
+            "name": "隆阳蒲缥苤菜根",
+            "family": "longyang-pupiao-allium-root"
+          },
+          {
+            "id": "miaoli-xihu-wendan",
+            "name": "苗栗西湖文旦",
+            "family": "pomelo"
+          },
+          {
+            "id": "jiangning-bailu-white-dew-tea",
+            "name": "南京江宁白露龙针",
+            "family": "tea"
+          },
+          {
+            "id": "shexian-qizili-hickory",
+            "name": "歙县杞梓里山核桃",
+            "family": "hickory"
+          },
+          {
+            "id": "shiping-shaochong-bailu-walnut",
+            "name": "石屏哨冲白露鲜核桃",
+            "family": "walnut"
+          },
+          {
+            "id": "suzhou-bailu-ginkgo",
+            "name": "苏州白露鲜白果",
+            "family": "suzhou-bailu-ginkgo"
+          },
+          {
+            "id": "hanshou-yubiou",
+            "name": "汉寿玉臂藕",
+            "family": "hanshou-yubiou"
+          },
+          {
+            "id": "bayuegua",
+            "name": "八月瓜",
+            "family": "bayuegua"
+          },
+          {
+            "id": "cili",
+            "name": "刺梨",
+            "family": "rose-fruit"
+          },
+          {
+            "id": "anlu-bailu-huaguoshan-fig",
+            "name": "安陆花果山无花果",
+            "family": "fig"
+          },
+          {
+            "id": "huoshan-yanghe",
+            "name": "霍山阳荷嫩苞",
+            "family": "huoshan-yanghe"
+          },
+          {
+            "id": "nanhu-ling",
+            "name": "南湖菱",
+            "family": "water-caltrop"
+          },
+          {
+            "id": "jianou-zhuilli",
+            "name": "建瓯锥栗",
+            "family": "jianou-zhuilli"
+          },
+          {
+            "id": "chongming-baibiandou",
+            "name": "崇明白扁豆鲜荚",
+            "family": "chongming-baibiandou"
+          },
+          {
+            "id": "ximeng-bamboo-worm",
+            "name": "西盟鲜竹虫",
+            "family": "ximeng-bamboo-worm"
+          },
+          {
+            "id": "tongling-white-ginger",
+            "name": "铜陵白姜",
+            "family": "tongling-white-ginger"
+          }
+        ],
+        "repeatedFoodIds": [
+          "ruanzao-mihoutao",
+          "shajiguo",
+          "longyang-pupiao-allium-root",
+          "bayuegua",
+          "cili",
+          "huoshan-yanghe",
+          "nanhu-ling",
+          "jianou-zhuilli",
+          "chongming-baibiandou"
+        ]
+      }
+    ]
+  },
+  "semanticReview": {
+    "scope": "All 24 baseline and all 24 current displayed name lists were read individually. The review distinguishes a repeated ingredient from a shared broad menu category, related plants with different edible parts, and distinct named bamboo types. A second independent reviewer inspected the current lists.",
+    "confirmedSameIngredientDuplicatesInDisplayedLists": {
+      "baseline": [],
+      "current": []
+    },
+    "qualification": "Zero confirmed duplicate tasting families is not a claim of completed biological species identification for every historical fishery vernacular name. Unidentified vernacular fish names are not auto-merged without evidence.",
+    "catalogChecks": [
+      {
+        "family": "strawberry",
+        "catalogIds": [
+          "beian-xiaohan-white-lover-strawberry",
+          "ganyu-zhaohu-xiaohan-greenhouse-strawberry"
+        ],
+        "outcome": "Both are sourced to Minor Cold, but the ordinary Ganyu strawberry has no usable photo and is absent from both displayed lists. The white strawberry is the displayed representative. Thus this is a duplicate candidate family, not a pre-change displayed duplicate."
+      },
+      {
+        "family": "blueberry",
+        "catalogCount": 1,
+        "outcome": "No same-term displayed duplicate. Honeyberry / blue honeysuckle is a different fruit and is retained separately."
+      },
+      {
+        "family": "grape",
+        "catalogCount": 1,
+        "outcome": "No same-term displayed duplicate."
+      },
+      {
+        "family": "crabapple",
+        "catalogIds": [
+          "huocheng-xiangfei-crabapple",
+          "yanqing-baleng-crisp-haitang"
+        ],
+        "outcome": "No same-term displayed duplicate in either 24-term cycle."
+      }
+    ],
+    "intentionalDistinctions": [
+      {
+        "foods": [
+          "淮安蒲菜",
+          "建水草芽"
+        ],
+        "reason": "Both are cattail-related vegetables; the catalog documents tender stem core for pucai and new rhizome shoots for caoya. The edible part and form differ, so these are retained as separate tasting choices.",
+        "sources": [
+          "https://zx.huaian.gov.cn/col/14068_734855/art/m/17197632/1721716877938wmY9EiBw.html",
+          "https://www.cnveg.org/CN/article/downloadArticleFile.do?attachType=PDF&id=16877",
+          "https://www.kib.cas.cn/kxcb/kpwz/201603/t20160304_4542461.html"
+        ]
+      },
+      {
+        "foods": [
+          "洪湖藕带",
+          "汉寿玉臂藕",
+          "花都京塘莲藕"
+        ],
+        "reason": "Young lotus rhizome runners and mature enlarged rhizomes are different edible states; the two mature lotus-root entries also occupy different sourced seasons in this cycle."
+      },
+      {
+        "foods": [
+          "凤庆新华乡鲜核桃花",
+          "歙县杞梓里山核桃",
+          "石屏哨冲白露鲜核桃"
+        ],
+        "reason": "Male flower stalks and edible kernels are different plant parts. Hickory and walnut are separate foods, not peaches."
+      },
+      {
+        "foods": [
+          "杭州临安雷笋",
+          "从化吕田苦笋",
+          "奉化溪口黄泥拱毛笋",
+          "桐庐高节竹笋",
+          "刺竹笋",
+          "广宁洲仔麻竹笋"
+        ],
+        "reason": "The named bamboo types differ and are retained. A location-only spring-shoot name with unresolved bamboo identity is not assumed to duplicate one of the identified types."
+      },
+      {
+        "foods": [
+          "偃师鲜银条",
+          "贺兰鲜螺丝菜"
+        ],
+        "reason": "The source descriptions distinguish the thin branching white edible underground stems from the segmented spiral tubers; the catalog expressly warns against confusing them."
+      },
+      {
+        "foods": [
+          "棠梨花",
+          "刺梨",
+          "莱阳梨"
+        ],
+        "reason": "Flower buds, rose fruit, and ordinary pear fruit are different ingredients; matching the character 梨 alone previously conflated them."
+      }
+    ],
+    "implementationGapsForFutureCatalogGrowth": [
+      "No shared strawberry, blueberry or grape family rule exists yet. This does not cause a current displayed duplicate, but adding another eligible item in those families would need an explicit review."
+    ],
+    "heldUnidentifiedLeads": [
+      {
+        "id": "suao-jingzhe-huahui",
+        "name": "苏澳惊蛰花辉",
+        "reason": "来源仅俗名，标准商品名与具体鱼种待确认"
+      },
+      {
+        "id": "suao-jingzhe-muhou",
+        "name": "苏澳惊蛰目吼",
+        "reason": "来源仅俗名，标准商品名与具体鱼种待确认"
+      },
+      {
+        "id": "suao-jingzhe-dingmian",
+        "name": "苏澳惊蛰钉鮸",
+        "reason": "来源仅俗名，标准商品名与具体鱼种待确认"
+      },
+      {
+        "id": "keelung-jingzhe-jiaranyu",
+        "name": "基隆惊蛰加蚋鱼",
+        "reason": "来源仅俗名，标准商品名与具体鱼种待确认"
+      },
+      {
+        "id": "keelung-jingzhe-wenyu",
+        "name": "基隆惊蛰鱼昷鱼",
+        "reason": "来源仅俗名，标准商品名与具体鱼种待确认"
+      },
+      {
+        "id": "taiwan-hanlu-whitebelly-mackerel",
+        "name": "台湾寒露白腹鰆",
+        "reason": "来源仅俗名，标准商品名与具体鱼种待确认"
+      },
+      {
+        "id": "taiwan-lichiu-penghu-shrimp",
+        "name": "台湾立秋澎湖虾类",
+        "reason": "来源仅列虾类渔讯，具体虾种与可辨认商品待确认"
+      },
+      {
+        "id": "taiwan-qiufen-northeast-shrimp",
+        "name": "台湾东北部秋分鲜虾",
+        "reason": "来源仅列虾类渔讯，具体虾种与可辨认商品待确认"
+      },
+      {
+        "id": "fuzhou-hanlu-liaozai-clam",
+        "name": "福州寒露蟟仔（蚬类俗名）",
+        "reason": "来源仅列蚬类地方俗名，具体品类与可辨认商品待确认"
+      }
+    ],
+    "editorialHoldNote": "The nine named fishery leads remain in the full catalog but are now explicitly held out of the seasonal recommendations pending commodity/species identification. This is an evidence-quality hold, not same-photo de-duplication."
+  }
+}

@@ -5,3 +5,5 @@
 .record-photo{position:relative;display:block;width:100px;height:110px;overflow:hidden}.record-photo-note{position:absolute;bottom:0;left:0;right:0;padding:4px;background:#faf8f1ed;color:#43584b!important;font-size:9px!important;line-height:1.5;opacity:0;transition:opacity .18s}.record-entry>a:hover .record-photo-note,.record-entry>a:focus-visible .record-photo-note{opacity:1}@media(max-width:750px){.record-photo{width:76px;height:90px}}
 
 .social-dialog[open]{display:flex;flex-direction:column}.social-dialog-head{flex:none}.social-dialog-body{min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:4px}
+
+.record-photo-empty{display:grid;place-items:center;width:100px;height:110px;background:var(--line,#c9cebf);color:var(--ink,#203e33);font-size:11px;letter-spacing:.1em}@media(max-width:750px){.record-photo-empty{width:76px;height:90px}}

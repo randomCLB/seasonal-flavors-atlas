@@ -10,7 +10,14 @@ const formatMonths=months=>{
  return months.map(m=>`${m}月`).join(' / ');
 };
 const foodSeasonLabel=food=>(['season','plant-stage'].includes(food.seasonPrecision)||food.peakWindows?.length)&&food.seasonLabel?food.seasonLabel:formatMonths(food.peakMonths);
-const foodSeasonMeta=(food,month,label=food.region)=>food.placeSeasons.length>1?food.placeSeasons.filter(place=>place.months.includes(month)).map(place=>`${place.name} · ${formatMonths(place.months)}`).join(' / '):`${label} · ${foodSeasonLabel(food)}`;
+const foodSeasonMeta=(food,month,label=food.region)=>{
+ if(food.placeSeasons.length>1){
+  const active=food.placeSeasons.filter(place=>place.months.includes(month));
+  return (active.length?active:food.placeSeasons).map(place=>`${place.name} · ${formatMonths(place.months)}`).join(' / ');
+ }
+ const place=label.replace(/\s*·\s*\d{1,2}(?:[—–-]\d{1,2})?月.*$/,'');
+ return `${place} · ${foodSeasonLabel(food)}`;
+};
 const seasonPhaseLabel=(food,month)=>month===11&&food.seasonPhase?.label&&!/记录|线索|批次|节点/.test(food.seasonPhase.label)?`<span class="season-phase">${food.seasonPhase.label}</span>`:'';
 const originDetails=food=>food.placeSeasons.length<2?'':`<div class="origin-details"><h3>一味风物，各地各时</h3>${food.placeSeasons.map(place=>`<article><h4>${place.name}</h4><p><strong>时令</strong> · ${place.seasonNote||formatMonths(place.months)}</p><p><strong>产区风味</strong> · ${place.flavorNote||'暂未确认这处产区独有的风味差异。'}</p><p class="state-note"><a href="${place.source}" target="_blank" rel="noopener">查看时令来源 ↗</a>${place.flavorSource?` · <a href="${place.flavorSource}" target="_blank" rel="noopener">查看风味来源 ↗</a>`:''}</p></article>`).join('')}</div>`;
 const chinaParts=date=>Object.fromEntries(new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'numeric',day:'numeric'}).formatToParts(date).filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));
@@ -19,7 +26,10 @@ const monthFoods=month=>foods.filter(f=>f.peakMonths.includes(month));
 let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,mapCategory='all',previousFocus=null;
 foods.forEach(f=>f.places=f.placeSeasons);
 const nameWithIcon=food=>food.name;
-const categoryNames={vegetable:'蔬菜',fruit:'水果',protein:'水产与肉',tea:'茶与饮品',oilseed:'油茶与油料',seed:'坚果种子'};
+const categoryNames={vegetable:'蔬菜',fruit:'水果',protein:'水产与肉',fungus:'菌菇',flower:'食用花',tea:'茶与饮品',seed:'坚果种子',spice:'香辛料',oilseed:'油茶与油料'};
+// Display aliases preserve the original catalog categories used by the draw profiles.
+const foodCategory=food=>({seafood:'protein',nuts:'seed'}[food.category]||food.category);
+const foodCategoryLabel=food=>categoryNames[foodCategory(food)]||'其他风物';
 let selectedCategory='all',viewScrollTops={season:0,map:0,flavor:0},featuredAssignments={};
 const termSlugs=['xiaohan','dahan','lichun','yushui','jingzhe','chunfen','qingming','guyu','lixia','xiaoman','mangzhong','xiazhi','xiaoshu','dashu','liqiu','chushu','bailu','qiufen','hanlu','shuangjiang','lidong','xiaoxue','daxue','dongzhi'];
 const termArtSubjects=["红梅初绽、霜针松枝、半冻山溪","厚冰裂纹、枯苇、严冬雪岸","芽苞初开、融雪、细流","细雨柳芽、水洼涟漪","桃花、苏醒的虫、春雷","燕子、春田、繁花","风筝、柳枝、踏青小径","茶芽、润雨、茶园","嫩荷、青蛙、水边鸢尾","渐满青麦穗、桑叶","金色芒麦、镰刀、插秧","烈日、荷花、短影","蝉、竹阴、暑气","繁荷、急雨、浓夏","初黄叶片、熟石榴","棉桃吐絮、暑退、候鸟","银露青草、白鹭、清晨","稻穗低垂、丰收谷篮","露珠、秋叶、黄菊、晨雾","叶缘白霜、红柿、秋尽","银杏落尽、藏菜木篮","薄雪南天竹、疏落雪花","厚雪松枝、积雪林径","低日长影、暖窗、冬枝"];
@@ -45,6 +55,7 @@ function rankSeasonFoods(month,event){
  const originalOrder=new Map(foods.map((food,index)=>[food.id,index]));
  const C=window.FengwuLottery,start=C.dayAt(event.time),ending=termEnd(event),end=ending?C.addDays(C.dayAt(ending.time),-1):start;
  const list=foods.filter(food=>{
+  if(!seasonHasBegun(food,event))return false;
   if(food.sourceYears?.length&&!food.sourceYears.some(year=>start.slice(0,4)<=String(year)&&end.slice(0,4)>=String(year)))return false;
   if(food.peakTerms?.length)return food.peakTerms.includes(event.index);
   for(let day=start;day<=end;day=C.addDays(day,1)){
@@ -67,19 +78,26 @@ function seasonHasBegun(food,event){
 }
 function seasonFoodsFor(event){
  if(!seasonSelectionPlan){
-  const pool=term=>rankSeasonFoods(chinaParts(new Date(term.time+86400000)).month,term).filter(food=>seasonHasBegun(food,term));
+  const pool=term=>rankSeasonFoods(chinaParts(new Date(term.time+86400000)).month,term);
   const previous=termEvents[termEvents.indexOf(termWindow[0])-1];
   const quarterKeys=termWindow.map(term=>{const {year,month}=chinaParts(new Date(term.time));return `${year}-Q${Math.ceil(month/3)}`});
-  const lists=window.SeasonSelection.plan(termWindow.map(pool),previous?pool(previous):[],quarterKeys);
+  const featuredIds=termWindow.map(term=>window.SEASON_FEATURES?.[term.index]?.foodId);
+  const lists=window.SeasonSelection.plan(termWindow.map(pool),previous?pool(previous):[],quarterKeys,featuredIds);
   seasonSelectionPlan=new Map(termWindow.map((term,index)=>[`${term.year}-${term.index}`,lists[index]]));
  }
  return seasonSelectionPlan.get(`${event.year}-${event.index}`)||[];
 }
 function featuredAssignment(category){
- const pools=termWindow.map(event=>seasonFoodsFor(event).filter(food=>category==='all'||food.category===category));
+ const pools=termWindow.map(event=>seasonFoodsFor(event).filter(food=>category==='all'||foodCategory(food)===category));
  const owner=new Map(),assigned=new Array(pools.length).fill(null),order=pools.map((pool,index)=>index).sort((a,b)=>pools[a].length-pools[b].length||a-b);
- function place(index,seen){for(const food of pools[index]){if(seen.has(food.id))continue;seen.add(food.id);const previous=owner.get(food.id);if(previous===undefined||place(previous,seen)){owner.set(food.id,index);assigned[index]=food;return true}}return false}
- for(const index of order)place(index,new Set());
+ const curated=new Set();
+ for(let index=0;index<pools.length;index++){
+  const id=window.SEASON_FEATURES?.[termWindow[index].index]?.foodId;
+  const food=pools[index].find(food=>food.id===id);
+  if(food&&!owner.has(id)){owner.set(id,index);assigned[index]=food;curated.add(index);}
+ }
+ function place(index,seen){for(const food of pools[index]){if(seen.has(food.id))continue;seen.add(food.id);const previous=owner.get(food.id);if(previous===undefined||(!curated.has(previous)&&place(previous,seen))){owner.set(food.id,index);assigned[index]=food;return true}}return false}
+ for(const index of order)if(!curated.has(index))place(index,new Set());
  return new Map(termWindow.map((event,index)=>[`${event.year}-${event.index}`,assigned[index]]));
 }
 // Curated image roles affect presentation only; food facts and draw rules stay in the source data.
@@ -124,7 +142,7 @@ function renderTermRail(){
  $('terms').querySelector('.active')?.scrollIntoView({block:'nearest',inline:'center'});
 }
 function renderCategoryFilter(list){
- const choices=[['all','全部',list.length],...Object.entries(categoryNames).map(([key,label])=>[key,label,list.filter(food=>food.category===key).length])];
+ const choices=[['all','全部',list.length],...Object.entries(categoryNames).map(([key,label])=>[key,label,list.filter(food=>foodCategory(food)===key).length])];
  $('categoryFilter').innerHTML=choices.map(([key,label,count])=>`<button type="button" data-category="${key}" class="${selectedCategory===key?'active':''}" aria-pressed="${selectedCategory===key}">${label}<span>${count}</span></button>`).join('');
  $('categoryFilter').querySelectorAll('[data-category]').forEach(button=>button.onclick=()=>{selectedCategory=button.dataset.category;renderSeason()});
 }
@@ -141,20 +159,22 @@ function renderSeason(){
  const termKey=`${selectedTerm.year}-${selectedTerm.index}`;
  const assignment=featuredAssignments.all||(featuredAssignments.all=featuredAssignment('all'));
  const featured=assignment.get(termKey)||null;
- if(featured&&!list.includes(featured))list.unshift(featured);
- const filteredList=selectedCategory==='all'?list:list.filter(food=>food.category===selectedCategory);
- const visibleList=featured&&!filteredList.includes(featured)?[featured,...filteredList]:filteredList;
+ const feature=window.SEASON_FEATURES?.[selectedTerm.index];
+ const termLine=feature?.line||termLines[selectedTerm.index];
+ if(featured)list.sort((a,b)=>Number(b===featured)-Number(a===featured));
+ const visibleList=selectedCategory==='all'?list:list.filter(food=>foodCategory(food)===selectedCategory);
  const visual=featured&&foodVisual(featured);
  const image=visual?.src,imageAlt=visual?.alt;
- $('hero').innerHTML=`<div class="season-hero-overlay"><div class="season-hero-heading"><div class="season-hero-caption"><div class="season-feature-date">${isNow?'此刻可尝 · ':''}${dateText(selectedTerm.time)}${ending?`—${dateText(ending.time)}`:''}</div><p class="season-hero-name">${termNames[selectedTerm.index]}</p><p class="season-feature-term">${termLines[selectedTerm.index]}</p></div></div>${featured?`<div class="season-feature-card"><div class="season-feature-copy"><p class="season-feature-label">这一味，当季</p><h1><button class="season-feature-name${featured.name.length>=8?' is-long':''}" data-food="${featured.id}">${nameWithIcon(featured)}</button></h1><p class="season-feature-summary">${featured.short}</p><p class="season-feature-meta">${foodSeasonMeta(featured,foodMonth)} ${seasonPhaseLabel(featured,foodMonth)}</p><button class="season-feature-cta" data-food="${featured.id}" data-recipe="true">看它怎么吃 <span aria-hidden="true">↗</span></button></div><figure class="season-feature-photo${featured.comparison?' has-image-note':''}">${image?`<button class="season-feature-image-button" data-food="${featured.id}" aria-label="查看${featured.name}详情"><img src="${image}" alt="${imageAlt}" style="object-fit:${visual.heroFit}" ${foodImageAttrs(image,'card')} loading="eager" fetchpriority="high"></button><figcaption class="feature-caption">${visual.note} · <a href="credits.html">图片出处 ↗</a></figcaption>`:'<div class="season-feature-fallback" aria-hidden="true">当季风物</div>'}</figure></div>`:`<div class="season-feature-empty"><p class="season-feature-date">${termNames[selectedTerm.index]} · ${range}</p><h1>这段时节，慢慢寻找新风味。</h1><p>${termLines[selectedTerm.index]}</p></div>`}</div>`;
+ $('hero').innerHTML=`<div class="season-hero-overlay"><div class="season-hero-heading"><div class="season-hero-caption"><div class="season-feature-date">${isNow?'此刻可尝 · ':''}${dateText(selectedTerm.time)}${ending?`—${dateText(ending.time)}`:''}</div><p class="season-hero-name">${termNames[selectedTerm.index]}</p><p class="season-feature-term">${termLine}</p></div></div>${featured?`<div class="season-feature-card"><div class="season-feature-copy"><p class="season-feature-label">${feature?.eyebrow||'这一味，当季'}</p><h1><button class="season-feature-name${featured.name.length>=8?' is-long':''}" data-food="${featured.id}">${nameWithIcon(featured)}</button></h1><p class="season-feature-summary">${featured.id===feature?.foodId?feature.reason:featured.short}</p><p class="season-feature-meta">${foodSeasonMeta(featured,foodMonth)} ${seasonPhaseLabel(featured,foodMonth)}</p><button class="season-feature-cta" data-food="${featured.id}" data-recipe="true">看它怎么吃 <span aria-hidden="true">↗</span></button></div><figure class="season-feature-photo${featured.comparison?' has-image-note':''}">${image?`<button class="season-feature-image-button" data-food="${featured.id}" aria-label="查看${featured.name}详情"><img src="${image}" alt="${imageAlt}" style="object-fit:${visual.heroFit}" ${foodImageAttrs(image,'hero')} loading="eager" fetchpriority="high"></button><figcaption class="feature-caption">${visual.note} · <a href="credits.html">图片出处 ↗</a></figcaption>`:'<div class="season-feature-fallback" aria-hidden="true">当季风物</div>'}</figure></div>`:`<div class="season-feature-empty"><p class="season-feature-date">${termNames[selectedTerm.index]} · ${range}</p><h1>这段时节，慢慢寻找新风味。</h1><p>${termLine}</p></div>`}</div>`;
  $('seasonKicker').textContent=`${termNames[selectedTerm.index]} · ${range}`;
  $('seasonHeading').textContent=`${termNames[selectedTerm.index]}的当季精选 · ${visibleList.length} 味`;
  renderCategoryFilter(list);
- $('seasonIntro').textContent=visibleList.length?termIntros[selectedTerm.index]:`这个节气暂时没有${categoryNames[selectedCategory]}风物。`;
+ $('seasonIntro').textContent=visibleList.length?(feature?.intro||termIntros[selectedTerm.index]):`这一段时令，精选里还没有${categoryNames[selectedCategory]||'这一类'}。换个类别，或翻到下一节气看看。`;
  $('seasonCards').innerHTML=visibleList.length?visibleList.map((food,index)=>{
  const media=foodVisual(food);
  return `<article class="season-list-card ${index===0?'editorial-feature':index<3?'editorial-side':'editorial-brief'}"><figure class="season-list-photo${food.comparison?' has-image-note':''}">${media.src?`<button data-food="${food.id}" class="season-list-image-button" aria-label="查看${food.name}详情"><img src="${media.src}" alt="${media.alt}" ${foodImageAttrs(media.src,index===0?'feature-card':'card')} style="object-fit:${media.fit}" loading="lazy" decoding="async"></button>`:'<div class="season-list-image-empty" aria-label="实拍待补" role="img"></div>'}<figcaption class="photo-credit">${media.note}</figcaption></figure><div><small>${foodSeasonMeta(food,foodMonth,food.cardLabel||food.region)}</small> ${seasonPhaseLabel(food,foodMonth)}<h3><button data-food="${food.id}" class="season-list-name">${nameWithIcon(food)}</button></h3><p>${food.short}</p><button data-food="${food.id}" data-recipe="true" aria-label="直接看${food.name}做法">看它怎么吃 <span aria-hidden="true">↗</span></button></div></article>`;
- }).join(''):`<p class="empty-month category-empty">本节气适合尝的几味风物都在上面了。</p>`;
+ }).join(''):`<div class="empty-month category-empty"><p>换一条路，继续寻味。</p><button type="button" id="showAllSeasonFoods">看看本节气的全部风物</button></div>`;
+ if(!visibleList.length)$('showAllSeasonFoods').onclick=()=>{selectedCategory='all';renderSeason()};
   document.querySelectorAll('#hero [data-food],#seasonCards [data-food]').forEach(b=>b.onclick=()=>openFood(b.dataset.food,true,b.dataset.recipe==='true'));
 }
 $('termPrev').onclick=()=>{selectedTerm=termWindow[Math.max(0,termWindow.indexOf(selectedTerm)-1)];renderTermRail();renderSeason()};
@@ -184,6 +204,7 @@ $('mapMonthPrev').onclick=()=>setMapMonth(selectedMonth===1?12:selectedMonth-1);
 $('mapMonthNext').onclick=()=>setMapMonth(selectedMonth===12?1:selectedMonth+1);
 $('mapMonths').addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();setMapMonth((selectedMonth-1+(e.deltaY>0?1:11))%12+1)}},{passive:false});
 $('mapSeasonButton').onclick=()=>{mapOnlySeason=!mapOnlySeason;mapFocus=null;renderMap()};
+$('mapCategory').innerHTML='<option value="all">全部食材</option>'+Object.entries(categoryNames).map(([key,label])=>`<option value="${key}">${label}</option>`).join('');
 $('mapCategory').onchange=e=>{mapCategory=e.target.value;mapFocus=null;renderMap()};
 $('mapZoomBack').onclick=()=>{mapFocus=null;renderMap()};
 function clampMapView(view){const width=Math.min(homeView.width,Math.max(homeView.width*.28,view.width)),height=width/mapAspect;return {left:Math.min(homeView.left+homeView.width-width,Math.max(homeView.left,view.left)),top:Math.min(homeView.top+homeView.height-height,Math.max(homeView.top,view.top)),width,height}}
@@ -191,7 +212,7 @@ function activateMap(){mapInteractionEnabled=true;const image=document.querySele
 function zoomMap(group){activateMap();const points=group.map(x=>mapProject(x.place)),xs=points.map(p=>p.x),ys=points.map(p=>p.y),cx=(Math.min(...xs)+Math.max(...xs))/2,cy=(Math.min(...ys)+Math.max(...ys))/2,width=Math.max(homeView.width*.28,Math.max(...xs)-Math.min(...xs)+160,(Math.max(...ys)-Math.min(...ys)+130)*mapAspect);mapFocus=clampMapView({left:cx-width/2,top:cy-width/mapAspect/2,width});renderMap()}
 function hideMapPopup(){clearTimeout(popupTimer);$('mapPopover').hidden=true}
 function foodThumbnail(food){return food.cardImage||food.image||''}
-function openMapPopup(index){clearTimeout(popupTimer);const group=mapGroups[index],pin=$('mapPins').querySelector(`[data-pin="${index}"]`);if(!group||!pin)return;const pop=$('mapPopover');const unique=[...new Map(group.map(x=>[`${x.food.id}|${x.place.name}`,x])).values()];pop.innerHTML=`<div class="map-popover-title">${group.map(x=>shortPlace(x.place.name)).filter((x,i,a)=>a.indexOf(x)===i).join(' · ')}<button class="map-popover-close" aria-label="关闭">×</button></div><div class="map-popover-foods">${unique.map(x=>`<button data-food="${x.food.id}"><img class="map-food-photo" src="${foodThumbnail(x.food)}" alt=""><span><strong>${x.food.name}</strong><small>${x.place.name} · ${formatMonths(x.place.months)} · 查看详情 ↗</small>${x.food.placeSeasons.length>1?`<small>${x.place.flavorNote||'产区风味差异待补充'}</small>`:''}</span></button>`).join('')}</div><button class="map-popover-zoom">放大这一带 ↗</button>`;const x=parseFloat(pin.style.left),y=parseFloat(pin.style.top);pop.style.left=`${Math.min(78,Math.max(6,x))}%`;pop.style.top=`${Math.min(76,Math.max(12,y))}%`;pop.hidden=false;pop.querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>{hideMapPopup();openFood(b.dataset.food)});pop.querySelector('.map-popover-zoom').onclick=()=>{hideMapPopup();zoomMap(group)};pop.querySelector('.map-popover-close').onclick=hideMapPopup}
+function openMapPopup(index){clearTimeout(popupTimer);const group=mapGroups[index],pin=$('mapPins').querySelector(`[data-pin="${index}"]`);if(!group||!pin)return;const pop=$('mapPopover');const unique=[...new Map(group.map(x=>[`${x.food.id}|${x.place.name}`,x])).values()];pop.innerHTML=`<div class="map-popover-title">${group.map(x=>shortPlace(x.place.name)).filter((x,i,a)=>a.indexOf(x)===i).join(' · ')}<button class="map-popover-close" aria-label="关闭">×</button></div><div class="map-popover-foods">${unique.map(x=>`<button data-food="${x.food.id}">${foodThumbnail(x.food)?`<img class="map-food-photo" src="${foodThumbnail(x.food)}" alt="" loading="lazy" decoding="async">`:''}<span><strong>${x.food.name}</strong><small>${x.place.name} · ${formatMonths(x.place.months)} · 查看详情 ↗</small>${x.food.placeSeasons.length>1?`<small>${x.place.flavorNote||'产区风味差异待补充'}</small>`:''}</span></button>`).join('')}</div><button class="map-popover-zoom">放大这一带 ↗</button>`;const x=parseFloat(pin.style.left),y=parseFloat(pin.style.top);pop.style.left=`${Math.min(78,Math.max(6,x))}%`;pop.style.top=`${Math.min(76,Math.max(12,y))}%`;pop.hidden=false;pop.querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>{hideMapPopup();openFood(b.dataset.food)});pop.querySelector('.map-popover-zoom').onclick=()=>{hideMapPopup();zoomMap(group)};pop.querySelector('.map-popover-close').onclick=hideMapPopup}
 $('mapPopover').onmouseenter=()=>clearTimeout(popupTimer);
 $('mapPopover').onmouseleave=()=>{popupTimer=setTimeout(hideMapPopup,240)};
 document.addEventListener('pointerdown',e=>{if(!e.target.closest('#mapPopover,.map-pin'))hideMapPopup()});
@@ -199,7 +220,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')hideMapPopup()});
 function renderMap(){
  hideMapPopup();renderMapMonths();const bounds=mapFocus||homeView;
  const monthList=mapOnlySeason?monthFoods(selectedMonth):foods;
- const list=mapCategory==='all'?monthList:monthList.filter(food=>food.category===mapCategory);
+ const list=mapCategory==='all'?monthList:monthList.filter(food=>foodCategory(food)===mapCategory);
  $('mapCategory').value=mapCategory;
  $('mapMonthLabel').textContent=`${mapOnlySeason?monthLabel(selectedMonth):'全年'} · ${list.length} 味${mapCategory==='all'?'食材':categoryNames[mapCategory]}`;
  $('mapSeasonButton').textContent=mapOnlySeason?'查看全年':'只看单月';
@@ -209,7 +230,7 @@ function renderMap(){
  const places=list.flatMap(f=>f.places.filter(p=>!mapOnlySeason||p.months.includes(selectedMonth)).map(p=>({food:f,place:p})));
  const visible=places.filter(x=>inView(mapProject(x.place),bounds));
  mapGroups=mapFocus?visible.map(x=>[x]):clusterPlaces(visible);
- $('mapPins').innerHTML=mapGroups.map((group,i)=>{const positions=group.map(x=>mapProject(x.place)),p=mapPoint({x:positions.reduce((n,v)=>n+v.x,0)/positions.length,y:positions.reduce((n,v)=>n+v.y,0)/positions.length},bounds),name=group.length>1?`${new Set(group.map(x=>x.food.id)).size} 味食材`:group[0].food.name,city=group.length>1?[...new Set(group.map(x=>shortPlace(x.place.name)))].slice(0,2).join(' · '):shortPlace(group[0].place.name),thumbnail=foodThumbnail(group[0].food);return `<button class="map-pin ${group.length>1?'map-cluster':''}" style="left:${p.x}%;top:${p.y}%" data-pin="${i}" aria-label="${city}，${name}">${group.length===1?`<span class="pin-photo"><img src="${thumbnail}" alt=""></span>`:''}<span class="pin-dot"></span><span class="pin-label">${name}<small>${city}</small></span></button>`}).join('');
+ $('mapPins').innerHTML=mapGroups.map((group,i)=>{const positions=group.map(x=>mapProject(x.place)),p=mapPoint({x:positions.reduce((n,v)=>n+v.x,0)/positions.length,y:positions.reduce((n,v)=>n+v.y,0)/positions.length},bounds),name=group.length>1?`${new Set(group.map(x=>x.food.id)).size} 味食材`:group[0].food.name,city=group.length>1?[...new Set(group.map(x=>shortPlace(x.place.name)))].slice(0,2).join(' · '):shortPlace(group[0].place.name),thumbnail=foodThumbnail(group[0].food);return `<button class="map-pin ${group.length>1?'map-cluster':''}" style="left:${p.x}%;top:${p.y}%" data-pin="${i}" aria-label="${city}，${name}">${group.length===1&&thumbnail?`<span class="pin-photo"><img src="${thumbnail}" alt="" loading="lazy" decoding="async"></span>`:''}<span class="pin-dot"></span><span class="pin-label">${name}<small>${city}</small></span></button>`}).join('');
  $('mapPins').querySelectorAll('[data-pin]').forEach(button=>{const index=Number(button.dataset.pin),group=mapGroups[index];button.onclick=()=>group.length>1?openMapPopup(index):openFood(group[0].food.id);if(group.length>1){button.onmouseenter=()=>{if(!mapPointers.size)openMapPopup(index)};button.onmouseleave=()=>{popupTimer=setTimeout(hideMapPopup,240)};button.onfocus=()=>openMapPopup(index)}});
  $('mapAnchors').innerHTML=anchors.map(([name,lat,lon])=>({name,p:mapProject({lat,lon})})).filter(x=>inView(x.p,bounds)).map(({name,p})=>{const q=mapPoint(p,bounds);return `<span class="map-anchor" data-x="${p.x}" data-y="${p.y}" style="left:${q.x}%;top:${q.y}%">${name}</span>`}).join('');
   const center=mapFocus?(visible[0]?.place||{lat:32,lon:105}):{lat:32,lon:105};const km=mapFocus?50:500,delta=km/(111.32*Math.cos(center.lat*Math.PI/180));const p1=mapProject(center),p2=mapProject({...center,lon:center.lon+delta});$('mapScale').style.width=`${Math.min(35,Math.abs(p2.x-p1.x)/bounds.width*100)}%`;$('mapScale').textContent=`约 ${km} 公里`;
@@ -237,7 +258,7 @@ function relatedFoods(f){return foods.filter(other=>other.id!==f.id).map(food=>(
 function detailHtml(f){
  const recognition=foodVisual(f,'recognition');
  if(f.recognitionNote)recognition.note=f.recognitionNote;
- return window.FoodDetail.html(f,{recognition,seasonLabel:foodSeasonLabel(f),category:categoryNames[f.category],originHtml:originDetails(f),similar:relatedFoods(f),imageAttrs:recognition.src?foodImageAttrs(recognition.src,'recognition'):''});
+ return window.FoodDetail.html(f,{recognition,seasonLabel:foodSeasonLabel(f),category:foodCategoryLabel(f),originHtml:originDetails(f),similar:relatedFoods(f),imageAttrs:recognition.src?foodImageAttrs(recognition.src,'recognition'):''});
 }
 const detailShare=window.FoodShare.bind({button:$('detailShare'),status:$('detailShareStatus'),fallback:$('detailShareFallback'),input:$('detailShareLink'),copy:$('detailCopyLink'),navigator,href:()=>location.href});
 function scrollFoodRecipe(){requestAnimationFrame(()=>{const dialog=$('detailDialog'),target=$('foodRecipe');if(!target)return;target.open=true;const top=target.getBoundingClientRect().top-dialog.getBoundingClientRect().top+dialog.scrollTop-document.querySelector('.detail-actions').offsetHeight-18;dialog.scrollTo({top,behavior:'instant'});target.querySelector('summary').focus({preventScroll:true})})}
@@ -246,8 +267,8 @@ function closeFood(push=true){if(!$('detailDialog').open)return;detailShare.setF
 $('detailClose').onclick=()=>closeFood();$('detailDialog').addEventListener('click',e=>{if(e.target===$('detailDialog'))closeFood()});$('detailDialog').addEventListener('cancel',e=>{e.preventDefault();closeFood()});window.addEventListener('popstate',()=>{const id=new URL(location.href).searchParams.get('food');if(id&&byId[id])openFood(id,false);else closeFood(false)});
 function toast(message){$('toast').textContent=message;$('toast').classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2300)}
 function renderSearch(query=''){
-  const q=query.trim().toLowerCase();const matches=q?foods.filter(f=>[f.name,...f.alias,f.region,f.intro,f.description,f.short,f.season,f.taste,f.aroma,f.texture,f.state,f.recipeTitle,f.ingredients,...(f.steps||[]),f.buy,f.pair,categoryNames[f.category]].filter(Boolean).some(value=>value.toLowerCase().includes(q))):foods;
-  $('searchResults').innerHTML=matches.length?matches.map(f=>`<button data-food="${f.id}"><span><strong>${f.name}</strong><small>${f.alias.join(' · ')} · ${f.taste}</small></span><em>${categoryNames[f.category]} · ${f.region} ↗</em></button>`).join(''):`<div class="search-empty"><p>没有找到匹配的食材。也可以按口感或香气试试：</p><div>${['脆嫩','清甜','酸爽','草本'].map(term=>`<button type="button" data-query="${term}">${term}</button>`).join('')}</div></div>`;
+  const q=query.trim().toLowerCase();const matches=q?foods.filter(f=>[f.name,...f.alias,f.region,f.intro,f.description,f.short,f.season,f.taste,f.aroma,f.texture,f.state,f.recipeTitle,f.ingredients,...(f.steps||[]),f.buy,f.pair,foodCategoryLabel(f)].filter(Boolean).some(value=>value.toLowerCase().includes(q))):foods;
+  $('searchResults').innerHTML=matches.length?matches.map(f=>`<button data-food="${f.id}"><span><strong>${f.name}</strong><small>${f.alias.join(' · ')} · ${f.taste}</small></span><em>${foodCategoryLabel(f)} · ${f.region} ↗</em></button>`).join(''):`<div class="search-empty"><p>没有找到匹配的食材。也可以按口感或香气试试：</p><div>${['脆嫩','清甜','酸爽','草本'].map(term=>`<button type="button" data-query="${term}">${term}</button>`).join('')}</div></div>`;
   $('searchResults').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>{$('searchDialog').close();openFood(b.dataset.food)});
   $('searchResults').querySelectorAll('[data-query]').forEach(b=>b.onclick=()=>{$('searchInput').value=b.dataset.query;renderSearch(b.dataset.query)});
 }
@@ -262,6 +283,6 @@ function drawStar(){const canvas=$('flavorCanvas');if(!canvas||currentView!=='fl
   projected.sort((a,b)=>a.z-b.z).forEach(n=>{const active=n.id===starSelected,related=linked.includes(n.id),r=active?8:related?6:4;ctx.beginPath();ctx.arc(n.x,n.y,r+7,0,Math.PI*2);ctx.fillStyle=active?'#d6c99644':'#e7e4d110';ctx.fill();ctx.beginPath();ctx.arc(n.x,n.y,r,0,Math.PI*2);ctx.fillStyle=active?'#e6d7a8':related?'#f3eed9':'#718f7e';ctx.fill();if(active||related){ctx.fillStyle='#fffaf0';ctx.font=`${active?'600 ':''}14px sans-serif`;ctx.textAlign='center';ctx.fillText(byId[n.id].name,n.x,n.y-17)}})
 }
 function renderFlavor(){const selected=byId[starSelected],visual=foodVisual(selected),matches=starTagFilter==='all'?foods:foods.filter(f=>f.flavor.includes(starTagFilter)),linked=relatedFoods(selected).filter(x=>starTagFilter==='all'||x.food.flavor.includes(starTagFilter));$('flavorFilters').innerHTML=`<button type="button" data-flavor-filter="all" aria-pressed="${starTagFilter==='all'}">全部风味</button>${flavorFilterTags.map(tag=>`<button type="button" data-flavor-filter="${tag}" aria-pressed="${starTagFilter===tag}">${tag}<small>${flavorTagFrequency.get(tag)}</small></button>`).join('')}`;$('flavorFilters').querySelectorAll('[data-flavor-filter]').forEach(button=>button.onclick=()=>{starTagFilter=button.dataset.flavorFilter;renderFlavor()});$('flavorAside').innerHTML=`${visual.src?`<img class="flavor-selected-photo" src="${visual.src}" alt="${visual.alt}" ${foodImageAttrs(visual.src,'aside')}>`:'<div class="flavor-selected-empty" role="img" aria-label="实拍待补"></div>'}<p class="kicker">已选择 / ${selected.region}</p><h2>${nameWithIcon(selected)}</h2><p>${selected.description}</p><div class="aside-tags">${selected.flavor.map(t=>`<span>${t}</span>`).join('')}</div><button class="aside-primary" data-food="${selected.id}">读${selected.name}的吃法 ↗</button><h3>沿共同标签继续</h3>${linked.length?linked.map(({food,why})=>`<button class="relation" data-select="${food.id}"><strong>${nameWithIcon(food)}</strong><span>${why}</span></button>`).join(''):'<p class="no-relation">这个筛选下没有与当前风物共享标签的条目；可以换一枚标签。</p>'}`;$('flavorList').innerHTML=matches.map(f=>`<button data-select="${f.id}" class="${f.id===starSelected?'active':''}">${nameWithIcon(f)}<span>${f.flavor.join(' · ')}</span></button>`).join('');document.querySelectorAll('#flavorList [data-select],#flavorAside [data-select]').forEach(b=>b.onclick=()=>{starSelected=b.dataset.select;renderFlavor()});document.querySelector('#flavorAside [data-food]').onclick=()=>openFood(selected.id);drawStar()}
-function showStarHover(node,e){const target=$('flavorHover');if(!node){target.hidden=true;return}const food=byId[node.id],box=$('flavorCanvas').getBoundingClientRect(),x=e.clientX-box.left,y=e.clientY-box.top;target.innerHTML=`<img src="${foodThumbnail(food)}" alt=""><span>${food.name}</span>`;target.style.left=`${Math.min(box.width-150,Math.max(8,x+18))}px`;target.style.top=`${Math.min(box.height-70,Math.max(8,y-60))}px`;target.hidden=false}
+function showStarHover(node,e){const target=$('flavorHover');if(!node){target.hidden=true;return}const food=byId[node.id],box=$('flavorCanvas').getBoundingClientRect(),x=e.clientX-box.left,y=e.clientY-box.top;target.innerHTML=`${foodThumbnail(food)?`<img src="${foodThumbnail(food)}" alt="">`:''}<span>${food.name}</span>`;target.style.left=`${Math.min(box.width-150,Math.max(8,x+18))}px`;target.style.top=`${Math.min(box.height-70,Math.max(8,y-60))}px`;target.hidden=false}
 const canvas=$('flavorCanvas');canvas.addEventListener('pointerdown',e=>{starHover=null;$('flavorHover').hidden=true;starDrag={x:e.clientX,y:e.clientY,moved:false};canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointermove',e=>{if(!starDrag){const rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;const hit=projected.find(n=>Math.hypot(n.x-x,n.y-y)<28)||null;if(hit?.id!==starHover?.id){starHover=hit;showStarHover(hit,e)}else if(hit)showStarHover(hit,e);return}const dx=e.clientX-starDrag.x,dy=e.clientY-starDrag.y;if(Math.abs(dx)+Math.abs(dy)>2)starDrag.moved=true;rotY+=dx*.009;rotX=Math.max(-1,Math.min(1,rotX+dy*.009));starDrag.x=e.clientX;starDrag.y=e.clientY;drawStar()});canvas.addEventListener('pointerleave',()=>{if(!starDrag){starHover=null;$('flavorHover').hidden=true}});canvas.addEventListener('pointerup',e=>{if(!starDrag?.moved){const rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;const hit=projected.find(n=>Math.hypot(n.x-x,n.y-y)<28);if(hit){starSelected=hit.id;renderFlavor()}}starDrag=null});window.addEventListener('resize',()=>{if(currentView==='flavor')drawStar()});
-renderTermRail();renderSeason();renderMap();const deepLink=new URL(location.href).searchParams.get('food');if(deepLink&&byId[deepLink])openFood(deepLink,false);
+renderTermRail();renderSeason();const deepLink=new URL(location.href).searchParams.get('food');if(deepLink&&byId[deepLink])openFood(deepLink,false);
