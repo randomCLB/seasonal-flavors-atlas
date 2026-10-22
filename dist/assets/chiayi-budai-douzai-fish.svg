@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">通用小型鱼形编辑示意</title>
+  <desc id="desc">暖白纸面上的抽象银色鱼形，不代表特定鱼种或产地渔获。</desc>
+  <rect width="900" height="650" fill="#eee9dc"/>
+  <ellipse cx="450" cy="350" rx="300" ry="175" fill="#d9d7cd" opacity=".55"/>
+  <path d="M178 324c83-105 211-153 358-128 78 13 134 47 185 101l94-76-21 119 20 116-95-75c-59 60-122 94-200 104-143 18-265-34-341-133z" fill="#a7b3ad" stroke="#476159" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M330 205l66-83 43 105m91 8 47-72 22 93m-217 129-26 96 104-70m-104-137 37 26-36 27-38-27z" fill="#81938c" stroke="#476159" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M260 317c96-53 218-63 358-31M267 367c114 41 224 45 340 13" fill="none" stroke="#e8e6dc" stroke-width="9" opacity=".8"/>
+  <circle cx="250" cy="291" r="12" fill="#18352e"/><circle cx="246" cy="287" r="4" fill="#fff"/>
+  <path d="M164 493h572" stroke="#b5ad9c" stroke-width="2"/>
+  <text x="450" y="540" text-anchor="middle" font-family="serif" font-size="24" letter-spacing="4" fill="#56685f">编辑示意 · 通用鱼形</text>
+</svg>

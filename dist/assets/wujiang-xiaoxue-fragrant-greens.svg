@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">香青菜形态示意</title>
+  <desc id="desc">本地编辑插画：层叠的深绿皱叶，用作叶菜形态参考，不用于品种鉴别。</desc>
+  <rect width="900" height="700" fill="#eee9dc"/>
+  <path d="M0 555C196 486 308 583 465 526s284-63 435 2v172H0z" fill="#d9d2bf"/>
+  <g stroke="#173b32" stroke-width="5" stroke-linejoin="round">
+    <path d="M451 565C365 472 226 435 137 349c-75-72-61-155 20-187 91-36 194 45 242 123 38-112 139-184 230-145 81 35 84 124 27 198-62 80-149 131-205 227z" fill="#637e4c"/>
+    <path d="M449 563c-10-101-20-186-51-273M450 560c45-100 97-177 169-261M443 552c-77-70-149-120-250-179M455 545c83-54 157-83 248-108" fill="none" stroke="#bdc39a" stroke-width="9"/>
+    <path d="M449 562c-130 15-224-35-246-112-18-63 30-108 94-95 63 12 113 73 152 140-9-114 42-206 113-217 68-10 100 51 73 112-33 75-107 130-186 172z" fill="#82915d"/>
+    <path d="M449 560c-49-69-98-124-164-154m164 154c22-80 62-145 120-191m-118 191c-9-75-10-137-10-207" fill="none" stroke="#d0cda3" stroke-width="8"/>
+    <path d="M454 566c-91 34-169 17-198-35-20-37 7-70 49-67 55 5 98 45 149 102 16-60 57-102 103-98 47 4 60 46 33 78-31 36-82 50-136 20z" fill="#a2a36c"/>
+  </g>
+  <g fill="#334c3e" font-family="serif">
+    <text x="56" y="80" font-size="24" letter-spacing="5">WINTER GREENS · JIANGNAN</text>
+    <text x="58" y="635" font-size="33">吴江香青菜 · 皱叶形态参考</text>
+  </g>
+</svg>

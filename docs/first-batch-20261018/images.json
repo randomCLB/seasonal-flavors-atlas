@@ -1,0 +1,32 @@
+[
+  {
+    "asset": "dist/assets/cigu-editorial-v1-generated.webp",
+    "bytes": 160978,
+    "sha256": "19b4b543ab3adcaadb154a0013d7e8e2a80d37859a337a2e31be07d9ffb1ed70",
+    "nature": "generated editorial reference"
+  },
+  {
+    "asset": "dist/assets/persimmon-editorial-v1-generated.webp",
+    "bytes": 160346,
+    "sha256": "2c944b0e0fc5867d739b0a70c4c94ed610170bb32ecf82333f77bf376e440d39",
+    "nature": "generated editorial reference"
+  },
+  {
+    "asset": "dist/assets/shaguang-soup-editorial-v1-generated.webp",
+    "bytes": 236420,
+    "sha256": "f5f545ad3f984817513b1ab2745553c87e8a6b84ce44e749af1910f23935fb95",
+    "nature": "generated editorial reference"
+  },
+  {
+    "asset": "dist/assets/caixin-raw-cc-by-sa.webp",
+    "bytes": 113480,
+    "sha256": "bdc2e5a7bd21c9777d4a96ad0151072eb497a8bb6eb1149a2dadb4996b63d743",
+    "nature": "licensed generic cooked choy sum photograph; not Zengcheng cultivar"
+  },
+  {
+    "asset": "dist/assets/caixin-cooked-cc-by-sa.webp",
+    "bytes": 125902,
+    "sha256": "49fa882ac4eb7a24fc8bf7948bec52713e334f2de38454da66e3d26250eef0df",
+    "nature": "licensed generic cooked choy sum photograph; not Zengcheng cultivar"
+  }
+]

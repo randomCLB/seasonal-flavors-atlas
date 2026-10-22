@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">白糖罂荔枝编辑插画</title>
+  <desc id="desc">一枝红色荔枝与剥开的白色果肉置于暖白底色上；通用荔枝形态示意，不是万宁产地或白糖罂品种实拍。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f7f2e8"/><stop offset="1" stop-color="#eae1d2"/></linearGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#d96b57"/><stop offset=".55" stop-color="#a83e37"/><stop offset="1" stop-color="#73302f"/></linearGradient>
+    <radialGradient id="flesh" cx="38%" cy="28%"><stop stop-color="#fffdf5"/><stop offset=".72" stop-color="#f4e8d6"/><stop offset="1" stop-color="#ddcdb9"/></radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#849568"/><stop offset="1" stop-color="#405b49"/></linearGradient>
+    <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.6"><feGaussianBlur stdDeviation="22"/></filter>
+    <pattern id="peel" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="5" cy="7" r="2.1" fill="#f2a17e" opacity=".65"/><circle cx="19" cy="18" r="1.8" fill="#f4b08a" opacity=".48"/></pattern>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#paper)"/>
+  <path d="M120 1190C325 1100 864 1105 1080 1210" fill="none" stroke="#c8bda8" stroke-width="3" opacity=".62"/>
+  <ellipse cx="626" cy="1160" rx="430" ry="76" fill="#54483c" opacity=".14" filter="url(#shadow)"/>
+  <path d="M524 640C664 514 783 400 907 285" fill="none" stroke="#657050" stroke-width="20" stroke-linecap="round"/>
+  <path d="M701 488C585 377 436 348 302 403C369 523 517 566 701 488Z" fill="url(#leaf)" stroke="#334d3c" stroke-width="5"/>
+  <path d="M347 418C456 432 567 457 691 489" fill="none" stroke="#c5c39c" stroke-width="5" opacity=".8"/>
+  <path d="M775 417C860 309 978 274 1095 302C1057 413 946 470 775 417Z" fill="url(#leaf)" stroke="#334d3c" stroke-width="5"/>
+  <path d="M802 415C895 374 985 335 1080 312" fill="none" stroke="#c5c39c" stroke-width="5" opacity=".8"/>
+  <g transform="translate(240 500)">
+    <ellipse cx="226" cy="420" rx="214" ry="252" fill="url(#shell)" stroke="#71302c" stroke-width="8"/>
+    <ellipse cx="226" cy="420" rx="214" ry="252" fill="url(#peel)" opacity=".75"/>
+    <path d="M94 266C159 209 279 190 354 259" fill="none" stroke="#f6b091" stroke-width="12" opacity=".48"/>
+    <ellipse cx="165" cy="325" rx="37" ry="66" fill="#ffe0c7" opacity=".16" transform="rotate(33 165 325)"/>
+  </g>
+  <g transform="translate(520 700)">
+    <ellipse cx="238" cy="365" rx="210" ry="248" fill="url(#shell)" stroke="#71302c" stroke-width="8"/>
+    <ellipse cx="238" cy="365" rx="210" ry="248" fill="url(#peel)" opacity=".75"/>
+    <path d="M101 217C174 163 291 160 370 219" fill="none" stroke="#f6b091" stroke-width="12" opacity=".45"/>
+  </g>
+  <g transform="translate(790 860)">
+    <path d="M54 126C50 46 128 0 222 7C320 13 377 71 370 162C362 255 300 322 216 327C126 333 62 254 54 126Z" fill="url(#flesh)" stroke="#b59a7d" stroke-width="7"/>
+    <path d="M109 81C144 46 223 33 276 60" fill="none" stroke="#fff" stroke-width="10" opacity=".8" stroke-linecap="round"/>
+    <ellipse cx="233" cy="195" rx="32" ry="57" fill="#8b593e" opacity=".8" transform="rotate(12 233 195)"/>
+  </g>
+  <path d="M90 1340H1110" stroke="#b8aa95" stroke-width="2"/>
+  <circle cx="1020" cy="1320" r="7" fill="#a8493f"/><circle cx="1050" cy="1320" r="7" fill="#718264"/><circle cx="1080" cy="1320" r="7" fill="#d3b786"/>
+</svg>

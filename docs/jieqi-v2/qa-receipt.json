@@ -1,0 +1,49 @@
+{
+  "artworks": 24,
+  "new_generations": 23,
+  "approved_hanlu_reused_unchanged": true,
+  "all_unique": true,
+  "served_images_sha256_verified": [
+    "xiaohan",
+    "dahan",
+    "lichun",
+    "yushui",
+    "jingzhe",
+    "chunfen",
+    "qingming",
+    "guyu",
+    "lixia",
+    "xiaoman",
+    "mangzhong",
+    "xiazhi",
+    "xiaoshu",
+    "dashu",
+    "liqiu",
+    "chushu",
+    "bailu",
+    "qiufen",
+    "hanlu",
+    "shuangjiang",
+    "lidong",
+    "xiaoxue",
+    "daxue",
+    "dongzhi"
+  ],
+  "desktop_all_24_term_switches_passed": true,
+  "responsive_widths_checked": [
+    390,
+    760
+  ],
+  "all_checked_layouts_no_horizontal_overflow": true,
+  "full_image_aspect_ratio": "3:2",
+  "validation": [
+    "node --check dist/app.js",
+    "git diff --check",
+    "node --test tests/season-counts.test.cjs: 2 passed"
+  ],
+  "visual_review": "Every original viewed during generation, 24-image overview checked; 390px webpage screenshot viewed",
+  "published": false,
+  "tool": "built-in image_gen",
+  "style_reference": "user-approved hanlu-original.png",
+  "context_reference": "https://www.hko.gov.hk/tc/gts/time/24solarterms.htm"
+}

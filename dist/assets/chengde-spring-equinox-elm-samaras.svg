@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">榆钱形态编辑示意</title>
+  <desc id="desc">一簇带圆片状翅果的榆树枝条，原创形态示意，不用于植物鉴定。</desc>
+  <rect width="720" height="520" fill="#efe9d9"/>
+  <path d="M80 450C210 380 330 300 638 80" fill="none" stroke="#566c4f" stroke-width="18" stroke-linecap="round"/>
+  <g fill="#a8b77d" stroke="#65784f" stroke-width="3">
+    <ellipse cx="190" cy="370" rx="37" ry="51" transform="rotate(-35 190 370)"/><ellipse cx="260" cy="332" rx="36" ry="50" transform="rotate(32 260 332)"/>
+    <ellipse cx="325" cy="285" rx="38" ry="52" transform="rotate(-34 325 285)"/><ellipse cx="395" cy="246" rx="36" ry="50" transform="rotate(34 395 246)"/>
+    <ellipse cx="466" cy="195" rx="38" ry="52" transform="rotate(-34 466 195)"/><ellipse cx="536" cy="150" rx="36" ry="50" transform="rotate(34 536 150)"/>
+    <ellipse cx="584" cy="112" rx="34" ry="48" transform="rotate(-34 584 112)"/>
+  </g>
+  <g fill="#d9c98b" stroke="#8e865e" stroke-width="2">
+    <circle cx="222" cy="345" r="17"/><circle cx="288" cy="313" r="17"/><circle cx="358" cy="266" r="18"/><circle cx="430" cy="221" r="17"/><circle cx="500" cy="174" r="18"/><circle cx="557" cy="135" r="17"/>
+  </g>
+  <g fill="none" stroke="#f7f2df" stroke-width="2" opacity=".85">
+    <path d="M222 328v34m-16-17h32M288 296v34m-16-17h32M358 248v36m-17-18h34M430 204v34m-16-17h32M500 156v36m-17-18h34M557 118v34m-16-17h32"/>
+  </g>
+  <rect x="34" y="34" width="652" height="452" fill="none" stroke="#d2c7af" stroke-width="2"/>
+</svg>

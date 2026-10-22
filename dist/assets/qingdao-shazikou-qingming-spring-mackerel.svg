@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">春季海鱼编辑示意</title>
+  <desc id="desc">银灰色鱼体与蓝绿色背部的通用海鱼插画，不是沙子口实拍或鱼种鉴定。</desc>
+  <rect width="720" height="520" fill="#e9ece6"/>
+  <path d="M118 265c62-100 184-145 332-111 57 13 103 43 145 90l70-54-12 77 15 70-76-48c-60 75-139 118-244 120-110 2-187-39-230-144Z" fill="#bac5c1" stroke="#65746e" stroke-width="6"/>
+  <path d="M132 267c75-68 185-96 308-69 51 11 99 34 142 67-53 66-127 104-225 106-112 3-190-33-225-104Z" fill="#d6ddda" opacity=".9"/>
+  <path d="M174 236c91-78 206-99 341-60M176 294c99 55 215 68 342 27" fill="none" stroke="#77918a" stroke-width="5" opacity=".85"/>
+  <path d="M290 169 337 98l55 76M352 372l45 55 39-61M500 184l38-54 34 75" fill="#93a6a0" stroke="#65746e" stroke-width="5"/>
+  <path d="M610 265 665 228l-12 59 15 53-58-36" fill="#9daea8" stroke="#65746e" stroke-width="5"/>
+  <circle cx="191" cy="245" r="9" fill="#263a35"/><path d="M120 266q27 10 49 1" fill="none" stroke="#52645e" stroke-width="4"/>
+  <g fill="#f4f4ec" opacity=".8"><circle cx="280" cy="226" r="5"/><circle cx="321" cy="254" r="4"/><circle cx="367" cy="220" r="5"/><circle cx="413" cy="266" r="4"/><circle cx="460" cy="235" r="5"/></g>
+  <rect x="34" y="34" width="652" height="452" fill="none" stroke="#c7d0c9" stroke-width="2"/>
+</svg>

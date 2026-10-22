@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">澳洲坚果通用形态参考</title>
+  <desc id="desc">坚果青色外荚、浅褐色硬壳和乳白果仁的编辑示意，不用于产地或品种鉴定。</desc>
+  <rect width="900" height="700" fill="#eee9dc"/>
+  <circle cx="714" cy="148" r="86" fill="#d9cda8" opacity=".42"/>
+  <path d="M0 516c158-54 290-28 421 8 140 38 294 45 479-22v198H0z" fill="#d7dfd2"/>
+  <g transform="translate(96 122) rotate(-9 190 202)">
+    <path d="M190 24c102 0 173 71 173 168 0 106-85 217-173 285C102 409 17 298 17 192 17 95 88 24 190 24z" fill="#718b70" stroke="#29483d" stroke-width="8"/>
+    <path d="M190 53v374M67 178c82 25 164 25 246 0M58 253c88 24 176 24 264 0M83 326c71 18 143 18 214 0" fill="none" stroke="#b5c1a7" stroke-width="7" opacity=".8"/>
+    <path d="M190 57c-48 42-74 91-78 147-6 86 33 147 78 206 45-59 84-120 78-206-4-56-30-105-78-147z" fill="#9bad8e" opacity=".62"/>
+  </g>
+  <g transform="translate(470 240) rotate(9 140 136)">
+    <path d="M140 12c72 0 119 58 119 131 0 77-52 140-119 140S21 220 21 143C21 70 68 12 140 12z" fill="#a77a50" stroke="#5d4939" stroke-width="8"/>
+    <path d="M140 34c55 0 91 47 91 107 0 64-40 116-91 116s-91-52-91-116c0-60 36-107 91-107z" fill="#d2b68b" stroke="#f1e5cc" stroke-width="6"/>
+    <path d="M140 55c39 0 64 36 64 82 0 49-27 89-64 89s-64-40-64-89c0-46 25-82 64-82z" fill="#f4ecd8"/>
+  </g>
+  <g transform="translate(662 392) rotate(22 75 75)">
+    <path d="M74 10c40 0 65 32 65 72 0 43-29 78-65 78S9 125 9 82c0-40 25-72 65-72z" fill="#e6dbc4" stroke="#917658" stroke-width="6"/>
+    <path d="M74 25v108M28 80h92" stroke="#c6b494" stroke-width="4" opacity=".65"/>
+  </g>
+  <path d="M109 581c214-30 416-28 661 2" fill="none" stroke="#a8b7a2" stroke-width="3" opacity=".8"/>
+</svg>

@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "dist/assets/helan-luosicai-generated.webp",
+    "bytes": 206216,
+    "sha256": "70f66284b8fb5100bef539f578a205e2f2c13cb5b1b88eac1f55c1bf9dd077c9",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/lanzhou-xianbaihe-generated.webp",
+    "bytes": 96978,
+    "sha256": "a0e5cbdd9897da077497ebfa273dc5184b457705226e541bf1464755df1dd752",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/binchuan-renong1-yuganzi-generated.webp",
+    "bytes": 129422,
+    "sha256": "ba33079053afc692271aab6c8d166465cd3d58a5a634e8798fe7750e70618396",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/xiaolan-shiju-huaban-generated.webp",
+    "bytes": 193450,
+    "sha256": "95205e2bc1d1d157c184e2dc5142c8cbc4c111c4502873ef17cce2e646fec586",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/taitung-luoshen-calyx-generated.webp",
+    "bytes": 183288,
+    "sha256": "4809d8dba43588d3f56a95b83c652022ea4518b8899541a485d879e4c5bf11d5",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/luoping-hongguoshen-generated.webp",
+    "bytes": 216142,
+    "sha256": "a562d2a539764cee1a571e0d0bd73e8e4cc63f50adacd2620d942b9204f8b103",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/heshi-xianfenge-generated.webp",
+    "bytes": 167982,
+    "sha256": "e5a905d3895faec40f0384f41259e4b6b6b9ac6e6b1ccf78ef200d77399ed3a4",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/xikou-xindongsun-generated.webp",
+    "bytes": 247004,
+    "sha256": "757f632f8e0ed844e036018283094eb45914cc5f1bd8f5514a594a0db7d87c28",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/rongan-jingju-generated.webp",
+    "bytes": 134020,
+    "sha256": "024932bf0def7aee2e03d6d730799caa5ff51929b4bbbafbe03f13759a433b26",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  },
+  {
+    "asset": "dist/assets/sanmen-qingxie-generated.webp",
+    "bytes": 222618,
+    "sha256": "5b39fcc97d6c528fa9500c5568e28a38daac513d7207bbed2df5af42449ecb84",
+    "credit": "OpenAI image generation; editorial illustration, not documentary photography"
+  }
+]

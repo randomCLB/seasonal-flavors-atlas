@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">牟定冬早青蚕豆形态示意</title>
+  <desc id="desc">浅米色背景上的通用蚕豆荚、豆粒与叶片编辑插画，不代表牟定产地或品种实拍。</desc>
+  <rect width="720" height="520" fill="#f2eee3"/>
+  <path d="M0 408c153-37 247-26 370 0s220 29 350-8v120H0z" fill="#e3ddce"/>
+  <g fill="none" stroke="#355d42" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M151 341c105-103 205-153 328-185M277 264c-30-71-46-111-75-152M365 221c17-69 42-108 90-150M455 183c58-21 112-20 164-1"/>
+  </g>
+  <g fill="#77916a" stroke="#355d42" stroke-width="5">
+    <path d="M206 116c-37-16-75-11-110 12 25 35 62 48 109 36 20-18 20-34 1-48z"/>
+    <path d="M455 70c-11-37 4-70 42-98 27 32 32 70 13 112-21 15-39 10-55-14z" transform="translate(0 84)"/>
+    <path d="M543 172c31-28 69-37 114-25-12 42-41 68-87 78-25-8-34-26-27-53z"/>
+    <path d="M284 257c-38-11-73-1-104 29 30 31 68 39 112 20 17-21 14-38-8-49z"/>
+  </g>
+  <g transform="rotate(-24 363 300)">
+    <path d="M208 306c51-107 255-111 309-7-54 106-258 111-309 7z" fill="#aab879" stroke="#425e3d" stroke-width="8"/>
+    <path d="M230 307c66-21 197-21 262-5" fill="none" stroke="#d7dda9" stroke-width="5"/>
+    <g fill="#d9c986" stroke="#75814e" stroke-width="4">
+      <ellipse cx="261" cy="295" rx="23" ry="33"/><ellipse cx="319" cy="285" rx="24" ry="34"/><ellipse cx="379" cy="282" rx="24" ry="34"/><ellipse cx="439" cy="286" rx="24" ry="34"/><ellipse cx="493" cy="298" rx="22" ry="31"/>
+    </g>
+  </g>
+  <g fill="#d9c986" stroke="#75814e" stroke-width="5">
+    <ellipse cx="522" cy="369" rx="36" ry="28" transform="rotate(-18 522 369)"/>
+    <ellipse cx="581" cy="354" rx="35" ry="27" transform="rotate(13 581 354)"/>
+    <ellipse cx="550" cy="420" rx="34" ry="27" transform="rotate(23 550 420)"/>
+  </g>
+  <text x="42" y="475" fill="#51634c" font-family="serif" font-size="18" letter-spacing="3">鲜荚 · 豆米形态参考</text>
+</svg>

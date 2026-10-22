@@ -1,0 +1,11 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const root=path.join(__dirname,'..');
+test('Qingdao Shazikou li-xia keeps its local-name caveat, sourced spring window and draw signatures',()=>{
+ const C=require('../dist/lottery-core.js'),ctx={window:{}};vm.createContext(ctx);
+ for(const name of ['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name+'.js'),'utf8'),ctx);
+ const food=ctx.window.FOODS.find(item=>item.id==='qingdao-shazikou-li-xia');assert.ok(food);assert.deepEqual(Array.from(food.peakTerms),[5,6]);assert.match(food.season,/不确认2027年渔汛/);assert.match(food.description,/俗名/);assert.ok(food.sources.some(item=>item[1]==='https://news.qingdaonews.com/wap/2018-04/13/content_20121307.htm'));assert.ok(food.sources.some(item=>item[1]==='https://ocean.qingdao.gov.cn/tpxw/202603/t20260310_10531025.shtml'));assert.ok(food.procurement.checks.length>=3);assert.match(food.imageCaption,/不用于鹰爪虾物种鉴别/);assert.ok(fs.existsSync(path.join(root,'dist',food.image)));
+ vm.runInContext(fs.readFileSync(path.join(root,'dist','lottery-profiles.js'),'utf8'),ctx);vm.runInContext(fs.readFileSync(path.join(root,'dist','lottery-senses.js'),'utf8'),ctx);const profile=ctx.window.LOTTERY_PROFILES[food.id];assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
+ const events=C.eventsFrom(ctx.window.SOLAR_TERM_TIMES,ctx.window.SOLAR_TERM_NAMES);for(const year of [2027,2028]){for(const index of [5,6]){const start=events.find(event=>event.year===year&&event.index===index),day=C.dayAt(start.time);assert.equal(C.isPeakDay(food,day,events),true);}const outside=events.find(event=>event.year===year&&event.index===4);assert.equal(C.isPeakDay(food,C.dayAt(outside.time),events),false);}
+ const audit=JSON.parse(require('node:child_process').execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),pools=Object.fromEntries(audit.rows.map(row=>[row.term,row.foodIds]));assert.ok(pools['春分'].includes(food.id));assert.ok(pools['清明'].includes(food.id));assert.ok(!pools['雨水'].includes(food.id));
+});

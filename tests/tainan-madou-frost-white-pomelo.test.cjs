@@ -1,0 +1,8 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),{execFileSync}=require('node:child_process');
+const root=path.join(__dirname,'..'),ctx={window:{}};vm.createContext(ctx);for(const name of ['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name+'.js'),'utf8'),ctx);const C=require(path.join(root,'dist/lottery-core.js'));
+
+test('Tainan Madou white pomelo follows the reported Frost Descent harvest window and stays outside adjacent lists',()=>{
+ const id='tainan-madou-frost-white-pomelo',f=ctx.window.FOODS.find(x=>x.id===id),p=ctx.window.LOTTERY_PROFILES[id],audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'}));assert.ok(f);assert.deepEqual(Array.from(f.peakWindows[0]),['10-23','11-02']);assert.deepEqual(Array.from(f.peakTerms),[19]);assert.match(f.season,/霜降前后约十日/);assert.match(f.description,/不是本站试吃/);assert.match(f.imageCaption,/非麻豆白柚实拍或品种鉴别/);assert.ok(f.sources.some(x=>x[1]==='https://www.tainan.gov.tw/news_content.aspx?n=13370&s=8698942'));assert.ok(fs.existsSync(path.join(root,'dist',f.image)));assert.equal(p.signature,C.signature(f));assert.equal(p.senses.signature,C.sensorySignature(f));
+ const coldDew=audit.rows.find(x=>x.term==='寒露'),frost=audit.rows.find(x=>x.term==='霜降');assert.ok(!coldDew.foodIds.includes(id));assert.ok(frost.foodIds.includes(id));
+});

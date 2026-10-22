@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">河鲜鱼形态编辑示意</title>
+  <desc id="desc">银灰色小型鱼通用示意，不是广东河鲜实拍或物种鉴定。</desc>
+  <rect width="720" height="520" fill="#e9eee9"/>
+  <path d="M127 267c57-88 168-132 297-106 65 13 112 46 151 99l74-49-15 58 14 57-72-42c-49 68-124 106-226 108-104 2-181-38-223-125Z" fill="#c6d1cb" stroke="#66776f" stroke-width="6"/>
+  <path d="M148 268c72-60 164-83 275-61 54 11 100 32 143 62-51 60-119 90-208 91-100 1-171-30-210-92Z" fill="#e0e6e1" opacity=".9"/>
+  <path d="M285 168 330 109l47 69M349 390l43 43 36-46M487 185l35-48 32 68" fill="#9bad9f" stroke="#687870" stroke-width="5"/>
+  <path d="M575 260 644 220l-14 57 14 53-68-33" fill="#a8b8af" stroke="#687870" stroke-width="5"/>
+  <path d="M165 244q27-4 47 7" fill="none" stroke="#64766e" stroke-width="4"/><circle cx="193" cy="242" r="8" fill="#2d3d36"/>
+  <g fill="none" stroke="#8da197" stroke-width="4" opacity=".8"><path d="M252 223q105-77 270-35M249 298q120 64 275 31"/><path d="M313 244h230M319 273h225" opacity=".55"/></g>
+  <g fill="#f8f7ed" opacity=".85"><circle cx="299" cy="241" r="5"/><circle cx="346" cy="260" r="4"/><circle cx="398" cy="232" r="5"/><circle cx="448" cy="270" r="4"/><circle cx="492" cy="246" r="5"/></g>
+  <rect x="34" y="34" width="652" height="452" fill="none" stroke="#c7d0c9" stroke-width="2"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-label="黄沙蚬双壳贝类通用编辑示意">
+  <rect width="800" height="620" fill="#e9e5d9"/>
+  <ellipse cx="400" cy="520" rx="252" ry="42" fill="#b7a276" opacity=".28"/>
+  <g stroke="#183833" stroke-width="10" stroke-linejoin="round">
+    <path d="M168 380c22-119 101-202 232-218 131 16 210 99 232 218-104 100-360 100-464 0Z" fill="#d1a95e"/>
+    <path d="M207 380c22-95 85-160 193-175 108 15 171 80 193 175-102 73-284 73-386 0Z" fill="#e3c98d" stroke-width="7"/>
+    <path d="M400 169v283m-70-268 22 278m-91-244 48 231m160-265-22 278m91-244-48 231" fill="none" stroke="#a7844f" stroke-width="7" opacity=".8"/>
+  </g>
+  <path d="M110 490c84 28 160 35 228 20m124 0c75 16 151 9 228-20" fill="none" stroke="#7b9b91" stroke-width="6" opacity=".55"/>
+  <circle cx="400" cy="170" r="12" fill="#f1e6ca" stroke="#183833" stroke-width="6"/>
+</svg>

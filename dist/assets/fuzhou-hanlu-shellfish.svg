@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+  <title id="title">福州寒露海味编辑插画</title>
+  <desc id="desc">米白色底上的干制贝壳、蚬类通用形态与一枝秋日芦苇，本站原创示意图，不用于产地或物种鉴定。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f4f0e4"/><stop offset="1" stop-color="#e8e0cf"/></linearGradient>
+    <linearGradient id="shell" x2=".9" y2="1"><stop stop-color="#d4c6a9"/><stop offset=".5" stop-color="#8d7d65"/><stop offset="1" stop-color="#554e42"/></linearGradient>
+    <linearGradient id="clam" x2="1" y2=".9"><stop stop-color="#e2d2b0"/><stop offset="1" stop-color="#86745b"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.4"><feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#433a2b" flood-opacity=".17"/></filter>
+  </defs>
+  <rect width="900" height="720" fill="url(#paper)"/>
+  <path d="M65 615C234 559 443 638 824 557" fill="none" stroke="#c8bda7" stroke-width="2"/>
+  <path d="M770 600C740 471 785 351 738 199M759 462c-82-55-119-121-126-190m133 143c78-72 99-129 96-201" fill="none" stroke="#7f8766" stroke-width="5" stroke-linecap="round"/>
+  <path d="M638 272c49 2 88 32 109 67-51 5-90-17-109-67m126 86c16-48 55-82 107-97-16 54-55 88-107 97" fill="#a1a181" opacity=".78"/>
+  <g filter="url(#shadow)">
+    <ellipse cx="405" cy="464" rx="280" ry="137" fill="#d9d0bd"/>
+    <ellipse cx="405" cy="447" rx="255" ry="112" fill="#f7f3e9" stroke="#b8ad99" stroke-width="4"/>
+    <g transform="translate(205 352) rotate(-9)">
+      <path d="M0 70C1 20 25 0 42 0s41 20 42 70L75 185H9Z" fill="url(#shell)" stroke="#6a6253" stroke-width="4"/>
+      <path d="M16 25c20 28 25 80 25 145M30 10c16 36 19 94 18 160M53 11c-7 51-7 100-3 160M69 30c-13 38-16 80-13 137" fill="none" stroke="#e1d5bf" stroke-width="4" opacity=".6"/>
+    </g>
+    <g transform="translate(327 330) rotate(6)">
+      <path d="M0 72C1 22 24 0 42 0s41 22 42 72L72 180H10Z" fill="url(#shell)" stroke="#6a6253" stroke-width="4"/>
+      <path d="M15 22c18 34 24 88 26 152M32 8c15 45 18 98 17 163M55 12c-9 45-10 101-5 158M70 35c-13 43-16 84-12 133" fill="none" stroke="#e1d5bf" stroke-width="4" opacity=".6"/>
+    </g>
+    <g transform="translate(485 400) rotate(14)">
+      <path d="M0 46C9 12 40-9 75 2s51 43 39 75-44 49-78 38S-10 81 0 46Z" fill="url(#clam)" stroke="#766a56" stroke-width="4"/>
+      <path d="M18 19c33 18 57 47 78 83M39 7c22 30 39 61 53 99M63 5c10 34 18 66 22 94" fill="none" stroke="#eee1c5" stroke-width="4" opacity=".65"/>
+    </g>
+    <g transform="translate(590 437) rotate(-17)">
+      <path d="M0 37C10 4 42-12 74 1s47 42 34 72-44 43-75 30S-9 67 0 37Z" fill="url(#clam)" stroke="#766a56" stroke-width="4"/>
+      <path d="M18 13c26 22 46 49 68 80M43 2c14 30 28 60 38 92" fill="none" stroke="#eee1c5" stroke-width="4" opacity=".65"/>
+    </g>
+  </g>
+  <text x="78" y="105" fill="#17312c" font-family="serif" font-size="31" letter-spacing="5">寒露 · 福州海味</text>
+  <text x="80" y="151" fill="#786a50" font-family="sans-serif" font-size="17" letter-spacing="3">编辑示意 · 非实拍 · 非物种鉴定</text>
+  <path d="M80 178h120" stroke="#aa9a7e" stroke-width="2"/>
+</svg>

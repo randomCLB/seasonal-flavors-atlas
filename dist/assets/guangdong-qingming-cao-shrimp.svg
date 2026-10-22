@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">虾形态编辑示意</title>
+  <desc id="desc">虾体、触须与分节腹部的通用示意，不是曹虾实拍或物种鉴定。</desc>
+  <rect width="720" height="520" fill="#f0e9df"/>
+  <path d="M171 286c46-100 145-147 254-115 62 18 103 72 102 137-1 74-54 124-121 130l-24-39 34-39-47-11 18-45-53-5 8-44-57 7-14-39-50 26Z" fill="#c78669" stroke="#785b50" stroke-width="6"/>
+  <path d="M168 284c-39-27-80-30-121-17 34 17 47 33 65 61-33 0-56 12-78 35 50-9 84-6 124 14" fill="none" stroke="#80655a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M184 282C126 216 82 177 42 150M183 300C111 285 77 278 31 277" fill="none" stroke="#6a584f" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="193" cy="263" r="10" fill="#2f3530"/>
+  <g fill="none" stroke="#835e51" stroke-width="5">
+    <path d="M298 179q-15 60 7 111M352 164q-10 67 14 123M407 171q-2 66 29 121M459 197q15 52 43 82"/>
+    <path d="M319 400q-14 52-46 79M369 410q-7 48-25 77M416 405q7 48 28 75"/>
+  </g>
+  <path d="M195 294q99 75 245 86M208 272q102 59 237 67" fill="none" stroke="#e8b59a" stroke-width="5" opacity=".8"/>
+  <rect x="34" y="34" width="652" height="452" fill="none" stroke="#d2c7af" stroke-width="2"/>
+</svg>

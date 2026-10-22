@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">通用红李编辑插画</title>
+  <desc id="desc">两枚紫红色圆李与一枚切开的浅黄色果肉示意，仅供通用形态参考，不用于品种或产地鉴别。</desc>
+  <defs>
+    <radialGradient id="plum" cx="32%" cy="26%"><stop stop-color="#b84e68"/><stop offset=".58" stop-color="#842f50"/><stop offset="1" stop-color="#4c2944"/></radialGradient>
+    <linearGradient id="flesh" x2="0" y2="1"><stop stop-color="#fff4d5"/><stop offset="1" stop-color="#e5ca9c"/></linearGradient>
+  </defs>
+  <rect width="720" height="520" fill="#eeeadd"/>
+  <rect x="32" y="32" width="656" height="456" fill="#dfe6df"/>
+  <ellipse cx="360" cy="386" rx="235" ry="34" fill="#5f6557" opacity=".16"/>
+  <g stroke="#5a2947" stroke-width="3">
+    <path d="M263 155c-7-27 7-45 29-52" fill="none" stroke="#6b5941" stroke-width="7" stroke-linecap="round"/>
+    <path d="M471 141c0-24 13-40 33-47" fill="none" stroke="#6b5941" stroke-width="7" stroke-linecap="round"/>
+    <path d="M269 245c-78-94-43-168 21-173 58-4 95 54 50 137-18 34-43 57-71 36Z" fill="url(#plum)"/>
+    <path d="M477 225c-66-82-37-147 18-151 51-3 84 48 44 120-16 30-38 50-62 31Z" fill="url(#plum)"/>
+    <path d="M366 337c-58-80-33-144 18-149 47-4 80 45 43 115-15 29-37 52-61 34Z" fill="url(#plum)"/>
+    <path d="M396 331c-36-50-22-91 7-93 28-2 47 30 25 72-9 17-21 29-32 21Z" fill="url(#flesh)" stroke="#f7eed7" stroke-width="8"/>
+    <path d="M415 255c-8 22-11 45-10 69" fill="none" stroke="#a77b55" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g fill="#f4dfd8" opacity=".75"><ellipse cx="244" cy="208" rx="7" ry="18" transform="rotate(-34 244 208)"/><ellipse cx="456" cy="183" rx="6" ry="14" transform="rotate(-34 456 183)"/></g>
+  <text x="58" y="82" fill="#365955" font-family="serif" font-size="18" letter-spacing="4">LATE SEASON · BOMI</text>
+</svg>

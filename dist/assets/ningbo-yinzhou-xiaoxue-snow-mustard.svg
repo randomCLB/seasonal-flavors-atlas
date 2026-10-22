@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">雪菜叶形态示意</title>
+  <desc id="desc">本地编辑插画：层叠的芥菜叶，用作叶菜形态参考，不用于鄞州雪菜品种鉴别。</desc>
+  <rect width="900" height="700" fill="#eee9dc"/>
+  <path d="M0 564c170-51 309-5 451-39 177-43 293-31 449 17v158H0z" fill="#dad2c1"/>
+  <g stroke="#25463a" stroke-width="5" stroke-linejoin="round">
+    <path d="M457 570C375 474 231 440 142 350c-68-69-42-144 33-163 79-20 176 57 233 132 25-113 112-184 198-157 74 23 92 100 39 178-52 77-128 135-188 230z" fill="#72864e"/>
+    <path d="M457 565c-14-106-27-187-57-266m59 263c42-102 94-179 164-254m-166 248c-83-73-165-119-260-161m269 151c76-57 157-92 242-113" fill="none" stroke="#c8c79e" stroke-width="8"/>
+    <path d="M451 568c-115 8-203-35-226-101-20-58 22-102 78-88 58 15 111 75 148 144-5-98 44-177 105-185 61-8 91 44 67 100-31 73-94 116-172 130z" fill="#91a064"/>
+    <path d="M450 561c-61-67-125-111-202-144m203 144c23-77 59-137 116-182m-118 180c-5-78-2-143 7-208" fill="none" stroke="#d8d3aa" stroke-width="7"/>
+    <path d="M452 567c-74 26-144 9-168-36-21-40 2-71 40-65 47 7 91 45 132 101 20-51 55-82 94-76 40 6 48 38 24 66-27 31-69 38-122 10z" fill="#adb078"/>
+  </g>
+  <g fill="#334c3e" font-family="serif">
+    <text x="56" y="80" font-size="24" letter-spacing="5">WINTER MUSTARD · NINGBO</text>
+    <text x="58" y="635" font-size="33">鄞州雪菜 · 叶形态参考</text>
+  </g>
+</svg>

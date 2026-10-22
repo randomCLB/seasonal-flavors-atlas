@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-label="青梅青黄相间的原创编辑插画">
+ <defs>
+  <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f4f0e4"/><stop offset="1" stop-color="#e3ddcb"/></linearGradient>
+  <radialGradient id="fruit" cx="32%" cy="24%"><stop stop-color="#e5df99"/><stop offset=".58" stop-color="#a9b96d"/><stop offset="1" stop-color="#758a4b"/></radialGradient>
+  <radialGradient id="blush" cx="45%" cy="35%"><stop stop-color="#d5aa80" stop-opacity=".58"/><stop offset="1" stop-color="#d5aa80" stop-opacity="0"/></radialGradient>
+ </defs>
+ <rect width="800" height="620" fill="url(#paper)"/><rect x="32" y="32" width="736" height="556" fill="none" stroke="#c9c0ad" stroke-width="2"/>
+ <path d="M171 462Q400 502 629 462" fill="none" stroke="#d3cbb9" stroke-width="2"/><ellipse cx="397" cy="448" rx="234" ry="41" fill="#626648" opacity=".12"/>
+ <g fill="none" stroke="#556541" stroke-width="9" stroke-linecap="round"><path d="M392 182Q370 121 303 88"/><path d="M413 188Q462 118 532 94"/><path d="M279 263Q230 198 185 187"/><path d="M526 264Q572 197 618 188"/></g>
+ <g fill="#718354" stroke="#546846" stroke-width="3"><path d="M280 95Q338 69 367 132Q318 144 280 95Z"/><path d="M534 99Q477 70 450 133Q500 145 534 99Z"/><path d="M181 190Q233 158 262 212Q214 232 181 190Z"/><path d="M620 188Q569 157 541 211Q591 232 620 188Z"/></g>
+ <g stroke="#687947" stroke-width="4">
+  <path d="M264 345C260 264 317 208 382 216C444 222 478 273 467 346C456 413 411 438 351 429C294 421 267 393 264 345Z" fill="url(#fruit)"/>
+  <path d="M422 358C416 285 470 231 532 240C592 248 625 299 613 364C600 427 557 448 500 441C451 435 426 405 422 358Z" fill="url(#fruit)"/>
+  <path d="M190 374C186 319 227 281 274 287C320 294 342 331 335 379C327 425 294 441 252 435C213 430 193 409 190 374Z" fill="url(#fruit)"/>
+ </g>
+ <g fill="url(#blush)"><ellipse cx="386" cy="336" rx="87" ry="69"/><ellipse cx="548" cy="353" rx="77" ry="63"/></g>
+ <g fill="#eee9c9" opacity=".85"><circle cx="324" cy="286" r="7"/><circle cx="372" cy="258" r="5"/><circle cx="477" cy="321" r="6"/><circle cx="556" cy="285" r="6"/><circle cx="230" cy="347" r="5"/></g>
+ <path d="M378 219Q371 190 391 171Q411 190 402 222" fill="#586941"/>
+ <text x="400" y="534" text-anchor="middle" fill="#334536" font-family="serif" font-size="24" letter-spacing="5">青黄相间 · 施甸青梅</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">荸荠球茎形态编辑插画</title>
+  <desc id="desc">米白纸面上绘有带褐色外皮的圆球茎与白色切面，通用形态参考，不用于产地鉴别。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f3efe4"/><stop offset="1" stop-color="#e4ddcc"/></linearGradient>
+    <radialGradient id="skin" cx="35%" cy="28%"><stop stop-color="#93745b"/><stop offset=".7" stop-color="#674f43"/><stop offset="1" stop-color="#493a33"/></radialGradient>
+    <radialGradient id="flesh" cx="35%" cy="25%"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#e8e1d2"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="1200" height="820" fill="url(#paper)"/>
+  <ellipse cx="600" cy="665" rx="340" ry="42" fill="#5b5043" opacity=".14" filter="url(#shadow)"/>
+  <g stroke="#493c34" stroke-width="7" stroke-linejoin="round">
+    <path d="M270 495 Q275 352 390 318 Q475 292 520 385 Q548 460 493 555 Q440 642 346 604 Q272 578 270 495Z" fill="url(#skin)"/>
+    <path d="M420 487 Q428 352 540 325 Q628 303 665 397 Q692 468 632 554 Q574 632 490 598 Q421 573 420 487Z" fill="url(#skin)"/>
+    <path d="M615 510 Q620 390 720 365 Q802 347 836 431 Q865 501 815 574 Q765 642 688 612 Q620 585 615 510Z" fill="url(#flesh)"/>
+  </g>
+  <ellipse cx="718" cy="490" rx="41" ry="53" fill="none" stroke="#d8d0c2" stroke-width="5" opacity=".7"/>
+  <g fill="#faf6eb" font-family="serif"><text x="84" y="110" font-size="28" letter-spacing="8" opacity=".68">WINTER ROOTS · HUANGPI</text><text x="82" y="765" font-size="21" letter-spacing="4" opacity=".75">EDITORIAL STUDY · NOT A PLACE-OF-ORIGIN IDENTIFICATION</text></g>
+</svg>

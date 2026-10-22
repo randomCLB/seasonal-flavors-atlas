@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+<title id="title">核桃通用形态示意</title><desc id="desc">带青皮核桃、裂开的核桃壳与核桃仁；非实物摄影或产地鉴定图。</desc>
+<rect width="900" height="620" fill="#eeeadd"/><ellipse cx="450" cy="505" rx="290" ry="42" fill="#d9d0bd"/>
+<g transform="rotate(-15 300 300)"><path d="M300 112c-105 0-166 87-166 188s61 188 166 188 166-87 166-188-61-188-166-188Z" fill="#81906a" stroke="#5c694e" stroke-width="7"/><path d="M300 125c-42 93-44 264 0 350M211 151c51 88 53 225 13 317M390 151c-52 88-53 225-13 317M143 273c94 30 218 30 314 0M143 374c94-30 218-30 314 0" fill="none" stroke="#aab58d" stroke-width="9" stroke-linecap="round"/></g>
+<g transform="rotate(13 590 300)"><path d="M590 148c-93 0-146 72-146 154 0 83 53 158 146 158s146-75 146-158c0-82-53-154-146-154Z" fill="#a97d4d" stroke="#775b3d" stroke-width="8"/><path d="M590 160c-43 45-46 195 0 287M473 274c74 38 160 38 234 0M473 345c74-38 160-38 234 0" fill="none" stroke="#d2ad7b" stroke-width="8" stroke-linecap="round"/><path d="M590 203c-53 10-61 65-26 88-37 28-27 79 26 93 53-14 63-65 26-93 35-23 27-78-26-88Z" fill="#e3c998" stroke="#8a6844" stroke-width="6"/></g>
+<text x="450" y="570" text-anchor="middle" fill="#39493a" font-family="sans-serif" font-size="19">本站通用形态示意 · 非实物摄影、非产地鉴别</text></svg>

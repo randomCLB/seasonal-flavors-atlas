@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">山核桃通用形态示意</title>
+  <desc id="desc">两枚带青绿色外皮的山核桃与一枚熟制核仁；不是实物摄影或产地品种鉴定。</desc>
+  <rect width="900" height="620" fill="#eeeadd"/>
+  <ellipse cx="450" cy="516" rx="278" ry="42" fill="#d9d0bd"/>
+  <g transform="rotate(-14 310 305)">
+    <path d="M310 112c-95 0-157 78-157 185s62 201 157 201 157-94 157-201-62-185-157-185Z" fill="#87966c" stroke="#60714f" stroke-width="6"/>
+    <path d="M311 123c-35 73-38 226 0 363M220 160c39 83 44 218 6 306M398 158c-44 93-47 207-9 307M171 291c88 24 184 22 278-3M171 383c89-22 181-24 277-4" fill="none" stroke="#aeb891" stroke-width="8" opacity=".8"/>
+    <path d="M235 145c-12-29-3-47 23-55 29-8 45 8 49 37M385 144c21-28 42-32 62-12 21 21 14 43-11 58" fill="none" stroke="#697c55" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(13 578 326)">
+    <path d="M582 152c-76 0-125 61-125 148s49 152 125 152 125-65 125-152-49-148-125-148Z" fill="#91a075" stroke="#647653" stroke-width="6"/>
+    <path d="M583 163c-24 66-26 193 0 276M511 194c34 59 35 155 8 219M654 192c-30 67-31 157-6 224M461 284c78 21 160 19 242-2M461 350c78-19 158-20 242-3" fill="none" stroke="#bac39e" stroke-width="7" opacity=".8"/>
+  </g>
+  <path d="M735 398c22-19 68-14 82 13 12 24-12 52-43 53-31 1-61-14-61-35 0-12 8-23 22-31Z" fill="#a97843" stroke="#815a37" stroke-width="5"/>
+  <path d="M734 411c23 10 49 14 76 11M741 434c21 7 43 9 62 7" fill="none" stroke="#d7b27c" stroke-width="5" stroke-linecap="round"/>
+  <text x="450" y="580" text-anchor="middle" fill="#39493a" font-family="sans-serif" font-size="19">本站通用形态示意 · 非实物摄影、非产地鉴别</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+  <title id="title">丹霞贡柑形态编辑插画</title>
+  <desc id="desc">暖金色柑橘与叶片的原创编辑插画，不是产地实拍或品种鉴别图。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f2eee3"/><stop offset="1" stop-color="#e5dfd0"/></linearGradient>
+    <radialGradient id="fruit" cx="38%" cy="30%"><stop stop-color="#f8c65e"/><stop offset=".64" stop-color="#df8a2d"/><stop offset="1" stop-color="#b85d2a"/></radialGradient>
+    <radialGradient id="cut" cx="42%" cy="35%"><stop stop-color="#fff1bd"/><stop offset="1" stop-color="#f4d98c"/></radialGradient>
+  </defs>
+  <rect width="900" height="760" fill="url(#paper)"/>
+  <path d="M90 630C225 530 282 390 387 215M506 635C590 493 657 353 786 215" fill="none" stroke="#657553" stroke-width="10" opacity=".72"/>
+  <path d="M302 353C180 307 122 231 102 134C221 148 316 215 349 315C341 336 323 347 302 353Z" fill="#77865d"/>
+  <path d="M659 379C720 276 800 232 870 225C856 331 792 405 689 419C675 407 665 394 659 379Z" fill="#89916a"/>
+  <path d="M229 293L335 337M708 392L814 276" stroke="#c0bc8f" stroke-width="4" opacity=".65"/>
+  <circle cx="355" cy="462" r="170" fill="url(#fruit)"/>
+  <circle cx="355" cy="462" r="11" fill="#9f5126" opacity=".75"/>
+  <path d="M344 289C366 267 397 269 419 282C399 307 373 317 344 309Z" fill="#66784f"/>
+  <circle cx="666" cy="548" r="112" fill="#b85d2a"/>
+  <circle cx="666" cy="548" r="99" fill="url(#cut)"/>
+  <circle cx="666" cy="548" r="25" fill="#dfa85b" opacity=".65"/>
+  <g stroke="#c08e4d" stroke-width="3" opacity=".75">
+    <path d="M666 449V522M666 574V647M567 548H640M692 548H765M596 478L649 531M683 565L736 618M736 478L683 531M649 565L596 618"/>
+  </g>
+  <g fill="#f8e6ae" opacity=".8"><ellipse cx="633" cy="518" rx="8" ry="15" transform="rotate(-30 633 518)"/><ellipse cx="698" cy="575" rx="8" ry="15" transform="rotate(-30 698 575)"/><ellipse cx="693" cy="517" rx="8" ry="15" transform="rotate(30 693 517)"/></g>
+  <text x="64" y="704" fill="#496153" font-size="22" font-family="serif" letter-spacing="4">仁化丹霞贡柑 · 编辑形态参考</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+<title id="title">通用蟹形示意</title><desc id="desc">赭红色螃蟹剪影插画，不用于红鲟物种鉴别。</desc>
+<rect width="800" height="600" fill="#ece7dc"/><path d="M0 468c150-32 280 8 408-6 147-16 267-37 392-3v141H0Z" fill="#d7ddd2"/>
+<path d="M250 252c35-79 109-116 176-115 68-1 141 36 176 115l-18 111c-41 51-98 79-158 79s-117-28-158-79Z" fill="#b8664e" stroke="#223e38" stroke-width="9"/>
+<path d="M270 266c-67-32-111-63-143-105l-53 9 25-52 65-13c49 25 91 58 128 96M530 266c67-32 111-63 143-105l53 9-25-52-65-13c-49 25-91 58-128 96" fill="#c5785c" stroke="#223e38" stroke-width="9" stroke-linejoin="round"/>
+<path d="M276 339l-86 33-45 72m154-54-83 61-20 60m333-172 86 33 45 72m-154-54 83 61 20 60" fill="none" stroke="#223e38" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M322 252l-12-67m168 67 12-67" stroke="#223e38" stroke-width="12" stroke-linecap="round"/><circle cx="309" cy="174" r="14" fill="#223e38"/><circle cx="491" cy="174" r="14" fill="#223e38"/>
+<path d="M112 511c122-24 203 3 315-11 111-14 169-20 263-8" fill="none" stroke="#f8f5ec" stroke-width="5" opacity=".8"/>
+</svg>

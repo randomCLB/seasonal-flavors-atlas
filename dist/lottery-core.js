@@ -38,8 +38,12 @@
     const avoid=new Set(prefs.avoid);if(avoid.has('vegan'))['meat','seafood','egg','milk','honey'].forEach(x=>avoid.add(x));
     return ![...profile.avoid,...(profile.uncertain||[])].some(x=>avoid.has(x));
   }
-  function isPeakDay(food,day) {
+  function isPeakDay(food,day,events=[]) {
+    if(food.sourceYears?.length&&!food.sourceYears.includes(Number(day.slice(0,4))))return false;
     if(!(food.peakMonths||[]).includes(Number(day.slice(5,7))))return false;
+    if(food.peakTerms?.length){
+      return events.some((event,index)=>food.peakTerms.includes(event.index)&&day>=dayAt(event.time)&&day<(events[index+1]?dayAt(events[index+1].time):'9999-12-31'));
+    }
     const md=day.slice(5);
     return !food.peakWindows?.length||food.peakWindows.some(([start,end])=>start<=end?md>=start&&md<=end:md>=start||md<=end);
   }
@@ -47,10 +51,10 @@
     const places=food.placeSeasons||[],result=[];
     for(let d=slot.startDay;d<=slot.endDay;d=addDays(d,1)) {
       const [year,month,date]=d.split('-').map(Number);
-      if(!isPeakDay(food,d)||date<(profile.notBefore?.[month]||1))continue;
+      if(!isPeakDay(food,d,events)||date<(profile.notBefore?.[month]||1))continue;
       const start=profile.startTerm??food.seasonStartTerm;
       if(Number.isInteger(start)){
-        const anchorYear=start>=17&&month<9?year-1:year;
+      const anchorYear=start>=17?(month<9?year-1:year):(month>=9?year+1:year);
         const anchor=events.find(e=>e.year===anchorYear&&e.index===start);
         if(!anchor||d<dayAt(anchor.time))continue;
       }

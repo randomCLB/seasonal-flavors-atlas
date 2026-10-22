@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">谷雨蕨芽形态编辑插画</title>
+<desc id="desc">三枝卷曲嫩芽立于湿润山野土壤，通用形态参考，不用于蕨类物种鉴别。</desc>
+<defs>
+ <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f4f0e4"/><stop offset="1" stop-color="#d9d7bd"/></linearGradient>
+ <linearGradient id="stem" x2="1" y2="1"><stop stop-color="#6f8758"/><stop offset=".55" stop-color="#879760"/><stop offset="1" stop-color="#4c664b"/></linearGradient>
+ <radialGradient id="coil"><stop stop-color="#adba79"/><stop offset=".82" stop-color="#758b57"/><stop offset="1" stop-color="#465e45"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="15"/></filter>
+</defs>
+<rect width="1200" height="820" fill="url(#paper)"/>
+<g opacity=".25" filter="url(#soft)" fill="#73856a"><ellipse cx="175" cy="238" rx="170" ry="90"/><ellipse cx="1040" cy="280" rx="190" ry="105"/><ellipse cx="900" cy="610" rx="220" ry="80"/></g>
+<path d="M0 630 Q180 590 360 645 T720 630 T1200 620 V820 H0Z" fill="#77785a" opacity=".48"/>
+<path d="M0 704 Q230 665 480 714 T930 700 T1200 685 V820 H0Z" fill="#555f48" opacity=".65"/>
+<g fill="none" stroke="url(#stem)" stroke-width="23" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M512 704 C501 615 506 505 510 409 C512 345 515 292 557 259 C588 234 623 244 625 273 C627 300 599 314 579 299 C562 286 575 270 588 273"/>
+ <path d="M644 713 C642 622 650 547 668 469 C686 390 717 347 759 337 C794 329 815 352 803 378 C792 403 762 398 756 378 C752 365 767 354 779 363"/>
+ <path d="M410 722 C390 642 379 575 382 515 C385 453 410 416 447 405 C480 396 499 420 485 444 C471 467 443 456 444 436 C445 422 459 417 467 426"/>
+</g>
+<g fill="url(#coil)" stroke="#415a43" stroke-width="7">
+ <path d="M556 260 C567 234 600 224 622 240 C648 258 643 294 615 305 C590 315 566 298 569 278 C572 259 593 249 608 258 C620 266 617 282 606 286 C597 289 590 282 594 275"/>
+ <path d="M758 337 C773 310 807 302 829 323 C851 345 841 378 814 387 C789 396 769 379 776 359 C782 342 803 337 815 348 C824 357 818 372 806 373 C797 373 792 365 798 359"/>
+ <path d="M445 405 C454 379 485 367 508 383 C532 400 528 433 503 444 C480 455 459 440 464 421 C469 404 488 398 501 408 C511 416 505 431 494 431 C485 431 481 423 487 417"/>
+</g>
+<g fill="#c1c18c" opacity=".75"><circle cx="172" cy="176" r="4"/><circle cx="948" cy="181" r="5"/><circle cx="1030" cy="472" r="4"/><circle cx="258" cy="514" r="3"/><circle cx="849" cy="695" r="5"/></g>
+<path d="M76 84H1124" stroke="#58634d" stroke-width="2" opacity=".4"/>
+<text x="78" y="126" fill="#4f5d49" font-family="serif" font-size="22" letter-spacing="5">春山有雨 · 鲜蕨初卷</text>
+</svg>

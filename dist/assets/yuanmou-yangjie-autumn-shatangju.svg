@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">金秋砂糖桔编辑插画</title>
+  <desc id="desc">米色纸面上一枝圆润柑橘与叶片，通用形态参考，不用于品种鉴别。</desc>
+  <rect width="900" height="650" fill="#eee9dc"/>
+  <path d="M96 556h708" stroke="#d4ccba" stroke-width="2"/>
+  <path d="M206 545c83-107 154-218 253-330 69-78 148-118 269-141" fill="none" stroke="#657656" stroke-width="13" stroke-linecap="round"/>
+  <path d="M333 393c-83-62-139-75-203-57 36 64 99 95 185 85M466 245c-8-76 8-133 42-181 50 53 60 112 32 175M603 151c71-54 137-68 209-51-49 62-114 90-197 79" fill="#85936f" stroke="#57664d" stroke-width="7" stroke-linejoin="round"/>
+  <g fill="#d99437" stroke="#a96f26" stroke-width="5">
+    <circle cx="465" cy="403" r="112"/><circle cx="654" cy="280" r="93"/><circle cx="287" cy="298" r="72"/>
+  </g>
+  <g fill="#f2c06a" opacity=".62"><ellipse cx="427" cy="359" rx="25" ry="42" transform="rotate(-36 427 359)"/><ellipse cx="622" cy="247" rx="20" ry="34" transform="rotate(-36 622 247)"/><ellipse cx="263" cy="271" rx="16" ry="27" transform="rotate(-36 263 271)"/></g>
+  <path d="M455 289c7-21 25-28 41-25-8 20-22 30-41 25ZM644 191c8-19 23-25 39-22-7 18-20 26-39 22Z" fill="#53664a"/>
+  <text x="83" y="605" fill="#51604d" font-family="serif" font-size="19" letter-spacing="4">AUTUMN CITRUS · EDITORIAL STUDY</text>
+</svg>

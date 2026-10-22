@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">红苋菜形态编辑示意</title>
+  <desc id="desc">红紫色叶片与细茎的蔬菜形态示意，不是武汉实拍或品种鉴别。</desc>
+  <rect width="720" height="520" fill="#eee9dd"/>
+  <path d="M360 475C350 368 355 244 360 90M357 323L205 205M358 272L520 150M354 392L205 340M357 365L535 300" fill="none" stroke="#7c4050" stroke-width="13" stroke-linecap="round"/>
+  <g fill="#a84e68" stroke="#70394b" stroke-width="3">
+    <path d="M356 340C280 356 220 335 182 286c54-23 117-19 174 36Z"/><path d="M358 290c68 4 127-21 170-75-61-15-125 1-170 58Z"/>
+    <path d="M355 405c-63 21-119 13-167-25 46-33 107-39 166-4Z"/><path d="M360 371c70-1 131-24 184-72-61-24-132-9-182 46Z"/>
+    <path d="M361 226c-61 4-112-19-154-67 55-24 109-11 154 35Z"/><path d="M362 190c54-8 98-36 134-84-52-18-100 2-135 51Z"/>
+    <path d="M360 125c-39 1-72-18-99-51 36-18 70-7 100 26Z"/>
+  </g>
+  <g fill="none" stroke="#dfb9b0" stroke-width="2.5" opacity=".9">
+    <path d="M354 332 210 292M360 285l151-62M350 396l-143-13M365 362l159-54M355 221 217 166M367 183 487 116M360 120 275 77"/>
+  </g>
+  <rect x="34" y="34" width="652" height="452" fill="none" stroke="#d2c7af" stroke-width="2"/>
+</svg>

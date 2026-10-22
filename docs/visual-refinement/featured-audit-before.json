@@ -1,0 +1,218 @@
+[
+  {
+    "term": "秋分",
+    "index": 17,
+    "id": "shajiguo",
+    "name": "沙棘果",
+    "src": "assets/shajiguo-400.webp",
+    "alt": "橙黄色沙棘果实成簇贴着枝条生长，果皮表面和叶片清晰可见",
+    "note": "沙棘果近景形态参考；摄影者 Hans Hillewaert，拍摄于比利时 De Haan，CC BY-SA 3.0；非敖汉产地实拍。"
+  },
+  {
+    "term": "寒露",
+    "index": 18,
+    "id": "cizhousun",
+    "name": "刺竹笋",
+    "src": "assets/cizhousun-shoot-400.webp",
+    "alt": "菜市场筐中整支带壳的毛笋，尖端、层叠笋壳与完整笋身可见",
+    "note": "整支带壳鲜笋 · 通用形态参考"
+  },
+  {
+    "term": "霜降",
+    "index": 19,
+    "id": "lintong-huojing-shizi",
+    "name": "临潼火晶柿子",
+    "src": "assets/lintong-huojing-cut.jpg",
+    "alt": "掰开的临潼火晶柿子露出晶亮橙红果肉",
+    "note": "鲜果可食状态"
+  },
+  {
+    "term": "立冬",
+    "index": 20,
+    "id": "xunyang-guizao",
+    "name": "旬阳拐枣",
+    "src": "assets/xunyang-guizao-juice-generated.webp",
+    "alt": "拐枣肉质果梗和一杯淡琥珀色清饮的示意图",
+    "note": "生成示意 · 非实物摄影"
+  },
+  {
+    "term": "小雪",
+    "index": 21,
+    "id": "lyg-shaguang-fish",
+    "name": "连云港沙光鱼",
+    "src": "assets/lyg-shaguang-soup.jpg",
+    "alt": "砂锅里的沙光鱼豆腐汤，鱼肉与豆腐浸在乳白汤中",
+    "note": "成菜参考"
+  },
+  {
+    "term": "大雪",
+    "index": 22,
+    "id": "conghua-dajiecai",
+    "name": "从化大芥菜",
+    "src": "assets/conghua-mustard-pork.jpg",
+    "alt": "大芥菜与猪肉焖熟的一锅热菜",
+    "note": "成菜参考"
+  },
+  {
+    "term": "冬至",
+    "index": 23,
+    "id": "taitung-winter-atemoya",
+    "name": "台东冬果凤梨释迦",
+    "src": "assets/taitung-atemoya-cut-generated.webp",
+    "alt": "凤梨释迦切开后乳白果肉与黑籽的示意图",
+    "note": "生成示意 · 非实物摄影"
+  },
+  {
+    "term": "小寒",
+    "index": 0,
+    "id": "rugao-takecai",
+    "name": "如皋黑塌菜",
+    "src": "assets/rugao-tatsoi-japan.jpg",
+    "alt": "塌棵菜叶与蒜片炒熟装在白盘中",
+    "note": "成菜参考"
+  },
+  {
+    "term": "大寒",
+    "index": 1,
+    "id": "zengcheng-caixin",
+    "name": "增城迟菜心",
+    "src": "assets/zengcheng-caixin-plem.jpg",
+    "alt": "白灼菜心茎叶，表面带少量油光",
+    "note": "成菜参考"
+  },
+  {
+    "term": "立春",
+    "index": 2,
+    "id": "jiaozhou-kailing-suo",
+    "name": "胶州湾开凌梭",
+    "src": "assets/jiaozhou-kailing-suo-steamed-generated.webp",
+    "alt": "姜葱清蒸梭鱼段的成菜示意图",
+    "note": "生成示意 · 非实物摄影"
+  },
+  {
+    "term": "雨水",
+    "index": 3,
+    "id": "jintang-fresh-morel",
+    "name": "金堂鲜羊肚菌",
+    "src": "assets/jintang-morel-soup.jpg",
+    "alt": "羊肚菌与鸡块在浅色汤中炖熟",
+    "note": "成菜参考"
+  },
+  {
+    "term": "惊蛰",
+    "index": 4,
+    "id": "tanglihua",
+    "name": "棠梨花",
+    "src": "assets/tanglihua-salad-generated.webp",
+    "alt": "棠梨花焯泡后拌蒜末、米醋和少量辣椒的示意图",
+    "note": "生成示意 · 非实物摄影"
+  },
+  {
+    "term": "春分",
+    "index": 5,
+    "id": "yangnaiguo",
+    "name": "羊奶果",
+    "src": "assets/yangnaiguo-cut.jpg",
+    "alt": "羊奶果剖开后露出浅色果肉与长形果核",
+    "note": "鲜果可食状态"
+  },
+  {
+    "term": "清明",
+    "index": 6,
+    "id": "cinenya",
+    "name": "刺嫩芽",
+    "src": "assets/cinengya-cold-final.jpg",
+    "alt": "刺嫩芽焯熟后沥水装盘",
+    "note": "成菜参考"
+  },
+  {
+    "term": "谷雨",
+    "index": 7,
+    "id": "shangyu-duanbing-cherry",
+    "name": "上虞下管短柄樱桃",
+    "src": "assets/shangyu-cherry-cut-generated.webp",
+    "alt": "小红樱桃剖开后露出柔嫩果肉和单颗果核的示意图",
+    "note": "生成示意 · 非实物摄影"
+  },
+  {
+    "term": "立夏",
+    "index": 8,
+    "id": "houtui-cai",
+    "name": "猴腿菜",
+    "src": "assets/houtui-pork.jpg",
+    "alt": "猴腿菜嫩茎与肉片炒熟装盘",
+    "note": "成菜参考"
+  },
+  {
+    "term": "小满",
+    "index": 9,
+    "id": "shanzhou-green-wheat-nianzhuan",
+    "name": "陕州新麦碾转",
+    "src": "assets/shanzhou-nianzhuan-eggs-generated.webp",
+    "alt": "短碎条碾转与鸡蛋炒熟装盘的示意图",
+    "note": "生成示意 · 非实物摄影"
+  },
+  {
+    "term": "芒种",
+    "index": 10,
+    "id": "tongxiang-zhuili",
+    "name": "桐乡槜李",
+    "src": "assets/tongxiang-zhuili-cut-generated.webp",
+    "alt": "槜李整果与剖开后黄色果肉、单颗果核的示意图",
+    "note": "生成示意 · 非实物摄影"
+  },
+  {
+    "term": "夏至",
+    "index": 11,
+    "id": "minqin-field-shacong",
+    "name": "民勤露地鲜沙葱",
+    "src": "assets/minqin-shacong-eggs.webp",
+    "alt": "鲜沙葱与鸡蛋、红椒炒熟后盛在白盘中",
+    "note": "成菜参考"
+  },
+  {
+    "term": "小暑",
+    "index": 12,
+    "id": "yunan-seedless-huangpi",
+    "name": "郁南无核黄皮",
+    "src": "assets/yunan-huangpi-cut.jpg",
+    "alt": "郁南无核黄皮剖开后露出半透明果肉",
+    "note": "鲜果可食状态"
+  },
+  {
+    "term": "大暑",
+    "index": 13,
+    "id": "gaochun-liuyuehuang",
+    "name": "高淳六月黄",
+    "src": "assets/gaochun-junhuang-cooked.jpg",
+    "alt": "清蒸中华绒螯蟹，蟹壳蒸至橙红",
+    "note": "成菜参考"
+  },
+  {
+    "term": "立秋",
+    "index": 14,
+    "id": "jitoumi",
+    "name": "鸡头米",
+    "src": "assets/jitoumi-soup.jpg",
+    "alt": "白瓷勺舀起桂花糖水里圆润的鲜鸡头米",
+    "note": "成菜参考"
+  },
+  {
+    "term": "处暑",
+    "index": 15,
+    "id": "chenghai-baoke",
+    "name": "澄海薄壳米",
+    "src": "assets/chenghai-baoke-rice.jpg",
+    "alt": "去壳薄壳米与金不换炒熟，盛在白盘上",
+    "note": "成菜参考"
+  },
+  {
+    "term": "白露",
+    "index": 16,
+    "id": "ruanzao-mihoutao",
+    "name": "软枣猕猴桃",
+    "src": "assets/ruanzao-cut.jpg",
+    "alt": "软枣猕猴桃切开后露出绿色果肉和细小黑籽",
+    "note": "鲜果可食状态"
+  }
+]

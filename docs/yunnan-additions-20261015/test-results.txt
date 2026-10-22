@@ -1,0 +1,916 @@
+TAP version 13
+# Subtest: homepage draw link opens tarot directly, including without JavaScript
+ok 1 - homepage draw link opens tarot directly, including without JavaScript
+  ---
+  duration_ms: 2.419042
+  type: 'test'
+  ...
+# Subtest: tarot.html: tarot first, flavor second, current page identified truthfully
+ok 2 - tarot.html: tarot first, flavor second, current page identified truthfully
+  ---
+  duration_ms: 1.551583
+  type: 'test'
+  ...
+# Subtest: lottery.html: tarot first, flavor second, current page identified truthfully
+ok 3 - lottery.html: tarot first, flavor second, current page identified truthfully
+  ---
+  duration_ms: 0.36275
+  type: 'test'
+  ...
+# Subtest: flavor remains an explicit usable page, not a redirect or removed quiz
+ok 4 - flavor remains an explicit usable page, not a redirect or removed quiz
+  ---
+  duration_ms: 0.215875
+  type: 'test'
+  ...
+# Subtest: tarot still exposes shuffle, cut, draw and three-card reveal
+ok 5 - tarot still exposes shuffle, cut, draw and three-card reveal
+  ---
+  duration_ms: 0.154875
+  type: 'test'
+  ...
+# Subtest: internal view binding never intercepts the external draw link
+ok 6 - internal view binding never intercepts the external draw link
+  ---
+  duration_ms: 0.797417
+  type: 'test'
+  ...
+# Subtest: both mode links and homepage draw work under root and compatible preview paths
+ok 7 - both mode links and homepage draw work under root and compatible preview paths
+  ---
+  duration_ms: 2.960666
+  type: 'test'
+  ...
+# Subtest: updated homepage loads the scoped navigation binding with a new cache key
+ok 8 - updated homepage loads the scoped navigation binding with a new cache key
+  ---
+  duration_ms: 0.917625
+  type: 'test'
+  ...
+# Subtest: stable canonical ingredient URLs discard unrelated query and fragments
+ok 9 - stable canonical ingredient URLs discard unrelated query and fragments
+  ---
+  duration_ms: 3.180042
+  type: 'test'
+  ...
+# Subtest: food ID is URL encoded and title is plain text
+ok 10 - food ID is URL encoded and title is plain text
+  ---
+  duration_ms: 0.391625
+  type: 'test'
+  ...
+# Subtest: native share is invoked synchronously once with exact title and URL
+ok 11 - native share is invoked synchronously once with exact title and URL
+  ---
+  duration_ms: 0.375875
+  type: 'test'
+  ...
+# Subtest: cancel does not copy and permits another share
+ok 12 - cancel does not copy and permits another share
+  ---
+  duration_ms: 0.555
+  type: 'test'
+  ...
+# Subtest: absent native share falls back to copying
+ok 13 - absent native share falls back to copying
+  ---
+  duration_ms: 0.365125
+  type: 'test'
+  ...
+# Subtest: unsupported native share falls back to copying
+ok 14 - unsupported native share falls back to copying
+  ---
+  duration_ms: 0.112583
+  type: 'test'
+  ...
+# Subtest: throws native share falls back to copying
+ok 15 - throws native share falls back to copying
+  ---
+  duration_ms: 0.230167
+  type: 'test'
+  ...
+# Subtest: rejected native share falls back to copying
+ok 16 - rejected native share falls back to copying
+  ---
+  duration_ms: 0.137625
+  type: 'test'
+  ...
+# Subtest: missing clipboard reveals selectable accessible manual link
+ok 17 - missing clipboard reveals selectable accessible manual link
+  ---
+  duration_ms: 10.165958
+  type: 'test'
+  ...
+# Subtest: denied clipboard reveals selectable accessible manual link
+ok 18 - denied clipboard reveals selectable accessible manual link
+  ---
+  duration_ms: 0.33625
+  type: 'test'
+  ...
+# Subtest: navigating to another food drops stale share errors and uses new food next time
+ok 19 - navigating to another food drops stale share errors and uses new food next time
+  ---
+  duration_ms: 0.168958
+  type: 'test'
+  ...
+# Subtest: closing while clipboard pending cannot show stale result or reenable closed view
+ok 20 - closing while clipboard pending cannot show stale result or reenable closed view
+  ---
+  duration_ms: 0.109
+  type: 'test'
+  ...
+# Subtest: manual copy ignores repeated clicks while busy
+ok 21 - manual copy ignores repeated clicks while busy
+  ---
+  duration_ms: 0.075166
+  type: 'test'
+  ...
+# Subtest: detail food photos belong to existing entries and ship with the site
+ok 22 - detail food photos belong to existing entries and ship with the site
+  ---
+  duration_ms: 5.560584
+  type: 'test'
+  ...
+# Subtest: all 76 recipes and sensory source fingerprints match; disabled stay explicit
+ok 23 - all 76 recipes and sensory source fingerprints match; disabled stay explicit
+  ---
+  duration_ms: 2.124792
+  type: 'test'
+  ...
+# Subtest: five-question schema exposes taste/texture/cooking/curiosity, not procurement or familiarity
+ok 24 - five-question schema exposes taste/texture/cooking/curiosity, not procurement or familiarity
+  ---
+  duration_ms: 1.481084
+  type: 'test'
+  ...
+# Subtest: taste changes score independently of texture
+ok 25 - taste changes score independently of texture
+  ---
+  duration_ms: 0.363916
+  type: 'test'
+  ...
+# Subtest: texture changes score independently of taste
+ok 26 - texture changes score independently of taste
+  ---
+  duration_ms: 0.133167
+  type: 'test'
+  ...
+# Subtest: cooking preference filters to tagged methods, not effort or purchase
+ok 27 - cooking preference filters to tagged methods, not effort or purchase
+  ---
+  duration_ms: 53.458917
+  type: 'test'
+  ...
+# Subtest: every selected preference group must match a food or its declared recipe
+ok 28 - every selected preference group must match a food or its declared recipe
+  ---
+  duration_ms: 0.123416
+  type: 'test'
+  ...
+# Subtest: sour/spicy seasoning is not attributed to raw lotus runners
+ok 29 - sour/spicy seasoning is not attributed to raw lotus runners
+  ---
+  duration_ms: 0.24425
+  type: 'test'
+  ...
+# Subtest: curiosity weights concrete features, not more random noise or assumed familiarity
+ok 30 - curiosity weights concrete features, not more random noise or assumed familiarity
+  ---
+  duration_ms: 0.278542
+  type: 'test'
+  ...
+# Subtest: high curiosity never admits disabled foods or overrides exclusions
+ok 31 - high curiosity never admits disabled foods or overrides exclusions
+  ---
+  duration_ms: 0.365416
+  type: 'test'
+  ...
+# Subtest: obsolete buy/effort/adventure properties do not change recommendations
+ok 32 - obsolete buy/effort/adventure properties do not change recommendations
+  ---
+  duration_ms: 130.158791
+  type: 'test'
+  ...
+# Subtest: stale sensory descriptions receive no preference or curiosity bonus
+ok 33 - stale sensory descriptions receive no preference or curiosity bonus
+  ---
+  duration_ms: 0.28025
+  type: 'test'
+  ...
+# Subtest: unmatched preferences keep a slot blank instead of recommending a mismatch
+ok 34 - unmatched preferences keep a slot blank instead of recommending a mismatch
+  ---
+  duration_ms: 0.598541
+  type: 'test'
+  ...
+# Subtest: question UI contains five new headings and no legacy input controls
+ok 35 - question UI contains five new headings and no legacy input controls
+  ---
+  duration_ms: 1.083583
+  type: 'test'
+  ...
+# Subtest: question page has no stale static element references after simplifying calendar
+ok 36 - question page has no stale static element references after simplifying calendar
+  ---
+  duration_ms: 0.26925
+  type: 'test'
+  ...
+# Subtest: calendar action uses native file sharing when available and explains user confirmation
+ok 37 - calendar action uses native file sharing when available and explains user confirmation
+  ---
+  duration_ms: 0.150583
+  type: 'test'
+  ...
+# Subtest: next six terms excludes current term and crosses New Year
+ok 38 - next six terms excludes current term and crosses New Year
+  ---
+  duration_ms: 0.451167
+  type: 'test'
+  ...
+# Subtest: exact term instant is current, not future
+ok 39 - exact term instant is current, not future
+  ---
+  duration_ms: 0.403208
+  type: 'test'
+  ...
+# Subtest: data horizon fails closed
+ok 40 - data horizon fails closed
+  ---
+  duration_ms: 0.057833
+  type: 'test'
+  ...
+# Subtest: whole term interval includes supported next-month days
+ok 41 - whole term interval includes supported next-month days
+  ---
+  duration_ms: 1.138583
+  type: 'test'
+  ...
+# Subtest: late-month records do not recommend early February morels
+ok 42 - late-month records do not recommend early February morels
+  ---
+  duration_ms: 1.048708
+  type: 'test'
+  ...
+# Subtest: multi-origin crop cannot borrow another region season
+ok 43 - multi-origin crop cannot borrow another region season
+  ---
+  duration_ms: 1.766792
+  type: 'test'
+  ...
+# Subtest: seed gives repeatable unique results with legal dates
+ok 44 - seed gives repeatable unique results with legal dates
+  ---
+  duration_ms: 58.44925
+  type: 'test'
+  ...
+# Subtest: mutated recipes fail closed
+ok 45 - mutated recipes fail closed
+  ---
+  duration_ms: 0.103458
+  type: 'test'
+  ...
+# Subtest: unknown custom exclusions block and known aliases resolve
+ok 46 - unknown custom exclusions block and known aliases resolve
+  ---
+  duration_ms: 0.60675
+  type: 'test'
+  ...
+# Subtest: vegan excludes animal additions including eggs, dairy and optional honey
+ok 47 - vegan excludes animal additions including eggs, dairy and optional honey
+  ---
+  duration_ms: 0.207958
+  type: 'test'
+  ...
+# Subtest: seafood restriction includes shrimp accompaniments
+ok 48 - seafood restriction includes shrimp accompaniments
+  ---
+  duration_ms: 0.028625
+  type: 'test'
+  ...
+# Subtest: unknown oil ingredients fail closed for peanut exclusion
+ok 49 - unknown oil ingredients fail closed for peanut exclusion
+  ---
+  duration_ms: 0.0245
+  type: 'test'
+  ...
+# Subtest: excluding all foods leaves honest blanks, even with maximum curiosity
+ok 50 - excluding all foods leaves honest blanks, even with maximum curiosity
+  ---
+  duration_ms: 0.943625
+  type: 'test'
+  ...
+# Subtest: locked foods stay fixed during full redraw
+ok 51 - locked foods stay fixed during full redraw
+  ---
+  duration_ms: 63.032667
+  type: 'test'
+  ...
+# Subtest: single-slot reroll preserves the other five
+ok 52 - single-slot reroll preserves the other five
+  ---
+  duration_ms: 134.035417
+  type: 'test'
+  ...
+# Subtest: matching reserves singleton slots before plentiful slots
+ok 53 - matching reserves singleton slots before plentiful slots
+  ---
+  duration_ms: 0.377667
+  type: 'test'
+  ...
+# Subtest: 12 months x 6 exclusions x 3 curiosity levels preserve restrictions and date windows
+ok 54 - 12 months x 6 exclusions x 3 curiosity levels preserve restrictions and date windows
+  ---
+  duration_ms: 943.964042
+  type: 'test'
+  ...
+# Subtest: time zones include China, Taipei and New York DST
+ok 55 - time zones include China, Taipei and New York DST
+  ---
+  duration_ms: 0.942667
+  type: 'test'
+  ...
+# Subtest: calendar defaults to online inquiry three days ahead without procurement answers
+ok 56 - calendar defaults to online inquiry three days ahead without procurement answers
+  ---
+  duration_ms: 43.959292
+  type: 'test'
+  ...
+# Subtest: ICS: six events and alarms, UTF8 folds <=75 bytes, CRLF, no RRULE
+ok 57 - ICS: six events and alarms, UTF8 folds <=75 bytes, CRLF, no RRULE
+  ---
+  duration_ms: 21.665125
+  type: 'test'
+  ...
+# Subtest: ICS UID survives redraw, SEQUENCE increases, preferences stay private
+ok 58 - ICS UID survives redraw, SEQUENCE increases, preferences stay private
+  ---
+  duration_ms: 41.854584
+  type: 'test'
+  ...
+# Subtest: ICS supports subsets and rejects dates outside supported windows
+ok 59 - ICS supports subsets and rejects dates outside supported windows
+  ---
+  duration_ms: 19.989625
+  type: 'test'
+  ...
+# Subtest: past inquiry reminders move forward; expired eating dates refuse export
+ok 60 - past inquiry reminders move forward; expired eating dates refuse export
+  ---
+  duration_ms: 20.614875
+  type: 'test'
+  ...
+# Subtest: ICS escapes text injection and folds without splitting emoji
+ok 61 - ICS escapes text injection and folds without splitting emoji
+  ---
+  duration_ms: 0.184333
+  type: 'test'
+  ...
+# Subtest: invalid new answers are rejected
+ok 62 - invalid new answers are rejected
+  ---
+  duration_ms: 0.111417
+  type: 'test'
+  ...
+# Subtest: seven additions are unique, complete, local illustrated and separately sourced
+ok 63 - seven additions are unique, complete, local illustrated and separately sourced
+  ---
+  duration_ms: 2.748125
+  type: 'test'
+  ...
+# Subtest: all new date windows include boundaries and exclude days just outside, including year rollover
+ok 64 - all new date windows include boundaries and exclude days just outside, including year rollover
+  ---
+  duration_ms: 2.340208
+  type: 'test'
+  ...
+# Subtest: tarot and six-term scheduling honor the same eating window rather than supply months
+ok 65 - tarot and six-term scheduling honor the same eating window rather than supply months
+  ---
+  duration_ms: 44.311458
+  type: 'test'
+  ...
+# Subtest: new recipes respect fish, wheat, egg and sesame exclusions and match declared preferences
+ok 66 - new recipes respect fish, wheat, egg and sesame exclusions and match declared preferences
+  ---
+  duration_ms: 0.604916
+  type: 'test'
+  ...
+# Subtest: home uses full solar-term intervals for late-April cherries and cross-year silver stems
+ok 67 - home uses full solar-term intervals for late-April cherries and cross-year silver stems
+  ---
+  duration_ms: 8.795583
+  type: 'test'
+  ...
+# Subtest: named regional foods retain their local identity before any introduced growing area
+ok 68 - named regional foods retain their local identity before any introduced growing area
+  ---
+  duration_ms: 2.377667
+  type: 'test'
+  ...
+# Subtest: every map origin has plausible regional coordinates, declared sources and its own months
+ok 69 - every map origin has plausible regional coordinates, declared sources and its own months
+  ---
+  duration_ms: 2.221084
+  type: 'test'
+  ...
+# Subtest: multi-origin scheduling selects only the origin in season across all twelve months
+ok 70 - multi-origin scheduling selects only the origin in season across all twelve months
+  ---
+  duration_ms: 1.250958
+  type: 'test'
+  ...
+# Subtest: season cards and hero label the active growing area rather than combining all origins
+ok 71 - season cards and hero label the active growing area rather than combining all origins
+  ---
+  duration_ms: 0.633
+  type: 'test'
+  ...
+# Subtest: regional flavors have their own declared sources and do not inherit the recipe flavor
+ok 72 - regional flavors have their own declared sources and do not inherit the recipe flavor
+  ---
+  duration_ms: 0.531167
+  type: 'test'
+  ...
+# Subtest: a map cluster keeps two locations of one food instead of dropping one by food ID
+ok 73 - a map cluster keeps two locations of one food instead of dropping one by food ID
+  ---
+  duration_ms: 0.496958
+  type: 'test'
+  ...
+# Subtest: catalog adds five distinct local food entries, not five renamed existing recipes
+ok 74 - catalog adds five distinct local food entries, not five renamed existing recipes
+  ---
+  duration_ms: 1.572584
+  type: 'test'
+  ...
+# Subtest: new recipes and sensory fingerprints match explicit review metadata
+ok 75 - new recipes and sensory fingerprints match explicit review metadata
+  ---
+  duration_ms: 0.537083
+  type: 'test'
+  ...
+# Subtest: all registered serving images exist and disclose their role
+ok 76 - all registered serving images exist and disclose their role
+  ---
+  duration_ms: 0.965417
+  type: 'test'
+  ...
+# Subtest: every food has an edible detail image, including the five former ingredient-only entries
+ok 77 - every food has an edible detail image, including the five former ingredient-only entries
+  ---
+  duration_ms: 0.875833
+  type: 'test'
+  ...
+# Subtest: exactly twelve existing fruit presentations are restored without inventing dish photos
+ok 78 - exactly twelve existing fruit presentations are restored without inventing dish photos
+  ---
+  duration_ms: 0.304709
+  type: 'test'
+  ...
+# Subtest: generated fruit illustrations remain labeled non-photographic
+ok 79 - generated fruit illustrations remain labeled non-photographic
+  ---
+  duration_ms: 0.134333
+  type: 'test'
+  ...
+# Subtest: invalid primary dish path is rejected instead of falling back to another image
+ok 80 - invalid primary dish path is rejected instead of falling back to another image
+  ---
+  duration_ms: 0.383708
+  type: 'test'
+  ...
+# Subtest: habitat image alone cannot silently qualify a food for the draw
+ok 81 - habitat image alone cannot silently qualify a food for the draw
+  ---
+  duration_ms: 0.151333
+  type: 'test'
+  ...
+# Subtest: September pool contains fifteen actual food IDs
+ok 82 - September pool contains fifteen actual food IDs
+  ---
+  duration_ms: 45.556833
+  type: 'test'
+  ...
+# Subtest: June pool contains eight including fresh rakkyo, grass shoots and sour quince
+ok 83 - June pool contains eight including fresh rakkyo, grass shoots and sour quince
+  ---
+  duration_ms: 0.714
+  type: 'test'
+  ...
+# Subtest: October midmonth pool is ten, without shifting frost-gated fruits earlier
+ok 84 - October midmonth pool is ten, without shifting frost-gated fruits earlier
+  ---
+  duration_ms: 0.661125
+  type: 'test'
+  ...
+# Subtest: three full September cycles cover every candidate once per cycle
+ok 85 - three full September cycles cover every candidate once per cycle
+  ---
+  duration_ms: 81.988792
+  type: 'test'
+  ...
+# Subtest: cycle guarantee also holds for sparse February and June pools
+ok 86 - cycle guarantee also holds for sparse February and June pools
+  ---
+  duration_ms: 20.017958
+  type: 'test'
+  ...
+# Subtest: one-card compatibility mode uses the same no-replacement cycle
+ok 87 - one-card compatibility mode uses the same no-replacement cycle
+  ---
+  duration_ms: 12.707459
+  type: 'test'
+  ...
+# Subtest: newly eligible food gets a chance before a previous food repeats
+ok 88 - newly eligible food gets a chance before a previous food repeats
+  ---
+  duration_ms: 0.797834
+  type: 'test'
+  ...
+# Subtest: out-of-season and excluded IDs do not occupy the active bag
+ok 89 - out-of-season and excluded IDs do not occupy the active bag
+  ---
+  duration_ms: 0.054208
+  type: 'test'
+  ...
+# Subtest: singleton keeps explicit repetition instead of inventing a dish
+ok 90 - singleton keeps explicit repetition instead of inventing a dish
+  ---
+  duration_ms: 0.405458
+  type: 'test'
+  ...
+# Subtest: restrictions and reviewed season dates still hold across all twelve months
+ok 91 - restrictions and reviewed season dates still hold across all twelve months
+  ---
+  duration_ms: 60.733041
+  type: 'test'
+  ...
+# Subtest: fresh rakkyo does not appear as a year-round preserved product
+ok 92 - fresh rakkyo does not appear as a year-round preserved product
+  ---
+  duration_ms: 2.900833
+  type: 'test'
+  ...
+# Subtest: pan-cai keeps Wenzhou winter and introduced Ningxia autumn separate
+ok 93 - pan-cai keeps Wenzhou winter and introduced Ningxia autumn separate
+  ---
+  duration_ms: 2.256125
+  type: 'test'
+  ...
+# Subtest: four disabled ingredients remain disabled despite larger pool
+ok 94 - four disabled ingredients remain disabled despite larger pool
+  ---
+  duration_ms: 0.610334
+  type: 'test'
+  ...
+# Subtest: live UI keeps full page-session draw history and no persistent personal tracking
+ok 95 - live UI keeps full page-session draw history and no persistent personal tracking
+  ---
+  duration_ms: 0.235166
+  type: 'test'
+  ...
+# Subtest: legacy entries retain month-based eligibility without new date windows
+ok 96 - legacy entries retain month-based eligibility without new date windows
+  ---
+  duration_ms: 0.156875
+  type: 'test'
+  ...
+# Subtest: cross-month current term counts its retained hero in all and category totals
+ok 97 - cross-month current term counts its retained hero in all and category totals
+  ---
+  duration_ms: 114.18825
+  type: 'test'
+  ...
+# Subtest: every term and category keeps consistent totals while retaining the hero once
+ok 98 - every term and category keeps consistent totals while retaining the hero once
+  ---
+  duration_ms: 147.258125
+  type: 'test'
+  ...
+# Subtest: shuffle assigns 12 unique identities and orientations before any selection
+ok 99 - shuffle assigns 12 unique identities and orientations before any selection
+  ---
+  duration_ms: 1.698959
+  type: 'test'
+  ...
+# Subtest: same seed yields same predealt deck
+ok 100 - same seed yields same predealt deck
+  ---
+  duration_ms: 2.176458
+  type: 'test'
+  ...
+# Subtest: shuffle diversifies identities and orientations across seeds
+ok 101 - shuffle diversifies identities and orientations across seeds
+  ---
+  duration_ms: 0.76425
+  type: 'test'
+  ...
+# Subtest: cut rotates the deck rather than choosing new cards or orientations
+ok 102 - cut rotates the deck rather than choosing new cards or orientations
+  ---
+  duration_ms: 0.320708
+  type: 'test'
+  ...
+# Subtest: three cut positions really differ
+ok 103 - three cut positions really differ
+  ---
+  duration_ms: 0.269333
+  type: 'test'
+  ...
+# Subtest: cutting twice is rejected
+ok 104 - cutting twice is rejected
+  ---
+  duration_ms: 0.1235
+  type: 'test'
+  ...
+# Subtest: cards cannot be taken before the cut
+ok 105 - cards cannot be taken before the cut
+  ---
+  duration_ms: 1.078125
+  type: 'test'
+  ...
+# Subtest: drawing is immutable and cannot pick the same position twice
+ok 106 - drawing is immutable and cannot pick the same position twice
+  ---
+  duration_ms: 0.095542
+  type: 'test'
+  ...
+# Subtest: invalid seed, cut, or card position is rejected
+ok 107 - invalid seed, cut, or card position is rejected
+  ---
+  duration_ms: 0.331208
+  type: 'test'
+  ...
+# Subtest: exactly three distinct cards advance into complete phase
+ok 108 - exactly three distinct cards advance into complete phase
+  ---
+  duration_ms: 0.296417
+  type: 'test'
+  ...
+# Subtest: positions carry three distinct named roles
+ok 109 - positions carry three distinct named roles
+  ---
+  duration_ms: 0.098959
+  type: 'test'
+  ...
+# Subtest: pick order remains meaningful
+ok 110 - pick order remains meaningful
+  ---
+  duration_ms: 66.891375
+  type: 'test'
+  ...
+# Subtest: cannot resolve a partial spread
+ok 111 - cannot resolve a partial spread
+  ---
+  duration_ms: 0.334625
+  type: 'test'
+  ...
+# Subtest: forged duplicate cards or inconsistent phases fail closed
+ok 112 - forged duplicate cards or inconsistent phases fail closed
+  ---
+  duration_ms: 0.195375
+  type: 'test'
+  ...
+# Subtest: complete spread resolves reproducibly to exactly one actual dish
+ok 113 - complete spread resolves reproducibly to exactly one actual dish
+  ---
+  duration_ms: 2.656375
+  type: 'test'
+  ...
+# Subtest: all three cards contribute to the symbolic scoring
+ok 114 - all three cards contribute to the symbolic scoring
+  ---
+  duration_ms: 0.163291
+  type: 'test'
+  ...
+# Subtest: all eight orientation patterns produce matching card and synthesis readings
+ok 115 - all eight orientation patterns produce matching card and synthesis readings
+  ---
+  duration_ms: 5.907416
+  type: 'test'
+  ...
+# Subtest: combined reading contains actual food and named dish, not three unrelated results
+ok 116 - combined reading contains actual food and named dish, not three unrelated results
+  ---
+  duration_ms: 0.927166
+  type: 'test'
+  ...
+# Subtest: seasonality and origin are rechecked on the reveal date
+ok 117 - seasonality and origin are rechecked on the reveal date
+  ---
+  duration_ms: 63.728417
+  type: 'test'
+  ...
+# Subtest: explicit restrictions remain hard exclusions across 120 month-profile combinations
+ok 118 - explicit restrictions remain hard exclusions across 120 month-profile combinations
+  ---
+  duration_ms: 42.810709
+  type: 'test'
+  ...
+# Subtest: unknown exclusions block rather than being ignored
+ok 119 - unknown exclusions block rather than being ignored
+  ---
+  duration_ms: 0.9945
+  type: 'test'
+  ...
+# Subtest: empty seasonal pool never produces a fake dish
+ok 120 - empty seasonal pool never produces a fake dish
+  ---
+  duration_ms: 0.501084
+  type: 'test'
+  ...
+# Subtest: recent dishes are avoided when choices remain; singleton repetition is explicit
+ok 121 - recent dishes are avoided when choices remain; singleton repetition is explicit
+  ---
+  duration_ms: 3.914458
+  type: 'test'
+  ...
+# Subtest: stale recipes and disabled records are not revived by the spread
+ok 122 - stale recipes and disabled records are not revived by the spread
+  ---
+  duration_ms: 0.706208
+  type: 'test'
+  ...
+# Subtest: share text includes all roles and the dish but no questionnaire answers
+ok 123 - share text includes all roles and the dish but no questionnaire answers
+  ---
+  duration_ms: 0.736583
+  type: 'test'
+  ...
+# Subtest: new UI keeps saved preferences private and uses no network or sensors
+ok 124 - new UI keeps saved preferences private and uses no network or sensors
+  ---
+  duration_ms: 0.422083
+  type: 'test'
+  ...
+# Subtest: page has a full ritual and only the new controller runs
+ok 125 - page has a full ritual and only the new controller runs
+  ---
+  duration_ms: 0.157
+  type: 'test'
+  ...
+# Subtest: 12 unique cards carry original upright, reversed, and closing readings
+ok 126 - 12 unique cards carry original upright, reversed, and closing readings
+  ---
+  duration_ms: 19.669875
+  type: 'test'
+  ...
+# Subtest: current term, not next six, is used
+ok 127 - current term, not next six, is used
+  ---
+  duration_ms: 0.370417
+  type: 'test'
+  ...
+# Subtest: incomplete temporal horizon fails closed
+ok 128 - incomplete temporal horizon fails closed
+  ---
+  duration_ms: 0.361833
+  type: 'test'
+  ...
+# Subtest: one dish is reproducible for a seed and chosen card position
+ok 129 - one dish is reproducible for a seed and chosen card position
+  ---
+  duration_ms: 28.923125
+  type: 'test'
+  ...
+# Subtest: all choices use current-day supported origin and recipe
+ok 130 - all choices use current-day supported origin and recipe
+  ---
+  duration_ms: 89.3575
+  type: 'test'
+  ...
+# Subtest: all 12 months retain default dish choices without a preference questionnaire
+ok 131 - all 12 months retain default dish choices without a preference questionnaire
+  ---
+  duration_ms: 47.276
+  type: 'test'
+  ...
+# Subtest: taste constraints from another mode do not enter this pool
+ok 132 - taste constraints from another mode do not enter this pool
+  ---
+  duration_ms: 0.576375
+  type: 'test'
+  ...
+# Subtest: known non-food restrictions remain hard exclusions, including accompaniments
+ok 133 - known non-food restrictions remain hard exclusions, including accompaniments
+  ---
+  duration_ms: 37.728
+  type: 'test'
+  ...
+# Subtest: custom food aliases are respected and unknown words never silently ignored
+ok 134 - custom food aliases are respected and unknown words never silently ignored
+  ---
+  duration_ms: 0.803625
+  type: 'test'
+  ...
+# Subtest: disabled and stale recipe profiles are not re-enabled by tarot
+ok 135 - disabled and stale recipe profiles are not re-enabled by tarot
+  ---
+  duration_ms: 2.622958
+  type: 'test'
+  ...
+# Subtest: no candidates yields a clear empty result and never relaxes exclusions
+ok 136 - no candidates yields a clear empty result and never relaxes exclusions
+  ---
+  duration_ms: 0.192583
+  type: 'test'
+  ...
+# Subtest: reroll skips last dish when another suitable dish exists
+ok 137 - reroll skips last dish when another suitable dish exists
+  ---
+  duration_ms: 8.84375
+  type: 'test'
+  ...
+# Subtest: a singleton may repeat but explicitly reports why
+ok 138 - a singleton may repeat but explicitly reports why
+  ---
+  duration_ms: 0.38625
+  type: 'test'
+  ...
+# Subtest: readings connect actual named dish, food, card and concrete cooking metaphor
+ok 139 - readings connect actual named dish, food, card and concrete cooking metaphor
+  ---
+  duration_ms: 12.602584
+  type: 'test'
+  ...
+# Subtest: seed changes expose diverse dishes, cards, and orientations
+ok 140 - seed changes expose diverse dishes, cards, and orientations
+  ---
+  duration_ms: 30.184
+  type: 'test'
+  ...
+# Subtest: every eligible asset exists and generated imagery is identified
+ok 141 - every eligible asset exists and generated imagery is identified
+  ---
+  duration_ms: 0.712292
+  type: 'test'
+  ...
+# Subtest: unsafe image paths are not eligible
+ok 142 - unsafe image paths are not eligible
+  ---
+  duration_ms: 0.593459
+  type: 'test'
+  ...
+# Subtest: copy includes entertainment disclosure and stable food link, no answers
+ok 143 - copy includes entertainment disclosure and stable food link, no answers
+  ---
+  duration_ms: 0.665083
+  type: 'test'
+  ...
+# Subtest: invalid seeds, positions and restrictions are rejected
+ok 144 - invalid seeds, positions and restrictions are rejected
+  ---
+  duration_ms: 0.071666
+  type: 'test'
+  ...
+# Subtest: tarot does not read saved preference or identity data
+ok 145 - tarot does not read saved preference or identity data
+  ---
+  duration_ms: 0.481208
+  type: 'test'
+  ...
+# Subtest: nine approved Yunnan entries join the catalog, with tree tomato excluded
+ok 146 - nine approved Yunnan entries join the catalog, with tree tomato excluded
+  ---
+  duration_ms: 0.935583
+  type: 'test'
+  ...
+# Subtest: single-month harvest reports are not expanded to year-round supply
+ok 147 - single-month harvest reports are not expanded to year-round supply
+  ---
+  duration_ms: 72.371625
+  type: 'test'
+  ...
+# Subtest: late emblica and bamboo worms respect their reviewed approximate boundaries
+ok 148 - late emblica and bamboo worms respect their reviewed approximate boundaries
+  ---
+  duration_ms: 1.961959
+  type: 'test'
+  ...
+# Subtest: banana blossom remains searchable and mapped without inventing harvest months or entering draws
+ok 149 - banana blossom remains searchable and mapped without inventing harvest months or entering draws
+  ---
+  duration_ms: 3.516375
+  type: 'test'
+  ...
+# Subtest: animal additions, fermented beans and insect sensitivity participate in exclusions
+ok 150 - animal additions, fermented beans and insect sensitivity participate in exclusions
+  ---
+  duration_ms: 0.798792
+  type: 'test'
+  ...
+# Subtest: new serving artwork exists, remains labeled generated, and cooked sour quince is not presented as fresh eating
+ok 151 - new serving artwork exists, remains labeled generated, and cooked sour quince is not presented as fresh eating
+  ---
+  duration_ms: 1.589375
+  type: 'test'
+  ...
+1..151
+# tests 151
+# suites 0
+# pass 151
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1705.182917

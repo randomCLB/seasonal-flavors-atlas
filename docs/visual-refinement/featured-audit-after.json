@@ -1,0 +1,266 @@
+[
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/shajiguo-400.webp",
+    "term": "秋分"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/cizhousun-whole-edited-generated.webp",
+    "term": "寒露"
+  },
+  {
+    "clip": {
+      "height": 283.796875,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/lintong-huojing-cut.jpg",
+    "term": "霜降"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/xunyang-guizao-juice-generated.webp",
+    "term": "立冬"
+  },
+  {
+    "clip": {
+      "height": 283.796875,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/lyg-shaguang-soup.jpg",
+    "term": "小雪"
+  },
+  {
+    "clip": {
+      "height": 283.796875,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/conghua-mustard-pork.jpg",
+    "term": "大雪"
+  },
+  {
+    "clip": {
+      "height": 329.1015625,
+      "width": 480,
+      "x": 78.296875,
+      "y": 461.1015625
+    },
+    "ready": true,
+    "src": "assets/taitung-atemoya-cut-generated.webp",
+    "term": "冬至"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/tatsoi-daylight-edited-generated.webp",
+    "term": "小寒"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/zengcheng-caixin-plem.jpg",
+    "term": "大寒"
+  },
+  {
+    "clip": {
+      "height": 283.796875,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/jiaozhou-kailing-suo-steamed-generated.webp",
+    "term": "立春"
+  },
+  {
+    "clip": {
+      "height": 283.796875,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/jintang-morel-soup.jpg",
+    "term": "雨水"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/tanglihua-salad-generated.webp",
+    "term": "惊蛰"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 78.296875,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/yangnaiguo-official.jpg",
+    "term": "春分"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 78.296875,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/cinenya.webp",
+    "term": "清明"
+  },
+  {
+    "clip": {
+      "height": 329.1015625,
+      "width": 480,
+      "x": 746.703125,
+      "y": 461.1015625
+    },
+    "ready": true,
+    "src": "assets/shangyu-cherry-cut-generated.webp",
+    "term": "谷雨"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/houtui-pork-edited-generated.webp",
+    "term": "立夏"
+  },
+  {
+    "clip": {
+      "height": 283.796875,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/shanzhou-nianzhuan-eggs-generated.webp",
+    "term": "小满"
+  },
+  {
+    "clip": {
+      "height": 283.796875,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/tongxiang-zhuili-cut-generated.webp",
+    "term": "芒种"
+  },
+  {
+    "clip": {
+      "height": 302.4921875,
+      "width": 480,
+      "x": 746.703125,
+      "y": 434.4921875
+    },
+    "ready": true,
+    "src": "assets/minqin-shacong-eggs.webp",
+    "term": "夏至"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/yunan-huangpi-cut.jpg",
+    "term": "小暑"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/crab-daylight-edited-generated.webp",
+    "term": "大暑"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/jitoumi-soup.jpg",
+    "term": "立秋"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 746.703125,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/chenghai-baoke-rice.jpg",
+    "term": "处暑"
+  },
+  {
+    "clip": {
+      "height": 260,
+      "width": 480,
+      "x": 78.296875,
+      "y": 422.796875
+    },
+    "ready": true,
+    "src": "assets/ruanzao-cut.jpg",
+    "term": "白露"
+  }
+]

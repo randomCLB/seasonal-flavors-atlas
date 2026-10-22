@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-label="通用锁管形态示意">
+  <rect width="720" height="520" fill="#e9e3d6"/>
+  <path d="M0 365c110-18 196 24 302 0s209-13 418 5v150H0z" fill="#cad4ce"/>
+  <g fill="#eee8d9" stroke="#546b65" stroke-width="7" stroke-linejoin="round">
+    <path d="M267 105c-38 54-60 137-56 212 4 78 43 116 89 116s85-38 89-116c4-75-18-158-56-212l-33-52z"/>
+    <path d="M244 152c-58 12-98 48-128 108 36 20 83 21 129 0m220-108c58 12 98 48 128 108-36 20-83 21-129 0"/>
+    <path d="M260 420c-13 30-19 56-13 79m97-79c13 30 19 56 13 79" fill="none"/>
+  </g>
+  <circle cx="296" cy="211" r="7" fill="#172927"/><circle cx="360" cy="211" r="7" fill="#172927"/>
+  <path d="M317 247c6 8 16 8 22 0" fill="none" stroke="#8c6551" stroke-width="5" stroke-linecap="round"/>
+  <text x="360" y="482" text-anchor="middle" fill="#354a45" font-family="sans-serif" font-size="20" letter-spacing="3">鎖管通用形态 · 非物种鉴定</text>
+</svg>

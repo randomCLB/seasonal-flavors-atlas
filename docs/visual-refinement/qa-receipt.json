@@ -1,0 +1,76 @@
+{
+  "preview": "http://127.0.0.1:8776/index.html?preview=visual-refinement-v6",
+  "scope": "local preview only; not published",
+  "panelMaterial": {
+    "background": "rgba(250, 248, 241, 0.76)",
+    "backdropBlur": "5px",
+    "equalWidthAndHeight": true
+  },
+  "desktop": {
+    "terms": 24,
+    "overflowFailures": 0,
+    "panelGeometryFailures": 0,
+    "uniqueSeasonIntros": 24
+  },
+  "mobile": {
+    "widths": [
+      320,
+      390
+    ],
+    "cases": 48,
+    "overflowFailures": 0,
+    "panelGeometryFailures": 0
+  },
+  "finalLongTitles": {
+    "terms": [
+      "冬至",
+      "立春",
+      "谷雨",
+      "小满",
+      "夏至"
+    ],
+    "widths": [
+      320,
+      1305
+    ],
+    "equalPanels": true,
+    "overflowFailures": 0
+  },
+  "tablet": {
+    "width": 760,
+    "overflow": false,
+    "panelSize": [
+      440,
+      252
+    ],
+    "exploreColumns": 1
+  },
+  "photos": {
+    "reviewedRenderedCards": 24,
+    "missingImages": 0,
+    "editedReferences": 4,
+    "swappedToExistingRawPhotos": [
+      "羊奶果",
+      "刺嫩芽"
+    ]
+  },
+  "interactions": {
+    "almanac": true,
+    "mapDoor": true,
+    "tarotDoor": true,
+    "featuredRecipe": true
+  },
+  "validation": {
+    "nodeSyntax": "passed",
+    "seasonCountTests": "2 passed",
+    "diffWhitespace": "passed"
+  },
+  "records": [
+    "desktop-check.json",
+    "mobile-check.json",
+    "featured-audit-after.json",
+    "edited-assets.json",
+    "image-edit-prompts.json",
+    "houtui-edit-prompt.txt"
+  ]
+}

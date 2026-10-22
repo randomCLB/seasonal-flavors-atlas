@@ -1,0 +1,14 @@
+{
+  "theme": "寒露",
+  "type": "AI生成节气插画，非实物或产地摄影",
+  "tool": "built-in image_gen",
+  "source": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-731b1f68-4d43-41c5-8ab5-0e1f192e48d0.png",
+  "web_asset": "dist/assets/jieqi/hanlu-v2.webp",
+  "dimensions": [
+    1200,
+    800
+  ],
+  "bytes": 282938,
+  "sha256": "d7272ea4b45f75570fe8ba9b1fe6a89d4b0b97bf84a04bb58b79849c9457dcf1",
+  "brief": "寒露：露珠清晰的芦苇叶，铜色秋叶、黄菊与冷晨水边薄雾；象牙纸上的细腻水粉植物插画。无月亮、霜雪、文字、水印。"
+}

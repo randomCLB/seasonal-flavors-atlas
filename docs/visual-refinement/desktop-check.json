@@ -1,0 +1,530 @@
+[
+  {
+    "image": "assets/shajiguo-400.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "稻穗低垂，昼夜平分。枝头的酸甜与秋水的鲜，都各有好滋味。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "秋分"
+  },
+  {
+    "image": "assets/cizhousun-whole-edited-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "露珠更凉，秋味更浓。剥一支秋笋，掰一颗熟柿，慢慢尝这一季。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "寒露"
+  },
+  {
+    "image": "assets/lintong-huojing-cut.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "叶边添霜，熟果更显温柔。掰开一颗柿子，把深秋的甜留在舌尖。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      }
+    ],
+    "term": "霜降"
+  },
+  {
+    "image": "assets/xunyang-guizao-juice-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "落叶渐多，餐桌添暖。一杯清饮、一盘热菜，接住入冬的凉意。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "立冬"
+  },
+  {
+    "image": "assets/lyg-shaguang-soup.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "薄雪将至，汤锅渐暖。清汤里的一口鱼鲜，适合慢慢喝、细细尝。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      }
+    ],
+    "term": "小雪"
+  },
+  {
+    "image": "assets/conghua-mustard-pork.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "雪意渐浓，锅里的香也浓了。让一盘热菜，把寒冷的夜晚暖起来。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      }
+    ],
+    "term": "大雪"
+  },
+  {
+    "image": "assets/taitung-atemoya-cut-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "日影最长，夜色也长。剖开一颗冬果，让清甜陪你度过这一晚。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 329.1015625,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 329.1015625,
+        "w": 480
+      }
+    ],
+    "term": "冬至"
+  },
+  {
+    "image": "assets/tatsoi-daylight-edited-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "窗外有霜，锅里有热气。深绿的叶菜，炒出冬日的一口清甜。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "小寒"
+  },
+  {
+    "image": "assets/zengcheng-caixin-plem.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "寒意到了深处，餐桌反而可以轻一些。白灼一盘嫩菜，细尝茎叶的甜。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "大寒"
+  },
+  {
+    "image": "assets/jiaozhou-kailing-suo-steamed-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "冰水初融，枝头渐绿。让一口鲜鱼，把餐桌带进春天。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      }
+    ],
+    "term": "立春"
+  },
+  {
+    "image": "assets/jintang-morel-soup.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "雨声细了，土香近了。一锅菌菇清汤，适合这个湿润的时节。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      }
+    ],
+    "term": "雨水"
+  },
+  {
+    "image": "assets/tanglihua-salad-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "春雷唤醒山野，花与嫩芽也有了滋味。尝鲜之前，先认清这一味。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "惊蛰"
+  },
+  {
+    "image": "assets/yangnaiguo-official.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "昼夜平分，春色渐浓。从枝头的酸甜小果，尝见春天的明亮。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "春分"
+  },
+  {
+    "image": "assets/cinenya.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "柳色新，山径青。把嫩芽处理妥当，再留住它的清香与脆。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "清明"
+  },
+  {
+    "image": "assets/shangyu-cherry-cut-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "春雨润过枝叶，鲜果渐红。剖开一颗，把柔嫩的春味尝仔细。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 329.1015625,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 329.1015625,
+        "w": 480
+      }
+    ],
+    "term": "谷雨"
+  },
+  {
+    "image": "assets/houtui-candidate.jpeg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "荷叶初展，山间仍有新绿。一盘嫩茎，让初夏的餐桌轻快起来。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "立夏"
+  },
+  {
+    "image": "assets/shanzhou-nianzhuan-eggs-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "麦穗渐满，新麦还有青香。趁这一段鲜嫩，把谷物也端上桌。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      }
+    ],
+    "term": "小满"
+  },
+  {
+    "image": "assets/tongxiang-zhuili-cut-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "田间忙着收与种，枝头忙着成熟。一颗鲜果，是忙碌时节的小停顿。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 283.796875,
+        "w": 480
+      }
+    ],
+    "term": "芒种"
+  },
+  {
+    "image": "assets/minqin-shacong-eggs.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "白昼最长，热意渐盛。少些厚重，多一点清鲜与爽口。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 302.4921875,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 302.4921875,
+        "w": 480
+      }
+    ],
+    "term": "夏至"
+  },
+  {
+    "image": "assets/yunan-huangpi-cut.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "蝉声渐起，果香正浓。剥开小果，让酸甜唤醒暑天的胃口。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "小暑"
+  },
+  {
+    "image": "assets/crab-daylight-edited-generated.webp",
+    "imageReady": true,
+    "inside": true,
+    "intro": "荷塘深绿，暑气正浓。水边的一口鲜，值得慢慢剥、细细尝。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "大暑"
+  },
+  {
+    "image": "assets/jitoumi-soup.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "风里初有秋意，暑热还未退。一碗清甜，先把心绪放慢。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "立秋"
+  },
+  {
+    "image": "assets/chenghai-baoke-rice.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "热意渐收，海风更近。山野与水边的鲜味，都适合趁新鲜下锅。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "处暑"
+  },
+  {
+    "image": "assets/ruanzao-cut.jpg",
+    "imageReady": true,
+    "inside": true,
+    "intro": "清晨露白，果实渐丰。切开小果，看看秋日藏在果肉里的颜色。",
+    "overflow": false,
+    "panels": [
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      },
+      {
+        "bg": "rgba(250, 248, 241, 0.76)",
+        "blur": "blur(5px)",
+        "h": 260,
+        "w": 480
+      }
+    ],
+    "term": "白露"
+  }
+]

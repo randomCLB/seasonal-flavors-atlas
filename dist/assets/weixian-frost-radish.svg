@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">青萝卜通用形态示意</title><desc id="desc">青皮白芯萝卜与横切面，通用编辑插画，不用于潍县品系鉴别。</desc>
+  <rect width="640" height="480" fill="#eee9dc"/><ellipse cx="328" cy="396" rx="220" ry="30" fill="#d6cfbd"/>
+  <path d="M154 183c47-68 146-88 227-43 56 31 71 81 47 122-32 54-111 77-194 51-78-24-122-78-80-130Z" fill="#648354" stroke="#405e45" stroke-width="8"/>
+  <path d="M183 202c46-44 121-60 185-29 39 19 50 45 34 70-22 35-80 51-139 34-55-16-96-46-80-75Z" fill="#f1ead7"/>
+  <path d="M183 216c38-31 96-44 148-26 32 11 48 28 42 44-13 30-63 46-112 34-45-11-81-30-78-52Z" fill="#e8e1cf"/>
+  <path d="M221 143c-23-56-16-96 0-120 13 39 15 70 12 105m-5 13c7-61 30-98 56-119-9 44-24 77-44 112m-15 10c-35-45-71-63-104-67 28 32 57 51 93 68" fill="none" stroke="#58784b" stroke-width="17" stroke-linecap="round"/>
+  <path d="M439 279c0-59 29-94 70-94s70 35 70 94-30 93-70 93-70-34-70-93Z" fill="#638653" stroke="#405e45" stroke-width="8"/>
+  <circle cx="509" cy="279" r="47" fill="#f3eddd"/><circle cx="509" cy="279" r="31" fill="#e6dfcf"/>
+  <g fill="#d9d1bd"><circle cx="507" cy="257" r="2"/><circle cx="526" cy="280" r="2"/><circle cx="495" cy="295" r="2"/></g>
+</svg>

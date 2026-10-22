@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">茭白嫩茎编辑插画</title>
+  <desc id="desc">数支削去外壳的乳白色茭白斜放在浅色陶盘上，旁边有几片青绿色叶鞘。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f4efe4"/><stop offset="1" stop-color="#e5dfd2"/></linearGradient>
+    <linearGradient id="stalk" x1="0" x2="1"><stop stop-color="#ded8c8"/><stop offset=".35" stop-color="#fffdf2"/><stop offset=".72" stop-color="#f3eddd"/><stop offset="1" stop-color="#d5cebc"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="17"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#paper)"/>
+  <path d="M0 690c189-55 365-20 544-38 247-25 435 26 656-15v263H0Z" fill="#d9dfcf" opacity=".55"/>
+  <ellipse cx="603" cy="650" rx="396" ry="140" fill="#534b40" opacity=".18" filter="url(#shadow)"/>
+  <ellipse cx="600" cy="613" rx="430" ry="150" fill="#c5bda9"/>
+  <ellipse cx="600" cy="595" rx="405" ry="132" fill="#f5f0e6" stroke="#b8ad98" stroke-width="8"/>
+  <path d="M282 281c42-82 85-128 126-133 23-3 48 11 58 32 21 43 4 139-20 226-22 79-55 177-91 211-25 23-72 15-97-11-26-27-5-103 7-168 15-76-6-121 17-157Z" fill="url(#stalk)" stroke="#c8c0af" stroke-width="8"/>
+  <path d="M480 211c38-79 77-119 115-122 27-2 52 15 60 39 15 45-6 139-31 222-27 89-58 181-92 210-28 24-77 12-99-17-22-28 2-96 14-159 16-81 10-137 33-173Z" fill="url(#stalk)" stroke="#c8c0af" stroke-width="8"/>
+  <path d="M680 268c33-70 66-104 101-106 25-1 48 17 55 41 13 42-9 117-32 190-27 86-51 158-81 183-24 20-67 10-87-14-21-25-3-86 9-145 13-65 17-119 35-149Z" fill="url(#stalk)" stroke="#c8c0af" stroke-width="8"/>
+  <path d="M272 350c-70-132-103-202-95-251 63 28 123 111 159 206M414 273c-38-137-43-210-18-257 54 62 81 137 84 229M643 295c25-143 56-203 98-230 18 81 7 155-30 241" fill="none" stroke="#6f8060" stroke-width="28" stroke-linecap="round"/>
+  <path d="M280 347c-25-72-56-139-92-201M415 274c2-76-2-147-15-210M643 294c34-73 57-132 78-194" fill="none" stroke="#aeb48e" stroke-width="7" opacity=".8"/>
+  <path d="M341 321c-18 40-26 89-33 132M526 268c-16 53-27 106-36 161M728 323c-11 42-24 82-38 123" fill="none" stroke="#fffdf2" stroke-width="8" opacity=".7"/>
+  <text x="78" y="108" fill="#52634f" font-family="serif" font-size="27" letter-spacing="5">初夏 · 水田鲜茎</text>
+</svg>

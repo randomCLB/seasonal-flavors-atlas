@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">高山红薯形态示意</title>
+  <desc id="desc">深红薯皮与橘色薯肉的编辑插画，不代表五华龙村产地实拍。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f6f0e5"/><stop offset="1" stop-color="#e9dfcf"/></linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#a84b38"/><stop offset=".48" stop-color="#7e332d"/><stop offset="1" stop-color="#542a28"/></linearGradient>
+    <radialGradient id="flesh" cx="40%" cy="30%"><stop stop-color="#ffc45e"/><stop offset="1" stop-color="#e98932"/></radialGradient>
+    <linearGradient id="ceramic" x2="0" y2="1"><stop stop-color="#eee9dc"/><stop offset="1" stop-color="#c6c1ad"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#paper)"/>
+  <circle cx="950" cy="160" r="170" fill="#fffaf0" opacity=".48"/>
+  <ellipse cx="602" cy="728" rx="382" ry="49" fill="#63533f" opacity=".18" filter="url(#shadow)"/>
+  <path d="M175 655 Q600 818 1025 655 L962 758 Q600 853 238 758Z" fill="url(#ceramic)"/>
+  <ellipse cx="600" cy="656" rx="425" ry="120" fill="#f6f2e7" stroke="#b8b09a" stroke-width="8"/>
+  <path d="M318 532 C279 461 330 389 455 372 C584 355 681 424 670 489 C658 557 510 613 392 595 C347 588 326 566 318 532Z" fill="url(#skin)" stroke="#61332d" stroke-width="9"/>
+  <path d="M356 502 C364 458 416 422 476 420 M397 565 Q515 590 618 520" fill="none" stroke="#d78b6d" stroke-width="11" opacity=".38" stroke-linecap="round"/>
+  <path d="M601 532 C592 462 652 406 759 400 C869 394 949 448 936 506 C922 568 815 605 699 591 C642 585 610 562 601 532Z" fill="url(#skin)" stroke="#61332d" stroke-width="9"/>
+  <path d="M654 494 Q700 426 781 431 M673 565 Q796 598 888 537" fill="none" stroke="#d78b6d" stroke-width="10" opacity=".38" stroke-linecap="round"/>
+  <g transform="rotate(-12 520 625)">
+    <ellipse cx="520" cy="625" rx="161" ry="98" fill="url(#skin)" stroke="#61332d" stroke-width="8"/>
+    <ellipse cx="520" cy="625" rx="137" ry="77" fill="url(#flesh)" stroke="#f3d69b" stroke-width="9"/>
+    <path d="M393 620 Q520 584 647 620 M410 654 Q520 685 630 651" fill="none" stroke="#ffd88b" stroke-width="5" opacity=".6"/>
+    <circle cx="520" cy="625" r="7" fill="#d17a32" opacity=".45"/>
+  </g>
+  <path d="M339 338 C394 300 443 286 491 278 M762 352 C810 319 852 302 900 296" fill="none" stroke="#556948" stroke-width="13" stroke-linecap="round"/>
+  <path d="M430 303 C394 249 338 245 300 269 C326 318 376 335 430 303Z" fill="#61744e"/>
+  <path d="M816 323 C844 265 898 250 940 274 C925 326 875 350 816 323Z" fill="#6b7b51"/>
+</svg>

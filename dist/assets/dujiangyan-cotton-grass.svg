@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">棉花草嫩苗编辑示意</title><desc id="desc">春季嫩苗与绒球花序的通用植物插画；地方俗名未作物种鉴定。</desc>
+  <rect width="800" height="600" fill="#f0ecdf"/><path d="M0 478q166-62 352-7t448-12v141H0Z" fill="#d5d8c8"/>
+  <path d="M397 469q6-99 0-197m0 118q-90-51-151-120m149 95q88-69 148-121m-146 64q-40-102-55-171m67 154q53-91 78-158" fill="none" stroke="#748675" stroke-width="12" stroke-linecap="round"/>
+  <g fill="#aeb89e" stroke="#748675" stroke-width="4"><ellipse cx="230" cy="267" rx="79" ry="27" transform="rotate(36 230 267)"/><ellipse cx="544" cy="270" rx="83" ry="27" transform="rotate(-38 544 270)"/><ellipse cx="337" cy="180" rx="72" ry="25" transform="rotate(72 337 180)"/><ellipse cx="471" cy="213" rx="76" ry="26" transform="rotate(-58 471 213)"/><ellipse cx="305" cy="364" rx="77" ry="25" transform="rotate(19 305 364)"/></g>
+  <g fill="#ded9c7" stroke="#9b9a84" stroke-width="3"><circle cx="398" cy="111" r="27"/><circle cx="447" cy="103" r="24"/><circle cx="423" cy="68" r="25"/><circle cx="470" cy="64" r="22"/></g><path d="M397 142v58" stroke="#788775" stroke-width="10"/>
+  <text x="54" y="76" font-family="serif" font-size="23" fill="#51685c" letter-spacing="4">SPRING HERB · DUJIANGYAN</text>
+</svg>

@@ -1,0 +1,24 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),{execFileSync}=require('node:child_process');
+const root=path.join(__dirname,'..');
+test('Sanyang Ougan is a source-backed Small Snow harvest entry with a separate post-harvest eating stage',()=>{
+ const ctx={window:{FOODS:[],LOTTERY_PROFILES:{}}};vm.createContext(ctx);
+ for(const name of ['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name+'.js'),'utf8'),ctx);
+ const id='wenzhou-sanyang-ougan',food=ctx.window.FOODS.find(x=>x.id===id),C=require('../dist/lottery-core.js'),profile=ctx.window.LOTTERY_PROFILES[id];
+ assert.ok(food);assert.deepEqual(Array.from(food.peakTerms),[21]);assert.deepEqual(Array.from(food.entryTerms),[21]);
+ assert.equal(food.seasonLabel,'小雪前后采收');assert.match(food.seasonEvidence,/采期约半个月.*预贮40天以上/);assert.match(food.season,/采后经贮藏转色转味/);assert.doesNotMatch(food.season,/不代表.*已有货/);
+ assert.doesNotMatch(food.season,/通常在小雪前后集中采摘/);assert.equal(food.place,'');assert.equal(food.context,'');
+ assert.match(food.pitfall,/轻微苦味是瓯柑风味/);assert.match(food.imageCaption,/橙类实拍/);assert.ok(food.sources.some(x=>x[1]==='https://news.66wz.com/system/2019/11/22/105211293.shtml'));
+ assert.ok(fs.existsSync(path.join(root,'dist',food.image)));assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
+ assert.equal(food.image.split('.').pop(),'jpg');assert.ok(fs.readFileSync(path.join(root,'dist',food.image)).subarray(0,2).equals(Buffer.from([0xff,0xd8])));assert.equal(food.image,food.cardImage);assert.equal(food.image,food.tarotImage.src);
+ const detailCtx={FoodPurchase:{esc:value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),render:()=>'<button>去找这味</button>'},FoodRecords:{render:()=>''}};detailCtx.window=detailCtx;vm.createContext(detailCtx);vm.runInContext(fs.readFileSync(path.join(root,'dist','food-detail.js'),'utf8'),detailCtx);
+ const detail=detailCtx.FoodDetail.html(food,{recognition:{src:food.image,alt:food.imageAlt,note:food.imageCaption,fit:'cover'},seasonLabel:food.seasonLabel,category:'水果',originHtml:'',similar:[],imageAttrs:''});
+ assert.match(detail,/采后经贮藏转色转味，再上市鲜食。/);assert.match(detail,/相近风味/);assert.match(detail,/和它风味相近的，还有哪些？/);assert.doesNotMatch(detail,/reader-evidence|换个口味|喜欢这一口|不代表本站已逐味实地试吃|历史采收规律不代表/);assert.doesNotMatch(detail,/入口前先留意/);
+ const index=fs.readFileSync(path.join(root,'dist','index.html'),'utf8');assert.match(index,/循着相近风味/);assert.match(index,/按共同风味寻找相近食材/);assert.doesNotMatch(index,/换个口味|喜欢一种口感\？拖动星图/);
+ assert.match(fs.readFileSync(path.join(root,'dist','food-detail.css'),'utf8'),/\.reader-portrait:hover figcaption/);assert.match(fs.readFileSync(path.join(root,'dist','food-detail.css'),'utf8'),/\.reader-portrait figcaption\{[^}]*opacity:0/);assert.doesNotMatch(fs.readFileSync(path.join(root,'dist','food-detail.css'),'utf8'),/\.reader-evidence/);
+ const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'}));
+ const lidong=audit.rows.find(x=>x.term==='立冬'),smallSnow=audit.rows.find(x=>x.term==='小雪'),majorSnow=audit.rows.find(x=>x.term==='大雪');
+ assert.ok(!lidong.foodIds.includes(id));assert.ok(smallSnow.foodIds.includes(id));assert.ok(!majorSnow.foodIds.includes(id));
+ ;
+ ;
+});

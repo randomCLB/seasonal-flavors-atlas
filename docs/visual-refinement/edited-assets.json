@@ -1,0 +1,42 @@
+[
+  {
+    "asset": "dist/assets/cizhousun-whole-edited-generated.webp",
+    "dimensions": [
+      900,
+      1200
+    ],
+    "sha256": "eb634158eca1fbfb92c4283ba572e2797df77ba1f40521781ca475b1a1ad4bf6",
+    "tool": "built-in image_gen",
+    "usage": "generic editorial reference; not a cultivar or origin authentication"
+  },
+  {
+    "asset": "dist/assets/tatsoi-daylight-edited-generated.webp",
+    "dimensions": [
+      900,
+      1200
+    ],
+    "sha256": "33ba7a6201d887a6166682f637519480b382c05846a19f677d25beda94676b63",
+    "tool": "built-in image_gen",
+    "usage": "generic editorial reference; not a cultivar or origin authentication"
+  },
+  {
+    "asset": "dist/assets/crab-daylight-edited-generated.webp",
+    "dimensions": [
+      900,
+      1200
+    ],
+    "sha256": "39e31f4dfac877c6d51bc98099c3c08bd88d45e58d2d8e7303b83d70e3d5f2cc",
+    "tool": "built-in image_gen",
+    "usage": "generic editorial reference; not a cultivar or origin authentication"
+  },
+  {
+    "asset": "dist/assets/houtui-pork-edited-generated.webp",
+    "dimensions": [
+      900,
+      1200
+    ],
+    "sha256": "478674f522d53dec6c9d27207e98b2b8feb041eb5284216d2af1d271b6611fda",
+    "tool": "built-in image_gen",
+    "usage": "generic editorial reference; not species or origin authentication"
+  }
+]

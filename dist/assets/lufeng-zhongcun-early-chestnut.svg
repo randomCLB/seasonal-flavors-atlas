@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">板栗形态示意</title>
+  <desc id="desc">深棕色栗果、栗壳与金色栗仁的编辑插画，不代表禄丰实拍或品种鉴别。</desc>
+  <rect width="720" height="900" fill="#eee9db"/>
+  <path d="M0 655c145-45 255-35 364 10 129 52 251 47 356-1v236H0z" fill="#d8cdb5"/>
+  <ellipse cx="355" cy="708" rx="230" ry="44" fill="#c5b99f" opacity=".55"/>
+  <path d="M175 506c15-137 107-260 219-307 96-40 185-6 222 73 42 89 11 228-70 320-73 83-221 114-316 59-44-26-61-74-55-145z" fill="#744631"/>
+  <path d="M198 503c30-119 110-219 199-257 79-34 145-8 176 54 37 73 8 191-56 266-61 72-181 100-259 55-45-26-72-63-60-118z" fill="#9b6036"/>
+  <path d="M251 481c20-91 84-171 151-198 53-22 101 0 121 43 27 58 5 145-43 203-46 54-132 73-187 41-31-18-52-47-42-89z" fill="#e6c98a"/>
+  <path d="M225 499c30-12 65-18 104-16m-83 53c34-12 69-16 107-12m-77 53c28-11 58-14 86-10" fill="none" stroke="#c49a5f" stroke-width="6" stroke-linecap="round" opacity=".72"/>
+  <path d="M462 229c35-37 70-57 105-61-13 37-37 67-74 91" fill="#526443"/>
+  <path d="M506 246c22-21 42-34 62-40" fill="none" stroke="#d6d2af" stroke-width="5" stroke-linecap="round"/>
+  <text x="72" y="112" fill="#253a31" font-family="serif" font-size="27" letter-spacing="5">板栗 · 形态示意</text>
+  <path d="M73 143h126" stroke="#8b806c" stroke-width="2"/>
+  <text x="73" y="825" fill="#5c5b4c" font-family="sans-serif" font-size="17" letter-spacing="2">非禄丰实拍 · 非品种鉴别图</text>
+</svg>

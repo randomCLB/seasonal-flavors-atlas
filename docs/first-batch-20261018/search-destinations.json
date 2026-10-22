@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-10-18",
+  "scope": "Actual unauthenticated Chromium navigation. No inventory/seller/payment verification.",
+  "destinations": [
+    {
+      "platform": "必应",
+      "requested": "https://www.bing.com/search?q=%E5%85%B0%E5%B7%9E+%E4%B8%83%E9%87%8C%E6%B2%B3+%E9%B2%9C%E7%99%BE%E5%90%88+%E9%87%87%E6%8C%96",
+      "status": 200,
+      "url": "https://cn.bing.com/search?q=%E5%85%B0%E5%B7%9E+%E4%B8%83%E9%87%8C%E6%B2%B3+%E9%B2%9C%E7%99%BE%E5%90%88+%E9%87%87%E6%8C%96",
+      "title": "兰州 七里河 鲜百合 采挖 - 搜索",
+      "excerpt": "跳至内容\n辅助功能反馈\n国内版国际版\n网页图片视频学术词典地图航班",
+      "result": "search results title and query read back"
+    },
+    {
+      "platform": "淘宝",
+      "requested": "https://s.taobao.com/search?q=%E5%85%B0%E5%B7%9E%20%E4%B8%83%E9%87%8C%E6%B2%B3%20%E9%B2%9C%E7%99%BE%E5%90%88%20%E9%87%87%E6%8C%96",
+      "status": 200,
+      "url": "https://s.taobao.com/search?q=%E5%85%B0%E5%B7%9E%20%E4%B8%83%E9%87%8C%E6%B2%B3%20%E9%B2%9C%E7%99%BE%E5%90%88%20%E9%87%87%E6%8C%96",
+      "title": "",
+      "excerpt": "搜索\n搜同款\n中国大陆\n\n亲，请登录\n免费注册\n淘宝网首页\n已买到的宝贝\n我的淘宝\n\n\n购物车\n\n收藏夹\n\n免费开店\n\n千牛卖家中心\n\n帮助中心\n\n搜索\n搜同款\n所有宝贝\n天猫\n淘宝\n店铺\n企业购\n发货地\n1\n/100\n综合\n销量\n价格\n加载中...",
+      "queryValues": [
+        {
+          "name": "",
+          "value": "兰州 七里河 鲜百合 采挖"
+        },
+        {
+          "name": "q",
+          "value": "兰州 七里河 鲜百合 采挖"
+        }
+      ],
+      "result": "search shell reached; products not verified; login may be required"
+    },
+    {
+      "platform": "京东",
+      "requested": "https://search.jd.com/Search?keyword=%E5%85%B0%E5%B7%9E+%E4%B8%83%E9%87%8C%E6%B2%B3+%E9%B2%9C%E7%99%BE%E5%90%88+%E9%87%87%E6%8C%96",
+      "status": 200,
+      "url": "https://cfe.m.jd.com/privatedomain/risk_handler/03101900/?evApi=color-mesh_A_SC_pc_search_java_Search&evExt=&evtype=3&lgid=2193&returnurl=https%3A%2F%2Fsearch.jd.com%2FSearch%3Fkeyword%3D%25E5%2585%25B0%25E5%25B7%259E%2B%25E4%25B8%2583%25E9%2587%258C%25E6%25B2%25B3%2B%25E9%25B2%259C%25E7%2599%25BE%25E5%2590%2588%2B%25E9%2587%2587%25E6%258C%2596&rpid=rp-188540931-10169-1792345161326",
+      "title": "京东验证",
+      "excerpt": "验证一下，购物无忧\n请点击下方按钮登录，查看更多精彩内容\n前往登录\n遇到问题点我反馈",
+      "result": "login verification wall; product results not verified"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">水蜜桃形态示意</title><desc id="desc">粉桃与叶片的编辑插画，不代表南汇实拍或品种鉴别。</desc>
+  <rect width="720" height="900" fill="#eee9db"/><path d="M0 676q170-55 360 8t360 0v216H0z" fill="#ddd2bc"/>
+  <ellipse cx="358" cy="706" rx="220" ry="35" fill="#c7baa2" opacity=".5"/>
+  <path d="M360 278c-45-45-143-62-204-8-75 66-63 224 2 333 53 90 150 125 204 74 55 51 151 16 205-74 65-109 77-267 2-333-61-54-159-37-204 8-1-38-8-70-29-96-9 33 0 67 24 96z" fill="#d98785"/>
+  <path d="M358 298c-45-41-113-52-163-11-61 51-48 189 8 278 43 70 104 97 155 58z" fill="#efb2a1"/>
+  <path d="M365 297c48-40 111-51 162-10 61 51 48 189-8 278-43 70-103 97-154 58z" fill="#f3c1a9"/>
+  <path d="M364 307c5 71 3 182-2 307" fill="none" stroke="#b96868" stroke-width="7" opacity=".6"/>
+  <path d="M330 258c-70-54-134-63-188-23 55 53 111 74 182 61m65-37c68-66 128-85 185-59-46 63-101 96-172 98" fill="#61704c"/>
+  <path d="M174 236c50 6 100 29 150 58m252-95c-55 18-103 47-147 88" fill="none" stroke="#9ba177" stroke-width="5"/>
+  <text x="72" y="112" fill="#253a31" font-family="serif" font-size="27" letter-spacing="5">水蜜桃 · 形态示意</text><path d="M73 143h126" stroke="#8b806c" stroke-width="2"/>
+  <text x="73" y="825" fill="#5c5b4c" font-family="sans-serif" font-size="17" letter-spacing="2">非南汇实拍 · 非品种鉴别图</text>
+</svg>

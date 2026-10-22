@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">嫩芽编辑示意</title>
+  <desc id="desc">以纸面线稿表现一束叶片和嫩枝，仅作版面示意，不用于物种识别。</desc>
+  <rect width="900" height="700" fill="#eeeade"/>
+  <rect x="42" y="42" width="816" height="616" fill="#f7f4eb" stroke="#d8d1bd" stroke-width="2"/>
+  <path d="M450 574 C438 474 454 365 493 180 M450 574 C401 464 359 357 305 236 M450 574 C497 472 567 380 641 291 M450 574 C395 530 331 490 249 457" fill="none" stroke="#536b51" stroke-width="11" stroke-linecap="round"/>
+  <g fill="#9eaa79" stroke="#536b51" stroke-width="5">
+    <path d="M458 408 C363 398 320 337 327 286 C390 285 444 324 458 408Z"/>
+    <path d="M468 355 C539 321 575 258 559 215 C502 225 464 275 468 355Z"/>
+    <path d="M394 469 C306 485 245 450 225 406 C278 376 344 398 394 469Z"/>
+    <path d="M509 453 C573 395 646 388 683 418 C652 473 590 494 509 453Z"/>
+    <path d="M432 291 C395 246 397 195 430 170 C464 201 467 247 432 291Z"/>
+    <path d="M389 519 C331 548 274 535 252 500 C291 463 344 469 389 519Z"/>
+  </g>
+  <g fill="none" stroke="#748260" stroke-width="3" opacity=".8">
+    <path d="M450 563 C412 459 376 373 339 303 M468 348 C509 298 535 254 553 227 M378 464 C324 439 281 422 237 410 M532 448 C584 428 631 420 670 420 M433 278 C427 235 427 205 430 183"/>
+  </g>
+  <circle cx="706" cy="154" r="48" fill="#e7e2d4"/>
+  <text x="98" y="604" fill="#59624d" font-family="serif" font-size="24" letter-spacing="4">春日嫩芽 · 编辑示意</text>
+</svg>

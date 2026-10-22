@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">苏州光福寒露晚桂编辑插画</title>
+  <desc id="desc">米色纸面上一枝桂花与一只糖渍桂花罐，原创示意，不是实物摄影。</desc>
+  <rect width="960" height="720" fill="#eee9dc"/>
+  <path d="M94 585C300 500 468 376 810 126" fill="none" stroke="#263d31" stroke-width="15" stroke-linecap="round"/>
+  <g fill="#718064" stroke="#344b39" stroke-width="4">
+    <path d="M265 491C207 400 153 390 119 398c10 63 62 106 146 106Z"/>
+    <path d="M392 418c-4-98 32-145 67-164 31 60 11 116-53 178Z"/>
+    <path d="M536 326c-18-88 2-142 35-176 43 50 40 111-17 192Z"/>
+    <path d="M633 254c56-75 112-87 153-78-16 63-70 98-153 78Z"/>
+  </g>
+  <g fill="#dfa34f" stroke="#a87432" stroke-width="3">
+    <g transform="translate(340 365)"><circle r="14"/><path d="M0-9 5-39 12-13 38-25 18-4 41 8 12 10 13 39 0 14-19 31-12 9-40 4-13-3Z"/></g>
+    <g transform="translate(488 300) scale(.8)"><circle r="14"/><path d="M0-9 5-39 12-13 38-25 18-4 41 8 12 10 13 39 0 14-19 31-12 9-40 4-13-3Z"/></g>
+    <g transform="translate(598 210) scale(.9)"><circle r="14"/><path d="M0-9 5-39 12-13 38-25 18-4 41 8 12 10 13 39 0 14-19 31-12 9-40 4-13-3Z"/></g>
+    <g transform="translate(745 174) scale(.65)"><circle r="14"/><path d="M0-9 5-39 12-13 38-25 18-4 41 8 12 10 13 39 0 14-19 31-12 9-40 4-13-3Z"/></g>
+  </g>
+  <ellipse cx="710" cy="560" rx="128" ry="26" fill="#d5cdbb"/>
+  <path d="M610 406h200l-18 132c-4 31-29 51-61 51h-41c-32 0-57-20-61-51Z" fill="#fbf8ef" stroke="#536251" stroke-width="7"/>
+  <ellipse cx="710" cy="406" rx="100" ry="25" fill="#e5dcc8" stroke="#536251" stroke-width="7"/>
+  <path d="M617 431c59 27 124 28 186 0" fill="none" stroke="#d5aa64" stroke-width="7"/>
+  <g fill="#dca04b"><circle cx="666" cy="470" r="7"/><circle cx="704" cy="493" r="6"/><circle cx="750" cy="464" r="8"/><circle cx="724" cy="526" r="6"/><circle cx="676" cy="531" r="5"/></g>
+  <text x="710" y="580" text-anchor="middle" fill="#263d31" font-family="serif" font-size="26">糖桂花</text>
+  <text x="70" y="665" fill="#66735e" font-family="sans-serif" font-size="18" letter-spacing="4">编辑示意 · 非实物摄影</text>
+</svg>

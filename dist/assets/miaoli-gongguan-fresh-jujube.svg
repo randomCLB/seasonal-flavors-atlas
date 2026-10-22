@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">鲜红枣编辑示意</title><desc id="desc">通用鲜枣形态插画，不是苗栗公馆实物照片或产地鉴定。</desc>
+  <defs><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f6f1e7"/><stop offset="1" stop-color="#e9dfcf"/></linearGradient><linearGradient id="fruit" x2="1" y2="1"><stop stop-color="#d77648"/><stop offset=".5" stop-color="#af4939"/><stop offset="1" stop-color="#73382f"/></linearGradient></defs>
+  <rect width="720" height="560" fill="url(#paper)"/><ellipse cx="360" cy="433" rx="247" ry="51" fill="#d1c7b7" opacity=".72"/>
+  <path d="M176 378Q266 313 380 351T555 360L535 433Q353 486 190 432Z" fill="#d5c4ab"/><path d="M189 365Q353 322 545 363" fill="none" stroke="#9f8b73" stroke-width="5"/>
+  <g stroke="#7c4435" stroke-width="3"><path d="M251 348Q219 267 273 199Q333 221 328 292Q323 344 251 348Z" fill="url(#fruit)"/><path d="M348 343Q309 252 373 174Q446 211 425 289Q410 342 348 343Z" fill="url(#fruit)"/><path d="M454 357Q429 285 478 230Q543 255 529 319Q516 361 454 357Z" fill="#d0a64c"/><path d="M301 351Q280 300 314 266Q359 278 355 324Q345 356 301 351Z" fill="#c99453"/></g>
+  <g fill="none" stroke="#4c6046" stroke-width="6" stroke-linecap="round"><path d="M283 205Q300 150 346 139"/><path d="M388 181Q402 130 451 115"/><path d="M493 235Q501 192 536 177"/></g>
+  <g fill="#6e845b" stroke="#455943" stroke-width="2"><path d="M320 157Q351 123 389 137Q370 169 320 157Z"/><path d="M423 132Q449 96 484 112Q468 144 423 132Z"/><path d="M514 194Q548 163 578 178Q557 207 514 194Z"/></g>
+  <g fill="#f8f3e8" opacity=".65"><circle cx="115" cy="133" r="3"/><circle cx="598" cy="104" r="2"/><circle cx="143" cy="228" r="2"/><circle cx="604" cy="278" r="3"/></g>
+</svg>

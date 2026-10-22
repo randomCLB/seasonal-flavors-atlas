@@ -1,0 +1,246 @@
+{
+  "desktop": [
+    {
+      "id": "baoshan-liangcui-emblica",
+      "images": [
+        {
+          "alt": "保山亮脆余甘子的鲜果生成示意图，非产地或品种实拍",
+          "loaded": true,
+          "src": "assets/baoshan-liangcui-emblica-serving-generated.webp"
+        },
+        {
+          "alt": "保山亮脆余甘子成熟鲜果生成示意图，非品种实拍",
+          "loaded": true,
+          "src": "assets/baoshan-liangcui-emblica-serving-generated.webp"
+        }
+      ],
+      "name": "保山亮脆余甘子",
+      "overflow": false,
+      "recipe": "去核鲜尝亮脆余甘子",
+      "season": "水果 · 云南保山 · 隆阳 · 十二月中下旬成熟期",
+      "sources": 2
+    },
+    {
+      "id": "ninger-tongxin-sweet-shoot",
+      "images": [
+        {
+          "alt": "宁洱同心甜笋的熟食生成示意图，非产地或品种实拍",
+          "loaded": true,
+          "src": "assets/ninger-tongxin-sweet-shoot-serving-generated.webp"
+        },
+        {
+          "alt": "甜笋煮鸡生成示意图，非实物摄影",
+          "loaded": true,
+          "src": "assets/ninger-tongxin-sweet-shoot-serving-generated.webp"
+        }
+      ],
+      "name": "宁洱同心甜笋",
+      "overflow": false,
+      "recipe": "甜笋煮鸡",
+      "season": "蔬菜 · 云南普洱 · 宁洱同心 · 5月",
+      "sources": 2
+    },
+    {
+      "id": "yongsheng-fresh-kapok",
+      "images": [
+        {
+          "alt": "永胜鲜攀枝花的熟食生成示意图，非产地或品种实拍",
+          "loaded": true,
+          "src": "assets/yongsheng-fresh-kapok-serving-generated.webp"
+        },
+        {
+          "alt": "豆豉蒜苗炒鲜攀枝花生成示意图，非实物摄影",
+          "loaded": true,
+          "src": "assets/yongsheng-fresh-kapok-serving-generated.webp"
+        }
+      ],
+      "name": "永胜鲜攀枝花",
+      "overflow": false,
+      "recipe": "豆豉蒜苗炒鲜攀枝花",
+      "season": "蔬菜 · 云南丽江 · 永胜金沙江河谷 · 3月",
+      "sources": 3
+    },
+    {
+      "id": "jianshui-caoya",
+      "images": [
+        {
+          "alt": "建水草芽的熟食生成示意图，非产地或品种实拍",
+          "loaded": true,
+          "src": "assets/jianshui-caoya-serving-generated.webp"
+        },
+        {
+          "alt": "鸡丝炒草芽生成示意图，非实物摄影",
+          "loaded": true,
+          "src": "assets/jianshui-caoya-serving-generated.webp"
+        }
+      ],
+      "name": "建水草芽",
+      "overflow": false,
+      "recipe": "鸡丝炒草芽",
+      "season": "蔬菜 · 云南红河 · 建水 · 5—8月",
+      "sources": 3
+    },
+    {
+      "id": "tonghai-fresh-sour-quince",
+      "images": [
+        {
+          "alt": "鲜酸木瓜炖鸡生成示意图，非实物摄影",
+          "loaded": true,
+          "src": "assets/tonghai-fresh-sour-quince-serving-generated.webp"
+        },
+        {
+          "alt": "鲜酸木瓜炖鸡生成示意图，非实物摄影",
+          "loaded": true,
+          "src": "assets/tonghai-fresh-sour-quince-serving-generated.webp"
+        }
+      ],
+      "name": "通海鲜酸木瓜",
+      "overflow": false,
+      "recipe": "鲜酸木瓜炖鸡",
+      "season": "水果 · 云南玉溪 · 通海里山 · 6月",
+      "sources": 2
+    },
+    {
+      "id": "lancang-nannai-duoyi",
+      "images": [
+        {
+          "alt": "澜沧南乃多依果的鲜果生成示意图，非产地或品种实拍",
+          "loaded": true,
+          "src": "assets/lancang-nannai-duoyi-serving-generated.webp"
+        },
+        {
+          "alt": "澜沧南乃多依果成熟鲜果生成示意图，非品种实拍",
+          "loaded": true,
+          "src": "assets/lancang-nannai-duoyi-serving-generated.webp"
+        }
+      ],
+      "name": "澜沧南乃多依果",
+      "overflow": false,
+      "recipe": "南乃多依鲜果小碟",
+      "season": "水果 · 云南普洱 · 澜沧上允南乃 · 10月",
+      "sources": 2
+    },
+    {
+      "id": "longyang-pupiao-allium-root",
+      "images": [
+        {
+          "alt": "隆阳蒲缥苤菜根的熟食生成示意图，非产地或品种实拍",
+          "loaded": true,
+          "src": "assets/longyang-pupiao-allium-root-serving-generated.webp"
+        },
+        {
+          "alt": "苤菜根炒肉片生成示意图，非实物摄影",
+          "loaded": true,
+          "src": "assets/longyang-pupiao-allium-root-serving-generated.webp"
+        }
+      ],
+      "name": "隆阳蒲缥苤菜根",
+      "overflow": false,
+      "recipe": "苤菜根炒肉片",
+      "season": "蔬菜 · 云南保山 · 隆阳蒲缥 · 9月",
+      "sources": 2
+    },
+    {
+      "id": "banna-banana-blossom",
+      "images": [
+        {
+          "alt": "西双版纳芭蕉花的熟食生成示意图，非产地或品种实拍",
+          "loaded": true,
+          "src": "assets/banna-banana-blossom-serving-generated.webp"
+        },
+        {
+          "alt": "芭蕉花肉末汤生成示意图，非实物摄影",
+          "loaded": true,
+          "src": "assets/banna-banana-blossom-serving-generated.webp"
+        }
+      ],
+      "name": "西双版纳芭蕉花",
+      "overflow": false,
+      "recipe": "芭蕉花肉末汤",
+      "season": "蔬菜 · 云南西双版纳 · 随植株抽蕾采收，最佳月份待核",
+      "sources": 3
+    },
+    {
+      "id": "ximeng-bamboo-worm",
+      "images": [
+        {
+          "alt": "西盟鲜竹虫的熟食生成示意图，非产地或品种实拍",
+          "loaded": true,
+          "src": "assets/ximeng-bamboo-worm-serving-generated.webp"
+        },
+        {
+          "alt": "姜香煎竹虫生成示意图，非实物摄影",
+          "loaded": true,
+          "src": "assets/ximeng-bamboo-worm-serving-generated.webp"
+        }
+      ],
+      "name": "西盟鲜竹虫",
+      "overflow": false,
+      "recipe": "姜香煎竹虫",
+      "season": "水产与肉 · 云南普洱 · 西盟 · 九月中旬至十月底鲜货期",
+      "sources": 3
+    }
+  ],
+  "mobile": [
+    {
+      "id": "baoshan-liangcui-emblica",
+      "missingImages": [],
+      "name": "保山亮脆余甘子",
+      "overflow": false
+    },
+    {
+      "id": "ninger-tongxin-sweet-shoot",
+      "missingImages": [],
+      "name": "宁洱同心甜笋",
+      "overflow": false
+    },
+    {
+      "id": "yongsheng-fresh-kapok",
+      "missingImages": [],
+      "name": "永胜鲜攀枝花",
+      "overflow": false
+    },
+    {
+      "id": "jianshui-caoya",
+      "missingImages": [],
+      "name": "建水草芽",
+      "overflow": false
+    },
+    {
+      "id": "tonghai-fresh-sour-quince",
+      "missingImages": [],
+      "name": "通海鲜酸木瓜",
+      "overflow": false
+    },
+    {
+      "id": "lancang-nannai-duoyi",
+      "missingImages": [],
+      "name": "澜沧南乃多依果",
+      "overflow": false
+    },
+    {
+      "id": "longyang-pupiao-allium-root",
+      "missingImages": [],
+      "name": "隆阳蒲缥苤菜根",
+      "overflow": false
+    },
+    {
+      "id": "banna-banana-blossom",
+      "missingImages": [],
+      "name": "西双版纳芭蕉花",
+      "overflow": false
+    },
+    {
+      "id": "ximeng-bamboo-worm",
+      "missingImages": [],
+      "name": "西盟鲜竹虫",
+      "overflow": false
+    }
+  ],
+  "map": {
+    "bananaMapped": true,
+    "pendingSeasonVisible": true,
+    "text": "楚雄南华 · 楚雄禄丰 · 大理洱源 · 玉溪华宁 · 保山施甸 · 楚雄武定 · 保山隆阳 · 普洱宁洱同心 · 丽江永胜金沙江河谷 · 红河建水 · 玉溪通海里山 · 普洱澜沧上允南乃 · 保山隆阳蒲缥 · 西双版纳 · 普洱西盟\n×\n棠梨花\n云南楚雄 · 南华 · 3月 · 查看详情 ↗\n苦刺花\n云南楚雄 · 禄丰 · 3月 · 查看详情 ↗\n洱源海菜花\n云南大理 · 洱源 · 4—5月 · 查看详情 ↗\n干巴菌\n云南玉溪 · 华宁 · 7—8月 · 查看详情 ↗\n羊奶果\n云南保山 · 施甸 · 3月 · 查看详情 ↗\n武定金雀花\n云南楚雄 · 武定 · 3月 · 查看详情 ↗\n保山亮脆余甘子\n云南保山 · 隆阳 · 12月 · 查看详情 ↗\n宁洱同心甜笋\n云南普洱 · 宁洱同心 · 5月 · 查看详情 ↗\n永胜鲜攀枝花\n云南丽江 · 永胜金沙江河谷 · 3月 · 查看详情 ↗\n建水草芽\n云南红河 · 建水 · 5—8月 · 查看详情 ↗\n通海鲜酸木瓜\n云南玉溪 · 通海里山 · 6月 · 查看详情 ↗\n澜沧南乃多依果\n云南普洱 · 澜沧上允南乃 · 10月 · 查看详情 ↗\n隆阳蒲缥苤菜根\n云南保山 · 隆阳蒲缥 · 9月 · 查看详情 ↗\n西双版纳芭蕉花\n云南西双版纳 · 时令待核 · 查看详情 ↗\n西盟鲜竹虫\n云南普洱 · 西盟 · 9—10月 · 查看详情 ↗\n放大这一带 ↗"
+  },
+  "checkedAt": "2026-10-16T13:11:17.751Z"
+}

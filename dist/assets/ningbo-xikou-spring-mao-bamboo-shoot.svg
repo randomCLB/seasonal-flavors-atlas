@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">毛竹春笋形态编辑示意</title>
+  <desc id="desc">带竹箨纹理的几支笋形示意，不是奉化溪口实拍或竹种鉴别。</desc>
+  <rect width="720" height="520" fill="#eee9dd"/>
+  <path d="M126 414 249 165q13-28 28 0l123 249Z" fill="#c7b98f" stroke="#75674e" stroke-width="5"/>
+  <path d="M283 414 379 108q11-31 24 0l102 306Z" fill="#d0c49c" stroke="#75674e" stroke-width="5"/>
+  <path d="M439 414 508 213q12-30 25 0l72 201Z" fill="#c2b488" stroke="#75674e" stroke-width="5"/>
+  <g fill="none" stroke="#867650" stroke-width="4" opacity=".9">
+    <path d="M249 169 197 288l120 27-70 99M379 113l-29 113 106 23-55 165M508 218l-20 76 79 19-43 101"/>
+    <path d="M220 236 307 214M190 305l130 24M343 234l126 26M322 306l146 25M490 296l96 18M466 350l120 24"/>
+  </g>
+  <path d="M159 415h414" stroke="#71694f" stroke-width="4" opacity=".7"/>
+  <rect x="34" y="34" width="652" height="452" fill="none" stroke="#d2c7af" stroke-width="2"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+  <title id="title">小紫菜形态编辑示意</title>
+  <desc id="desc">深紫色海藻层叠在浅沙色背景上，非实物摄影，不用于物种鉴定。</desc>
+  <rect width="900" height="680" fill="#e9e2d3"/>
+  <path d="M0 475c126-58 199 38 329-12s211-93 328-39 168 20 243-13v269H0Z" fill="#c5bba7"/>
+  <path d="M104 510c32-75 3-177 51-245 25 75 53 89 41 173 61-92 78-180 130-247 15 111-26 179-57 258 64-63 113-175 198-227-6 91-51 175-107 243 58-51 120-101 207-111-61 75-135 136-236 175 117-25 194-15 265 20-116 34-218 23-330 17-76-3-133-1-162 22Z" fill="#3d5047"/>
+  <path d="M222 514c46-80 52-161 105-248m-18 266c70-63 122-145 187-204m-99 216c71-44 143-70 233-91" fill="none" stroke="#879182" stroke-width="9" stroke-linecap="round" opacity=".72"/>
+  <path d="M88 511c174-13 322 30 514 7 108-13 201-48 298-54" fill="none" stroke="#f6f1e6" stroke-width="5" opacity=".8"/>
+</svg>

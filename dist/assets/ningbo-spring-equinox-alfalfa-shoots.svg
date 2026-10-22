@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">苜蓿类嫩梢编辑示意</title>
+  <desc id="desc">三出叶与细嫩茎的蔬菜形态示意，不是宁波实拍或物种鉴定。</desc>
+  <rect width="720" height="520" fill="#edf0df"/>
+  <g fill="none" stroke="#627a53" stroke-width="11" stroke-linecap="round">
+    <path d="M360 445C350 348 358 232 360 76M359 351 231 226M359 300 488 184M355 400 475 319M359 250 247 130"/>
+  </g>
+  <g fill="#96ad75" stroke="#647d51" stroke-width="3">
+    <ellipse cx="207" cy="216" rx="30" ry="56" transform="rotate(-52 207 216)"/><ellipse cx="243" cy="185" rx="30" ry="55" transform="rotate(15 243 185)"/><ellipse cx="270" cy="237" rx="29" ry="54" transform="rotate(58 270 237)"/>
+    <ellipse cx="475" cy="175" rx="30" ry="56" transform="rotate(48 475 175)"/><ellipse cx="501" cy="139" rx="29" ry="53" transform="rotate(-12 501 139)"/><ellipse cx="526" cy="194" rx="28" ry="52" transform="rotate(-57 526 194)"/>
+    <ellipse cx="454" cy="312" rx="28" ry="51" transform="rotate(48 454 312)"/><ellipse cx="483" cy="279" rx="27" ry="50" transform="rotate(-10 483 279)"/><ellipse cx="507" cy="331" rx="27" ry="48" transform="rotate(-55 507 331)"/>
+    <ellipse cx="230" cy="120" rx="26" ry="48" transform="rotate(-50 230 120)"/><ellipse cx="258" cy="91" rx="25" ry="47" transform="rotate(5 258 91)"/><ellipse cx="282" cy="138" rx="25" ry="46" transform="rotate(55 282 138)"/>
+  </g>
+  <g fill="none" stroke="#dce8c4" stroke-width="2.4" opacity=".9">
+    <path d="M213 211 170 190M243 190l-2-46m24 89 44-11M479 170l44-24m-22 26 1-44m23 70 41 14M459 308l-39-18m63-5 2-42m20 84 38 14M235 116l-38-20m62-8 1-39m21 65 38 11"/>
+  </g>
+  <rect x="34" y="34" width="652" height="452" fill="none" stroke="#d2c7af" stroke-width="2"/>
+</svg>

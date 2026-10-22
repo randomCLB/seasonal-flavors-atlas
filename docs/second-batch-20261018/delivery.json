@@ -1,0 +1,143 @@
+{
+  "status": "local-preview-ready",
+  "preview": "http://127.0.0.1:8776/index.html?preview=second-batch-20261018-final",
+  "published": false,
+  "committed": false,
+  "node_tests": {
+    "passed": 166,
+    "failed": 0
+  },
+  "browser_checks": {
+    "passed": 47,
+    "failed": 0
+  },
+  "in_app_browser_observed": [
+    "atlas header and records dialog",
+    "compressed tarot replay restored dated cards and full reading",
+    "share-card PNG preview generated with actions"
+  ],
+  "limitations": [
+    "Desktop Chromium with mobile viewport/text simulation, not physical phones.",
+    "Native share success/cancellation and clipboard failure are simulated. PNG downloads and fresh-context replay are real.",
+    "Local preview URLs are not publicly reachable. No deployment."
+  ],
+  "preserved": {
+    "catalog_and_original_assets": true,
+    "recipe_and_safety_data": true,
+    "preexisting_dirty_worktree": true
+  },
+  "files": {
+    "dist/result-share.js": {
+      "bytes": 15182,
+      "sha256": "c100a3f56d73696ec46f8759c677dec524a72a45b6ee39bb2a74605792b127bc"
+    },
+    "dist/lottery.html": {
+      "bytes": 5097,
+      "sha256": "212acf8aa2864831a0b4eae99782f294f36b376d269928cfa7df744343044dda"
+    },
+    "dist/index.html": {
+      "bytes": 523056,
+      "sha256": "5150c037bb471303c90790059e598a8dec419b3a823760f7630751742d382c1d"
+    },
+    "dist/tarot-spread-ui.js": {
+      "bytes": 13724,
+      "sha256": "40582a5879c4e27d0907d974353b633e0c72577920dcb27b903e235b7e70ddb2"
+    },
+    "dist/food-detail.css": {
+      "bytes": 4623,
+      "sha256": "5dd68ad81ae8c6868480d4215bd3e8e448a9af10e13e7ff3f2c5fd3ac37c29c6"
+    },
+    "dist/social-experience.css": {
+      "bytes": 6003,
+      "sha256": "2b821f2db155f6a70e19b6c3b14c4693e3cf09693072aedea3976e88ba8d418d"
+    },
+    "dist/lottery-ui.js": {
+      "bytes": 15413,
+      "sha256": "9e74468ced405ead5abdb39f3d8eba069c2e08f879796c225739e89ad3e22297"
+    },
+    "dist/tarot.html": {
+      "bytes": 7626,
+      "sha256": "15edc0d4b84066ae716d2763c2389ace8c4bd64878e4214f307c90f100e6c72e"
+    },
+    "dist/app.js": {
+      "bytes": 44519,
+      "sha256": "a61427d92ec16fcbf20a4d928b39d9c8796f1ea13076ea7139e0f858cdba736a"
+    },
+    "dist/food-detail.js": {
+      "bytes": 4897,
+      "sha256": "2b53d5fad4825b4d9270adfc975457471e72742604a0bc0101621c6de4697c2e"
+    },
+    "dist/food-records.js": {
+      "bytes": 5565,
+      "sha256": "f854314ef0abec34dbe325ef3ae0b3cfe110bed81f4f796912e396690cb6dfc4"
+    },
+    "tests/core-experience.test.cjs": {
+      "bytes": 4003,
+      "sha256": "c937cbb845e3b4e287abd7d6e3cac35b6d693fdfbea50cbf07b12fee433a8c8e"
+    },
+    "tests/result-share.test.cjs": {
+      "bytes": 5068,
+      "sha256": "cd9238092187088271e8719ccad2aa42322a42ad91266941820ab962495aae10"
+    },
+    "scripts/check-social-experience.py": {
+      "bytes": 14685,
+      "sha256": "42d349f277992c48fcf53008f8ac46b662c706ebfc75eab5e07ef4f13952ddc5"
+    },
+    "docs/second-batch-20261018/baseline-and-changes.json": {
+      "bytes": 44980,
+      "sha256": "44ceeaeb8faec21e7319b1172c80b1d946409c972c881d7fb66d8f9e03267a46"
+    },
+    "docs/second-batch-20261018/delivery.txt": {
+      "bytes": 4073,
+      "sha256": "311e864597b7fec381c1f69be19b6d3c7c7c1a6bf3b1b40e6f5b2b19ab3435ac"
+    },
+    "output/second-batch-validation/tarot-share-mobile.png": {
+      "bytes": 121031,
+      "sha256": "485c2a6f363529e495c30057cfab35f8224366f0bb4601d7f5a3d6abc0944d98"
+    },
+    "output/second-batch-validation/tarot-share-desktop.png": {
+      "bytes": 196600,
+      "sha256": "cbb4777be10d451180c40a69ff5c5259d44040ded5e53c35e399d263f4e0ac21"
+    },
+    "output/second-batch-validation/browser-checks.json": {
+      "bytes": 8033,
+      "sha256": "5999f58dd28720f7a0cc18dfffaf34522b18cb18b82d3700fc7ca9864e1c6855"
+    },
+    "output/second-batch-validation/plan-mobile.png": {
+      "bytes": 989135,
+      "sha256": "a8cd90bc3b9ac5ed7e8426586da3eebe84a8a22984cca20da306a657580b58ba"
+    },
+    "output/second-batch-validation/node-tests.txt": {
+      "bytes": 33756,
+      "sha256": "3c3abf28658667144bb35127d24b5d0783d6d78720a3e932d6ce1285e2cbdaeb"
+    },
+    "output/second-batch-validation/six-term.ics": {
+      "bytes": 9823,
+      "sha256": "0259567699fe64e42d1a9ced3cb6ac580296fa529c9558727ace94550746af1b"
+    },
+    "output/second-batch-validation/records-mobile.png": {
+      "bytes": 123291,
+      "sha256": "a1e66af7b44e2e87dddd6c7598e2d2fba97b035f3720c7165f58a1eb7d21cf2e"
+    },
+    "output/second-batch-validation/records-desktop.png": {
+      "bytes": 361334,
+      "sha256": "6a4f2a4e37148d2ead671457b968e12aebac1b19cd962b7e041375917f3af362"
+    },
+    "output/second-batch-validation/six-term-card.png": {
+      "bytes": 698095,
+      "sha256": "cdaa524934062975b3abb93e67e72a245bffe33100815a2d71089831b1d4a5a9"
+    },
+    "output/second-batch-validation/tarot-card.png": {
+      "bytes": 1234006,
+      "sha256": "2c5b2a08d0814aacbc15cd1c28dbc227724a37d88226d514ddbf53eaf29257fd"
+    },
+    "output/second-batch-validation/plan-share-desktop.png": {
+      "bytes": 173811,
+      "sha256": "a0c2bcfb5f2857117b6c9d79bf39cffc6c1098f5d40cab54b5c2a56225fc60e4"
+    },
+    "output/second-batch-validation/records-320-text200.png": {
+      "bytes": 64995,
+      "sha256": "d5f1a58e5c570d93ee1265af3c8dac6d7c1dc0dc3354686df1acb5c9abab4dc5"
+    }
+  }
+}

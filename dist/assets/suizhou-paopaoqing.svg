@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">冬季皱叶青菜形态编辑插画</title>
+  <desc id="desc">一株墨绿色皱叶青菜铺展在浅色纸面上，叶面有起伏泡状褶皱；通用形态参考，不用于随州产地或地理标志鉴别。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f2efe5"/><stop offset="1" stop-color="#e3dece"/></linearGradient>
+    <linearGradient id="leaf" x2=".9" y2="1"><stop stop-color="#657b4d"/><stop offset=".52" stop-color="#435f42"/><stop offset="1" stop-color="#294a3c"/></linearGradient>
+    <radialGradient id="bubble"><stop stop-color="#a3ad72" stop-opacity=".65"/><stop offset=".62" stop-color="#667c4f" stop-opacity=".25"/><stop offset="1" stop-color="#25493a" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="820" fill="url(#paper)"/>
+  <path d="M76 694 Q600 656 1122 700" fill="none" stroke="#c6bda9" stroke-width="3"/>
+  <g fill="url(#leaf)" stroke="#344f3d" stroke-width="5" stroke-linejoin="round">
+    <path d="M599 638 C519 590 414 591 330 620 C244 650 156 633 130 565 C108 504 180 454 273 467 C199 399 222 326 294 303 C366 280 452 337 480 416 C475 328 529 248 600 250 C671 248 725 328 720 416 C748 337 834 280 906 303 C978 326 1001 399 927 467 C1020 454 1092 504 1070 565 C1044 633 956 650 870 620 C786 591 681 590 601 638 Z"/>
+    <path d="M601 656 C565 573 553 476 575 310 M599 651 C489 563 390 510 248 489 M604 651 C716 563 815 510 956 489 M581 595 C514 472 448 397 328 330 M620 595 C686 472 752 397 872 330" fill="none" stroke="#d0c898" stroke-opacity=".55" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g fill="url(#bubble)" opacity=".9">
+    <ellipse cx="265" cy="526" rx="54" ry="38"/><ellipse cx="365" cy="575" rx="50" ry="36"/><ellipse cx="433" cy="461" rx="55" ry="40"/>
+    <ellipse cx="526" cy="378" rx="48" ry="34"/><ellipse cx="600" cy="330" rx="54" ry="40"/><ellipse cx="674" cy="378" rx="48" ry="34"/>
+    <ellipse cx="767" cy="461" rx="55" ry="40"/><ellipse cx="835" cy="575" rx="50" ry="36"/><ellipse cx="935" cy="526" rx="54" ry="38"/>
+    <ellipse cx="398" cy="399" rx="42" ry="30"/><ellipse cx="802" cy="399" rx="42" ry="30"/>
+  </g>
+  <g fill="#756653" font-family="serif"><text x="78" y="108" font-size="27" letter-spacing="7">WINTER GREENS · SUIZHOU</text><text x="80" y="765" font-size="20" letter-spacing="4">EDITORIAL STUDY · NOT A PLACE OF ORIGIN IDENTIFICATION</text></g>
+</svg>

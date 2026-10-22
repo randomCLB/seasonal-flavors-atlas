@@ -1,0 +1,32 @@
+'use strict';
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const root=path.join(__dirname,'..');
+const C=require('../dist/lottery-core.js');
+
+test('晶桥螺蛳 is a sourced Qingming-only local taste entry with clear identity and cooking limits',()=>{
+ const ctx={window:{}};vm.createContext(ctx);
+ for(const file of ['solar-terms.js','data.js','editorial.js','editorial-notes.js','november-additions.js','core-refinements.js','winter-additions.js','seasonal-additions.js','lottery-profiles.js','lottery-senses.js']) vm.runInContext(fs.readFileSync(path.join(root,'dist',file),'utf8'),ctx);
+ const foods=ctx.window.FOODS, f=foods.find(x=>x.id==='nanjing-lishui-qingming-river-snail'), profiles=ctx.window.LOTTERY_PROFILES;
+ assert.ok(f);
+ assert.equal(foods.length,new Set(foods.map(x=>x.id)).size);
+ assert.equal(f.category,'seafood');
+ assert.deepEqual(Array.from(f.peakTerms),[6]);
+ assert.match(f.season,/2025\s*年清明报道/);
+ assert.match(f.description,/没有鉴定具体螺种/);
+ assert.match(f.safety,/彻底熟制/);
+ assert.ok(f.sources.every(([,url])=>/^https:\/\//.test(url)));
+ assert.ok(fs.existsSync(path.join(root,'dist',f.image)));
+ assert.equal(profiles[f.id].signature,C.signature(f));
+ assert.equal(profiles[f.id].senses.signature,C.sensorySignature(f));
+ const events=C.eventsFrom(ctx.window.SOLAR_TERM_TIMES,ctx.window.SOLAR_TERM_NAMES);
+ const term=events.find(e=>e.year===2026&&e.index===6), next=events.find(e=>e.year===2026&&e.index===7);
+ const slot={startDay:C.dayAt(term.time),endDay:C.addDays(C.dayAt(next.time),-1)};
+ const prefs={avoid:[],excludeText:'',tastes:[],textures:[],cooking:[],curiosity:1};
+ assert.ok(C.poolFor(foods,profiles,prefs,slot,events).some(x=>x.id===f.id));
+ const following={startDay:C.dayAt(next.time),endDay:C.addDays(C.dayAt(events.find(e=>e.year===2026&&e.index===8).time),-1)};
+ assert.ok(!C.poolFor(foods,profiles,prefs,following,events).some(x=>x.id===f.id));
+});

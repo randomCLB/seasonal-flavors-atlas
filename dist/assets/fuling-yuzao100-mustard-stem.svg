@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">青菜头肉质茎形态示意</title>
+  <desc id="desc">浅米色底上的青绿色芥菜肉质茎和舒展叶片，为编辑插画，不用于品种鉴别。</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f2eee3"/><stop offset="1" stop-color="#e6e1d3"/></linearGradient>
+    <linearGradient id="stem" x2="1" y2="1"><stop stop-color="#dce5a9"/><stop offset=".52" stop-color="#a9c47b"/><stop offset="1" stop-color="#789b5c"/></linearGradient>
+    <linearGradient id="leaf" x2=".8" y2="1"><stop stop-color="#738a55"/><stop offset="1" stop-color="#9fb77a"/></linearGradient>
+  </defs>
+  <rect width="800" height="620" rx="4" fill="url(#bg)"/>
+  <path d="M83 521c170-54 443-57 632 0" fill="none" stroke="#d4cdbb" stroke-width="2"/>
+  <g transform="translate(70 18)">
+    <path d="M340 488c-35-65-63-154-45-227 14-59 56-86 111-70 50 15 84 64 87 119 4 71-39 136-79 192-18 25-54 16-74-14z" fill="url(#stem)" stroke="#708b58" stroke-width="5"/>
+    <path d="M357 479c-15-88-19-169 12-272M403 490c19-83 35-167 28-258M327 429c37-15 109-20 151-7M312 369c45-23 123-29 184-14M319 307c41-18 102-24 156-17" fill="none" stroke="#e7edc7" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+    <path d="M388 215c-19-59-52-101-101-120-44-17-99-12-143 18 22 49 62 78 111 86 48 8 96 4 133 16z" fill="url(#leaf)" stroke="#627a4b" stroke-width="5"/>
+    <path d="M393 214c21-61 61-99 116-112 45-11 93 3 127 38-32 43-76 66-125 66-43 0-83-5-118 8z" fill="#839b5f" stroke="#627a4b" stroke-width="5"/>
+    <path d="M376 219c-53-31-102-38-151-17-38 16-69 49-85 92 43 26 89 28 133 10 43-18 75-48 103-85z" fill="#94a96d" stroke="#627a4b" stroke-width="5"/>
+    <path d="M392 219c46-37 94-52 147-38 41 11 75 40 98 80-38 31-82 41-129 29-45-11-81-35-116-71z" fill="#a0b27a" stroke="#627a4b" stroke-width="5"/>
+    <path d="M388 220c-13 76-22 165-18 254M388 220c-46-55-93-87-155-99M390 219c55-58 108-87 177-85M386 220c-67 1-122 17-188 74M393 220c66-6 126 1 206 39" fill="none" stroke="#d3ddaa" stroke-width="5" stroke-linecap="round"/>
+    <path d="M328 497h142" stroke="#6f8552" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

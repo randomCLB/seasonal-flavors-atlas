@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+  <title id="title">极晚熟桃形态编辑插画</title>
+  <desc id="desc">带红晕的晚熟桃与浅色果肉切面原创插画，不是双冬蜜实拍或品种鉴别图。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f3efe5"/><stop offset="1" stop-color="#e7dfd1"/></linearGradient>
+    <radialGradient id="peach" cx="38%" cy="28%"><stop stop-color="#f4c38f"/><stop offset=".6" stop-color="#dc8c73"/><stop offset="1" stop-color="#9e4e4b"/></radialGradient>
+    <linearGradient id="flesh" x2="1" y2="1"><stop stop-color="#f6f0d9"/><stop offset="1" stop-color="#c7d1a4"/></linearGradient>
+  </defs>
+  <rect width="900" height="760" fill="url(#paper)"/>
+  <path d="M160 603C270 500 321 385 393 249M526 615C610 496 690 391 779 263" fill="none" stroke="#617554" stroke-width="9" opacity=".72"/>
+  <path d="M300 377C199 355 141 293 126 204C233 207 316 260 347 340C337 359 320 371 300 377Z" fill="#7f8e68"/>
+  <path d="M675 407C721 314 793 271 861 265C850 359 793 425 707 442C691 432 681 420 675 407Z" fill="#7b8961"/>
+  <path d="M219 316L333 357M704 418L814 306" stroke="#b5b78e" stroke-width="4" opacity=".68"/>
+  <path d="M414 224C326 225 262 291 258 399C254 508 316 584 402 603C427 609 446 593 455 580C464 596 485 611 510 603C598 577 649 497 638 391C627 281 542 222 458 224C444 225 429 226 414 224Z" fill="url(#peach)"/>
+  <path d="M455 252C439 336 441 489 455 580" fill="none" stroke="#8e514a" stroke-width="5" opacity=".6"/>
+  <path d="M444 245C430 227 418 208 421 184C442 192 455 208 458 231Z" fill="#617650"/>
+  <circle cx="704" cy="554" r="117" fill="#9e4e4b"/>
+  <circle cx="704" cy="554" r="101" fill="url(#flesh)"/>
+  <ellipse cx="704" cy="554" rx="22" ry="37" fill="#94644b" opacity=".78"/>
+  <g fill="#fff9dc" opacity=".8"><path d="M652 488q16-18 34 0q-17 20-34 0Z"/><path d="M722 489q16-18 34 0q-17 20-34 0Z"/><path d="M650 614q16-18 34 0q-17 20-34 0Z"/><path d="M722 614q16-18 34 0q-17 20-34 0Z"/></g>
+  <text x="62" y="705" fill="#496153" font-size="22" font-family="serif" letter-spacing="4">极晚熟桃 · 编辑形态参考</text>
+</svg>

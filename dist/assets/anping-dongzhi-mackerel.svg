@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+<title id="title">长身鱼形态示意</title><desc id="desc">以海蓝与赭金色表现的通用鱼形插画，不用于具体鱼种鉴别。</desc>
+<rect width="800" height="600" fill="#e9e4d7"/><path d="M0 430C165 390 286 451 430 418s228-53 370-16v198H0Z" fill="#d2ddd5"/>
+<path d="M176 296c93-104 292-120 422-34l85-60-16 103 20 91-87-46c-130 91-324 72-421-30l-83 41 14-67-21-70Z" fill="#aebcb2" stroke="#193a35" stroke-width="8" stroke-linejoin="round"/>
+<path d="M265 259c74-52 193-58 292-20M258 346c84 43 206 45 299 8M362 218l64-68 53 66M352 378l73 60 54-65" fill="none" stroke="#8d7150" stroke-width="12" stroke-linecap="round"/>
+<circle cx="246" cy="293" r="12" fill="#17342f"/><path d="M285 282c30 16 30 50 0 66" fill="none" stroke="#647e74" stroke-width="8"/>
+<path d="M94 486c150-28 279 19 416-3s191-38 290-21" fill="none" stroke="#f8f5ec" stroke-width="5" opacity=".75"/>
+</svg>

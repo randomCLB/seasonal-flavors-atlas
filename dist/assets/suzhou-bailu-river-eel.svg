@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">河鳗通用形态插画</title>
+  <desc id="desc">浅米色背景上一条灰绿色河鳗呈舒展弧形游动，非苏州实拍或物种鉴定图。</desc>
+  <rect width="900" height="700" fill="#eeeadd"/>
+  <path d="M81 415 C177 267 287 246 394 328 C510 417 613 473 717 380 C762 339 800 290 836 255" fill="none" stroke="#8c9b84" stroke-width="105" stroke-linecap="round"/>
+  <path d="M82 410 C177 267 287 246 394 328 C510 417 613 473 717 380 C762 339 800 290 835 256" fill="none" stroke="#b8c1a9" stroke-width="78" stroke-linecap="round"/>
+  <path d="M818 241 L866 230 L844 280Z" fill="#778775"/>
+  <path d="M815 244 C791 245 778 262 782 280 C794 289 809 287 819 276Z" fill="#798775"/>
+  <circle cx="816" cy="253" r="5" fill="#24362d"/>
+  <path d="M132 382 C218 294 298 281 384 337 M438 359 C517 416 610 454 691 393" fill="none" stroke="#dce0ce" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+  <g fill="none" stroke="#c5ccba" stroke-width="3" opacity=".6"><path d="M126 520 C220 492 281 499 358 527"/><path d="M560 226 C642 199 714 204 777 225"/><path d="M217 175 C255 163 295 166 330 181"/></g>
+  <text x="52" y="80" fill="#30473c" font-family="serif" font-size="25" letter-spacing="5">白露渔期 · 河鳗通用形态</text>
+</svg>

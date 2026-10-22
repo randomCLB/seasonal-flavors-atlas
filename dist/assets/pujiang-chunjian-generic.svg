@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">蒲江春见通用柑橘形态示意</title>
+  <desc id="desc">暖金色柑橘与叶片的编辑插画，不代表蒲江春见品种或产地实拍。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f6f0e4"/><stop offset="1" stop-color="#e8dfce"/></linearGradient>
+    <radialGradient id="fruit" cx="35%" cy="28%" r="75%"><stop stop-color="#ffd477"/><stop offset=".5" stop-color="#e89a31"/><stop offset="1" stop-color="#b85d24"/></radialGradient>
+    <radialGradient id="pith" cx="40%" cy="35%" r="70%"><stop stop-color="#fff5d8"/><stop offset="1" stop-color="#e5c98c"/></radialGradient>
+    <linearGradient id="bowl" x2="0" y2="1"><stop stop-color="#d7d0b8"/><stop offset="1" stop-color="#9ca58d"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#paper)"/>
+  <circle cx="930" cy="165" r="155" fill="#fffaf0" opacity=".54"/>
+  <ellipse cx="605" cy="742" rx="410" ry="60" fill="#81765e" opacity=".15" filter="url(#soft)"/>
+  <path d="M123 683 Q600 840 1080 678 L1015 777 Q600 884 191 777Z" fill="url(#bowl)"/>
+  <ellipse cx="601" cy="683" rx="479" ry="130" fill="#f7f4e8" stroke="#aaa58f" stroke-width="8"/>
+  <ellipse cx="601" cy="690" rx="426" ry="96" fill="#d7d0b8" opacity=".58"/>
+  <path d="M351 518 C445 435 610 418 759 496" fill="none" stroke="#536b4b" stroke-width="17" stroke-linecap="round"/>
+  <path d="M450 480 C401 388 313 370 249 404 C288 483 367 518 450 480Z" fill="#52694a"/>
+  <path d="M670 457 C714 357 818 328 885 365 C850 448 773 489 670 457Z" fill="#67794d"/>
+  <path d="M459 473 Q365 415 277 408 M685 450 Q775 387 861 372" fill="none" stroke="#b1aa78" stroke-width="5" opacity=".7"/>
+  <g transform="rotate(-12 456 477)">
+    <circle cx="449" cy="474" r="178" fill="url(#fruit)" stroke="#ad6128" stroke-width="7"/>
+    <ellipse cx="449" cy="299" rx="22" ry="10" fill="#80603c"/>
+    <path d="M449 302 Q451 281 470 275" fill="none" stroke="#536744" stroke-width="11" stroke-linecap="round"/>
+    <path d="M356 366 Q421 311 500 326" fill="none" stroke="#fff0ba" stroke-width="12" opacity=".3" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(10 737 526)">
+    <circle cx="737" cy="526" r="158" fill="url(#fruit)" stroke="#ad6128" stroke-width="7"/>
+    <ellipse cx="737" cy="371" rx="20" ry="9" fill="#80603c"/>
+    <path d="M738 375 Q743 351 759 348" fill="none" stroke="#536744" stroke-width="10" stroke-linecap="round"/>
+    <path d="M660 430 Q713 391 777 403" fill="none" stroke="#fff0ba" stroke-width="10" opacity=".27" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(-16 604 638)">
+    <circle cx="604" cy="638" r="112" fill="#c96f25" stroke="#9c5123" stroke-width="7"/>
+    <circle cx="604" cy="638" r="91" fill="url(#pith)"/>
+    <circle cx="604" cy="638" r="72" fill="#f3b34e"/>
+    <g stroke="#fff2d1" stroke-width="8" stroke-linecap="round">
+      <path d="M604 570V628 M651 589L615 631 M672 638H616 M651 686L615 645 M604 706V650 M556 686L593 645 M536 638H591 M557 589L593 631"/>
+    </g>
+    <circle cx="604" cy="638" r="13" fill="#fff0cf"/>
+  </g>
+</svg>

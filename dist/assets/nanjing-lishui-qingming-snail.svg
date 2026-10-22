@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+<title id="title">熟制螺蛳编辑插画</title>
+<desc id="desc">暖米色桌面上的青灰色陶盘，盘中以简洁写意线条表现熟制螺蛳、紫苏和姜片；非晶桥实拍，不用于物种鉴定。</desc>
+<rect width="900" height="700" fill="#eee9dc"/>
+<ellipse cx="450" cy="374" rx="340" ry="230" fill="#c8c1ad" opacity=".44"/>
+<ellipse cx="450" cy="350" rx="332" ry="224" fill="#31544c"/>
+<ellipse cx="450" cy="343" rx="296" ry="188" fill="#e9e1d0"/>
+<ellipse cx="450" cy="343" rx="274" ry="166" fill="#dccdac"/>
+<g fill="#66776b" stroke="#263d38" stroke-width="10">
+<path d="M275 322c-25-49 27-83 75-59 38 19 36 60 7 83-26 21-64 14-82-24z"/><path d="M410 281c-14-46 32-73 71-48 35 22 26 61-4 78-27 15-57 5-67-30z"/><path d="M556 323c-19-46 28-77 70-51 39 24 27 63-5 81-29 17-57 5-65-30z"/><path d="M344 404c-22-46 28-78 69-53 38 23 29 63-2 82-28 17-58 7-67-29z"/><path d="M489 411c-17-45 30-76 70-50 38 24 26 63-6 81-28 16-56 4-64-31z"/>
+</g>
+<g fill="none" stroke="#d8d2bd" stroke-width="8" stroke-linecap="round" opacity=".85"><path d="M312 311q20-37 53-15"/><path d="M438 273q21-31 50-10"/><path d="M577 315q22-34 50-11"/><path d="M377 397q18-36 48-13"/><path d="M519 402q20-34 49-12"/></g>
+<g fill="#6d866b"><path d="M366 215q-45-33-78-18 27 44 68 40-38 10-56 39 50 6 78-29 3 32 27 47 14-47-8-71 43 5 68-16-39-23-85-7-1-35-26-51-8 34 12 66z"/><path d="M545 216q-36-31-70-22 21 39 58 41-34 9-48 34 45 3 68-29 6 29 28 41 10-42-12-63 38 3 58-17-36-19-75-3 1-31-22-46-8 31 15 64z"/></g>
+<g fill="#c6aa83"><path d="M428 454l25-47 13 8-25 49z"/><path d="M456 468l27-52 13 8-27 53z"/></g>
+<text x="450" y="625" text-anchor="middle" fill="#51665e" font-family="serif" font-size="27" letter-spacing="4">清明螺蛳 · 编辑插画</text>
+</svg>

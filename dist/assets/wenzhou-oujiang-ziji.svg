@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">瓯江子鲚形态参考插画</title>
+  <desc id="desc">一尾银灰色小型鱼的编辑插画，不用于物种鉴定或捕捞来源识别。</desc>
+  <defs>
+    <linearGradient id="water" x2="0" y2="1"><stop stop-color="#e9e4d6"/><stop offset="1" stop-color="#c8d2c8"/></linearGradient>
+    <linearGradient id="fish" x2="0" y2="1"><stop stop-color="#f7f3e7"/><stop offset=".53" stop-color="#bec9c1"/><stop offset="1" stop-color="#82958f"/></linearGradient>
+  </defs>
+  <rect width="720" height="520" fill="url(#water)"/>
+  <path d="M0 390c110-34 205-32 330 0s245 36 390-7v137H0z" fill="#aebfb7" opacity=".5"/>
+  <g fill="none" stroke="#fffaf0" stroke-width="3" opacity=".65"><path d="M60 125c120-26 210-25 325 0"/><path d="M380 104c93-16 183-11 266 16"/><path d="M90 437c96-15 179-12 267 7"/></g>
+  <g transform="translate(95 115)">
+    <path d="M74 137c108-96 267-104 408-21-79 81-193 128-316 106-45-8-77-26-109-50 21-11 34-22 17-35Z" fill="url(#fish)" stroke="#536a66" stroke-width="5"/>
+    <path d="M478 116 590 47l-21 92 27 75-116-45" fill="#9eafa7" stroke="#536a66" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M211 60c43-42 103-52 154-51l-34 50" fill="#c6d0c7" stroke="#536a66" stroke-width="4"/>
+    <path d="M261 218c31 31 72 48 117 49l-41-51" fill="#a7b8b0" stroke="#536a66" stroke-width="4"/>
+    <path d="M96 145c12-15 29-27 48-37" fill="none" stroke="#536a66" stroke-width="4"/>
+    <circle cx="112" cy="142" r="8" fill="#18352f"/><circle cx="109" cy="139" r="2.5" fill="#fffaf0"/>
+    <path d="M155 119c98-48 192-51 283-26M167 150c111-31 220-31 315-5M172 181c102-12 198-7 277 13" fill="none" stroke="#f8f5ec" stroke-width="3" opacity=".8"/>
+    <path d="M186 126 178 78M200 123l1-54M216 120l11-49M235 116l20-43" stroke="#6d837b" stroke-width="2" opacity=".7"/>
+  </g>
+  <text x="42" y="482" fill="#4a625a" font-family="serif" font-size="20" letter-spacing="3">EDITORIAL FORM STUDY · NOT A SPECIES IDENTIFICATION</text>
+</svg>

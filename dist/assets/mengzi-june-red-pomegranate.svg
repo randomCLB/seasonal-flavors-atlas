@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">软籽石榴通用形态编辑插画</title>
+  <desc id="desc">暖白纸面上的红色石榴与深红籽粒，不代表蒙自产地实拍或六月红品种鉴定。</desc>
+  <rect width="800" height="620" fill="#eee9dc"/>
+  <ellipse cx="401" cy="506" rx="232" ry="36" fill="#1c3b34" opacity=".09"/>
+  <path d="M401 103 426 61l31 47 36-25 8 56c77 32 130 106 130 193 0 121-99 218-222 218S187 453 187 332c0-87 53-161 130-193l7-56 35 25z" fill="#a94236" stroke="#183833" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M401 103 426 61l31 47 36-25 8 56-50 23-48-17-48 17-38-23 7-56 35 25z" fill="#bf6250" stroke="#183833" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M401 126c17 18 26 36 28 59-18-11-35-11-54 0 2-23 11-41 26-59z" fill="#d4b980" stroke="#183833" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M247 333c0-85 69-154 154-154 85 0 154 69 154 154v77c0 86-69 155-154 155-85 0-154-69-154-155z" fill="#f4ecdc" stroke="#183833" stroke-width="9"/>
+  <path d="M280 325c11-59 62-105 121-105s110 46 121 105v84c0 67-54 121-121 121s-121-54-121-121z" fill="#cf6957"/>
+  <g fill="#8d2531" stroke="#67232a" stroke-width="3">
+    <path d="m322 274 24 8 2 25-21 15-21-16 2-24z"/><path d="m378 250 24 8 2 25-21 15-21-16 2-24z"/><path d="m438 266 24 8 2 25-21 15-21-16 2-24z"/>
+    <path d="m352 326 24 8 2 25-21 15-21-16 2-24z"/><path d="m412 320 24 8 2 25-21 15-21-16 2-24z"/><path d="m465 329 24 8 2 25-21 15-21-16 2-24z"/>
+    <path d="m317 382 24 8 2 25-21 15-21-16 2-24z"/><path d="m375 385 24 8 2 25-21 15-21-16 2-24z"/><path d="m434 385 24 8 2 25-21 15-21-16 2-24z"/>
+  </g>
+  <path d="M231 250c24-46 61-79 108-98" fill="none" stroke="#e2a27f" stroke-width="12" stroke-linecap="round" opacity=".75"/>
+  <text x="400" y="586" text-anchor="middle" fill="#35564c" font-family="sans-serif" font-size="18" letter-spacing="2">软籽石榴 · 通用形态参考</text>
+</svg>

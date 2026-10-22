@@ -1,0 +1,9 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const root=path.join(__dirname,'..');
+test('Taiwan Lichiu fisheries use only the Ministry source window and preserve unresolved local names',()=>{
+ const C=require('../dist/lottery-core.js'),ctx={window:{}};vm.createContext(ctx);
+ for(const name of ['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name+'.js'),'utf8'),ctx);
+ const ids=['taiwan-lichiu-kaohsiung-xiaochuan','taiwan-lichiu-kaohsiung-squid','taiwan-lichiu-penghu-mackerel','taiwan-lichiu-penghu-shrimp','taiwan-lichiu-northwest-tilefish'];for(const id of ids){const f=ctx.window.FOODS.find(x=>x.id===id);assert.ok(f,id);assert.deepEqual(Array.from(f.entryTerms),[14]);assert.deepEqual(Array.from(f.peakTerms),[14]);assert.equal(f.sources[0][1],'https://www.moa.gov.tw/ws.php?id=2507785');assert.match(f.season,/当年库存确认/);assert.match(f.description,/(未|非|俗名|虾种)/);assert.ok(f.procurement.checks.length>=2);assert.match(f.imageCaption,/编辑示意/);assert.ok(fs.existsSync(path.join(root,'dist',f.image)));assert.equal(ctx.window.LOTTERY_PROFILES[id].signature,C.signature(f));assert.equal(ctx.window.LOTTERY_PROFILES[id].senses.signature,C.sensorySignature(f));}
+ const audit=JSON.parse(require('node:child_process').execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),row=audit.rows.find(x=>x.term==='立秋');assert.ok(row.withinLimit);for(const id of ids)assert.ok(row.foodIds.includes(id));for(const id of ids)assert.ok(!audit.rows.find(x=>x.term==='大暑').foodIds.includes(id));
+});

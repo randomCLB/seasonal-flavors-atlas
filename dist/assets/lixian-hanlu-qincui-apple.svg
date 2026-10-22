@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">理县秦脆苹果通用形态参考</title>
+  <desc id="desc">暖白纸面上的红苹果编辑插画，仅作苹果通用形态参考，不是实物摄影或品种鉴别。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f4efe3"/><stop offset="1" stop-color="#e9e0cf"/></linearGradient>
+    <linearGradient id="fruit" x2="1" y2="1"><stop stop-color="#d66c45"/><stop offset=".48" stop-color="#a9362e"/><stop offset="1" stop-color="#6e2527"/></linearGradient>
+    <linearGradient id="highlight" x2="1" y2="1"><stop stop-color="#f3c28c" stop-opacity=".72"/><stop offset="1" stop-color="#f3c28c" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="960" height="720" fill="url(#paper)"/>
+  <path d="M0 585c171-45 316-38 480 2s319 45 480-1v134H0z" fill="#ded2bd"/>
+  <ellipse cx="484" cy="581" rx="244" ry="37" fill="#7d5644" opacity=".14"/>
+  <path d="M486 221c-15-62 1-112 42-151 11 43 7 86-13 126 46-41 91-57 136-48-37 45-89 70-157 77z" fill="#526246"/>
+  <path d="M474 242c-46-89-130-112-218-73 26-71 109-96 207-43 56-54 145-64 224-5-89-9-155 23-205 94z" fill="url(#fruit)" stroke="#762b2b" stroke-width="5"/>
+  <path d="M266 305c-44 65-58 147-38 222 17 66 63 102 138 108 53 4 91-17 126-17 36 0 74 21 128 17 72-5 116-42 133-108 19-74 5-157-39-222-31-47-78-78-140-78-39 0-64 15-83 15s-44-15-83-15c-63 0-110 31-142 78z" fill="url(#fruit)" stroke="#762b2b" stroke-width="7"/>
+  <path d="M312 321c-22 38-33 89-28 139 4 38 19 63 38 75 18 11 28-17 22-53-10-55 1-112 19-150 14-29-31-43-51-11z" fill="url(#highlight)"/>
+  <path d="M395 272c28-7 53-4 75 5" fill="none" stroke="#edaa79" stroke-width="7" stroke-linecap="round" opacity=".62"/>
+  <text x="480" y="660" text-anchor="middle" fill="#435347" font-family="serif" font-size="25" letter-spacing="4">高原苹果 · 通用形态参考</text>
+</svg>

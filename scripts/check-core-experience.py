@@ -1,12 +1,13 @@
 """Local Chromium checks. Clipboard/clock are controlled; no physical device or calendar app."""
 import json
+import os
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'output/core-validation'
 OUT.mkdir(parents=True, exist_ok=True)
-BASE = 'http://127.0.0.1:8776/'
+BASE = os.environ.get('SEASONAL_PREVIEW_BASE', 'http://127.0.0.1:8776/')
 report = {'checks': [], 'limitations': ['Mobile viewport and enlarged-text simulation, not physical phones.', 'Clipboard failure is simulated; no native share-sheet delivery or external calendar import.']}
 
 def check(name, condition):
@@ -19,11 +20,21 @@ with sync_playwright() as p:
         page = browser.new_page(viewport={'width': width, 'height': height}, reduced_motion='reduce')
         errors = []
         page.on('pageerror', lambda e: errors.append(str(e)))
-        page.add_init_script("Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('denied')}}});")
+        page.add_init_script("Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('denied')}}});Object.defineProperty(navigator,'share',{configurable:true,value:undefined});")
         page.goto(BASE + 'index.html?food=binchuan-renong1-yuganzi')
-        page.wait_for_selector('#detailDialog[open]')
+        page.wait_for_function("document.querySelector('#detailDialog')?.open === true")
         check(f'{width}: stable ingredient link restores correct detail', page.locator('#detailContent h1').inner_text() == '宾川“热农1号”余甘子')
         check(f'{width}: no horizontal dialog overflow', page.locator('#detailDialog').evaluate('(e)=>e.scrollWidth<=e.clientWidth'))
+        image_figure = page.locator('.reader-portrait')
+        image_note = image_figure.locator('figcaption')
+        check(f'{width}: detail image note starts hidden', image_note.evaluate('(e)=>getComputedStyle(e).opacity') == '0')
+        image_figure.hover()
+        check(f'{width}: detail image note appears on hover', image_note.evaluate('(e)=>getComputedStyle(e).opacity') == '1')
+        page.mouse.move(0, 0)
+        page.locator('.reader-recipe-button').focus()
+        check(f'{width}: detail image note hides after pointer leaves', image_note.evaluate('(e)=>getComputedStyle(e).opacity') == '0')
+        image_figure.focus()
+        check(f'{width}: keyboard focus reveals detail image note', image_note.evaluate('(e)=>getComputedStyle(e).opacity') == '1')
         check(f'{width}: recipe action initially visible', page.locator('.reader-recipe-button').bounding_box()['y'] < height)
         page.screenshot(path=str(OUT / f'detail-{width}.png'))
         page.locator('.reader-recipe-button').click()
@@ -32,9 +43,21 @@ with sync_playwright() as p:
         check(f'{width}: recipe visible below sticky controls', page.locator('#foodRecipe>summary').bounding_box()['y'] >= 0)
         page.locator('.food-purchase>summary').click()
         check(f'{width}: buying checks visible', page.locator('.purchase-content li').count() >= 2)
+        expected_query = '宾川 热农1号 余甘子 新鲜 品种'
+        if width == 1280:
+            page.locator('.purchase-city-edit').click()
+            page.locator('.purchase-city-form input[name=city]').fill('杭州')
+            page.locator('.purchase-city-form button[type=submit]').click()
+            expected_query += ' 杭州'
+            check('1280: chosen city augments search and remains explicitly unverified', page.locator('.purchase-query').inner_text() == expected_query and '不代表本地有货' in page.locator('.purchase-city').inner_text() and '供应情况请自行核对' in page.locator('.purchase-disclaimer').inner_text())
+            check('1280: platform URL contains the chosen city search term', page.locator('.purchase-links a').first.evaluate('(e)=>new URL(e.href).searchParams.get("q").includes("杭州")'))
+            page.reload()
+            page.wait_for_function("document.querySelector('#detailDialog')?.open === true")
+            page.locator('.food-purchase>summary').click()
+            check('1280: city preference survives reload and is reflected in query', page.locator('.purchase-query').inner_text() == expected_query)
         page.locator('.purchase-copy').click()
         page.wait_for_selector('.purchase-fallback:not([hidden])')
-        check(f'{width}: copy fallback holds exact query', page.locator('.purchase-fallback textarea').input_value() == '宾川 热农1号 余甘子 新鲜 品种')
+        check(f'{width}: copy fallback holds exact query', page.locator('.purchase-fallback textarea').input_value() == expected_query)
         check(f'{width}: external search preserves current dialog', page.locator('#detailDialog').get_attribute('open') is not None)
         page.screenshot(path=str(OUT / f'purchase-{width}.png'))
         page.locator('.reader-portrait').scroll_into_view_if_needed()
@@ -45,11 +68,46 @@ with sync_playwright() as p:
         page.locator('#detailShare').click()
         page.wait_for_selector('#detailShareFallback:not([hidden])')
         check(f'{width}: existing link share fallback intact', page.locator('#detailShareLink').input_value().endswith('index.html?food=binchuan-renong1-yuganzi'))
+        if width == 320:
+            page.goto(BASE + 'index.html?food=changning-hanlu-camellia-seed-oil')
+            page.wait_for_selector('#detailDialog[open]')
+            check('320: Hanlu oilseed detail, safety note and layout remain readable', page.locator('#detailContent h1').inner_text() == '常宁寒露籽茶油' and '不要食用生油茶果' in page.locator('#detailContent').inner_text() and page.locator('#detailDialog').evaluate('(e)=>e.scrollWidth<=e.clientWidth'))
+            page.screenshot(path=str(OUT / 'changning-oilseed-320.png'))
         check(f'{width}: no JavaScript errors', not errors)
         page.close()
 
     page = browser.new_page(viewport={'width': 1280, 'height': 900}, reduced_motion='reduce')
+    page.add_init_script("Object.defineProperty(navigator,'share',{configurable:true,value:undefined});")
     page.goto(BASE + 'index.html')
+    page.wait_for_function("[...document.images].filter(i=>{const r=i.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight}).every(i=>i.complete)")
+    check('home: every visible ingredient image loads', page.evaluate("[...document.images].filter(i=>{const r=i.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight}).every(i=>i.naturalWidth>0)"))
+    page.locator('#categoryFilter [data-category=oilseed]').click()
+    check('Hanlu oilseed category exposes the sourced Changning entry', page.locator('#seasonCards [data-food=changning-hanlu-camellia-seed-oil]').count() == 3 and '油茶与油料' in page.locator('#categoryFilter [data-category=oilseed]').inner_text())
+    page.locator('#categoryFilter [data-category=all]').click()
+    page.locator('[data-view=flavor]').click()
+    page.wait_for_function("document.querySelector('#flavorView').hidden === false && document.querySelector('#flavorCanvas').width > 0")
+    check('flavor map renders the selected food and star field', page.locator('#flavorAside h2').is_visible() and page.locator('#flavorCanvas').evaluate('(e)=>e.width>0&&e.height>0'))
+    page.screenshot(path=str(OUT / 'flavor-map-desktop.png'))
+    relations = page.evaluate('''()=>{
+      const selected=[...document.querySelectorAll('#flavorAside .aside-tags span')].map(e=>e.textContent);
+      return [...document.querySelectorAll('#flavorAside .relation')].map(button=>{
+        const row=[...document.querySelectorAll('#flavorList button[data-select]')].find(e=>e.dataset.select===button.dataset.select);
+        const tags=row.querySelector('span').textContent.split(' · ');
+        const shared=tags.filter(tag=>selected.includes(tag));
+        const other=tags.filter(tag=>!selected.includes(tag)).slice(0,2);
+        const expected=`共同风味：${shared.join('、')}${other.length?`；这味还带${other.slice(0,2).join('、')}`:''}`;
+        return {id:button.dataset.select,shared,reason:button.querySelector('span').textContent,expected};
+      });
+    }''')
+    check('flavor relation explanations exactly match shared and additional tags', len(relations)>0 and all(row['shared'] and row['reason']==row['expected'] for row in relations))
+    check('flavor map offers compact filters based on catalog tags', page.locator('#flavorFilters [data-flavor-filter]').count() == 9)
+    page.locator('#flavorFilters [data-flavor-filter=\"脆嫩\"]').click()
+    check('flavor filter narrows the discovery list to foods carrying that exact tag', page.locator('#flavorList [data-select]').count() > 0 and page.locator('#flavorList [data-select]').evaluate_all('(nodes)=>nodes.every(e=>e.querySelector(\"span\").textContent.split(\" · \").includes(\"脆嫩\"))') and page.locator('#flavorFilters [data-flavor-filter=\"脆嫩\"]').get_attribute('aria-pressed') == 'true')
+    page.locator('#flavorFilters [data-flavor-filter=\"all\"]').click()
+    check('reset restores the full flavor catalog', page.locator('#flavorList [data-select]').count() == len(page.locator('#flavorFilters [data-flavor-filter=\"all\"]').evaluate('()=>window.FOODS')))
+    chosen = relations[0]['id']
+    page.locator(f'#flavorAside .relation[data-select="{chosen}"]').click()
+    check('selecting a flavor relation updates the selected ingredient and star list', page.locator(f'#flavorList button[data-select="{chosen}"]').get_attribute('class') == 'active' and page.locator('#flavorAside .aside-tags span').count() > 0)
     ids = page.evaluate('Object.keys(window.CORE_REFINEMENTS)')
     for food_id in ids:
         page.goto(BASE + 'index.html?food=' + food_id)

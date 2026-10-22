@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">大白菜内叶通用编辑示意</title>
+  <desc id="desc">暖白纸面上的抽象白菜，黄芽菜是大白菜旧称，不代表天津品种或实物摄影。</desc>
+  <rect width="900" height="650" fill="#eee9dc"/>
+  <ellipse cx="450" cy="410" rx="235" ry="128" fill="#d7d1bd" opacity=".48"/>
+  <path d="M450 525c-121-25-191-112-179-222 10-91 65-152 142-156 45-2 75 24 86 68 12-50 46-78 92-70 76 13 119 86 108 172-14 111-91 185-249 208z" fill="#d8dfbd" stroke="#566957" stroke-width="8"/>
+  <path d="M450 516c-88-49-126-112-115-201 7-57 32-93 65-96 24-2 44 26 50 79 7-58 28-89 54-84 39 6 60 52 55 116-7 84-42 143-109 186z" fill="#f0e8c6" stroke="#b7aa82" stroke-width="7"/>
+  <path d="M450 507c-16-85-17-168 0-249m-5 178c-35-49-56-101-60-157m70 156c36-46 54-97 59-151" fill="none" stroke="#b7aa82" stroke-width="8" stroke-linecap="round"/>
+  <path d="M244 552h412" stroke="#b5ad9c" stroke-width="2"/>
+  <text x="450" y="594" text-anchor="middle" font-family="serif" font-size="22" letter-spacing="3" fill="#56685f">编辑示意 · 大白菜通用形态</text>
+</svg>

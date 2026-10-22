@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">春茶与茶盏编辑示意</title>
+  <desc id="desc">简洁线描的茶芽、叶片与白瓷茶盏，不代表具体茶园或品种实拍。</desc>
+  <rect width="800" height="620" fill="#eee9dc"/>
+  <path d="M0 454c134-35 259-22 390 7s278 34 410-4v163H0z" fill="#d9dfd1"/>
+  <path d="M89 471c45-92 119-175 228-229m-138 151c-8-52 10-93 54-123 9 50-8 91-54 123Zm69-79c7-55 38-91 91-107-5 54-35 89-91 107Zm-114 120c-7-55 15-95 64-120 5 52-16 92-64 120Z" fill="#6f8875" stroke="#415f50" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M158 398c51-63 103-113 159-153" fill="none" stroke="#415f50" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="545" cy="393" rx="153" ry="57" fill="#faf8f2" stroke="#36554b" stroke-width="6"/>
+  <path d="M392 393v63c0 31 68 58 153 58s153-27 153-58v-63" fill="#f8f5ec" stroke="#36554b" stroke-width="6"/>
+  <path d="M401 414c22 27 71 42 144 42s122-15 144-42" fill="none" stroke="#b8a983" stroke-width="4"/>
+  <ellipse cx="545" cy="390" rx="118" ry="36" fill="#d4cba7"/>
+  <path d="M492 393c-5-28 8-48 32-58 12 20 8 39-9 56 28-20 49-22 66-5-16 24-39 30-68 17 13 15 15 29 5 42-23-10-33-27-26-52Z" fill="#6b866d" stroke="#49694f" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M493 395c18-9 39-20 64-39" fill="none" stroke="#49694f" stroke-width="3" stroke-linecap="round"/>
+  <text x="42" y="72" fill="#36554b" font-family="serif" font-size="25" letter-spacing="5">SPRING TEA · EDITORIAL STUDY</text>
+</svg>

@@ -1,0 +1,9 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),{execFileSync}=require('node:child_process');
+const root=path.join(__dirname,'..');
+test('Suizhou paopaoqing uses a sourced winter availability window and is not presented as a local photo',()=>{
+ const ctx={window:{FOODS:[],LOTTERY_PROFILES:{}}};vm.createContext(ctx);
+ for(const name of ['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name+'.js'),'utf8'),ctx);
+ const f=ctx.window.FOODS.find(x=>x.id==='suizhou-paopaoqing'),C=require('../dist/lottery-core.js');assert.ok(f);assert.deepEqual(Array.from(f.peakWindows[0]),['12-01','02-28']);assert.equal(f.seasonStartTerm,21);assert.match(f.season,/每年12月至次年2月上市/);assert.match(f.season,/元旦至春节品质较佳/);assert.match(f.description,/不是本站试吃/);assert.ok(f.procurement.checks.some(x=>x.includes('地理标志')));assert.ok(f.steps.length>=3);assert.match(f.imageCaption,/非随州实拍/);assert.ok(fs.existsSync(path.join(root,'dist',f.image)));assert.ok(f.sources.some(x=>x[1]==='https://www.cnr.cn/hubei/jdt/20260215/t20260215_527527983.shtml'));assert.equal(ctx.window.LOTTERY_PROFILES[f.id].signature,C.signature(f));assert.equal(ctx.window.LOTTERY_PROFILES[f.id].senses.signature,C.sensorySignature(f));
+ const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),pools=Object.fromEntries(audit.rows.map(row=>[row.term,row]));for(const term of ['小雪','大雪','冬至','小寒','大寒'])assert.ok(pools[term].foodIds.includes(f.id),`${term} must reflect the full sourced winter window`);
+});

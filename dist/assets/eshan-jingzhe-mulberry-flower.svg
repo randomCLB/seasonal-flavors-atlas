@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">桑树花序编辑示意</title>
+  <desc id="desc">以春日枝条、细叶和垂落的桑树花序构成的植物学风格插画，不用于物种鉴定。</desc>
+  <rect width="900" height="700" fill="#efe9d9"/>
+  <path d="M0 570C190 505 343 450 523 316S785 128 900 91" fill="none" stroke="#667455" stroke-width="28" stroke-linecap="round"/>
+  <path d="M213 493C156 390 88 334 30 326c61 91 106 150 183 184M380 402c-26-132-5-219 47-277 20 103 19 188-26 302M540 303c57-102 139-151 224-156-60 83-125 138-215 180M662 220c22 99 72 158 149 189-19-87-57-150-139-209" fill="#87936c" stroke="#48583f" stroke-width="8" stroke-linejoin="round"/>
+  <g fill="#e8e0c6" stroke="#867d62" stroke-width="4">
+    <path d="M490 325c-21 50-20 101-13 151 7 44 1 84-18 120 33-18 51-46 55-85 6-51-5-97 5-142 11 44 8 91 23 132 11 29 33 49 61 59-19-31-26-67-18-110 9-47 20-93-1-140-6 52-27 89-40 110-6-48-17-83-54-95z"/>
+    <path d="M677 216c-22 39-29 79-26 118 2 33-7 62-27 88 29-10 48-29 58-57 13-36 12-71 25-104 2 34-5 67 3 99 6 24 21 43 43 56-12-25-14-52-4-82 11-34 23-66 10-104-11 39-30 64-42 78 1-36-5-64-40-92z"/>
+  </g>
+  <g fill="#f7f3e9" stroke="#8c826a" stroke-width="3">
+    <circle cx="494" cy="383" r="15"/><circle cx="526" cy="403" r="13"/><circle cx="489" cy="429" r="14"/><circle cx="530" cy="452" r="12"/><circle cx="482" cy="480" r="14"/><circle cx="534" cy="502" r="12"/><circle cx="500" cy="539" r="13"/>
+    <circle cx="689" cy="258" r="12"/><circle cx="716" cy="279" r="10"/><circle cx="685" cy="299" r="11"/><circle cx="720" cy="321" r="10"/><circle cx="679" cy="338" r="11"/>
+  </g>
+  <g fill="#c9b78a" opacity=".7"><circle cx="494" cy="383" r="4"/><circle cx="526" cy="403" r="3"/><circle cx="489" cy="429" r="4"/><circle cx="530" cy="452" r="3"/><circle cx="482" cy="480" r="4"/><circle cx="534" cy="502" r="3"/><circle cx="500" cy="539" r="4"/></g>
+  <text x="58" y="642" fill="#566047" font-family="serif" font-size="23" letter-spacing="4">峨山 · 桑树花序 / 编辑示意</text>
+</svg>

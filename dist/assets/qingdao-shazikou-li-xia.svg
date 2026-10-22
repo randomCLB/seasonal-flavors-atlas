@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">青岛春汛小虾形态编辑示意</title>
+  <desc id="desc">原创水彩风格虾形插画，仅作编辑示意，不用于鹰爪虾物种或沙子口产地鉴别。</desc>
+  <rect width="900" height="620" fill="#eee8d9"/>
+  <path d="M0 450c110-35 218-35 330 0s223 35 336 0 157-32 234-4v174H0z" fill="#d8e0d8"/>
+  <ellipse cx="458" cy="361" rx="300" ry="164" fill="#f5f0e5" stroke="#d2c5a9" stroke-width="5"/>
+  <g fill="none" stroke="#bd5837" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M260 320c48-58 128-78 222-58 75 16 144 63 177 125-41 48-102 70-170 65-93-7-183-59-229-132z" fill="#d8744d" stroke-width="9"/>
+    <path d="M276 302c18 12 31 33 35 58 3 23-3 44-16 60M331 275c19 21 30 48 31 78 1 25-5 47-16 67M395 259c15 25 22 56 20 88-2 29-10 52-23 72M462 265c12 26 17 56 13 86-4 29-14 51-29 71M528 286c10 22 12 47 8 72-5 26-17 48-35 65" stroke-width="6" opacity=".72"/>
+    <path d="M648 384c44-19 71-22 103-10M649 397c48-6 81 0 109 15M246 327c-28-42-44-81-46-121M252 324c-42-39-69-71-84-102" stroke-width="5"/>
+  </g>
+  <path d="M219 279c-24-17-43-18-57-10M224 287c-29-7-47-4-61 8" fill="none" stroke="#bd5837" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="252" cy="300" r="8" fill="#263f38"/>
+  <g fill="#73887b" opacity=".7"><circle cx="174" cy="458" r="5"/><circle cx="729" cy="298" r="4"/><circle cx="693" cy="458" r="6"/><circle cx="304" cy="485" r="4"/><circle cx="620" cy="234" r="5"/></g>
+</svg>

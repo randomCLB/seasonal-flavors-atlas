@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">闽清糟菜编辑插画</title>
+  <desc id="desc">陶罐旁盛着红糟腌芥菜的浅盘，原创示意插画，非实物摄影。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f4f0e5"/><stop offset="1" stop-color="#e6e0d1"/></linearGradient>
+    <linearGradient id="jar" x2="1" y2="1"><stop stop-color="#8b4838"/><stop offset=".52" stop-color="#71382f"/><stop offset="1" stop-color="#4b332d"/></linearGradient>
+    <linearGradient id="pickle" x2="0" y2="1"><stop stop-color="#863c2d"/><stop offset="1" stop-color="#4f332d"/></linearGradient>
+  </defs>
+  <rect width="960" height="720" fill="url(#paper)"/>
+  <path d="M0 544c180-48 344-24 500 5s304 30 460-8v179H0Z" fill="#d6d1bd"/>
+  <ellipse cx="493" cy="581" rx="342" ry="42" fill="#948f7e" opacity=".22"/>
+  <g transform="translate(120 120)">
+    <path d="M142 103h174l-20 38c55 42 77 126 61 219-13 75-54 127-128 145-74-18-115-70-128-145-16-93 6-177 61-219Z" fill="url(#jar)" stroke="#44312c" stroke-width="9"/>
+    <path d="M123 101c4-35 35-56 106-56s102 21 106 56l-18 28H141Z" fill="#9b5d45" stroke="#44312c" stroke-width="9"/>
+    <path d="M145 112h168" stroke="#d7a077" stroke-width="7" opacity=".7"/>
+    <path d="M155 182c15 21 18 50 4 73m48-76c-4 27 7 47 27 61m25-64c-10 28-8 50 9 69m-92 14c20-7 34-5 43 7m49 2c17-8 34-7 50 2" fill="none" stroke="#bb7a5d" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+    <path d="M114 100h232" stroke="#d3b18d" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(472 348)">
+    <ellipse cx="197" cy="161" rx="225" ry="125" fill="#d9d2bf" stroke="#888a78" stroke-width="9"/>
+    <ellipse cx="197" cy="144" rx="194" ry="92" fill="#f8f5ea"/>
+    <path d="M55 142c36-48 89-53 121-7 28-54 86-52 116 2 26-29 63-19 81 8-29 40-82 57-159 55-78 3-131-14-159-58Z" fill="url(#pickle)"/>
+    <g fill="none" stroke="#a76a45" stroke-width="11" stroke-linecap="round">
+      <path d="M75 132c26-41 52-37 73-4m17 21c20-51 50-51 72-3m14 13c18-36 43-38 62-17"/>
+      <path d="M106 170c21-28 43-31 65-11m65 19c23-28 47-31 69-12"/>
+    </g>
+    <path d="M91 126c10 10 17 17 23 29m76-18 15 23m86-31 17 20" fill="none" stroke="#758160" stroke-width="9" stroke-linecap="round"/>
+    <ellipse cx="198" cy="153" rx="158" ry="69" fill="none" stroke="#c7c0ad" stroke-width="5"/>
+  </g>
+  <g fill="#1c4339" opacity=".16"><circle cx="810" cy="132" r="76"/><path d="M0 85h210v8H0z"/></g>
+</svg>

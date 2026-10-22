@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="通用龙眼果实形态编辑插画">
+ <rect width="900" height="700" fill="#e9e3d3"/><rect x="38" y="38" width="824" height="624" fill="#f6f2e8" stroke="#d1c7b2" stroke-width="2"/>
+ <path d="M104 225 C260 123 465 147 633 268" fill="none" stroke="#64523b" stroke-width="14" stroke-linecap="round"/><path d="M470 174 C531 112 601 118 648 159 C588 207 528 213 470 174Z" fill="#536c48" stroke="#3e563e" stroke-width="6"/><path d="M291 176 C342 119 408 123 448 158 C395 204 341 210 291 176Z" fill="#748258" stroke="#46573d" stroke-width="6"/>
+ <g stroke="#72553b" stroke-width="5"><path d="M276 214l-14 87M366 197l-3 93M462 205l15 100M550 233l22 84M647 280l21 75"/></g>
+ <g fill="#ad7b49" stroke="#70543b" stroke-width="7"><circle cx="256" cy="342" r="70"/><circle cx="365" cy="327" r="76"/><circle cx="484" cy="345" r="74"/><circle cx="584" cy="367" r="68"/><circle cx="686" cy="398" r="60"/></g>
+ <g fill="#d9b478" opacity=".8"><path d="M213 318q24-32 53-24" fill="none" stroke="#e4c99a" stroke-width="10"/><path d="M323 300q24-30 54-19" fill="none" stroke="#e4c99a" stroke-width="10"/><path d="M444 319q24-28 51-16" fill="none" stroke="#e4c99a" stroke-width="10"/></g>
+ <ellipse cx="455" cy="534" rx="275" ry="42" fill="#d8cfbb"/><text x="450" y="620" text-anchor="middle" fill="#213a32" font-family="serif" font-size="24" letter-spacing="6">晚熟龙眼 · 通用形态参考</text>
+</svg>

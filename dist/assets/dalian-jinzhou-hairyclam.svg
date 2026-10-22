@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">毛蚶外壳纹理示意</title>
+  <desc id="desc">以暖灰和赭石色绘制的双壳贝类编辑插画，不代表实物摄影或产地鉴别。</desc>
+  <rect width="900" height="700" fill="#e9e4d8"/>
+  <ellipse cx="450" cy="570" rx="286" ry="34" fill="#c9c1b0" opacity=".55"/>
+  <path d="M178 498c9-187 114-320 272-332 158 12 263 145 272 332-74 88-173 131-272 131s-198-43-272-131Z" fill="#966e55" stroke="#29423b" stroke-width="5"/>
+  <path d="M450 166v460M450 166c-57 77-95 181-110 307M450 166c57 77 95 181 110 307M450 166c-108 95-166 209-174 331M450 166c108 95 166 209 174 331M450 166c-150 92-226 205-239 304M450 166c150 92 226 205 239 304" fill="none" stroke="#c6a88b" stroke-width="9" opacity=".84"/>
+  <path d="M193 495c14-115 71-218 154-282M707 495c-14-115-71-218-154-282M223 523c69 58 145 86 227 87M677 523c-69 58-145 86-227 87" fill="none" stroke="#644d40" stroke-width="4" opacity=".65"/>
+  <path d="M179 499c91 35 182 52 271 52s180-17 271-52" fill="none" stroke="#e1c6a5" stroke-width="13"/>
+  <circle cx="327" cy="420" r="6" fill="#dcc5ac" opacity=".65"/><circle cx="577" cy="389" r="5" fill="#dcc5ac" opacity=".65"/><circle cx="398" cy="500" r="4" fill="#dcc5ac" opacity=".65"/>
+</svg>

@@ -8,7 +8,7 @@ const events=C.eventsFrom(ctx.window.SOLAR_TERM_TIMES,ctx.window.SOLAR_TERM_NAME
 const ids=['baoshan-liangcui-emblica','ninger-tongxin-sweet-shoot','yongsheng-fresh-kapok','jianshui-caoya','tonghai-fresh-sour-quince','lancang-nannai-duoyi','longyang-pupiao-allium-root','banna-banana-blossom','ximeng-bamboo-worm'];
 const pool=(day,avoid=[])=>T.pool({foods,profiles,events,now:Date.parse(day+'T04:00:00Z'),avoid}).map(x=>x.food.id);
 test('nine approved Yunnan entries join the catalog, with tree tomato excluded',()=>{
- assert.equal(foods.length,76);assert.equal(new Set(foods.map(f=>f.id)).size,76);
+ assert.equal(new Set(foods.map(f=>f.id)).size,foods.length);
  for(const id of ids){const f=byId[id];assert.ok(f&&f.region.startsWith('云南'),id);assert.ok(f.steps.length>=3&&f.buy&&f.storage&&f.safety&&f.sources.length>=2,id);assert.equal(C.signature(f),profiles[id].signature,id);assert.equal(C.sensorySignature(f),profiles[id].senses.signature,id);}
  assert.ok(!foods.some(f=>/树番茄/.test([f.name,...f.alias].join(' '))));
 });

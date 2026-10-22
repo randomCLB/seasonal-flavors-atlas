@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">秋日枝头的海棠果</title>
+  <desc id="desc">以纸本水彩感绘制红色小果与灰绿叶片的海棠果通用形态插画，非实物摄影，不用于品系鉴定。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f1eee4"/><stop offset="1" stop-color="#dddccc"/></linearGradient>
+    <radialGradient id="fruit" cx="35%" cy="28%"><stop stop-color="#e9a47e"/><stop offset=".55" stop-color="#bd5146"/><stop offset="1" stop-color="#773b39"/></radialGradient>
+    <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#849178"/><stop offset="1" stop-color="#455f52"/></linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#paper)"/>
+  <path d="M86 571C286 463 432 347 811 155" fill="none" stroke="#665e4c" stroke-width="18" stroke-linecap="round"/>
+  <path d="M210 510C197 405 238 334 318 302C343 381 309 462 210 510Z" fill="url(#leaf)"/>
+  <path d="M420 390C423 294 480 224 566 203C577 288 527 356 420 390Z" fill="url(#leaf)"/>
+  <path d="M625 283C646 201 708 152 790 151C788 225 735 276 625 283Z" fill="url(#leaf)"/>
+  <path d="M226 480L300 326M443 362L548 221M652 261L770 169" fill="none" stroke="#c3c4a6" stroke-width="5" opacity=".75"/>
+  <g fill="url(#fruit)" stroke="#8b5145" stroke-width="4">
+    <path d="M333 407C316 378 322 342 351 329C372 318 395 330 405 347C418 329 447 324 467 341C493 363 483 396 463 421C438 452 391 474 366 457C351 447 343 430 333 407Z"/>
+    <path d="M526 489C508 459 518 426 544 414C565 404 585 415 596 433C610 414 639 411 659 428C684 449 675 482 653 506C628 534 584 555 559 539C543 529 536 511 526 489Z"/>
+    <path d="M688 381C674 356 682 329 703 318C721 309 741 318 751 333C763 317 785 314 802 328C822 346 814 373 796 393C775 417 738 435 718 422C704 414 697 399 688 381Z"/>
+  </g>
+  <g fill="#6f5b42"><path d="M373 328l5-24 11 21M573 413l6-22 11 21M727 317l5-20 10 18"/></g>
+  <g fill="#d6ad84" opacity=".65"><circle cx="356" cy="365" r="8"/><circle cx="390" cy="353" r="6"/><circle cx="552" cy="453" r="7"/><circle cx="728" cy="351" r="6"/></g>
+  <path d="M135 602C330 565 562 588 777 535" fill="none" stroke="#9b9a81" stroke-width="2" opacity=".5"/>
+</svg>

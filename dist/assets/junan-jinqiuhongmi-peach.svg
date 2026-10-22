@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">晚熟鲜桃形态参考</title>
+  <desc id="desc">本站绘制的通用鲜桃插画，不是莒南团林果园实拍或金秋红蜜品种鉴别图。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f6f0e4"/><stop offset="1" stop-color="#e8dfce"/></linearGradient>
+    <linearGradient id="peach" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f5b38e"/><stop offset=".45" stop-color="#d86c50"/><stop offset="1" stop-color="#a8473c"/></linearGradient>
+    <radialGradient id="glow" cx=".3" cy=".24"><stop stop-color="#ffe0b7" stop-opacity=".8"/><stop offset="1" stop-color="#ffe0b7" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#paper)"/>
+  <path d="M0 700Q165 650 360 705T720 675V900H0Z" fill="#d8c9b0"/>
+  <ellipse cx="365" cy="700" rx="238" ry="40" fill="#9f8367" opacity=".18"/>
+  <path d="M367 247q-8-84 53-135 15 68-34 131" fill="#54684a"/>
+  <path d="M385 224q79-81 143-60-40 60-143 73" fill="#77875a"/>
+  <path d="M359 294c-98-94-224-28-220 111 2 72 44 152 116 220 38 36 70 60 105 74 31-14 73-48 116-90 77-75 112-146 109-220-5-126-127-192-226-95z" fill="url(#peach)"/>
+  <path d="M360 295c-19 59-25 111-18 168 9 78 28 151 18 236" fill="none" stroke="#873e36" stroke-width="8" opacity=".58"/>
+  <ellipse cx="305" cy="383" rx="110" ry="128" fill="url(#glow)"/>
+  <path d="M256 389q39-42 77-18" fill="none" stroke="#fff2d5" stroke-width="15" stroke-linecap="round" opacity=".55"/>
+  <path d="M473 543q-25 44-65 72" fill="none" stroke="#f2b08a" stroke-width="14" stroke-linecap="round" opacity=".5"/>
+  <text x="360" y="825" text-anchor="middle" fill="#43574b" font-family="serif" font-size="25" letter-spacing="5">深秋 · 鲜桃形态参考</text>
+</svg>

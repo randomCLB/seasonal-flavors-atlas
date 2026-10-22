@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">闽侯桔柚形态示意</title>
+  <desc id="desc">金绿相间的柑橘与切面插画，不代表闽侯产地实拍。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f6f1e6"/><stop offset="1" stop-color="#e9dfcd"/></linearGradient>
+    <radialGradient id="citrus" cx="32%" cy="26%"><stop stop-color="#ffe18c"/><stop offset=".6" stop-color="#d6aa50"/><stop offset="1" stop-color="#8f8d45"/></radialGradient>
+    <radialGradient id="flesh" cx="35%" cy="32%"><stop stop-color="#fff3c9"/><stop offset="1" stop-color="#e5b75d"/></radialGradient>
+    <filter id="shade"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#paper)"/>
+  <circle cx="944" cy="150" r="165" fill="#fffaf0" opacity=".5"/>
+  <ellipse cx="610" cy="746" rx="355" ry="52" fill="#64583e" opacity=".18" filter="url(#shade)"/>
+  <ellipse cx="612" cy="677" rx="390" ry="92" fill="#d9d1bb"/>
+  <ellipse cx="612" cy="650" rx="390" ry="92" fill="#f4efe2" stroke="#aaa38b" stroke-width="7"/>
+  <path d="M334 441 C390 337 527 308 614 376 C689 436 653 570 540 608 C421 647 284 545 334 441Z" fill="url(#citrus)" stroke="#878046" stroke-width="8"/>
+  <path d="M413 385 Q490 343 557 384" fill="none" stroke="#fff1bb" stroke-width="13" opacity=".45" stroke-linecap="round"/>
+  <path d="M520 371 Q532 342 558 338" fill="none" stroke="#536b48" stroke-width="12" stroke-linecap="round"/>
+  <path d="M641 440 C687 342 815 321 895 382 C967 438 936 556 831 595 C724 634 592 544 641 440Z" fill="url(#citrus)" stroke="#878046" stroke-width="8"/>
+  <path d="M710 390 Q785 351 851 389" fill="none" stroke="#fff1bb" stroke-width="12" opacity=".42" stroke-linecap="round"/>
+  <path d="M716 376 C678 326 633 317 595 334 C617 380 662 393 716 376Z" fill="#66734b"/>
+  <path d="M732 367 C780 315 835 314 869 342 C843 385 786 401 732 367Z" fill="#758151"/>
+  <g transform="rotate(11 610 643)">
+    <circle cx="610" cy="643" r="112" fill="#a29a4e" stroke="#858044" stroke-width="8"/>
+    <circle cx="610" cy="643" r="89" fill="url(#flesh)" stroke="#fff0c4" stroke-width="11"/>
+    <circle cx="610" cy="643" r="68" fill="#e9bd64"/>
+    <g stroke="#fff4d4" stroke-width="8" stroke-linecap="round"><path d="M610 578V627 M654 596L618 631 M674 643H621 M654 690L618 654 M610 708V659 M566 690L602 654 M546 643H599 M566 596L602 631"/></g>
+    <circle cx="610" cy="643" r="12" fill="#fff5d9"/>
+  </g>
+</svg>

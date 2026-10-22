@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">嫩芽枝梢编辑示意</title>
+  <desc id="desc">以克制的植物线描表现一支嫩芽，仅为编辑示意，不用于植物识别。</desc>
+  <rect width="900" height="700" fill="#eeeade"/><rect x="42" y="42" width="816" height="616" fill="#f7f4eb" stroke="#d8d1bd" stroke-width="2"/>
+  <path d="M452 566 C444 442 454 314 469 159 M451 402 C386 351 343 297 314 229 M460 350 C520 304 557 254 587 205 M454 479 C385 449 333 414 284 361" fill="none" stroke="#536b51" stroke-width="11" stroke-linecap="round"/>
+  <g fill="#a6af7b" stroke="#61714f" stroke-width="4">
+    <path d="M462 300 C391 300 355 265 354 225 C407 218 450 248 462 300Z"/><path d="M466 261 C517 227 529 184 507 154 C468 176 451 214 466 261Z"/>
+    <path d="M402 364 C337 374 295 347 285 314 C329 291 374 314 402 364Z"/><path d="M484 393 C539 350 586 352 609 379 C584 421 535 431 484 393Z"/>
+    <path d="M438 223 C411 188 418 154 444 138 C471 162 468 195 438 223Z"/><path d="M392 452 C335 457 297 431 290 401 C328 381 370 402 392 452Z"/>
+  </g>
+  <g fill="none" stroke="#778363" stroke-width="3"><path d="M453 549 C426 442 389 335 365 235 M464 288 C478 235 492 196 506 166 M392 350 C350 332 320 322 298 316 M498 384 C538 373 570 375 598 382 M437 210 C435 182 438 161 444 146"/></g>
+  <text x="96" y="604" fill="#59624d" font-family="serif" font-size="24" letter-spacing="4">枝头嫩芽 · 编辑示意</text>
+</svg>

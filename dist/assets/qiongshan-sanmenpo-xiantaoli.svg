@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">大果荔枝编辑插画</title>
+  <desc id="desc">一颗红色荔枝与剖开的白色果肉，背景为淡暖色纸纹和绿叶。仅作通用形态参考。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f3eddf"/><stop offset="1" stop-color="#e4ddcd"/></linearGradient>
+    <radialGradient id="shell" cx="34%" cy="28%"><stop stop-color="#dc715c"/><stop offset=".62" stop-color="#b94739"/><stop offset="1" stop-color="#843b34"/></radialGradient>
+    <radialGradient id="flesh" cx="40%" cy="30%"><stop stop-color="#fffef2"/><stop offset=".74" stop-color="#f1e9d8"/><stop offset="1" stop-color="#d7c9ae"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#paper)"/>
+  <path d="M0 620C215 540 318 650 510 598s386-38 690 18v284H0Z" fill="#d7d8c6" opacity=".55"/>
+  <ellipse cx="620" cy="715" rx="330" ry="60" fill="#51463d" opacity=".18" filter="url(#shadow)"/>
+  <path d="M720 210c82-122 198-154 321-105-61 124-161 182-299 170" fill="#66775c"/>
+  <path d="M741 245c106-66 190-99 276-116" fill="none" stroke="#aab18e" stroke-width="9"/>
+  <path d="M440 295c17-112 124-195 249-172 125 23 193 139 161 263-28 112-125 190-257 176-123-13-177-132-153-267Z" fill="url(#shell)" stroke="#76372f" stroke-width="8"/>
+  <path d="M474 316c22-87 98-143 181-148" fill="none" stroke="#f0b08a" stroke-width="15" opacity=".55" stroke-linecap="round"/>
+  <g fill="#f4c5a0" opacity=".62">
+    <path d="m537 237 24 6-15 22Z"/><path d="m618 206 21 8-17 21Z"/><path d="m705 225 22 4-14 22Z"/>
+    <path d="m496 344 22 4-16 21Z"/><path d="m563 415 23 4-14 21Z"/><path d="m672 432 23 3-14 21Z"/>
+    <path d="m768 357 23 3-14 22Z"/><path d="m742 286 23 3-15 21Z"/>
+  </g>
+  <path d="M682 544c38-63 99-92 164-75 64 17 98 80 80 148-18 69-73 110-147 105-73-5-129-81-97-178Z" fill="url(#flesh)" stroke="#c9b99e" stroke-width="7"/>
+  <path d="M748 575c22-39 61-52 92-31 33 21 37 68 13 106-20 30-57 44-87 24-34-22-39-62-18-99Z" fill="#9a6048" opacity=".84"/>
+  <path d="M701 568c-22 55-7 98 37 126" fill="none" stroke="#fffdf1" stroke-width="15" opacity=".62" stroke-linecap="round"/>
+  <path d="M155 680c116-74 192-68 306-5" fill="none" stroke="#a9a786" stroke-width="7" opacity=".7"/>
+  <text x="78" y="108" fill="#52634f" font-family="serif" font-size="27" letter-spacing="5">初夏 · 鲜荔新熟</text>
+</svg>

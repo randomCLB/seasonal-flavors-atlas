@@ -1,0 +1,71 @@
+{
+  "completedAt": "2026-10-16T13:11:58.701122+00:00",
+  "catalogCount": 76,
+  "yunnanCount": 17,
+  "approvedAdditions": 9,
+  "excluded": "树番茄",
+  "publication": "local preview only; no push or deployment",
+  "tests": {
+    "total": 151,
+    "passed": 151,
+    "failed": 0
+  },
+  "browserChecks": "browser-checks.json",
+  "protectedExistingData": {
+    "editorial-notes.js": true,
+    "lottery-profiles.js": true
+  },
+  "servedImages": [
+    {
+      "id": "baoshan-liangcui-emblica",
+      "url": "http://127.0.0.1:8776/assets/baoshan-liangcui-emblica-serving-generated.webp",
+      "sha256": "b4fa3949e0ee9eae3b857c5ce826d6559151d83f1723ba492941e921a001b428"
+    },
+    {
+      "id": "ninger-tongxin-sweet-shoot",
+      "url": "http://127.0.0.1:8776/assets/ninger-tongxin-sweet-shoot-serving-generated.webp",
+      "sha256": "7204cc750d29fcd2d8be2cb8657e9b729d5b31e5ffa0e6cf4d30d48bc4c34e53"
+    },
+    {
+      "id": "yongsheng-fresh-kapok",
+      "url": "http://127.0.0.1:8776/assets/yongsheng-fresh-kapok-serving-generated.webp",
+      "sha256": "6498972d102fd1a6ce65b7b714ec98d9043c893a424b698dfd1a4edac803bcbd"
+    },
+    {
+      "id": "jianshui-caoya",
+      "url": "http://127.0.0.1:8776/assets/jianshui-caoya-serving-generated.webp",
+      "sha256": "bdc5fad1c90e22186bfa60425c77542d7879ff21bd6065be9838415e8a345880"
+    },
+    {
+      "id": "tonghai-fresh-sour-quince",
+      "url": "http://127.0.0.1:8776/assets/tonghai-fresh-sour-quince-serving-generated.webp",
+      "sha256": "351f32c825412154f07e24a27f23558195ab4a9d676187e269cba00c02045c54"
+    },
+    {
+      "id": "lancang-nannai-duoyi",
+      "url": "http://127.0.0.1:8776/assets/lancang-nannai-duoyi-serving-generated.webp",
+      "sha256": "c44c36a255be7190a33133d250320a040a121d6a94b37c59f05b73aeb524f23e"
+    },
+    {
+      "id": "longyang-pupiao-allium-root",
+      "url": "http://127.0.0.1:8776/assets/longyang-pupiao-allium-root-serving-generated.webp",
+      "sha256": "7da62daffca2fcbde74c69b331546525ef6a9083c205bb9ed8ef38dd6b75a419"
+    },
+    {
+      "id": "banna-banana-blossom",
+      "url": "http://127.0.0.1:8776/assets/banna-banana-blossom-serving-generated.webp",
+      "sha256": "ecc9c2af987487fe2b516dac435c5aaa0dada89731c5c871073018b81bd6887d"
+    },
+    {
+      "id": "ximeng-bamboo-worm",
+      "url": "http://127.0.0.1:8776/assets/ximeng-bamboo-worm-serving-generated.webp",
+      "sha256": "e17ab75d0bb78ed37f95d9de5d1e54894b3a1ecdd907b67b666a4469d4fdf081"
+    }
+  ],
+  "exception": {
+    "id": "banna-banana-blossom",
+    "reason": "best harvest months unverified",
+    "searchAndAllFoodMap": true,
+    "automaticSeasonAndDraw": false
+  }
+}

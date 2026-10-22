@@ -1,0 +1,12 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),{execFileSync}=require('node:child_process');
+const root=path.join(__dirname,'..'),ctx={window:{FOODS:[],LOTTERY_PROFILES:{}}};vm.createContext(ctx);for(const name of ['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name+'.js'),'utf8'),ctx);const C=require(path.join(root,'dist/lottery-core.js'));
+
+test('Mengzi June Red pomegranate uses the reported recurring mid-to-late June window',()=>{
+ const f=ctx.window.FOODS.find(x=>x.id==='mengzi-june-red-pomegranate'),p=ctx.window.LOTTERY_PROFILES['mengzi-june-red-pomegranate'];assert.ok(f);assert.deepEqual(Array.from(f.peakWindows[0]),['06-15','06-30']);assert.match(f.season,/每年六月中下旬/);assert.match(f.description,/不是本站试吃/);assert.match(f.imageCaption,/不证明蒙自产地或“六月红”品种/);assert.ok(f.sources.some(x=>x[1]==='https://nync.yn.gov.cn/html/2026/zhoushilianbo-new_0720/1427574.html'));assert.ok(fs.existsSync(path.join(root,'dist',f.image)));assert.equal(p.signature,C.signature(f));assert.equal(p.senses.signature,C.sensorySignature(f));
+});
+
+test('Northeast Cape bullet bonito is a sourced Summer Solstice tasting cue with cautious species and catch claims',()=>{
+ const f=ctx.window.FOODS.find(x=>x.id==='ntpc-xiazhi-bullet-bonito'),p=ctx.window.LOTTERY_PROFILES['ntpc-xiazhi-bullet-bonito'];assert.ok(f);assert.deepEqual(Array.from(f.peakTerms),[11]);assert.match(f.season,/越接近夏至肥满度越佳/);assert.match(f.description,/本站未试吃/);assert.match(f.imageCaption,/不是东北角渔获实拍或物种鉴定/);assert.ok(f.sources.some(x=>x[1].includes('article_id=1578')));assert.ok(fs.existsSync(path.join(root,'dist',f.image)));assert.equal(p.signature,C.signature(f));assert.equal(p.senses.signature,C.sensorySignature(f));
+ const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),mangzhong=audit.rows.find(x=>x.term==='芒种'),summerSolstice=audit.rows.find(x=>x.term==='夏至');assert.ok(mangzhong.foodIds.includes('mengzi-june-red-pomegranate'));assert.ok(summerSolstice.foodIds.includes('mengzi-june-red-pomegranate'));assert.ok(summerSolstice.foodIds.includes(f.id));assert.equal(summerSolstice.repeatRate,.5);
+});

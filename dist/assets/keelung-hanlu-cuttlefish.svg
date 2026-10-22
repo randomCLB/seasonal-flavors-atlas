@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">乌贼形态编辑插画</title>
+  <desc id="desc">浅海水蓝灰背景上的乌贼通用形态参考，不用于物种或产地鉴定。</desc>
+  <rect width="800" height="600" fill="#e8e7dc"/>
+  <path d="M0 447c145-29 267 27 405 2s248-48 395-8v159H0z" fill="#d3d7cf"/>
+  <path d="M72 155c83-45 166-52 237-27M536 152c76-28 146-22 215 15M46 225c63-22 121-25 183-12M581 420c69-23 128-19 189 8" fill="none" stroke="#aab9b7" stroke-width="3" opacity=".72"/>
+  <path d="M178 301c25-86 127-141 252-145 111-4 197 49 266 144-69 95-155 148-266 145-125-4-227-58-252-144z" fill="#f4f0e5" stroke="#263f3c" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M245 208c66-45 152-61 246-45M245 394c66 45 152 61 246 45" fill="none" stroke="#d8d1bf" stroke-width="5" stroke-linecap="round"/>
+  <path d="M278 192c-14 40-14 82-3 122M322 177c-15 45-15 92-2 138M369 164c-13 52-12 104 1 157M416 158c-8 55-5 111 8 166M463 162c-4 51 2 103 17 154M507 175c3 46 13 90 31 134" fill="none" stroke="#b98c61" stroke-width="4" stroke-linecap="round" opacity=".82"/>
+  <path d="M183 267c-38-30-83-43-132-31 26 35 66 54 128 59M177 286c-48-17-94-15-139 7 39 24 82 33 137 26M177 315c-49 1-90 18-123 52 43 8 84 1 132-22M189 336c-37 20-65 49-83 88 42-7 78-25 112-58" fill="#e7e4d8" stroke="#263f3c" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M185 277c-47-46-78-76-121-93 11 49 39 85 101 121M185 326c-39 48-65 82-77 128 45-23 75-54 105-112" fill="none" stroke="#263f3c" stroke-width="6" stroke-linecap="round"/>
+  <path d="M211 256c18-16 36-20 54-11M211 344c18 16 36 20 54 11" fill="none" stroke="#263f3c" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="224" cy="269" r="10" fill="#18332f"/><circle cx="224" cy="331" r="10" fill="#18332f"/>
+  <path d="M128 300c23-12 43-13 65-1" fill="none" stroke="#94775d" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="322" cy="137" r="5" fill="#748e8c"/><circle cx="672" cy="220" r="4" fill="#748e8c"/><circle cx="632" cy="421" r="4" fill="#748e8c"/>
+</svg>

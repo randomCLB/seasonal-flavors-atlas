@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">青鱼形态编辑示意</title>
+  <desc id="desc">深青灰色淡水鱼的通用形态参考，不是实物摄影、产地记录或物种鉴定。</desc>
+  <rect width="720" height="520" fill="#e9eee9"/>
+  <path d="M105 263c68-91 177-130 303-104 69 14 119 52 158 105l74-50-14 58 13 57-73-42c-48 70-122 108-224 108-110 0-188-42-237-132Z" fill="#718279" stroke="#344941" stroke-width="7"/>
+  <path d="M128 264c78-61 169-83 278-61 56 11 104 35 148 65-54 58-123 87-211 86-95-1-169-31-215-90Z" fill="#9eaaa0" opacity=".9"/>
+  <path d="M267 170 310 115l52 59M334 390l47 43 36-47M487 185l36-48 34 65" fill="#61746a" stroke="#344941" stroke-width="5"/>
+  <path d="M568 263 640 214l-14 61 14 57-72-34" fill="#5b6e64" stroke="#344941" stroke-width="5"/>
+  <circle cx="172" cy="245" r="9" fill="#172c25"/>
+  <path d="M174 286q24 7 45-3" fill="none" stroke="#41564c" stroke-width="5"/>
+  <g fill="none" stroke="#c6d0c8" stroke-width="3" opacity=".65"><path d="M244 220q115-66 277-28M242 302q126 60 279 20"/><path d="M298 245h246M305 274h239" opacity=".5"/></g>
+  <g fill="#d5ddd7" opacity=".8"><circle cx="305" cy="238" r="5"/><circle cx="355" cy="264" r="4"/><circle cx="407" cy="235" r="5"/><circle cx="458" cy="274" r="4"/><circle cx="504" cy="244" r="5"/></g>
+  <rect x="34" y="34" width="652" height="452" fill="none" stroke="#c7d0c9" stroke-width="2"/>
+</svg>

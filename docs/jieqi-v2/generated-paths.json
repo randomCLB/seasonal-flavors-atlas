@@ -1,0 +1,143 @@
+[
+  {
+    "slug": "lichun",
+    "name": "立春",
+    "index": 2,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-c468a99d-50b9-426a-8d06-3c77fe3b6956.png",
+    "output_hint": "Generated images are saved to /Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c as /Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-c468a99d-50b9-426a-8d06-3c77fe3b6956.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "slug": "dahan",
+    "name": "大寒",
+    "index": 1,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-7380cdd9-7337-468a-ba14-c06c9ab82df6.png",
+    "output_hint": "Generated images are saved to /Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c as /Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-7380cdd9-7337-468a-ba14-c06c9ab82df6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "slug": "xiaohan",
+    "name": "小寒",
+    "index": 0,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-9980b470-2ef0-46ee-86be-28af438925bd.png",
+    "output_hint": "Generated images are saved to /Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c as /Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-9980b470-2ef0-46ee-86be-28af438925bd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "slug": "chunfen",
+    "name": "春分",
+    "index": 5,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-10eb1e29-50c3-4065-80c2-803430ea9566.png"
+  },
+  {
+    "slug": "yushui",
+    "name": "雨水",
+    "index": 3,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-ab7a7407-c73d-43f7-9916-6e50902ca53c.png"
+  },
+  {
+    "slug": "qingming",
+    "name": "清明",
+    "index": 6,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-b741dd94-d9b5-4450-91c7-79f03c52ec99.png"
+  },
+  {
+    "slug": "jingzhe",
+    "name": "惊蛰",
+    "index": 4,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-62aa04b0-f7b6-43ff-9c93-80c607a9a61b.png"
+  },
+  {
+    "slug": "guyu",
+    "name": "谷雨",
+    "index": 7,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-9a0ec7c5-8908-4320-ac39-494dbf26052d.png"
+  },
+  {
+    "slug": "xiaoman",
+    "name": "小满",
+    "index": 9,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-a29112fe-58d3-44a2-a343-2b6d1dc7ca80.png"
+  },
+  {
+    "slug": "lixia",
+    "name": "立夏",
+    "index": 8,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-a276b6f4-f321-4282-b3a4-019a6e705686.png"
+  },
+  {
+    "slug": "mangzhong",
+    "name": "芒种",
+    "index": 10,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-c009f43b-d96c-47a0-8cd0-a237360e91bb.png"
+  },
+  {
+    "slug": "xiazhi",
+    "name": "夏至",
+    "index": 11,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-91856634-2938-4be4-8427-dd81f9c04f2b.png"
+  },
+  {
+    "slug": "xiaoshu",
+    "name": "小暑",
+    "index": 12,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-374acc47-078c-4185-9c4e-848f5388ff21.png"
+  },
+  {
+    "slug": "dashu",
+    "name": "大暑",
+    "index": 13,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-d118b897-5b5b-4011-9bcb-07214f52a43e.png"
+  },
+  {
+    "slug": "chushu",
+    "name": "处暑",
+    "index": 15,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-a724aa77-e3f7-45f5-a122-ebd8b10a5afd.png"
+  },
+  {
+    "slug": "liqiu",
+    "name": "立秋",
+    "index": 14,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-ac77bd5f-53e0-473d-b7fa-8b389576a623.png"
+  },
+  {
+    "slug": "bailu",
+    "name": "白露",
+    "index": 16,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-6da18213-e086-4d70-acf6-390293f0e15d.png"
+  },
+  {
+    "slug": "qiufen",
+    "name": "秋分",
+    "index": 17,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-a457a238-4765-4669-b606-db35dbe52820.png"
+  },
+  {
+    "slug": "lidong",
+    "name": "立冬",
+    "index": 20,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-5bac1829-b15a-4fba-9d0a-24ed9cc7acbf.png"
+  },
+  {
+    "slug": "shuangjiang",
+    "name": "霜降",
+    "index": 19,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-d7ee782d-4770-425f-b757-6e8a438c2e22.png"
+  },
+  {
+    "slug": "daxue",
+    "name": "大雪",
+    "index": 22,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-6f3852e6-0e58-4257-8052-d65002a612ee.png"
+  },
+  {
+    "slug": "xiaoxue",
+    "name": "小雪",
+    "index": 21,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-1ababc2e-e0d9-4214-8258-f33e2ee95e9c.png"
+  },
+  {
+    "slug": "dongzhi",
+    "name": "冬至",
+    "index": 23,
+    "path": "/Users/kennethj.michael/.codex/generated_images/01a13596-a4c8-7790-90b4-2b977683df4c/exec-5126ce84-2c52-4032-9a98-849a88cd4fb1.png"
+  }
+]

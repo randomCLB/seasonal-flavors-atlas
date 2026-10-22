@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">早春茶芽与茶盏示意</title>
+  <desc id="desc">原创编辑插画，以嫩芽、干茶和一盏茶汤表现早春茶，不代表雅安茶园或川茶3号实拍。</desc>
+  <rect width="900" height="650" fill="#eeeade"/>
+  <path d="M0 470C190 425 280 510 465 458s290-34 435-4v196H0Z" fill="#d9ddce"/>
+  <path d="M150 444c100-80 179-159 260-286" fill="none" stroke="#667c62" stroke-width="12" stroke-linecap="round"/>
+  <path d="M259 335c-88-10-132-63-127-123 72-1 131 37 148 98M335 246c-20-82 15-142 76-169 31 68 18 131-41 188M215 385c-60-2-101-34-113-83 55-6 100 17 125 61" fill="#8ea27a" stroke="#506a54" stroke-width="5"/>
+  <path d="M530 380c15-84 85-134 179-129 61 3 112 34 130 82l-18 93c-13 72-70 116-153 116h-53c-66 0-105-55-85-162Z" fill="#faf8ef" stroke="#546c60" stroke-width="8"/>
+  <ellipse cx="682" cy="376" rx="147" ry="39" fill="#e5e0d3" stroke="#546c60" stroke-width="7"/>
+  <ellipse cx="682" cy="377" rx="124" ry="25" fill="#a97b42"/>
+  <path d="M544 460c41 39 228 40 277-1" fill="none" stroke="#8d9b83" stroke-width="9"/>
+  <g fill="#76845f"><ellipse cx="480" cy="497" rx="32" ry="15" transform="rotate(-25 480 497)"/><ellipse cx="526" cy="516" rx="27" ry="12" transform="rotate(24 526 516)"/><ellipse cx="465" cy="535" rx="24" ry="11" transform="rotate(12 465 535)"/></g>
+  <text x="62" y="590" fill="#455b4e" font-family="serif" font-size="24" letter-spacing="4">早春 · 茶芽与茶汤</text>
+</svg>

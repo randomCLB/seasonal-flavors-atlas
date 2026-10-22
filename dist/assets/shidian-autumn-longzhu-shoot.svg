@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="通用带壳竹笋形态插画">
+ <rect width="900" height="700" fill="#e9e2d1"/>
+ <rect x="38" y="38" width="824" height="624" fill="#f4f0e6" stroke="#cfc4ad" stroke-width="2"/>
+ <path d="M104 545 Q276 492 405 542 T797 533" fill="none" stroke="#b8aa8d" stroke-width="3"/>
+ <g transform="translate(440 566)">
+  <path d="M-172 0 Q-154 -79 -125 -188 Q-99 -278 -39 -394 Q-10 -452 16 -392 Q66 -288 86 -187 Q112 -76 151 0Z" fill="#8d7c58" stroke="#4e5c43" stroke-width="8"/>
+  <path d="M-148 -21 Q-109 -89 -82 -168 Q-52 -248 -33 -343 Q-19 -415 8 -427 Q28 -350 49 -255 Q70 -159 125 -19Z" fill="#c8b47b" stroke="#6f704e" stroke-width="7"/>
+  <path d="M-145 -22 Q-79 -58 -26 -98 Q26 -133 109 -169 L129 -119 Q49 -90 -10 -45 Q-73 -4 -144 7Z" fill="#7b8050" stroke="#4e5c43" stroke-width="7"/>
+  <path d="M-113 -156 Q-46 -192 7 -227 Q49 -255 84 -292 L102 -238 Q60 -194 13 -162 Q-39 -123 -96 -103Z" fill="#87905d" stroke="#4e5c43" stroke-width="7"/>
+  <path d="M-71 -286 Q-20 -311 17 -345 Q42 -367 57 -392 L70 -344 Q48 -311 17 -288 Q-20 -259 -59 -239Z" fill="#929366" stroke="#4e5c43" stroke-width="6"/>
+  <path d="M-171 0 Q-110 -33 -51 -27 Q34 -21 151 0" fill="none" stroke="#465541" stroke-width="9"/>
+ </g>
+ <path d="M236 530 Q185 457 171 389 Q227 421 268 474M649 526 Q715 459 733 386 Q668 411 621 477" fill="#506247" stroke="#344737" stroke-width="8"/>
+ <text x="450" y="623" text-anchor="middle" fill="#213a32" font-family="serif" font-size="24" letter-spacing="6">秋笋 · 通用形态参考</text>
+</svg>

@@ -1,0 +1,9 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const root=path.join(__dirname,'..');
+test('Changhua Xiaoshu fishery names preserve the Agriculture Ministry mappings without implying current stock',()=>{
+ const C=require('../dist/lottery-core.js'),ctx={window:{}};vm.createContext(ctx);
+ for(const name of ['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name+'.js'),'utf8'),ctx);
+ for(const [id,name,alias] of [['changhua-xiaoshu-black-over','彰化小暑黄鳍鲷（黑过）','黑过'],['changhua-xiaoshu-chishi','彰化小暑乌宗（赤食）','赤食']]){const food=ctx.window.FOODS.find(item=>item.id===id),profile=ctx.window.LOTTERY_PROFILES[id];assert.ok(food);assert.equal(food.name,name);assert.ok(food.alias.includes(alias));assert.deepEqual(Array.from(food.entryTerms),[12]);assert.deepEqual(Array.from(food.peakTerms),[12]);assert.match(food.season,/没有提供.*2026年库存/);assert.match(food.imageCaption,/非彰化渔获实拍/);assert.equal(food.sources[0][1],'https://www.moa.gov.tw/ws.php?id=2507783');assert.ok(fs.existsSync(path.join(root,'dist',food.image)));assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));}
+ const audit=JSON.parse(require('node:child_process').execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'}));const pools=Object.fromEntries(audit.rows.map(row=>[row.term,row.foodIds]));for(const id of ['changhua-xiaoshu-black-over','changhua-xiaoshu-chishi']){assert.ok(pools['小暑'].includes(id));assert.ok(!pools['夏至'].includes(id));assert.ok(!pools['大暑'].includes(id));}
+});

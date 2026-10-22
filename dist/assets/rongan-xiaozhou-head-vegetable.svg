@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">块根蔬菜形态示意</title>
+  <desc id="desc">浅色粗大根茎和绿叶的编辑插画，不代表融安实拍或小洲头菜品种鉴别。</desc>
+  <rect width="720" height="900" fill="#eee9db"/>
+  <path d="M0 690q155-50 350 8t370-4v206H0z" fill="#d8cfba"/>
+  <ellipse cx="358" cy="720" rx="205" ry="38" fill="#bbb19c" opacity=".48"/>
+  <path d="M358 334c-90-40-173-33-229 21 71 46 142 57 227 33-101 14-177 53-204 123 88 22 166 3 223-56-81 49-127 108-127 180 81-5 143-48 172-121 31 72 88 111 169 112-7-76-52-135-127-181 55 62 126 83 214 59-31-73-105-112-206-125 84 21 156 11 225-36-57-51-137-59-228-25" fill="#687451"/>
+  <path d="M358 351c-62-10-128 12-157 52 60 22 112 16 163-16-42 36-71 82-63 135 53-14 91-49 111-102 13 54 48 91 100 106 13-53-14-102-56-138 53 33 105 42 165 20-32-43-99-64-163-57" fill="#849065"/>
+  <path d="M316 413c-49 30-92 87-102 149-15 91 22 171 84 207 38 22 92 23 130-1 59-37 94-115 78-205-10-60-50-116-98-149-28-20-65-21-92-1z" fill="#d6c49c"/>
+  <path d="M319 445c-36 29-63 75-68 124-9 69 18 131 57 153 22 13 51 13 75 0 42-24 69-84 58-154-7-50-32-94-67-123-15-13-39-13-55 0z" fill="#e9d9b8"/>
+  <path d="M268 542q88 24 185 0m-187 60q88 23 186 0m-162 63q66 17 135 0" fill="none" stroke="#c1ac80" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+  <path d="M359 363v63" stroke="#675b43" stroke-width="9" stroke-linecap="round"/>
+  <text x="72" y="112" fill="#253a31" font-family="serif" font-size="27" letter-spacing="5">头菜 · 形态示意</text><path d="M73 143h126" stroke="#8b806c" stroke-width="2"/>
+  <text x="73" y="825" fill="#5c5b4c" font-family="sans-serif" font-size="17" letter-spacing="2">非融安实拍 · 非品种鉴别图</text>
+</svg>

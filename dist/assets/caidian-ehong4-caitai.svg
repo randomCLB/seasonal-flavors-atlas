@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">早熟菜薹形态编辑插画</title>
+  <desc id="desc">纸面上几枝紫红茎的菜薹，花苞小而嫩；为通用菜薹形态参考，不用于品种鉴定。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f3efe4"/><stop offset="1" stop-color="#e4ddcc"/></linearGradient>
+    <linearGradient id="stem" x2=".8" y2="1"><stop stop-color="#9c5260"/><stop offset=".65" stop-color="#744554"/><stop offset="1" stop-color="#4e6946"/></linearGradient>
+    <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#74834b"/><stop offset="1" stop-color="#3e6042"/></linearGradient>
+  </defs>
+  <rect width="1200" height="820" fill="url(#paper)"/>
+  <path d="M85 700 Q600 650 1110 704" fill="none" stroke="#c8bda8" stroke-width="3"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M310 687 Q350 500 390 235 M515 685 Q515 450 550 180 M715 690 Q690 470 755 245 M905 690 Q855 475 905 185" stroke="url(#stem)" stroke-width="34"/>
+    <path d="M370 474 Q230 355 150 405 Q222 516 360 520 M520 505 Q665 380 790 426 Q715 534 530 548 M724 445 Q605 332 536 350 M878 480 Q990 365 1068 404 Q995 504 882 520" stroke="url(#leaf)" stroke-width="22"/>
+    <path d="M310 687 Q350 500 390 235 M515 685 Q515 450 550 180 M715 690 Q690 470 755 245 M905 690 Q855 475 905 185" stroke="#d29b8d" stroke-opacity=".45" stroke-width="5"/>
+  </g>
+  <g fill="#d4a653" stroke="#f0d58f" stroke-width="4">
+    <circle cx="390" cy="232" r="16"/><circle cx="368" cy="210" r="11"/><circle cx="414" cy="203" r="11"/><circle cx="550" cy="177" r="17"/><circle cx="527" cy="153" r="11"/><circle cx="574" cy="151" r="11"/><circle cx="755" cy="241" r="16"/><circle cx="733" cy="218" r="11"/><circle cx="780" cy="214" r="11"/><circle cx="905" cy="181" r="17"/><circle cx="882" cy="157" r="11"/><circle cx="928" cy="154" r="11"/>
+  </g>
+  <g fill="#756653" font-family="serif"><text x="78" y="110" font-size="27" letter-spacing="7">AUTUMN GREENS · CAIDIAN</text><text x="80" y="765" font-size="20" letter-spacing="4">EDITORIAL STUDY · NOT A CULTIVAR IDENTIFICATION</text></g>
+</svg>

@@ -1,0 +1,16 @@
+[
+  {
+    "key": "bamboo",
+    "prompt": "Use case: precise-object-edit. Edit the supplied bamboo-shoot photograph into an appealing editorial ingredient image for a Chinese seasonal-food journal. Portrait aspect ratio 3:4. Preserve the recognisable long conical WHOLE bamboo shoots, the layered brown/tan sheaths, intact pointed tips, pale bases and real fibrous textures from the reference. Select three to four attractive whole sheathed shoots and arrange them naturally with a little breathing room on warm unbleached ivory linen and a simple pale wooden surface, softly lit by a window. No peeled strips, no cooked dish, no cross-section required; whole/raw appearance is the purpose. Remove ALL ice bags, printed plastic, foam boxes, shipping containers, labels, packaging, buckets, cables and market clutter. Crop/recompose so every selected whole shoot can be recognised; no cropped-off tips. Keep genuine irregular natural textures, not glossy plastic surfaces. Elegant appetising natural editorial lighting, warm understated colours that sit beside botanical watercolor art. No decorative food added, no herbs, no sauce, no fake cultivar details, no text, logo, watermark or illustrated elements. The source is a generic bamboo-shoot reference; this edited illustration must not assert a specific geographical variety."
+  },
+  {
+    "key": "tatsoi",
+    "file": "rugao-tatsoi-japan.jpg",
+    "prompt": "Use case: lighting-weather. Edit the referenced cooked vegetable photograph for an elegant seasonal-food journal. Keep the same cooked tatsoi greens and pale green stems, browned garlic slices, white round plate, food quantities and real vegetable shapes. Change only illumination and surrounding atmosphere: brighten the dim yellow lighting into soft neutral warm window daylight, preserve natural dark green leaf colour, gentle appetising oil sheen with realistic texture, clean neutral light tabletop. Remove only distracting background clutter. No added ingredients, no text, no watermark. Portrait 3:4 composition with food framed attractively and room around the plate. It remains a generic cooked tatsoi illustration, no cultivar claims."
+  },
+  {
+    "key": "crab",
+    "file": "gaochun-junhuang-cooked.jpg",
+    "prompt": "Use case: lighting-weather. Edit the referenced steamed Chinese mitten-crab photograph for an elegant seasonal-food journal. Keep the same recognisable whole cooked crabs, rounded orange-red carapaces, articulated legs, dark hairy claw areas, white plate with thin green rim, and real food morphology. Change illumination to soft warm natural window daylight, remove harsh direct flash highlights, coloured cast and dark corners. Replace the cold white surface with understated warm ivory linen. Remove the fork and edge clutter. Keep natural slightly irregular shell textures. No sauce, new ingredients, text, logos or watermark. Portrait 3:4, whole plate attractively framed, no cropped crabs. It remains a generic cooked-crab illustration, no geographical cultivar claims."
+  }
+]

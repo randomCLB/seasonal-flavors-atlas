@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">白梗空心菜通用形态示意</title>
+  <desc id="desc">绿色柳叶状叶片与浅色菜梗的编辑插画；不是实物摄影或云霄产地品种鉴定。</desc>
+  <rect width="900" height="620" fill="#eeeadd"/>
+  <path d="M442 590C441 449 452 317 470 170M446 515C349 430 280 335 228 207M454 460C555 380 630 275 676 144M449 387C369 314 338 236 337 122M463 316C541 256 571 181 572 88" fill="none" stroke="#e9e0ca" stroke-linecap="round" stroke-width="23"/>
+  <path d="M467 209C365 219 272 183 195 104c102-23 201 4 272 92M230 211C152 193 96 141 70 72c86 6 150 50 177 139M467 294c98 2 190-41 267-123-104-18-199 14-267 106M344 324c-91-11-163-62-215-145 98-5 177 37 224 126M570 235c69-20 124-72 154-145-83 11-139 57-165 142" fill="#829a71" stroke="#5e7656" stroke-width="4"/>
+  <path d="M202 110c87 22 171 57 257 101M83 82c54 36 100 78 147 129M730 177c-86 23-173 66-263 121M133 188c77 32 137 78 211 135M720 99c-55 42-111 89-161 139" fill="none" stroke="#c5cfaa" stroke-width="5" opacity=".8"/>
+  <text x="450" y="580" text-anchor="middle" fill="#39493a" font-family="sans-serif" font-size="19">本站通用形态示意 · 非实物摄影、非产地鉴别</text>
+</svg>

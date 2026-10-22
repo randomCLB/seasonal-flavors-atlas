@@ -1,7 +1,9 @@
-"""Run against dist served on localhost:8766. Native OS UI is mocked, not sent."""
+"""Run against the local preview. Native OS UI is mocked, not sent."""
 import asyncio,json,os
 from pathlib import Path
 from playwright.async_api import async_playwright
+
+BASE=os.environ.get('SEASONAL_PREVIEW_BASE','http://localhost:8766/').rstrip('/')+'/'
 
 async def main():
  checks=[]
@@ -14,13 +16,13 @@ async def main():
    page=await browser.new_page(viewport={'width':width,'height':height},device_scale_factor=1)
    errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
    await page.add_init_script("Object.defineProperty(navigator,'share',{configurable:true,value:undefined}); Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{window.copied=text}}});")
-   await page.goto('http://localhost:8766/index.html?food=shajiguo&utm_source=private#recipe')
+   await page.goto(BASE+'index.html?food=shajiguo&utm_source=private#recipe')
    await page.wait_for_selector('#detailDialog[open]')
    button=page.locator('#detailShare'); box=await button.bounding_box()
    check(f'{width}: share visible at entry',box['y']>=0 and box['y']+box['height']<=height)
    check(f'{width}: tap height',box['height']>=(44 if width<=800 else 36))
    check(f'{width}: no horizontal overflow',await page.locator('#detailDialog').evaluate('(e)=>e.scrollWidth<=e.clientWidth'))
-   await button.click();check(f'{width}: clipboard exact selected link',await page.evaluate('window.copied')=='http://localhost:8766/index.html?food=shajiguo')
+   await button.click();check(f'{width}: clipboard exact selected link',await page.evaluate('window.copied')==BASE+'index.html?food=shajiguo')
    check(f'{width}: visible copy feedback',await page.locator('#detailShareStatus').is_visible())
    await page.locator('#detailDialog').evaluate('(e)=>e.scrollTop=1000');box=await button.bounding_box()
    check(f'{width}: share remains visible after scrolling',box['y']>=0 and box['y']+box['height']<=height)
@@ -28,7 +30,7 @@ async def main():
    await page.screenshot(path=f'/tmp/atlas-share-{width}.png')
    await page.evaluate("Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('denied')}}})")
    await button.click();check(f'{width}: manual fallback visible',await page.locator('#detailShareLink').is_visible())
-   check(f'{width}: manual URL accurate',await page.locator('#detailShareLink').input_value()=='http://localhost:8766/index.html?food=shajiguo')
+   check(f'{width}: manual URL accurate',await page.locator('#detailShareLink').input_value()==BASE+'index.html?food=shajiguo')
    await page.evaluate("window.calls=[];Object.defineProperty(navigator,'share',{configurable:true,value:data=>{calls.push(data);return new Promise((resolve,reject)=>{window.finish=resolve;window.abort=()=>reject(new DOMException('cancel','AbortError'))})}})")
    await button.click();check(f'{width}: busy disabled',await button.is_disabled());await page.evaluate('window.abort()');await page.wait_for_function("!document.getElementById('detailShare').disabled")
    check(f'{width}: cancel has no stale panel',not await page.locator('#detailShareLink').is_visible())
@@ -38,7 +40,7 @@ async def main():
    await page.locator('#detailClose').click();check(f'{width}: close removes food param','food=' not in page.url)
    await page.go_back();await page.wait_for_selector('#detailDialog[open]');check(f'{width}: back restores detail',await page.locator('#detailContent h1').inner_text()=='沙棘果')
    await page.go_forward();check(f'{width}: forward closes',not await page.locator('#detailDialog').is_visible())
-   await page.goto('http://localhost:8766/index.html?food=shajiguo')
+   await page.goto(BASE+'index.html?food=shajiguo')
    # All catalog entries use the same opening path as season, map, search and related buttons.
    results=await page.evaluate("""()=>window.FOODS.map(f=>{openFood(f.id,false);return {id:f.id,label:document.getElementById('detailShare').getAttribute('aria-label'),title:document.querySelector('#detailContent h1').textContent,url:FoodShare.shareData(f,location.href).url}})""")
    expected_count=await page.evaluate('window.FOODS.length')

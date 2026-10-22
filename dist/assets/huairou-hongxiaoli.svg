@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-label="红色梨果通用编辑插画">
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f4efe3"/><stop offset="1" stop-color="#e7dfce"/></linearGradient>
+    <linearGradient id="pear" x2=".9" y2="1"><stop stop-color="#d78a68"/><stop offset=".55" stop-color="#a94f3e"/><stop offset="1" stop-color="#743a33"/></linearGradient>
+    <radialGradient id="shine" cx=".3" cy=".2"><stop stop-color="#f5d9a8" stop-opacity=".8"/><stop offset="1" stop-color="#f5d9a8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="900" height="680" fill="url(#paper)"/>
+  <path d="M0 525 Q160 478 315 525 T640 519 T900 510 V680 H0Z" fill="#d9cfbb"/>
+  <ellipse cx="463" cy="567" rx="242" ry="38" fill="#4b3f32" opacity=".13"/>
+  <path d="M461 213 C455 181 468 151 493 129" fill="none" stroke="#51412e" stroke-width="17" stroke-linecap="round"/>
+  <path d="M488 152 C534 105 599 111 624 147 C584 184 529 188 488 152Z" fill="#728367"/>
+  <path d="M492 153 Q550 144 609 145" fill="none" stroke="#4e6350" stroke-width="5" opacity=".7"/>
+  <path d="M444 209 C370 224 321 280 316 365 C310 451 374 521 461 529 C550 536 619 468 614 382 C610 294 548 224 480 208 C466 205 455 206 444 209Z" fill="url(#pear)" stroke="#704237" stroke-width="7"/>
+  <ellipse cx="423" cy="327" rx="111" ry="122" fill="url(#shine)"/>
+  <path d="M366 408 Q422 443 495 417" fill="none" stroke="#edb088" stroke-width="8" opacity=".52" stroke-linecap="round"/>
+  <g fill="#f0d0a4" opacity=".7"><circle cx="358" cy="362" r="4"/><circle cx="540" cy="338" r="4"/><circle cx="513" cy="454" r="3"/><circle cx="391" cy="472" r="3"/><circle cx="567" cy="402" r="3"/></g>
+  <path d="M132 555 H768" stroke="#b6a88e" stroke-width="2" opacity=".65"/>
+</svg>

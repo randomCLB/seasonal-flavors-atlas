@@ -1,0 +1,47 @@
+{
+  "capturedAt": "2026-10-20",
+  "urlBase": "http://127.0.0.1:8776/index.html?food=",
+  "rows": [
+    {
+      "id": "lichuan-heyuan-girl-fruit",
+      "heading": "黎川姑娘果（五月下旬批次）",
+      "viewport": "390x844",
+      "imageLoaded": true,
+      "imageNote": "编辑插画 · 非实物摄影、非物种鉴定 · 图片出处 ↗",
+      "readingSections": 4,
+      "purchaseButton": "去找这味\n↗",
+      "purchaseChecks": [
+        "核对黎川具体乡镇、当年采摘批次和鲜果标签；历史报道不代表当前供应。",
+        "地方俗名未附植物学鉴定，购买时以正规商品标签和可追溯来源为准。"
+      ],
+      "searchHosts": [
+        "www.bing.com",
+        "s.taobao.com",
+        "search.jd.com"
+      ],
+      "correctHeading": true,
+      "pageErrors": []
+    },
+    {
+      "id": "kaohsiung-yuhebao-lychee-late-may",
+      "heading": "高屏玉荷包荔枝（五月下旬批次）",
+      "viewport": "390x844",
+      "imageLoaded": true,
+      "imageNote": "编辑插画 · 非实物摄影、非品种鉴别 · 图片出处 ↗",
+      "readingSections": 4,
+      "purchaseButton": "去找这味\n↗",
+      "purchaseChecks": [
+        "确认玉荷包品种与高雄/屏东产地，避免与黑叶、糯米糍等品种混称。",
+        "核对采收日期、冷链状态和产销履历；来源未确认2026库存或具体商家。"
+      ],
+      "searchHosts": [
+        "www.bing.com",
+        "s.taobao.com",
+        "search.jd.com"
+      ],
+      "correctHeading": true,
+      "pageErrors": []
+    }
+  ],
+  "allPassed": true
+}

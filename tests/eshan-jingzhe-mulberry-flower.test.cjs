@@ -1,0 +1,8 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),{execFileSync}=require('node:child_process');
+const root=path.join(__dirname,'..'),ctx={window:{}};vm.createContext(ctx);for(const name of ['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','lottery-profiles','lottery-senses'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name+'.js'),'utf8'),ctx);const food=ctx.window.FOODS.find(x=>x.id==='eshan-jingzhe-mulberry-flower'),C=require(path.join(root,'dist/lottery-core.js')),audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'}));
+test('Eshan mulberry flowers are a sourced, historically bounded Jingzhe food entry',()=>{
+ assert.ok(food);assert.equal(food.name,'峨山鲜桑葚花');assert.equal(food.seasonPrecision,'historical-term-record');assert.deepEqual(Array.from(food.peakTerms),[4]);assert.ok(food.sources.some(x=>x[1]==='https://www.yxes.gov.cn/es/esxjjdgzdt7322/20260324/1655271.html'));assert.match(food.season,/2026年3月19日/);assert.match(food.description,/食用部位为桑树花序/);assert.match(food.safety,/不自行采摘野花/);assert.ok(fs.existsSync(path.join(root,'dist',food.image)));
+ const profile=ctx.window.LOTTERY_PROFILES[food.id];assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
+ const row=audit.rows.find(x=>x.term==='惊蛰');assert.ok(row.foodIds.includes(food.id));assert.ok(!audit.rows.find(x=>x.term==='雨水').foodIds.includes(food.id));
+});

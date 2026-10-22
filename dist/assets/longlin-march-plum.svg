@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-label="青黄李子形态编辑插画">
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#ebe6d8"/><stop offset="1" stop-color="#d8d1bf"/></linearGradient><radialGradient id="fruit" cx="35%" cy="28%"><stop stop-color="#d6d77d"/><stop offset=".62" stop-color="#aab35b"/><stop offset="1" stop-color="#788342"/></radialGradient></defs>
+<rect width="800" height="620" fill="url(#bg)"/><ellipse cx="404" cy="490" rx="245" ry="54" fill="#5b5d38" opacity=".12"/>
+<g stroke="#6f793e" stroke-width="5"><path d="M400 165Q390 106 333 76" fill="none"/><path d="M418 171Q468 109 531 96" fill="none"/></g>
+<g fill="#75834a"><ellipse cx="326" cy="95" rx="47" ry="22" transform="rotate(28 326 95)"/><ellipse cx="529" cy="112" rx="47" ry="22" transform="rotate(-25 529 112)"/></g>
+<g><ellipse cx="310" cy="335" rx="148" ry="171" fill="url(#fruit)"/><ellipse cx="493" cy="315" rx="149" ry="173" fill="url(#fruit)"/><path d="M204 266Q248 215 293 207" fill="none" stroke="#f0e8a0" stroke-width="14" opacity=".55"/><path d="M412 242Q468 197 523 216" fill="none" stroke="#efebb1" stroke-width="13" opacity=".52"/><circle cx="258" cy="292" r="11" fill="#f2e89a" opacity=".55"/><circle cx="553" cy="334" r="9" fill="#e7dc8c" opacity=".55"/></g>
+<path d="M399 183q-14-30-1-42 13 12 5 44" fill="#6b7440"/><text x="400" y="568" text-anchor="middle" fill="#45503b" font-family="serif" font-size="23" letter-spacing="5">青黄相间 · 隆林三月李</text>
+</svg>

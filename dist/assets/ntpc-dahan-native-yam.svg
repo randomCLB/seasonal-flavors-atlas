@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">山药根茎编辑插画</title>
+  <desc id="desc">浅米色背景上的山药根茎通用形态参考，不用于品种鉴定。</desc>
+  <rect width="800" height="600" fill="#eee9dc"/>
+  <path d="M0 438c153-33 273 35 421 10s233-74 379-38v190H0z" fill="#d8d0bd"/>
+  <path d="M200 414c34-73 67-182 114-258 16-26 34-31 43-13 13 28-11 81-27 120-32 77-46 133-36 171 8 34-23 61-61 46-36-14-48-34-33-66z" fill="#b49a76" stroke="#705b47" stroke-width="7"/>
+  <path d="M404 439c2-71 20-169 63-267 13-31 33-43 47-24 18 24 1 79-12 123-22 73-29 126-13 169 12 32-11 63-50 58-36-5-55-24-35-59z" fill="#c4aa82" stroke="#78634c" stroke-width="7"/>
+  <path d="M282 271c-12 32-25 67-34 99m240-107c-14 33-25 72-31 105" fill="none" stroke="#e1c9a2" stroke-width="11" stroke-linecap="round"/>
+  <path d="M324 153c-32-50-38-93-9-115 22 32 28 69 9 115zm139-2c7-59 30-96 68-97-7 42-29 76-68 97z" fill="#718576"/>
+  <path d="M324 152c-34-34-66-42-89-22 30 27 58 35 89 22zm139-1c37-33 73-37 96-12-34 23-64 28-96 12z" fill="#8f9d82"/>
+  <text x="44" y="66" fill="#526658" font-family="serif" font-size="21" letter-spacing="3">WINTER ROOT · EDITORIAL STUDY</text>
+</svg>

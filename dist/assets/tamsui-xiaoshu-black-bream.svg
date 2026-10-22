@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-label="通用鱼形编辑插画，不用于黑鲷物种鉴定">
+  <rect width="800" height="620" fill="#e9e5d9"/>
+  <path d="M78 337c87-126 222-174 372-145 91 18 163 68 220 137l78-66-6 112 12 103-88-75c-65 59-146 85-245 74-142-16-264-71-343-140Z" fill="#6b8f88" stroke="#183833" stroke-width="14"/>
+  <path d="M321 206c47-86 107-128 190-137-49 57-73 119-63 192-39-30-80-47-127-55Zm9 257c43 72 103 111 184 124-49-55-70-115-61-181-38 30-79 49-123 57Z" fill="#b7a276" stroke="#183833" stroke-width="10"/>
+  <path d="M340 270c71 42 148 59 233 49M338 390c74-19 148-16 224 13" fill="none" stroke="#d7ceb6" stroke-width="9" opacity=".75"/>
+  <circle cx="177" cy="326" r="15" fill="#f1e6ca"/><circle cx="177" cy="326" r="7" fill="#183833"/>
+  <path d="M99 349c103 36 207 48 321 37" fill="none" stroke="#a8beb2" stroke-width="8" opacity=".7"/>
+</svg>

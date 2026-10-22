@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">竹荚鱼通用形态示意</title>
+  <desc id="desc">以海水蓝灰、米白和墨绿绘制的鱼形编辑插画，不用于物种或产地鉴别。</desc>
+  <rect width="960" height="600" fill="#e9e5d9"/>
+  <path d="M0 420c145-35 246-27 375 8s272 38 585-24v196H0z" fill="#d4ded8"/>
+  <path d="M146 313c90-91 221-144 377-130 88 8 158 45 217 103l102-77-30 119 36 111-112-65c-84 75-190 111-315 103-117-8-210-54-275-126z" fill="#627f7a" stroke="#183c37" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M236 238c115-44 224-51 329-23 76 20 130 53 174 94-76-19-162-30-263-29-107 2-196 19-281 49" fill="none" stroke="#d4d6c8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M345 189l53-65 84 64M426 441l65 78 55-81" fill="#9aab9d" stroke="#183c37" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M260 250l-9 126m30-137-8 150m31-159-8 172m32-181-6 190m31-198-5 203m32-211-3 215m30-219 1 219m30-222 4 220m30-215 8 208m26-199 10 187m27-178 12 162m26-150 12 133m25-117 11 99" stroke="#c6d0c3" stroke-width="5" opacity=".72"/>
+  <circle cx="720" cy="278" r="12" fill="#f3ecdc" stroke="#183c37" stroke-width="6"/>
+  <circle cx="723" cy="278" r="4" fill="#183c37"/>
+  <path d="M739 323q22 13 40 3" fill="none" stroke="#183c37" stroke-width="6" stroke-linecap="round"/>
+</svg>

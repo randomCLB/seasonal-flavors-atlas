@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">马兰头嫩梢编辑插画</title>
+  <desc id="desc">以叶片和嫩梢构成的通用编辑示意，不是实物摄影或植物鉴别图。</desc>
+  <rect width="960" height="720" fill="#eee9dc"/>
+  <path d="M0 560 Q240 485 480 555 T960 520 V720 H0Z" fill="#d8ddc8"/>
+  <g fill="none" stroke="#52684a" stroke-linecap="round" stroke-width="13">
+    <path d="M480 700 Q485 520 470 305 Q465 210 430 112"/><path d="M481 590 Q340 500 255 350 Q215 275 215 195"/><path d="M475 535 Q605 430 690 280 Q725 215 735 140"/><path d="M470 440 Q360 350 340 210"/><path d="M490 480 Q600 400 620 220"/>
+  </g>
+  <g fill="#7f9664" stroke="#52684a" stroke-width="5">
+    <path d="M430 250 Q300 250 248 150 Q360 125 430 250Z"/><path d="M440 330 Q330 380 235 320 Q310 250 440 330Z"/><path d="M470 390 Q520 270 650 252 Q630 365 470 390Z"/><path d="M465 470 Q355 475 300 405 Q390 350 465 470Z"/><path d="M500 450 Q555 335 675 330 Q640 440 500 450Z"/><path d="M460 560 Q340 555 275 500 Q375 440 460 560Z"/><path d="M500 570 Q590 480 715 480 Q660 585 500 570Z"/><path d="M450 210 Q385 155 370 75 Q445 95 450 210Z"/><path d="M495 300 Q525 190 620 145 Q620 250 495 300Z"/>
+  </g>
+  <g fill="none" stroke="#b6c39a" stroke-width="4" opacity=".9"><path d="M430 250 Q345 210 275 165"/><path d="M440 330 Q345 300 260 320"/><path d="M470 390 Q550 315 635 265"/><path d="M465 470 Q390 420 320 410"/><path d="M500 450 Q570 390 660 345"/><path d="M460 560 Q380 505 295 505"/><path d="M500 570 Q600 525 700 490"/></g>
+  <text x="62" y="95" font-family="serif" font-size="28" fill="#40523c">春蔬 · 嫩梢</text>
+</svg>

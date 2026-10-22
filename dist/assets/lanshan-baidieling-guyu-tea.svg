@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">春茶嫩梢编辑示意</title><desc id="desc">茶枝与新叶的原创示意，不表示百叠岭实拍、品种或等级。</desc>
+  <rect width="800" height="600" fill="#eeeadd"/><path d="M0 480q160-75 333-8t467-34v162H0Z" fill="#d6d9c9"/>
+  <path d="M401 500q8-162 1-281m2 167q-94-80-171-110m167 66q93-80 175-102m-171 18q-47-91-50-151m59 150q83-89 108-155" fill="none" stroke="#5c7566" stroke-width="15" stroke-linecap="round"/>
+  <g fill="#96aa83" stroke="#5d7564" stroke-width="4"><path d="M232 264q-71-112 22-129 69 47-22 129Z"/><path d="M574 270q77-108-12-136-71 43 12 136Z"/><path d="M325 232q-72-112 15-133 74 42-15 133Z"/><path d="M493 219q49-116 118-71-14 94-118 71Z"/><path d="M403 205q-49-113 28-139 54 68-28 139Z"/></g>
+  <path d="M376 173q19-63 58-94" fill="none" stroke="#9b8254" stroke-width="7"/><circle cx="430" cy="77" r="12" fill="#c0a56f"/>
+  <text x="54" y="76" font-family="serif" font-size="23" fill="#51685c" letter-spacing="4">GRAIN RAIN · LANSHAN TEA</text>
+</svg>

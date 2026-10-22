@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">松江水晶梨形态示意</title>
+  <desc id="desc">暖纸色底上的青金色梨与剖面梨插画，仅示意梨的通用形态，不是产地或品种实拍。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f1ede2"/><stop offset="1" stop-color="#dedfce"/></linearGradient>
+    <linearGradient id="pear" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9e7a5"/><stop offset=".52" stop-color="#c5ce7a"/><stop offset="1" stop-color="#91a56a"/></linearGradient>
+    <linearGradient id="cut" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff9df"/><stop offset="1" stop-color="#dfd89e"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="900" height="700" fill="url(#paper)"/>
+  <path d="M111 563C285 514 595 531 790 579" fill="none" stroke="#7f8067" stroke-width="3" opacity=".35"/>
+  <ellipse cx="438" cy="580" rx="220" ry="31" fill="#555b43" opacity=".18" filter="url(#shadow)"/>
+  <g transform="translate(427 363)">
+    <path d="M2-170C5-225 34-253 65-279" fill="none" stroke="#695640" stroke-width="18" stroke-linecap="round"/>
+    <path d="M49-268C94-309 153-303 184-267C143-233 93-231 49-268Z" fill="#708265"/>
+    <path d="M2-156C-33-195-101-188-147-145C-206-90-205 27-168 125C-129 225-65 263 4 259C55 256 86 228 126 197C205 136 227 37 189-63C156-150 78-194 2-156Z" fill="url(#pear)" stroke="#667354" stroke-width="7"/>
+    <path d="M-102-134C-144-82-144 14-113 77" fill="none" stroke="#fff8cf" stroke-width="15" opacity=".42" stroke-linecap="round"/>
+    <g fill="#8b7850" opacity=".52"><circle cx="-41" cy="-71" r="4"/><circle cx="63" cy="-90" r="3"/><circle cx="96" cy="25" r="4"/><circle cx="-68" cy="114" r="3"/><circle cx="30" cy="151" r="3"/><circle cx="-128" cy="27" r="3"/></g>
+  </g>
+  <g transform="translate(673 453) rotate(-16)">
+    <path d="M0-107C-29-141-91-131-119-89C-155-34-135 52-90 101C-50 146 50 146 94 101C142 52 152-27 116-79C83-128 28-143 0-107Z" fill="url(#cut)" stroke="#74805b" stroke-width="8"/>
+    <path d="M-78-91C-111-45-103 33-72 74" fill="none" stroke="#fffef0" stroke-width="13" opacity=".65" stroke-linecap="round"/>
+    <ellipse cx="4" cy="15" rx="31" ry="39" fill="#d4cc8c" opacity=".58"/>
+    <g fill="#6c5135"><ellipse cx="-8" cy="-3" rx="5" ry="11" transform="rotate(-22 -8 -3)"/><ellipse cx="17" cy="12" rx="5" ry="11" transform="rotate(24 17 12)"/><ellipse cx="-2" cy="34" rx="5" ry="11" transform="rotate(4 -2 34)"/></g>
+  </g>
+  <path d="M123 151C183 118 225 112 276 127M130 175C191 143 226 140 262 151" fill="none" stroke="#98a184" stroke-width="3" opacity=".5"/>
+  <circle cx="753" cy="139" r="4" fill="#9b8d6c"/><circle cx="163" cy="468" r="5" fill="#9b8d6c"/>
+</svg>

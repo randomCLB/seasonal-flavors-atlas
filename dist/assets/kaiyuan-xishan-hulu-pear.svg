@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">开远西山葫芦梨形态示意</title>
+  <desc id="desc">暖白底色上的葫芦形梨果与叶片原创编辑插画，不是开远实拍或品种鉴定图。</desc>
+  <rect width="720" height="520" fill="#f2eee3"/>
+  <circle cx="560" cy="135" r="96" fill="#e8e1d1"/>
+  <path d="M0 424c146-30 286-32 428-1 106 23 196 19 292-8v105H0z" fill="#e1d9c9"/>
+  <g fill="none" stroke="#4b6547" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M330 190c-48-54-97-66-153-45 27 53 74 76 139 72M409 174c42-62 87-78 145-59-24 59-68 91-132 92"/>
+    <path d="M365 168c-5-33 0-58 15-84"/>
+  </g>
+  <path d="M375 166c-39-2-77 23-89 61-47 9-82 51-82 105 0 78 62 130 155 130s158-53 158-130c0-55-36-97-86-105-13-38-51-61-91-61z" fill="#b9a46d" stroke="#67553b" stroke-width="8"/>
+  <path d="M375 170c-9 26-12 44-8 62" fill="none" stroke="#67553b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M372 171c15-20 31-30 54-31" fill="none" stroke="#67553b" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#816d4d" opacity=".62">
+    <ellipse cx="279" cy="277" rx="7" ry="4" transform="rotate(-24 279 277)"/>
+    <ellipse cx="417" cy="256" rx="7" ry="4" transform="rotate(18 417 256)"/>
+    <ellipse cx="327" cy="351" rx="6" ry="4" transform="rotate(-15 327 351)"/>
+    <ellipse cx="456" cy="352" rx="7" ry="4" transform="rotate(21 456 352)"/>
+    <ellipse cx="373" cy="399" rx="6" ry="4" transform="rotate(-7 373 399)"/>
+  </g>
+  <path d="M207 196c74-42 176-55 280-37" fill="none" stroke="#fffaf0" stroke-width="5" opacity=".56"/>
+  <text x="46" y="478" fill="#5e624d" font-size="18" font-family="serif" letter-spacing="2">形态示意 · 非实物摄影</text>
+</svg>

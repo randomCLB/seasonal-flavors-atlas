@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">柚果通用形态示意</title><desc id="desc">一枚完整柚果与剖开的柚果，通用编辑插画，不用于品种鉴别。</desc>
+  <rect width="640" height="480" fill="#eee9dc"/><ellipse cx="322" cy="392" rx="219" ry="33" fill="#d7d0be"/>
+  <path d="M130 265c0-97 75-174 178-174s181 74 181 171-76 151-180 151-179-56-179-148Z" fill="#d4a64d" stroke="#9c7130" stroke-width="8"/>
+  <path d="M291 94c9-20 28-27 46-24-8 15-20 23-46 24Z" fill="#526b43"/><path d="M313 79c3-22 16-35 32-39-1 18-11 33-32 39Z" fill="#71844d"/>
+  <path d="M483 292c0-80 36-130 91-130s92 50 92 130-39 126-92 126-91-46-91-126Z" transform="translate(-35 -10)" fill="#d6ad5b" stroke="#9c7130" stroke-width="8"/>
+  <path d="M520 282c0-52 22-84 54-84s54 32 54 84-23 79-54 79-54-27-54-79Z" transform="translate(-35 -10)" fill="#f2dfae"/>
+  <path d="M539 276c0-33 14-54 35-54s35 21 35 54-15 50-35 50-35-17-35-50Z" transform="translate(-35 -10)" fill="#e7c574"/>
+  <path d="M542 248l32 17 28-17m-58 34 29-19 28 20m-55 12 27-17 24 18" fill="none" stroke="#fff1c9" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#193b34" opacity=".72"><circle cx="217" cy="191" r="5"/><circle cx="393" cy="300" r="4"/><circle cx="263" cy="345" r="4"/></g>
+</svg>

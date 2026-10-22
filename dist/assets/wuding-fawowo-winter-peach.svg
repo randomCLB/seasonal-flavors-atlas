@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">晚秋枝头的冬桃</title>
+  <desc id="desc">以灰绿枝叶、赭红与蜜金色果实绘制的桃形编辑插画，非实物摄影。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#ece8dc"/><stop offset="1" stop-color="#d9dfd1"/></linearGradient>
+    <linearGradient id="peach" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f2c66f"/><stop offset=".46" stop-color="#d98956"/><stop offset="1" stop-color="#a95345"/></linearGradient>
+    <linearGradient id="leaf" x1="0" x2="1"><stop stop-color="#687963"/><stop offset="1" stop-color="#9b9f78"/></linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#paper)"/>
+  <path d="M60 550C245 430 395 353 840 190" fill="none" stroke="#766d55" stroke-width="19" stroke-linecap="round"/>
+  <path d="M120 510C168 387 225 344 302 334C289 420 235 480 120 510Z" fill="url(#leaf)"/>
+  <path d="M285 431C342 294 418 255 498 272C456 367 389 420 285 431Z" fill="url(#leaf)"/>
+  <path d="M505 338C555 226 632 187 703 205C671 287 606 331 505 338Z" fill="url(#leaf)"/>
+  <path d="M145 492L274 354M310 410L461 286M530 322L668 220" fill="none" stroke="#c7c6a3" stroke-width="5" opacity=".75"/>
+  <g transform="translate(355 382)">
+    <path d="M-13-126C-7-179 12-201 34-226" fill="none" stroke="#6b5743" stroke-width="14" stroke-linecap="round"/>
+    <path d="M-34-224C-1-257 46-254 71-222C38-204 1-204-34-224Z" fill="#778565"/>
+    <path d="M-13-165C-111-184-178-115-171-18C-166 68-103 147-24 144C-7 144 8 133 24 142C96 181 167 109 175 18C184-77 119-169 31-164C14-164 2-155-13-165Z" fill="url(#peach)" stroke="#925747" stroke-width="7"/>
+    <path d="M-3-156C-17-85-19 49 0 137" fill="none" stroke="#f6d7a3" stroke-width="8" opacity=".75"/>
+    <ellipse cx="-84" cy="-65" rx="37" ry="68" fill="#f8db9a" opacity=".36" transform="rotate(-31 -84 -65)"/>
+  </g>
+  <g transform="translate(667 214) scale(.69)">
+    <path d="M-12-128C-5-178 13-201 35-225" fill="none" stroke="#6b5743" stroke-width="14" stroke-linecap="round"/>
+    <path d="M-35-224C-1-258 46-254 70-222C38-204 1-204-35-224Z" fill="#778565"/>
+    <path d="M-13-165C-108-184-177-112-171-18C-166 69-101 146-23 144C-5 144 8 134 24 142C98 180 168 108 175 18C183-78 118-169 31-164C15-164 2-155-13-165Z" fill="url(#peach)" stroke="#925747" stroke-width="7"/>
+    <path d="M-3-155C-17-85-19 49 0 137" fill="none" stroke="#f6d7a3" stroke-width="8" opacity=".75"/>
+  </g>
+  <circle cx="92" cy="103" r="4" fill="#b5a990"/><circle cx="799" cy="500" r="5" fill="#b5a990"/>
+</svg>

@@ -1,0 +1,2567 @@
+{
+  "head": "d5782ad7ef0270e8665ea606c25dee6c10bad4a7",
+  "branch": "fix/hanlu-illustration-20261013",
+  "status": " M IMAGE_REGISTER.md\n M dist/app.js\n M dist/credits.html\n M dist/editorial-notes.js\n M dist/fengwu-design.css\n M dist/index.html\n M dist/lottery-profiles.js\n M dist/lottery-senses.js\n M dist/lottery.html\n M dist/tarot.html\n M tests/draw-navigation.test.cjs\n M tests/lottery.test.cjs\n M tests/new-foods.test.cjs\n M tests/origin-geography.test.cjs\n M tests/pool-expansion.test.cjs\n M tests/season-counts.test.cjs\n?? .playwright-cli/\n?? dist/assets/banna-banana-blossom-serving-generated.webp\n?? dist/assets/baoshan-liangcui-emblica-serving-generated.webp\n?? dist/assets/binchuan-renong1-yuganzi-generated.webp\n?? dist/assets/cizhousun-whole-edited-generated.webp\n?? dist/assets/crab-daylight-edited-generated.webp\n?? dist/assets/helan-luosicai-generated.webp\n?? dist/assets/heshi-xianfenge-generated.webp\n?? dist/assets/houtui-pork-edited-generated.webp\n?? dist/assets/jianshui-caoya-serving-generated.webp\n?? dist/assets/jieqi/bailu-v2.webp\n?? dist/assets/jieqi/chunfen-v2.webp\n?? dist/assets/jieqi/chushu-v2.webp\n?? dist/assets/jieqi/dahan-v2.webp\n?? dist/assets/jieqi/dashu-v2.webp\n?? dist/assets/jieqi/daxue-v2.webp\n?? dist/assets/jieqi/dongzhi-v2.webp\n?? dist/assets/jieqi/guyu-v2.webp\n?? dist/assets/jieqi/hanlu-v2.webp\n?? dist/assets/jieqi/jingzhe-v2.webp\n?? dist/assets/jieqi/lichun-v2.webp\n?? dist/assets/jieqi/lidong-v2.webp\n?? dist/assets/jieqi/liqiu-v2.webp\n?? dist/assets/jieqi/lixia-v2.webp\n?? dist/assets/jieqi/mangzhong-v2.webp\n?? dist/assets/jieqi/qingming-v2.webp\n?? dist/assets/jieqi/qiufen-v2.webp\n?? dist/assets/jieqi/shuangjiang-v2.webp\n?? dist/assets/jieqi/xiaohan-v2.webp\n?? dist/assets/jieqi/xiaoman-v2.webp\n?? dist/assets/jieqi/xiaoshu-v2.webp\n?? dist/assets/jieqi/xiaoxue-v2.webp\n?? dist/assets/jieqi/xiazhi-v2.webp\n?? dist/assets/jieqi/yushui-v2.webp\n?? dist/assets/lancang-nannai-duoyi-serving-generated.webp\n?? dist/assets/lanzhou-xianbaihe-generated.webp\n?? dist/assets/longyang-pupiao-allium-root-serving-generated.webp\n?? dist/assets/luoping-hongguoshen-generated.webp\n?? dist/assets/ninger-tongxin-sweet-shoot-serving-generated.webp\n?? dist/assets/rongan-jingju-generated.webp\n?? dist/assets/sanmen-qingxie-generated.webp\n?? dist/assets/taitung-luoshen-calyx-generated.webp\n?? dist/assets/tatsoi-daylight-edited-generated.webp\n?? dist/assets/tonghai-fresh-sour-quince-serving-generated.webp\n?? dist/assets/xiaolan-shiju-huaban-generated.webp\n?? dist/assets/xikou-xindongsun-generated.webp\n?? dist/assets/ximeng-bamboo-worm-serving-generated.webp\n?? dist/assets/yongsheng-fresh-kapok-serving-generated.webp\n?? dist/november-additions.js\n?? docs/hanlu-illustration/\n?? docs/hero-v3/\n?? docs/jieqi-v2/\n?? docs/november-additions-images.json\n?? docs/november-expansion-20261016.md\n?? docs/visual-refinement/\n?? docs/yunnan-additions-20261015/\n?? docs/yunnan-screening-20261015/\n?? output/\n?? tests/yunnan-foods.test.cjs\n",
+  "files": [
+    {
+      "path": "dist/assets/banna-banana-blossom-serving-generated.webp",
+      "sha256": "ecc9c2af987487fe2b516dac435c5aaa0dada89731c5c871073018b81bd6887d",
+      "bytes": 169134
+    },
+    {
+      "path": "dist/assets/baoshan-liangcui-emblica-serving-generated.webp",
+      "sha256": "b4fa3949e0ee9eae3b857c5ce826d6559151d83f1723ba492941e921a001b428",
+      "bytes": 142574
+    },
+    {
+      "path": "dist/assets/binchuan-renong1-yuganzi-generated.webp",
+      "sha256": "ba33079053afc692271aab6c8d166465cd3d58a5a634e8798fe7750e70618396",
+      "bytes": 129422
+    },
+    {
+      "path": "dist/assets/cizhousun-whole-edited-generated.webp",
+      "sha256": "eb634158eca1fbfb92c4283ba572e2797df77ba1f40521781ca475b1a1ad4bf6",
+      "bytes": 310778
+    },
+    {
+      "path": "dist/assets/crab-daylight-edited-generated.webp",
+      "sha256": "39e31f4dfac877c6d51bc98099c3c08bd88d45e58d2d8e7303b83d70e3d5f2cc",
+      "bytes": 265996
+    },
+    {
+      "path": "dist/assets/helan-luosicai-generated.webp",
+      "sha256": "70f66284b8fb5100bef539f578a205e2f2c13cb5b1b88eac1f55c1bf9dd077c9",
+      "bytes": 206216
+    },
+    {
+      "path": "dist/assets/heshi-xianfenge-generated.webp",
+      "sha256": "e5a905d3895faec40f0384f41259e4b6b6b9ac6e6b1ccf78ef200d77399ed3a4",
+      "bytes": 167982
+    },
+    {
+      "path": "dist/assets/houtui-pork-edited-generated.webp",
+      "sha256": "478674f522d53dec6c9d27207e98b2b8feb041eb5284216d2af1d271b6611fda",
+      "bytes": 226054
+    },
+    {
+      "path": "dist/assets/jianshui-caoya-serving-generated.webp",
+      "sha256": "bdc5fad1c90e22186bfa60425c77542d7879ff21bd6065be9838415e8a345880",
+      "bytes": 128934
+    },
+    {
+      "path": "dist/assets/jieqi/bailu-v2.webp",
+      "sha256": "483fb9a3cbe300481ff69b9e8b8352481372863d3235ffe8ea8fcb153ee95837",
+      "bytes": 337328
+    },
+    {
+      "path": "dist/assets/jieqi/chunfen-v2.webp",
+      "sha256": "5e371063ef895ec91ab7179a9f13aabd07b332c2c900f625bc2a93914a9908c2",
+      "bytes": 288218
+    },
+    {
+      "path": "dist/assets/jieqi/chushu-v2.webp",
+      "sha256": "5078a87cb6f6fa058468934dc8ed058d44e28fe706fdb1fba8a5c5d5a0d4aaa1",
+      "bytes": 339036
+    },
+    {
+      "path": "dist/assets/jieqi/dahan-v2.webp",
+      "sha256": "db26b12d7d18c604da7ad6ebe30b9f59d613b4cef6b8d77f72b87f4538fe4d42",
+      "bytes": 348234
+    },
+    {
+      "path": "dist/assets/jieqi/dashu-v2.webp",
+      "sha256": "d9bbee517a62a00109ebca88ae5a9dd7cf1dddb8cf73608fbc4639374c929318",
+      "bytes": 328368
+    },
+    {
+      "path": "dist/assets/jieqi/daxue-v2.webp",
+      "sha256": "e94f7d4368f0d465b5e09bf173398e915d8a5b4d02546fd66b6272df3782db77",
+      "bytes": 315872
+    },
+    {
+      "path": "dist/assets/jieqi/dongzhi-v2.webp",
+      "sha256": "488d3061c3a129d8f380fd37569aaf8ae876b2bfd5490651aa9d7b16a2618346",
+      "bytes": 328002
+    },
+    {
+      "path": "dist/assets/jieqi/guyu-v2.webp",
+      "sha256": "b7445fc0c5501f2a6c89395204ebf2684a0400a42666159fdd3cb39405f6428e",
+      "bytes": 316088
+    },
+    {
+      "path": "dist/assets/jieqi/hanlu-v2.webp",
+      "sha256": "d7272ea4b45f75570fe8ba9b1fe6a89d4b0b97bf84a04bb58b79849c9457dcf1",
+      "bytes": 282938
+    },
+    {
+      "path": "dist/assets/jieqi/jingzhe-v2.webp",
+      "sha256": "749f6aa70c3ded8500af0d2f7fa344e502d01c802c10b02c6850cb8d3c13c554",
+      "bytes": 335854
+    },
+    {
+      "path": "dist/assets/jieqi/lichun-v2.webp",
+      "sha256": "e28b65814e928bd6e98abc405309e44a8b8f169c0fe74747bed547902633684c",
+      "bytes": 338698
+    },
+    {
+      "path": "dist/assets/jieqi/lidong-v2.webp",
+      "sha256": "57288fe6a0dd78a364f4df287f8346451b194d88ebd412eb43c2d3a99d8a332a",
+      "bytes": 362838
+    },
+    {
+      "path": "dist/assets/jieqi/liqiu-v2.webp",
+      "sha256": "e7a468704de0331346ebd973bb81b48cb848a0846f76ad2c79feb4591ca70596",
+      "bytes": 332318
+    },
+    {
+      "path": "dist/assets/jieqi/lixia-v2.webp",
+      "sha256": "e38d0a70248d774375f68bbb3ccbca50973a198f31b4863fd89bce926be13b36",
+      "bytes": 284712
+    },
+    {
+      "path": "dist/assets/jieqi/mangzhong-v2.webp",
+      "sha256": "f062c94b4eb717a2fbe900b495562cb8499580f3757a5efe82b88dfff0221d4c",
+      "bytes": 381708
+    },
+    {
+      "path": "dist/assets/jieqi/qingming-v2.webp",
+      "sha256": "2a82804487c5fcbd6838a0a9028d995d92299b78bcc5fa86ea27c4620c7d851b",
+      "bytes": 368906
+    },
+    {
+      "path": "dist/assets/jieqi/qiufen-v2.webp",
+      "sha256": "9df2581f2980df6547f7d47bf7263527752d6105242da98cd54c5b7039c81d17",
+      "bytes": 363680
+    },
+    {
+      "path": "dist/assets/jieqi/shuangjiang-v2.webp",
+      "sha256": "471bcc9bb5259ff8f2f23e937176c7febbf18d74d502e71120fc5f8be8de9ea5",
+      "bytes": 312430
+    },
+    {
+      "path": "dist/assets/jieqi/xiaohan-v2.webp",
+      "sha256": "80bfcb14964f4e826a4d8474f1ddc3ab4e8e61d185356e0ed70feb5adbe51cb9",
+      "bytes": 366566
+    },
+    {
+      "path": "dist/assets/jieqi/xiaoman-v2.webp",
+      "sha256": "2e93e9a74cf9bc51418f41facc87c37a9ec6139eaa60adbf7d2d652bec9ce694",
+      "bytes": 335526
+    },
+    {
+      "path": "dist/assets/jieqi/xiaoshu-v2.webp",
+      "sha256": "ead69b039820fc36687d55a85b13e43a87fa500b79e687535445729a0d2e50ed",
+      "bytes": 313900
+    },
+    {
+      "path": "dist/assets/jieqi/xiaoxue-v2.webp",
+      "sha256": "a7631b6f3467677d6dacdd657707cc113662c14da546be9cfb4783076ff93513",
+      "bytes": 313634
+    },
+    {
+      "path": "dist/assets/jieqi/xiazhi-v2.webp",
+      "sha256": "b50a7593124a5df7015f5a0565dc15d1326b69462b7a86cef6dbe7c47a99a14f",
+      "bytes": 306556
+    },
+    {
+      "path": "dist/assets/jieqi/yushui-v2.webp",
+      "sha256": "39bd9b11f1a6b84ebf47dfb88593da89d99ab350a6156923ca269a4f61ac8c1b",
+      "bytes": 368120
+    },
+    {
+      "path": "dist/assets/lancang-nannai-duoyi-serving-generated.webp",
+      "sha256": "c44c36a255be7190a33133d250320a040a121d6a94b37c59f05b73aeb524f23e",
+      "bytes": 158254
+    },
+    {
+      "path": "dist/assets/lanzhou-xianbaihe-generated.webp",
+      "sha256": "a0e5cbdd9897da077497ebfa273dc5184b457705226e541bf1464755df1dd752",
+      "bytes": 96978
+    },
+    {
+      "path": "dist/assets/longyang-pupiao-allium-root-serving-generated.webp",
+      "sha256": "7da62daffca2fcbde74c69b331546525ef6a9083c205bb9ed8ef38dd6b75a419",
+      "bytes": 167060
+    },
+    {
+      "path": "dist/assets/luoping-hongguoshen-generated.webp",
+      "sha256": "a562d2a539764cee1a571e0d0bd73e8e4cc63f50adacd2620d942b9204f8b103",
+      "bytes": 216142
+    },
+    {
+      "path": "dist/assets/ninger-tongxin-sweet-shoot-serving-generated.webp",
+      "sha256": "7204cc750d29fcd2d8be2cb8657e9b729d5b31e5ffa0e6cf4d30d48bc4c34e53",
+      "bytes": 191474
+    },
+    {
+      "path": "dist/assets/rongan-jingju-generated.webp",
+      "sha256": "024932bf0def7aee2e03d6d730799caa5ff51929b4bbbafbe03f13759a433b26",
+      "bytes": 134020
+    },
+    {
+      "path": "dist/assets/sanmen-qingxie-generated.webp",
+      "sha256": "5b39fcc97d6c528fa9500c5568e28a38daac513d7207bbed2df5af42449ecb84",
+      "bytes": 222618
+    },
+    {
+      "path": "dist/assets/taitung-luoshen-calyx-generated.webp",
+      "sha256": "4809d8dba43588d3f56a95b83c652022ea4518b8899541a485d879e4c5bf11d5",
+      "bytes": 183288
+    },
+    {
+      "path": "dist/assets/tatsoi-daylight-edited-generated.webp",
+      "sha256": "33ba7a6201d887a6166682f637519480b382c05846a19f677d25beda94676b63",
+      "bytes": 100210
+    },
+    {
+      "path": "dist/assets/tonghai-fresh-sour-quince-serving-generated.webp",
+      "sha256": "351f32c825412154f07e24a27f23558195ab4a9d676187e269cba00c02045c54",
+      "bytes": 187268
+    },
+    {
+      "path": "dist/assets/xiaolan-shiju-huaban-generated.webp",
+      "sha256": "95205e2bc1d1d157c184e2dc5142c8cbc4c111c4502873ef17cce2e646fec586",
+      "bytes": 193450
+    },
+    {
+      "path": "dist/assets/xikou-xindongsun-generated.webp",
+      "sha256": "757f632f8e0ed844e036018283094eb45914cc5f1bd8f5514a594a0db7d87c28",
+      "bytes": 247004
+    },
+    {
+      "path": "dist/assets/ximeng-bamboo-worm-serving-generated.webp",
+      "sha256": "e17ab75d0bb78ed37f95d9de5d1e54894b3a1ecdd907b67b666a4469d4fdf081",
+      "bytes": 216682
+    },
+    {
+      "path": "dist/assets/yongsheng-fresh-kapok-serving-generated.webp",
+      "sha256": "6498972d102fd1a6ce65b7b714ec98d9043c893a424b698dfd1a4edac803bcbd",
+      "bytes": 153650
+    },
+    {
+      "path": "dist/november-additions.js",
+      "sha256": "74a54499191e3b2d50ec91e3e4f6553a56eb921b49979d54e242035b8c6f7ff9",
+      "bytes": 33278
+    },
+    {
+      "path": "docs/hanlu-illustration/asset.json",
+      "sha256": "fb86a1ec8693386612e0af646aa2c16dfe6f7edf96a292dcfc611907519220a2",
+      "bytes": 630
+    },
+    {
+      "path": "docs/hanlu-illustration/desktop-preview.png",
+      "sha256": "147c0a1595acc935d9935348865dcaaaf651ffc10c6d7ae46e1dabe5638b9e5f",
+      "bytes": 106113
+    },
+    {
+      "path": "docs/hanlu-illustration/hanlu-original.png",
+      "sha256": "5328efecf60c9421bba80158f0ba48ccaefd23efcfd1ad7e1bc1ca741b5c6ea5",
+      "bytes": 3283183
+    },
+    {
+      "path": "docs/hanlu-illustration/prompt.txt",
+      "sha256": "aa5813ce2b415d43d86cf8c548aac61e775b80fe39a6dd14ed30b9933ccb483d",
+      "bytes": 1457
+    },
+    {
+      "path": "docs/hero-v3/bailu-desktop.png",
+      "sha256": "a5679c21acc548b9cc08d1035d7de4bed6b6265a2ff77e2d4245cb8ee235f7a2",
+      "bytes": 202552
+    },
+    {
+      "path": "docs/hero-v3/desktop-check.json",
+      "sha256": "454f5fd603844b600d9136636e0c135006a9e197539f82bbbe5f9b14fc8a7f88",
+      "bytes": 5836
+    },
+    {
+      "path": "docs/hero-v3/dongzhi-desktop.png",
+      "sha256": "f572709848f8079aeb5befcb7b301963f69836cbc6f2099bd6ad9146af822263",
+      "bytes": 190997
+    },
+    {
+      "path": "docs/hero-v3/hanlu-desktop.png",
+      "sha256": "c6f64e415ba8142d7de782cbe000e5337d668a45741a877ef494835d003198eb",
+      "bytes": 195617
+    },
+    {
+      "path": "docs/hero-v3/hanlu-mobile.png",
+      "sha256": "756bb8b13e28acda8abe028bca6d85ea268c02e7e7eed260e374b8b590c4a1d8",
+      "bytes": 52866
+    },
+    {
+      "path": "docs/hero-v3/narrow-check.json",
+      "sha256": "f2dfbaa0435ea00d48b9da88683ab77f9a6811e439bad694fe2021bcd519db56",
+      "bytes": 6098
+    },
+    {
+      "path": "docs/hero-v3/qa-receipt.json",
+      "sha256": "efa9075fc71e914e524b60284e060db450c4129a0203d5bbb82543c55fcec7ce",
+      "bytes": 1174
+    },
+    {
+      "path": "docs/jieqi-v2/briefs.json",
+      "sha256": "c34c114f3e2478ed4be9cd03a82ac793a04183dcc8746b5a84237211a23b2ed5",
+      "bytes": 38909
+    },
+    {
+      "path": "docs/jieqi-v2/desktop-switch-check.json",
+      "sha256": "cfcd23b7b5289bff461d25077b5747fa4c8647223ef0929aae87e13e3e54c15a",
+      "bytes": 4450
+    },
+    {
+      "path": "docs/jieqi-v2/gallery-browser.png",
+      "sha256": "df27f1cb43fc94c326d9074f29a144f2f03762466a02648f3ded6483b2df35aa",
+      "bytes": 515894
+    },
+    {
+      "path": "docs/jieqi-v2/gallery.html",
+      "sha256": "ae0143a761cab6edc46f541a7fcfbdc899ed7a5fe0520c7092c5320c86d5141a",
+      "bytes": 7574
+    },
+    {
+      "path": "docs/jieqi-v2/generated-paths.json",
+      "sha256": "d1fce5a614fc0b164f8501defa9e7eefc63b659d9d326093c9497daee35a5659",
+      "bytes": 6654
+    },
+    {
+      "path": "docs/jieqi-v2/layout-check.json",
+      "sha256": "c9f6d69ff3f986f831fe26c73453f3eb501acde6f2731324938ce6131bd20e06",
+      "bytes": 283
+    },
+    {
+      "path": "docs/jieqi-v2/manifest.json",
+      "sha256": "871b81a8ebacef09ddc5aa2c2ba916a0d8b4c13231ec45cb0ccea2c9bc9586a1",
+      "bytes": 19571
+    },
+    {
+      "path": "docs/jieqi-v2/mobile-preview.png",
+      "sha256": "4275e8f556746431967bafdf572df866247f826a7182e4f6fe3e929b9a6bd06c",
+      "bytes": 50424
+    },
+    {
+      "path": "docs/jieqi-v2/originals/bailu.png",
+      "sha256": "7f65474540574ec1d586e7f28b533654f05523a226f49cb3901e3f2527916f4b",
+      "bytes": 3538530
+    },
+    {
+      "path": "docs/jieqi-v2/originals/chunfen.png",
+      "sha256": "5ac635a898807e97246926592f84d0602bd5424287c6d9d57f7186f6663e3806",
+      "bytes": 3250990
+    },
+    {
+      "path": "docs/jieqi-v2/originals/chushu.png",
+      "sha256": "ba1082b6e97df9783e963086cb5349700499e583cc0caa03597ea327a22f36dc",
+      "bytes": 3495324
+    },
+    {
+      "path": "docs/jieqi-v2/originals/dahan.png",
+      "sha256": "65aac83ec5de871c1290fa64d97dd20843a75a6c73f79394281ce8733bfec367",
+      "bytes": 3622259
+    },
+    {
+      "path": "docs/jieqi-v2/originals/dashu.png",
+      "sha256": "237ffa37c9a7add86d72105c2360829fa840959bda46e07150f8ca1a039f5afb",
+      "bytes": 3515684
+    },
+    {
+      "path": "docs/jieqi-v2/originals/daxue.png",
+      "sha256": "22f585df64652389416c314adee9b3630ede0407fd85d83e47435b9471b3e3a2",
+      "bytes": 3565630
+    },
+    {
+      "path": "docs/jieqi-v2/originals/dongzhi.png",
+      "sha256": "f3bba7bbf227102d3ccc1bf706f181457455625bed4dbb46040f3f155316a200",
+      "bytes": 3479282
+    },
+    {
+      "path": "docs/jieqi-v2/originals/guyu.png",
+      "sha256": "fca9b258405db5883233198cade8f0abd55c776835975d5d38650a711f7f3538",
+      "bytes": 3398404
+    },
+    {
+      "path": "docs/jieqi-v2/originals/jingzhe.png",
+      "sha256": "87de82fc791e2b80eb1f93246dc9fffd8ae4be5cc3ce0674f6eb4c1731743b1e",
+      "bytes": 3489324
+    },
+    {
+      "path": "docs/jieqi-v2/originals/lichun.png",
+      "sha256": "ef46f92b1b5abd21853c9b3d27c96fc1c3cef27f94b7f623ac852bf4cfd741d6",
+      "bytes": 3546409
+    },
+    {
+      "path": "docs/jieqi-v2/originals/lidong.png",
+      "sha256": "059b5437d8a17f1aa1be07f0b21372dbb6a91495c8db85f979d4f008b05d22d8",
+      "bytes": 3601065
+    },
+    {
+      "path": "docs/jieqi-v2/originals/liqiu.png",
+      "sha256": "940d9d5baebd14724564b6d37b3d3f67b37d737de19c1a649f850e611c673a6d",
+      "bytes": 3419277
+    },
+    {
+      "path": "docs/jieqi-v2/originals/lixia.png",
+      "sha256": "2fddbef6131fc6ce830657f79887a91a8a007b7684c552a424091c0a4b5d2751",
+      "bytes": 3203452
+    },
+    {
+      "path": "docs/jieqi-v2/originals/mangzhong.png",
+      "sha256": "27e3d8ce71524b906fa672c5830a0d4babdafac66fcda672d3621c317f683d4f",
+      "bytes": 3725101
+    },
+    {
+      "path": "docs/jieqi-v2/originals/qingming.png",
+      "sha256": "bec72ea1d4b210a76bc2a90deb65ebfb2162ed0080598e7457da0ef805744b74",
+      "bytes": 3661921
+    },
+    {
+      "path": "docs/jieqi-v2/originals/qiufen.png",
+      "sha256": "5b87285d9ca6e9a94d31337f30b2d96336765a413ee214139c587a792dd7050e",
+      "bytes": 3606815
+    },
+    {
+      "path": "docs/jieqi-v2/originals/shuangjiang.png",
+      "sha256": "662d59364039ec97d5096c4c704c42b63490c76556b33ab98f89429e910f114a",
+      "bytes": 3378557
+    },
+    {
+      "path": "docs/jieqi-v2/originals/xiaohan.png",
+      "sha256": "940f65d87007ea3017d3cb491430b3b2a36cae36183a220824df0832226bc917",
+      "bytes": 3750777
+    },
+    {
+      "path": "docs/jieqi-v2/originals/xiaoman.png",
+      "sha256": "0379c74aabd263bd22325b1a38d96b61da6e8fff48eb969a820425c2e7a3831d",
+      "bytes": 3550496
+    },
+    {
+      "path": "docs/jieqi-v2/originals/xiaoshu.png",
+      "sha256": "ff07220450d374b61ef10b474b6e649dc4a57387cbd0f3b29b168219ec5dd99e",
+      "bytes": 3383333
+    },
+    {
+      "path": "docs/jieqi-v2/originals/xiaoxue.png",
+      "sha256": "d0c1a65707674c8cab2722b5d8e14a3d2fe499ace5477fc4b10766bcc9f6e1e5",
+      "bytes": 3407312
+    },
+    {
+      "path": "docs/jieqi-v2/originals/xiazhi.png",
+      "sha256": "07c17327481328cdecd5ddfab694b3e42faa60f1b60789dda411ea4da71d3668",
+      "bytes": 3295028
+    },
+    {
+      "path": "docs/jieqi-v2/originals/yushui.png",
+      "sha256": "66ef1a631a4ec50fcb64931d0cbcfc6c4d2caa27b79d89fa9e054f205ae76c4a",
+      "bytes": 3709858
+    },
+    {
+      "path": "docs/jieqi-v2/overview.jpg",
+      "sha256": "f4b2f0a28ccc68338310aef3711d153f6455a2213197159b3575f88f7b4391e1",
+      "bytes": 1252243
+    },
+    {
+      "path": "docs/jieqi-v2/qa-receipt.json",
+      "sha256": "1badc9819bab3b0f8e2959e5355538c2d7e5a45807b089bf1d809ffd99c3485d",
+      "bytes": 1135
+    },
+    {
+      "path": "docs/november-additions-images.json",
+      "sha256": "600dcb8826f3c2b976231878092c79c0e9ce76d42e36663a412e512a9b246fb0",
+      "bytes": 2665
+    },
+    {
+      "path": "docs/november-expansion-20261016.md",
+      "sha256": "894ce6713213a6da16e137dd13d6e4cb89ad87561bc8a2c9116cfed54f682412",
+      "bytes": 2538
+    },
+    {
+      "path": "docs/visual-refinement/README.md",
+      "sha256": "c4a8483f569090e29443e486d6767f945c428da98c1a9f67fddd74a0b4694cdc",
+      "bytes": 1111
+    },
+    {
+      "path": "docs/visual-refinement/alternatives.jpg",
+      "sha256": "fa3e8f85d8368026b52cb4be993279ab1b3e407998a3ffe28f3409099716202c",
+      "bytes": 83483
+    },
+    {
+      "path": "docs/visual-refinement/bamboo-edited-original.png",
+      "sha256": "c7f32bc15ae4496fb36c804d550a41094d521dca4434219e4c233cb6301e6736",
+      "bytes": 3544982
+    },
+    {
+      "path": "docs/visual-refinement/crab-edited-original.png",
+      "sha256": "296f388f93407ea58faad89f9dad7239f914bf049fba93e523ba81269bbe28ec",
+      "bytes": 3035172
+    },
+    {
+      "path": "docs/visual-refinement/desktop-check.json",
+      "sha256": "59c11dad6709cba23a4fd6f05df11534fb13ebef92823fe5b8ec5e6521ff6bdd",
+      "bytes": 12567
+    },
+    {
+      "path": "docs/visual-refinement/edited-assets.json",
+      "sha256": "ceee0146e5decee89ca51b38d4071749000cbf2240129ad0cc9a7630e6c10fb3",
+      "bytes": 1289
+    },
+    {
+      "path": "docs/visual-refinement/explore-desktop.png",
+      "sha256": "6daf517c87dc41af0f4b0b4f13c495353567bf6498fa57175a3d425fd5a2e9ab",
+      "bytes": 70696
+    },
+    {
+      "path": "docs/visual-refinement/explore-mobile.png",
+      "sha256": "aba2be8dda6b8e9bd9f803730bc35236afaa224d8acf2b6db0f6b860e2768217",
+      "bytes": 31431
+    },
+    {
+      "path": "docs/visual-refinement/feature-0.png",
+      "sha256": "af134583c248e875a87efe41a88605fde47e83937469982033b73a89bd6010be",
+      "bytes": 20416
+    },
+    {
+      "path": "docs/visual-refinement/feature-1.png",
+      "sha256": "3eed3a9a9b93b808749318bcaeb1139851bcd929a84d9671ecef3f2aa5ff968e",
+      "bytes": 17538
+    },
+    {
+      "path": "docs/visual-refinement/feature-10.png",
+      "sha256": "ed3c06ccf0c7f54d9767cf8302fbcbadec58fe3923792fc3bf37a08f1b0a8fe5",
+      "bytes": 22660
+    },
+    {
+      "path": "docs/visual-refinement/feature-11.png",
+      "sha256": "9201e383e74381c3c70aac9edba3320d44bf7b4b988429999836129959abde9a",
+      "bytes": 22389
+    },
+    {
+      "path": "docs/visual-refinement/feature-12.png",
+      "sha256": "7043a4d162c355c19b1772feb58b7ba16ce921d047214aa4402ec00bdaa85314",
+      "bytes": 24531
+    },
+    {
+      "path": "docs/visual-refinement/feature-13.png",
+      "sha256": "6916c63b85583881161eda009a4590330c1224f69fbe44cc13da43c319ba02fb",
+      "bytes": 23233
+    },
+    {
+      "path": "docs/visual-refinement/feature-14.png",
+      "sha256": "93fc3bccef48e83c8468b49dfb26bb7f81cdfbaa2b253270a41a2a68c25fec53",
+      "bytes": 23059
+    },
+    {
+      "path": "docs/visual-refinement/feature-15.png",
+      "sha256": "36d397d94c493502deb88e7a764648b06782a275f60fc9aaae54dcc492f65780",
+      "bytes": 22255
+    },
+    {
+      "path": "docs/visual-refinement/feature-16.png",
+      "sha256": "5a9e3337781f73fa7b6e651cba86e65c4004edd5d98933b8bafdb94013035bac",
+      "bytes": 26918
+    },
+    {
+      "path": "docs/visual-refinement/feature-17.png",
+      "sha256": "5b7607be216fb5c98d64352a53326ade773ccc1d91a9cb36e725928cf3bd70b7",
+      "bytes": 20674
+    },
+    {
+      "path": "docs/visual-refinement/feature-18.png",
+      "sha256": "fcad22640c8db7fce0cbf7689fe83f1ce7089212280933007666c44892dadb06",
+      "bytes": 23490
+    },
+    {
+      "path": "docs/visual-refinement/feature-19.png",
+      "sha256": "852f024a07d7600fdb1cb00987f331ba6415d24ff1f003893268e4b8646bf90e",
+      "bytes": 18628
+    },
+    {
+      "path": "docs/visual-refinement/feature-2.png",
+      "sha256": "01564cf83a2604d58d71337d08b5c3bd45286313a851f4d62b540bad53a1c328",
+      "bytes": 20239
+    },
+    {
+      "path": "docs/visual-refinement/feature-20.png",
+      "sha256": "2037b91c8752a2d3114046f765256d3ed1ac9c3f91a8ee362c49139990bf2a39",
+      "bytes": 22159
+    },
+    {
+      "path": "docs/visual-refinement/feature-21.png",
+      "sha256": "ecc77b0cb176b1f34787e61a7e738047888354a2c34efcdc959c6de596093158",
+      "bytes": 17862
+    },
+    {
+      "path": "docs/visual-refinement/feature-22.png",
+      "sha256": "185b010fb9dee43d4beef8e97933771e55329a28b0e9312891d3b213d8d37294",
+      "bytes": 24361
+    },
+    {
+      "path": "docs/visual-refinement/feature-23.png",
+      "sha256": "9f6ae5b500ea159a785c5f64f3e39cf26c72920b09fd9339951703b1ee23aa3e",
+      "bytes": 20065
+    },
+    {
+      "path": "docs/visual-refinement/feature-3.png",
+      "sha256": "f5b249ad284022485ebf118c4896fbea21cff7963c25509cb831b6c185ec7c8e",
+      "bytes": 19830
+    },
+    {
+      "path": "docs/visual-refinement/feature-4.png",
+      "sha256": "4432a44f9ba3c15d79fb86b822f393a69f629ddc150fcc93d10805065f648633",
+      "bytes": 21331
+    },
+    {
+      "path": "docs/visual-refinement/feature-5.png",
+      "sha256": "e25dfb2518a99a03efc37ed862fc6307e0b58c5ec8da37a5f915ea4084521726",
+      "bytes": 21533
+    },
+    {
+      "path": "docs/visual-refinement/feature-6.png",
+      "sha256": "6c65410f8779de5a575d60483d24a281307109310bf5c9c0afd5260dff5d9234",
+      "bytes": 22153
+    },
+    {
+      "path": "docs/visual-refinement/feature-7.png",
+      "sha256": "25d0701a9ff9441a3b70bdcade6c2f47566e4bf38c412766fa8a72f051430713",
+      "bytes": 18666
+    },
+    {
+      "path": "docs/visual-refinement/feature-8.png",
+      "sha256": "26181561efc6223928b484a9de9bb3b078f53bd7839bf8c313a1a41bb46fb276",
+      "bytes": 22026
+    },
+    {
+      "path": "docs/visual-refinement/feature-9.png",
+      "sha256": "099ade6074f89195250ee77d5ed159cf57d48d25b536a778f974301504eb8265",
+      "bytes": 23254
+    },
+    {
+      "path": "docs/visual-refinement/featured-audit-after.jpg",
+      "sha256": "d3761004b62d165347fce8e379c9939e88858b4c2e560c52b2b80daeb4789594",
+      "bytes": 481805
+    },
+    {
+      "path": "docs/visual-refinement/featured-audit-after.json",
+      "sha256": "e9b9e39f313067c520eafbe028a4df6fb6c48b8ddacd9c7b079d0d8bd1499834",
+      "bytes": 5002
+    },
+    {
+      "path": "docs/visual-refinement/featured-audit-before.jpg",
+      "sha256": "3eac12a3b0d3acc3a13c964a8651cb445aec756cdf6a2ddde5859d8a189d1a3c",
+      "bytes": 544562
+    },
+    {
+      "path": "docs/visual-refinement/featured-audit-before.json",
+      "sha256": "eddf217d4a41bc869c15caf37b4597c4a659b8fe7732612e6673b38ca20a6ce2",
+      "bytes": 6287
+    },
+    {
+      "path": "docs/visual-refinement/hanlu-desktop.png",
+      "sha256": "0b273464832545ccd2f93ec02fe0b01801eacf6e4ed538671c748fd84663dbc5",
+      "bytes": 191214
+    },
+    {
+      "path": "docs/visual-refinement/hanlu-mobile.png",
+      "sha256": "08c01c9150d214b873c38dd56798b1fc5d86e097bf03b3e924bedd317ee1b7f3",
+      "bytes": 48539
+    },
+    {
+      "path": "docs/visual-refinement/houtui-edit-prompt.txt",
+      "sha256": "1da94b8d643f407f8495b1296e47c150241376d0b2f0df3574c3c9c19fccd953",
+      "bytes": 859
+    },
+    {
+      "path": "docs/visual-refinement/houtui-edited-original.png",
+      "sha256": "2105056c2346138faf4eb71eae2e6362018229ebae8f3d6d0c0ae1d89e202b47",
+      "bytes": 2773503
+    },
+    {
+      "path": "docs/visual-refinement/image-edit-prompts.json",
+      "sha256": "d797312fce4c33c518dd1540c001e460977da51d00a37e0f4d01bf60284c1b6a",
+      "bytes": 3028
+    },
+    {
+      "path": "docs/visual-refinement/mobile-check.json",
+      "sha256": "9be2385c9642b6f44f38745d992498fdb8df1bb1d63ad0235fcfcb76b880277f",
+      "bytes": 12242
+    },
+    {
+      "path": "docs/visual-refinement/qa-receipt.json",
+      "sha256": "90dc79f524ab7066d5cee73e148be9d66d7e1c8dedd2d4f7c633dc2480a3739f",
+      "bytes": 1486
+    },
+    {
+      "path": "docs/visual-refinement/tatsoi-edited-original.png",
+      "sha256": "a4af6d7034919b7f808d472d2a1af555961740bc4b7bd8de52d837e140773db1",
+      "bytes": 2007559
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/banna-banana-blossom-desktop.png",
+      "sha256": "0f886c22e3495508dde1014fdc2f7ddd0edfc58b994b9c43e909d1311db16ebc",
+      "bytes": 90822
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/browser-checks.json",
+      "sha256": "947d7a7448619eb7a5742f9cc40befe94381e8240d042a394996a5ffe2e02141",
+      "bytes": 8885
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/entries-reviewed.json",
+      "sha256": "149ec75090ed795fa105a3abf9afa2f4a8c1561bc88bb313823341cf0e4f4419",
+      "bytes": 53020
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/homepage-desktop.png",
+      "sha256": "7c7422a3913515d1fb21c9bc61dac8d889865b248b7170b14504f2bf1c23b8f3",
+      "bytes": 167232
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/homepage-mobile.png",
+      "sha256": "441e94b7c2df4e9988b0553b3ca0334715a231a3fb402641aa471430a3308f88",
+      "bytes": 53831
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/image-manifest.json",
+      "sha256": "e7759e58977a9ab8626813f4220bebcbd2d21655f508b5ad26c30d76716103d7",
+      "bytes": 24026
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/jianshui-caoya-desktop.png",
+      "sha256": "fbcf29aa186ffbbed569e0041936bea17bbc0587cd228052b7c1d48b9cac14f4",
+      "bytes": 78734
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/jianshui-caoya-mobile.png",
+      "sha256": "501cb8ee7f2851e3d204f5e0158e29f89794d159a68b357e3439486e9357c781",
+      "bytes": 46898
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/banna-banana-blossom.png",
+      "sha256": "faed058753692b3436c50cee2e173ec1bd393d3e69c3975dea42719af94f5591",
+      "bytes": 2472298
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/baoshan-liangcui-emblica.png",
+      "sha256": "de29904c24271bcc656bcd9603ad48b8f1be60f1caef54ce8cf2ab44722ea395",
+      "bytes": 2308826
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/jianshui-caoya.png",
+      "sha256": "8da4a119924060b6593b0121049226a199b45327b25ef39dc29bf5331d9873dc",
+      "bytes": 2248034
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/lancang-nannai-duoyi.png",
+      "sha256": "402f06dc1248913c105b3112e29e246d4edb127609b8198a1a700213a59ea875",
+      "bytes": 2361393
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/longyang-pupiao-allium-root.png",
+      "sha256": "6745453272cab7c1be6543f4f7d3bafe0d28fb0ae9f506522d23897c8ced258b",
+      "bytes": 2329281
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/ninger-tongxin-sweet-shoot.png",
+      "sha256": "d2cc7c02a65ca2f5656a82aded79a9191f4800eac89f06417f9e312bbb11da65",
+      "bytes": 2612665
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/tonghai-fresh-sour-quince.png",
+      "sha256": "89561d8742e09df3fa8d58af58fb5331534124facde7de3109ab966f25a9cb39",
+      "bytes": 2673174
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/ximeng-bamboo-worm.png",
+      "sha256": "8cbda823dca8d37c1d197909fbab4d14e658da97b9e00032bbc381460bc4798e",
+      "bytes": 2599740
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/originals/yongsheng-fresh-kapok.png",
+      "sha256": "5ddd51f5e1a647b8e6e6ae613e449bd4be59ba3127bd18881edc31b4f33df39a",
+      "bytes": 2307861
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/pool-audit-2027.json",
+      "sha256": "598cde74f2164227ffa9e6546de24496ddaceaf7a6c4a214ffc182314d59adb8",
+      "bytes": 21228
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/qa-receipt.json",
+      "sha256": "ef875426a00837865f9b868afecffee1e7473e8a7dde25277de7d14eb9c19d75",
+      "bytes": 2640
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/reference-images.json",
+      "sha256": "c664d73ff67e9b57fd7f66839e3a3302a17fcf04e84075036ac348f2a6e93359",
+      "bytes": 12757
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/reference-pages.json",
+      "sha256": "f777413ef2c8b6550c4133dc40d833874f7262debf76f005471fef6cd78aa4d8",
+      "bytes": 6072
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references-overview.jpg",
+      "sha256": "ce083771a2411ca5cac0ad34c857e7c04df41d50ba25292cb2d0e71ea89e2bf5",
+      "bytes": 599836
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/allium-root-0.png",
+      "sha256": "aa56b0569ac3b69b0c98afafbaae31b6d9bbece625c6984df7bf691caa7af682",
+      "bytes": 403700
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/allium-root-1.png",
+      "sha256": "1ab34e46adecc1ab3cf7e3d1d4436d85b43f72ff811ae425873e002106b4ec93",
+      "bytes": 368286
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/allium-root-2.png",
+      "sha256": "a50db6c1e222070e371502998beec252c15eb62f7806d126189e09f6fad23b4f",
+      "bytes": 401506
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/allium-root-3.png",
+      "sha256": "2a691325b1346ae0bbafa5a26078f7d587bea436b23734c4011e86ff00299ad9",
+      "bytes": 455757
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/allium-root-4.png",
+      "sha256": "b7dffa7177f17a957a6df586faa1d1e837da99a973723bdd5ee650a7fd51354b",
+      "bytes": 331489
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/allium-root.html",
+      "sha256": "02dfb76ceccb21c41f393f9ccbbab7a1493625ba29e4898ac0cd4c45a56a75cd",
+      "bytes": 34896
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/allium-root.txt",
+      "sha256": "099512cd092a3203ec4575744d8f499d911fc2f486313aa7157e70b45b9060f1",
+      "bytes": 1823
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/bamboo-commons.png",
+      "sha256": "530f3ed52bfb886dcec8ea48d7f541cd9b38e837af8f5ffae26d75953f4797cc",
+      "bytes": 1269474
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/bamboo-worm.html",
+      "sha256": "90e5eba798865e0b6d9a3edebd9c1aad196fadcd3971ec7434d798ade1a30ba7",
+      "bytes": 19649
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/bamboo-worm.txt",
+      "sha256": "1f59c359b420f581933c8669d33603385e3eb1d05f2d77d09ccadc37db6258bc",
+      "bytes": 376
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/banana-0.png",
+      "sha256": "9b4dab5f4f1016ceda7d2b42d7cab0c0a73c0bb585bdc5feadabc858a1b9510e",
+      "bytes": 482836
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/banana-1.png",
+      "sha256": "085351ce1fe00dfbad464ef1d34c651179ebe3c628d9df0a7578ba7e787fce57",
+      "bytes": 383830
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/banana-2.png",
+      "sha256": "bdd04515e13fcf698e65d62476e222c19cef6de3dd88eb5330c5dc9dee0d00e6",
+      "bytes": 386490
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/banana.html",
+      "sha256": "ae5fe2bc1a0a0cf837ff9ee205108de5e79dc70ade040e156e33fc5478205862",
+      "bytes": 47430
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/banana.txt",
+      "sha256": "e583821bd77f47f072671a4b9bae8b2c1dda653d51dcbdb8f2cd2e2f0088d60c",
+      "bytes": 266
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/caoya-0.png",
+      "sha256": "d1a38c6dc91759360433af2b1a00303929c30618402c386c41fb927ab06cdd96",
+      "bytes": 90
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/caoya-3.png",
+      "sha256": "4a30ccc0a71c79792cb707499551756f67849ae172028a1872a54b69c1b4b643",
+      "bytes": 2266
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/caoya-4.png",
+      "sha256": "044ff07a9c39609ae0acf06c45514e562c96db7b172adb5229404291ce99effb",
+      "bytes": 645
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/caoya-5.png",
+      "sha256": "7797545b2da9becf1baaeaaa73cb8e7bf8455b26a336576928444ce251354959",
+      "bytes": 34587
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/caoya-6.png",
+      "sha256": "a1432829ffebba30e5dc1b2c4cd6b4aa77326657c334fa3760449e2eaeb041d7",
+      "bytes": 23513
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/caoya-7.png",
+      "sha256": "4a30ccc0a71c79792cb707499551756f67849ae172028a1872a54b69c1b4b643",
+      "bytes": 2266
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/caoya.html",
+      "sha256": "e75ae667ce2fc586220669d119189eb410bc6017ba8314fb5ac77b5254fa8d26",
+      "bytes": 14424
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/duoyi-0.png",
+      "sha256": "2f07caa956266290cdbbdc88ce503793df9a8f3c1f588ee0197b3708b1559944",
+      "bytes": 907625
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/duoyi.html",
+      "sha256": "c77646ad26ee8f9fefb3d0e282072aeaddb7c5a399693959fb04dd5b76bd9a5a",
+      "bytes": 14669
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/duoyi.txt",
+      "sha256": "bf0f7861cc82691e1d10385b152d27310664b52b79bbfec8406f1af61b8bafb3",
+      "bytes": 1196
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/emblica-cultivar-page.png",
+      "sha256": "a17aa37b21c1304413532b68c698d7e63341f556a9794a232755c683ba6651b6",
+      "bytes": 376512
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/kapok-0.png",
+      "sha256": "a32f49a989e8b9da6c41e5d2d16b30ae27d7fc20e593a725d8fbae10cfef5b44",
+      "bytes": 466298
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/kapok-1.png",
+      "sha256": "8911ddf05b1b4b111f61db9a6a0cd9e2e01ac726e9532d2e474637916bd5aeed",
+      "bytes": 232473
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/kapok-2.png",
+      "sha256": "c2f3a58f621777a84f8def23d76e40303b5cb4e5b69ff823cb70af533072fe87",
+      "bytes": 434990
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/kapok-3.png",
+      "sha256": "68a1177534b0ce625699bc6237c1fc4b32ccd88cc7cf857eaa8de01f3c0d38e5",
+      "bytes": 488612
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/kapok-4.png",
+      "sha256": "4e506a82feb018b104d76295a4c06a8ced59fe95e36fdb12d136f918ff979690",
+      "bytes": 1326527
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/kapok-5.png",
+      "sha256": "9f37afea5737ba9b14e8325f6fc85a87fbf8522d1d144287c0f11c587253ebc2",
+      "bytes": 1213502
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/kapok.html",
+      "sha256": "804a87f7371ca9139911acf9d07bd9ab2f0a5d5d5747bc2c58c17ffd18d0eef9",
+      "bytes": 23074
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/kapok.txt",
+      "sha256": "f51514aeeae79416c3476c00d2353eb422c79e93d7e23cd6eac12d20108779bc",
+      "bytes": 6237
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/quince-0.png",
+      "sha256": "0e5ee3ca86545f7e8e6699d4f34e86e31ecf858ceb3612e2ba1f85b027f20834",
+      "bytes": 282888
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/quince-1.png",
+      "sha256": "d5828dd56d5a7c6f47569fc43f8a777f339f66defb6febcf0cbca6efa8efe176",
+      "bytes": 268978
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/quince-2.png",
+      "sha256": "a8995effb5b6ab172e5b4e586f5c8c631d59868d87226955f048dc8279ebd5d6",
+      "bytes": 293872
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/quince.html",
+      "sha256": "502b564f7a6a21b25501f81469ccb493324b1f6a33cf402a602a100f52fc2822",
+      "bytes": 22297
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/quince.txt",
+      "sha256": "fb41f4a3dee2e93ad7d37282772387d4617bb90f7a89e8d2e2d2409e603c7d8b",
+      "bytes": 2250
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/root-cas-0.png",
+      "sha256": "c17345629be96eab60152056e5ba927fa43877716111ae71fbe6e79ed9f9f088",
+      "bytes": 234925
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/root-cas-1.png",
+      "sha256": "f602161182099079061e5e453dcc185f6507a879f6951bdfdf272fd83cfae4f7",
+      "bytes": 88303
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/root-cas.html",
+      "sha256": "640afd83f543a57c575d120426e8a09fa711e09b35426a05e5e0b7bf7613fed5",
+      "bytes": 112630
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/sweet-shoot-0.png",
+      "sha256": "1771f39392f0bad0ea859f43ae4c73dddab6c38adb6d14a8286f73b73e8b907e",
+      "bytes": 387561
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/sweet-shoot-1.png",
+      "sha256": "993bb69c36ce726872bf7337bf6fd0dfa725951b51ff285e58767b5f6ce95122",
+      "bytes": 626066
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/sweet-shoot-2.png",
+      "sha256": "d86d6b68956d27060fac7e5f1539beef66e3df109a24dd7846e66355dcf3388d",
+      "bytes": 590779
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/sweet-shoot.html",
+      "sha256": "3bde92ec7ed050d58c71edccf78572a01763999cca92896f4c880bd73e96b4fa",
+      "bytes": 12563
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/references/sweet-shoot.txt",
+      "sha256": "05ae14347d52e37adf3a565e3300e53f58d7bdbc9367363959ac82e2e425dec8",
+      "bytes": 1184
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/reviewed-profiles.json",
+      "sha256": "37cf043c893d6297e6bd4007960a287b340d2edc5f7b03850b0119aad3bfda62",
+      "bytes": 4758
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/servings-overview.jpg",
+      "sha256": "225e1819b060e0621c970d80e67b4f2183b8d1be8f3aa10c4265c21b11599c9e",
+      "bytes": 348890
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/test-results.txt",
+      "sha256": "c9645c563b11919e74be918eec1d43471f09e2df7a557e64125977a75498efe4",
+      "bytes": 30276
+    },
+    {
+      "path": "docs/yunnan-additions-20261015/yunnan-search-desktop.png",
+      "sha256": "cd52d359aa78e67e396ca8c15da1ad426ec5a7ab11bf4ac6c41f323bcbd49076",
+      "bytes": 46153
+    },
+    {
+      "path": "docs/yunnan-screening-20261015/screening.json",
+      "sha256": "d892d1bb0837761ce3f026cc950292821f4ed17c5953d86c8a5c3fa1a92e737a",
+      "bytes": 8848
+    },
+    {
+      "path": "docs/yunnan-screening-20261015/source-manifest.json",
+      "sha256": "f946e2810e1bab46c3cf688c3a504f4fb0fc342ff4554a75f2ed763ce158a645",
+      "bytes": 262
+    },
+    {
+      "path": "docs/yunnan-screening-20261015/云南余甘子高效栽培技术.pdf",
+      "sha256": "671efb04c585e074ad4aab3b5006c4310d6d7b2325161851ba388e63c83f38f0",
+      "bytes": 15210256
+    },
+    {
+      "path": "tests/yunnan-foods.test.cjs",
+      "sha256": "a923c8e71b3a747a9598172cea20f1a3641c3e1937cdb6c4923e20b9c04cc2fb",
+      "bytes": 4465
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "93eda6df2498e66341215e0085fbabb2647ba57c3acfcc27ef68219f9e43fea9",
+      "bytes": 6846
+    },
+    {
+      "path": ".github/workflows/share-checks.yml",
+      "sha256": "53dec5a09f45bc13ddea724525b51f70f45664df23d2c140b4de0efbade2cb9c",
+      "bytes": 976
+    },
+    {
+      "path": ".github/workflows/tarot-checks.yml",
+      "sha256": "1ae4074a506de2192379d5fca5f450d520b0367365e35d0b2690d320a7963817",
+      "bytes": 975
+    },
+    {
+      "path": ".github/workflows/v1-1-checks.yml",
+      "sha256": "7934e04c4d993bb28da671abac2c8181a6710c0aef662ecadcfe916f80e4ee7c",
+      "bytes": 865
+    },
+    {
+      "path": ".openai/hosting.json",
+      "sha256": "506ad97a660cd552cb7c09f6215ff70eabd7b7ba66616db423274b58ffe147ec",
+      "bytes": 106
+    },
+    {
+      "path": "CANDIDATES_25_48.md",
+      "sha256": "ac0beb9fe920b454a411c0c535943963e6c09e4a4ba2cedfa741fda2586fd18e",
+      "bytes": 15515
+    },
+    {
+      "path": "IMAGE_REGISTER.md",
+      "sha256": "40fccc5fa99b985e7de33525f08ae787b9e7b585af9afc5602777861a7700520",
+      "bytes": 55909
+    },
+    {
+      "path": "README.md",
+      "sha256": "2a14f4d62149475eb54e4e151f5a1883a2b94e35dad810c72001032dc5784dad",
+      "bytes": 2362
+    },
+    {
+      "path": "THREEJS_PLAN.md",
+      "sha256": "1d94e28bdd873a1116ed312647c6a7b968abb702801ff723558f9c6a1446a0b9",
+      "bytes": 13190
+    },
+    {
+      "path": "dist/app.js",
+      "sha256": "5214ead942f153a408387ba5a928c336a4836c968adc7eef5522937ffee88b2b",
+      "bytes": 47870
+    },
+    {
+      "path": "dist/assets/atlas-geography.svg",
+      "sha256": "86c349c77bb002c350f44b713515f284ad2bdb3713064e9aebfc3eb01d19c996",
+      "bytes": 514293
+    },
+    {
+      "path": "dist/assets/atlas-relief.webp",
+      "sha256": "fa1ce1a1ff4b2c00c3839e8421917166a67827b263ad9f20e34bb59839499d13",
+      "bytes": 29056
+    },
+    {
+      "path": "dist/assets/atushi-winter-lamb.jpg",
+      "sha256": "1a5fb08340cbf2d41ed9cef82ff3e4724c90b0d64c75960308ae68c446a9943f",
+      "bytes": 301039
+    },
+    {
+      "path": "dist/assets/baoying-cigu-pork2.jpg",
+      "sha256": "e9bae3df3b1a72d1332f2b069315faa4e45e0d8dad8b67c01e04bf3cf5cc003c",
+      "bytes": 449625
+    },
+    {
+      "path": "dist/assets/bayuegua-cut.jpg",
+      "sha256": "d5bde164aa25cb562aa33cbc5986fda51af33cf6c8851e6e9c20673e937e5371",
+      "bytes": 738798
+    },
+    {
+      "path": "dist/assets/bayuegua.webp",
+      "sha256": "bb06c073886ca4923229478b0f8a3ca218addbd0e5ee4f05ae13a83e3ae6989d",
+      "bytes": 404826
+    },
+    {
+      "path": "dist/assets/bishan-ercai-boiled.jpg",
+      "sha256": "6f6214a42d122e56f333778fefa5b547e55d23608217ff07c99516b40ec5abab",
+      "bytes": 228098
+    },
+    {
+      "path": "dist/assets/caixin-candidate.jpg",
+      "sha256": "08468af765f7b5ceeadf2a8d774ffd9ff7f47c1fad4310ff129e3596209f8471",
+      "bytes": 154051
+    },
+    {
+      "path": "dist/assets/chayote-leaf-tendril.webp",
+      "sha256": "7d14f0613b49e544e7211d374bf1341667c923b994ff04f1f1fcfb5c12ad820b",
+      "bytes": 67652
+    },
+    {
+      "path": "dist/assets/chayote-raw.jpg",
+      "sha256": "c78c39c2441b8b199a14b6e4b071d5cc73b026cec8a662b3b5d9dd0c27dae8d8",
+      "bytes": 1191978
+    },
+    {
+      "path": "dist/assets/chayote-shoots.webp",
+      "sha256": "5bee17fc22e69ddae35e83b607c2f65366ca0ccae94447ac5fa98fdf103982f7",
+      "bytes": 397808
+    },
+    {
+      "path": "dist/assets/chenghai-baoke-rice.jpg",
+      "sha256": "784273a5359258622dd188d9d9974fe4f148d316452da2ca0607558886e85fd9",
+      "bytes": 192260
+    },
+    {
+      "path": "dist/assets/chenghai-baoke.jpg",
+      "sha256": "a2d8587b22a86f9ec9642f46b7297e523405be7bb1768b7eec82cb333aaddf65",
+      "bytes": 553088
+    },
+    {
+      "path": "dist/assets/chongming-biandou-garlic-generated.webp",
+      "sha256": "75fd26a92b8a461de753c2b08d3c2fc1914dc50ab1547ecbcdde47a7c75a2db2",
+      "bytes": 222748
+    },
+    {
+      "path": "dist/assets/chongming-biandou-reference.webp",
+      "sha256": "51907f2f7d478a30f28cf722ddc48878f0053880de9f906cce1b9956d42bb272",
+      "bytes": 245542
+    },
+    {
+      "path": "dist/assets/chongming-taro-reference.webp",
+      "sha256": "775e7520827ab1f6d052c4b87f4c24f29817174d313d530a4e5ac2da8ae55d9b",
+      "bytes": 44496
+    },
+    {
+      "path": "dist/assets/chongming-taro-steamed-generated.webp",
+      "sha256": "2fa31bfef7eb7667c21bae82151b691cf86c209ded2500862ee6d9104cbf3887",
+      "bytes": 227910
+    },
+    {
+      "path": "dist/assets/cigu.webp",
+      "sha256": "97867c52f05c2ffe19749bdaf8c90e2582ac2ce5073ecbb03692180c7da97568",
+      "bytes": 417732
+    },
+    {
+      "path": "dist/assets/cili-cut.jpg",
+      "sha256": "163ff226ab5bd80036f40549d3b79118f5b73abfbbb5de9ceac24c7a167b8dcb",
+      "bytes": 29052
+    },
+    {
+      "path": "dist/assets/cili.jpg",
+      "sha256": "f55363d7b68ab9cd27bf9c256f34d73fe03ab8c3fd19eebf9a48cf8c85fe62b1",
+      "bytes": 652289
+    },
+    {
+      "path": "dist/assets/cinengya-cold-final.jpg",
+      "sha256": "a4ed8270304ad3348c980115342cfbd595f978a8683e9159eb97c689e280ce2f",
+      "bytes": 257648
+    },
+    {
+      "path": "dist/assets/cinenya.webp",
+      "sha256": "ef2f2a3f1b5b76ce8c2434e44ecd2ec22ef78a61db0f82b0c1ace4c2f3ca0aee",
+      "bytes": 840062
+    },
+    {
+      "path": "dist/assets/cizhousun-bamboo-shoot.jpg",
+      "sha256": "bd1bc7e096d16af0604632b5b2de6abdb17bc29800191492b158a5102cad8918",
+      "bytes": 756660
+    },
+    {
+      "path": "dist/assets/cizhousun-salad.jpg",
+      "sha256": "51ae4c0c3dd09d123987fa959635f6b34baa38a49ee9e938de1f01fa091478b4",
+      "bytes": 200367
+    },
+    {
+      "path": "dist/assets/cizhousun-shoot-1200.webp",
+      "sha256": "800a18dad056281d99f87283d397985073d41467047296f54994f498d493c572",
+      "bytes": 389546
+    },
+    {
+      "path": "dist/assets/cizhousun-shoot-400.webp",
+      "sha256": "e8562a4d82baf4a1e3f96453f973aa61b94bcccf1ae8966cde32ad4a37977d9f",
+      "bytes": 61560
+    },
+    {
+      "path": "dist/assets/cizhousun-shoot-800.webp",
+      "sha256": "3b9dd9038eedf0edbf8716ae187b5f6dcf2e12004e5ad97775aa3a3bc955d9e3",
+      "bytes": 200630
+    },
+    {
+      "path": "dist/assets/conghua-dajiecai-plant.jpg",
+      "sha256": "45320d35d6657751b11181a74f2f21953fd2bb2d2145ad40d5d8748250e99732",
+      "bytes": 366888
+    },
+    {
+      "path": "dist/assets/conghua-dajiecai.jpg",
+      "sha256": "b6c53efaee85e298feaf3719838e7a88bef58ec03aaa81012ae597748dd32cfd",
+      "bytes": 59280
+    },
+    {
+      "path": "dist/assets/conghua-mustard-pork.jpg",
+      "sha256": "0b23404ad5477b54670267f1b9fb7738dbb05e147d4f2f500e965f10a317519c",
+      "bytes": 133160
+    },
+    {
+      "path": "dist/assets/congjun-lactarius-deliciosus.jpg",
+      "sha256": "fabd9664068167dd8d8880d1defb458ad0a1092d86009cee839df60d384ecb27",
+      "bytes": 2391362
+    },
+    {
+      "path": "dist/assets/congjun-tofu-soup.jpg",
+      "sha256": "f09982d7268d0ccd708fcae22d1347ab9f108a9c4ba714bc19bb2094ac3df854",
+      "bytes": 238382
+    },
+    {
+      "path": "dist/assets/dalian-haimaxian-buns-final.jpg",
+      "sha256": "0cc1c59b4153c43f2b4a608366b40f511c9ba4c8202621597e7aa2c990c481be",
+      "bytes": 158957
+    },
+    {
+      "path": "dist/assets/dalian-haimaxian.jpg",
+      "sha256": "6d6d95cd410131cbb15e78c6f927694ca3f868d1cf3df599143684f51ea4fa61",
+      "bytes": 663272
+    },
+    {
+      "path": "dist/assets/dalian-purple-urchin.jpg",
+      "sha256": "6100f9387b0c3b536cecd9a6b4c6754e43a93f134a45697f8d9a21ecc1d27309",
+      "bytes": 476136
+    },
+    {
+      "path": "dist/assets/dalian-sea-urchin-egg2.jpg",
+      "sha256": "e2755252a34402e91798bf6d7472a119f6fdfccd909236a1ff3d1d0245f91d15",
+      "bytes": 158094
+    },
+    {
+      "path": "dist/assets/dalian-urchin-roe.jpg",
+      "sha256": "bfdc9346f7ab1c496b99785a137c6489df6df019a7b27023af0fe270f8141510",
+      "bytes": 760366
+    },
+    {
+      "path": "dist/assets/dier-egg-soup.jpg",
+      "sha256": "bc8cb29c488e27b37011d1df5b2c109c50116bc0124c27f198b941dad1dcbadf",
+      "bytes": 217820
+    },
+    {
+      "path": "dist/assets/dier.webp",
+      "sha256": "b43292755d29c2ee9fcd6e1c9f2a8d61c6e2c472947faac825232ba8a01c1a4e",
+      "bytes": 574634
+    },
+    {
+      "path": "dist/assets/ercai-candidate.jpeg",
+      "sha256": "019975bfc92cc4667d6e667b0ad7b3da85bea22e26380923dd11251dc22638df",
+      "bytes": 209260
+    },
+    {
+      "path": "dist/assets/eryuan-haicaihua-egg.jpg",
+      "sha256": "f93caf705c10f567d37375f824ff1ce55d18a73d78a7ee90563c0b64ac5a2c98",
+      "bytes": 653586
+    },
+    {
+      "path": "dist/assets/eryuan-haicaihua.jpg",
+      "sha256": "ea1b291ebf497c69884f4dcc817492c09d131a65fe58ed0660dc27a6f5d8e8ae",
+      "bytes": 593418
+    },
+    {
+      "path": "dist/assets/foshougua-icon.svg",
+      "sha256": "09836d6f8f41aa3cd265962fcb9722f2c01bc788eed85a15d4a0e114e81e499e",
+      "bytes": 745
+    },
+    {
+      "path": "dist/assets/ganbajun-rice.jpg",
+      "sha256": "d3a2c1f541eded067aa795156faf2fbbb13dc3e66358fb31182879af79ce63a5",
+      "bytes": 111066
+    },
+    {
+      "path": "dist/assets/ganbajun.jpg",
+      "sha256": "a004b4d521fadb6ded037c8865c05986ba0e05da3ef0ac9f7da0c5fe66e4665b",
+      "bytes": 1027533
+    },
+    {
+      "path": "dist/assets/gaochun-junhuang-cooked.jpg",
+      "sha256": "a764778d538994de73817211060e93d69ac35fbba44ceb4b69166657f10bee9a",
+      "bytes": 668038
+    },
+    {
+      "path": "dist/assets/gaochun-junhuang.jpg",
+      "sha256": "677c3e7bdd7a69aca0ba74a224dd5aa0e4beb22bed3fd21e4d9b14b146b3e9c2",
+      "bytes": 61484
+    },
+    {
+      "path": "dist/assets/hanshou-ou-vinegar2.jpg",
+      "sha256": "57383371d9ed485a4d7eda6fc10b3646053d50df3d6e1d03c65b7cc5ed91e000",
+      "bytes": 55182
+    },
+    {
+      "path": "dist/assets/hanshou-yubiou.jpg",
+      "sha256": "00ce5ce58a360cae7bbcfe6b62e9881dd275241fc6e2a853bedcf9d2c92f4bfb",
+      "bytes": 190135
+    },
+    {
+      "path": "dist/assets/harbin-honeyberry-cut-generated.webp",
+      "sha256": "4476e57b76d07510266ebf9edad03df645d8810ef32d54a2f2f01027e58a776f",
+      "bytes": 383184
+    },
+    {
+      "path": "dist/assets/harbin-honeyberry-raw.webp",
+      "sha256": "1efff10555d29124f29c0bb870a3e6819df7f56d81306cbe9a6afe48a97764a5",
+      "bytes": 85362
+    },
+    {
+      "path": "dist/assets/hongshan-caitai-cooked.jpg",
+      "sha256": "c4aa38b0ce86ff84882e5ca33e5fd4594a9e48631c14ef06ef45f7588874c7e2",
+      "bytes": 423512
+    },
+    {
+      "path": "dist/assets/hongshan-caitai.webp",
+      "sha256": "4211362de3dbd6cc9fc93c25ce9dc0bc2be091dd22a8293dcd36c8d56b6260b2",
+      "bytes": 925892
+    },
+    {
+      "path": "dist/assets/houtui-candidate.jpeg",
+      "sha256": "d1553145e0932e08ea716af99e72d37bd4397c32c2c06c6740ad686e56d88f99",
+      "bytes": 669025
+    },
+    {
+      "path": "dist/assets/houtui-pork.jpg",
+      "sha256": "2329523765fff8df259bb5c1675ec98300f80d1132cbb0bfddcaeed70c94a702",
+      "bytes": 338496
+    },
+    {
+      "path": "dist/assets/huanghuacai.webp",
+      "sha256": "c8b8148eb01a496de3cb45fc3011b56d9a844b28ceed7db1451ebe2c21b4b78d",
+      "bytes": 521586
+    },
+    {
+      "path": "dist/assets/huhao.jpg",
+      "sha256": "63ec5ab402bc6755016f2a6c2d6c6456042324a746ae146fea2f05a7a427db76",
+      "bytes": 838782
+    },
+    {
+      "path": "dist/assets/huoshan-yanghe-pork.jpg",
+      "sha256": "f474150cf1005e3b3ca1910ca299ebf6c6dbf334dc2e421063e35b40008235a1",
+      "bytes": 645107
+    },
+    {
+      "path": "dist/assets/huoshan-yanghe.jpg",
+      "sha256": "cec1cdfad617d20ae4693e830c439987dc01e660c7651d21aef11efbd7752f25",
+      "bytes": 618622
+    },
+    {
+      "path": "dist/assets/jiande-chuncai-egg-final.jpg",
+      "sha256": "ae60b64f9c69a0bc6ad11bd279bae55819dae48a4b1bd05cad5d8e4dca5d2e6e",
+      "bytes": 151164
+    },
+    {
+      "path": "dist/assets/jiande-chuncai.jpg",
+      "sha256": "11f4a4eb0f74068bf122d1342e8b7a52d18ec21dfe0ef5cfb73b1a7a8267b522",
+      "bytes": 220372
+    },
+    {
+      "path": "dist/assets/jianou-zhuili-congee-generated.webp",
+      "sha256": "7d3eff0dd0dbae70824b81f66f18203ede12eb9eeb180fd764a726e66a57321c",
+      "bytes": 206994
+    },
+    {
+      "path": "dist/assets/jianou-zhuilli-reference.webp",
+      "sha256": "149faf90f0f07c01f6c0ae76533471b8547f5286e14701c0c546ae79c51b7e16",
+      "bytes": 428710
+    },
+    {
+      "path": "dist/assets/jiaozhou-kailing-suo-raw.webp",
+      "sha256": "ca687f0f3df36e3d081c4bddc50519ded18b7b002eaf95dc7643aee8dc8f71a1",
+      "bytes": 75730
+    },
+    {
+      "path": "dist/assets/jiaozhou-kailing-suo-steamed-generated.webp",
+      "sha256": "7f6a32a54b99f3dc47383614bbb10ae4617b0cebbf2b5771abc7c9d3682b3661",
+      "bytes": 251932
+    },
+    {
+      "path": "dist/assets/jieqi/bailu.svg",
+      "sha256": "9083231a49b19161de736c571d57217c28c1c193c9bb63dbc40f79f28857a4e0",
+      "bytes": 4638
+    },
+    {
+      "path": "dist/assets/jieqi/chunfen.svg",
+      "sha256": "6e7fb180f43e01ae4a99092b25360ac3618f1151fbb63f31946a630bf9735af6",
+      "bytes": 5629
+    },
+    {
+      "path": "dist/assets/jieqi/chushu.svg",
+      "sha256": "72ff71ff83deabb25e7e62b37141f1c1893421afcebb7be7b76aab0d43fc3b75",
+      "bytes": 4385
+    },
+    {
+      "path": "dist/assets/jieqi/dahan.svg",
+      "sha256": "8314797add6a4b2f5272a98ff718554f63ca6eea39b9e0f11faa28c3c04bf6e2",
+      "bytes": 3765
+    },
+    {
+      "path": "dist/assets/jieqi/dashu.svg",
+      "sha256": "074f4fea10e0df0cd60dfb7cdc4917bd45948b4e7a5e5900828ed5d6e8103020",
+      "bytes": 5862
+    },
+    {
+      "path": "dist/assets/jieqi/daxue.svg",
+      "sha256": "817e191e53e2f541da9cd0552016c97e4762471db86268213ee222dbd39f8289",
+      "bytes": 4200
+    },
+    {
+      "path": "dist/assets/jieqi/dongzhi.svg",
+      "sha256": "011cbd95b4f92966de8dba44e81a899299437187b943eecc50a7b601a7e8b157",
+      "bytes": 4473
+    },
+    {
+      "path": "dist/assets/jieqi/guyu.svg",
+      "sha256": "10ea481a2467fe5eabd44d97422f06df2ff784c3a4cb970051d843634287381f",
+      "bytes": 3945
+    },
+    {
+      "path": "dist/assets/jieqi/hanlu.svg",
+      "sha256": "d2e97273e0beb22ae0fcdf3edbd110724e2849a9a4a2164691edcfe63789d130",
+      "bytes": 5098
+    },
+    {
+      "path": "dist/assets/jieqi/jingzhe.svg",
+      "sha256": "2b9980ddaa214e7017ae8365606b2d5295078e8e6eb8013c8986f6f9c384fd67",
+      "bytes": 5399
+    },
+    {
+      "path": "dist/assets/jieqi/lichun.svg",
+      "sha256": "0b792b4c95f68d4e19fd04a7e2befa2fd81af96762674b6498d0752fd20e8eca",
+      "bytes": 4638
+    },
+    {
+      "path": "dist/assets/jieqi/lidong.svg",
+      "sha256": "501d786d0dea00ced319a43a26afa8756c96f9db8a4cfedc5c76c9e785eec12a",
+      "bytes": 3798
+    },
+    {
+      "path": "dist/assets/jieqi/liqiu.svg",
+      "sha256": "9638b74e2fe61a3f84b7d840d170d40384c50b3bd33bb446b16f32f857ab39a5",
+      "bytes": 4150
+    },
+    {
+      "path": "dist/assets/jieqi/lixia.svg",
+      "sha256": "272616161b9fe0682bd9c33bd38bbf73457082e3f939829a0fa78f502a38f843",
+      "bytes": 3578
+    },
+    {
+      "path": "dist/assets/jieqi/mangzhong.svg",
+      "sha256": "c971048c0e9228f0e7d4a6c2396ac5dc2f8128000627967e95b7ca7194979ad9",
+      "bytes": 3482
+    },
+    {
+      "path": "dist/assets/jieqi/qingming.svg",
+      "sha256": "c3f1c6cc9fb1440692f6d8089473d66465fa6f8c9c3ea3d22552a2ed4647f5f8",
+      "bytes": 5803
+    },
+    {
+      "path": "dist/assets/jieqi/qiufen.svg",
+      "sha256": "46528bcef51174e49a0a4a91aae6eb853d8656b744b02f6ec9577b75fc11a9f6",
+      "bytes": 4939
+    },
+    {
+      "path": "dist/assets/jieqi/shuangjiang.svg",
+      "sha256": "2ac6e8015dc02ea16cecc2dc5f7a693333de4d46b71909d3dc54d1db67649947",
+      "bytes": 5325
+    },
+    {
+      "path": "dist/assets/jieqi/xiaohan.svg",
+      "sha256": "3b0d58d0790c229809579f20873e6df68978620864d96d2c3ada7924c73b6ef0",
+      "bytes": 3550
+    },
+    {
+      "path": "dist/assets/jieqi/xiaoman.svg",
+      "sha256": "8014b1a52fcaea62b07d326747851a2f16665599e41209a0b158d9ae0f43795f",
+      "bytes": 3825
+    },
+    {
+      "path": "dist/assets/jieqi/xiaoshu.svg",
+      "sha256": "42b8f0dd0d5bd13d8d30c74a117d46e87a3cf0896a5de3aaaa174f251f7688a9",
+      "bytes": 3221
+    },
+    {
+      "path": "dist/assets/jieqi/xiaoxue.svg",
+      "sha256": "e688bad17fba7760416cbf6111dbfbd815d96e7c1e4eeb87c601514d7759456b",
+      "bytes": 4006
+    },
+    {
+      "path": "dist/assets/jieqi/xiazhi.svg",
+      "sha256": "abfd2e9a77e1bf1b3fe898ef9f90b7643fb9759ef879c9784f900951d15a26f9",
+      "bytes": 6130
+    },
+    {
+      "path": "dist/assets/jieqi/yushui.svg",
+      "sha256": "8c981a9a59fcd58e074643a3e63487d5f393fa7a974bcc98dbd5ca5bcaa60c3d",
+      "bytes": 4787
+    },
+    {
+      "path": "dist/assets/jinjiang-gim-sheet.jpg",
+      "sha256": "2547381cb97ff2f8ad481f2fbf39fb978eb7328ec2ffd600511f3c2014fc65b7",
+      "bytes": 536176
+    },
+    {
+      "path": "dist/assets/jinjiang-toushui-zicai.jpg",
+      "sha256": "37469016ad84a36f735a656afedc41524a81e56498cede1dad385de3df99388e",
+      "bytes": 278287
+    },
+    {
+      "path": "dist/assets/jinjiang-zicai-soup.jpg",
+      "sha256": "5b280dad45e6a9f76506126656b1243a32655e238b7ff39dadabf7792f13d51d",
+      "bytes": 239503
+    },
+    {
+      "path": "dist/assets/jintang-morel-soup.jpg",
+      "sha256": "46397b8d28337130301243424707d2d51bb8cddc7e7cb4c79b06d3b1e4871c27",
+      "bytes": 125878
+    },
+    {
+      "path": "dist/assets/jintang-morel.webp",
+      "sha256": "72da6a9584253fb948cdc67a5c282f5d78a2a38544768945fdf8fe6773fc10c4",
+      "bytes": 83998
+    },
+    {
+      "path": "dist/assets/jitoumi-illustration.png",
+      "sha256": "f544364d47fffc6502bb739e75237847627868e046d2b0d36fd5ae19625a1467",
+      "bytes": 2410121
+    },
+    {
+      "path": "dist/assets/jitoumi-plant.jpg",
+      "sha256": "2e280f8199da9f4edb1cca688ec6cea8ff6bd761b31ca6c97f565e99101bebd6",
+      "bytes": 403356
+    },
+    {
+      "path": "dist/assets/jitoumi-soup.jpg",
+      "sha256": "5687ea59b6ae1c0a306314935608ee5d5d5c5c56807a203a3fe62e2aec2017a2",
+      "bytes": 72455
+    },
+    {
+      "path": "dist/assets/juema-congee-generated.webp",
+      "sha256": "593833ef0d84b5fc32e5e56e0c1f38736677ec00483d2c2d0dbf89df06a29cfe",
+      "bytes": 192396
+    },
+    {
+      "path": "dist/assets/juema-roots-enhanced.webp",
+      "sha256": "5d828984d0ee650a81f48a1aae854656dd08fedb5e7a9e4db58f4c356c05d95a",
+      "bytes": 137556
+    },
+    {
+      "path": "dist/assets/juema-roots.png",
+      "sha256": "90fc1331b89afe4d4a3ce49f00f5e50800ac0a6eed2a71441757106ae4bbff4d",
+      "bytes": 660533
+    },
+    {
+      "path": "dist/assets/juhuanao-candidate.jpg",
+      "sha256": "949a97155bf2014091aec7070b24ce216d46c4fdd68542a24e2d850810807177",
+      "bytes": 168610
+    },
+    {
+      "path": "dist/assets/juhuanao-egg-soup.jpg",
+      "sha256": "cca669374f0183b647b9ffdc0172cd7ed7572abd4677d122c13c6264f9a66390",
+      "bytes": 340367
+    },
+    {
+      "path": "dist/assets/kuche-xiaobaixing-cut.jpg",
+      "sha256": "adac4e02ebaccb864fd10f832c0d7fee835a15d778eb07a49abef50171e5cbb3",
+      "bytes": 58537
+    },
+    {
+      "path": "dist/assets/kuche-xiaobaixing.jpg",
+      "sha256": "f64b0a8f609fb713c19133460acd81d744699fa372eea50fa365bb193f0bd9b3",
+      "bytes": 411356
+    },
+    {
+      "path": "dist/assets/kucihua-douchi.jpg",
+      "sha256": "88f020f0187249ce3cdff5ed76191fada62e4d64a9acbba8f6e7183ca5737870",
+      "bytes": 269863
+    },
+    {
+      "path": "dist/assets/kucihua.jpg",
+      "sha256": "659cec8805f3ace2cc96e7778a4173c64eaf8f6933c6d9736816f6ca5a294996",
+      "bytes": 402938
+    },
+    {
+      "path": "dist/assets/lintong-huojing-cut.jpg",
+      "sha256": "808dfd6e6acedee69f577e579e276af9048870d700c908033b0b32e17e94d44c",
+      "bytes": 69179
+    },
+    {
+      "path": "dist/assets/lintong-huojing.webp",
+      "sha256": "9ff74a0b7da00a0c92fbfb8bf780b3234fbe5a7851ab528fb347da1013c9dda4",
+      "bytes": 62078
+    },
+    {
+      "path": "dist/assets/liyang-baiqin-gan.jpg",
+      "sha256": "95c18769c64a3a867d97e50ab62cef03a48ced6a3c9f40ef3822053cf8530ae4",
+      "bytes": 307634
+    },
+    {
+      "path": "dist/assets/liyang-baixin.jpg",
+      "sha256": "236fc1579bb70684c9d1761511b5b4aec205d1b7231fb5ecbfb37f2b35d3d45c",
+      "bytes": 718600
+    },
+    {
+      "path": "dist/assets/lyg-shaguang-fish.webp",
+      "sha256": "89b44f58c5f1b35d9153aed9e91dbcb39fc1ec09ed3a71d3966f6dd7bd99f290",
+      "bytes": 58404
+    },
+    {
+      "path": "dist/assets/lyg-shaguang-soup.jpg",
+      "sha256": "b30080d7ba93ac1c70903b5872b4fc3d00adf0f247eb4a6151627bd4ef90aff8",
+      "bytes": 350744
+    },
+    {
+      "path": "dist/assets/minqin-shacong-eggs.webp",
+      "sha256": "ec4aa58415a68048711e6240df01ea6ec94f4934d9504a728705ab92f84dd9c4",
+      "bytes": 40620
+    },
+    {
+      "path": "dist/assets/minqin-shacong-field.webp",
+      "sha256": "23297a95c9017885c3541d4bd4973ee2a48736d8bd5aeed2c9f9887ce18a5ec8",
+      "bytes": 228870
+    },
+    {
+      "path": "dist/assets/minqing-olive-cut.jpg",
+      "sha256": "28f3e9671ffd4b41c2ab5dc3d8d1040aa4d9f29ec5326aef655375d69765fe6e",
+      "bytes": 89850
+    },
+    {
+      "path": "dist/assets/minqing-tanxiang-olive.webp",
+      "sha256": "d29891e7bd49e9b8eed8fa4ba13609cde6f4e436b74f87246f158c06550ab786",
+      "bytes": 549452
+    },
+    {
+      "path": "dist/assets/munaiguo-split.jpg",
+      "sha256": "acb0b31415d3b997b6fdee43b2766a376aa679b011e70564736839199e4eb0ba",
+      "bytes": 80985
+    },
+    {
+      "path": "dist/assets/nanhu-ling-generated-icon.png",
+      "sha256": "6ec1ee922727d4227706cc637be2104dbf386c6e2e050a60a892c178bce39103",
+      "bytes": 1475586
+    },
+    {
+      "path": "dist/assets/nanhu-ling-peeled-cooked.jpg",
+      "sha256": "6ba69b0f2839d9b7eb70bacef525127149b84e8626a26089682d6837da897811",
+      "bytes": 144590
+    },
+    {
+      "path": "dist/assets/nanhu-ling-peeled-news-2020.jpg",
+      "sha256": "defaaee48111620c1df5ab2e45c8871951b42bf6e837646c50422bbfbe36d278",
+      "bytes": 54635
+    },
+    {
+      "path": "dist/assets/nanhu-ling-whole-news-2020-crop.jpg",
+      "sha256": "c12dc13171e827029d6e81da9a441d723f351b8369add74ceb8274f5109ec8f4",
+      "bytes": 86874
+    },
+    {
+      "path": "dist/assets/nanhu-ling-xinhua-harvest-2021.jpg",
+      "sha256": "29cd231b4298eed3a9e8d613a4bf83aadaeba1a02b9955811cfafe6fe8db786b",
+      "bytes": 114235
+    },
+    {
+      "path": "dist/assets/ninghai-changjie-clam-harvest.webp",
+      "sha256": "b3e88ce1260c45a1422af71ecd16f035bb2b5ae699b7b9dd87789c5607b93bd6",
+      "bytes": 63272
+    },
+    {
+      "path": "dist/assets/ninghai-changjie-clam-specimen.webp",
+      "sha256": "f66fd6df8ed896732a5a38a3f5ac5990035a8c8e9fc8b5000caa8da364d6cbda",
+      "bytes": 200188
+    },
+    {
+      "path": "dist/assets/ninghai-loquat-open.jpg",
+      "sha256": "104582e69d0e89ee886e0081428466505bcc0f717f97afdf34f29d200f81c98a",
+      "bytes": 25067
+    },
+    {
+      "path": "dist/assets/ninghai-razor-clam-egg.jpg",
+      "sha256": "5b56b586672e79a1e2c7883468f68abcab0661c1c1458267140ed0c03e78effc",
+      "bytes": 255789
+    },
+    {
+      "path": "dist/assets/ninghai-white-loquat.webp",
+      "sha256": "beb5a39d1aff13cebaf3c87d67e811a6349fb80765c67b67fe52f8fd5010c09e",
+      "bytes": 69402
+    },
+    {
+      "path": "dist/assets/oudai-candidate.jpg",
+      "sha256": "7d9a4230bfdea5f381d9e1996f199dd2f92bb941b7a326ac3518da1282c3df10",
+      "bytes": 1245388
+    },
+    {
+      "path": "dist/assets/oudai-cooked.jpg",
+      "sha256": "802807cd2bc09399feaf752c6c0ebaa88ea592124af15a54be87d766cd87a9c6",
+      "bytes": 477274
+    },
+    {
+      "path": "dist/assets/pucai-candidate.jpg",
+      "sha256": "37ec47691fcc71f041d02e93b65e419f4a1720a4d1c6347dff6bc7aa69e57a6c",
+      "bytes": 88138
+    },
+    {
+      "path": "dist/assets/pucai-shrimp.jpg",
+      "sha256": "fb1a3bc521a57e979c0d5ae88d26df4727fd09d8b3cf04764ccc99af162e7507",
+      "bytes": 127181
+    },
+    {
+      "path": "dist/assets/ruanzao-cut.jpg",
+      "sha256": "927150944f4138696de231b0eeee0bcd5e4911d680f91460663d849880fb21ff",
+      "bytes": 225699
+    },
+    {
+      "path": "dist/assets/ruanzao.webp",
+      "sha256": "6ceb620b1c8f0f9de18c2a846ca219aa71f82c63a52ef7972f6078f15ddedf55",
+      "bytes": 327838
+    },
+    {
+      "path": "dist/assets/rugao-tatsoi-japan.jpg",
+      "sha256": "af97649a555913b87ba390f37c2059b56e0986ab1f99141ffc22c2bbd48451bf",
+      "bytes": 102340
+    },
+    {
+      "path": "dist/assets/shajiguo-1280.webp",
+      "sha256": "eb2f24bd94f09da3d33b720b76564307f15ee83780b0f33161a9404829ae45aa",
+      "bytes": 239698
+    },
+    {
+      "path": "dist/assets/shajiguo-1600.webp",
+      "sha256": "8e1d3e19156081383bc78924ecbbb8ae1fbdb0fca4b8cc53e3e70793a22f4607",
+      "bytes": 338866
+    },
+    {
+      "path": "dist/assets/shajiguo-400.webp",
+      "sha256": "6c8c0027dd3e7c7daf42404e0ec6ccf8dc4f6f65c63420abf73319a7ccec760e",
+      "bytes": 47312
+    },
+    {
+      "path": "dist/assets/shajiguo-800.webp",
+      "sha256": "f73dec1bc43724426e5be35ed89fe83e16c945e0ac59502caf86f0b0393ceebe",
+      "bytes": 125294
+    },
+    {
+      "path": "dist/assets/shajiguo-cut.jpg",
+      "sha256": "311cb234ffa56dd6f66bcd3bb7cf52ab07d233b5b04d328185da99da237e01f6",
+      "bytes": 50624
+    },
+    {
+      "path": "dist/assets/shajiguo.jpg",
+      "sha256": "4d4ed2deb669b62ec9724e7d1e7bcf8d8628c3ab43fe9be8f6a8f212fca9cfe2",
+      "bytes": 1112464
+    },
+    {
+      "path": "dist/assets/shangyu-cherry-cut-generated.webp",
+      "sha256": "9079ee4d96b1d50f3c077ef076676d201985ee7f452c009d2e427325f8a3424b",
+      "bytes": 262510
+    },
+    {
+      "path": "dist/assets/shangyu-cherry-raw.webp",
+      "sha256": "738909d55b370e789055bacb3bae0c595923722500aaeba6582d3bce5590ea20",
+      "bytes": 86416
+    },
+    {
+      "path": "dist/assets/shanzhou-nianzhuan-eggs-generated.webp",
+      "sha256": "73c42f5c5474d1ee0c70e93cded97f895d3d3f408ee30b0f14c4773db7072ef6",
+      "bytes": 336618
+    },
+    {
+      "path": "dist/assets/shanzhou-nianzhuan-raw.webp",
+      "sha256": "a655acb5ca7540b7b22a210e54ace95027cd1dfcba705c1e898e2bd080de16c0",
+      "bytes": 76342
+    },
+    {
+      "path": "dist/assets/shazhou-shuiqin.jpg",
+      "sha256": "a6af314c3180a599d537e4776fe71a8b88a61532b662e77ecc269d685d022726",
+      "bytes": 774116
+    },
+    {
+      "path": "dist/assets/shazhou-watercelery-gan.jpg",
+      "sha256": "12fa521e6f79ed914ac6628b38483e7bd6fbaff0ad883e9af87c42a4c755572c",
+      "bytes": 130023
+    },
+    {
+      "path": "dist/assets/taitung-atemoya-cut-generated.webp",
+      "sha256": "86ad141892dab4683e80b2b51d665aa1e4bcb7a31d2d0073219c57350398ff0c",
+      "bytes": 293886
+    },
+    {
+      "path": "dist/assets/taitung-atemoya-raw.webp",
+      "sha256": "aa2cc382d541f73988b9bc41153b6d5fb56dd6ee932389d80cf2d201767b9a07",
+      "bytes": 84078
+    },
+    {
+      "path": "dist/assets/takecai-candidate.jpg",
+      "sha256": "fc169fc0ef1ff73d6b93c9621bcc61f863564dd342c041278f7aa5a5296c70ee",
+      "bytes": 136449
+    },
+    {
+      "path": "dist/assets/takecai.jpg",
+      "sha256": "d1114052014b9f3b9cc0d129fc39e60c7f71994149226c0d24fc53572677c4a6",
+      "bytes": 670684
+    },
+    {
+      "path": "dist/assets/tanglihua-salad-generated.webp",
+      "sha256": "08776bb85d14fd52546ad92dba997f5ac2446ac974604c4fb7ad98a952c27437",
+      "bytes": 192336
+    },
+    {
+      "path": "dist/assets/tanglihua.jpg",
+      "sha256": "4da2070fe7f8240621bb4bf771b49c947ab0b445665f04ff7caf34ab26faf618",
+      "bytes": 555554
+    },
+    {
+      "path": "dist/assets/tarot/empress.webp",
+      "sha256": "36afed221876c3e4a1715c43aa376441d110719239d967c736a3c023821e4809",
+      "bytes": 168414
+    },
+    {
+      "path": "dist/assets/tarot/fool.webp",
+      "sha256": "32890889fe4aabc9d0139d6e189e963394b1dfd0a90ba7839dcd61420d7cff21",
+      "bytes": 145370
+    },
+    {
+      "path": "dist/assets/tarot/hanged.webp",
+      "sha256": "fb157585f4efc092553131e072cbd3a41aa3ecd1b2c0595077da94abffae4336",
+      "bytes": 135080
+    },
+    {
+      "path": "dist/assets/tarot/hermit.webp",
+      "sha256": "090aba117da3a1435a0f9ef25a95e27bd18d5af07c1dcb74a5a6b462ddb9c94e",
+      "bytes": 126996
+    },
+    {
+      "path": "dist/assets/tarot/magician.webp",
+      "sha256": "fb7e57f9948a41c0b2c8820ba568442c4682a52bab8c796d2015f3822701847b",
+      "bytes": 148642
+    },
+    {
+      "path": "dist/assets/tarot/moon.webp",
+      "sha256": "edc6c2569be71995be26cef847f03cf4fc5efc0e588ed128a24411e8a33cc723",
+      "bytes": 121976
+    },
+    {
+      "path": "dist/assets/tarot/star.webp",
+      "sha256": "f7667157836bc95e2afccb99e72d067b37ec5f1bbd430b425cfcfd588b615913",
+      "bytes": 125306
+    },
+    {
+      "path": "dist/assets/tarot/strength.webp",
+      "sha256": "691a60a69294bb668cb41a6ab3365adf82609492d52aaa39e00e7d36cf38ed87",
+      "bytes": 140990
+    },
+    {
+      "path": "dist/assets/tarot/sun.webp",
+      "sha256": "f863e27ee665dc74fa2a1616c251bff841bb2819d1f7f1494d3e9f3b6b9a515a",
+      "bytes": 148122
+    },
+    {
+      "path": "dist/assets/tarot/temperance.webp",
+      "sha256": "d24e01e72c78e6f5bfc7bd4fbebdfd2dfe7aba098c7d4e63eedbf4dc16f88ed2",
+      "bytes": 92152
+    },
+    {
+      "path": "dist/assets/tarot/wheel.webp",
+      "sha256": "59d7c64de4978cdcef563543e967632eba0b8a7e38afb676fac25eb29769f893",
+      "bytes": 120298
+    },
+    {
+      "path": "dist/assets/tarot/world.webp",
+      "sha256": "e7d5ba262fe4213930efb00f212585d71cea18b6165e7a85e5d629c8a0af8b29",
+      "bytes": 120274
+    },
+    {
+      "path": "dist/assets/terrain.webp",
+      "sha256": "2eb2fbf215704a82996a09d234ee61e6a9a0955c93b64c0697070f59bfefc846",
+      "bytes": 42980
+    },
+    {
+      "path": "dist/assets/tongxiang-zhuili-cut-generated.webp",
+      "sha256": "ab76c265b14e8422f1c1ff3febcea3d749d39434d38b3812eff73820b5e1b0b3",
+      "bytes": 158312
+    },
+    {
+      "path": "dist/assets/tongxiang-zhuili.jpg",
+      "sha256": "ea348943043b4e898fa3e4b7f9235ed5a1369364b0033ed06ad435afa4261533",
+      "bytes": 226119
+    },
+    {
+      "path": "dist/assets/wenzhou-pancai-reference.webp",
+      "sha256": "af1ca1080054e31e1e0b1ea226f213a18f2aafa6b57b0545173e1d73ec2e7a58",
+      "bytes": 60406
+    },
+    {
+      "path": "dist/assets/wenzhou-pancai-ricecake-soup-generated.webp",
+      "sha256": "2fd8db5be2e1debe5d1600e205a2e4cad07f8a73d28258a15fe12e34a1e8ff05",
+      "bytes": 157344
+    },
+    {
+      "path": "dist/assets/wuding-jinquehua-eggs.jpg",
+      "sha256": "bdbf3ae3fcbb94816f6520a7c2cf95e7f3445d1b83585ad800645aee7c4ccda4",
+      "bytes": 388929
+    },
+    {
+      "path": "dist/assets/wuding-jinquehua.jpg",
+      "sha256": "0686cbab82286b2e34b460b8980770b753e57bebcd6d9bf4d41cd529f95922f2",
+      "bytes": 514784
+    },
+    {
+      "path": "dist/assets/xiangyin-jiaotou-pork-generated.webp",
+      "sha256": "aa9323aa7ce9cbac0b5738ea4fa031b95b56d99965b595e49849f6db54553ad5",
+      "bytes": 175926
+    },
+    {
+      "path": "dist/assets/xiangyin-jiaotou-reference.webp",
+      "sha256": "9d8b9b9a0fbb35956ad72d270f1d349b4250dbc94777a6c4315a63da74003859",
+      "bytes": 177820
+    },
+    {
+      "path": "dist/assets/xishuangbanna-munaiguo.webp",
+      "sha256": "b0b3927e1c1f287468df1505165e85a4ca10acc22c98205d46b39ac323be60ba",
+      "bytes": 62332
+    },
+    {
+      "path": "dist/assets/xunyang-guizao-juice-generated.webp",
+      "sha256": "9eccfb8bedcd158250380053b6d53bf4dff90fc561b91c4ecc9c2360011d1b5d",
+      "bytes": 167088
+    },
+    {
+      "path": "dist/assets/xunyang-guizao.jpg",
+      "sha256": "d0e766b3f7c2dafcf46239a7a38a7fc0afab5cbbf2db146eeb16c40058cac0fd",
+      "bytes": 99637
+    },
+    {
+      "path": "dist/assets/yanchi-huanghuacai-lamb-generated.webp",
+      "sha256": "1587565c47c045f1f2774bb61e9699cbe7e5d11b4f4321ce8c6fa96d35342b02",
+      "bytes": 227456
+    },
+    {
+      "path": "dist/assets/yangnaiguo-cut.jpg",
+      "sha256": "78d30d3fa52f16c16d42a249cc75bdb21ddfec0a736b0023aca5855e6c54cbd5",
+      "bytes": 285139
+    },
+    {
+      "path": "dist/assets/yangnaiguo-official.jpg",
+      "sha256": "bed11d823982e14d5da5aad2535b23140dd945c13865f26737bb6ad29c5e5761",
+      "bytes": 269470
+    },
+    {
+      "path": "dist/assets/yangxin-huhao-bacon.jpg",
+      "sha256": "9e47f3a8ad979ccdb2a6aba127d6c0ae2a72ed1c656b95e770724c317ee5b16b",
+      "bytes": 603922
+    },
+    {
+      "path": "dist/assets/yanshi-yintiao-raw.webp",
+      "sha256": "d99a6014c93d16d9dd1406f81543789700974c709b534ae8c32d6fb8a6ee3af3",
+      "bytes": 53224
+    },
+    {
+      "path": "dist/assets/yanshi-yintiao-salad-generated.webp",
+      "sha256": "8f8aa880e9b22d0ddda3336c60dde217ea46adf010701ca04d76c4b89ca788f5",
+      "bytes": 231476
+    },
+    {
+      "path": "dist/assets/yantai-haichang-rice.jpg",
+      "sha256": "2bc8443c404496bb82153d29568e0b2886d4a34b40d0b5adec9e93e76e0cd763",
+      "bytes": 122565
+    },
+    {
+      "path": "dist/assets/yantai-haichang.jpg",
+      "sha256": "5123dd14cec634da81172a248748da54d8ab1b98ec6c00502da46cb3809809bb",
+      "bytes": 456610
+    },
+    {
+      "path": "dist/assets/yunan-huangpi-cut.jpg",
+      "sha256": "080ead244bc5579ff8c0099fe6810dd5bab6061d9cd33eb242d42e2f75303b4c",
+      "bytes": 122689
+    },
+    {
+      "path": "dist/assets/yunan-wuhuangpi.webp",
+      "sha256": "efe9a6689a6178e2c42381e65a20cd65a699698544da160ff9ef3548446e26f0",
+      "bytes": 110938
+    },
+    {
+      "path": "dist/assets/zengcheng-caixin-plem.jpg",
+      "sha256": "a6f3376cae0a7b8ed761035f341787bcaf3f74ce54c65f55c29db67b557541fd",
+      "bytes": 57614
+    },
+    {
+      "path": "dist/assets/zhenlai-jiaobai-pork.jpg",
+      "sha256": "af392c827e7cc55984833661a0ec0911123cb8262c2e6d121c148baad1fba987",
+      "bytes": 289322
+    },
+    {
+      "path": "dist/assets/zhenlai-jiaobai.jpg",
+      "sha256": "102a014ab573b3621abe02675e1cd91e2ff746ff652fd4c4a190e573ae11310e",
+      "bytes": 428315
+    },
+    {
+      "path": "dist/assets/zhuhai-hechong-egg-final.jpg",
+      "sha256": "529ff6295d65382b0dec4bbbf41b2be956a4a3b19e9a2691fb2a7b550fc709c6",
+      "bytes": 185269
+    },
+    {
+      "path": "dist/assets/zhuhai-hechong.jpg",
+      "sha256": "4fb3e815478c252a57ef8e6187725557db0ae7f95a766e796503fdb932a67980",
+      "bytes": 740619
+    },
+    {
+      "path": "dist/credits.html",
+      "sha256": "82891e87c35555184cec928e8c3a431f6eec09f2a099511217cd2adf495f1e7d",
+      "bytes": 22046
+    },
+    {
+      "path": "dist/data.js",
+      "sha256": "29e4d278e7e18e0d41c20ea27a77e4fd943d7aec57181d422e3c702179cf0e93",
+      "bytes": 67931
+    },
+    {
+      "path": "dist/draw-modes.css",
+      "sha256": "db0acbd1729574eca4d06afc6e12518986a0ebd2f9ffcdaa719403f28bb79e6b",
+      "bytes": 667
+    },
+    {
+      "path": "dist/editorial-notes.js",
+      "sha256": "153043bc6ecda5a98f36177842e83cc61ab8e9da27c7caccd14dcab0fa149bef",
+      "bytes": 130602
+    },
+    {
+      "path": "dist/editorial.js",
+      "sha256": "b39939e04c570228b5055abfc17a62ea661bc3bd3c9580a142ddffa60b8ee22c",
+      "bytes": 93878
+    },
+    {
+      "path": "dist/fengwu-design.css",
+      "sha256": "f355d4a71a78d391d5c759ca9bb392a08f318eea126e99873443b6b9a3c0f1c0",
+      "bytes": 17009
+    },
+    {
+      "path": "dist/food-share.js",
+      "sha256": "9696af22843b2df3317af354e3a035efe6587d50ce9b3ff7a18d58ce14e8d4be",
+      "bytes": 3130
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "4d0436816db93e657d6198d7407b9b86bcc29d0ab93b04d609ac8adbd47c02d1",
+      "bytes": 522532
+    },
+    {
+      "path": "dist/lottery-core.js",
+      "sha256": "f80b64e192744b007a3130803d243045be5f0189f7525963f226a10979f4f304",
+      "bytes": 14916
+    },
+    {
+      "path": "dist/lottery-profiles.js",
+      "sha256": "3c0afaa5fbdb4dc74c208e240c2f3f25c673a8eb6e0423853388cd587e933ea6",
+      "bytes": 16550
+    },
+    {
+      "path": "dist/lottery-questions.css",
+      "sha256": "3eff06c91805a408f2c0b3f7619fbf6acd4f9084ac13d472eec4b31169debb23",
+      "bytes": 314
+    },
+    {
+      "path": "dist/lottery-senses.js",
+      "sha256": "6a4580fe284260b9fa11afae7ea1198b1235398248430b7db1aa94743d3d568e",
+      "bytes": 8463
+    },
+    {
+      "path": "dist/lottery-ui.js",
+      "sha256": "0919dcdc34313252d90d6bd02113f0794f3354a8e2bfdba4102ef0b6fe6d89b8",
+      "bytes": 14076
+    },
+    {
+      "path": "dist/lottery.css",
+      "sha256": "0c6ee66cea403a4aab5fdde872b82d50c392d8f679e4021b67e0eb2d75ef00f6",
+      "bytes": 8792
+    },
+    {
+      "path": "dist/lottery.html",
+      "sha256": "11e08bcfa15a11509a4b24440fa18dae682735117f780cf2c51b872808bad723",
+      "bytes": 4525
+    },
+    {
+      "path": "dist/map-projection.js",
+      "sha256": "25e5f75ad75b874a88acbb104ba75f331675b0beefbde607143a29c5182445f1",
+      "bytes": 237
+    },
+    {
+      "path": "dist/solar-terms.js",
+      "sha256": "8d8ef992de40894cc719f095f0350f5a93b862615e46705623dfb40bec8af57e",
+      "bytes": 28357
+    },
+    {
+      "path": "dist/style.css",
+      "sha256": "d97367bbb05efbd80847a39d9963206adb6a31ecd02df515c26cb6d784c180a7",
+      "bytes": 41770
+    },
+    {
+      "path": "dist/tarot-core.js",
+      "sha256": "16fb76e7e01c91ac0aa798c2f0f36a817a7587748a5f5b57092cfe348c46f33d",
+      "bytes": 10504
+    },
+    {
+      "path": "dist/tarot-deck.js",
+      "sha256": "004d248e1f8337d8914809f8753266b9a3b4bf4933132b7eff06f6f6f67a42a4",
+      "bytes": 7383
+    },
+    {
+      "path": "dist/tarot-spread-ui.js",
+      "sha256": "4f1d08149ab6bfd938a35d7f58da44fde5019712064969c035d6b93d73ed869d",
+      "bytes": 12602
+    },
+    {
+      "path": "dist/tarot-spread.css",
+      "sha256": "dd9d702b34837fb69978cc276a996437cb3e92562b98489232ca2aae81a86b24",
+      "bytes": 9622
+    },
+    {
+      "path": "dist/tarot-spread.js",
+      "sha256": "691355de5f8124d683de329591c2ccb30cb137ea12fe22d54d1d9e29e832fd26",
+      "bytes": 8037
+    },
+    {
+      "path": "dist/tarot-ui.js",
+      "sha256": "84ac0cdd856b8b94ae8a67c15cb04daeb13fb420b5720d6836ebdccebf72657f",
+      "bytes": 6933
+    },
+    {
+      "path": "dist/tarot.css",
+      "sha256": "9c206e23410768cfa229711a9046dd98e39e215f335e612f708dc1316212b43d",
+      "bytes": 10429
+    },
+    {
+      "path": "dist/tarot.html",
+      "sha256": "ea0a4830152aa236a309fabd5411b38055e67bb7d7a065117876caddba8c4be3",
+      "bytes": 7105
+    },
+    {
+      "path": "docs/CONTENT_ADDITIONS_20261002.md",
+      "sha256": "afc32b898d81a499b8e72e117335a9461aa4d4249fa71ad8c8a83b035f0b60cb",
+      "bytes": 5479
+    },
+    {
+      "path": "docs/EDITORIAL_DESIGN.md",
+      "sha256": "25860a95847beb44e1c81b35073ee578c1fc9d74a8f146937d559093754b8a87",
+      "bytes": 3709
+    },
+    {
+      "path": "docs/EDITORIAL_DESIGN_QA.md",
+      "sha256": "261201b643c741d6701123bce4ab1cb5b9984e566e1969d8d86e84c80687537a",
+      "bytes": 1767
+    },
+    {
+      "path": "docs/EXPANSION_MEDIA_SOURCES.json",
+      "sha256": "2a76961ea288b7384cb2db97dc258d2c5d1b22a030fdb3edb5da131a9c0faeb2",
+      "bytes": 2570
+    },
+    {
+      "path": "docs/FOOD_PHOTO_CLARITY_QA.md",
+      "sha256": "4cf6195a35c9f0f2013c7466b525d3d7c25fae445de2f92e7f0770253d293d9e",
+      "bytes": 5508
+    },
+    {
+      "path": "docs/FOOD_PHOTO_GAPS.md",
+      "sha256": "b5899d902c3898f84fa923700dcacc0e95c7e0b869e8ca68885fc14350fe49dd",
+      "bytes": 7271
+    },
+    {
+      "path": "docs/IMAGE_COMPLETION_20261002.json",
+      "sha256": "7855fa9317919ba2fa97db7db5d0c5bfe86c686ed40b57b48c5f0cf111a1d98f",
+      "bytes": 12831
+    },
+    {
+      "path": "docs/MULTI_ORIGIN_FOODS.md",
+      "sha256": "ca9f91e3f6195e59b4189a5e2f35eb26b86bada3bac64f45724564d9653ddbfb",
+      "bytes": 1723
+    },
+    {
+      "path": "docs/NEW_FOODS_QA_20261002.md",
+      "sha256": "73bdbb3e348c7b4c120eb1e1aea9827af4cf0d3e48c834dbf5d3871cdf664ec0",
+      "bytes": 2566
+    },
+    {
+      "path": "docs/NEW_FOOD_IMAGES_20261002.json",
+      "sha256": "953b60b6a2518e0dec1c6af49b15ef556f4c5eb2114859d5f1169120f7eae389",
+      "bytes": 17584
+    },
+    {
+      "path": "docs/ORIGIN_GEOGRAPHY_QA_20261002.md",
+      "sha256": "657ce677f43ee6d99f2ea10c2dc82f311452881d87fdd54acea4350328223d2b",
+      "bytes": 3589
+    },
+    {
+      "path": "docs/TAROT_MODE.md",
+      "sha256": "852d2e93c285215c14b52c10cdafc455c2f345c5f072889c2e058415ce48ab3e",
+      "bytes": 2529
+    },
+    {
+      "path": "docs/TAROT_POOL_COVERAGE_20261002.json",
+      "sha256": "a44fe632a260eecebe9cc52b3008d5258733eafada4bb70b368f36cd6fa68ac9",
+      "bytes": 18995
+    },
+    {
+      "path": "docs/TAROT_POOL_COVERAGE_2027.json",
+      "sha256": "089ffa3d25cbd0898379b14158527564f755b49821b1d0197de4fb4fb077ea92",
+      "bytes": 19195
+    },
+    {
+      "path": "docs/TAROT_POOL_EXPANSION.md",
+      "sha256": "85ebe539d46a0294fa82a25cc517cc2acdb3e747298d73aa02b1c08915132087",
+      "bytes": 3622
+    },
+    {
+      "path": "docs/TAROT_THREE_CARD_SPREAD.md",
+      "sha256": "ff23161b475c0af983c1fe1d3ca2d345f6d250c65ca2c6af686bdcecc0a7c3a4",
+      "bytes": 2834
+    },
+    {
+      "path": "docs/V1_1_IMPLEMENTATION.md",
+      "sha256": "503576b9ff2c1c89a8c4720002bae10caf36e12530fcf44fb25fb9e5f57631ec",
+      "bytes": 4411
+    },
+    {
+      "path": "docs/V1_1_QUESTIONNAIRE_V2.md",
+      "sha256": "1cdd483a4a0f47e2e03ea0c669781d1416e4082999ccae98fb9df083aca0aeee",
+      "bytes": 2736
+    },
+    {
+      "path": "docs/evidence/new-foods-20261002/1440-shangyu-duanbing-cherry.png",
+      "sha256": "9f7c9d3953979d4662dd84c70ccae3588728b47685e8f74ff4b243ed258f6137",
+      "bytes": 821110
+    },
+    {
+      "path": "docs/evidence/new-foods-20261002/390-harbin-fresh-honeyberry.png",
+      "sha256": "384ff85315be206250faebaef9f939023c39e7d5b821f68020b93bec79eed5f2",
+      "bytes": 214008
+    },
+    {
+      "path": "docs/evidence/new-foods-20261002/390-jiaozhou-kailing-suo.png",
+      "sha256": "2cc143c3e47012d90525080eb9f8080a4ab848e196be942e4139a6bfa58ab4ca",
+      "bytes": 207340
+    },
+    {
+      "path": "docs/evidence/new-foods-20261002/browser-check.txt",
+      "sha256": "4fa711c0265b62d48698b803a326476d5003b7e8b0bb5cd5d80f8b072696e3a2",
+      "bytes": 2942
+    },
+    {
+      "path": "docs/evidence/new-foods-20261002/home-check.txt",
+      "sha256": "4766b187b217e39125a9fc71c5914c05ab36646821361978a1c0a8f3b4075ed0",
+      "bytes": 1313
+    },
+    {
+      "path": "docs/evidence/new-foods-20261002/mobile-guyu.png",
+      "sha256": "5f077fe10ec67fceca11024aefb0a0efa6568dfd66ed3bd590afc6dcf11507ca",
+      "bytes": 300773
+    },
+    {
+      "path": "docs/evidence/new-foods-20261002/tests.tap",
+      "sha256": "5fc0ce25687b5833fa76e3a0415455e838b4983f07013887c3e2d709bcfc5214",
+      "bytes": 26723
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-cizhousun-card-1440.jpg",
+      "sha256": "b06e38944a6ec5477e0848e54a5782c2df655a669f13518dc2a595de1477619c",
+      "bytes": 37958
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-cizhousun-card-320.jpg",
+      "sha256": "8e081a045d1d1a2f8594021533a39580e8f41d917e31171b0c013e9295ffebad",
+      "bytes": 33156
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-cizhousun-card-390.jpg",
+      "sha256": "6a3da132db2568e3c4c9a0ed29afc68c982eefc20a46f7750b0779c2bed88035",
+      "bytes": 17281
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-cizhousun-credit-hover.jpg",
+      "sha256": "f00bf95e9200b560ed3a03a11815dd1ae0722f935300f67747e4a67f14551ee2",
+      "bytes": 37710
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-cizhousun-detail-1440.jpg",
+      "sha256": "cc4f075ae28784dc23b575c22762bae14fef61fc3f1fb3cffb3eb44b51564f65",
+      "bytes": 418040
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-cizhousun-detail-390.jpg",
+      "sha256": "82d284ccfc250277f2ccb20ca7a4adcd058cbd8e8fce262d82753cf807563647",
+      "bytes": 199842
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-detail-1440.jpg",
+      "sha256": "655ac039ba5c2ddb242b1223139966658bb7ca48d5ca3f0282dd0bef0d2db024",
+      "bytes": 513431
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-detail-390.jpg",
+      "sha256": "27828eb3d37b6c3ebfd10efdca8a3e0468e78761b4a51f02d9c2ad9d3cea3937",
+      "bytes": 281453
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-home-1440.jpg",
+      "sha256": "3f3d3b195da3fa068ee3bf7854a8454a530e27ce06c7d79e6a91cc4f57a61494",
+      "bytes": 361089
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-home-320.jpg",
+      "sha256": "ac12fbcb9d02cf946acc2840410b6554ae709ea1862be87d7e1717cca4a370d9",
+      "bytes": 154379
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-home-390.jpg",
+      "sha256": "b79633fc4602da31434c964b8483281276891628e8db25274d9992da5c121413",
+      "bytes": 176767
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-interlude-1440.jpg",
+      "sha256": "9968d82cd1f57a8cc403280b99c454ece0f11b70db0672066d49f392997dc767",
+      "bytes": 359684
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-interlude-320.jpg",
+      "sha256": "394521f9c5eccd777663e5c55dbfa7e78f01d27f3533ac38be26ca3a07591155",
+      "bytes": 111035
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-interlude-390.jpg",
+      "sha256": "b40e7e388c036f5c7a2d8276093596a99bea58bf2ccd661ca361b769bbfb74ea",
+      "bytes": 121208
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-list-1440.jpg",
+      "sha256": "04be0e281b1c1ffd2353933df929cea19e19bcf8ba7408cd3d32e8b21badb941",
+      "bytes": 556696
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-list-320.jpg",
+      "sha256": "64ea0265998d70b910d13414e247198c46cd492e763ed992ddddb0f73a010498",
+      "bytes": 183025
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-list-390.jpg",
+      "sha256": "5934591adef338709b49d3a00fb5b17712b5074ee34c31913384159a8cc79841",
+      "bytes": 190796
+    },
+    {
+      "path": "docs/photo-clarity-evidence/after-text-200-320.jpg",
+      "sha256": "b0277f9a622c915f65ef7a3f7f085e8a80aef740a12210279e13de95b206cebd",
+      "bytes": 154393
+    },
+    {
+      "path": "docs/photo-clarity-evidence/before-home-1440.jpg",
+      "sha256": "fa7a64195f16a19585504cad16dfd764389157856689d945aba586a0acd6d88a",
+      "bytes": 271137
+    },
+    {
+      "path": "docs/photo-clarity-evidence/before-home-390.jpg",
+      "sha256": "de5501ad0023e2bf75abe7426a3be850880b99a318d957c56e0d0724eee2cae1",
+      "bytes": 142027
+    },
+    {
+      "path": "docs/photo-clarity-evidence/before-list-1440.jpg",
+      "sha256": "653be23f44bc1fd4fe6cc177eefdb38fc587b746f8c6fa48cca583da8516a43f",
+      "bytes": 396963
+    },
+    {
+      "path": "docs/photo-clarity-evidence/before-list-390.jpg",
+      "sha256": "73e2ce1ef6f3121de249db653786435bd0e5a05158122e52648b4a3c68373138",
+      "bytes": 129950
+    },
+    {
+      "path": "docs/source-images/bamboo-shoots-original-commons.jpg",
+      "sha256": "62e964c06f7f4d5ecd20c46dc3889e608b187bd2e2c8946f0e2a3ee19e799523",
+      "bytes": 4877940
+    },
+    {
+      "path": "docs/source-images/bamboo-shoots-whole-cc0.jpg",
+      "sha256": "8a1430ab655ca381a863cc82e87e8d229b5500b40164e34ef89c4a325ad92010",
+      "bytes": 3717017
+    },
+    {
+      "path": "docs/source-images/shajiguo-original-commons.jpg",
+      "sha256": "dcc5f1f9c6c22aab76fc978a8c13209615f5a7e33af8fe4e82720e8cc0d1adc4",
+      "bytes": 2247395
+    },
+    {
+      "path": "reviews/chayote/README.md",
+      "sha256": "a69091d90f896372b5c4f5e2ada8e7db010316b412185fa3cda7c8ae51ae1e16",
+      "bytes": 727
+    },
+    {
+      "path": "reviews/chayote/back.png",
+      "sha256": "7cd47cdf0ef26ff2a82d81c186b08f03abd7466f8dccf1c2a8a81d9b577214ae",
+      "bytes": 38602
+    },
+    {
+      "path": "reviews/chayote/front.png",
+      "sha256": "01ee4d22f658c2db51db2b8b30be1a27dcea32ea14f272c2a8d5723887b5fe1a",
+      "bytes": 44061
+    },
+    {
+      "path": "reviews/chayote/mobile-card.png",
+      "sha256": "9204238c4d1c96ea594e8e11233c04e126aaca6842a92fb01c80a15efc99c6b1",
+      "bytes": 130976
+    },
+    {
+      "path": "reviews/chayote/side-a.png",
+      "sha256": "122ea539a9e24c61e70e0cd5eabd6b2c172c5ee7e70d44db03317a2dca565f5a",
+      "bytes": 20665
+    },
+    {
+      "path": "reviews/chayote/side-b.png",
+      "sha256": "53a0d759e65d8283d4a326afcdad6843fc42adbb58be434edcfa8e61573ba760",
+      "bytes": 19979
+    },
+    {
+      "path": "reviews/chayote/top.png",
+      "sha256": "74044881821315c73a4cf3193f56fccb5f39fe4b8c34acd02ac08ace023c5d81",
+      "bytes": 21001
+    },
+    {
+      "path": "reviews/pool-expansion-browser.json",
+      "sha256": "c373597328d0360b15416c5cc2b6054b80f418dec850dee58cc2b5f7019554fb",
+      "bytes": 6066
+    },
+    {
+      "path": "scripts/audit-tarot-pool.cjs",
+      "sha256": "2072f69da42de38df844d8f7b778f708216ff3e9387c3509d391b7ea26a9818f",
+      "bytes": 1367
+    },
+    {
+      "path": "scripts/test-food-share-browser.py",
+      "sha256": "425bd77d9904aeb6a9552279019391b8d9f546647d22b43e7f7f0c1ff44567f3",
+      "bytes": 4903
+    },
+    {
+      "path": "scripts/test-lottery-browser.py",
+      "sha256": "38cf3321e154776cf8bd3d4dbecac0f369913bacef496aa45817986a681af2c3",
+      "bytes": 8784
+    },
+    {
+      "path": "tests/draw-navigation.test.cjs",
+      "sha256": "093530568dd9c59971e7fa3c1bdcbf82e38f02c5aec1a002c216bef866fdc886",
+      "bytes": 3479
+    },
+    {
+      "path": "tests/food-share.test.cjs",
+      "sha256": "bdc5140737d6096fddd28d6dacd278cc3020346afe34311dfc070612df339d26",
+      "bytes": 4729
+    },
+    {
+      "path": "tests/lottery.test.cjs",
+      "sha256": "0ab6992650ea6e0e6844605db9a377131d58a6ff7fa3bd078cea556ed3136bad",
+      "bytes": 16843
+    },
+    {
+      "path": "tests/new-foods.test.cjs",
+      "sha256": "785ecda27d68bcb9f23f31551b3a48d19c9ad273d1ba2e3e0e6630136fd91867",
+      "bytes": 4716
+    },
+    {
+      "path": "tests/origin-geography.test.cjs",
+      "sha256": "1df491a3fd324a821262fcd038001e874825bddd90b8f28761bfadfc83f4b884",
+      "bytes": 7225
+    },
+    {
+      "path": "tests/pool-expansion.test.cjs",
+      "sha256": "2494f75e422a710e629de209ac50c752346eb780cd1a00608c8eeb8bb15f4e43",
+      "bytes": 8744
+    },
+    {
+      "path": "tests/season-counts.test.cjs",
+      "sha256": "13970883ce6877c17c6d6a30d35db5257032b94caea64bf77dab7c89d66c336a",
+      "bytes": 2909
+    },
+    {
+      "path": "tests/tarot-spread.test.cjs",
+      "sha256": "c0413b8cf274d022511bfd005022b189e5a91006fe85f6454e9cec9461553951",
+      "bytes": 8013
+    },
+    {
+      "path": "tests/tarot.test.cjs",
+      "sha256": "40b95fcdd7c734eba69ae18bb19a4467be1581fa3b27c36cf0f544000b4cda8c",
+      "bytes": 6700
+    }
+  ]
+}

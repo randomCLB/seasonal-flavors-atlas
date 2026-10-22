@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.join(__dirname,'..'),C=require('../dist/lottery-core.js'),T=require('../dist/tarot-core.js'),ctx={window:{}};
 vm.createContext(ctx);
 const scripts=[...fs.readFileSync(path.join(root,'dist/index.html'),'utf8').matchAll(/<script src="([^"?]+)(?:\?[^"<]*)?"/g)].map(x=>x[1]);
-const dataFiles=['solar-terms.js','data.js','editorial.js','editorial-notes.js','november-additions.js','core-refinements.js'];
+const dataFiles=['solar-terms.js','data.js','editorial.js','editorial-notes.js','november-additions.js','core-refinements.js','winter-additions.js','seasonal-additions.js','term-gap-additions.js','editorial-copy.js','photo-review.js'];
 for(const name of scripts.filter(n=>dataFiles.includes(n)))vm.runInContext(fs.readFileSync(path.join(root,'dist',name),'utf8'),ctx);
 for(const name of ['lottery-profiles.js','lottery-senses.js'])vm.runInContext(fs.readFileSync(path.join(root,'dist',name),'utf8'),ctx);
 const foods=ctx.window.FOODS,profiles=ctx.window.LOTTERY_PROFILES,events=C.eventsFrom(ctx.window.SOLAR_TERM_TIMES,ctx.window.SOLAR_TERM_NAMES),now=Date.parse('2026-10-18T04:00:00Z');

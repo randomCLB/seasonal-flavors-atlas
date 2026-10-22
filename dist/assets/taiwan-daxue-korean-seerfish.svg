@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">台湾大雪高丽马加鰆通用形态编辑插画</title>
+  <desc id="desc">简化鰆鱼形态和海流纹样，非实物摄影、物种鉴别或渔获证明。</desc>
+  <rect width="960" height="720" fill="#e9e8de"/>
+  <path d="M0 478 Q180 440 360 480 T720 476 T1080 480 V720 H0Z" fill="#d3ded7"/>
+  <g fill="none" stroke="#b1c8bd" stroke-width="5" opacity=".8"><path d="M25 540 Q165 505 305 540 T585 540 T865 540"/><path d="M70 595 Q210 560 350 595 T630 595 T910 595"/></g>
+  <path d="M218 354 Q355 221 604 282 Q706 308 780 356 Q704 403 605 432 Q355 492 218 368 L132 444 L151 359 L132 276Z" fill="#8c9990" stroke="#43584f" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M360 284 Q445 211 535 264 L494 294Z" fill="#788980" stroke="#43584f" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M390 431 Q465 501 545 438 L501 415Z" fill="#788980" stroke="#43584f" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M578 291 Q541 359 578 420" fill="none" stroke="#d8dfd3" stroke-width="8"/>
+  <g fill="#a96756"><ellipse cx="406" cy="333" rx="15" ry="7"/><ellipse cx="449" cy="346" rx="16" ry="7"/><ellipse cx="492" cy="330" rx="15" ry="7"/><ellipse cx="430" cy="378" rx="16" ry="7"/><ellipse cx="477" cy="390" rx="15" ry="7"/></g>
+  <circle cx="682" cy="338" r="9" fill="#203a32"/>
+  <path d="M247 344 Q289 360 248 385" fill="none" stroke="#344b43" stroke-width="7" stroke-linecap="round"/>
+  <text x="58" y="92" font-family="serif" font-size="29" fill="#344b43">大雪 · 西岸鰆魚</text>
+</svg>

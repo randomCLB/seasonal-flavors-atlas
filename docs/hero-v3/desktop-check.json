@@ -1,0 +1,218 @@
+[
+  {
+    "background": "url(\"assets/jieqi/qiufen-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "沙棘果",
+    "overflows": false,
+    "term": "秋分",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/hanlu-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "刺竹笋",
+    "overflows": false,
+    "term": "寒露",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/shuangjiang-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "临潼火晶柿子",
+    "overflows": false,
+    "term": "霜降",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/lidong-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "旬阳拐枣",
+    "overflows": false,
+    "term": "立冬",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/xiaoxue-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "连云港沙光鱼",
+    "overflows": false,
+    "term": "小雪",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/daxue-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "从化大芥菜",
+    "overflows": false,
+    "term": "大雪",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/dongzhi-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "台东冬果凤梨释迦",
+    "overflows": false,
+    "term": "冬至",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/xiaohan-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "如皋黑塌菜",
+    "overflows": false,
+    "term": "小寒",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/dahan-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "增城迟菜心",
+    "overflows": false,
+    "term": "大寒",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/lichun-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "胶州湾开凌梭",
+    "overflows": false,
+    "term": "立春",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/yushui-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "金堂鲜羊肚菌",
+    "overflows": false,
+    "term": "雨水",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/jingzhe-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "棠梨花",
+    "overflows": false,
+    "term": "惊蛰",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/chunfen-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "羊奶果",
+    "overflows": false,
+    "term": "春分",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/qingming-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "刺嫩芽",
+    "overflows": false,
+    "term": "清明",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/guyu-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "上虞下管短柄樱桃",
+    "overflows": false,
+    "term": "谷雨",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/lixia-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "猴腿菜",
+    "overflows": false,
+    "term": "立夏",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/xiaoman-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "陕州新麦碾转",
+    "overflows": false,
+    "term": "小满",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/mangzhong-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "桐乡槜李",
+    "overflows": false,
+    "term": "芒种",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/xiazhi-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "民勤露地鲜沙葱",
+    "overflows": false,
+    "term": "夏至",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/xiaoshu-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "郁南无核黄皮",
+    "overflows": false,
+    "term": "小暑",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/dashu-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "高淳六月黄",
+    "overflows": false,
+    "term": "大暑",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/liqiu-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "鸡头米",
+    "overflows": false,
+    "term": "立秋",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/chushu-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "澄海薄壳米",
+    "overflows": false,
+    "term": "处暑",
+    "titleCardOverlap": false
+  },
+  {
+    "background": "url(\"assets/jieqi/bailu-v2.webp\")",
+    "cardInside": true,
+    "cardTint": "rgba(250, 248, 241, 0.89)",
+    "food": "软枣猕猴桃",
+    "overflows": false,
+    "term": "白露",
+    "titleCardOverlap": false
+  }
+]

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img" aria-labelledby="title desc">
+  <title id="title">莼菜嫩梢通用形态示意</title>
+  <desc id="desc">水面下细茎上的椭圆嫩叶与透明胶质，非东山实拍或等级鉴别。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f5f2e8"/><stop offset="1" stop-color="#e4e4d6"/></linearGradient>
+    <linearGradient id="water" x2="0" y2="1"><stop stop-color="#d5e4dc"/><stop offset="1" stop-color="#9fbcae"/></linearGradient>
+    <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#557d62"/><stop offset="1" stop-color="#2d5546"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <rect width="800" height="640" fill="url(#paper)"/>
+  <rect y="272" width="800" height="284" fill="url(#water)" opacity=".72"/>
+  <path d="M0 297Q155 278 300 300T600 299T800 292" fill="none" stroke="#fffef7" stroke-width="12" opacity=".75"/>
+  <path d="M0 308Q166 294 318 312T635 308T800 306" fill="none" stroke="#9bb9aa" stroke-width="3" opacity=".8"/>
+  <ellipse cx="397" cy="423" rx="250" ry="62" fill="#315546" opacity=".13" filter="url(#soft)"/>
+  <path d="M141 459C224 425 300 399 393 382C475 367 562 372 656 400" fill="none" stroke="#496f5a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M220 433C201 395 197 361 213 333M306 408C288 371 286 339 300 310M396 382C381 348 383 317 402 287M489 378C480 346 487 317 509 292M577 387C575 356 586 331 607 309" fill="none" stroke="#587b62" stroke-width="7" stroke-linecap="round"/>
+  <g fill="url(#leaf)" stroke="#e7ebd7" stroke-width="4">
+    <ellipse cx="213" cy="328" rx="48" ry="24" transform="rotate(-23 213 328)"/>
+    <ellipse cx="300" cy="306" rx="42" ry="21" transform="rotate(-19 300 306)"/>
+    <ellipse cx="404" cy="283" rx="38" ry="20" transform="rotate(-13 404 283)"/>
+    <ellipse cx="511" cy="288" rx="43" ry="21" transform="rotate(7 511 288)"/>
+    <ellipse cx="609" cy="305" rx="47" ry="23" transform="rotate(18 609 305)"/>
+  </g>
+  <g fill="#f8fff9" fill-opacity=".28" stroke="#fff" stroke-opacity=".7" stroke-width="3">
+    <ellipse cx="229" cy="380" rx="35" ry="22" transform="rotate(-28 229 380)"/>
+    <ellipse cx="337" cy="351" rx="30" ry="19" transform="rotate(-17 337 351)"/>
+    <ellipse cx="445" cy="335" rx="32" ry="20" transform="rotate(4 445 335)"/>
+    <ellipse cx="550" cy="348" rx="35" ry="22" transform="rotate(17 550 348)"/>
+  </g>
+  <circle cx="169" cy="359" r="6" fill="#fff" opacity=".8"/><circle cx="672" cy="348" r="9" fill="#fff" opacity=".65"/>
+  <text x="400" y="600" text-anchor="middle" fill="#526354" font-family="serif" font-size="20" letter-spacing="5">嫩梢 · 通用形态参考</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">芥菜嫩尖编辑示意</title><desc id="desc">通用大叶芥菜嫩叶插画，不是大足冬菜原料实拍或产地鉴别。</desc>
+  <defs><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f3f0e5"/><stop offset="1" stop-color="#e2e4d3"/></linearGradient><linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#9cad75"/><stop offset="1" stop-color="#526c4d"/></linearGradient></defs>
+  <rect width="720" height="560" fill="url(#paper)"/><path d="M0 458Q162 410 339 463T720 435V560H0Z" fill="#d1d6bd" opacity=".7"/>
+  <path d="M361 519Q348 368 355 192" fill="none" stroke="#85935f" stroke-width="18" stroke-linecap="round"/>
+  <g fill="url(#leaf)" stroke="#51684a" stroke-width="3">
+    <path d="M354 401Q254 282 142 311Q185 421 354 401Z"/><path d="M357 350Q450 223 569 241Q526 352 357 350Z"/>
+    <path d="M356 296Q268 180 188 189Q216 301 356 296Z"/><path d="M359 250Q436 127 530 146Q501 260 359 250Z"/>
+    <path d="M358 204Q302 104 248 106Q265 208 358 204Z"/>
+  </g>
+  <g fill="none" stroke="#d8dcb8" stroke-width="3" opacity=".8"><path d="M356 399Q259 346 169 319"/><path d="M358 349Q445 295 548 250"/><path d="M356 294Q276 238 205 197"/><path d="M359 251Q432 197 509 153"/></g>
+  <g fill="#f6f2e7" opacity=".7"><circle cx="112" cy="136" r="3"/><circle cx="610" cy="118" r="2"/><circle cx="593" cy="389" r="3"/><circle cx="156" cy="445" r="2"/></g>
+</svg>

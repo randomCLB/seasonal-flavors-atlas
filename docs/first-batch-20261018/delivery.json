@@ -1,0 +1,166 @@
+{
+  "baselineHead": "d5782ad7ef0270e8665ea606c25dee6c10bad4a7",
+  "branch": "fix/hanlu-illustration-20261013",
+  "catalogCount": 86,
+  "refinedCount": 12,
+  "checks": {
+    "node": 156,
+    "coreBrowser": 74,
+    "existingShareBrowser": 51
+  },
+  "publication": "local preview only; no commit/push/deployment",
+  "externalSearch": "Bing query read back; Taobao input query read back but products not verified; JD login verification wall",
+  "oldAssetFilesModified": [],
+  "files": [
+    {
+      "path": "IMAGE_REGISTER.md",
+      "sha256": "8a38b94698e177f5ff625548bd8a31404b583fcf74c73529ea642ed7c9e6e504",
+      "bytes": 57242,
+      "change": "modified"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ee3158e4d6482c18da27ba6650a85f995a9c74fe169f98547adeb513ba0c5724",
+      "bytes": 2363,
+      "change": "modified"
+    },
+    {
+      "path": "dist/app.js",
+      "sha256": "f6c1dae54d799a19e2b351609fbbb108d0dcebb5e93c628843073c8318c1dc00",
+      "bytes": 44493,
+      "change": "modified"
+    },
+    {
+      "path": "dist/assets/caixin-cooked-cc-by-sa.webp",
+      "sha256": "49fa882ac4eb7a24fc8bf7948bec52713e334f2de38454da66e3d26250eef0df",
+      "bytes": 125902,
+      "change": "added"
+    },
+    {
+      "path": "dist/assets/caixin-raw-cc-by-sa.webp",
+      "sha256": "bdc2e5a7bd21c9777d4a96ad0151072eb497a8bb6eb1149a2dadb4996b63d743",
+      "bytes": 113480,
+      "change": "added"
+    },
+    {
+      "path": "dist/assets/cigu-editorial-v1-generated.webp",
+      "sha256": "19b4b543ab3adcaadb154a0013d7e8e2a80d37859a337a2e31be07d9ffb1ed70",
+      "bytes": 160978,
+      "change": "added"
+    },
+    {
+      "path": "dist/assets/persimmon-editorial-v1-generated.webp",
+      "sha256": "2c944b0e0fc5867d739b0a70c4c94ed610170bb32ecf82333f77bf376e440d39",
+      "bytes": 160346,
+      "change": "added"
+    },
+    {
+      "path": "dist/assets/shaguang-soup-editorial-v1-generated.webp",
+      "sha256": "f5f545ad3f984817513b1ab2745553c87e8a6b84ce44e749af1910f23935fb95",
+      "bytes": 236420,
+      "change": "added"
+    },
+    {
+      "path": "dist/core-refinements.js",
+      "sha256": "9fb9e96e6839fe689babbfb1a7a82860f5f569c81e33309ff1e4133a5fe5a540",
+      "bytes": 14944,
+      "change": "added"
+    },
+    {
+      "path": "dist/credits.html",
+      "sha256": "263ef1dc891eddcc7e5c1875f8c95262b0edfd50698f3294b4df81dd5384537d",
+      "bytes": 23628,
+      "change": "modified"
+    },
+    {
+      "path": "dist/food-detail.css",
+      "sha256": "991561d403bc7b90dbd0b6b735db44d8c6a08933cb0ff936776c5b0e2e00d39c",
+      "bytes": 4697,
+      "change": "added"
+    },
+    {
+      "path": "dist/food-detail.js",
+      "sha256": "6a7c2d7adf7206ccef856c4d75f6496b73658dd09a5e419afe8b9eba132e6e6b",
+      "bytes": 4868,
+      "change": "added"
+    },
+    {
+      "path": "dist/food-purchase.css",
+      "sha256": "ef6eb5f1204af62d06c380ec57468ee8efe545eb84975e7cf2c3a3d08bde0bd6",
+      "bytes": 2392,
+      "change": "added"
+    },
+    {
+      "path": "dist/food-purchase.js",
+      "sha256": "ee7dd79ff32894870aacdc4bade57e8e60d6e46288a2fd80f65f2e10e0f74cd3",
+      "bytes": 2769,
+      "change": "added"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "ed855b234990452ecfbf5c9000c0d495ace337e1abeab54b4a7d998ab693eae1",
+      "bytes": 522800,
+      "change": "modified"
+    },
+    {
+      "path": "dist/lottery-ui.js",
+      "sha256": "7230dfbf41b175ba213f0620baaa37a8bdd4eab163eeb94ee09d26bfafd915b2",
+      "bytes": 13971,
+      "change": "modified"
+    },
+    {
+      "path": "dist/lottery.html",
+      "sha256": "32e606f1d556119be225d0092232ded0acd17915ff40cacd53f2f87b355fd36f",
+      "bytes": 4704,
+      "change": "modified"
+    },
+    {
+      "path": "dist/tarot-core.js",
+      "sha256": "7fad356e573cd9577ce0064c4166058c3dcb2cceaba4e843d9754512dd299040",
+      "bytes": 10518,
+      "change": "modified"
+    },
+    {
+      "path": "dist/tarot-spread-ui.js",
+      "sha256": "16b4a742066023be3a49dae4010dd2fd91ef6c019542b94536dab9a8882e6988",
+      "bytes": 12590,
+      "change": "modified"
+    },
+    {
+      "path": "dist/tarot.html",
+      "sha256": "e1cb082407b9d465b02a67f3f0e58822593f9015a50bedfe66891e0688f74f44",
+      "bytes": 7246,
+      "change": "modified"
+    },
+    {
+      "path": "scripts/audit-core-batch.cjs",
+      "sha256": "6aaebf8fe56b5e5ecf65d8243e33cce0a65cd24dc4996a5d7003e6622872735f",
+      "bytes": 2486,
+      "change": "added"
+    },
+    {
+      "path": "scripts/audit-tarot-pool.cjs",
+      "sha256": "85ea48cf7d25f19812736f60b79a64309becd03d762374e946f796ae43eced94",
+      "bytes": 1407,
+      "change": "modified"
+    },
+    {
+      "path": "scripts/check-core-experience.py",
+      "sha256": "c5a11e6e338dcd7c894662af1a8f28a9ffdb9a573cc18a903fe16d152aceec10",
+      "bytes": 7013,
+      "change": "added"
+    },
+    {
+      "path": "tests/core-experience.test.cjs",
+      "sha256": "8cc6326a1691a672092614197757230d3a80872581b9b04459933f730577f428",
+      "bytes": 3975,
+      "change": "added"
+    },
+    {
+      "path": "tests/draw-navigation.test.cjs",
+      "sha256": "c202318825e03b2b8511a3234ce48dce0fce44d798921e4b004e1c84821b6962",
+      "bytes": 3477,
+      "change": "modified"
+    }
+  ]
+}

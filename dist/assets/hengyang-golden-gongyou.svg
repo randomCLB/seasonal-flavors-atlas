@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">黄金柚类编辑插画</title>
+  <desc id="desc">两枚金黄色柚类果实与一枚切开的果实，非产地或品种实拍。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f2ead9"/><stop offset="1" stop-color="#e6ddc9"/></linearGradient>
+    <radialGradient id="rind" cx="34%" cy="28%"><stop stop-color="#f8d984"/><stop offset=".7" stop-color="#e7b942"/><stop offset="1" stop-color="#c98c27"/></radialGradient>
+    <radialGradient id="pith"><stop stop-color="#fff9e9"/><stop offset="1" stop-color="#e8d8b6"/></radialGradient>
+    <radialGradient id="flesh"><stop stop-color="#ffe5a4"/><stop offset="1" stop-color="#efb84f"/></radialGradient>
+    <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.8"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="900" height="700" fill="url(#paper)"/>
+  <path d="M0 540 Q250 490 450 538 T900 520 V700 H0Z" fill="#d7ccb4" opacity=".6"/>
+  <ellipse cx="450" cy="580" rx="300" ry="45" fill="#80745e" opacity=".18" filter="url(#shadow)"/>
+  <path d="M594 230c49-86 152-75 190-4 39 73 5 180-57 225-72 52-155 4-167-72-8-49 8-107 34-149Z" fill="url(#rind)" stroke="#bc882f" stroke-width="4"/>
+  <path d="M342 242c37-76 129-93 183-41 57 54 54 149 8 208-50 64-148 59-195-5-43-58-27-118 4-162Z" fill="url(#rind)" stroke="#bc882f" stroke-width="4"/>
+  <path d="M446 211c27-15 55-22 83-16" fill="none" stroke="#f6df9e" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+  <g transform="rotate(-10 470 468)">
+    <ellipse cx="464" cy="469" rx="168" ry="139" fill="url(#rind)" stroke="#b87f26" stroke-width="5"/>
+    <ellipse cx="464" cy="469" rx="144" ry="116" fill="url(#pith)"/>
+    <ellipse cx="464" cy="469" rx="119" ry="94" fill="url(#flesh)"/>
+    <path d="M464 376v186M465 375c-28 23-44 55-47 91 30 4 48 4 47 0m0-1c2 38 19 67 49 87m-48-86c-26 13-46 35-60 64m60-65c30 13 51 34 64 62m-64-61c-9-31-7-59 2-84" fill="none" stroke="#f7f0dc" stroke-width="9" stroke-linecap="round"/>
+    <path d="M464 468c-12-12-22-14-27-8-5 7 3 20 27 30 22-10 32-23 26-30-6-6-16-4-26 8Z" fill="#8d6332"/>
+  </g>
+  <g fill="#fff3ce" opacity=".65"><circle cx="259" cy="280" r="5"/><circle cx="657" cy="390" r="5"/><circle cx="374" cy="590" r="4"/><circle cx="751" cy="300" r="4"/></g>
+  <path d="M119 611h662" stroke="#9b8d73" stroke-width="2" opacity=".55"/>
+  <text x="450" y="657" text-anchor="middle" fill="#526453" font-family="serif" font-size="22" letter-spacing="4">柑橘与柚类的通用形态参考</text>
+</svg>

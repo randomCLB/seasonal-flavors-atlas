@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+<title id="title">油茶果与茶籽形态示意</title><desc id="desc">原创编辑插画，以油茶果剖面和种子表现油茶籽，不用于品种鉴定。</desc>
+<rect width="800" height="600" fill="#f2efe5"/><path d="M0 480Q180 445 365 482T800 470V600H0Z" fill="#dfe4d6"/>
+<path d="M105 462Q258 352 423 395M363 418Q497 312 679 360" fill="none" stroke="#667b61" stroke-width="13" stroke-linecap="round"/>
+<g fill="#788d68"><ellipse cx="173" cy="405" rx="69" ry="30" transform="rotate(-28 173 405)"/><ellipse cx="273" cy="376" rx="66" ry="29" transform="rotate(21 273 376)"/><ellipse cx="529" cy="345" rx="70" ry="30" transform="rotate(-18 529 345)"/><ellipse cx="628" cy="354" rx="68" ry="28" transform="rotate(24 628 354)"/></g>
+<g transform="translate(255 245)"><circle r="108" fill="#a96f4b"/><circle r="84" fill="#bf8052"/><path d="M-8-71Q-48-25-41 23Q-32 78 0 82Q36 73 42 24Q47-26 9-72Q1-83-8-71Z" fill="#f2dfb4"/><ellipse cx="0" cy="8" rx="29" ry="39" fill="#956343"/><path d="M-50-24Q-19-48 1-42M48 19Q28 49 4 51" fill="none" stroke="#dec09b" stroke-width="8" stroke-linecap="round"/></g>
+<g transform="translate(546 251)"><circle r="101" fill="#c28355"/><path d="M-58-43Q0-86 58-43L48 38Q0 78-48 38Z" fill="#f0dfb5"/><ellipse cx="-26" cy="-7" rx="22" ry="28" fill="#94633f"/><ellipse cx="26" cy="-7" rx="22" ry="28" fill="#94633f"/><ellipse cx="0" cy="34" rx="22" ry="26" fill="#94633f"/></g>
+<path d="M95 514H705" stroke="#a99c81" stroke-width="2"/><text x="400" y="548" text-anchor="middle" fill="#35534b" font-family="serif" font-size="24" letter-spacing="3">寒露籽 · 油茶果通用形态参考</text>
+</svg>

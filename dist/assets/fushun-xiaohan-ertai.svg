@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">儿菜通用形态插画</title>
+  <desc id="desc">浅米色背景上的一株抱子芥，主茎周围环抱着翠绿色芽包。</desc>
+  <rect width="900" height="700" fill="#ece8dc"/>
+  <ellipse cx="448" cy="598" rx="234" ry="31" fill="#d6d0bd"/>
+  <path d="M390 584 C399 472 412 380 441 265 C456 208 490 172 529 151 C503 203 497 270 503 335 C514 427 499 512 483 587Z" fill="#7d995a"/>
+  <path d="M440 536 C384 491 322 489 264 511 C303 455 360 429 433 444Z" fill="#8ca76a"/>
+  <path d="M472 493 C526 440 590 434 651 455 C608 405 553 382 484 404Z" fill="#91a96e"/>
+  <path d="M431 414 C373 373 323 371 275 393 C307 345 359 322 436 348Z" fill="#a1b47d"/>
+  <path d="M486 371 C542 322 595 316 646 334 C612 288 557 269 486 295Z" fill="#a2b77b"/>
+  <g fill="#bdc891" stroke="#718b54" stroke-width="5">
+    <ellipse cx="327" cy="505" rx="80" ry="59" transform="rotate(-18 327 505)"/>
+    <ellipse cx="584" cy="451" rx="79" ry="58" transform="rotate(17 584 451)"/>
+    <ellipse cx="330" cy="389" rx="76" ry="56" transform="rotate(-12 330 389)"/>
+    <ellipse cx="582" cy="333" rx="76" ry="56" transform="rotate(15 582 333)"/>
+    <ellipse cx="415" cy="276" rx="70" ry="55" transform="rotate(-7 415 276)"/>
+  </g>
+  <g fill="none" stroke="#e1dfbd" stroke-width="5" opacity=".9">
+    <path d="M275 508 Q324 481 380 492"/><path d="M535 454 Q585 426 633 443"/>
+    <path d="M284 393 Q330 367 378 378"/><path d="M541 337 Q588 309 629 326"/>
+    <path d="M367 279 Q414 254 460 269"/>
+  </g>
+  <text x="52" y="79" fill="#30473c" font-family="serif" font-size="25" letter-spacing="5">冬菜 · 通用形态参考</text>
+</svg>

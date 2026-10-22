@@ -1,0 +1,39 @@
+{
+  "design": "节气插画首屏大图；节气标题与食材图文浮卡分层",
+  "title_panel_alpha": 0.6,
+  "mobile_title_panel_alpha": 0.64,
+  "food_panel_alpha": 0.89,
+  "mobile_food_panel_alpha": 0.91,
+  "season_title_ink_alpha": 0.95,
+  "body_text": "solid dark ink for readability",
+  "layout_variants": {
+    "title_left": [
+      "春分",
+      "清明",
+      "夏至",
+      "白露",
+      "冬至"
+    ],
+    "food_card_left": [
+      "白露",
+      "冬至"
+    ]
+  },
+  "desktop_terms_checked": 24,
+  "narrow_terms_checked": 48,
+  "narrow_widths": [
+    390,
+    320
+  ],
+  "all_checked_no_horizontal_overflow": true,
+  "all_checked_cards_fit_hero": true,
+  "all_checked_title_and_card_do_not_overlap": true,
+  "recipe_entry_verified": "刺竹笋详情与做法可打开，关闭后回到主页面",
+  "published": false,
+  "source_sha256": {
+    "app.js": "9c7ee401ce36b3d2e992e02bdde769a2afa6e66de34ce05a9ede6e6c5db95278",
+    "fengwu-design.css": "231048d5d58ac3c5f8111fe5d876a39364fdf4f55aa9894943286855478ade4c",
+    "index.html": "6e3405ff90965a7fc4944b8a0dcc800b73a9d52945032a0a60fd078de338d982"
+  },
+  "rollback_copy": "output/hero-v3-before"
+}

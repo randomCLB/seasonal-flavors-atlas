@@ -1,0 +1,2230 @@
+TAP version 13
+# Subtest: Anji Xilong late-March tea is a sourced Spring Equinox-only first-pick entry
+ok 1 - Anji Xilong late-March tea is a sourced Spring Equinox-only first-pick entry
+  ---
+  duration_ms: 989.919417
+  type: 'test'
+  ...
+# Subtest: Anping winter-solstice mackerel stays a sourced, term-only fishery lead with honest identity limits
+ok 2 - Anping winter-solstice mackerel stays a sourced, term-only fishery lead with honest identity limits
+  ---
+  duration_ms: 1034.940334
+  type: 'test'
+  ...
+# Subtest: White Dew eel record uses the full local fishing window and is clearly historical
+ok 3 - White Dew eel record uses the full local fishing window and is clearly historical
+  ---
+  duration_ms: 2.846375
+  type: 'test'
+  ...
+# Subtest: Zhanqi early orange and Henan soft-seed pomegranate add sourced term-specific peaks
+ok 4 - Zhanqi early orange and Henan soft-seed pomegranate add sourced term-specific peaks
+  ---
+  duration_ms: 1007.372792
+  type: 'test'
+  ...
+# Subtest: Beian white strawberry uses the single documented Xiaohan harvest and keeps the next-year limit clear
+ok 5 - Beian white strawberry uses the single documented Xiaohan harvest and keeps the next-year limit clear
+  ---
+  duration_ms: 1.429333
+  type: 'test'
+  ...
+# Subtest: the White Lover strawberry contributes one Xiaohan-only entry without changing the strict overlap limit
+ok 6 - the White Lover strawberry contributes one Xiaohan-only entry without changing the strict overlap limit
+  ---
+  duration_ms: 1013.56
+  type: 'test'
+  ...
+# Subtest: Bomi late-season plum is limited to its 2026-10-13 harvest-season observation
+ok 7 - Bomi late-season plum is limited to its 2026-10-13 harvest-season observation
+  ---
+  duration_ms: 2037.014208
+  type: 'test'
+  ...
+# Subtest: Caidian E’hong 4 early caitai is a sourced Hanlu-only entry
+ok 8 - Caidian E’hong 4 early caitai is a sourced Hanlu-only entry
+  ---
+  duration_ms: 1039.499083
+  type: 'test'
+  ...
+# Subtest: Caidian lotus pods have a sourced Summer Solstice feature window and reviewed draw signatures
+ok 9 - Caidian lotus pods have a sourced Summer Solstice feature window and reviewed draw signatures
+  ---
+  duration_ms: 1034.580625
+  type: 'test'
+  ...
+# Subtest: Cangnan four-seasons pomelo is a sourced Lidong harvest entry with reviewed tarot signatures
+ok 10 - Cangnan four-seasons pomelo is a sourced Lidong harvest entry with reviewed tarot signatures
+  ---
+  duration_ms: 999.461
+  type: 'test'
+  ...
+# Subtest: Cangyuan macadamia is a sourced White Dew harvest-opening entry, not a fabricated full-season window
+ok 11 - Cangyuan macadamia is a sourced White Dew harvest-opening entry, not a fabricated full-season window
+  ---
+  duration_ms: 993.629125
+  type: 'test'
+  ...
+# Subtest: Changhua Xiaoshu fishery names preserve the Agriculture Ministry mappings without implying current stock
+ok 12 - Changhua Xiaoshu fishery names preserve the Agriculture Ministry mappings without implying current stock
+  ---
+  duration_ms: 1048.072125
+  type: 'test'
+  ...
+# Subtest: 常宁寒露籽按多年度地方收摘证据列为寒露油料，不把生籽写成鲜食
+ok 13 - 常宁寒露籽按多年度地方收摘证据列为寒露油料，不把生籽写成鲜食
+  ---
+  duration_ms: 982.876042
+  type: 'test'
+  ...
+# Subtest: Changshu fresh fava beans are a Lixia local-market entry with a multi-year, approximate window
+ok 14 - Changshu fresh fava beans are a Lixia local-market entry with a multi-year, approximate window
+  ---
+  duration_ms: 1027.272833
+  type: 'test'
+  ...
+# Subtest: Chaoyang Xilu Wusu waxberry keeps its sourced post-Mangzhong window
+ok 15 - Chaoyang Xilu Wusu waxberry keeps its sourced post-Mangzhong window
+  ---
+  duration_ms: 1042.817166
+  type: 'test'
+  ...
+# Subtest: Chengde spring-equinoctial elm samaras are a source-limited local food clue
+ok 16 - Chengde spring-equinoctial elm samaras are a source-limited local food clue
+  ---
+  duration_ms: 1018.703583
+  type: 'test'
+  ...
+# Subtest: Budai douzai fish is a Xiaoxue-only seasonal entry with an explicit species-identity limit
+ok 17 - Budai douzai fish is a Xiaoxue-only seasonal entry with an explicit species-identity limit
+  ---
+  duration_ms: 1032.787375
+  type: 'test'
+  ...
+# Subtest: Chongming malantou is listed only for its sourced best-taste solar term
+ok 18 - Chongming malantou is listed only for its sourced best-taste solar term
+  ---
+  duration_ms: 1022.324292
+  type: 'test'
+  ...
+# Subtest: Chuan-Yu pea tips are a sourced Great Cold seasonal item distinct from pea sprouts
+ok 19 - Chuan-Yu pea tips are a sourced Great Cold seasonal item distinct from pea sprouts
+  ---
+  duration_ms: 1030.615417
+  type: 'test'
+  ...
+# Subtest: Conghua Zhouzhoumei citrus is a sourced Dahan harvest-window entry
+ok 20 - Conghua Zhouzhoumei citrus is a sourced Dahan harvest-window entry
+  ---
+  duration_ms: 1004.551542
+  type: 'test'
+  ...
+# Subtest: all live entrypoints use the same ordered catalog, including November and refinements
+ok 21 - all live entrypoints use the same ordered catalog, including November and refinements
+  ---
+  duration_ms: 8496.102917
+  type: 'test'
+  ...
+# Subtest: Sanzhi red-sheath water bamboo is limited to the documented 2026 harvest-event dates with labeled editorial art
+ok 22 - Sanzhi red-sheath water bamboo is limited to the documented 2026 harvest-event dates with labeled editorial art
+  ---
+  duration_ms: 0.272958
+  type: 'test'
+  ...
+# Subtest: Lixian highland cherries add a sourced mid-May exclusive term entry with reviewed generic artwork and draw signatures
+ok 23 - Lixian highland cherries add a sourced mid-May exclusive term entry with reviewed generic artwork and draw signatures
+  ---
+  duration_ms: 0.238042
+  type: 'test'
+  ...
+# Subtest: Yinghu Daxing loquat follows the sourced late-spring maturity window and keeps cultivar claims separate from its generated image
+ok 24 - Yinghu Daxing loquat follows the sourced late-spring maturity window and keeps cultivar claims separate from its generated image
+  ---
+  duration_ms: 997.764375
+  type: 'test'
+  ...
+# Subtest: Wanning Damao white-sugar-jar lychee has a recurring source-backed Guyu window and stays out of Lixia
+ok 25 - Wanning Damao white-sugar-jar lychee has a recurring source-backed Guyu window and stays out of Lixia
+  ---
+  duration_ms: 1082.942375
+  type: 'test'
+  ...
+# Subtest: Qiongshan Sanmenpo Xiantao lychee uses the documented early-May Lixia harvest and stays distinct from Wanning Guyu lychee
+ok 26 - Qiongshan Sanmenpo Xiantao lychee uses the documented early-May Lixia harvest and stays distinct from Wanning Guyu lychee
+  ---
+  duration_ms: 1041.59725
+  type: 'test'
+  ...
+# Subtest: Hubei Ejiao No. 4 summer water bamboo is limited to the documented mid-May window and labeled as a generic illustration
+ok 27 - Hubei Ejiao No. 4 summer water bamboo is limited to the documented mid-May window and labeled as a generic illustration
+  ---
+  duration_ms: 1044.867208
+  type: 'test'
+  ...
+# Subtest: Wuding Fawowo winter peach uses only the documented late-October window and labeled generic artwork
+ok 28 - Wuding Fawowo winter peach uses only the documented late-October window and labeled generic artwork
+  ---
+  duration_ms: 0.38025
+  type: 'test'
+  ...
+# Subtest: Shidian Guyu fiddleheads use the reported spring window, explicit fern safety guidance and reviewed signatures
+ok 29 - Shidian Guyu fiddleheads use the reported spring window, explicit fern safety guidance and reviewed signatures
+  ---
+  duration_ms: 0.54775
+  type: 'test'
+  ...
+# Subtest: Banan Wubu pomelo has a locality source, late-autumn window, honest generic illustration and reviewed draw tags
+ok 30 - Banan Wubu pomelo has a locality source, late-autumn window, honest generic illustration and reviewed draw tags
+  ---
+  duration_ms: 0.876292
+  type: 'test'
+  ...
+# Subtest: winter-solstice addition is source-backed, searchable and clearly marked as a generic generated reference
+ok 31 - winter-solstice addition is source-backed, searchable and clearly marked as a generic generated reference
+  ---
+  duration_ms: 0.582042
+  type: 'test'
+  ...
+# Subtest: Ningbo winter beltfish keeps its local winter-solstice scope and source-backed media labels
+ok 32 - Ningbo winter beltfish keeps its local winter-solstice scope and source-backed media labels
+  ---
+  duration_ms: 0.210917
+  type: 'test'
+  ...
+# Subtest: Bomi wood pear has a documented winter-solstice harvest window and is not treated as an October pear
+ok 33 - Bomi wood pear has a documented winter-solstice harvest window and is not treated as an October pear
+  ---
+  duration_ms: 0.185459
+  type: 'test'
+  ...
+# Subtest: Xinhui winter-after mandarin is a late-harvest batch, not a new cultivar or ordinary Da Hong Gan window
+ok 34 - Xinhui winter-after mandarin is a late-harvest batch, not a new cultivar or ordinary Da Hong Gan window
+  ---
+  duration_ms: 0.081625
+  type: 'test'
+  ...
+# Subtest: Wuhua Longcun highland sweet potato is limited to the reported post-solstice harvest window and cultivar scope
+ok 35 - Wuhua Longcun highland sweet potato is limited to the reported post-solstice harvest window and cultivar scope
+  ---
+  duration_ms: 0.062417
+  type: 'test'
+  ...
+# Subtest: Minhou Wenxi juyou stays within the reported winter-solstice to mid-January harvest period
+ok 36 - Minhou Wenxi juyou stays within the reported winter-solstice to mid-January harvest period
+  ---
+  duration_ms: 0.055375
+  type: 'test'
+  ...
+# Subtest: Hengyang Zhuhui golden tribute pomelo is limited to its reported mid-December window
+ok 37 - Hengyang Zhuhui golden tribute pomelo is limited to its reported mid-December window
+  ---
+  duration_ms: 0.051041
+  type: 'test'
+  ...
+# Subtest: Xinhui Yamen sweet-water radish keeps the reported winter-solstice window and generic image label
+ok 38 - Xinhui Yamen sweet-water radish keeps the reported winter-solstice window and generic image label
+  ---
+  duration_ms: 0.076625
+  type: 'test'
+  ...
+# Subtest: spring additions use source-backed windows, clear image labels, procurement checks and current lottery signatures
+ok 39 - spring additions use source-backed windows, clear image labels, procurement checks and current lottery signatures
+  ---
+  duration_ms: 0.160375
+  type: 'test'
+  ...
+# Subtest: Yaoan edible rose is limited to its reported spring harvest window and distinguished from ornamental roses
+ok 40 - Yaoan edible rose is limited to its reported spring harvest window and distinguished from ornamental roses
+  ---
+  duration_ms: 0.17475
+  type: 'test'
+  ...
+# Subtest: Xuanzhou Shuidong cherries have a source-backed short harvest window and a generic non-identifying illustration
+ok 41 - Xuanzhou Shuidong cherries have a source-backed short harvest window and a generic non-identifying illustration
+  ---
+  duration_ms: 0.168375
+  type: 'test'
+  ...
+# Subtest: Minhou Baisha late longans stay in the White Dew approximate harvest window
+ok 42 - Minhou Baisha late longans stay in the White Dew approximate harvest window
+  ---
+  duration_ms: 0.127625
+  type: 'test'
+  ...
+# Subtest: Wenchuan Qingcui plums use the reported July harvest, source, and non-identifying artwork
+ok 43 - Wenchuan Qingcui plums use the reported July harvest, source, and non-identifying artwork
+  ---
+  duration_ms: 0.130458
+  type: 'test'
+  ...
+# Subtest: Shidian autumn long bamboo shoots stay within the reported post-Liqiu season and distinguish edible preparation from sweet bamboo
+ok 44 - Shidian autumn long bamboo shoots stay within the reported post-Liqiu season and distinguish edible preparation from sweet bamboo
+  ---
+  duration_ms: 0.1615
+  type: 'test'
+  ...
+# Subtest: Hulin liuhao shoots are limited to the locally reported late-May wild-vegetable window and safe sourcing
+ok 45 - Hulin liuhao shoots are limited to the locally reported late-May wild-vegetable window and safe sourcing
+  ---
+  duration_ms: 0.108417
+  type: 'test'
+  ...
+# Subtest: Yellow and Bohai eagle-claw shrimp has a sourced Start-of-Winter window and distinct local names
+ok 46 - Yellow and Bohai eagle-claw shrimp has a sourced Start-of-Winter window and distinct local names
+  ---
+  duration_ms: 0.099334
+  type: 'test'
+  ...
+# Subtest: Yongjia Hesheng persimmon is scoped to its reported pre-winter harvest and not confused with other persimmons
+ok 47 - Yongjia Hesheng persimmon is scoped to its reported pre-winter harvest and not confused with other persimmons
+  ---
+  duration_ms: 0.114
+  type: 'test'
+  ...
+# Subtest: twelve records have actionable state checks and source-backed comparison without altering recipes
+ok 48 - twelve records have actionable state checks and source-backed comparison without altering recipes
+  ---
+  duration_ms: 3.720417
+  type: 'test'
+  ...
+# Subtest: search query round-trips punctuation and cannot inject markup or destinations
+ok 49 - search query round-trips punctuation and cannot inject markup or destinations
+  ---
+  duration_ms: 0.619541
+  type: 'test'
+  ...
+# Subtest: optional local city only augments search terms and is never presented as verified stock
+ok 50 - optional local city only augments search terms and is never presented as verified stock
+  ---
+  duration_ms: 0.702833
+  type: 'test'
+  ...
+# Subtest: every food can show a procurement entry with a manual-copy fallback and honest stock label
+ok 51 - every food can show a procurement entry with a manual-copy fallback and honest stock label
+  ---
+  duration_ms: 5.216166
+  type: 'test'
+  ...
+# Subtest: refined display media exists, identifies generated references and excludes pending-license dishes
+ok 52 - refined display media exists, identifies generated references and excludes pending-license dishes
+  ---
+  duration_ms: 2.387625
+  type: 'test'
+  ...
+# Subtest: Longlin March plum is a single-year source-backed Grain Rain addition with transparent uncertainty
+ok 53 - Longlin March plum is a single-year source-backed Grain Rain addition with transparent uncertainty
+  ---
+  duration_ms: 0.148458
+  type: 'test'
+  ...
+# Subtest: Dahan black carp is sourced to the term list with provenance caveats and is exclusive to Dahan
+ok 54 - Dahan black carp is sourced to the term list with provenance caveats and is exclusive to Dahan
+  ---
+  duration_ms: 1046.584916
+  type: 'test'
+  ...
+# Subtest: Dalian Jinzhou hairy clam uses the sourced early-winter tasting cue and safe preparation
+ok 55 - Dalian Jinzhou hairy clam uses the sourced early-winter tasting cue and safe preparation
+  ---
+  duration_ms: 1010.55025
+  type: 'test'
+  ...
+# Subtest: Dazu winter vegetable tip is a sourced Lichun ingredient distinct from fermented winter vegetable
+ok 56 - Dazu winter vegetable tip is a sourced Lichun ingredient distinct from fermented winter vegetable
+  ---
+  duration_ms: 1007.756792
+  type: 'test'
+  ...
+# Subtest: Dongguan Shixia longan adds a sourced Xiaoshu window after Summer Solstice
+ok 57 - Dongguan Shixia longan adds a sourced Xiaoshu window after Summer Solstice
+  ---
+  duration_ms: 1057.413125
+  type: 'test'
+  ...
+# Subtest: Donghai winter-solstice cuttlefish has a seasonal source, generic image disclosure, and signed tarot profile
+ok 58 - Donghai winter-solstice cuttlefish has a seasonal source, generic image disclosure, and signed tarot profile
+  ---
+  duration_ms: 1032.787125
+  type: 'test'
+  ...
+# Subtest: homepage draw link opens tarot directly, including without JavaScript
+ok 59 - homepage draw link opens tarot directly, including without JavaScript
+  ---
+  duration_ms: 1.852625
+  type: 'test'
+  ...
+# Subtest: tarot.html: tarot first, flavor second, current page identified truthfully
+ok 60 - tarot.html: tarot first, flavor second, current page identified truthfully
+  ---
+  duration_ms: 1.523375
+  type: 'test'
+  ...
+# Subtest: lottery.html: tarot first, flavor second, current page identified truthfully
+ok 61 - lottery.html: tarot first, flavor second, current page identified truthfully
+  ---
+  duration_ms: 0.109625
+  type: 'test'
+  ...
+# Subtest: flavor remains an explicit usable page, not a redirect or removed quiz
+ok 62 - flavor remains an explicit usable page, not a redirect or removed quiz
+  ---
+  duration_ms: 0.468
+  type: 'test'
+  ...
+# Subtest: tarot still exposes shuffle, cut, draw and three-card reveal
+ok 63 - tarot still exposes shuffle, cut, draw and three-card reveal
+  ---
+  duration_ms: 0.371541
+  type: 'test'
+  ...
+# Subtest: internal view binding never intercepts the external draw link
+ok 64 - internal view binding never intercepts the external draw link
+  ---
+  duration_ms: 1.366292
+  type: 'test'
+  ...
+# Subtest: both mode links and homepage draw work under root and compatible preview paths
+ok 65 - both mode links and homepage draw work under root and compatible preview paths
+  ---
+  duration_ms: 4.746458
+  type: 'test'
+  ...
+# Subtest: updated homepage loads the scoped navigation binding with a new cache key
+ok 66 - updated homepage loads the scoped navigation binding with a new cache key
+  ---
+  duration_ms: 1.282
+  type: 'test'
+  ...
+# Subtest: Naji Tainung No. 17 pineapple has a sourced early-summer window
+ok 67 - Naji Tainung No. 17 pineapple has a sourced early-summer window
+  ---
+  duration_ms: 1041.474167
+  type: 'test'
+  ...
+# Subtest: Eshan mulberry flowers are a sourced, historically bounded Jingzhe food entry
+ok 68 - Eshan mulberry flowers are a sourced, historically bounded Jingzhe food entry
+  ---
+  duration_ms: 2.94725
+  type: 'test'
+  ...
+# Subtest: Doudian Nongkenuo 336 is a source-backed 2026 Xiaoshu entry, not a recurring window
+ok 69 - Doudian Nongkenuo 336 is a source-backed 2026 Xiaoshu entry, not a recurring window
+  ---
+  duration_ms: 1041.629583
+  type: 'test'
+  ...
+# Subtest: Fengqing walnut flowers have a sourced March-April fresh window and correct pool signatures
+ok 70 - Fengqing walnut flowers have a sourced March-April fresh window and correct pool signatures
+  ---
+  duration_ms: 1.586958
+  type: 'test'
+  ...
+# Subtest: Fengxian early water-red-caltrop stays a sourced Lichiu first-harvest entry
+ok 71 - Fengxian early water-red-caltrop stays a sourced Lichiu first-harvest entry
+  ---
+  duration_ms: 1039.762916
+  type: 'test'
+  ...
+# Subtest: stable canonical ingredient URLs discard unrelated query and fragments
+ok 72 - stable canonical ingredient URLs discard unrelated query and fragments
+  ---
+  duration_ms: 3.66925
+  type: 'test'
+  ...
+# Subtest: food ID is URL encoded and title is plain text
+ok 73 - food ID is URL encoded and title is plain text
+  ---
+  duration_ms: 0.494666
+  type: 'test'
+  ...
+# Subtest: native share is invoked synchronously once with exact title and URL
+ok 74 - native share is invoked synchronously once with exact title and URL
+  ---
+  duration_ms: 0.587084
+  type: 'test'
+  ...
+# Subtest: cancel does not copy and permits another share
+ok 75 - cancel does not copy and permits another share
+  ---
+  duration_ms: 1.081875
+  type: 'test'
+  ...
+# Subtest: absent native share falls back to copying
+ok 76 - absent native share falls back to copying
+  ---
+  duration_ms: 0.520833
+  type: 'test'
+  ...
+# Subtest: unsupported native share falls back to copying
+ok 77 - unsupported native share falls back to copying
+  ---
+  duration_ms: 0.130167
+  type: 'test'
+  ...
+# Subtest: throws native share falls back to copying
+ok 78 - throws native share falls back to copying
+  ---
+  duration_ms: 0.241167
+  type: 'test'
+  ...
+# Subtest: rejected native share falls back to copying
+ok 79 - rejected native share falls back to copying
+  ---
+  duration_ms: 0.192458
+  type: 'test'
+  ...
+# Subtest: missing clipboard reveals selectable accessible manual link
+ok 80 - missing clipboard reveals selectable accessible manual link
+  ---
+  duration_ms: 0.642
+  type: 'test'
+  ...
+# Subtest: denied clipboard reveals selectable accessible manual link
+ok 81 - denied clipboard reveals selectable accessible manual link
+  ---
+  duration_ms: 0.772292
+  type: 'test'
+  ...
+# Subtest: navigating to another food drops stale share errors and uses new food next time
+ok 82 - navigating to another food drops stale share errors and uses new food next time
+  ---
+  duration_ms: 0.471875
+  type: 'test'
+  ...
+# Subtest: closing while clipboard pending cannot show stale result or reenable closed view
+ok 83 - closing while clipboard pending cannot show stale result or reenable closed view
+  ---
+  duration_ms: 0.180083
+  type: 'test'
+  ...
+# Subtest: manual copy ignores repeated clicks while busy
+ok 84 - manual copy ignores repeated clicks while busy
+  ---
+  duration_ms: 0.116458
+  type: 'test'
+  ...
+# Subtest: Rongxian pomelo and Weixian radish are sourced Frostfall entries and bring that list to the 50% limit
+ok 85 - Rongxian pomelo and Weixian radish are sourced Frostfall entries and bring that list to the 50% limit
+  ---
+  duration_ms: 1033.49825
+  type: 'test'
+  ...
+# Subtest: Fushun ertai is a sourced Xiaohan harvest record with an honest historical window
+ok 86 - Fushun ertai is a sourced Xiaohan harvest record with an honest historical window
+  ---
+  duration_ms: 2.580583
+  type: 'test'
+  ...
+# Subtest: Fuzhou Bailu red-xun remains a sourced local-name seafood entry without invented species identity
+ok 87 - Fuzhou Bailu red-xun remains a sourced local-name seafood entry without invented species identity
+  ---
+  duration_ms: 1035.677583
+  type: 'test'
+  ...
+# Subtest: Fuzhou Cold Dew dried razor clam is recorded as a local processing custom, not current supply
+ok 88 - Fuzhou Cold Dew dried razor clam is recorded as a local processing custom, not current supply
+  ---
+  duration_ms: 2.683625
+  type: 'test'
+  ...
+# Subtest: Fuzhou liaozai keeps the reported local name without inventing a species identification
+ok 89 - Fuzhou liaozai keeps the reported local name without inventing a species identification
+  ---
+  duration_ms: 0.23975
+  type: 'test'
+  ...
+# Subtest: Fuzhou Jingzhe zhaocai is a sourced local preserved-food custom, not a fresh harvest claim
+ok 90 - Fuzhou Jingzhe zhaocai is a sourced local preserved-food custom, not a fresh harvest claim
+  ---
+  duration_ms: 1000.050333
+  type: 'test'
+  ...
+# Subtest: Fuzhou Bailu longan stays distinct from Minhou late longan and keeps its sourced local-food context
+ok 91 - Fuzhou Bailu longan stays distinct from Minhou late longan and keeps its sourced local-food context
+  ---
+  duration_ms: 1031.077334
+  type: 'test'
+  ...
+# Subtest: Fuzhou spring-equinox foods have local sources, matched images and current-term-only entries
+ok 92 - Fuzhou spring-equinox foods have local sources, matched images and current-term-only entries
+  ---
+  duration_ms: 1041.680208
+  type: 'test'
+  ...
+# Subtest: Gongliao Japanese horse mackerel is a sourced Autumn Equinox tasting entry with transparent catch limits
+ok 93 - Gongliao Japanese horse mackerel is a sourced Autumn Equinox tasting entry with transparent catch limits
+  ---
+  duration_ms: 983.555583
+  type: 'test'
+  ...
+# Subtest: sourced Great Heat additions are term-specific and accurately registered
+ok 94 - sourced Great Heat additions are term-specific and accurately registered
+  ---
+  duration_ms: 1019.454041
+  type: 'test'
+  ...
+# Subtest: Guangdong Qingming river-seafood entries preserve interview scope, local-name uncertainty and draw signatures
+ok 95 - Guangdong Qingming river-seafood entries preserve interview scope, local-name uncertainty and draw signatures
+  ---
+  duration_ms: 1055.074083
+  type: 'test'
+  ...
+# Subtest: Guangning Ma bamboo shoot keeps the Lidong harvest observation year explicit
+ok 96 - Guangning Ma bamboo shoot keeps the Lidong harvest observation year explicit
+  ---
+  duration_ms: 1017.805125
+  type: 'test'
+  ...
+# Subtest: Guangzhou Qingming jiaocai and Panyu Qingming sugarcane are sourced term-exclusive entries with matched real photographs
+ok 97 - Guangzhou Qingming jiaocai and Panyu Qingming sugarcane are sourced term-exclusive entries with matched real photographs
+  ---
+  duration_ms: 1030.165333
+  type: 'test'
+  ...
+# Subtest: Hanzhong tender toon shoots are limited to Qingming from the sourced pre-Guyu picking window
+ok 98 - Hanzhong tender toon shoots are limited to Qingming from the sourced pre-Guyu picking window
+  ---
+  duration_ms: 2.292917
+  type: 'test'
+  ...
+# Subtest: Muzhou yellow-sand clams separate Qingming best taste from their longer fresh-market window
+ok 99 - Muzhou yellow-sand clams separate Qingming best taste from their longer fresh-market window
+  ---
+  duration_ms: 0.638
+  type: 'test'
+  ...
+# Subtest: Haojiang winter foods use sourced term windows, clear image notes and current lottery signatures
+ok 100 - Haojiang winter foods use sourced term windows, clear image notes and current lottery signatures
+  ---
+  duration_ms: 1046.979291
+  type: 'test'
+  ...
+# Subtest: Hechuan Qingshicao red radish is a sourced Winter Solstice entry
+ok 101 - Hechuan Qingshicao red radish is a sourced Winter Solstice entry
+  ---
+  duration_ms: 1028.418625
+  type: 'test'
+  ...
+# Subtest: Heze Shannong pear is a sourced late-October maturity entry unique to Frost Descent
+ok 102 - Heze Shannong pear is a sourced late-October maturity entry unique to Frost Descent
+  ---
+  duration_ms: 987.667125
+  type: 'test'
+  ...
+# Subtest: Huairou Hongxiaoli pear follows the documented mid-to-late October harvest window
+ok 103 - Huairou Hongxiaoli pear follows the documented mid-to-late October harvest window
+  ---
+  duration_ms: 26.844084
+  type: 'test'
+  ...
+# Subtest: Huangpi Luzui water chestnut is a sourced Great Cold harvest entry, distinct from the previous term
+ok 104 - Huangpi Luzui water chestnut is a sourced Great Cold harvest entry, distinct from the previous term
+  ---
+  duration_ms: 1069.028708
+  type: 'test'
+  ...
+# Subtest: Huishui Hanlu tea preserves the 2026-only harvest evidence and adds an exclusive Hanlu list entry
+ok 105 - Huishui Hanlu tea preserves the 2026-only harvest evidence and adds an exclusive Hanlu list entry
+  ---
+  duration_ms: 1021.368541
+  type: 'test'
+  ...
+# Subtest: Huizhou Chengkan tea shoots are a sourced Qingming-after entry with shared reference photo
+ok 106 - Huizhou Chengkan tea shoots are a sourced Qingming-after entry with shared reference photo
+  ---
+  duration_ms: 1037.856583
+  type: 'test'
+  ...
+# Subtest: Huocheng Xiangfei crabapple adds a cross-year August harvest window to Daxu
+ok 107 - Huocheng Xiangfei crabapple adds a cross-year August harvest window to Daxu
+  ---
+  duration_ms: 991.835916
+  type: 'test'
+  ...
+# Subtest: Du Ruan bitter melon is a sourced recurring Lixia tasting point
+ok 108 - Du Ruan bitter melon is a sourced recurring Lixia tasting point
+  ---
+  duration_ms: 1015.733833
+  type: 'test'
+  ...
+# Subtest: Jiangning white-dew tea records the sourced autumn pick and stays exclusive to Bailu
+ok 109 - Jiangning white-dew tea records the sourced autumn pick and stays exclusive to Bailu
+  ---
+  duration_ms: 1005.69
+  type: 'test'
+  ...
+# Subtest: Junan late peach is limited to its 2026-10-15 harvest report and the Cold Dew list
+ok 110 - Junan late peach is limited to its 2026-10-15 harvest report and the Cold Dew list
+  ---
+  duration_ms: 2130.85875
+  type: 'test'
+  ...
+# Subtest: Kaiyuan Xishan hulu pear is a sourced Hanlu harvest-peak entry with an honest local-variety note
+ok 111 - Kaiyuan Xishan hulu pear is a sourced Hanlu harvest-peak entry with an honest local-variety note
+  ---
+  duration_ms: 1031.504292
+  type: 'test'
+  ...
+# Subtest: 基隆寒露目贼保留农业部节气渔讯与乌贼俗名映射，且只进入寒露名单
+ok 112 - 基隆寒露目贼保留农业部节气渔讯与乌贼俗名映射，且只进入寒露名单
+  ---
+  duration_ms: 1039.959708
+  type: 'test'
+  ...
+# Subtest: Keelung North Xiaoshu amberjack and red emperor are separate sourced catch entries with species and stock limits
+ok 113 - Keelung North Xiaoshu amberjack and red emperor are separate sourced catch entries with species and stock limits
+  ---
+  duration_ms: 3.127334
+  type: 'test'
+  ...
+# Subtest: Keelung small-squid entry is limited to the Xiaoshu source window and retains the local-name caveat
+ok 114 - Keelung small-squid entry is limited to the Xiaoshu source window and retains the local-name caveat
+  ---
+  duration_ms: 1100.646542
+  type: 'test'
+  ...
+# Subtest: Laiyang pear is limited to the source-recommended Cold Dew-to-Frost-Descent interval
+ok 115 - Laiyang pear is limited to the source-recommended Cold Dew-to-Frost-Descent interval
+  ---
+  duration_ms: 1.267958
+  type: 'test'
+  ...
+# Subtest: Lanxi Huitan sugarcane uses the sourced late-November bulk-harvest term and completes Lidong overlap target
+ok 116 - Lanxi Huitan sugarcane uses the sourced late-November bulk-harvest term and completes Lidong overlap target
+  ---
+  duration_ms: 1031.124792
+  type: 'test'
+  ...
+# Subtest: Lin-an spring Lei bamboo shoots have an official natural-season window and verified pool metadata
+ok 117 - Lin-an spring Lei bamboo shoots have an official natural-season window and verified pool metadata
+  ---
+  duration_ms: 1063.834166
+  type: 'test'
+  ...
+# Subtest: Lixian QinCui apples are a 2026-only Hanlu maturity record, not a recurring supply claim
+ok 118 - Lixian QinCui apples are a 2026-only Hanlu maturity record, not a recurring supply claim
+  ---
+  duration_ms: 1041.917083
+  type: 'test'
+  ...
+# Subtest: detail food photos belong to existing entries and ship with the site
+ok 119 - detail food photos belong to existing entries and ship with the site
+  ---
+  duration_ms: 2.627166
+  type: 'test'
+  ...
+# Subtest: all 77 recipes and sensory source fingerprints match; disabled stay explicit
+ok 120 - all 77 recipes and sensory source fingerprints match; disabled stay explicit
+  ---
+  duration_ms: 2.55725
+  type: 'test'
+  ...
+# Subtest: five-question schema exposes taste/texture/cooking/curiosity, not procurement or familiarity
+ok 121 - five-question schema exposes taste/texture/cooking/curiosity, not procurement or familiarity
+  ---
+  duration_ms: 1.628334
+  type: 'test'
+  ...
+# Subtest: taste changes score independently of texture
+ok 122 - taste changes score independently of texture
+  ---
+  duration_ms: 0.452792
+  type: 'test'
+  ...
+# Subtest: texture changes score independently of taste
+ok 123 - texture changes score independently of taste
+  ---
+  duration_ms: 0.172708
+  type: 'test'
+  ...
+# Subtest: cooking preference filters to tagged methods, not effort or purchase
+ok 124 - cooking preference filters to tagged methods, not effort or purchase
+  ---
+  duration_ms: 23.108417
+  type: 'test'
+  ...
+# Subtest: every selected preference group must match a food or its declared recipe
+ok 125 - every selected preference group must match a food or its declared recipe
+  ---
+  duration_ms: 0.285291
+  type: 'test'
+  ...
+# Subtest: sour/spicy seasoning is not attributed to raw lotus runners
+ok 126 - sour/spicy seasoning is not attributed to raw lotus runners
+  ---
+  duration_ms: 0.387917
+  type: 'test'
+  ...
+# Subtest: curiosity weights concrete features, not more random noise or assumed familiarity
+ok 127 - curiosity weights concrete features, not more random noise or assumed familiarity
+  ---
+  duration_ms: 0.87675
+  type: 'test'
+  ...
+# Subtest: high curiosity never admits disabled foods or overrides exclusions
+ok 128 - high curiosity never admits disabled foods or overrides exclusions
+  ---
+  duration_ms: 1.277375
+  type: 'test'
+  ...
+# Subtest: obsolete buy/effort/adventure properties do not change recommendations
+ok 129 - obsolete buy/effort/adventure properties do not change recommendations
+  ---
+  duration_ms: 102.166292
+  type: 'test'
+  ...
+# Subtest: stale sensory descriptions receive no preference or curiosity bonus
+ok 130 - stale sensory descriptions receive no preference or curiosity bonus
+  ---
+  duration_ms: 0.290584
+  type: 'test'
+  ...
+# Subtest: unmatched preferences keep a slot blank instead of recommending a mismatch
+ok 131 - unmatched preferences keep a slot blank instead of recommending a mismatch
+  ---
+  duration_ms: 0.568125
+  type: 'test'
+  ...
+# Subtest: question UI contains five new headings and no legacy input controls
+ok 132 - question UI contains five new headings and no legacy input controls
+  ---
+  duration_ms: 0.546583
+  type: 'test'
+  ...
+# Subtest: question page has no stale static element references after simplifying calendar
+ok 133 - question page has no stale static element references after simplifying calendar
+  ---
+  duration_ms: 0.236542
+  type: 'test'
+  ...
+# Subtest: calendar action uses native file sharing when available and explains user confirmation
+ok 134 - calendar action uses native file sharing when available and explains user confirmation
+  ---
+  duration_ms: 0.138458
+  type: 'test'
+  ...
+# Subtest: next six terms excludes current term and crosses New Year
+ok 135 - next six terms excludes current term and crosses New Year
+  ---
+  duration_ms: 0.419083
+  type: 'test'
+  ...
+# Subtest: exact term instant is current, not future
+ok 136 - exact term instant is current, not future
+  ---
+  duration_ms: 0.359667
+  type: 'test'
+  ...
+# Subtest: data horizon fails closed
+ok 137 - data horizon fails closed
+  ---
+  duration_ms: 0.051792
+  type: 'test'
+  ...
+# Subtest: whole term interval includes supported next-month days
+ok 138 - whole term interval includes supported next-month days
+  ---
+  duration_ms: 0.390459
+  type: 'test'
+  ...
+# Subtest: late-month records do not recommend early February morels
+ok 139 - late-month records do not recommend early February morels
+  ---
+  duration_ms: 0.404375
+  type: 'test'
+  ...
+# Subtest: multi-origin crop cannot borrow another region season
+ok 140 - multi-origin crop cannot borrow another region season
+  ---
+  duration_ms: 0.501208
+  type: 'test'
+  ...
+# Subtest: seed gives repeatable unique results with legal dates
+ok 141 - seed gives repeatable unique results with legal dates
+  ---
+  duration_ms: 62.681708
+  type: 'test'
+  ...
+# Subtest: mutated recipes fail closed
+ok 142 - mutated recipes fail closed
+  ---
+  duration_ms: 0.217958
+  type: 'test'
+  ...
+# Subtest: unknown custom exclusions block and known aliases resolve
+ok 143 - unknown custom exclusions block and known aliases resolve
+  ---
+  duration_ms: 1.641083
+  type: 'test'
+  ...
+# Subtest: vegan excludes animal additions including eggs, dairy and optional honey
+ok 144 - vegan excludes animal additions including eggs, dairy and optional honey
+  ---
+  duration_ms: 0.557542
+  type: 'test'
+  ...
+# Subtest: seafood restriction includes shrimp accompaniments
+ok 145 - seafood restriction includes shrimp accompaniments
+  ---
+  duration_ms: 0.080125
+  type: 'test'
+  ...
+# Subtest: unknown oil ingredients fail closed for peanut exclusion
+ok 146 - unknown oil ingredients fail closed for peanut exclusion
+  ---
+  duration_ms: 0.061458
+  type: 'test'
+  ...
+# Subtest: excluding all foods leaves honest blanks, even with maximum curiosity
+ok 147 - excluding all foods leaves honest blanks, even with maximum curiosity
+  ---
+  duration_ms: 1.511208
+  type: 'test'
+  ...
+# Subtest: locked foods stay fixed during full redraw
+ok 148 - locked foods stay fixed during full redraw
+  ---
+  duration_ms: 110.85725
+  type: 'test'
+  ...
+# Subtest: single-slot reroll preserves the other five
+ok 149 - single-slot reroll preserves the other five
+  ---
+  duration_ms: 243.027917
+  type: 'test'
+  ...
+# Subtest: matching reserves singleton slots before plentiful slots
+ok 150 - matching reserves singleton slots before plentiful slots
+  ---
+  duration_ms: 0.856958
+  type: 'test'
+  ...
+# Subtest: 12 months x 6 exclusions x 3 curiosity levels preserve restrictions and date windows
+ok 151 - 12 months x 6 exclusions x 3 curiosity levels preserve restrictions and date windows
+  ---
+  duration_ms: 2013.143375
+  type: 'test'
+  ...
+# Subtest: time zones include China, Taipei and New York DST
+ok 152 - time zones include China, Taipei and New York DST
+  ---
+  duration_ms: 1.037459
+  type: 'test'
+  ...
+# Subtest: calendar defaults to online inquiry three days ahead without procurement answers
+ok 153 - calendar defaults to online inquiry three days ahead without procurement answers
+  ---
+  duration_ms: 78.876
+  type: 'test'
+  ...
+# Subtest: ICS: six events and alarms, UTF8 folds <=75 bytes, CRLF, no RRULE
+ok 154 - ICS: six events and alarms, UTF8 folds <=75 bytes, CRLF, no RRULE
+  ---
+  duration_ms: 50.436709
+  type: 'test'
+  ...
+# Subtest: ICS UID survives redraw, SEQUENCE increases, preferences stay private
+ok 155 - ICS UID survives redraw, SEQUENCE increases, preferences stay private
+  ---
+  duration_ms: 75.27275
+  type: 'test'
+  ...
+# Subtest: ICS supports subsets and rejects dates outside supported windows
+ok 156 - ICS supports subsets and rejects dates outside supported windows
+  ---
+  duration_ms: 37.778916
+  type: 'test'
+  ...
+# Subtest: past inquiry reminders move forward; expired eating dates refuse export
+ok 157 - past inquiry reminders move forward; expired eating dates refuse export
+  ---
+  duration_ms: 34.481375
+  type: 'test'
+  ...
+# Subtest: ICS escapes text injection and folds without splitting emoji
+ok 158 - ICS escapes text injection and folds without splitting emoji
+  ---
+  duration_ms: 0.278417
+  type: 'test'
+  ...
+# Subtest: invalid new answers are rejected
+ok 159 - invalid new answers are rejected
+  ---
+  duration_ms: 0.196458
+  type: 'test'
+  ...
+# Subtest: 禄丰中村早熟板栗按七月下旬后续批次进入大暑，不冒充整季独有
+ok 160 - 禄丰中村早熟板栗按七月下旬后续批次进入大暑，不冒充整季独有
+  ---
+  duration_ms: 1094.205542
+  type: 'test'
+  ...
+# Subtest: Luogang orange is a source-backed Small Snow to Major Snow harvest-window entry
+ok 161 - Luogang orange is a source-backed Small Snow to Major Snow harvest-window entry
+  ---
+  duration_ms: 1070.631125
+  type: 'test'
+  ...
+# Subtest: Luquan greenhouse toon records the sourced New Year first crop and distinguishes it from open-field spring toon
+ok 162 - Luquan greenhouse toon records the sourced New Year first crop and distinguishes it from open-field spring toon
+  ---
+  duration_ms: 2.86625
+  type: 'test'
+  ...
+# Subtest: the greenhouse first crop adds one Xiaohan-only pool entry and reduces the audited gap
+ok 163 - the greenhouse first crop adds one Xiaohan-only pool entry and reduces the audited gap
+  ---
+  duration_ms: 1034.852208
+  type: 'test'
+  ...
+# Subtest: Miaoli fresh jujube is a sourced Daxu selection with its wider harvest season retained
+ok 164 - Miaoli fresh jujube is a sourced Daxu selection with its wider harvest season retained
+  ---
+  duration_ms: 1093.3475
+  type: 'test'
+  ...
+# Subtest: Minhou Chayuan highland spring shoots follow the documented Jingzhe-to-Qingming harvest window
+ok 165 - Minhou Chayuan highland spring shoots follow the documented Jingzhe-to-Qingming harvest window
+  ---
+  duration_ms: 1009.416792
+  type: 'test'
+  ...
+# Subtest: Miyun Houchangjiawu Yuanwei No. 1 tomato has a sourced winter greenhouse entry and generic real-photo attribution
+ok 166 - Miyun Houchangjiawu Yuanwei No. 1 tomato has a sourced winter greenhouse entry and generic real-photo attribution
+  ---
+  duration_ms: 1001.53275
+  type: 'test'
+  ...
+# Subtest: Mouding winter fava beans use the reported month-level harvest and distinguish fresh pods
+ok 167 - Mouding winter fava beans use the reported month-level harvest and distinguish fresh pods
+  ---
+  duration_ms: 1.64325
+  type: 'test'
+  ...
+# Subtest: 晶桥螺蛳 is a sourced Qingming-only local taste entry with clear identity and cooking limits
+ok 168 - 晶桥螺蛳 is a sourced Qingming-only local taste entry with clear identity and cooking limits
+  ---
+  duration_ms: 2286.164625
+  type: 'test'
+  ...
+# Subtest: seven additions are unique, complete, local illustrated and separately sourced
+ok 169 - seven additions are unique, complete, local illustrated and separately sourced
+  ---
+  duration_ms: 1.63975
+  type: 'test'
+  ...
+# Subtest: all new date windows include boundaries and exclude days just outside, including year rollover
+ok 170 - all new date windows include boundaries and exclude days just outside, including year rollover
+  ---
+  duration_ms: 1.418834
+  type: 'test'
+  ...
+# Subtest: tarot and six-term scheduling honor the same eating window rather than supply months
+ok 171 - tarot and six-term scheduling honor the same eating window rather than supply months
+  ---
+  duration_ms: 13.721125
+  type: 'test'
+  ...
+# Subtest: new recipes respect fish, wheat, egg and sesame exclusions and match declared preferences
+ok 172 - new recipes respect fish, wheat, egg and sesame exclusions and match declared preferences
+  ---
+  duration_ms: 0.260167
+  type: 'test'
+  ...
+# Subtest: home uses full solar-term intervals for late-April cherries and cross-year silver stems
+ok 173 - home uses full solar-term intervals for late-April cherries and cross-year silver stems
+  ---
+  duration_ms: 13.556625
+  type: 'test'
+  ...
+# Subtest: Ningbo spring alfalfa shoots preserve the local meaning of caozi and its short early-spring window
+ok 174 - Ningbo spring alfalfa shoots preserve the local meaning of caozi and its short early-spring window
+  ---
+  duration_ms: 1020.6465
+  type: 'test'
+  ...
+# Subtest: Fenghua Xikou spring Mao bamboo shoots are recorded as a local March harvest, not a year-round claim
+ok 175 - Fenghua Xikou spring Mao bamboo shoots are recorded as a local March harvest, not a year-round claim
+  ---
+  duration_ms: 1049.838291
+  type: 'test'
+  ...
+# Subtest: New Taipei native yam is a Great Cold recommendation, not a verified harvest date
+ok 176 - New Taipei native yam is a Great Cold recommendation, not a verified harvest date
+  ---
+  duration_ms: 1021.157125
+  type: 'test'
+  ...
+# Subtest: Gongliao thorn purple algae follows its documented winter window and best-taste period
+ok 177 - Gongliao thorn purple algae follows its documented winter window and best-taste period
+  ---
+  duration_ms: 1028.439375
+  type: 'test'
+  ...
+# Subtest: named regional foods retain their local identity before any introduced growing area
+ok 178 - named regional foods retain their local identity before any introduced growing area
+  ---
+  duration_ms: 3.990917
+  type: 'test'
+  ...
+# Subtest: every map origin has plausible regional coordinates, declared sources and its own months
+ok 179 - every map origin has plausible regional coordinates, declared sources and its own months
+  ---
+  duration_ms: 2.660125
+  type: 'test'
+  ...
+# Subtest: multi-origin scheduling selects only the origin in season across all twelve months
+ok 180 - multi-origin scheduling selects only the origin in season across all twelve months
+  ---
+  duration_ms: 1.173125
+  type: 'test'
+  ...
+# Subtest: season cards and hero label the active growing area rather than combining all origins
+ok 181 - season cards and hero label the active growing area rather than combining all origins
+  ---
+  duration_ms: 0.678
+  type: 'test'
+  ...
+# Subtest: regional flavors have their own declared sources and do not inherit the recipe flavor
+ok 182 - regional flavors have their own declared sources and do not inherit the recipe flavor
+  ---
+  duration_ms: 0.850125
+  type: 'test'
+  ...
+# Subtest: a map cluster keeps two locations of one food instead of dropping one by food ID
+ok 183 - a map cluster keeps two locations of one food instead of dropping one by food ID
+  ---
+  duration_ms: 1.448917
+  type: 'test'
+  ...
+# Subtest: Penghu black pomfret is listed only as a White Dew fishery lead with identity and inventory limits
+ok 184 - Penghu black pomfret is listed only as a White Dew fishery lead with identity and inventory limits
+  ---
+  duration_ms: 1006.548958
+  type: 'test'
+  ...
+# Subtest: Pengjia mahi-mahi is a sourced Xiaoshu fishery lead, not a current-stock or species-identification claim
+ok 185 - Pengjia mahi-mahi is a sourced Xiaoshu fishery lead, not a current-stock or species-identification claim
+  ---
+  duration_ms: 1017.324125
+  type: 'test'
+  ...
+# Subtest: Pingdu Majiagou celery has a sourced start-of-Lidong harvest note and lowers only Lidong overlap
+ok 186 - Pingdu Majiagou celery has a sourced start-of-Lidong harvest note and lowers only Lidong overlap
+  ---
+  duration_ms: 1066.220125
+  type: 'test'
+  ...
+# Subtest: Pinggu Yingshuanghong late peach uses the documented Frostfall-to-Lidong harvest window
+ok 187 - Pinggu Yingshuanghong late peach uses the documented Frostfall-to-Lidong harvest window
+  ---
+  duration_ms: 1074.433209
+  type: 'test'
+  ...
+# Subtest: catalog adds five distinct local food entries, not five renamed existing recipes
+ok 188 - catalog adds five distinct local food entries, not five renamed existing recipes
+  ---
+  duration_ms: 0.922209
+  type: 'test'
+  ...
+# Subtest: new recipes and sensory fingerprints match explicit review metadata
+ok 189 - new recipes and sensory fingerprints match explicit review metadata
+  ---
+  duration_ms: 0.288958
+  type: 'test'
+  ...
+# Subtest: all registered serving images exist and disclose their role
+ok 190 - all registered serving images exist and disclose their role
+  ---
+  duration_ms: 1.266375
+  type: 'test'
+  ...
+# Subtest: every food with a separate dish image has a valid file, while ingredient images remain available
+ok 191 - every food with a separate dish image has a valid file, while ingredient images remain available
+  ---
+  duration_ms: 0.969959
+  type: 'test'
+  ...
+# Subtest: exactly twelve existing fruit presentations are restored without inventing dish photos
+ok 192 - exactly twelve existing fruit presentations are restored without inventing dish photos
+  ---
+  duration_ms: 0.283291
+  type: 'test'
+  ...
+# Subtest: generated fruit illustrations remain labeled non-photographic
+ok 193 - generated fruit illustrations remain labeled non-photographic
+  ---
+  duration_ms: 0.108958
+  type: 'test'
+  ...
+# Subtest: invalid primary dish path is rejected instead of falling back to another image
+ok 194 - invalid primary dish path is rejected instead of falling back to another image
+  ---
+  duration_ms: 0.634042
+  type: 'test'
+  ...
+# Subtest: habitat image alone cannot silently qualify a food for the draw
+ok 195 - habitat image alone cannot silently qualify a food for the draw
+  ---
+  duration_ms: 0.142125
+  type: 'test'
+  ...
+# Subtest: September pool contains fifteen actual food IDs
+ok 196 - September pool contains fifteen actual food IDs
+  ---
+  duration_ms: 17.833917
+  type: 'test'
+  ...
+# Subtest: June pool contains eight including fresh rakkyo, grass shoots and sour quince
+ok 197 - June pool contains eight including fresh rakkyo, grass shoots and sour quince
+  ---
+  duration_ms: 0.772333
+  type: 'test'
+  ...
+# Subtest: October midmonth pool is ten, without shifting frost-gated fruits earlier
+ok 198 - October midmonth pool is ten, without shifting frost-gated fruits earlier
+  ---
+  duration_ms: 1.788667
+  type: 'test'
+  ...
+# Subtest: three full September cycles cover every candidate once per cycle
+ok 199 - three full September cycles cover every candidate once per cycle
+  ---
+  duration_ms: 50.890709
+  type: 'test'
+  ...
+# Subtest: cycle guarantee also holds for sparse February and June pools
+ok 200 - cycle guarantee also holds for sparse February and June pools
+  ---
+  duration_ms: 27.476083
+  type: 'test'
+  ...
+# Subtest: one-card compatibility mode uses the same no-replacement cycle
+ok 201 - one-card compatibility mode uses the same no-replacement cycle
+  ---
+  duration_ms: 13.309209
+  type: 'test'
+  ...
+# Subtest: newly eligible food gets a chance before a previous food repeats
+ok 202 - newly eligible food gets a chance before a previous food repeats
+  ---
+  duration_ms: 1.316584
+  type: 'test'
+  ...
+# Subtest: out-of-season and excluded IDs do not occupy the active bag
+ok 203 - out-of-season and excluded IDs do not occupy the active bag
+  ---
+  duration_ms: 0.110666
+  type: 'test'
+  ...
+# Subtest: singleton keeps explicit repetition instead of inventing a dish
+ok 204 - singleton keeps explicit repetition instead of inventing a dish
+  ---
+  duration_ms: 1.2345
+  type: 'test'
+  ...
+# Subtest: restrictions and reviewed season dates still hold across all twelve months
+ok 205 - restrictions and reviewed season dates still hold across all twelve months
+  ---
+  duration_ms: 100.203791
+  type: 'test'
+  ...
+# Subtest: fresh rakkyo does not appear as a year-round preserved product
+ok 206 - fresh rakkyo does not appear as a year-round preserved product
+  ---
+  duration_ms: 4.886375
+  type: 'test'
+  ...
+# Subtest: pan-cai keeps Wenzhou winter and introduced Ningxia autumn separate
+ok 207 - pan-cai keeps Wenzhou winter and introduced Ningxia autumn separate
+  ---
+  duration_ms: 5.0465
+  type: 'test'
+  ...
+# Subtest: four disabled ingredients remain disabled despite larger pool
+ok 208 - four disabled ingredients remain disabled despite larger pool
+  ---
+  duration_ms: 2.566
+  type: 'test'
+  ...
+# Subtest: draw history stays page-local while personal tasting records persist in their separate module
+ok 209 - draw history stays page-local while personal tasting records persist in their separate module
+  ---
+  duration_ms: 0.700417
+  type: 'test'
+  ...
+# Subtest: legacy entries retain month-based eligibility without new date or term windows
+ok 210 - legacy entries retain month-based eligibility without new date or term windows
+  ---
+  duration_ms: 0.274666
+  type: 'test'
+  ...
+# Subtest: 蒲江春见从有来源支持的大寒始采期入选，后续季节和图像性质均如实标注
+ok 211 - 蒲江春见从有来源支持的大寒始采期入选，后续季节和图像性质均如实标注
+  ---
+  duration_ms: 1016.020791
+  type: 'test'
+  ...
+# Subtest: Qidong Lyusi hairtail is a sourced Winter Solstice taste marker, not an exclusive fishing season
+ok 212 - Qidong Lyusi hairtail is a sourced Winter Solstice taste marker, not an exclusive fishing season
+  ---
+  duration_ms: 1044.253167
+  type: 'test'
+  ...
+# Subtest: Shazikou li-xia shrimp has multi-year spring-catch evidence, a generic licensed photo and a synchronized tarot profile
+ok 213 - Shazikou li-xia shrimp has multi-year spring-catch evidence, a generic licensed photo and a synchronized tarot profile
+  ---
+  duration_ms: 1074.344292
+  type: 'test'
+  ...
+# Subtest: Qingdao Shazikou li-xia keeps its local-name caveat, sourced spring window and draw signatures
+ok 214 - Qingdao Shazikou li-xia keeps its local-name caveat, sourced spring window and draw signatures
+  ---
+  duration_ms: 1106.881083
+  type: 'test'
+  ...
+# Subtest: Qingdao spring mackerel is retained as a dated Qingming fish-market clue, not a recurring supply guarantee
+ok 215 - Qingdao spring mackerel is retained as a dated Qingming fish-market clue, not a recurring supply guarantee
+  ---
+  duration_ms: 1065.2385
+  type: 'test'
+  ...
+# Subtest: Qingdao Shuangdongmi is a sourced ultra-late peach cultivar with a transparent early-November entry
+ok 216 - Qingdao Shuangdongmi is a sourced ultra-late peach cultivar with a transparent early-November entry
+  ---
+  duration_ms: 1037.888542
+  type: 'test'
+  ...
+# Subtest: Qingdao greenhouse Eureka blueberries have a sourced Dahan window and accurately labeled photo reference
+ok 217 - Qingdao greenhouse Eureka blueberries have a sourced Dahan window and accurately labeled photo reference
+  ---
+  duration_ms: 1076.529333
+  type: 'test'
+  ...
+# Subtest: Qixia winter-after apples stay a historical late-picking batch, not a cultivar or current-supply claim
+ok 218 - Qixia winter-after apples stay a historical late-picking batch, not a cultivar or current-supply claim
+  ---
+  duration_ms: 1023.01725
+  type: 'test'
+  ...
+# Subtest: Qujing shasong tips use a month-level sourced spring window and remain visible across the documented market season
+ok 219 - Qujing shasong tips use a month-level sourced spring window and remain visible across the documented market season
+  ---
+  duration_ms: 1094.535458
+  type: 'test'
+  ...
+# Subtest: Renhua Danxia gonggan is a sourced late-November Xiaoxue entry with transparent harvest uncertainty
+ok 220 - Renhua Danxia gonggan is a sourced late-November Xiaoxue entry with transparent harvest uncertainty
+  ---
+  duration_ms: 1104.176458
+  type: 'test'
+  ...
+# Subtest: eight orientation patterns round-trip exact cards, food and full original reading
+ok 221 - eight orientation patterns round-trip exact cards, food and full original reading
+  ---
+  duration_ms: 689.901458
+  type: 'test'
+  ...
+# Subtest: share URLs preserve site subdirectory, remove transient query and use correct result page
+ok 222 - share URLs preserve site subdirectory, remove transient query and use correct result page
+  ---
+  duration_ms: 7220.052
+  type: 'test'
+  ...
+# Subtest: share dialog copy distinguishes public result links from local previews
+ok 223 - share dialog copy distinguishes public result links from local previews
+  ---
+  duration_ms: 0.229583
+  type: 'test'
+  ...
+# Subtest: six slots retain dates, foods, place, recommendations, lock and explicit empty slots
+ok 224 - six slots retain dates, foods, place, recommendations, lock and explicit empty slots
+  ---
+  duration_ms: 5728.649833
+  type: 'test'
+  ...
+# Subtest: result snapshots never contain preferences, private exclusion text or local intentions
+ok 225 - result snapshots never contain preferences, private exclusion text or local intentions
+  ---
+  duration_ms: 4229.497416
+  type: 'test'
+  ...
+# Subtest: unknown food or card references fail without producing replacement results
+ok 226 - unknown food or card references fail without producing replacement results
+  ---
+  duration_ms: 4301.943791
+  type: 'test'
+  ...
+# Subtest: malformed, unsupported and truncated tokens never return a partial result
+ok 227 - malformed, unsupported and truncated tokens never return a partial result
+  ---
+  duration_ms: 4263.629208
+  type: 'test'
+  ...
+# Subtest: oversized compressed data is rejected after bounded decompression
+ok 228 - oversized compressed data is rejected after bounded decompression
+  ---
+  duration_ms: 0.993917
+  type: 'test'
+  ...
+# Subtest: invalid calendar dates, duplicate slots and reversed windows are rejected
+ok 229 - invalid calendar dates, duplicate slots and reversed windows are rejected
+  ---
+  duration_ms: 4350.110584
+  type: 'test'
+  ...
+# Subtest: uncompressed fallback can be opened too
+ok 230 - uncompressed fallback can be opened too
+  ---
+  duration_ms: 4246.539917
+  type: 'test'
+  ...
+# Subtest: forged term labels or dates cannot be replayed as an authentic six-term window
+ok 231 - forged term labels or dates cannot be replayed as an authentic six-term window
+  ---
+  duration_ms: 4250.939542
+  type: 'test'
+  ...
+# Subtest: 融安小洲头菜按农历岁末鲜采记录覆盖小寒与大寒，并区分原菜和腌制品
+ok 232 - 融安小洲头菜按农历岁末鲜采记录覆盖小寒与大寒，并区分原菜和腌制品
+  ---
+  duration_ms: 983.258709
+  type: 'test'
+  ...
+# Subtest: cross-month current term counts its retained hero in all and category totals
+ok 233 - cross-month current term counts its retained hero in all and category totals
+  ---
+  duration_ms: 85.737375
+  type: 'test'
+  ...
+# Subtest: every term and category keeps consistent totals while retaining the hero once
+ok 234 - every term and category keeps consistent totals while retaining the hero once
+  ---
+  duration_ms: 302.00525
+  type: 'test'
+  ...
+# Subtest: 上海大暑专题中的水蜜桃和醉金香葡萄保留单年来源精度
+ok 235 - 上海大暑专题中的水蜜桃和醉金香葡萄保留单年来源精度
+  ---
+  duration_ms: 1051.8815
+  type: 'test'
+  ...
+# Subtest: Shawan Yuba red Stropharia has a sourced Dahan start window and matching lottery signature
+ok 236 - Shawan Yuba red Stropharia has a sourced Dahan start window and matching lottery signature
+  ---
+  duration_ms: 1002.350541
+  type: 'test'
+  ...
+# Subtest: Shexian Qizili hickory is a recurring Bailu harvest entry with fresh-fruit and processed-nut states separated
+ok 237 - Shexian Qizili hickory is a recurring Bailu harvest entry with fresh-fruit and processed-nut states separated
+  ---
+  duration_ms: 1130.225625
+  type: 'test'
+  ...
+# Subtest: Shidian Lixia green plums use the local picking custom without inflating adjacent terms
+ok 238 - Shidian Lixia green plums use the local picking custom without inflating adjacent terms
+  ---
+  duration_ms: 1028.021375
+  type: 'test'
+  ...
+# Subtest: Jiuzhaigou Lixia water fern preserves the limits of local market evidence
+ok 239 - Jiuzhaigou Lixia water fern preserves the limits of local market evidence
+  ---
+  duration_ms: 998.796459
+  type: 'test'
+  ...
+# Subtest: Shiping Shaochong fresh walnut is listed only for Bailu and has reviewed tarot signatures
+ok 240 - Shiping Shaochong fresh walnut is listed only for Bailu and has reviewed tarot signatures
+  ---
+  duration_ms: 1092.671792
+  type: 'test'
+  ...
+# Subtest: 思南鼠曲草嫩苗按清明前后较佳采食窗口收录并与当地清明粑相连
+ok 241 - 思南鼠曲草嫩苗按清明前后较佳采食窗口收录并与当地清明粑相连
+  ---
+  duration_ms: 1102.196958
+  type: 'test'
+  ...
+# Subtest: 松江仓桥水晶梨以大暑晚熟批次入选，保留品种和采期差异
+ok 242 - 松江仓桥水晶梨以大暑晚熟批次入选，保留品种和采期差异
+  ---
+  duration_ms: 980.5935
+  type: 'test'
+  ...
+# Subtest: spring-equinox and Qingming additions match reviewed sources, images and tarot signatures
+ok 243 - spring-equinox and Qingming additions match reviewed sources, images and tarot signatures
+  ---
+  duration_ms: 28.259375
+  type: 'test'
+  ...
+# Subtest: fixed 2026 audit now meets the 50 percent cap for Spring Equinox and Qingming
+ok 244 - fixed 2026 audit now meets the 50 percent cap for Spring Equinox and Qingming
+  ---
+  duration_ms: 2.364666
+  type: 'test'
+  ...
+# Subtest: rainwater market fish, spring-equinoctial cotton grass and Guyu tea retain precise source limits
+ok 245 - rainwater market fish, spring-equinoctial cotton grass and Guyu tea retain precise source limits
+  ---
+  duration_ms: 2.519083
+  type: 'test'
+  ...
+# Subtest: Suao black-skin marlin preserves both official Xiaohan and Dahan catch records
+ok 246 - Suao black-skin marlin preserves both official Xiaohan and Dahan catch records
+  ---
+  duration_ms: 1030.891292
+  type: 'test'
+  ...
+# Subtest: Suao beltfish is a Frost Descent fishery lead with explicit identity and stock limits
+ok 247 - Suao beltfish is a Frost Descent fishery lead with explicit identity and stock limits
+  ---
+  duration_ms: 1016.529208
+  type: 'test'
+  ...
+# Subtest: Suao Jingzhe fishery names retain source limits and appear only in Jingzhe
+ok 248 - Suao Jingzhe fishery names retain source limits and appear only in Jingzhe
+  ---
+  duration_ms: 1066.538584
+  type: 'test'
+  ...
+# Subtest: Suao Xiaoman flying-fish entry keeps the Agriculture Ministry source name and fishery limits
+ok 249 - Suao Xiaoman flying-fish entry keeps the Agriculture Ministry source name and fishery limits
+  ---
+  duration_ms: 1083.605333
+  type: 'test'
+  ...
+# Subtest: Suizhou paopaoqing uses a sourced winter availability window and is not presented as a local photo
+ok 250 - Suizhou paopaoqing uses a sourced winter availability window and is not presented as a local photo
+  ---
+  duration_ms: 1107.240625
+  type: 'test'
+  ...
+# Subtest: Mengzi June Red pomegranate uses the reported recurring mid-to-late June window
+ok 251 - Mengzi June Red pomegranate uses the reported recurring mid-to-late June window
+  ---
+  duration_ms: 2.625583
+  type: 'test'
+  ...
+# Subtest: Northeast Cape bullet bonito is a sourced Summer Solstice tasting cue with cautious species and catch claims
+ok 252 - Northeast Cape bullet bonito is a sourced Summer Solstice tasting cue with cautious species and catch claims
+  ---
+  duration_ms: 1078.668167
+  type: 'test'
+  ...
+# Subtest: Suzhou Dongshan Taihu water shield is featured at its sourced early-spring window
+ok 253 - Suzhou Dongshan Taihu water shield is featured at its sourced early-spring window
+  ---
+  duration_ms: 1087.670041
+  type: 'test'
+  ...
+# Subtest: Guangfu late osmanthus preserves the Cold Dew flower source and 2026-only harvest claim
+ok 254 - Guangfu late osmanthus preserves the Cold Dew flower source and 2026-only harvest claim
+  ---
+  duration_ms: 2.72075
+  type: 'test'
+  ...
+# Subtest: Dongshan fresh longan is limited to its documented August peak batch
+ok 255 - Dongshan fresh longan is limited to its documented August peak batch
+  ---
+  duration_ms: 1030.368583
+  type: 'test'
+  ...
+# Subtest: Tainan Madou white pomelo follows the reported Frost Descent harvest window and stays outside adjacent lists
+ok 256 - Tainan Madou white pomelo follows the reported Frost Descent harvest window and stays outside adjacent lists
+  ---
+  duration_ms: 990.590291
+  type: 'test'
+  ...
+# Subtest: Taiwan Daxue eastern striped bonito keeps the sourced catch lead separate from its flavor season
+ok 257 - Taiwan Daxue eastern striped bonito keeps the sourced catch lead separate from its flavor season
+  ---
+  duration_ms: 1018.380458
+  type: 'test'
+  ...
+# Subtest: Taiwan Daxue Korean seerfish maps the sourced 闊腹 name to the correct species and term
+ok 258 - Taiwan Daxue Korean seerfish maps the sourced 闊腹 name to the correct species and term
+  ---
+  duration_ms: 1046.901333
+  type: 'test'
+  ...
+# Subtest: Taiwan winter mullet follows the sourced Xiaoxue-to-Great-Cold fishery window with species limits explicit
+ok 259 - Taiwan winter mullet follows the sourced Xiaoxue-to-Great-Cold fishery window with species limits explicit
+  ---
+  duration_ms: 1013.403625
+  type: 'test'
+  ...
+# Subtest: Taiwan MOA Frost Descent white-belly seerfish lead is distinct from Hanlu and exactly meets the repeat cap
+ok 260 - Taiwan MOA Frost Descent white-belly seerfish lead is distinct from Hanlu and exactly meets the repeat cap
+  ---
+  duration_ms: 1019.0415
+  type: 'test'
+  ...
+# Subtest: Taiwan Cold Dew whitebelly mackerel stays a source-bounded seasonal fishery note
+ok 261 - Taiwan Cold Dew whitebelly mackerel stays a source-bounded seasonal fishery note
+  ---
+  duration_ms: 1013.105709
+  type: 'test'
+  ...
+# Subtest: Taiwanese 嘉鱲 is sourced, complete and labeled as a generic illustration
+ok 262 - Taiwanese 嘉鱲 is sourced, complete and labeled as a generic illustration
+  ---
+  duration_ms: 254.983083
+  type: 'test'
+  ...
+# Subtest: Taiwan Jingzhe fishery entries preserve the source names and are limited to the documented solar-term cue
+ok 263 - Taiwan Jingzhe fishery entries preserve the source names and are limited to the documented solar-term cue
+  ---
+  duration_ms: 3.933583
+  type: 'test'
+  ...
+# Subtest: Taiwan Lichun hairtail entry uses the cited Keelung and Changhua fishery lead, not an inventory claim
+ok 264 - Taiwan Lichun hairtail entry uses the cited Keelung and Changhua fishery lead, not an inventory claim
+  ---
+  duration_ms: 3.841458
+  type: 'test'
+  ...
+# Subtest: Lichun mackerel is limited to the sourced Taiwan fishery lead and does not claim a specific species or current stock
+ok 265 - Lichun mackerel is limited to the sourced Taiwan fishery lead and does not claim a specific species or current stock
+  ---
+  duration_ms: 2.218875
+  type: 'test'
+  ...
+# Subtest: Taiwan MOA Lidong east-coast fishery leads are distinct from Hanlu and have current tarot signatures
+ok 266 - Taiwan MOA Lidong east-coast fishery leads are distinct from Hanlu and have current tarot signatures
+  ---
+  duration_ms: 1062.389292
+  type: 'test'
+  ...
+# Subtest: Taiwan Lichiu fisheries use only the Ministry source window and preserve unresolved local names
+ok 267 - Taiwan Lichiu fisheries use only the Ministry source window and preserve unresolved local names
+  ---
+  duration_ms: 1075.239208
+  type: 'test'
+  ...
+# Subtest: Pengjia-yu Lichun chun-fish entry stays a sourced local fishery record and brings Lichun to the 50% cap
+ok 268 - Pengjia-yu Lichun chun-fish entry stays a sourced local fishery record and brings Lichun to the 50% cap
+  ---
+  duration_ms: 991.910125
+  type: 'test'
+  ...
+# Subtest: Xiaoliuqiu Qingming flower bonito is listed only for the documented catch cue with explicit species and image limits
+ok 269 - Xiaoliuqiu Qingming flower bonito is listed only for the documented catch cue with explicit species and image limits
+  ---
+  duration_ms: 3.089292
+  type: 'test'
+  ...
+# Subtest: Taiwan MOA Qiufen catch leads are explicit one-term listings without invented taste or stock claims
+ok 270 - Taiwan MOA Qiufen catch leads are explicit one-term listings without invented taste or stock claims
+  ---
+  duration_ms: 1004.82675
+  type: 'test'
+  ...
+# Subtest: Taiwan MOA Rainwater jialai fishery lead fills the one-item gap without appearing in Lichun
+ok 271 - Taiwan MOA Rainwater jialai fishery lead fills the one-item gap without appearing in Lichun
+  ---
+  duration_ms: 1056.987208
+  type: 'test'
+  ...
+# Subtest: Taiwan eastern-offshore bonito is a source-limited Spring Equinox fishery clue, not a species or stock claim
+ok 272 - Taiwan eastern-offshore bonito is a source-limited Spring Equinox fishery clue, not a species or stock claim
+  ---
+  duration_ms: 1023.748416
+  type: 'test'
+  ...
+# Subtest: Taiwanese red-eye bream entries retain source-limited term and region, not stock or species claims
+ok 273 - Taiwanese red-eye bream entries retain source-limited term and region, not stock or species claims
+  ---
+  duration_ms: 2.815292
+  type: 'test'
+  ...
+# Subtest: Taiwanese term fisheries entries stay within their sourced windows and identify generic art honestly
+ok 274 - Taiwanese term fisheries entries stay within their sourced windows and identify generic art honestly
+  ---
+  duration_ms: 2.364708
+  type: 'test'
+  ...
+# Subtest: 台湾冬至乌鱼子是来源明确的加工鱼卵条目，冬至独有入选且抽签签名有效
+ok 275 - 台湾冬至乌鱼子是来源明确的加工鱼卵条目，冬至独有入选且抽签签名有效
+  ---
+  duration_ms: 1074.317667
+  type: 'test'
+  ...
+# Subtest: Taiwan MOA Xiaohan/Dahan fishery records add two distinct, explicitly unidentified local catch leads
+ok 276 - Taiwan MOA Xiaohan/Dahan fishery records add two distinct, explicitly unidentified local catch leads
+  ---
+  duration_ms: 1055.398708
+  type: 'test'
+  ...
+# Subtest: Taixing Su Cui No. 1 pear is a sourced Xiaoshu entry and a distinct summer-term addition
+ok 277 - Taixing Su Cui No. 1 pear is a sourced Xiaoshu entry and a distinct summer-term addition
+  ---
+  duration_ms: 1057.85625
+  type: 'test'
+  ...
+# Subtest: Tamsui black bream is a Xiaoshu catch lead with species and stock limits preserved
+ok 278 - Tamsui black bream is a Xiaoshu catch lead with species and stock limits preserved
+  ---
+  duration_ms: 1074.298417
+  type: 'test'
+  ...
+# Subtest: Tamsui Xiaoshu jiala remains a separate sourced local-name lead without species or stock claims
+ok 279 - Tamsui Xiaoshu jiala remains a separate sourced local-name lead without species or stock claims
+  ---
+  duration_ms: 1016.543667
+  type: 'test'
+  ...
+# Subtest: shuffle assigns 12 unique identities and orientations before any selection
+ok 280 - shuffle assigns 12 unique identities and orientations before any selection
+  ---
+  duration_ms: 1.710042
+  type: 'test'
+  ...
+# Subtest: same seed yields same predealt deck
+ok 281 - same seed yields same predealt deck
+  ---
+  duration_ms: 1.424583
+  type: 'test'
+  ...
+# Subtest: shuffle diversifies identities and orientations across seeds
+ok 282 - shuffle diversifies identities and orientations across seeds
+  ---
+  duration_ms: 0.79575
+  type: 'test'
+  ...
+# Subtest: cut rotates the deck rather than choosing new cards or orientations
+ok 283 - cut rotates the deck rather than choosing new cards or orientations
+  ---
+  duration_ms: 0.320458
+  type: 'test'
+  ...
+# Subtest: three cut positions really differ
+ok 284 - three cut positions really differ
+  ---
+  duration_ms: 0.197292
+  type: 'test'
+  ...
+# Subtest: cutting twice is rejected
+ok 285 - cutting twice is rejected
+  ---
+  duration_ms: 0.2475
+  type: 'test'
+  ...
+# Subtest: cards cannot be taken before the cut
+ok 286 - cards cannot be taken before the cut
+  ---
+  duration_ms: 0.310333
+  type: 'test'
+  ...
+# Subtest: drawing is immutable and cannot pick the same position twice
+ok 287 - drawing is immutable and cannot pick the same position twice
+  ---
+  duration_ms: 0.249792
+  type: 'test'
+  ...
+# Subtest: invalid seed, cut, or card position is rejected
+ok 288 - invalid seed, cut, or card position is rejected
+  ---
+  duration_ms: 0.857833
+  type: 'test'
+  ...
+# Subtest: exactly three distinct cards advance into complete phase
+ok 289 - exactly three distinct cards advance into complete phase
+  ---
+  duration_ms: 0.670583
+  type: 'test'
+  ...
+# Subtest: positions carry three distinct named roles
+ok 290 - positions carry three distinct named roles
+  ---
+  duration_ms: 0.225583
+  type: 'test'
+  ...
+# Subtest: pick order remains meaningful
+ok 291 - pick order remains meaningful
+  ---
+  duration_ms: 13.682041
+  type: 'test'
+  ...
+# Subtest: cannot resolve a partial spread
+ok 292 - cannot resolve a partial spread
+  ---
+  duration_ms: 0.169875
+  type: 'test'
+  ...
+# Subtest: forged duplicate cards or inconsistent phases fail closed
+ok 293 - forged duplicate cards or inconsistent phases fail closed
+  ---
+  duration_ms: 0.09825
+  type: 'test'
+  ...
+# Subtest: complete spread resolves reproducibly to exactly one actual dish
+ok 294 - complete spread resolves reproducibly to exactly one actual dish
+  ---
+  duration_ms: 1.054417
+  type: 'test'
+  ...
+# Subtest: all three cards contribute to the symbolic scoring
+ok 295 - all three cards contribute to the symbolic scoring
+  ---
+  duration_ms: 0.064958
+  type: 'test'
+  ...
+# Subtest: all eight orientation patterns produce matching card and synthesis readings
+ok 296 - all eight orientation patterns produce matching card and synthesis readings
+  ---
+  duration_ms: 4.21225
+  type: 'test'
+  ...
+# Subtest: combined reading contains actual food and named dish, not three unrelated results
+ok 297 - combined reading contains actual food and named dish, not three unrelated results
+  ---
+  duration_ms: 1.216541
+  type: 'test'
+  ...
+# Subtest: seasonality and origin are rechecked on the reveal date
+ok 298 - seasonality and origin are rechecked on the reveal date
+  ---
+  duration_ms: 68.977584
+  type: 'test'
+  ...
+# Subtest: explicit restrictions remain hard exclusions across 120 month-profile combinations
+ok 299 - explicit restrictions remain hard exclusions across 120 month-profile combinations
+  ---
+  duration_ms: 61.539083
+  type: 'test'
+  ...
+# Subtest: unknown exclusions block rather than being ignored
+ok 300 - unknown exclusions block rather than being ignored
+  ---
+  duration_ms: 0.383167
+  type: 'test'
+  ...
+# Subtest: empty seasonal pool never produces a fake dish
+ok 301 - empty seasonal pool never produces a fake dish
+  ---
+  duration_ms: 0.203084
+  type: 'test'
+  ...
+# Subtest: recent dishes are avoided when choices remain; singleton repetition is explicit
+ok 302 - recent dishes are avoided when choices remain; singleton repetition is explicit
+  ---
+  duration_ms: 1.972541
+  type: 'test'
+  ...
+# Subtest: stale recipes and disabled records are not revived by the spread
+ok 303 - stale recipes and disabled records are not revived by the spread
+  ---
+  duration_ms: 1.054459
+  type: 'test'
+  ...
+# Subtest: share text includes all roles and the dish but no questionnaire answers
+ok 304 - share text includes all roles and the dish but no questionnaire answers
+  ---
+  duration_ms: 1.709584
+  type: 'test'
+  ...
+# Subtest: new UI keeps saved preferences private and uses no network or sensors
+ok 305 - new UI keeps saved preferences private and uses no network or sensors
+  ---
+  duration_ms: 0.3345
+  type: 'test'
+  ...
+# Subtest: page has a full ritual and only the new controller runs
+ok 306 - page has a full ritual and only the new controller runs
+  ---
+  duration_ms: 0.460708
+  type: 'test'
+  ...
+# Subtest: 12 unique cards carry original upright, reversed, and closing readings
+ok 307 - 12 unique cards carry original upright, reversed, and closing readings
+  ---
+  duration_ms: 0.790584
+  type: 'test'
+  ...
+# Subtest: current term, not next six, is used
+ok 308 - current term, not next six, is used
+  ---
+  duration_ms: 0.131042
+  type: 'test'
+  ...
+# Subtest: incomplete temporal horizon fails closed
+ok 309 - incomplete temporal horizon fails closed
+  ---
+  duration_ms: 0.107042
+  type: 'test'
+  ...
+# Subtest: one dish is reproducible for a seed and chosen card position
+ok 310 - one dish is reproducible for a seed and chosen card position
+  ---
+  duration_ms: 20.131958
+  type: 'test'
+  ...
+# Subtest: all choices use current-day supported origin and recipe
+ok 311 - all choices use current-day supported origin and recipe
+  ---
+  duration_ms: 70.977083
+  type: 'test'
+  ...
+# Subtest: all 12 months retain default dish choices without a preference questionnaire
+ok 312 - all 12 months retain default dish choices without a preference questionnaire
+  ---
+  duration_ms: 44.179959
+  type: 'test'
+  ...
+# Subtest: taste constraints from another mode do not enter this pool
+ok 313 - taste constraints from another mode do not enter this pool
+  ---
+  duration_ms: 0.526458
+  type: 'test'
+  ...
+# Subtest: known non-food restrictions remain hard exclusions, including accompaniments
+ok 314 - known non-food restrictions remain hard exclusions, including accompaniments
+  ---
+  duration_ms: 97.007417
+  type: 'test'
+  ...
+# Subtest: custom food aliases are respected and unknown words never silently ignored
+ok 315 - custom food aliases are respected and unknown words never silently ignored
+  ---
+  duration_ms: 2.159875
+  type: 'test'
+  ...
+# Subtest: disabled and stale recipe profiles are not re-enabled by tarot
+ok 316 - disabled and stale recipe profiles are not re-enabled by tarot
+  ---
+  duration_ms: 5.085625
+  type: 'test'
+  ...
+# Subtest: no candidates yields a clear empty result and never relaxes exclusions
+ok 317 - no candidates yields a clear empty result and never relaxes exclusions
+  ---
+  duration_ms: 0.520833
+  type: 'test'
+  ...
+# Subtest: reroll skips last dish when another suitable dish exists
+ok 318 - reroll skips last dish when another suitable dish exists
+  ---
+  duration_ms: 24.314458
+  type: 'test'
+  ...
+# Subtest: a singleton may repeat but explicitly reports why
+ok 319 - a singleton may repeat but explicitly reports why
+  ---
+  duration_ms: 0.404333
+  type: 'test'
+  ...
+# Subtest: readings connect actual named dish, food, card and concrete cooking metaphor
+ok 320 - readings connect actual named dish, food, card and concrete cooking metaphor
+  ---
+  duration_ms: 21.251792
+  type: 'test'
+  ...
+# Subtest: seed changes expose diverse dishes, cards, and orientations
+ok 321 - seed changes expose diverse dishes, cards, and orientations
+  ---
+  duration_ms: 62.010375
+  type: 'test'
+  ...
+# Subtest: every eligible asset exists and generated imagery is identified
+ok 322 - every eligible asset exists and generated imagery is identified
+  ---
+  duration_ms: 1.500542
+  type: 'test'
+  ...
+# Subtest: unsafe image paths are not eligible
+ok 323 - unsafe image paths are not eligible
+  ---
+  duration_ms: 1.605666
+  type: 'test'
+  ...
+# Subtest: copy includes entertainment disclosure and stable food link, no answers
+ok 324 - copy includes entertainment disclosure and stable food link, no answers
+  ---
+  duration_ms: 1.798834
+  type: 'test'
+  ...
+# Subtest: invalid seeds, positions and restrictions are rejected
+ok 325 - invalid seeds, positions and restrictions are rejected
+  ---
+  duration_ms: 0.171042
+  type: 'test'
+  ...
+# Subtest: tarot does not read saved preference or identity data
+ok 326 - tarot does not read saved preference or identity data
+  ---
+  duration_ms: 1.123209
+  type: 'test'
+  ...
+# Subtest: 24-term repetition audit compares each pool with the immediately preceding term
+not ok 327 - 24-term repetition audit compares each pool with the immediately preceding term
+  ---
+  duration_ms: 1014.272417
+  type: 'test'
+  location: '/Users/kennethj.michael/.codex/.chatgpt-projects/g-p-6ab6adfb764881919bb88987dd969923/seasonal-atlas/tests/term-repetition.test.cjs:4:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Every complete term pool must repeat at most half of the immediately preceding term.
+    
+    5 !== 0
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0
+  actual: 5
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (/Users/kennethj.michael/.codex/.chatgpt-projects/g-p-6ab6adfb764881919bb88987dd969923/seasonal-atlas/tests/term-repetition.test.cjs:12:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: Tianjin Huangya cabbage is a Xiaohan food-culture entry, not a separate cultivar or exclusive harvest
+ok 328 - Tianjin Huangya cabbage is a Xiaohan food-culture entry, not a separate cultivar or exclusive harvest
+  ---
+  duration_ms: 1104.991292
+  type: 'test'
+  ...
+# Subtest: Qinzhou cherry is limited to the sourced Xiaoman observation and does not claim a named cultivar
+ok 329 - Qinzhou cherry is limited to the sourced Xiaoman observation and does not claim a named cultivar
+  ---
+  duration_ms: 991.857416
+  type: 'test'
+  ...
+# Subtest: Tongling white ginger has local harvest evidence, edible use and non-identification photo credit
+ok 330 - Tongling white ginger has local harvest evidence, edible use and non-identification photo credit
+  ---
+  duration_ms: 2.901833
+  type: 'test'
+  ...
+# Subtest: both White Dew additions are term-scoped and reduce the audited repeat gap
+ok 331 - both White Dew additions are term-scoped and reduce the audited repeat gap
+  ---
+  duration_ms: 1015.499625
+  type: 'test'
+  ...
+# Subtest: Tonglu high-jie bamboo shoots are a sourced late-April harvest distinct from covered white shoots
+ok 332 - Tonglu high-jie bamboo shoots are a sourced late-April harvest distinct from covered white shoots
+  ---
+  duration_ms: 1059.331375
+  type: 'test'
+  ...
+# Subtest: Wenxian Tiegum yam is a sourced Shuangjiang harvest node with labeled art and reviewed signatures
+ok 333 - Wenxian Tiegum yam is a sourced Shuangjiang harvest node with labeled art and reviewed signatures
+  ---
+  duration_ms: 1094.507792
+  type: 'test'
+  ...
+# Subtest: Wenzhou Lingkun baizhuogua has a recurring spring-head-crop record, labeled generic photo, and Lixia-only peak entry
+ok 334 - Wenzhou Lingkun baizhuogua has a recurring spring-head-crop record, labeled generic photo, and Lixia-only peak entry
+  ---
+  duration_ms: 1055.078584
+  type: 'test'
+  ...
+# Subtest: 温州瓯江子鲚 is a sourced Jingzhe tasting entry, not an invented exact catch date
+ok 335 - 温州瓯江子鲚 is a sourced Jingzhe tasting entry, not an invented exact catch date
+  ---
+  duration_ms: 1045.989625
+  type: 'test'
+  ...
+# Subtest: Sanyang Ougan is a source-backed Small Snow harvest entry with a separate post-harvest eating stage
+ok 336 - Sanyang Ougan is a source-backed Small Snow harvest entry with a separate post-harvest eating stage
+  ---
+  duration_ms: 1050.878834
+  type: 'test'
+  ...
+# Subtest: Wuhan red amaranth is limited to the historically documented mid-to-late March concentrated listing
+ok 337 - Wuhan red amaranth is limited to the historically documented mid-to-late March concentrated listing
+  ---
+  duration_ms: 1019.282292
+  type: 'test'
+  ...
+# Subtest: Wujiang fragrant greens use a sourced Xiaoxue entry, honest winter window and current tarot signatures
+ok 338 - Wujiang fragrant greens use a sourced Xiaoxue entry, honest winter window and current tarot signatures
+  ---
+  duration_ms: 1025.900458
+  type: 'test'
+  ...
+# Subtest: Yinzhou snow mustard is a sourced Xiaoxue winter-crop harvest entry, distinct from pickled greens
+ok 339 - Yinzhou snow mustard is a sourced Xiaoxue winter-crop harvest entry, distinct from pickled greens
+  ---
+  duration_ms: 1053.914542
+  type: 'test'
+  ...
+# Subtest: Wusheng Dayagan is a sourced Lichun opening-harvest entry with reviewed tarot signatures
+ok 340 - Wusheng Dayagan is a sourced Lichun opening-harvest entry with reviewed tarot signatures
+  ---
+  duration_ms: 1035.693792
+  type: 'test'
+  ...
+# Subtest: sourced late-May foods lower Xiaoman overlap to half and preserve their full term windows
+ok 341 - sourced late-May foods lower Xiaoman overlap to half and preserve their full term windows
+  ---
+  duration_ms: 1024.703416
+  type: 'test'
+  ...
+# Subtest: late-May Suzhou June yellow and Tangqi late loquat open in Xiaoman without being listed in Lixia
+ok 342 - late-May Suzhou June yellow and Tangqi late loquat open in Xiaoman without being listed in Lixia
+  ---
+  duration_ms: 994.225041
+  type: 'test'
+  ...
+# Subtest: West Lake Longjing group-cultivar entry is limited to the sourced late-March picking stage
+ok 343 - West Lake Longjing group-cultivar entry is limited to the sourced late-March picking stage
+  ---
+  duration_ms: 1048.857375
+  type: 'test'
+  ...
+# Subtest: Miaoli Xihu Wendan has scoped White Dew evidence and a real generic pomelo reference
+ok 344 - Miaoli Xihu Wendan has scoped White Dew evidence and a real generic pomelo reference
+  ---
+  duration_ms: 1.497834
+  type: 'test'
+  ...
+# Subtest: the new Wendan appears in White Dew only and lowers its audited overlap
+ok 345 - the new Wendan appears in White Dew only and lowers its audited overlap
+  ---
+  duration_ms: 1004.765833
+  type: 'test'
+  ...
+# Subtest: Xinhui Xinghuang water chestnut has a sourced Winter Solstice harvest record and no unverified origin claims
+ok 346 - Xinhui Xinghuang water chestnut has a sourced Winter Solstice harvest record and no unverified origin claims
+  ---
+  duration_ms: 1050.74325
+  type: 'test'
+  ...
+# Subtest: Xinshe early loquat starts in late January and remains through the sourced main crop
+ok 347 - Xinshe early loquat starts in late January and remains through the sourced main crop
+  ---
+  duration_ms: 1057.942625
+  type: 'test'
+  ...
+# Subtest: Ya’an Chuancha No. 3 first-pick tea is a sourced Lichun-only entry with truthful scope and valid lottery signatures
+ok 348 - Ya’an Chuancha No. 3 first-pick tea is a sourced Lichun-only entry with truthful scope and valid lottery signatures
+  ---
+  duration_ms: 1029.620416
+  type: 'test'
+  ...
+# Subtest: 延庆八棱脆海棠 uses a sourced late-September to mid-October window without truncating its neighboring-term presence
+ok 349 - 延庆八棱脆海棠 uses a sourced late-September to mid-October window without truncating its neighboring-term presence
+  ---
+  duration_ms: 1056.91675
+  type: 'test'
+  ...
+# Subtest: Yongtai Lianshan orange-pomelo enters after Winter Solstice on a sourced approximate window
+ok 350 - Yongtai Lianshan orange-pomelo enters after Winter Solstice on a sourced approximate window
+  ---
+  duration_ms: 1053.45275
+  type: 'test'
+  ...
+# Subtest: Youxi kumquat is listed only after its documented 2026 Lidong harvest start
+ok 351 - Youxi kumquat is listed only after its documented 2026 Lidong harvest start
+  ---
+  duration_ms: 997.513625
+  type: 'test'
+  ...
+# Subtest: Yuanmou shatangju is a single 2026 Hanlu observation with valid profile and image
+ok 352 - Yuanmou shatangju is a single 2026 Hanlu observation with valid profile and image
+  ---
+  duration_ms: 1928.707583
+  type: 'test'
+  ...
+# Subtest: Yubei Xiazhi Sugar Peach is a sourced, term-specific crisp peach entry
+ok 353 - Yubei Xiazhi Sugar Peach is a sourced, term-specific crisp peach entry
+  ---
+  duration_ms: 1036.080666
+  type: 'test'
+  ...
+# Subtest: nine approved Yunnan entries join the catalog, with tree tomato excluded
+ok 354 - nine approved Yunnan entries join the catalog, with tree tomato excluded
+  ---
+  duration_ms: 2.197375
+  type: 'test'
+  ...
+# Subtest: single-month harvest reports are not expanded to year-round supply
+ok 355 - single-month harvest reports are not expanded to year-round supply
+  ---
+  duration_ms: 50.005667
+  type: 'test'
+  ...
+# Subtest: late emblica and bamboo worms respect their reviewed approximate boundaries
+ok 356 - late emblica and bamboo worms respect their reviewed approximate boundaries
+  ---
+  duration_ms: 4.622167
+  type: 'test'
+  ...
+# Subtest: banana blossom remains searchable and mapped without inventing harvest months or entering draws
+ok 357 - banana blossom remains searchable and mapped without inventing harvest months or entering draws
+  ---
+  duration_ms: 7.278
+  type: 'test'
+  ...
+# Subtest: animal additions, fermented beans and insect sensitivity participate in exclusions
+ok 358 - animal additions, fermented beans and insect sensitivity participate in exclusions
+  ---
+  duration_ms: 0.281041
+  type: 'test'
+  ...
+# Subtest: new serving artwork exists, remains labeled generated, and cooked sour quince is not presented as fresh eating
+ok 359 - new serving artwork exists, remains labeled generated, and cooked sour quince is not presented as fresh eating
+  ---
+  duration_ms: 2.100334
+  type: 'test'
+  ...
+# Subtest: Yunxiao white-stem water spinach is a sourced Lichun-after listing with its unknown season end kept explicit
+ok 360 - Yunxiao white-stem water spinach is a sourced Lichun-after listing with its unknown season end kept explicit
+  ---
+  duration_ms: 1029.72125
+  type: 'test'
+  ...
+# Subtest: 云阳红橙以来源明确的冬至成熟批次入选，通用插画不冒充产地实拍
+ok 361 - 云阳红橙以来源明确的冬至成熟批次入选，通用插画不冒充产地实拍
+  ---
+  duration_ms: 1003.129584
+  type: 'test'
+  ...
+# Subtest: Zhangmutou Guanyin Green lychee has a sourced mid-June window and lowers only the Mangzhong overlap rate
+ok 362 - Zhangmutou Guanyin Green lychee has a sourced mid-June window and lowers only the Mangzhong overlap rate
+  ---
+  duration_ms: 0.874916
+  type: 'test'
+  ...
+# Subtest: Zhangqiu Dawutong scallion is featured at the documented start of concentrated winter harvest
+ok 363 - Zhangqiu Dawutong scallion is featured at the documented start of concentrated winter harvest
+  ---
+  duration_ms: 979.853542
+  type: 'test'
+  ...
+# Subtest: 獐子岛大雪海参仅记录有来源的历史采捕民俗，不承诺当年供货
+ok 364 - 獐子岛大雪海参仅记录有来源的历史采捕民俗，不承诺当年供货
+  ---
+  duration_ms: 6065.794041
+  type: 'test'
+  ...
+# Subtest: Zhenning honey plum is a sourced Grain-in-Ear entry with a generic real-photo reference
+ok 365 - Zhenning honey plum is a sourced Grain-in-Ear entry with a generic real-photo reference
+  ---
+  duration_ms: 903.364042
+  type: 'test'
+  ...
+# Subtest: Baomiao blood orange is a Great Cold best-taste entry, not a claimed one-term harvest season
+ok 366 - Baomiao blood orange is a Great Cold best-taste entry, not a claimed one-term harvest season
+  ---
+  duration_ms: 807.857708
+  type: 'test'
+  ...
+# Subtest: Zizhong early blood orange is a sourced Xiaohan harvest entry with variety and image limits
+ok 367 - Zizhong early blood orange is a sourced Xiaohan harvest entry with variety and image limits
+  ---
+  duration_ms: 776.869834
+  type: 'test'
+  ...
+1..367
+# tests 367
+# suites 0
+# pass 366
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 51283.423667

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">乌鱼子形态编辑插画</title>
+  <desc id="desc">暖米色桌面上放着一对深金褐色椭圆形鱼卵囊与一片切片，仅为形态示意。</desc>
+  <defs>
+    <linearGradient id="roe" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d19a45"/><stop offset=".45" stop-color="#97602b"/><stop offset="1" stop-color="#633c25"/></linearGradient>
+    <linearGradient id="cut" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f2c76b"/><stop offset="1" stop-color="#b87a31"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="15" stdDeviation="13" flood-color="#51351f" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="900" height="700" fill="#eee8db"/>
+  <path d="M0 540Q260 495 900 550V700H0Z" fill="#e1d5c2"/>
+  <ellipse cx="430" cy="462" rx="300" ry="115" fill="#d1c2aa" opacity=".5"/>
+  <g filter="url(#shadow)" transform="rotate(-10 400 350)">
+    <path d="M167 343Q191 232 323 219Q476 205 610 276Q658 301 664 367Q671 429 614 465Q478 532 308 490Q174 456 167 343Z" fill="url(#roe)" stroke="#6d472b" stroke-width="9"/>
+    <path d="M195 343Q218 261 329 250Q462 238 584 296Q618 315 626 365Q631 409 590 432Q473 485 327 452Q212 427 195 343Z" fill="none" stroke="#e4b866" stroke-width="8" opacity=".7"/>
+    <path d="M230 322Q354 281 536 339M220 367Q350 333 583 379M246 410Q380 383 568 418" fill="none" stroke="#efca7d" stroke-width="5" opacity=".46"/>
+    <path d="M299 278Q316 352 303 445M400 253Q423 356 411 466M502 272Q521 361 509 462" fill="none" stroke="#654027" stroke-width="4" opacity=".35"/>
+  </g>
+  <g transform="translate(645 450) rotate(16)" filter="url(#shadow)">
+    <path d="M0 0Q24 -76 115 -69Q196 -62 210 8Q201 78 111 87Q23 79 0 0Z" fill="#6d4329"/>
+    <path d="M17 0Q39 -53 113 -50Q174 -47 190 7Q181 59 111 67Q43 59 17 0Z" fill="url(#cut)" stroke="#edc775" stroke-width="9"/>
+    <path d="M47 -23Q105 -43 155 -12M37 5Q104 -12 169 14M54 34Q112 20 148 38" fill="none" stroke="#f6dd9c" stroke-width="4" opacity=".8"/>
+  </g>
+  <path d="M155 576H745" stroke="#a6967e" stroke-width="2" opacity=".45"/>
+</svg>

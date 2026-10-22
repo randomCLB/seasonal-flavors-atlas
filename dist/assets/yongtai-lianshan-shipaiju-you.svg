@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">永泰橘柚主题编辑插画</title>
+  <desc id="desc">米纸底色上的金橘与切开展示的果肉，属于通用橘柚形态参考，不是永泰产地实拍或品种鉴别图。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f6f0e4"/><stop offset="1" stop-color="#e8dfce"/></linearGradient>
+    <radialGradient id="fruit" cx="35%" cy="28%" r="75%"><stop stop-color="#ffe08b"/><stop offset=".55" stop-color="#e6a23c"/><stop offset="1" stop-color="#b86228"/></radialGradient>
+    <radialGradient id="flesh" cx="42%" cy="37%" r="72%"><stop stop-color="#fff9e8"/><stop offset="1" stop-color="#e4cf9a"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#paper)"/>
+  <circle cx="962" cy="170" r="150" fill="#fffaf0" opacity=".56"/>
+  <ellipse cx="606" cy="746" rx="405" ry="54" fill="#81765e" opacity=".16" filter="url(#soft)"/>
+  <path d="M158 654 Q607 822 1050 655 L990 755 Q604 855 218 755Z" fill="#c6c5ae"/>
+  <ellipse cx="604" cy="654" rx="448" ry="122" fill="#f6f2e6" stroke="#aaa58f" stroke-width="8"/>
+  <ellipse cx="604" cy="666" rx="394" ry="90" fill="#d8d0b8" opacity=".58"/>
+  <path d="M376 489 Q573 390 774 473" fill="none" stroke="#526a48" stroke-width="18" stroke-linecap="round"/>
+  <path d="M473 452 C407 364 313 356 251 399 C299 482 388 495 473 452Z" fill="#63764b"/>
+  <path d="M691 448 C737 352 835 325 898 363 C855 448 776 478 691 448Z" fill="#536b45"/>
+  <path d="M464 450 Q371 394 281 401 M700 443 Q780 379 870 367" fill="none" stroke="#b5ad7c" stroke-width="5" opacity=".7"/>
+  <g transform="rotate(-11 449 493)">
+    <path d="M449 307 C546 307 627 385 627 481 C627 580 545 659 449 659 C351 659 271 580 271 481 C271 385 351 307 449 307Z" fill="url(#fruit)" stroke="#a95825" stroke-width="8"/>
+    <path d="M429 320 Q449 292 470 316" fill="none" stroke="#586d42" stroke-width="12" stroke-linecap="round"/>
+    <path d="M338 393 Q416 332 501 354" fill="none" stroke="#fff1bc" stroke-width="13" opacity=".34" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(9 765 510)">
+    <path d="M765 359 C849 359 917 425 917 509 C917 594 850 659 765 659 C682 659 614 594 614 509 C614 425 682 359 765 359Z" fill="url(#fruit)" stroke="#a95825" stroke-width="8"/>
+    <path d="M746 370 Q764 344 785 368" fill="none" stroke="#586d42" stroke-width="11" stroke-linecap="round"/>
+    <path d="M675 434 Q738 388 812 404" fill="none" stroke="#fff1bc" stroke-width="11" opacity=".3" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(-14 577 672)">
+    <circle cx="577" cy="672" r="116" fill="#ba642b" stroke="#934c27" stroke-width="8"/>
+    <circle cx="577" cy="672" r="96" fill="url(#flesh)"/>
+    <circle cx="577" cy="672" r="76" fill="#f4bd5e"/>
+    <g stroke="#fff4d6" stroke-width="8" stroke-linecap="round"><path d="M577 598V654 M625 615L590 659 M651 672H598 M625 724L590 686 M577 746V691 M528 724L564 686 M503 672H556 M529 615L564 659"/></g>
+    <circle cx="577" cy="672" r="13" fill="#fff1d2"/>
+  </g>
+  <text x="82" y="824" fill="#17342e" font-family="serif" font-size="28" letter-spacing="5">永泰连山橘柚 · 通用形态参考</text>
+  <text x="84" y="861" fill="#746c5d" font-family="sans-serif" font-size="16" letter-spacing="2">本站编辑插画 · 非实物摄影，不用于产地或品种鉴别</text>
+</svg>

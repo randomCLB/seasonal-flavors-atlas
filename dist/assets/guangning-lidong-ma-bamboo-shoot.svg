@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+  <title id="title">麻竹笋通用形态参考</title>
+  <desc id="desc">三支带壳鲜笋的原创编辑插画，不是广宁实拍或品种鉴别图。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f3efe4"/><stop offset="1" stop-color="#e7dfcc"/></linearGradient>
+    <linearGradient id="husk" x2="1" y2="1"><stop stop-color="#c9b68a"/><stop offset=".48" stop-color="#918365"/><stop offset="1" stop-color="#5d6654"/></linearGradient>
+    <linearGradient id="tip" x2="0" y2="1"><stop stop-color="#d5ca9a"/><stop offset="1" stop-color="#8e8a63"/></linearGradient>
+  </defs>
+  <rect width="900" height="720" fill="url(#paper)"/>
+  <path d="M120 600c180-32 469-31 665 0" fill="none" stroke="#a9a18a" stroke-width="5" opacity=".7"/>
+  <g stroke="#59634f" stroke-width="8" stroke-linejoin="round">
+    <path d="M200 580 294 250 430 580Z" fill="url(#husk)"/>
+    <path d="m315 580 116-412 153 412Z" fill="url(#husk)"/>
+    <path d="m490 580 120-336 150 336Z" fill="url(#husk)"/>
+  </g>
+  <path d="m294 250 53 76-35 250-112 4 94-330Zm137-82 57 102-45 301-122 8 110-411Zm179 82 47 85-40 230-120 2 113-317Z" fill="url(#tip)" stroke="#59634f" stroke-width="6"/>
+  <g fill="none" stroke="#e3d7ae" stroke-width="8" opacity=".75">
+    <path d="m260 399 120 8m-140 77 164 11m64-259 137 14m-163 93 189 14m-195 105 185 14m82-4 133 11m-146 75 161 10"/>
+  </g>
+  <g fill="#677554"><path d="M305 257q-18-95 39-148 29 96-39 148Z"/><path d="M441 170q-5-101 62-145 17 102-62 145Z"/><path d="M616 246q8-87 76-123 6 91-76 123Z"/></g>
+  <text x="56" y="666" fill="#334c3f" font-family="serif" font-size="24" letter-spacing="2">广宁麻竹笋 · 通用形态参考</text>
+</svg>

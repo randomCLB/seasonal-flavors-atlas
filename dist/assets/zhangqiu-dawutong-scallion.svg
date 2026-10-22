@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" role="img" aria-labelledby="title desc">
+  <title id="title">大葱通用形态插画</title>
+  <desc id="desc">三根带青叶与白色葱白的大葱，非章丘产地或品种鉴别图。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f5f1e6"/><stop offset="1" stop-color="#e7e1d2"/></linearGradient>
+    <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#355c48"/><stop offset=".55" stop-color="#718365"/><stop offset="1" stop-color="#304c3e"/></linearGradient>
+    <linearGradient id="stalk" x2="1"><stop stop-color="#e5e1d3"/><stop offset=".52" stop-color="#fffdf4"/><stop offset="1" stop-color="#d9d7c7"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="800" height="640" fill="url(#paper)"/>
+  <ellipse cx="401" cy="532" rx="302" ry="40" fill="#203b31" opacity=".14" filter="url(#shadow)"/>
+  <path d="M226 512C234 417 243 333 254 243C264 161 250 90 220 26C280 72 317 150 311 248C307 343 296 432 286 518Z" fill="url(#leaf)"/>
+  <path d="M294 513C318 409 350 318 386 223C419 137 426 72 405 20C455 88 463 162 434 248C401 348 369 443 347 523Z" fill="url(#leaf)"/>
+  <path d="M363 515C392 421 436 335 492 254C547 176 574 107 572 46C612 117 606 188 565 263C514 353 470 443 440 526Z" fill="url(#leaf)"/>
+  <path d="M207 344C269 361 312 361 373 342C432 323 493 323 552 341L550 494C491 517 432 518 375 501C319 484 265 487 205 511Z" fill="url(#stalk)"/>
+  <path d="M207 344C267 361 317 361 373 342C432 323 493 323 552 341" fill="none" stroke="#b9b6a6" stroke-width="8"/>
+  <path d="M208 451C267 429 319 433 376 450C433 468 493 468 551 447" fill="none" stroke="#d1cdbd" stroke-width="4" opacity=".8"/>
+  <path d="M206 509Q229 552 251 578Q273 548 287 517M345 517Q365 556 386 584Q410 550 440 526" fill="none" stroke="#918c7a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M234 369L224 493M286 368L278 499M420 348L399 508M497 346L510 489" stroke="#fffdf5" stroke-width="5" opacity=".48"/>
+  <path d="M114 557H686" stroke="#a69d87" stroke-width="2" opacity=".5"/>
+  <text x="400" y="600" text-anchor="middle" fill="#526354" font-family="serif" font-size="20" letter-spacing="5">鲜葱 · 通用形态参考</text>
+</svg>

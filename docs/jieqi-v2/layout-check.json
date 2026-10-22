@@ -1,0 +1,17 @@
+[
+  {
+    "artHeight": 203.6015625,
+    "artWidth": 305.40625,
+    "fit": "contain",
+    "loaded": true,
+    "overflows": false,
+    "viewport": 390
+  },
+  {
+    "artHeight": 198.9375,
+    "artWidth": 298.40625,
+    "fit": "contain",
+    "overflows": false,
+    "viewport": 760
+  }
+]

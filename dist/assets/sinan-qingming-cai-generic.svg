@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">鼠曲草嫩苗编辑示意</title>
+  <desc id="desc">以灰绿茸叶和浅黄色小花表现鼠曲草嫩苗的通用形态，不用于植物鉴定。</desc>
+  <rect width="800" height="600" fill="#eee9dc"/>
+  <path d="M0 464c173-42 294-20 421 13s243 48 379 11v112H0z" fill="#d8d8c6"/>
+  <g fill="none" stroke="#6c8069" stroke-linecap="round" stroke-width="9">
+    <path d="M401 471c-4-119-32-205-106-293M402 472c14-112 75-207 177-280M399 466c-74-76-146-106-235-122M403 464c79-65 155-85 246-85M398 455c-15-85-4-164 33-246"/>
+  </g>
+  <g fill="#aeb69f" stroke="#71806e" stroke-width="3">
+    <ellipse cx="286" cy="309" rx="25" ry="59" transform="rotate(-42 286 309)"/>
+    <ellipse cx="338" cy="364" rx="24" ry="55" transform="rotate(-52 338 364)"/>
+    <ellipse cx="295" cy="418" rx="22" ry="53" transform="rotate(-73 295 418)"/>
+    <ellipse cx="507" cy="329" rx="24" ry="58" transform="rotate(38 507 329)"/>
+    <ellipse cx="468" cy="385" rx="23" ry="54" transform="rotate(56 468 385)"/>
+    <ellipse cx="545" cy="417" rx="20" ry="49" transform="rotate(72 545 417)"/>
+    <ellipse cx="428" cy="284" rx="22" ry="54" transform="rotate(8 428 284)"/>
+    <ellipse cx="398" cy="357" rx="21" ry="49" transform="rotate(-6 398 357)"/>
+  </g>
+  <g fill="#d5bf75" stroke="#a68e4f" stroke-width="2">
+    <circle cx="286" cy="176" r="13"/><circle cx="302" cy="164" r="11"/><circle cx="317" cy="178" r="12"/>
+    <circle cx="554" cy="168" r="12"/><circle cx="571" cy="156" r="11"/><circle cx="585" cy="171" r="12"/>
+    <circle cx="431" cy="196" r="12"/><circle cx="447" cy="184" r="10"/><circle cx="461" cy="198" r="11"/>
+  </g>
+  <g fill="#f7f4eb" opacity=".7">
+    <circle cx="280" cy="172" r="4"/><circle cx="550" cy="164" r="4"/><circle cx="428" cy="192" r="4"/>
+  </g>
+</svg>

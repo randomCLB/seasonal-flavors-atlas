@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">冬日柑橘形态示意</title>
+  <desc id="desc">原创柑橘与切面插画，仅示意通用形态，不代表云阳实拍或品种鉴别。</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f2ecdd"/><stop offset="1" stop-color="#e3ddca"/></linearGradient>
+    <radialGradient id="fruit" cx="35%" cy="28%"><stop stop-color="#ffd47b"/><stop offset=".56" stop-color="#ee9b35"/><stop offset="1" stop-color="#c96722"/></radialGradient>
+    <radialGradient id="flesh" cx="48%" cy="42%"><stop stop-color="#fff0b5"/><stop offset=".72" stop-color="#f7bd53"/><stop offset="1" stop-color="#e99131"/></radialGradient>
+  </defs>
+  <rect width="800" height="620" fill="url(#paper)"/>
+  <path d="M0 476c133-61 253-49 393-5s255 52 407-1v150H0Z" fill="#d2d2bd"/>
+  <ellipse cx="398" cy="498" rx="270" ry="38" fill="#7d79664a"/>
+  <path d="M383 232c8-61 44-93 104-98-14 38-48 72-104 98Z" fill="#607953"/>
+  <path d="M391 220c25-28 53-52 83-74" fill="none" stroke="#d2d9ad" stroke-width="5"/>
+  <circle cx="340" cy="350" r="155" fill="url(#fruit)" stroke="#b86225" stroke-width="5"/>
+  <circle cx="340" cy="350" r="133" fill="none" stroke="#ffdf91" stroke-width="3" opacity=".48"/>
+  <path d="M340 350 340 220A130 130 0 0 1 452 284Z M340 350 452 284A130 130 0 0 1 452 414Z M340 350 452 414A130 130 0 0 1 340 480Z M340 350 340 480A130 130 0 0 1 228 414Z M340 350 228 414A130 130 0 0 1 228 284Z M340 350 228 284A130 130 0 0 1 340 220Z" fill="url(#flesh)" stroke="#e59632" stroke-width="6"/>
+  <circle cx="340" cy="350" r="18" fill="#fff2c8"/>
+  <path d="M576 445c-4-91 63-166 153-170 0 94-63 166-153 170Z" fill="url(#fruit)" stroke="#b86225" stroke-width="5"/>
+  <path d="M596 423c1-68 51-120 110-126-2 67-49 119-110 126Z" fill="url(#flesh)" stroke="#ffdf91" stroke-width="7"/>
+  <path d="M593 426c43-46 79-81 118-116" fill="none" stroke="#fff1bd" stroke-width="5"/>
+  <text x="62" y="92" fill="#435b4c" font-family="serif" font-size="27" letter-spacing="6">冬至 · 柑橘成熟时</text>
+  <text x="62" y="132" fill="#7f806c" font-family="sans-serif" font-size="16" letter-spacing="2">通用果形编辑示意 · 非实物摄影</text>
+</svg>

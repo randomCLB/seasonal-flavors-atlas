@@ -2,13 +2,14 @@
 Uses isolated browser contexts; no publication or native app delivery.
 """
 import json
+import os
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'output/second-batch-validation'
 OUT.mkdir(parents=True, exist_ok=True)
-BASE = 'http://127.0.0.1:8776/'
+BASE = os.environ.get('SEASONAL_PREVIEW_BASE', 'http://127.0.0.1:8776/')
 report = {'checks': [], 'limitations': ['Desktop Chromium with mobile viewport/text simulation, not physical phones.', 'Native share success/cancellation and clipboard failure are simulated. PNG downloads and fresh-context replay are real.', 'Local preview URLs are not publicly reachable. No deployment.']}
 
 def check(name, ok):
@@ -28,7 +29,9 @@ def draw_tarot(page):
 def draw_plan(page):
     page.goto(BASE + 'lottery.html')
     page.locator('#begin').click()
+    page.locator('#quiz:not([hidden])').wait_for()
     for _ in range(5):
+        page.locator('#next').scroll_into_view_if_needed()
         page.locator('#next').click()
     page.wait_for_selector('#results:not([hidden])')
 
@@ -56,7 +59,7 @@ with sync_playwright() as p:
     errors = []
     page.on('pageerror', lambda e: errors.append(str(e)))
     page.goto(BASE + 'index.html')
-    figure = page.locator('.season-list-photo.has-image-note').first
+    figure = page.locator('.season-list-photo').first
     page.mouse.move(1, 1)
     check('image note hidden before hover', figure.locator('.photo-credit').evaluate('(e)=>getComputedStyle(e).opacity') == '0')
     figure.hover()
@@ -131,6 +134,7 @@ with sync_playwright() as p:
     page.reload()
     page.locator('#resume').click()
     check('own local plan still resumes with original six foods', plan_result(page) == original_plan)
+    page.evaluate('navigator.share=undefined')
     with page.expect_download() as info:
         page.locator('#calendar-open').click()
     info.value.save_as(OUT / 'six-term.ics')

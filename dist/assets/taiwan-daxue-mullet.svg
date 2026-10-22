@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">台湾沿海乌鱼通用形态编辑插画</title>
+  <desc id="desc">简化鱼形与海流纹样，非实物摄影、物种鉴别或捕捞海域证明。</desc>
+  <rect width="960" height="720" fill="#e8e8df"/>
+  <path d="M0 470 Q190 430 360 472 T720 470 T1080 465 V720 H0Z" fill="#d3ded6"/>
+  <g fill="none" stroke="#b2c9bd" stroke-width="5" opacity=".75"><path d="M40 535 Q180 500 320 535 T600 535 T920 535"/><path d="M20 585 Q160 550 300 585 T580 585 T900 585"/></g>
+  <path d="M230 350 Q365 210 610 285 Q700 310 770 355 Q700 405 610 430 Q365 500 230 365 L140 445 L155 360 L140 275Z" fill="#83968d" stroke="#425c53" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M370 265 Q450 190 530 255 L495 290Z" fill="#6f877d" stroke="#425c53" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M385 435 Q455 505 540 443 L500 418Z" fill="#6f877d" stroke="#425c53" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M565 288 Q525 360 565 426" fill="none" stroke="#d4ddd1" stroke-width="8"/>
+  <circle cx="680" cy="335" r="9" fill="#203c34"/>
+  <path d="M256 344 Q300 360 257 385" fill="none" stroke="#344e45" stroke-width="7" stroke-linecap="round"/>
+  <g fill="none" stroke="#aebbb0" stroke-width="4" opacity=".8"><path d="M320 318 Q365 300 410 318"/><path d="M330 350 Q380 332 430 350"/><path d="M320 382 Q370 364 420 382"/></g>
+  <text x="58" y="90" font-family="serif" font-size="30" fill="#344b43">大雪 · 海潮入冬</text>
+</svg>
