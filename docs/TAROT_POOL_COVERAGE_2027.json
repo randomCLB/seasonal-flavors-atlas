@@ -1,11 +1,11 @@
 {
-  "catalogCount": 86,
+  "catalogCount": 354,
   "sampling": "Each month 1st/15th/28th at 12:00 China time; no dietary exclusions. Counts are site-data coverage, not market availability.",
-  "minimum": 5,
+  "minimum": 10,
   "rows": [
     {
       "date": "2027-01-01",
-      "count": 11,
+      "count": 20,
       "ids": [
         "cigu",
         "zengcheng-caixin",
@@ -17,7 +17,16 @@
         "shazhou-zhugengqin",
         "liyang-baixin",
         "taitung-winter-atemoya",
-        "yanshi-fresh-yintiao"
+        "yanshi-fresh-yintiao",
+        "minhou-wenxi-juyou",
+        "hechuan-qingshicao-winter-red-radish",
+        "donghai-dongzhi-cuttlefish",
+        "shantou-donghu-charcoal-zicai",
+        "taiwan-daxue-mullet",
+        "ntpc-northeast-cape-thorn-purple-algae",
+        "suizhou-paopaoqing",
+        "yunyang-winter-solstice-red-orange",
+        "yongtai-lianshan-shipaiju-you"
       ],
       "names": [
         "宝应慈姑",
@@ -30,12 +39,21 @@
         "沙洲竹梗芹",
         "溧阳白芹",
         "台东冬果凤梨释迦",
-        "偃师鲜银条"
+        "偃师鲜银条",
+        "闽侯汶溪桔柚",
+        "合川青草坝红皮萝卜",
+        "东海冬至墨鱼",
+        "汕头东湖炭焙紫菜",
+        "台湾沿海冬季乌鱼",
+        "贡寮东北角刺紫菜",
+        "随州泡泡青",
+        "云阳红橙",
+        "永泰连山石牌橘柚"
       ]
     },
     {
       "date": "2027-01-15",
-      "count": 10,
+      "count": 27,
       "ids": [
         "cigu",
         "zengcheng-caixin",
@@ -46,7 +64,24 @@
         "atushi-winter-lamb",
         "shazhou-zhugengqin",
         "liyang-baixin",
-        "taitung-winter-atemoya"
+        "taitung-winter-atemoya",
+        "minhou-wenxi-juyou",
+        "zizhong-xiaohan-early-blood-orange",
+        "shantou-donghu-charcoal-zicai",
+        "luquan-greenhouse-toon-first-pick",
+        "beian-xiaohan-white-lover-strawberry",
+        "fuling-yuzao100-mustard-stem",
+        "tianjin-huangya-cabbage",
+        "taiwan-daxue-mullet",
+        "suao-dahan-black-skin-marlin",
+        "suao-xiaohan-white-skin-sailfish",
+        "sihu-xiaohan-sailfish",
+        "ntpc-northeast-cape-thorn-purple-algae",
+        "suizhou-paopaoqing",
+        "rongan-xiaozhou-winter-head-vegetable",
+        "yongtai-lianshan-shipaiju-you",
+        "fushun-xiaohan-ertai",
+        "xinzhou-qubeihu-gongdeng-water-chestnut"
       ],
       "names": [
         "宝应慈姑",
@@ -58,12 +93,29 @@
         "阿图什冬宰羊肉",
         "沙洲竹梗芹",
         "溧阳白芹",
-        "台东冬果凤梨释迦"
+        "台东冬果凤梨释迦",
+        "闽侯汶溪桔柚",
+        "资中早熟血橙",
+        "汕头东湖炭焙紫菜",
+        "鹿泉温室香椿·元旦头茬",
+        "北安“白色恋人”白草莓",
+        "涪陵渝早100青菜头",
+        "天津黄芽菜",
+        "台湾沿海冬季乌鱼",
+        "苏澳小寒—大寒黑皮旗鱼",
+        "苏澳小寒—大寒白皮旗鱼",
+        "四湖小寒—大寒旗鱼",
+        "贡寮东北角刺紫菜",
+        "随州泡泡青",
+        "融安小洲头菜",
+        "永泰连山石牌橘柚",
+        "富顺小寒儿菜",
+        "新洲曲背湖宫灯荸荠"
       ]
     },
     {
       "date": "2027-01-28",
-      "count": 11,
+      "count": 35,
       "ids": [
         "cigu",
         "zengcheng-caixin",
@@ -75,7 +127,31 @@
         "shazhou-zhugengqin",
         "liyang-baixin",
         "wenzhou-pancai",
-        "taitung-winter-atemoya"
+        "taitung-winter-atemoya",
+        "zigong-baomiao-blood-orange",
+        "ntpc-dahan-native-yam",
+        "chuan-yu-dahan-pea-tips",
+        "huangpi-luzui-water-chestnut",
+        "shawan-yuba-red-stropharia",
+        "conghua-zhouzhoumei-citrus",
+        "dahan-green-carp",
+        "shantou-donghu-charcoal-zicai",
+        "pujiang-dahan-chunjian",
+        "fushun-niuyake-greenhouse-dahan",
+        "fuling-yuzao100-mustard-stem",
+        "xinshe-dahan-early-loquat",
+        "taiwan-daxue-mullet",
+        "suao-dahan-black-skin-marlin",
+        "suao-xiaohan-white-skin-sailfish",
+        "sihu-xiaohan-sailfish",
+        "ntpc-northeast-cape-thorn-purple-algae",
+        "suizhou-paopaoqing",
+        "rongan-xiaozhou-winter-head-vegetable",
+        "qingdao-youreka-greenhouse-blueberry",
+        "miyun-houchangjiawu-yuanwei1-tomato",
+        "lingshan-dahan-spring-tea-first-pick",
+        "zigui-simian-no1-dahan-early-tea",
+        "emei-wenchun-dahan-early-tea"
       ],
       "names": [
         "宝应慈姑",
@@ -88,72 +164,152 @@
         "沙洲竹梗芹",
         "溧阳白芹",
         "温州盘菜",
-        "台东冬果凤梨释迦"
+        "台东冬果凤梨释迦",
+        "自贡贡井白庙血橙",
+        "新北基隆原生种山药",
+        "川渝大寒豌豆尖",
+        "黄陂陆咀荸荠",
+        "沙湾喻坝赤松茸",
+        "从化洲洲美柑",
+        "大寒青鱼",
+        "汕头东湖炭焙紫菜",
+        "蒲江春见（耙耙柑）",
+        "抚顺新宾棚室刺嫩芽",
+        "涪陵渝早100青菜头",
+        "新社头柜早熟枇杷",
+        "台湾沿海冬季乌鱼",
+        "苏澳小寒—大寒黑皮旗鱼",
+        "苏澳小寒—大寒白皮旗鱼",
+        "四湖小寒—大寒旗鱼",
+        "贡寮东北角刺紫菜",
+        "随州泡泡青",
+        "融安小洲头菜",
+        "青岛大棚优瑞卡蓝莓",
+        "密云后焦家坞原味1号番茄",
+        "灵山春茶·大寒前后首采",
+        "秭归丝绵茶1号早茶",
+        "峨眉问春特早春茶"
       ]
     },
     {
       "date": "2027-02-01",
-      "count": 5,
+      "count": 14,
       "ids": [
         "hongshan-caitai",
         "yangxin-huhao",
         "bishan-ercai",
+        "rugao-takecai",
         "wenzhou-pancai",
-        "taitung-winter-atemoya"
+        "taitung-winter-atemoya",
+        "ntpc-dahan-native-yam",
+        "chuan-yu-dahan-pea-tips",
+        "shawan-yuba-red-stropharia",
+        "conghua-zhouzhoumei-citrus",
+        "pujiang-dahan-chunjian",
+        "fushun-niuyake-greenhouse-dahan",
+        "suizhou-paopaoqing",
+        "rongan-xiaozhou-winter-head-vegetable"
       ],
       "names": [
         "洪山菜薹",
         "阳新湖蒿",
         "璧山儿菜",
+        "如皋黑塌菜",
         "温州盘菜",
-        "台东冬果凤梨释迦"
+        "台东冬果凤梨释迦",
+        "新北基隆原生种山药",
+        "川渝大寒豌豆尖",
+        "沙湾喻坝赤松茸",
+        "从化洲洲美柑",
+        "蒲江春见（耙耙柑）",
+        "抚顺新宾棚室刺嫩芽",
+        "随州泡泡青",
+        "融安小洲头菜"
       ]
     },
     {
       "date": "2027-02-15",
-      "count": 6,
+      "count": 18,
       "ids": [
         "hongshan-caitai",
         "yangxin-huhao",
         "bishan-ercai",
+        "rugao-takecai",
         "wenzhou-pancai",
         "jiaozhou-kailing-suo",
-        "taitung-winter-atemoya"
+        "taitung-winter-atemoya",
+        "taiwan-pengjia-lichun-chun-fish",
+        "pujiang-dahan-chunjian",
+        "wusheng-dayagan-lichun",
+        "dazu-lichun-winter-vegetable-tip",
+        "yunxiao-liuye-baigeng-wongcai",
+        "taiwan-lichun-mackerel",
+        "taiwan-lichun-hairtail",
+        "taiwan-jingzhe-tongjian",
+        "taiwan-jingzhe-jiala",
+        "suizhou-paopaoqing",
+        "yaan-chuancai3-lichun-first-pick"
       ],
       "names": [
         "洪山菜薹",
         "阳新湖蒿",
         "璧山儿菜",
+        "如皋黑塌菜",
         "温州盘菜",
         "胶州湾开凌梭",
-        "台东冬果凤梨释迦"
+        "台东冬果凤梨释迦",
+        "台湾彭佳屿立春鰆鱼",
+        "蒲江春见（耙耙柑）",
+        "武胜大雅柑",
+        "大足立春冬菜尖",
+        "云霄柳叶白梗蕹菜",
+        "台湾立春洄游鲭鱼",
+        "台湾立春基隆彰化白带鱼",
+        "台湾云林四湖童尖",
+        "台湾云林四湖嘉腊",
+        "随州泡泡青",
+        "雅安川茶3号立春头采"
       ]
     },
     {
       "date": "2027-02-28",
-      "count": 7,
+      "count": 14,
       "ids": [
         "hongshan-caitai",
         "yangxin-huhao",
         "bishan-ercai",
+        "rugao-takecai",
         "jintang-fresh-morel",
         "wenzhou-pancai",
         "jiaozhou-kailing-suo",
-        "taitung-winter-atemoya"
+        "taitung-winter-atemoya",
+        "pujiang-dahan-chunjian",
+        "suzhou-rainwater-caihua-tangli",
+        "taiwan-lichun-mackerel",
+        "taiwan-lichun-hairtail",
+        "suizhou-paopaoqing",
+        "taiwan-rainwater-jialai-fish"
       ],
       "names": [
         "洪山菜薹",
         "阳新湖蒿",
         "璧山儿菜",
+        "如皋黑塌菜",
         "金堂鲜羊肚菌",
         "温州盘菜",
         "胶州湾开凌梭",
-        "台东冬果凤梨释迦"
+        "台东冬果凤梨释迦",
+        "蒲江春见（耙耙柑）",
+        "苏州菜花塘鳢鱼",
+        "台湾立春洄游鲭鱼",
+        "台湾立春基隆彰化白带鱼",
+        "随州泡泡青",
+        "台湾雨水澎湖、高雄加蚋鱼"
       ]
     },
     {
       "date": "2027-03-01",
-      "count": 13,
+      "count": 16,
       "ids": [
         "tanglihua",
         "kucihua",
@@ -167,7 +323,10 @@
         "jintang-fresh-morel",
         "jiaozhou-kailing-suo",
         "taitung-winter-atemoya",
-        "yongsheng-fresh-kapok"
+        "yongsheng-fresh-kapok",
+        "pujiang-dahan-chunjian",
+        "suzhou-rainwater-caihua-tangli",
+        "taiwan-lichun-hairtail"
       ],
       "names": [
         "棠梨花",
@@ -182,12 +341,15 @@
         "金堂鲜羊肚菌",
         "胶州湾开凌梭",
         "台东冬果凤梨释迦",
-        "永胜鲜攀枝花"
+        "永胜鲜攀枝花",
+        "蒲江春见（耙耙柑）",
+        "苏州菜花塘鳢鱼",
+        "台湾立春基隆彰化白带鱼"
       ]
     },
     {
       "date": "2027-03-15",
-      "count": 11,
+      "count": 29,
       "ids": [
         "tanglihua",
         "kucihua",
@@ -199,7 +361,25 @@
         "dalian-haimaxian",
         "ninghai-changjie-razor-clam",
         "jintang-fresh-morel",
-        "yongsheng-fresh-kapok"
+        "yongsheng-fresh-kapok",
+        "minhou-chayuan-highland-spring-shoot",
+        "pujiang-dahan-chunjian",
+        "linan-early-spring-leizun",
+        "qujing-shasong-tip",
+        "wenzhou-oujiang-ziji",
+        "taiwan-jingzhe-tongjian",
+        "taiwan-jingzhe-jiala",
+        "suzhou-dongshan-taihu-water-shield",
+        "eshan-jingzhe-mulberry-flower",
+        "fuzhou-jingzhe-zhaocai",
+        "suao-jingzhe-huahui",
+        "suao-jingzhe-muhou",
+        "suao-jingzhe-dingmian",
+        "keelung-jingzhe-jiaranyu",
+        "keelung-jingzhe-wenyu",
+        "qingdao-shazikou-li-xia-shrimp-2026",
+        "fengqing-xinhua-walnut-flowers",
+        "guangnan-mianhao-baba"
       ],
       "names": [
         "棠梨花",
@@ -212,12 +392,30 @@
         "大连海麻线",
         "宁海长街蛏子",
         "金堂鲜羊肚菌",
-        "永胜鲜攀枝花"
+        "永胜鲜攀枝花",
+        "闽侯茶苑高山春笋",
+        "蒲江春见（耙耙柑）",
+        "杭州临安雷笋",
+        "曲靖沙松尖",
+        "温州瓯江子鲚",
+        "台湾云林四湖童尖",
+        "台湾云林四湖嘉腊",
+        "苏州东山太湖莼菜",
+        "峨山鲜桑葚花",
+        "福州惊蛰糟菜",
+        "苏澳惊蛰花辉",
+        "苏澳惊蛰目吼",
+        "苏澳惊蛰钉鮸",
+        "基隆惊蛰加蚋鱼",
+        "基隆惊蛰鱼昷鱼",
+        "青岛沙子口春捕蛎虾（鹰爪虾）",
+        "凤庆新华乡鲜核桃花",
+        "广南面蒿粑"
       ]
     },
     {
       "date": "2027-03-28",
-      "count": 11,
+      "count": 30,
       "ids": [
         "tanglihua",
         "kucihua",
@@ -229,7 +427,26 @@
         "dalian-haimaxian",
         "ninghai-changjie-razor-clam",
         "jintang-fresh-morel",
-        "yongsheng-fresh-kapok"
+        "yongsheng-fresh-kapok",
+        "minhou-chayuan-highland-spring-shoot",
+        "pujiang-dahan-chunjian",
+        "baojing-huangjincha-spring-equinox-bulk",
+        "anji-xilong-baiye-first-pick",
+        "linan-early-spring-leizun",
+        "dujiangyan-spring-equinox-cotton-grass",
+        "fuzhou-chunfen-baili-fish",
+        "fuzhou-chunfen-chunbihhao",
+        "qingdao-shazikou-li-xia",
+        "qujing-shasong-tip",
+        "taiwan-jingzhe-tongjian",
+        "xihu-longjing-group-late-march",
+        "taiwan-spring-equinox-east-coast-bonito",
+        "chengde-spring-equinox-elm-samaras",
+        "wuhan-spring-equinox-hanpai-red-amaranth",
+        "ningbo-xikou-spring-mao-bamboo-shoot",
+        "ningbo-spring-equinox-alfalfa-shoots",
+        "qingdao-shazikou-li-xia-shrimp-2026",
+        "fengqing-xinhua-walnut-flowers"
       ],
       "names": [
         "棠梨花",
@@ -242,55 +459,48 @@
         "大连海麻线",
         "宁海长街蛏子",
         "金堂鲜羊肚菌",
-        "永胜鲜攀枝花"
+        "永胜鲜攀枝花",
+        "闽侯茶苑高山春笋",
+        "蒲江春见（耙耙柑）",
+        "保靖黄金茶",
+        "安吉溪龙白茶",
+        "杭州临安雷笋",
+        "都江堰春分棉花草嫩苗",
+        "福州春分白鱱鱼",
+        "福州春碧蒿（春分野苋菜）",
+        "青岛沙子口蛎虾",
+        "曲靖沙松尖",
+        "台湾云林四湖童尖",
+        "西湖龙井群体种",
+        "台湾东部春分鰹鱼",
+        "承德春分榆钱",
+        "武汉春分汉派红苋菜",
+        "奉化溪口黄泥拱毛笋",
+        "宁波春分苜蓿草籽",
+        "青岛沙子口春捕蛎虾（鹰爪虾）",
+        "凤庆新华乡鲜核桃花"
       ]
     },
     {
       "date": "2027-04-01",
-      "count": 5,
-      "ids": [
-        "foshougua-miao",
-        "cinenya",
-        "pucai",
-        "eryuan-haicaihua",
-        "ninghai-changjie-razor-clam"
-      ],
-      "names": [
-        "佛手瓜苗",
-        "刺嫩芽",
-        "淮安蒲菜",
-        "洱源海菜花",
-        "宁海长街蛏子"
-      ]
-    },
-    {
-      "date": "2027-04-15",
-      "count": 5,
-      "ids": [
-        "foshougua-miao",
-        "cinenya",
-        "pucai",
-        "eryuan-haicaihua",
-        "ninghai-changjie-razor-clam"
-      ],
-      "names": [
-        "佛手瓜苗",
-        "刺嫩芽",
-        "淮安蒲菜",
-        "洱源海菜花",
-        "宁海长街蛏子"
-      ]
-    },
-    {
-      "date": "2027-04-28",
-      "count": 6,
+      "count": 16,
       "ids": [
         "foshougua-miao",
         "cinenya",
         "pucai",
         "eryuan-haicaihua",
         "ninghai-changjie-razor-clam",
-        "shangyu-duanbing-cherry"
+        "minhou-chayuan-highland-spring-shoot",
+        "pujiang-dahan-chunjian",
+        "linan-early-spring-leizun",
+        "dujiangyan-spring-equinox-cotton-grass",
+        "gejiu-cinaobao",
+        "conghua-lutian-bitter-shoot",
+        "qingdao-shazikou-li-xia",
+        "qujing-shasong-tip",
+        "chengde-spring-equinox-elm-samaras",
+        "qingdao-shazikou-li-xia-shrimp-2026",
+        "fengqing-xinhua-walnut-flowers"
       ],
       "names": [
         "佛手瓜苗",
@@ -298,12 +508,126 @@
         "淮安蒲菜",
         "洱源海菜花",
         "宁海长街蛏子",
-        "上虞下管短柄樱桃"
+        "闽侯茶苑高山春笋",
+        "蒲江春见（耙耙柑）",
+        "杭州临安雷笋",
+        "都江堰春分棉花草嫩苗",
+        "个旧刺脑包",
+        "从化吕田苦笋",
+        "青岛沙子口蛎虾",
+        "曲靖沙松尖",
+        "承德春分榆钱",
+        "青岛沙子口春捕蛎虾（鹰爪虾）",
+        "凤庆新华乡鲜核桃花"
+      ]
+    },
+    {
+      "date": "2027-04-15",
+      "count": 29,
+      "ids": [
+        "foshougua-miao",
+        "cinenya",
+        "pucai",
+        "eryuan-haicaihua",
+        "ninghai-changjie-razor-clam",
+        "huizhou-chengkan-qingming-tea-shoot",
+        "minhou-chayuan-highland-spring-shoot",
+        "pujiang-dahan-chunjian",
+        "enping-qingming-lecai-tender-shoots",
+        "linan-early-spring-leizun",
+        "sinan-qingming-cai-mouse-ear",
+        "conghua-lutian-bitter-shoot",
+        "wulong-taiwan-long-mulberry",
+        "qingdao-shazikou-li-xia",
+        "qujing-shasong-tip",
+        "chongming-malan-head",
+        "taiwan-qingming-liuqiu-bullet-bonito",
+        "hanzhong-qingming-xiangchun-shoots",
+        "jiangmen-muzhou-qingming-huangsha-clam",
+        "nanjing-lishui-qingming-river-snail",
+        "qingdao-shazikou-qingming-spring-mackerel",
+        "pearl-river-qingming-cao-shrimp",
+        "guangdong-qingming-fengwei-anchovy",
+        "guangdong-eighteen-streams-qingming-yellow-brow-fish",
+        "beijiang-spring-milk-fish",
+        "qingdao-shazikou-li-xia-shrimp-2026",
+        "guangzhou-qingming-jiaocai",
+        "panyu-qingming-sugarcane",
+        "fengqing-xinhua-walnut-flowers"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "刺嫩芽",
+        "淮安蒲菜",
+        "洱源海菜花",
+        "宁海长街蛏子",
+        "徽州呈坎茶笋",
+        "闽侯茶苑高山春笋",
+        "蒲江春见（耙耙柑）",
+        "恩平簕菜·清明嫩芽",
+        "杭州临安雷笋",
+        "思南清明菜（鼠曲草嫩苗）",
+        "从化吕田苦笋",
+        "武隆台湾长果桑",
+        "青岛沙子口蛎虾",
+        "曲靖沙松尖",
+        "崇明马兰头",
+        "小琉球清明花鰹",
+        "汉中清明香椿芽",
+        "江门睦洲黄沙蚬",
+        "溧水晶桥清明螺蛳",
+        "青岛沙子口清明春鲅鱼",
+        "珠江口清明曹虾",
+        "珠江口清明凤尾鱼",
+        "广东十八涌清明黄眉头",
+        "北江春季奶鱼",
+        "青岛沙子口春捕蛎虾（鹰爪虾）",
+        "广州清明菜荞",
+        "番禺清明蔗",
+        "凤庆新华乡鲜核桃花"
+      ]
+    },
+    {
+      "date": "2027-04-28",
+      "count": 15,
+      "ids": [
+        "foshougua-miao",
+        "cinenya",
+        "pucai",
+        "eryuan-haicaihua",
+        "ninghai-changjie-razor-clam",
+        "shangyu-duanbing-cherry",
+        "pujiang-dahan-chunjian",
+        "tonglu-late-april-gaojie-bamboo",
+        "lanshan-baidieling-guyu-tea",
+        "wulong-taiwan-long-mulberry",
+        "yaoan-edible-rose",
+        "xuanzhou-shuidong-cherry",
+        "shidian-guyu-fiddleheads",
+        "wanning-damao-baitangying-lychee",
+        "qujing-shasong-tip"
+      ],
+      "names": [
+        "佛手瓜苗",
+        "刺嫩芽",
+        "淮安蒲菜",
+        "洱源海菜花",
+        "宁海长街蛏子",
+        "上虞下管短柄樱桃",
+        "蒲江春见（耙耙柑）",
+        "桐庐高节竹笋",
+        "蓝山百叠岭谷雨茶",
+        "武隆台湾长果桑",
+        "姚安光禄食用玫瑰",
+        "宣州水东鲜樱桃",
+        "施甸谷雨鲜蕨芽",
+        "万宁大茂白糖罂荔枝",
+        "曲靖沙松尖"
       ]
     },
     {
       "date": "2027-05-01",
-      "count": 8,
+      "count": 14,
       "ids": [
         "foshougua-miao",
         "cinenya",
@@ -312,7 +636,13 @@
         "eryuan-haicaihua",
         "shangyu-duanbing-cherry",
         "ninger-tongxin-sweet-shoot",
-        "jianshui-caoya"
+        "jianshui-caoya",
+        "lanshan-baidieling-guyu-tea",
+        "wulong-taiwan-long-mulberry",
+        "yaoan-edible-rose",
+        "xuanzhou-shuidong-cherry",
+        "shidian-guyu-fiddleheads",
+        "wanning-damao-baitangying-lychee"
       ],
       "names": [
         "佛手瓜苗",
@@ -322,12 +652,18 @@
         "洱源海菜花",
         "上虞下管短柄樱桃",
         "宁洱同心甜笋",
-        "建水草芽"
+        "建水草芽",
+        "蓝山百叠岭谷雨茶",
+        "武隆台湾长果桑",
+        "姚安光禄食用玫瑰",
+        "宣州水东鲜樱桃",
+        "施甸谷雨鲜蕨芽",
+        "万宁大茂白糖罂荔枝"
       ]
     },
     {
       "date": "2027-05-15",
-      "count": 8,
+      "count": 21,
       "ids": [
         "foshougua-miao",
         "cinenya",
@@ -336,7 +672,20 @@
         "eryuan-haicaihua",
         "shanzhou-green-wheat-nianzhuan",
         "ninger-tongxin-sweet-shoot",
-        "jianshui-caoya"
+        "jianshui-caoya",
+        "lixian-highland-cherry",
+        "hulin-liuhao-shoot",
+        "jiangmen-duruang-lixiang-cool-gourd",
+        "wulong-taiwan-long-mulberry",
+        "fengxian-shihai-2026-japanese-sweet-mulberry",
+        "yaoan-edible-rose",
+        "ankang-yinghu-daxing-loquat",
+        "qiongshan-sanmenpo-xiantaoli",
+        "hubei-ejiao4-summer-jiaobai",
+        "shidian-lixia-qingmei",
+        "jiuzhaigou-lixia-water-fern",
+        "wenzhou-lingkun-baizhuogua",
+        "changshu-lixia-fresh-fava"
       ],
       "names": [
         "佛手瓜苗",
@@ -346,12 +695,25 @@
         "洱源海菜花",
         "陕州新麦碾转",
         "宁洱同心甜笋",
-        "建水草芽"
+        "建水草芽",
+        "理县高原甜樱桃",
+        "虎林柳蒿芽",
+        "江门杜阮凉瓜",
+        "武隆台湾长果桑",
+        "奉贤石海村日本甜果桑",
+        "姚安光禄食用玫瑰",
+        "安康瀛湖“大五星”枇杷",
+        "琼山三门坡仙桃荔",
+        "鄂茭4号夏茭",
+        "施甸立夏青梅",
+        "九寨沟水蕨菜",
+        "温州灵昆白啄瓜",
+        "常熟立夏鲜蚕豆"
       ]
     },
     {
       "date": "2027-05-28",
-      "count": 9,
+      "count": 17,
       "ids": [
         "foshougua-miao",
         "cinenya",
@@ -361,7 +723,15 @@
         "ninghai-white-loquat",
         "shanzhou-green-wheat-nianzhuan",
         "ninger-tongxin-sweet-shoot",
-        "jianshui-caoya"
+        "jianshui-caoya",
+        "hulin-liuhao-shoot",
+        "suao-xiaoman-flying-fish-fishery",
+        "lichuan-heyuan-girl-fruit",
+        "kaohsiung-yuhebao-lychee-late-may",
+        "suzhou-june-yellow-late-may-market",
+        "tangqi-tangbei-late-loquat",
+        "ankang-yinghu-daxing-loquat",
+        "tianshui-qinzhou-xiaoman-cherry"
       ],
       "names": [
         "佛手瓜苗",
@@ -372,12 +742,20 @@
         "宁海白枇杷",
         "陕州新麦碾转",
         "宁洱同心甜笋",
-        "建水草芽"
+        "建水草芽",
+        "虎林柳蒿芽",
+        "苏澳小满飞鱼",
+        "黎川姑娘果",
+        "高屏玉荷包荔枝",
+        "苏州六月黄",
+        "塘栖塘北露天枇杷",
+        "安康瀛湖“大五星”枇杷",
+        "天水秦州小满鲜樱桃"
       ]
     },
     {
       "date": "2027-06-01",
-      "count": 7,
+      "count": 13,
       "ids": [
         "honghu-oudai",
         "tongxiang-zhuili",
@@ -385,7 +763,13 @@
         "jiande-chuncai",
         "xiangyin-santang-jiaotou",
         "jianshui-caoya",
-        "tonghai-fresh-sour-quince"
+        "tonghai-fresh-sour-quince",
+        "kaohsiung-yuhebao-lychee-late-may",
+        "suzhou-june-yellow-late-may-market",
+        "tangqi-tangbei-late-loquat",
+        "ankang-yinghu-daxing-loquat",
+        "tianshui-qinzhou-xiaoman-cherry",
+        "enping-naji-tainung17-pineapple"
       ],
       "names": [
         "洪湖藕带",
@@ -394,12 +778,18 @@
         "建德莼菜",
         "湘阴三塘鲜藠头",
         "建水草芽",
-        "通海鲜酸木瓜"
+        "通海鲜酸木瓜",
+        "高屏玉荷包荔枝",
+        "苏州六月黄",
+        "塘栖塘北露天枇杷",
+        "安康瀛湖“大五星”枇杷",
+        "天水秦州小满鲜樱桃",
+        "恩平那吉金钻17号凤梨"
       ]
     },
     {
       "date": "2027-06-15",
-      "count": 8,
+      "count": 16,
       "ids": [
         "honghu-oudai",
         "tongxiang-zhuili",
@@ -408,7 +798,15 @@
         "xiangyin-santang-jiaotou",
         "harbin-fresh-honeyberry",
         "jianshui-caoya",
-        "tonghai-fresh-sour-quince"
+        "tonghai-fresh-sour-quince",
+        "chaoyang-xilu-wusu-waxberry",
+        "kaohsiung-yuhebao-lychee-late-may",
+        "zhangmutou-mangzhong-guanyin-green-lychee",
+        "mengzi-june-red-pomegranate",
+        "wuhan-hannan-fresh-sweet-corn",
+        "enping-naji-tainung17-pineapple",
+        "zhenning-honey-plum",
+        "suzhou-jinting-wumei-mangzhong-waxberry"
       ],
       "names": [
         "洪湖藕带",
@@ -418,12 +816,20 @@
         "湘阴三塘鲜藠头",
         "哈尔滨鲜食蓝靛果",
         "建水草芽",
-        "通海鲜酸木瓜"
+        "通海鲜酸木瓜",
+        "潮阳西胪乌酥核杨梅",
+        "高屏玉荷包荔枝",
+        "樟木头芒种观音绿荔枝",
+        "蒙自“六月红”软籽石榴",
+        "武汉汉南鲜食甜玉米",
+        "恩平那吉金钻17号凤梨",
+        "镇宁蜂糖李",
+        "苏州金庭乌梅种杨梅"
       ]
     },
     {
       "date": "2027-06-28",
-      "count": 9,
+      "count": 14,
       "ids": [
         "honghu-oudai",
         "tongxiang-zhuili",
@@ -433,7 +839,12 @@
         "harbin-fresh-honeyberry",
         "minqin-field-shacong",
         "jianshui-caoya",
-        "tonghai-fresh-sour-quince"
+        "tonghai-fresh-sour-quince",
+        "yubei-xiazhi-sugar-peach",
+        "mengzi-june-red-pomegranate",
+        "ntpc-xiazhi-bullet-bonito",
+        "caidian-summer-solstice-fresh-lotus-pod",
+        "enping-naji-tainung17-pineapple"
       ],
       "names": [
         "洪湖藕带",
@@ -444,7 +855,12 @@
         "哈尔滨鲜食蓝靛果",
         "民勤露地鲜沙葱",
         "建水草芽",
-        "通海鲜酸木瓜"
+        "通海鲜酸木瓜",
+        "渝北夏至糖桃",
+        "蒙自“六月红”软籽石榴",
+        "东北角夏至炸弹鱼",
+        "蔡甸夏至鲜莲蓬",
+        "恩平那吉金钻17号凤梨"
       ]
     },
     {
@@ -481,7 +897,7 @@
     },
     {
       "date": "2027-07-15",
-      "count": 10,
+      "count": 20,
       "ids": [
         "foshougua-miao",
         "dier",
@@ -492,7 +908,17 @@
         "chenghai-baoke",
         "yunan-seedless-huangpi",
         "xishuangbanna-wood-milk-fruit",
-        "jianshui-caoya"
+        "jianshui-caoya",
+        "keelung-xiaojuan",
+        "pengjia-xiaoshu-mahi-mahi",
+        "keelung-north-xiaoshu-red-amberjack",
+        "keelung-north-xiaoshu-red-emperor-bream",
+        "tamsui-xiaoshu-black-bream",
+        "tamsui-xiaoshu-jiala",
+        "changhua-xiaoshu-black-over",
+        "changhua-xiaoshu-chishi",
+        "taixing-sucui1-early-pear",
+        "pinggu-zhongpan9-xiaoshu-peach"
       ],
       "names": [
         "佛手瓜苗",
@@ -504,12 +930,22 @@
         "澄海薄壳米",
         "郁南无核黄皮",
         "西双版纳木奶果",
-        "建水草芽"
+        "建水草芽",
+        "基隆北方海域小卷",
+        "彭佳屿小暑鬼头刀",
+        "基隆北方小暑红魽",
+        "基隆北方小暑赤宗",
+        "淡水小暑黑鲷",
+        "淡水小暑嘉腊",
+        "彰化小暑黄鳍鲷（黑过）",
+        "彰化小暑乌宗（赤食）",
+        "泰兴苏翠1号早熟梨",
+        "平谷中蟠9号桃"
       ]
     },
     {
       "date": "2027-07-28",
-      "count": 10,
+      "count": 21,
       "ids": [
         "foshougua-miao",
         "dier",
@@ -520,7 +956,18 @@
         "chenghai-baoke",
         "yunan-seedless-huangpi",
         "xishuangbanna-wood-milk-fruit",
-        "jianshui-caoya"
+        "jianshui-caoya",
+        "wenchuan-qingcui-plum",
+        "miaoli-gongguan-fresh-jujube",
+        "dengkou-wallace-melon",
+        "longyangxia-salmon",
+        "hejiang-late-lychee",
+        "shicheng-white-lotus",
+        "songjiang-cangqiao-crystal-pear",
+        "lufeng-zhongcun-late-early-chestnut",
+        "nanhui-daxue-water-honey-peach",
+        "jiading-malu-zuijinxiang-grape",
+        "dongguan-tangxia-shixia-longan"
       ],
       "names": [
         "佛手瓜苗",
@@ -532,12 +979,23 @@
         "澄海薄壳米",
         "郁南无核黄皮",
         "西双版纳木奶果",
-        "建水草芽"
+        "建水草芽",
+        "汶川青脆李",
+        "苗栗公馆鲜红枣",
+        "磴口华莱士瓜",
+        "龙羊峡三文鱼",
+        "合江晚熟荔枝",
+        "石城白莲鲜莲子",
+        "松江仓桥水晶梨",
+        "禄丰中村早熟板栗",
+        "南汇水蜜桃",
+        "嘉定马陆“醉金香”葡萄",
+        "东莞塘厦石硖龙眼"
       ]
     },
     {
       "date": "2027-08-01",
-      "count": 8,
+      "count": 19,
       "ids": [
         "jitoumi",
         "dier",
@@ -546,7 +1004,18 @@
         "ganbajun",
         "chenghai-baoke",
         "xishuangbanna-wood-milk-fruit",
-        "jianshui-caoya"
+        "jianshui-caoya",
+        "miaoli-gongguan-fresh-jujube",
+        "dengkou-wallace-melon",
+        "longyangxia-salmon",
+        "hejiang-late-lychee",
+        "shicheng-white-lotus",
+        "songjiang-cangqiao-crystal-pear",
+        "lufeng-zhongcun-late-early-chestnut",
+        "nanhui-daxue-water-honey-peach",
+        "jiading-malu-zuijinxiang-grape",
+        "dongguan-tangxia-shixia-longan",
+        "huocheng-xiangfei-crabapple"
       ],
       "names": [
         "鸡头米",
@@ -556,12 +1025,23 @@
         "干巴菌",
         "澄海薄壳米",
         "西双版纳木奶果",
-        "建水草芽"
+        "建水草芽",
+        "苗栗公馆鲜红枣",
+        "磴口华莱士瓜",
+        "龙羊峡三文鱼",
+        "合江晚熟荔枝",
+        "石城白莲鲜莲子",
+        "松江仓桥水晶梨",
+        "禄丰中村早熟板栗",
+        "南汇水蜜桃",
+        "嘉定马陆“醉金香”葡萄",
+        "东莞塘厦石硖龙眼",
+        "霍城香妃海棠果"
       ]
     },
     {
       "date": "2027-08-15",
-      "count": 8,
+      "count": 20,
       "ids": [
         "jitoumi",
         "dier",
@@ -570,7 +1050,19 @@
         "ganbajun",
         "chenghai-baoke",
         "xishuangbanna-wood-milk-fruit",
-        "jianshui-caoya"
+        "jianshui-caoya",
+        "shidian-autumn-longzhu-shoot",
+        "tainan-dongshan-fresh-longan",
+        "taiwan-lichiu-kaohsiung-xiaochuan",
+        "taiwan-lichiu-kaohsiung-squid",
+        "taiwan-lichiu-penghu-mackerel",
+        "taiwan-lichiu-penghu-shrimp",
+        "taiwan-lichiu-northwest-tilefish",
+        "taiwan-lichiu-red-eye-bream",
+        "taiwan-lichiu-east-sailfish",
+        "fengxian-nanqiao-early-water-red-caltrop",
+        "dongguan-tangxia-shixia-longan",
+        "huocheng-xiangfei-crabapple"
       ],
       "names": [
         "鸡头米",
@@ -580,12 +1072,24 @@
         "干巴菌",
         "澄海薄壳米",
         "西双版纳木奶果",
-        "建水草芽"
+        "建水草芽",
+        "施甸秋龙竹笋",
+        "台南东山鲜龙眼",
+        "台湾立秋高雄外海小串",
+        "台湾立秋高雄外海乌贼",
+        "台湾立秋澎湖鰆",
+        "台湾立秋澎湖虾类",
+        "台湾立秋西北海域马头鱼",
+        "台湾立秋东北角红目鰱",
+        "台湾立秋东部立翅旗鱼",
+        "奉贤南桥早熟水红菱",
+        "东莞塘厦石硖龙眼",
+        "霍城香妃海棠果"
       ]
     },
     {
       "date": "2027-08-28",
-      "count": 8,
+      "count": 10,
       "ids": [
         "jitoumi",
         "dier",
@@ -594,7 +1098,9 @@
         "ganbajun",
         "chenghai-baoke",
         "xishuangbanna-wood-milk-fruit",
-        "jianshui-caoya"
+        "jianshui-caoya",
+        "shidian-autumn-longzhu-shoot",
+        "dongguan-tangxia-shixia-longan"
       ],
       "names": [
         "鸡头米",
@@ -604,12 +1110,14 @@
         "干巴菌",
         "澄海薄壳米",
         "西双版纳木奶果",
-        "建水草芽"
+        "建水草芽",
+        "施甸秋龙竹笋",
+        "东莞塘厦石硖龙眼"
       ]
     },
     {
       "date": "2027-09-01",
-      "count": 15,
+      "count": 14,
       "ids": [
         "nanhu-ling",
         "jitoumi",
@@ -619,7 +1127,6 @@
         "cili",
         "huoshan-yanghe",
         "zhenlai-jiaobai",
-        "hanshou-yubiou",
         "jianou-zhuilli",
         "chongming-baibiandou",
         "chongming-xiangsu-yu",
@@ -636,7 +1143,6 @@
         "刺梨",
         "霍山阳荷嫩苞",
         "镇赉寒地茭白",
-        "汉寿玉臂藕",
         "建瓯锥栗",
         "崇明白扁豆鲜荚",
         "崇明香酥芋",
@@ -687,7 +1193,7 @@
     },
     {
       "date": "2027-09-28",
-      "count": 16,
+      "count": 26,
       "ids": [
         "nanhu-ling",
         "jitoumi",
@@ -704,7 +1210,17 @@
         "wenzhou-pancai",
         "longyang-pupiao-allium-root",
         "ximeng-bamboo-worm",
-        "sanmen-qingxie"
+        "sanmen-qingxie",
+        "yanqing-baleng-crisp-haitang",
+        "gongliao-autumn-japanese-horse-mackerel",
+        "penghu-qiufen-tuo-mackerel",
+        "taiwan-qiufen-tamsui-maga",
+        "taiwan-qiufen-lukang-white-belly-seerfish",
+        "taiwan-qiufen-northeast-sailfish",
+        "taiwan-qiufen-northeast-black-marlin",
+        "taiwan-qiufen-northeast-red-emperor",
+        "taiwan-qiufen-northeast-shrimp",
+        "henan-qiufen-tunisian-softseed-pomegranate"
       ],
       "names": [
         "南湖菱",
@@ -722,12 +1238,22 @@
         "温州盘菜",
         "隆阳蒲缥苤菜根",
         "西盟鲜竹虫",
-        "三门青蟹"
+        "三门青蟹",
+        "延庆八棱脆海棠",
+        "贡寮秋分日本竹荚鱼",
+        "澎湖与南台湾土托鰆",
+        "淡水秋分马加",
+        "鹿港白腹鰆",
+        "台湾东北部秋分旗鱼",
+        "台湾东北部秋分黑旗鱼",
+        "台湾东北部秋分赤宗",
+        "台湾东北部秋分鲜虾",
+        "河南秋分突尼斯软籽石榴"
       ]
     },
     {
       "date": "2027-10-01",
-      "count": 13,
+      "count": 21,
       "ids": [
         "nanhu-ling",
         "cizhousun",
@@ -741,7 +1267,15 @@
         "ximeng-bamboo-worm",
         "binchuan-renong1-yuganzi",
         "taitung-luoshen-calyx",
-        "sanmen-qingxie"
+        "sanmen-qingxie",
+        "yanqing-baleng-crisp-haitang",
+        "taiwan-qiufen-tamsui-maga",
+        "taiwan-qiufen-lukang-white-belly-seerfish",
+        "taiwan-qiufen-northeast-sailfish",
+        "taiwan-qiufen-northeast-black-marlin",
+        "taiwan-qiufen-northeast-red-emperor",
+        "taiwan-qiufen-northeast-shrimp",
+        "henan-qiufen-tunisian-softseed-pomegranate"
       ],
       "names": [
         "南湖菱",
@@ -756,12 +1290,20 @@
         "西盟鲜竹虫",
         "宾川“热农1号”余甘子",
         "台东鲜洛神花萼",
-        "三门青蟹"
+        "三门青蟹",
+        "延庆八棱脆海棠",
+        "淡水秋分马加",
+        "鹿港白腹鰆",
+        "台湾东北部秋分旗鱼",
+        "台湾东北部秋分黑旗鱼",
+        "台湾东北部秋分赤宗",
+        "台湾东北部秋分鲜虾",
+        "河南秋分突尼斯软籽石榴"
       ]
     },
     {
       "date": "2027-10-15",
-      "count": 13,
+      "count": 23,
       "ids": [
         "nanhu-ling",
         "cizhousun",
@@ -775,7 +1317,17 @@
         "ximeng-bamboo-worm",
         "binchuan-renong1-yuganzi",
         "taitung-luoshen-calyx",
-        "sanmen-qingxie"
+        "sanmen-qingxie",
+        "laiyang-pear",
+        "taiwan-hanlu-whitebelly-mackerel",
+        "yanqing-baleng-crisp-haitang",
+        "caidian-ehong4-early-caitai",
+        "huairou-huaibei-hongxiaoli",
+        "kaiyuan-xishan-hulu-pear",
+        "keelung-hanlu-cuttlefish",
+        "ningbo-zhanqi-dafeng-early-orange",
+        "fuzhou-hanlu-razor-clam-dry",
+        "fuzhou-hanlu-liaozai-clam"
       ],
       "names": [
         "南湖菱",
@@ -790,12 +1342,22 @@
         "西盟鲜竹虫",
         "宾川“热农1号”余甘子",
         "台东鲜洛神花萼",
-        "三门青蟹"
+        "三门青蟹",
+        "莱阳梨",
+        "台湾寒露白腹鰆",
+        "延庆八棱脆海棠",
+        "武汉蔡甸鄂红4号早熟菜薹",
+        "怀柔红肖梨",
+        "开远西山葫芦梨",
+        "基隆寒露目贼（乌贼）",
+        "宁波瞻岐大丰早橘",
+        "福州寒露蛏干",
+        "福州寒露蟟仔（蚬类俗名）"
       ]
     },
     {
       "date": "2027-10-28",
-      "count": 16,
+      "count": 27,
       "ids": [
         "nanhu-ling",
         "cizhousun",
@@ -812,7 +1374,18 @@
         "ximeng-bamboo-worm",
         "binchuan-renong1-yuganzi",
         "taitung-luoshen-calyx",
-        "sanmen-qingxie"
+        "sanmen-qingxie",
+        "heze-shannong-crisp-pear",
+        "suao-frost-beltfish",
+        "taiwan-frost-white-belly-seerfish",
+        "wuding-fawowo-winter-peach",
+        "pinggu-yingshuanghong-late-peach",
+        "banan-wubu-pomelo",
+        "wenxian-shuangjiang-tiegun-yam",
+        "tainan-madou-frost-white-pomelo",
+        "rongxian-shatian-pomelo",
+        "weixian-frost-radish",
+        "huairou-huaibei-hongxiaoli"
       ],
       "names": [
         "南湖菱",
@@ -830,12 +1403,23 @@
         "西盟鲜竹虫",
         "宾川“热农1号”余甘子",
         "台东鲜洛神花萼",
-        "三门青蟹"
+        "三门青蟹",
+        "菏泽山农酥梨",
+        "苏澳霜降百带鱼",
+        "台湾霜降白腹鰆",
+        "武定发窝冬桃",
+        "平谷金海湖映霜红大桃",
+        "巴南五布柚",
+        "温县霜降铁棍山药",
+        "台南麻豆霜降白柚",
+        "容县沙田柚",
+        "寒亭潍县萝卜",
+        "怀柔红肖梨"
       ]
     },
     {
       "date": "2027-11-01",
-      "count": 14,
+      "count": 19,
       "ids": [
         "cizhousun",
         "xunyang-guizao",
@@ -850,7 +1434,12 @@
         "heshi-xianfenge",
         "xikou-xindongsun",
         "rongan-jingju",
-        "sanmen-qingxie"
+        "sanmen-qingxie",
+        "pinggu-yingshuanghong-late-peach",
+        "banan-wubu-pomelo",
+        "tainan-madou-frost-white-pomelo",
+        "rongxian-shatian-pomelo",
+        "weixian-frost-radish"
       ],
       "names": [
         "刺竹笋",
@@ -866,12 +1455,17 @@
         "合水鲜粉葛",
         "溪口新冬笋",
         "融安脆蜜／滑皮金桔",
-        "三门青蟹"
+        "三门青蟹",
+        "平谷金海湖映霜红大桃",
+        "巴南五布柚",
+        "台南麻豆霜降白柚",
+        "容县沙田柚",
+        "寒亭潍县萝卜"
       ]
     },
     {
       "date": "2027-11-15",
-      "count": 14,
+      "count": 29,
       "ids": [
         "cizhousun",
         "xunyang-guizao",
@@ -886,7 +1480,22 @@
         "heshi-xianfenge",
         "xikou-xindongsun",
         "rongan-jingju",
-        "sanmen-qingxie"
+        "sanmen-qingxie",
+        "huangbohai-yingzhuaxia",
+        "mouding-winter-early-fava",
+        "cangnan-lidong-four-seasons-pomelo",
+        "dalian-jinzhou-hairyclam",
+        "qingdao-shuangdongmi-peach",
+        "qixia-lidong-winter-after-apple",
+        "yongjia-hesheng-red-persimmon",
+        "taiwan-lidong-east-sailfish",
+        "taiwan-lidong-east-red-eye-bream",
+        "taiwan-lidong-east-jiana-fish",
+        "pinggu-yingshuanghong-late-peach",
+        "zhangqiu-dawutong-scallion",
+        "guangning-lidong-ma-bamboo-shoot",
+        "pingdu-majiagou-celery",
+        "lanxi-huitan-sugarcane"
       ],
       "names": [
         "刺竹笋",
@@ -902,12 +1511,27 @@
         "合水鲜粉葛",
         "溪口新冬笋",
         "融安脆蜜／滑皮金桔",
-        "三门青蟹"
+        "三门青蟹",
+        "黄渤海灯笼红虾",
+        "牟定柜山冬早青蚕豆",
+        "苍南四季柚",
+        "大连金州毛蚶",
+        "青岛“双冬蜜”极晚熟桃",
+        "栖霞“冬后”苹果",
+        "永嘉鹤盛红柿",
+        "台湾东部立冬旗鱼",
+        "台湾东部立冬红目鰱",
+        "台湾东部立冬加纳鱼",
+        "平谷金海湖映霜红大桃",
+        "章丘“大梧桐”大葱",
+        "广宁洲仔麻竹笋",
+        "平度马家沟芹菜",
+        "兰溪汇潭甘蔗"
       ]
     },
     {
       "date": "2027-11-28",
-      "count": 14,
+      "count": 23,
       "ids": [
         "cizhousun",
         "xunyang-guizao",
@@ -922,7 +1546,16 @@
         "heshi-xianfenge",
         "xikou-xindongsun",
         "rongan-jingju",
-        "sanmen-qingxie"
+        "sanmen-qingxie",
+        "huangbohai-yingzhuaxia",
+        "mouding-winter-early-fava",
+        "ningbo-yinzhou-xiaoxue-fresh-snow-mustard",
+        "luogang-sweet-orange",
+        "wenzhou-sanyang-ougan",
+        "renhua-danxia-gonggan",
+        "yongjia-hesheng-red-persimmon",
+        "chiayi-budai-douzai-fish",
+        "taiwan-daxue-mullet"
       ],
       "names": [
         "刺竹笋",
@@ -938,12 +1571,21 @@
         "合水鲜粉葛",
         "溪口新冬笋",
         "融安脆蜜／滑皮金桔",
-        "三门青蟹"
+        "三门青蟹",
+        "黄渤海灯笼红虾",
+        "牟定柜山冬早青蚕豆",
+        "宁波鄞州冬菜雪菜",
+        "广州萝岗橙",
+        "温州三垟瓯柑",
+        "仁化丹霞贡柑",
+        "永嘉鹤盛红柿",
+        "嘉义布袋豆仔鱼",
+        "台湾沿海冬季乌鱼"
       ]
     },
     {
       "date": "2027-12-01",
-      "count": 10,
+      "count": 18,
       "ids": [
         "cigu",
         "zengcheng-caixin",
@@ -954,7 +1596,15 @@
         "conghua-dajiecai",
         "jinjiang-toushui-zicai",
         "xikou-xindongsun",
-        "rongan-jingju"
+        "rongan-jingju",
+        "wujiang-xiaoxue-fragrant-greens",
+        "ningbo-yinzhou-xiaoxue-fresh-snow-mustard",
+        "luogang-sweet-orange",
+        "renhua-danxia-gonggan",
+        "chiayi-budai-douzai-fish",
+        "taiwan-daxue-mullet",
+        "ntpc-northeast-cape-thorn-purple-algae",
+        "suizhou-paopaoqing"
       ],
       "names": [
         "宝应慈姑",
@@ -966,16 +1616,25 @@
         "从化大芥菜",
         "晋江头水紫菜",
         "溪口新冬笋",
-        "融安脆蜜／滑皮金桔"
+        "融安脆蜜／滑皮金桔",
+        "吴江香青菜",
+        "宁波鄞州冬菜雪菜",
+        "广州萝岗橙",
+        "仁化丹霞贡柑",
+        "嘉义布袋豆仔鱼",
+        "台湾沿海冬季乌鱼",
+        "贡寮东北角刺紫菜",
+        "随州泡泡青"
       ]
     },
     {
       "date": "2027-12-15",
-      "count": 12,
+      "count": 26,
       "ids": [
         "cigu",
         "zengcheng-caixin",
         "yangxin-huhao",
+        "rugao-takecai",
         "atushi-winter-lamb",
         "shazhou-zhugengqin",
         "liyang-baixin",
@@ -984,12 +1643,26 @@
         "yanshi-fresh-yintiao",
         "baoshan-liangcui-emblica",
         "xikou-xindongsun",
-        "rongan-jingju"
+        "rongan-jingju",
+        "hengyang-zhuhui-golden-pomelo",
+        "luogang-sweet-orange",
+        "taiwan-daxue-mullet",
+        "taiwan-daxue-korean-seerfish",
+        "taiwan-daxue-eastern-striped-bonito",
+        "penghu-qiufen-tuo-mackerel",
+        "ntpc-northeast-cape-thorn-purple-algae",
+        "zhangzidao-daxue-sea-cucumber",
+        "suizhou-paopaoqing",
+        "taitung-daxue-hangju",
+        "yuanchang-heijingang-winter-peanut",
+        "taiwan-daxue-whitebelly-mackerel",
+        "linwu-liping-golden-pomelo"
       ],
       "names": [
         "宝应慈姑",
         "增城迟菜心",
         "阳新湖蒿",
+        "如皋黑塌菜",
         "阿图什冬宰羊肉",
         "沙洲竹梗芹",
         "溧阳白芹",
@@ -998,16 +1671,30 @@
         "偃师鲜银条",
         "保山亮脆余甘子",
         "溪口新冬笋",
-        "融安脆蜜／滑皮金桔"
+        "融安脆蜜／滑皮金桔",
+        "珠晖黄金贡柚",
+        "广州萝岗橙",
+        "台湾沿海冬季乌鱼",
+        "台湾大雪高丽马加鰆",
+        "台湾大雪疏齒鰆",
+        "澎湖与南台湾土托鰆",
+        "贡寮东北角刺紫菜",
+        "獐子岛大雪采捕海参",
+        "随州泡泡青",
+        "台东知本杭菊",
+        "云林元长黑金刚花生",
+        "台湾大雪白腹鰆",
+        "临武黎坪黄金贡柚"
       ]
     },
     {
       "date": "2027-12-28",
-      "count": 13,
+      "count": 35,
       "ids": [
         "cigu",
         "zengcheng-caixin",
         "yangxin-huhao",
+        "rugao-takecai",
         "atushi-winter-lamb",
         "shazhou-zhugengqin",
         "liyang-baixin",
@@ -1017,12 +1704,34 @@
         "yanshi-fresh-yintiao",
         "baoshan-liangcui-emblica",
         "xikou-xindongsun",
-        "rongan-jingju"
+        "rongan-jingju",
+        "huadu-jingtang-lotusroot",
+        "ningbo-youdai",
+        "bomi-winter-muli",
+        "xinhui-winter-after-mandarin",
+        "wuhua-longcun-mountain-sweet-potato",
+        "minhou-wenxi-juyou",
+        "xinhui-yamen-tianshui-radish",
+        "xinhui-xinghuang-water-chestnut",
+        "hechuan-qingshicao-winter-red-radish",
+        "donghai-dongzhi-cuttlefish",
+        "taiwan-winter-solstice-mullet-roe",
+        "shantou-donghu-charcoal-zicai",
+        "shantou-haojiang-liqian-dongjingwan",
+        "taiwan-daxue-mullet",
+        "ntpc-northeast-cape-thorn-purple-algae",
+        "suizhou-paopaoqing",
+        "taitung-daxue-hangju",
+        "yunyang-winter-solstice-red-orange",
+        "anping-dongzhi-mackerel",
+        "yongtai-lianshan-shipaiju-you",
+        "qidong-lyusi-winter-solstice-hairtail"
       ],
       "names": [
         "宝应慈姑",
         "增城迟菜心",
         "阳新湖蒿",
+        "如皋黑塌菜",
         "阿图什冬宰羊肉",
         "沙洲竹梗芹",
         "溧阳白芹",
@@ -1032,7 +1741,28 @@
         "偃师鲜银条",
         "保山亮脆余甘子",
         "溪口新冬笋",
-        "融安脆蜜／滑皮金桔"
+        "融安脆蜜／滑皮金桔",
+        "花都京塘莲藕",
+        "宁波北洋油带鱼",
+        "波密冬至木梨",
+        "新会冬后柑",
+        "五华龙村高山红薯",
+        "闽侯汶溪桔柚",
+        "新会甜水萝卜",
+        "新会兴篁村鲜马蹄",
+        "合川青草坝红皮萝卜",
+        "东海冬至墨鱼",
+        "台湾冬至乌鱼子",
+        "汕头东湖炭焙紫菜",
+        "濠江里前东京丸",
+        "台湾沿海冬季乌鱼",
+        "贡寮东北角刺紫菜",
+        "随州泡泡青",
+        "台东知本杭菊",
+        "云阳红橙",
+        "台南安平冬至马鲛",
+        "永泰连山石牌橘柚",
+        "启东吕四冬至带鱼"
       ]
     }
   ]

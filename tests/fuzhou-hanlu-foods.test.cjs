@@ -16,6 +16,6 @@ test('Fuzhou liaozai keeps the reported local name without inventing a species i
  const id='fuzhou-hanlu-liaozai-clam',f=ctx.window.FOODS.find(x=>x.id===id),p=ctx.window.LOTTERY_PROFILES[id];
  assert.ok(f);assert.deepEqual(Array.from(f.peakTerms),[18]);assert.equal(f.seasonPrecision,'solar-term-window');
  assert.match(f.season,/没有给出标准物种鉴定/);assert.match(f.description,/没有明确到物种/);assert.match(f.procurement.checks.join(' '),/标准名称及物种/);
- assert.match(f.imageCaption,/不用于.*物种鉴别/);assert.ok(f.sources.some(x=>x[1]==='https://www.fuzhou.gov.cn/zgfzzt/zjrc/mdfc/msfq/202512/t20251205_5241003.htm'));
+ assert.match(f.imageCaption,/熟制贝类参考/);assert.ok(f.sources.some(x=>x[1]==='https://www.fuzhou.gov.cn/zgfzzt/zjrc/mdfc/msfq/202512/t20251205_5241003.htm'));
  assert.ok(fs.existsSync(path.join(root,'dist',f.image)));assert.equal(p.signature,C.signature(f));assert.equal(p.senses.signature,C.sensorySignature(f));
 });

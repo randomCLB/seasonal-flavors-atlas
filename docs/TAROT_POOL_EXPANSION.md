@@ -31,7 +31,7 @@
 | 11月15日 | 3 | 4 |
 | 12月15日 | 8 | 8 |
 
-上表是扩充到60味时的历史采样；当前67味及产地修正后的完整36个日期采样见TAROT_POOL_COVERAGE_2027.json，可用node scripts/audit-tarot-pool.cjs 2027复算。
+上表是扩充到60味时的历史采样；当前354味目录的完整36个日期采样见TAROT_POOL_COVERAGE_2027.json，可用node scripts/audit-tarot-pool.cjs 2027复算。
 
 以上历史采样中二月只有3项；当前数量请以重算结果为准。后续应继续调研有本地产季证据、合法来源和准确图片的冬春新品类。五月下旬的白枇杷保留原有notBefore门槛，不提前到五月上旬。
 
