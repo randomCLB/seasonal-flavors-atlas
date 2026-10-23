@@ -15,18 +15,21 @@ test('homepage display imagery uses ingredient identification photos, leaving di
  assert.match(app,/role==='appetite'&&!\['houtui-cai','rugao-takecai','gaochun-liuyuehuang'\]/);
 });
 
-test('map and spherical flavor tree expose pointer, trackpad, pinch and visible zoom controls',()=>{
+test('map and three-dimensional flavor globe expose pointer, trackpad, pinch and visible zoom controls',()=>{
  assert.match(html,/id="mapZoomOut"[\s\S]*id="mapZoomIn"/);
  assert.match(app,/mapImage\.addEventListener\('wheel',[\s\S]*event\.ctrlKey/);
  assert.match(app,/startMapGesture\(\)[\s\S]*type:'pinch'/);
  assert.match(html,/id="flavorZoomOut"[\s\S]*id="flavorZoomIn"[\s\S]*id="flavorZoomReset"/);
  assert.match(app,/const starTerms=termWindow\.slice\(\)\.sort\(\(a,b\)=>a\.index-b\.index\)/);
- assert.match(app,/const center=\{x:W\/2,y:H\/2\},sphereRadius=302/);
- assert.match(app,/angle=-Math\.PI\/2\+event\.index\*Math\.PI\/12/);
- assert.match(app,/ctx\.bezierCurveTo\(center\.x\+dx\*56/);
+ assert.match(app,/rotateX:-\.18,rotateY:\.42/);
+ assert.match(app,/const project3d=point=>\{const rotated=rotate3d\(point\),perspective=camera\/\(camera-rotated\.z\)/);
+ assert.match(app,/uy=1-2\*t,ring=Math\.sqrt\(1-uy\*uy\)/);
+ assert.match(app,/viewScale=Math\.min\(box\.width\/W,box\.height\/H\)/);
+ assert.match(app,/starView\.rotateY=starGesture\.view\.rotateY\+dx\/box\.width\*Math\.PI\*1\.5/);
+ assert.match(html,/三维球形二十四节气风味树/);
  assert.match(app,/Math\.floor\(event\.index\/6\)/);
  assert.match(app,/canvas\.addEventListener\('wheel'/);
  assert.match(css,/\.flavor-zoom-controls/);
 });
 
-test('the page carries a readable build marker for release verification',()=>assert.match(html,/版次 2026\.10\.23 · 四类风物 \/ 球形节气树/));
+test('the page carries a readable build marker for release verification',()=>assert.match(html,/版次 2026\.10\.23 · 四类风物 \/ 3D立体星图/));
