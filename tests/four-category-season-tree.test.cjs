@@ -15,15 +15,18 @@ test('homepage display imagery uses ingredient identification photos, leaving di
  assert.match(app,/role==='appetite'&&!\['houtui-cai','rugao-takecai','gaochun-liuyuehuang'\]/);
 });
 
-test('map and flavor tree expose pointer, trackpad, pinch and visible zoom controls',()=>{
+test('map and spherical flavor tree expose pointer, trackpad, pinch and visible zoom controls',()=>{
  assert.match(html,/id="mapZoomOut"[\s\S]*id="mapZoomIn"/);
  assert.match(app,/mapImage\.addEventListener\('wheel',[\s\S]*event\.ctrlKey/);
  assert.match(app,/startMapGesture\(\)[\s\S]*type:'pinch'/);
  assert.match(html,/id="flavorZoomOut"[\s\S]*id="flavorZoomIn"[\s\S]*id="flavorZoomReset"/);
  assert.match(app,/const starTerms=termWindow\.slice\(\)\.sort\(\(a,b\)=>a\.index-b\.index\)/);
+ assert.match(app,/const center=\{x:W\/2,y:H\/2\},sphereRadius=302/);
+ assert.match(app,/angle=-Math\.PI\/2\+event\.index\*Math\.PI\/12/);
+ assert.match(app,/ctx\.bezierCurveTo\(center\.x\+dx\*56/);
  assert.match(app,/Math\.floor\(event\.index\/6\)/);
  assert.match(app,/canvas\.addEventListener\('wheel'/);
  assert.match(css,/\.flavor-zoom-controls/);
 });
 
-test('the page carries a readable build marker for release verification',()=>assert.match(html,/版次 2026\.10\.23 · 四类风物 \/ 节气风味树/));
+test('the page carries a readable build marker for release verification',()=>assert.match(html,/版次 2026\.10\.23 · 四类风物 \/ 球形节气树/));

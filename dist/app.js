@@ -285,26 +285,37 @@ function drawStar(){
  const glow=ctx.createRadialGradient(box.width*.5,box.height*.45,0,box.width*.5,box.height*.45,Math.max(box.width,box.height)*.75);glow.addColorStop(0,'#416659');glow.addColorStop(1,'#193d35');ctx.fillStyle=glow;ctx.fillRect(0,0,box.width,box.height);
  const sx=box.width/W,sy=box.height/H;
  ctx.save();ctx.scale(sx,sy);ctx.translate(starView.x,starView.y);ctx.scale(starView.scale,starView.scale);
- const groups=starTreeData(),seasonNames=['冬','春','夏','秋'],seasonRoots=seasonNames.map((name,index)=>({name,index,x:130+index*290,y:122,color:starColors[index]}));
- projected=[];const positions=new Map();
- seasonRoots.forEach(root=>{ctx.fillStyle=root.color;ctx.font='18px "Songti SC",serif';ctx.textAlign='center';ctx.fillText(root.name,root.x,root.y-18);ctx.strokeStyle=root.color+'88';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(root.x,root.y);ctx.lineTo(root.x,710);ctx.stroke()});
+ const center={x:W/2,y:H/2},sphereRadius=302,rootRadius=18,termRadius=145,leafRadius=235;
+ const sphere=ctx.createRadialGradient(center.x-55,center.y-65,12,center.x,center.y,sphereRadius);sphere.addColorStop(0,'#6b8a78aa');sphere.addColorStop(1,'#193d3533');
+ ctx.beginPath();ctx.arc(center.x,center.y,sphereRadius,0,Math.PI*2);ctx.fillStyle=sphere;ctx.fill();ctx.strokeStyle='#d9dfcf55';ctx.lineWidth=1.2;ctx.stroke();
+ ctx.save();ctx.beginPath();ctx.arc(center.x,center.y,sphereRadius-2,0,Math.PI*2);ctx.clip();ctx.strokeStyle='#d9dfcf20';ctx.lineWidth=1;
+ [.36,.68].forEach(r=>{ctx.beginPath();ctx.ellipse(center.x,center.y,sphereRadius*r,sphereRadius*.17,0,0,Math.PI*2);ctx.stroke()});
+ ctx.beginPath();ctx.ellipse(center.x,center.y,sphereRadius*.25,sphereRadius,0,0,Math.PI*2);ctx.stroke();ctx.restore();
+ const groups=starTreeData(),relatedIds=new Set(relatedFoods(byId[starSelected]).map(item=>item.food.id));projected=[];const positions=new Map();
  groups.forEach(({event,list})=>{
-  const season=Math.floor(event.index/6),row=event.index%6,root=seasonRoots[season],x=root.x,y=165+row*86;
-  ctx.strokeStyle=root.color+'bb';ctx.lineWidth=1.6;ctx.beginPath();ctx.moveTo(root.x,y);ctx.quadraticCurveTo(root.x+45,y,root.x+66,y);ctx.stroke();
-  ctx.fillStyle=root.color;ctx.beginPath();ctx.arc(root.x+66,y,5,0,Math.PI*2);ctx.fill();
-  ctx.fillStyle='#f3eedf';ctx.font='13px sans-serif';ctx.textAlign='left';ctx.fillText(window.SOLAR_TERM_NAMES[event.index],root.x+78,y+4);
-  const candidates=list.slice(0,4),step=22,start=y-(candidates.length-1)*step/2;
+  const angle=-Math.PI/2+event.index*Math.PI/12,dx=Math.cos(angle),dy=Math.sin(angle),px=-dy,py=dx,season=Math.floor(event.index/6),color=starColors[season];
+  const start={x:center.x+dx*rootRadius,y:center.y+dy*rootRadius},term={x:center.x+dx*termRadius,y:center.y+dy*termRadius};
+  const sway=Math.sin(event.index*1.7)*20;
+  ctx.strokeStyle=color+'cc';ctx.lineWidth=2.1;ctx.beginPath();ctx.moveTo(start.x,start.y);ctx.bezierCurveTo(center.x+dx*56+px*sway,center.y+dy*56+py*sway,center.x+dx*104-px*sway*.55,center.y+dy*104-py*sway*.55,term.x,term.y);ctx.stroke();
+  const fork={x:center.x+dx*100,y:center.y+dy*100};[-1,1].forEach(side=>{const leaf={x:fork.x+dx*42+px*side*30,y:fork.y+dy*42+py*side*30};ctx.strokeStyle=color+'88';ctx.lineWidth=1.35;ctx.beginPath();ctx.moveTo(fork.x,fork.y);ctx.quadraticCurveTo(fork.x+dx*18+px*side*8,fork.y+dy*18+py*side*8,leaf.x,leaf.y);ctx.stroke();ctx.save();ctx.translate(leaf.x,leaf.y);ctx.rotate(angle+side*.55);ctx.fillStyle=color+'aa';ctx.beginPath();ctx.ellipse(0,0,5,2.2,0,0,Math.PI*2);ctx.fill();ctx.restore()});
+  ctx.fillStyle=color;ctx.beginPath();ctx.arc(term.x,term.y,4.8,0,Math.PI*2);ctx.fill();
+  const label={x:center.x+dx*(termRadius+30),y:center.y+dy*(termRadius+30)};
+  ctx.fillStyle='#fffaf0';ctx.font='12px sans-serif';ctx.textAlign=dx>.35?'left':dx<-.35?'right':'center';ctx.textBaseline=dy>.55?'top':dy<-.55?'bottom':'middle';ctx.fillText(window.SOLAR_TERM_NAMES[event.index],label.x,label.y);
+  const termPoint={...term,id:`term:${event.index}`,term:event.index};projected.push(termPoint);
+  const candidates=list.slice(0,4),spacing=17;
   candidates.forEach((food,index)=>{
-   const point={x:root.x+175,y:start+index*step,id:food.id,term:event.index};positions.set(food.id,point);projected.push(point);
-   const active=food.id===starSelected,related=relatedFoods(byId[starSelected]).some(item=>item.food.id===food.id);
-   ctx.strokeStyle=active?'#e6d7a8':related?'#dac79199':root.color+'66';ctx.lineWidth=active?2:1;ctx.beginPath();ctx.moveTo(root.x+66,y);ctx.lineTo(point.x-8,point.y);ctx.stroke();
-   ctx.beginPath();ctx.arc(point.x,point.y,active?7:related?5:3.5,0,Math.PI*2);ctx.fillStyle=active?'#e6d7a8':related?'#dac791':root.color+'d0';ctx.fill();
-   if(active||related){ctx.fillStyle='#fffaf0';ctx.font=`${active?'600 ':''}12px sans-serif`;ctx.textAlign='left';ctx.fillText(food.name,point.x+11,point.y+4)}
+   const offset=(index-(candidates.length-1)/2)*spacing,distance=leafRadius-30+((event.index+index)%3)*18,point={x:center.x+dx*distance+px*offset,y:center.y+dy*distance+py*offset,id:food.id,term:event.index};
+   if(!positions.has(food.id))positions.set(food.id,point);projected.push(point);
+   const active=food.id===starSelected,related=relatedIds.has(food.id);
+   const control={x:term.x+dx*35+px*offset*.7,y:term.y+dy*35+py*offset*.7};
+   ctx.strokeStyle=active?'#f1dfad':related?'#ead5aab0':color+'8c';ctx.lineWidth=active?2.3:1.1;ctx.beginPath();ctx.moveTo(term.x,term.y);ctx.quadraticCurveTo(control.x,control.y,point.x,point.y);ctx.stroke();
+   ctx.beginPath();ctx.arc(point.x,point.y,active?7:related?5:3.2,0,Math.PI*2);ctx.fillStyle=active?'#f1dfad':related?'#ead5aa':color+'e0';ctx.fill();
+   if(active||related){ctx.fillStyle='#fffaf0';ctx.font=`${active?'600 ':''}12px sans-serif`;ctx.textAlign=dx>.15?'left':dx<-.15?'right':'center';ctx.textBaseline=dy>.55?'top':dy<-.55?'bottom':'middle';ctx.fillText(food.name,point.x+(dx>.15?10:dx<-.15?-10:0),point.y+(Math.abs(dy)>.72?(dy>0?9:-9):0))}
   });
-  const termPoint={x:root.x+66,y,id:`term:${event.index}`,term:event.index};projected.push(termPoint);
  });
+ ctx.fillStyle='#e4d3a0';ctx.beginPath();ctx.arc(center.x,center.y,rootRadius+5,0,Math.PI*2);ctx.fill();ctx.fillStyle='#193d35';ctx.beginPath();ctx.arc(center.x,center.y,rootRadius,0,Math.PI*2);ctx.fill();ctx.fillStyle='#fffaf0';ctx.font='12px "Songti SC",serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('时令',center.x,center.y);
  const selectedPoint=positions.get(starSelected),links=relatedFoods(byId[starSelected]).filter(x=>starTagFilter==='all'||x.food.flavor.includes(starTagFilter));
- if(selectedPoint)links.forEach(({food})=>{const target=positions.get(food.id);if(!target)return;ctx.strokeStyle='#ead7a288';ctx.lineWidth=1.4;ctx.setLineDash([4,5]);ctx.beginPath();ctx.moveTo(selectedPoint.x,selectedPoint.y);ctx.lineTo(target.x,target.y);ctx.stroke();ctx.setLineDash([])});
+ if(selectedPoint)links.forEach(({food})=>{const target=positions.get(food.id);if(!target||target.id===selectedPoint.id)return;ctx.strokeStyle='#f1dfad88';ctx.lineWidth=1.3;ctx.setLineDash([4,5]);ctx.beginPath();ctx.moveTo(selectedPoint.x,selectedPoint.y);ctx.lineTo(target.x,target.y);ctx.stroke();ctx.setLineDash([])});
  ctx.restore();
 }
 function renderFlavor(){
