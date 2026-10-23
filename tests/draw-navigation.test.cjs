@@ -61,6 +61,6 @@ test('both mode links and homepage draw work under root and compatible preview p
     assert.equal(new URL(nav(read('index.html'), '主要导航')[0].href, base+'index.html').href, base+'tarot.html');
   }
 });
-test('updated homepage loads the scoped navigation binding with a new cache key', () => {
-  assert.match(read('index.html'), /src="app\.js\?v=curation-20261022"/);
+test('updated homepage loads the scoped navigation binding with the current cache key', () => {
+  assert.match(read('index.html'), /src="app\.js\?v=four-season-tree-20261023"/);
 });

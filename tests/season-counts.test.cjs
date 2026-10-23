@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const C=require('../dist/lottery-core.js'),root=path.join(__dirname,'../dist');
 const runtimeData=new Set(['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','term-gap-additions','editorial-copy','photo-review','season-features','season-selection']);
-const categoryOf=food=>({seafood:'protein',nuts:'seed'}[food.category]||food.category);
+const categoryOf=food=>food.category==='vegetable'||food.category==='fruit'?food.category:['protein','seafood'].includes(food.category)?'protein':'other';
 function fixture(now='2026-10-22T04:00:00Z'){
  const nodes=new Map(),document={getElementById:id=>{if(!nodes.has(id))nodes.set(id,{style:{},classList:{toggle(){}},querySelectorAll:()=>[]});return nodes.get(id)},querySelectorAll:()=>[]};
  class Clock extends Date{constructor(...args){super(...(args.length?args:[now]))}static now(){return Date.parse(now)}}
@@ -26,6 +26,7 @@ test('the full live catalog has a readable category and every displayed category
  const {ctx,nodes}=fixture(),foods=ctx.window.FOODS;
  vm.runInContext('renderSeason()',ctx);
  const labels=vm.runInContext('categoryNames',ctx),totals=counts(nodes);
+ assert.deepEqual(Object.values(labels),['蔬菜','水果','肉类','其他']);
  for(const food of foods){
   assert.ok(labels[categoryOf(food)],`${food.id}: ${food.category} needs a visible category`);
   assert.equal(vm.runInContext(`foodCategory(byId[${JSON.stringify(food.id)}])`,ctx),categoryOf(food));
@@ -33,7 +34,7 @@ test('the full live catalog has a readable category and every displayed category
  assert.equal(totals.all,Object.entries(totals).filter(([key])=>key!=='all').reduce((sum,[,n])=>sum+n,0));
  assert.equal(totals.all,cardIds(nodes).length);
  assert.ok(totals.protein>0,'seafood is reachable through the water-and-meat filter');
- assert.ok(totals.flower>0,'October edible flowers are not orphaned in the catalog');
+ assert.ok(totals.other>0,'flowers, teas and other source categories share the fourth browsing group');
 });
 
 test('all 24 terms keep strict category filters, truthful empty states and a separate seasonal hero',()=>{
