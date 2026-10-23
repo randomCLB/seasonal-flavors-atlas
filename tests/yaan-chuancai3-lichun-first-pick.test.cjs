@@ -9,5 +9,5 @@ test('Ya’an Chuancha No. 3 first-pick tea is a sourced Lichun-only entry with 
  assert.ok(food.sources.some(x=>x[1]==='https://www.yaan.gov.cn/xinwen/show/8e3ed307-c165-4164-aed3-b19b808f8696.html'));assert.match(food.imageCaption,/不用于川茶3号/);assert.ok(fs.existsSync(path.join(root,'dist',food.image)));
  assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
  const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),lichun=audit.rows.find(x=>x.term==='立春'),dahan=audit.rows.find(x=>x.term==='大寒');assert.ok(lichun.foodIds.includes(id));assert.ok(!dahan.foodIds.includes(id));
- const app=fs.readFileSync(path.join(root,'dist','app.js'),'utf8'),html=fs.readFileSync(path.join(root,'dist','index.html'),'utf8');assert.match(app,/tea:'茶与饮品'/);assert.match(html,/<option value="tea">茶与饮品<\/option>/);
+ const app=fs.readFileSync(path.join(root,'dist','app.js'),'utf8'),html=fs.readFileSync(path.join(root,'dist','index.html'),'utf8');assert.match(app,/categoryNames=\{vegetable:'蔬菜',fruit:'水果',protein:'肉类',other:'其他'\}/);assert.match(html,/<option value="other">其他<\/option>/);
 });

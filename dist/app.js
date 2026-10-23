@@ -26,10 +26,10 @@ const monthFoods=month=>foods.filter(f=>f.peakMonths.includes(month));
 let selectedMonth=chinaNow.month,currentView='season',mapOnlySeason=true,mapFocus=null,mapCategory='all',previousFocus=null;
 foods.forEach(f=>f.places=f.placeSeasons);
 const nameWithIcon=food=>food.name;
-const categoryNames={vegetable:'蔬菜',fruit:'水果',protein:'水产与肉',fungus:'菌菇',flower:'食用花',tea:'茶与饮品',seed:'坚果种子',spice:'香辛料',oilseed:'油茶与油料'};
-// Display aliases preserve the original catalog categories used by the draw profiles.
-const foodCategory=food=>({seafood:'protein',nuts:'seed'}[food.category]||food.category);
-const foodCategoryLabel=food=>categoryNames[foodCategory(food)]||'其他风物';
+const categoryNames={vegetable:'蔬菜',fruit:'水果',protein:'肉类',other:'其他'};
+// Keep the detailed source taxonomy for editorial profiles; expose four stable browsing groups.
+const foodCategory=food=>food.category==='vegetable'||food.category==='fruit'?food.category:['protein','seafood'].includes(food.category)?'protein':'other';
+const foodCategoryLabel=food=>categoryNames[foodCategory(food)];
 let selectedCategory='all',viewScrollTops={season:0,map:0,flavor:0},featuredAssignments={};
 const termSlugs=['xiaohan','dahan','lichun','yushui','jingzhe','chunfen','qingming','guyu','lixia','xiaoman','mangzhong','xiazhi','xiaoshu','dashu','liqiu','chushu','bailu','qiufen','hanlu','shuangjiang','lidong','xiaoxue','daxue','dongzhi'];
 const termArtSubjects=["红梅初绽、霜针松枝、半冻山溪","厚冰裂纹、枯苇、严冬雪岸","芽苞初开、融雪、细流","细雨柳芽、水洼涟漪","桃花、苏醒的虫、春雷","燕子、春田、繁花","风筝、柳枝、踏青小径","茶芽、润雨、茶园","嫩荷、青蛙、水边鸢尾","渐满青麦穗、桑叶","金色芒麦、镰刀、插秧","烈日、荷花、短影","蝉、竹阴、暑气","繁荷、急雨、浓夏","初黄叶片、熟石榴","棉桃吐絮、暑退、候鸟","银露青草、白鹭、清晨","稻穗低垂、丰收谷篮","露珠、秋叶、黄菊、晨雾","叶缘白霜、红柿、秋尽","银杏落尽、藏菜木篮","薄雪南天竹、疏落雪花","厚雪松枝、积雪林径","低日长影、暖窗、冬枝"];
@@ -125,16 +125,13 @@ const homeVisualOverrides={
 function foodVisual(food,role='appetite'){
  const reviewed=window.PhotoReview?.records?.[food.id];
  if(reviewed)return {...reviewed,fit:role==='recognition'&&wholeSubjects.has(food.id)?'contain':'cover',heroFit:'cover'};
- const home=role==='appetite'&&homeVisualOverrides[food.id];
+ const home=role==='appetite'&&!['houtui-cai','rugao-takecai','gaochun-liuyuehuang'].includes(food.id)&&homeVisualOverrides[food.id];
  if(home)return {...home,fit:home.fit||'cover',heroFit:home.fit||'cover'};
- const homeFruitPhoto=role==='appetite'&&food.id==='shajiguo';
- const homeShootPhoto=role==='appetite'&&food.id==='cizhousun';
- const edible=role==='appetite'&&!homeFruitPhoto&&!homeShootPhoto&&(food.dishImage||food.cutImage);
- const originalSrc=homeFruitPhoto||homeShootPhoto?food.image:edible||(role==='recognition'?food.image:food.cardImage)||food.image||food.cardImage;
+ const originalSrc=role==='appetite'||role==='recognition'?food.image||food.cardImage:food.cardImage||food.image;
  const src=originalSrc==='assets/shajiguo.jpg'?'assets/shajiguo-400.webp':originalSrc;
- const alt=homeFruitPhoto||homeShootPhoto?food.imageAlt:edible?(food.dishImage?food.dishImageAlt:food.cutImageAlt):(role==='recognition'?food.imageAlt:food.cardImageAlt)||food.imageAlt||food.name;
+ const alt=role==='appetite'||role==='recognition'?food.imageAlt||food.cardImageAlt||food.name:food.cardImageAlt||food.imageAlt||food.name;
  const generated=/generated|示意/.test(`${src} ${alt}`);
- return {src,alt,fit:role==='recognition'&&wholeSubjects.has(food.id)?'contain':'cover',heroFit:homeShootPhoto?'contain':'cover',note:generated?'生成示意 · 非实物摄影，非品种鉴别':homeFruitPhoto?food.imageCaption:homeShootPhoto?food.cardNote:edible?(food.dishImage?'成菜参考':'鲜果可食状态'):food.cardNote||food.imageCaption||'形态参考 · 非产地鉴别'};
+ return {src,alt,fit:role==='recognition'&&wholeSubjects.has(food.id)?'contain':'cover',heroFit:'cover',note:generated?'生成示意 · 非实物摄影，非品种鉴别':food.imageCaption||food.cardNote||'形态参考 · 非产地鉴别'};
 }
 function renderTermRail(){
  $('terms').innerHTML=termWindow.map((event,index)=>`<button class="${event===selectedTerm?'active':''}" data-term="${index}" aria-current="${event===selectedTerm?'date':'false'}"><small>${dateText(event.time,true)}</small><strong>${termNames[event.index]}</strong></button>`).join('');
@@ -179,7 +176,7 @@ function renderSeason(){
 }
 $('termPrev').onclick=()=>{selectedTerm=termWindow[Math.max(0,termWindow.indexOf(selectedTerm)-1)];renderTermRail();renderSeason()};
 $('termNext').onclick=()=>{selectedTerm=termWindow[Math.min(termWindow.length-1,termWindow.indexOf(selectedTerm)+1)];renderTermRail();renderSeason()};
-function setView(view){if(view===currentView)return;viewScrollTops[currentView]=window.scrollY;currentView=view;if(view!=='map'){mapInteractionEnabled=false;document.querySelector('.map-image').classList.remove('is-interactive');$('mapHint').textContent='电脑点一下地图后可滚轮缩放、按住拖动；手机直接单指拖动或双指缩放。地图外照常滚动页面。'}document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`${view}View`);document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('is-active',b.dataset.view===view));if(view==='map')renderMap();if(view==='flavor')renderFlavor();requestAnimationFrame(()=>window.scrollTo({top:viewScrollTops[view]||0,behavior:'instant'}))}
+function setView(view){if(view===currentView)return;viewScrollTops[currentView]=window.scrollY;currentView=view;if(view!=='map'){mapInteractionEnabled=false;document.querySelector('.map-image').classList.remove('is-interactive');$('mapHint').textContent='鼠标滚轮缩放；触控板捏合缩放，点击后可拖动；手机单指拖动或双指缩放。地图外照常滚动。'}document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==`${view}View`);document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('is-active',b.dataset.view===view));if(view==='map')renderMap();if(view==='flavor')renderFlavor();requestAnimationFrame(()=>window.scrollTo({top:viewScrollTops[view]||0,behavior:'instant'}))}
 document.querySelectorAll('.nav-item[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $('mapPrompt').onclick=()=>setView('map');
 const meta=window.MAP_META,mapAspect=meta.width/meta.height;
@@ -204,11 +201,13 @@ $('mapMonthPrev').onclick=()=>setMapMonth(selectedMonth===1?12:selectedMonth-1);
 $('mapMonthNext').onclick=()=>setMapMonth(selectedMonth===12?1:selectedMonth+1);
 $('mapMonths').addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();setMapMonth((selectedMonth-1+(e.deltaY>0?1:11))%12+1)}},{passive:false});
 $('mapSeasonButton').onclick=()=>{mapOnlySeason=!mapOnlySeason;mapFocus=null;renderMap()};
-$('mapCategory').innerHTML='<option value="all">全部食材</option>'+Object.entries(categoryNames).map(([key,label])=>`<option value="${key}">${label}</option>`).join('');
+ $('mapCategory').innerHTML='<option value="all">全部食材</option>'+Object.entries(categoryNames).map(([key,label])=>`<option value="${key}">${label}</option>`).join('');
 $('mapCategory').onchange=e=>{mapCategory=e.target.value;mapFocus=null;renderMap()};
 $('mapZoomBack').onclick=()=>{mapFocus=null;renderMap()};
+function stepMapZoom(factor){const bounds=mapFocus||homeView,cx=bounds.left+bounds.width/2,cy=bounds.top+bounds.height/2;setMapViewport({left:cx-bounds.width*factor/2,top:cy-bounds.width*factor/mapAspect/2,width:bounds.width*factor});renderMap()}
+$('mapZoomIn').onclick=()=>stepMapZoom(.72);$('mapZoomOut').onclick=()=>stepMapZoom(1.38);
 function clampMapView(view){const width=Math.min(homeView.width,Math.max(homeView.width*.28,view.width)),height=width/mapAspect;return {left:Math.min(homeView.left+homeView.width-width,Math.max(homeView.left,view.left)),top:Math.min(homeView.top+homeView.height-height,Math.max(homeView.top,view.top)),width,height}}
-function activateMap(){mapInteractionEnabled=true;const image=document.querySelector('.map-image');image.classList.add('is-interactive');image.focus({preventScroll:true});$('mapHint').textContent='滚轮缩放，按住拖动；手机单指拖动或双指缩放。地图外滚动页面。'}
+function activateMap(){mapInteractionEnabled=true;const image=document.querySelector('.map-image');image.classList.add('is-interactive');image.focus({preventScroll:true});$('mapHint').textContent='鼠标滚轮缩放；触控板捏合缩放，点击后可拖动；手机单指拖动或双指缩放。地图外滚动页面。'}
 function zoomMap(group){activateMap();const points=group.map(x=>mapProject(x.place)),xs=points.map(p=>p.x),ys=points.map(p=>p.y),cx=(Math.min(...xs)+Math.max(...xs))/2,cy=(Math.min(...ys)+Math.max(...ys))/2,width=Math.max(homeView.width*.28,Math.max(...xs)-Math.min(...xs)+160,(Math.max(...ys)-Math.min(...ys)+130)*mapAspect);mapFocus=clampMapView({left:cx-width/2,top:cy-width/mapAspect/2,width});renderMap()}
 function hideMapPopup(){clearTimeout(popupTimer);$('mapPopover').hidden=true}
 function foodThumbnail(food){return food.cardImage||food.image||''}
@@ -250,7 +249,7 @@ mapImage.addEventListener('pointermove',event=>{if(!mapPointers.has(event.pointe
 function endMapPointer(event){if(!mapPointers.has(event.pointerId))return;mapPointers.delete(event.pointerId);if(mapImage.hasPointerCapture(event.pointerId))mapImage.releasePointerCapture(event.pointerId);if(mapPointers.size){startMapGesture();return}mapGesture=null;if(mapGestureMoved)renderMap()}
 mapImage.addEventListener('pointerup',endMapPointer);mapImage.addEventListener('pointercancel',endMapPointer);
 mapImage.addEventListener('click',event=>{if(!mapGestureMoved)return;event.preventDefault();event.stopImmediatePropagation();mapGestureMoved=false},true);
-mapImage.addEventListener('wheel',event=>{if(!mapInteractionEnabled)return;event.preventDefault();hideMapPopup();const rect=event.currentTarget.getBoundingClientRect(),x=Math.min(1,Math.max(0,(event.clientX-rect.left)/rect.width)),y=Math.min(1,Math.max(0,(event.clientY-rect.top)/rect.height)),bounds=mapFocus||homeView,unit=event.deltaMode===1?16:event.deltaMode===2?rect.height:1,delta=Math.max(-.5,Math.min(.5,event.deltaY*unit*.0015)),factor=Math.exp(delta),width=Math.min(homeView.width,Math.max(homeView.width*.28,bounds.width*factor)),cx=bounds.left+x*bounds.width,cy=bounds.top+y*bounds.height;setMapViewport({left:cx-x*width,top:cy-y*(width/mapAspect),width});clearTimeout(mapWheelTimer);mapWheelTimer=setTimeout(()=>{mapWheelTimer=null;renderMap()},140)},{passive:false});
+mapImage.addEventListener('wheel',event=>{if(!mapInteractionEnabled&&!event.ctrlKey)return;event.preventDefault();activateMap();hideMapPopup();const rect=event.currentTarget.getBoundingClientRect(),x=Math.min(1,Math.max(0,(event.clientX-rect.left)/rect.width)),y=Math.min(1,Math.max(0,(event.clientY-rect.top)/rect.height)),bounds=mapFocus||homeView,unit=event.deltaMode===1?16:event.deltaMode===2?rect.height:1,delta=Math.max(-.5,Math.min(.5,event.deltaY*unit*.0015)),factor=Math.exp(delta),width=Math.min(homeView.width,Math.max(homeView.width*.28,bounds.width*factor)),cx=bounds.left+x*bounds.width,cy=bounds.top+y*bounds.height;setMapViewport({left:cx-x*width,top:cy-y*(width/mapAspect),width});clearTimeout(mapWheelTimer);mapWheelTimer=setTimeout(()=>{mapWheelTimer=null;renderMap()},140)},{passive:false});
 const flavorTagFrequency=new Map();foods.forEach(f=>(f.flavor||[]).forEach(tag=>flavorTagFrequency.set(tag,(flavorTagFrequency.get(tag)||0)+1)));
 const flavorFilterTags=[...flavorTagFrequency].filter(([,count])=>count>=3).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'zh')).slice(0,8).map(([tag])=>tag);
 let starTagFilter='all';
@@ -273,16 +272,57 @@ function renderSearch(query=''){
   $('searchResults').querySelectorAll('[data-query]').forEach(b=>b.onclick=()=>{$('searchInput').value=b.dataset.query;renderSearch(b.dataset.query)});
 }
 $('searchTrigger').onclick=()=>{renderSearch();$('searchDialog').showModal();$('searchInput').value='';$('searchInput').focus()};$('searchClose').onclick=()=>$('searchDialog').close();$('searchInput').oninput=e=>renderSearch(e.target.value);$('searchDialog').addEventListener('click',e=>{if(e.target===$('searchDialog'))$('searchDialog').close()});
-const starNodes=foods.map((f,i)=>{const phi=Math.acos(1-2*(i+.5)/foods.length),theta=i*Math.PI*(3-Math.sqrt(5));return {id:f.id,x:Math.sin(phi)*Math.cos(theta),y:Math.cos(phi),z:Math.sin(phi)*Math.sin(theta)}});
-let rotX=-.22,rotY=.35,starSelected='foshougua-miao',starDrag=null,starHover=null,projected=[];
-function project(node,w,h){const cy=Math.cos(rotY),sy=Math.sin(rotY),cx=Math.cos(rotX),sx=Math.sin(rotX);const x=node.x*cy-node.z*sy,z=node.x*sy+node.z*cy,y=node.y*cx-z*sx,depth=node.y*sx+z*cx;const scale=Math.min(w,h)*.36*(1+depth*.22);return {x:w/2+x*scale,y:h/2+y*scale,z:depth}}
-function drawStar(){const canvas=$('flavorCanvas');if(!canvas||currentView!=='flavor')return;const box=canvas.getBoundingClientRect();const dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.max(1,Math.round(box.width*dpr));canvas.height=Math.max(1,Math.round(box.height*dpr));const ctx=canvas.getContext('2d');ctx.scale(dpr,dpr);const w=box.width,h=box.height;ctx.clearRect(0,0,w,h);const glow=ctx.createRadialGradient(w/2,h/2,0,w/2,h/2,Math.min(w,h)*.52);glow.addColorStop(0,'#416659');glow.addColorStop(1,'#193d35');ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);
-  projected=starNodes.map(n=>({...project(n,w,h),id:n.id}));
-  const linked=relatedFoods(byId[starSelected]).filter(x=>starTagFilter==='all'||x.food.flavor.includes(starTagFilter)).map(x=>x.food.id);
-  linked.forEach(id=>{const A=projected.find(n=>n.id===starSelected),B=projected.find(n=>n.id===id);ctx.strokeStyle='#dac79199';ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke()});
-  projected.sort((a,b)=>a.z-b.z).forEach(n=>{const active=n.id===starSelected,related=linked.includes(n.id),r=active?8:related?6:4;ctx.beginPath();ctx.arc(n.x,n.y,r+7,0,Math.PI*2);ctx.fillStyle=active?'#d6c99644':'#e7e4d110';ctx.fill();ctx.beginPath();ctx.arc(n.x,n.y,r,0,Math.PI*2);ctx.fillStyle=active?'#e6d7a8':related?'#f3eed9':'#718f7e';ctx.fill();if(active||related){ctx.fillStyle='#fffaf0';ctx.font=`${active?'600 ':''}14px sans-serif`;ctx.textAlign='center';ctx.fillText(byId[n.id].name,n.x,n.y-17)}})
+const starColors=['#d9b96e','#9fbf91','#71a697','#d58d6d'];
+const starTerms=termWindow.slice().sort((a,b)=>a.index-b.index);
+const starView={x:0,y:0,scale:1};
+let starSelected='foshougua-miao',starHover=null,projected=[],starPointers=new Map(),starGesture=null;
+function starTreeData(){return starTerms.map(event=>{let list=seasonFoodsFor(event);if(starTagFilter!=='all')list=list.filter(food=>food.flavor.includes(starTagFilter));return {event,list}})}
+function drawStar(){
+ const canvas=$('flavorCanvas');if(!canvas||currentView!=='flavor')return;
+ const box=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2),W=1200,H=760;
+ canvas.width=Math.max(1,Math.round(box.width*dpr));canvas.height=Math.max(1,Math.round(box.height*dpr));
+ const ctx=canvas.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,box.width,box.height);
+ const glow=ctx.createRadialGradient(box.width*.5,box.height*.45,0,box.width*.5,box.height*.45,Math.max(box.width,box.height)*.75);glow.addColorStop(0,'#416659');glow.addColorStop(1,'#193d35');ctx.fillStyle=glow;ctx.fillRect(0,0,box.width,box.height);
+ const sx=box.width/W,sy=box.height/H;
+ ctx.save();ctx.scale(sx,sy);ctx.translate(starView.x,starView.y);ctx.scale(starView.scale,starView.scale);
+ const groups=starTreeData(),seasonNames=['冬','春','夏','秋'],seasonRoots=seasonNames.map((name,index)=>({name,index,x:130+index*290,y:122,color:starColors[index]}));
+ projected=[];const positions=new Map();
+ seasonRoots.forEach(root=>{ctx.fillStyle=root.color;ctx.font='18px "Songti SC",serif';ctx.textAlign='center';ctx.fillText(root.name,root.x,root.y-18);ctx.strokeStyle=root.color+'88';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(root.x,root.y);ctx.lineTo(root.x,710);ctx.stroke()});
+ groups.forEach(({event,list})=>{
+  const season=Math.floor(event.index/6),row=event.index%6,root=seasonRoots[season],x=root.x,y=165+row*86;
+  ctx.strokeStyle=root.color+'bb';ctx.lineWidth=1.6;ctx.beginPath();ctx.moveTo(root.x,y);ctx.quadraticCurveTo(root.x+45,y,root.x+66,y);ctx.stroke();
+  ctx.fillStyle=root.color;ctx.beginPath();ctx.arc(root.x+66,y,5,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle='#f3eedf';ctx.font='13px sans-serif';ctx.textAlign='left';ctx.fillText(window.SOLAR_TERM_NAMES[event.index],root.x+78,y+4);
+  const candidates=list.slice(0,4),step=22,start=y-(candidates.length-1)*step/2;
+  candidates.forEach((food,index)=>{
+   const point={x:root.x+175,y:start+index*step,id:food.id,term:event.index};positions.set(food.id,point);projected.push(point);
+   const active=food.id===starSelected,related=relatedFoods(byId[starSelected]).some(item=>item.food.id===food.id);
+   ctx.strokeStyle=active?'#e6d7a8':related?'#dac79199':root.color+'66';ctx.lineWidth=active?2:1;ctx.beginPath();ctx.moveTo(root.x+66,y);ctx.lineTo(point.x-8,point.y);ctx.stroke();
+   ctx.beginPath();ctx.arc(point.x,point.y,active?7:related?5:3.5,0,Math.PI*2);ctx.fillStyle=active?'#e6d7a8':related?'#dac791':root.color+'d0';ctx.fill();
+   if(active||related){ctx.fillStyle='#fffaf0';ctx.font=`${active?'600 ':''}12px sans-serif`;ctx.textAlign='left';ctx.fillText(food.name,point.x+11,point.y+4)}
+  });
+  const termPoint={x:root.x+66,y,id:`term:${event.index}`,term:event.index};projected.push(termPoint);
+ });
+ const selectedPoint=positions.get(starSelected),links=relatedFoods(byId[starSelected]).filter(x=>starTagFilter==='all'||x.food.flavor.includes(starTagFilter));
+ if(selectedPoint)links.forEach(({food})=>{const target=positions.get(food.id);if(!target)return;ctx.strokeStyle='#ead7a288';ctx.lineWidth=1.4;ctx.setLineDash([4,5]);ctx.beginPath();ctx.moveTo(selectedPoint.x,selectedPoint.y);ctx.lineTo(target.x,target.y);ctx.stroke();ctx.setLineDash([])});
+ ctx.restore();
 }
-function renderFlavor(){const selected=byId[starSelected],visual=foodVisual(selected),matches=starTagFilter==='all'?foods:foods.filter(f=>f.flavor.includes(starTagFilter)),linked=relatedFoods(selected).filter(x=>starTagFilter==='all'||x.food.flavor.includes(starTagFilter));$('flavorFilters').innerHTML=`<button type="button" data-flavor-filter="all" aria-pressed="${starTagFilter==='all'}">全部风味</button>${flavorFilterTags.map(tag=>`<button type="button" data-flavor-filter="${tag}" aria-pressed="${starTagFilter===tag}">${tag}<small>${flavorTagFrequency.get(tag)}</small></button>`).join('')}`;$('flavorFilters').querySelectorAll('[data-flavor-filter]').forEach(button=>button.onclick=()=>{starTagFilter=button.dataset.flavorFilter;renderFlavor()});$('flavorAside').innerHTML=`${visual.src?`<img class="flavor-selected-photo" src="${visual.src}" alt="${visual.alt}" ${foodImageAttrs(visual.src,'aside')}>`:'<div class="flavor-selected-empty" role="img" aria-label="实拍待补"></div>'}<p class="kicker">已选择 / ${selected.region}</p><h2>${nameWithIcon(selected)}</h2><p>${selected.description}</p><div class="aside-tags">${selected.flavor.map(t=>`<span>${t}</span>`).join('')}</div><button class="aside-primary" data-food="${selected.id}">读${selected.name}的吃法 ↗</button><h3>沿共同标签继续</h3>${linked.length?linked.map(({food,why})=>`<button class="relation" data-select="${food.id}"><strong>${nameWithIcon(food)}</strong><span>${why}</span></button>`).join(''):'<p class="no-relation">这个筛选下没有与当前风物共享标签的条目；可以换一枚标签。</p>'}`;$('flavorList').innerHTML=matches.map(f=>`<button data-select="${f.id}" class="${f.id===starSelected?'active':''}">${nameWithIcon(f)}<span>${f.flavor.join(' · ')}</span></button>`).join('');document.querySelectorAll('#flavorList [data-select],#flavorAside [data-select]').forEach(b=>b.onclick=()=>{starSelected=b.dataset.select;renderFlavor()});document.querySelector('#flavorAside [data-food]').onclick=()=>openFood(selected.id);drawStar()}
-function showStarHover(node,e){const target=$('flavorHover');if(!node){target.hidden=true;return}const food=byId[node.id],box=$('flavorCanvas').getBoundingClientRect(),x=e.clientX-box.left,y=e.clientY-box.top;target.innerHTML=`${foodThumbnail(food)?`<img src="${foodThumbnail(food)}" alt="">`:''}<span>${food.name}</span>`;target.style.left=`${Math.min(box.width-150,Math.max(8,x+18))}px`;target.style.top=`${Math.min(box.height-70,Math.max(8,y-60))}px`;target.hidden=false}
-const canvas=$('flavorCanvas');canvas.addEventListener('pointerdown',e=>{starHover=null;$('flavorHover').hidden=true;starDrag={x:e.clientX,y:e.clientY,moved:false};canvas.setPointerCapture(e.pointerId)});canvas.addEventListener('pointermove',e=>{if(!starDrag){const rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;const hit=projected.find(n=>Math.hypot(n.x-x,n.y-y)<28)||null;if(hit?.id!==starHover?.id){starHover=hit;showStarHover(hit,e)}else if(hit)showStarHover(hit,e);return}const dx=e.clientX-starDrag.x,dy=e.clientY-starDrag.y;if(Math.abs(dx)+Math.abs(dy)>2)starDrag.moved=true;rotY+=dx*.009;rotX=Math.max(-1,Math.min(1,rotX+dy*.009));starDrag.x=e.clientX;starDrag.y=e.clientY;drawStar()});canvas.addEventListener('pointerleave',()=>{if(!starDrag){starHover=null;$('flavorHover').hidden=true}});canvas.addEventListener('pointerup',e=>{if(!starDrag?.moved){const rect=canvas.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;const hit=projected.find(n=>Math.hypot(n.x-x,n.y-y)<28);if(hit){starSelected=hit.id;renderFlavor()}}starDrag=null});window.addEventListener('resize',()=>{if(currentView==='flavor')drawStar()});
+function renderFlavor(){
+ const selected=byId[starSelected],visual=foodVisual(selected),matches=starTagFilter==='all'?foods:foods.filter(f=>f.flavor.includes(starTagFilter)),linked=relatedFoods(selected).filter(x=>starTagFilter==='all'||x.food.flavor.includes(starTagFilter));
+ $('flavorFilters').innerHTML=`<button type="button" data-flavor-filter="all" aria-pressed="${starTagFilter==='all'}">全部风味</button>${flavorFilterTags.map(tag=>`<button type="button" data-flavor-filter="${tag}" aria-pressed="${starTagFilter===tag}">${tag}<small>${flavorTagFrequency.get(tag)}</small></button>`).join('')}`;
+ $('flavorFilters').querySelectorAll('[data-flavor-filter]').forEach(button=>button.onclick=()=>{starTagFilter=button.dataset.flavorFilter;renderFlavor()});
+ $('flavorAside').innerHTML=`${visual.src?`<img class="flavor-selected-photo" src="${visual.src}" alt="${visual.alt}" ${foodImageAttrs(visual.src,'aside')}>`:'<div class="flavor-selected-empty" role="img" aria-label="实拍待补"></div>'}<p class="kicker">已选择 / ${selected.region}</p><h2>${nameWithIcon(selected)}</h2><p>${selected.description}</p><div class="aside-tags">${selected.flavor.map(t=>`<span>${t}</span>`).join('')}</div><button class="aside-primary" data-food="${selected.id}">读${selected.name}的吃法 ↗</button><h3>沿共同标签继续</h3>${linked.length?linked.map(({food,why})=>`<button class="relation" data-select="${food.id}"><strong>${nameWithIcon(food)}</strong><span>${why}</span></button>`).join(''):'<p class="no-relation">这个筛选下没有与当前风物共享标签的条目；可以换一枚标签。</p>'}`;
+ $('flavorList').innerHTML=matches.map(f=>`<button data-select="${f.id}" class="${f.id===starSelected?'active':''}">${nameWithIcon(f)}<span>${f.flavor.join(' · ')}</span></button>`).join('');
+ document.querySelectorAll('#flavorList [data-select],#flavorAside [data-select]').forEach(b=>b.onclick=()=>{starSelected=b.dataset.select;renderFlavor()});document.querySelector('#flavorAside [data-food]').onclick=()=>openFood(selected.id);drawStar()
+}
+function showStarHover(node,e){const target=$('flavorHover');if(!node||node.id.startsWith('term:')){target.hidden=true;return}const food=byId[node.id],box=$('flavorCanvas').getBoundingClientRect(),x=e.clientX-box.left,y=e.clientY-box.top;target.innerHTML=`${foodThumbnail(food)?`<img src="${foodThumbnail(food)}" alt="">`:''}<span>${food.name}</span>`;target.style.left=`${Math.min(box.width-150,Math.max(8,x+18))}px`;target.style.top=`${Math.min(box.height-70,Math.max(8,y-60))}px`;target.hidden=false}
+function starPoint(e){const box=canvas.getBoundingClientRect(),W=1200,H=760;return {x:(e.clientX-box.left)/box.width*W,y:(e.clientY-box.top)/box.height*H}}
+function starZoom(factor,at={x:600,y:380}){const scale=Math.min(2.5,Math.max(.65,starView.scale*factor));starView.x=at.x-(at.x-starView.x)*scale/starView.scale;starView.y=at.y-(at.y-starView.y)*scale/starView.scale;starView.scale=scale;drawStar()}
+$('flavorZoomIn').onclick=()=>starZoom(1.2);$('flavorZoomOut').onclick=()=>starZoom(.84);$('flavorZoomReset').onclick=()=>{starView.x=0;starView.y=0;starView.scale=1;drawStar()};
+const canvas=$('flavorCanvas');
+canvas.addEventListener('pointerdown',e=>{starHover=null;$('flavorHover').hidden=true;canvas.setPointerCapture(e.pointerId);starPointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const points=[...starPointers.values()];if(points.length===1)starGesture={type:'pan',start:points[0],view:{...starView},moved:false};else if(points.length===2){const [a,b]=points,mid={x:(a.x+b.x)/2,y:(a.y+b.y)/2},box=canvas.getBoundingClientRect(),logical={x:(mid.x-box.left)/box.width*1200,y:(mid.y-box.top)/box.height*760};starGesture={type:'pinch',distance:Math.max(1,Math.hypot(a.x-b.x,a.y-b.y)),view:{...starView},anchor:{x:(logical.x-starView.x)/starView.scale,y:(logical.y-starView.y)/starView.scale},moved:false}}});
+canvas.addEventListener('pointermove',e=>{if(!starPointers.has(e.pointerId)){const p=starPoint(e),x=(p.x-starView.x)/starView.scale,y=(p.y-starView.y)/starView.scale,hit=projected.find(n=>Math.hypot(n.x-x,n.y-y)<20)||null;if(hit?.id!==starHover?.id){starHover=hit;showStarHover(hit,e)}else if(hit)showStarHover(hit,e);return}starPointers.set(e.pointerId,{x:e.clientX,y:e.clientY});if(!starGesture)return;const box=canvas.getBoundingClientRect(),points=[...starPointers.values()];if(starGesture.type==='pan'&&points.length===1){const dx=e.clientX-starGesture.start.x,dy=e.clientY-starGesture.start.y;if(Math.abs(dx)+Math.abs(dy)>2)starGesture.moved=true;starView.x=starGesture.view.x+dx/box.width*1200;starView.y=starGesture.view.y+dy/box.height*760;drawStar();return}if(points.length===2){const [a,b]=points,distance=Math.hypot(a.x-b.x,a.y-b.y),mid={x:(a.x+b.x)/2,y:(a.y+b.y)/2},logical={x:(mid.x-box.left)/box.width*1200,y:(mid.y-box.top)/box.height*760},scale=Math.min(2.5,Math.max(.65,starGesture.view.scale*distance/starGesture.distance));starView.scale=scale;starView.x=logical.x-starGesture.anchor.x*scale;starView.y=logical.y-starGesture.anchor.y*scale;starGesture.moved=true;drawStar()}});
+canvas.addEventListener('pointerup',e=>{const gesture=starGesture;starPointers.delete(e.pointerId);if(starPointers.size){const point=[...starPointers.values()][0];starGesture={type:'pan',start:point,view:{...starView},moved:true};return}if(gesture&&!gesture.moved){const p=starPoint(e),x=(p.x-starView.x)/starView.scale,y=(p.y-starView.y)/starView.scale,hit=projected.find(n=>Math.hypot(n.x-x,n.y-y)<20);if(hit){const food=hit.id.startsWith('term:')?starTreeData().find(row=>row.event.index===hit.term)?.list[0]:byId[hit.id];if(food){starSelected=food.id;renderFlavor()}}}starGesture=null});
+canvas.addEventListener('pointercancel',e=>{starPointers.delete(e.pointerId);starGesture=null});canvas.addEventListener('pointerleave',()=>{if(!starPointers.size){starHover=null;$('flavorHover').hidden=true}});canvas.addEventListener('wheel',e=>{e.preventDefault();const p=starPoint(e),logical={x:(p.x-starView.x)/starView.scale,y:(p.y-starView.y)/starView.scale};starZoom(Math.exp(-Math.max(-300,Math.min(300,e.deltaY))*.001),logical)},{passive:false});
+window.addEventListener('resize',()=>{if(currentView==='flavor')drawStar()});
 renderTermRail();renderSeason();const deepLink=new URL(location.href).searchParams.get('food');if(deepLink&&byId[deepLink])openFood(deepLink,false);

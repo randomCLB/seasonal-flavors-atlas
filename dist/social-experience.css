@@ -7,3 +7,14 @@
 .social-dialog[open]{display:flex;flex-direction:column}.social-dialog-head{flex:none}.social-dialog-body{min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:4px}
 
 .record-photo-empty{display:grid;place-items:center;width:100px;height:110px;background:var(--line,#c9cebf);color:var(--ink,#203e33);font-size:11px;letter-spacing:.1em}@media(max-width:750px){.record-photo-empty{width:76px;height:90px}}
+
+/* The public browse taxonomy stays compact while source-level categories remain intact. */
+.build-version{display:block;margin-top:22px;color:#b8cbbd;font-size:10px;letter-spacing:.08em}
+.map-zoom-control{min-width:44px}
+.map-image{touch-action:none}
+.flavor-space{overflow:hidden}
+.flavor-space canvas{touch-action:none;user-select:none;-webkit-user-select:none}
+.flavor-zoom-controls{position:absolute;right:16px;bottom:14px;display:flex;gap:6px}
+.flavor-zoom-controls button{min-width:38px;min-height:38px;padding:0 10px;border:1px solid #d9dfcf88;background:#193d35cc;color:#f4f0e4;font:14px sans-serif;cursor:pointer}
+.flavor-zoom-controls button:hover,.flavor-zoom-controls button:focus-visible{background:#d9c48f;color:#193d35}
+@media(max-width:560px){.flavor-zoom-controls{right:10px;bottom:10px}.flavor-zoom-controls button{min-width:42px;min-height:42px}.build-version{font-size:9px}}
