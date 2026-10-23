@@ -62,5 +62,5 @@ test('both mode links and homepage draw work under root and compatible preview p
   }
 });
 test('updated homepage loads the scoped navigation binding with the current cache key', () => {
-  assert.match(read('index.html'), /src="app\.js\?v=four-season-tree-20261023"/);
+  assert.match(read('index.html'), /src="app\.js\?v=spherical-season-tree-20261023"/);
 });
