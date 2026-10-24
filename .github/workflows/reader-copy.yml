@@ -1,0 +1,63 @@
+name: Check reader copy
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Publish atlas]
+    types: [completed]
+permissions:
+  contents: read
+jobs:
+  reader:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare, verify idempotence and audit every record
+        env:
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          node scripts/prepare-reader-release.cjs
+          find dist -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/reader-before.sha256
+          node scripts/prepare-reader-release.cjs
+          sha256sum --quiet --check /tmp/reader-before.sha256
+          node - <<'JS'
+          const fs=require('node:fs'),a=require('./scripts/audit-reader-copy.cjs').audit();
+          fs.writeFileSync('/tmp/reader-audit.json',JSON.stringify(a,null,2));
+          console.log('CATALOG',a.total,'CHANGED',a.rows.filter(r=>r.changed).length,'ISSUE_RECORDS',a.rows.filter(r=>r.issues.length).length);
+          for(const r of a.rows.filter(r=>r.issues.length))console.log(JSON.stringify({id:r.id,issues:r.issues}));
+          if(a.rows.some(r=>r.issues.length||!r.safetyPreserved||!r.sourcePreserved))throw Error('Reader copy audit requires review');
+          JS
+      - name: Reader assertions
+        run: node --test tests/reader-copy.test.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test runtime
+        run: |
+          pip install playwright==1.58.0 >/tmp/reader-browser-install.log 2>&1
+          python -m playwright install --with-deps chromium >>/tmp/reader-browser-install.log 2>&1 || { tail -60 /tmp/reader-browser-install.log; exit 1; }
+      - name: Desktop, mobile and live release verification
+        env:
+          LIVE_VERIFY: ${{ github.event_name == 'workflow_run' && '1' || '0' }}
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          python -m http.server 8774 --directory dist >/tmp/reader-server.log 2>&1 &
+          python scripts/test-reader-browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reader-copy-evidence-${{ github.event_name }}
+          path: |
+            /tmp/reader-audit.json
+            /tmp/reader-browser.json
+            /tmp/reader-*.png
+          retention-days: 30

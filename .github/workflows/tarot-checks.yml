@@ -14,17 +14,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check tarot syntax
+      - run: node scripts/prepare-reader-release.cjs
+      - name: Check JavaScript syntax
+        run: find dist -maxdepth 1 -name '*.js' -print0 | xargs -0 -n 1 node --check
+      - name: Full regression suite
         run: |
-          node --check dist/app.js
-          node --check dist/tarot-deck.js
-          node --check dist/tarot-core.js
-          node --check dist/tarot-ui.js
-          node --check dist/tarot-spread.js
-          node --check dist/tarot-spread-ui.js
-      - name: Test default navigation, flavor draw, tarot, and expanded pool
-        run: node --test tests/*.test.cjs
-      - name: Verify reproducible yearly pool audit
+          node --test tests/*.test.cjs > /tmp/reader-tests.tap 2>&1 || { grep -A 24 '^not ok' /tmp/reader-tests.tap; tail -12 /tmp/reader-tests.tap; exit 1; }
+          tail -12 /tmp/reader-tests.tap
+      - name: Preserve seasonal draw coverage
         run: |
           node scripts/audit-tarot-pool.cjs 2027 > /tmp/tarot-pool.json
           cmp docs/TAROT_POOL_COVERAGE_2027.json /tmp/tarot-pool.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reader-full-regression
+          path: /tmp/reader-tests.tap
+          retention-days: 30

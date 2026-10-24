@@ -16,7 +16,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Check out site
         uses: actions/checkout@v4
@@ -25,19 +25,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check and test site before publishing
+      - name: Prepare and test the exact release
         run: |
-          node --check dist/app.js
-          node --check dist/lottery-core.js
-          node --check dist/lottery-ui.js
-          node --check dist/lottery-profiles.js
-          node --check dist/lottery-senses.js
-          node --check dist/tarot-core.js
-          node --check dist/tarot-deck.js
-          node --check dist/tarot-ui.js
-          node --check dist/tarot-spread.js
-          node --check dist/tarot-spread-ui.js
-          node --test tests/*.test.cjs
+          node scripts/prepare-reader-release.cjs
+          find dist -maxdepth 1 -name '*.js' -print0 | xargs -0 -n 1 node --check
+          node --test tests/*.test.cjs > /tmp/publish-tests.tap 2>&1 || { grep -A 24 '^not ok' /tmp/publish-tests.tap; tail -12 /tmp/publish-tests.tap; exit 1; }
+          tail -12 /tmp/publish-tests.tap
           node scripts/audit-tarot-pool.cjs 2027 > /tmp/tarot-pool.json
           cmp docs/TAROT_POOL_COVERAGE_2027.json /tmp/tarot-pool.json
       - name: Compose site and compatible preview link
@@ -51,27 +44,18 @@ jobs:
           if preview.exists():
               raise SystemExit('Refusing to overwrite an existing preview directory')
           shutil.copytree(stable, preview)
-          for path in preview.rglob('*.html'):
-              text = path.read_text(encoding='utf-8')
-              text = text.replace('<head>', '<head>\n<meta name="robots" content="noindex,nofollow">', 1)
-              path.write_text(text, encoding='utf-8')
+          for p in preview.rglob('*.html'):
+              p.write_text(p.read_text(encoding='utf-8').replace('<head>', '<head>\n<meta name="robots" content="noindex,nofollow">', 1), encoding='utf-8')
           checked = 0
           for source in stable.rglob('*'):
               if source.is_file():
-                  target = out / source.relative_to(stable)
-                  if hashlib.sha256(source.read_bytes()).digest() != hashlib.sha256(target.read_bytes()).digest():
+                  if hashlib.sha256(source.read_bytes()).digest() != hashlib.sha256((out / source.relative_to(stable)).read_bytes()).digest():
                       raise SystemExit(f'Stable file changed: {source}')
                   checked += 1
-          manifest = {
-              'previewCommit': os.environ['GITHUB_SHA'],
-              'siteCommit': os.environ['GITHUB_SHA'],
-              'entry': 'tarot.html',
-              'flavorEntry': 'lottery.html',
-              'siteFilesVerified': checked,
-              'status': 'v1.1-live'
-          }
-          (preview / 'build-info.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
-          print(f'Verified {checked} site files; default draw is tarot.html; flavor draw remains lottery.html')
+          info = json.loads((out / 'build-info.json').read_text())
+          info.update(previewCommit=os.environ['GITHUB_SHA'], entry='tarot.html', flavorEntry='lottery.html', siteFilesVerified=checked, status='v1.1-live')
+          (preview / 'build-info.json').write_text(json.dumps(info, indent=2) + '\n')
+          print(f'Verified {checked} site files')
           PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -79,54 +63,40 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
-      - name: Verify public site and compatible preview
-        timeout-minutes: 3
+      - name: Verify public release bytes
+        timeout-minutes: 4
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
           python3 - <<'PY'
-          import hashlib, os, pathlib, time, urllib.request
+          import hashlib, json, os, pathlib, time, urllib.request
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
-          paths = ['fengwu-design.css', *[f'assets/tarot/{card}.webp' for card in ['sun','moon','star','temperance','fool','magician','hermit','empress','strength','hanged','wheel','world']], 'index.html', 'app.js', 'lottery.html', 'assets/shajiguo-cut.jpg',
-                   'editorial-notes.js', 'lottery-profiles.js', 'lottery-senses.js', 'credits.html',
-                   'november-additions.js', 'core-refinements.js', 'food-purchase.js', 'food-purchase.css',
-                   'food-records.js', 'food-detail.js', 'food-detail.css', 'result-share.js', 'social-experience.css',
-                   'assets/jianou-zhuilli-reference.webp', 'assets/chongming-biandou-reference.webp',
-                   'assets/chongming-taro-reference.webp', 'assets/xiangyin-jiaotou-reference.webp',
-                   'assets/wenzhou-pancai-reference.webp',
-                   'tarot.html', 'tarot.css', 'tarot-deck.js', 'tarot-core.js', 'tarot-ui.js', 'draw-modes.css',
-                   'tarot-spread.js', 'tarot-spread-ui.js', 'tarot-spread.css',
-                   'preview/v1.1/index.html', 'preview/v1.1/app.js', 'preview/v1.1/build-info.json',
-                   'preview/v1.1/tarot-spread.js', 'preview/v1.1/tarot-spread-ui.js', 'preview/v1.1/tarot-spread.css',
-                   'preview/v1.1/tarot.html', 'preview/v1.1/tarot.css',
-                   'preview/v1.1/tarot-deck.js', 'preview/v1.1/tarot-core.js', 'preview/v1.1/tarot-ui.js',
-                   'preview/v1.1/lottery.html', 'preview/v1.1/lottery.css',
-                   'preview/v1.1/lottery-core.js', 'preview/v1.1/lottery-ui.js',
-                   'preview/v1.1/lottery-senses.js', 'preview/v1.1/lottery-questions.css',
-                   'preview/v1.1/lottery-profiles.js', 'preview/v1.1/solar-terms.js',
-                   'preview/v1.1/data.js', 'preview/v1.1/editorial.js',
-                   'preview/v1.1/editorial-notes.js', 'preview/v1.1/assets/chayote-shoots.webp']
+          root = pathlib.Path('_site')
+          names = [p.name for p in pathlib.Path('dist').iterdir() if p.is_file() and p.suffix in ['.html','.js','.css','.json']]
+          names += ['assets/tarot/' + c + '.webp' for c in ['sun','moon','star','temperance','fool','magician','hermit','empress','strength','hanged','wheel','world']]
+          names += ['preview/v1.1/' + p for p in ['index.html','app.js','tarot.html','lottery.html','reader-copy.js','reader-copy-curation.js','build-info.json']]
           for attempt in range(8):
               try:
-                  for path in paths:
-                      url = base + path + '?deploy=' + os.environ['GITHUB_SHA']
-                      request = urllib.request.Request(url, headers={'User-Agent': 'fengwu-preview-verifier'})
-                      with urllib.request.urlopen(request, timeout=12) as response:
+                  for name in names:
+                      request = urllib.request.Request(base + name + '?deploy=' + os.environ['GITHUB_SHA'], headers={'User-Agent':'fengwu-release-verifier'})
+                      with urllib.request.urlopen(request, timeout=15) as response:
                           body = response.read()
-                          if response.status != 200:
-                              raise RuntimeError(f'{path}: HTTP {response.status}')
-                      expected = (pathlib.Path('_site') / path).read_bytes()
-                      if hashlib.sha256(body).digest() != hashlib.sha256(expected).digest():
-                          raise RuntimeError(f'{path}: deployed content differs')
+                          if response.status != 200: raise RuntimeError(f'{name}: HTTP {response.status}')
+                      if hashlib.sha256(body).digest() != hashlib.sha256((root / name).read_bytes()).digest():
+                          raise RuntimeError(f'{name}: deployed content differs')
                   break
               except Exception as exc:
-                  if attempt == 7:
-                      raise
-                  print(f'CDN verification attempt {attempt + 1}: {exc}', flush=True)
+                  if attempt == 7: raise
+                  print(f'CDN verification attempt {attempt+1}: {exc}', flush=True)
                   time.sleep(10)
-          print('Verified tarot-default homepage, expanded food data and photos, both draw modes, runtime files and compatible preview.')
-          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
-              summary.write('## 时令风物 v1.1\n\n')
-              summary.write(f'[打开首页]({base}) · [塔罗签（默认）]({base}tarot.html) · [风味签]({base}lottery.html)\n\n')
-              summary.write('目录86味；塔罗使用完整候选轮换。首页抽签默认进入塔罗三牌阵，风味签保留为第二入口。目录、图片、详情与分享资源、页面和脚本均通过HTTP及内容哈希核验。\n')
+          info=json.loads((root/'build-info.json').read_text())
+          print(json.dumps({'verifiedResources':len(names), **info}))
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as summary:
+              summary.write(f"## 时令风物\n\n[正式站]({base}) · 文案版 {info['readerVersion']}\n\n目录 {info['catalogCount']} 味。发布提交 `{info['siteCommit']}`。{len(names)} 个页面与资源通过公开地址 SHA-256 核对。\n")
           PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: publish-regression-evidence
+          path: /tmp/publish-tests.tap
+          retention-days: 30
