@@ -46,8 +46,6 @@
   'mengzi-june-red-pomegranate':'pomegranate',
   'henan-qiufen-tunisian-softseed-pomegranate':'pomegranate'
  });
- // Keep the recently expanded recipe rather than reverting to an older short one
- // merely because its source record supplied the stable identity ID.
  const recipeSources=Object.freeze({
   'guangning-lidong-ma-bamboo-shoot':'lianjiang-xiaoshu-june-hemp-bamboo-shoot',
   'shidian-lixia-qingmei':'dazhou-tanzi-mangzhong-green-plum-last-pick',
@@ -119,10 +117,14 @@
  }
  function mapEntries(entries){
   const buckets=new Map();for(const e of entries){const id=key(e.food);if(!buckets.has(id))buckets.set(id,[]);buckets.get(id).push(e);}
-  return [...buckets.values()].map(items=>({...items[0],food:present(items[0].food),place:{...items[0].place,name:uniq(items.map(x=>x.place.name)).join('、'),months:uniq(items.flatMap(x=>x.place.months||[])).sort((a,b)=>a-b)}}));
+  return [...buckets.values()].map(items=>{
+   const locations=new Map();for(const item of items)for(const p of item.identityPlaces||[item.place]){const token=JSON.stringify([p.name,p.months,p.flavorNote,p.source]);if(!locations.has(token))locations.set(token,{...p,months:[...(p.months||[])]});}
+   return {...items[0],food:present(items[0].food),identityPlaces:[...locations.values()],place:{...items[0].place,name:uniq(items.map(x=>x.place.name)).join('、'),months:uniq(items.flatMap(x=>x.place.months||[])).sort((a,b)=>a-b)}};
+  });
  }
+ function mapPlacesHtml(entry,formatMonths){return (entry.identityPlaces||[entry.place]).map(p=>`<small class="identity-map-place">${esc(p.name)} · ${esc(formatMonths(p.months||[]))}${p.flavorNote?' · '+esc(p.flavorNote):''}</small>`).join('');}
  function migrate(saved){
   const result={};for(const [id,value]of Object.entries(saved||{})){const canonical=key(id),prior=result[canonical];if(!prior||value.updatedAt>prior.updatedAt||value.updatedAt===prior.updatedAt&&value.state==='tried')result[canonical]={...value};}return result;
  }
- root.IngredientIdentity={version,groups:Object.freeze(groups),familyOverrides,recipeSources,key,descriptor,family,members,present,catalog,detail,reading,sourceHtml,mapEntries,migrate};
+ root.IngredientIdentity={version,groups:Object.freeze(groups),familyOverrides,recipeSources,key,descriptor,family,members,present,catalog,detail,reading,sourceHtml,mapEntries,mapPlacesHtml,migrate};
 })(typeof window==='object'?window:globalThis);
