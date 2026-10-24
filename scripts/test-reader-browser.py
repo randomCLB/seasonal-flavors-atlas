@@ -56,7 +56,13 @@ try:
             for food_id in CASES:
                 page.goto(BASE+'index.html?'+urlencode({'food':food_id,'reader_verify':SHA}),wait_until='load')
                 dialog=page.locator('#detailDialog');dialog.wait_for(state='visible')
-                for summary in dialog.locator('.reader-section:not([open]) > summary').all():summary.click()
+                for section_id in ['foodBuying','foodRecipe']:
+                    section=dialog.locator('#'+section_id)
+                    if section.count():assert section.evaluate('(e)=>e.open'),food_id+': essential section initially closed'
+                sections=dialog.locator('.reader-section')
+                for i in range(sections.count()):
+                    section=sections.nth(i)
+                    if not section.evaluate('(e)=>e.open'):section.locator(':scope > summary').click()
                 if food_id in ['cigu','pucai']:assert len(dialog.inner_text())>250
                 if food_id=='tengchong-fenghuang-xiaohan-yam':assert '筷子能穿过' in dialog.inner_text()
                 if food_id=='suao-xiaohan-white-skin-sailfish':assert dialog.locator('.reader-variants [data-food]').count()>0
@@ -72,6 +78,9 @@ try:
                 if food_id=='wenzhou-pancai':assert '一月下旬' in body and '九月采收' in body
                 overflow=dialog.evaluate('(e)=>e.scrollWidth>e.clientWidth+2');assert not overflow,(food_id,width,'horizontal overflow')
                 dialog.evaluate('(e)=>{e.scrollTop=0}');page.screenshot(path=f'/tmp/reader-{PREFIX}-{food_id}-{width}.png')
+                if food_id in ['cigu','pucai','tengchong-fenghuang-xiaohan-yam']:
+                    dialog.locator('#foodRecipe').scroll_into_view_if_needed()
+                    page.screenshot(path=f'/tmp/reader-{PREFIX}-{food_id}-recipe-{width}.png')
                 report['cases'].append({'food':food_id,'width':width,'text':body,'horizontalOverflow':overflow,'screenshot':f'reader-{PREFIX}-{food_id}-{width}.png'})
                 print('PASS detail',food_id,width,flush=True)
             page.goto(BASE,wait_until='load');page.locator('[data-view="map"]').click();assert page.locator('#mapBase').is_visible()
