@@ -10,6 +10,7 @@ for(const page of ['index.html','tarot.html','lottery.html']){
  if(!s.includes('src="catalog-photos.js'))s=s.replace('<script src="reader-copy.js','<script src="catalog-photos.js?v=20261024-1"></script><script src="reader-copy.js');
  if(!s.includes('src="reader-depth.js'))s=s.replace(/(<script src="reader-copy-curation\.js[^\"]*"><\/script>)/,'$1<script src="reader-depth.js?v=20261024-1"></script>');
  if(!s.includes('href="catalog-quality.css'))s=s.replace('</head>','<link rel="stylesheet" href="catalog-quality.css?v=20261024-1">\n</head>');
+ if(page!=='index.html')s=s.replace(/<script src="((?:catalog-photos|reader-copy|reader-copy-curation|reader-depth)\.js[^"]*)"[^>]*><\/script>/g,'<script src="$1" defer></script>');
  s=s.replace(/src="(season-selection\.js)(?:\?[^\"]*)?"/g,'src="$1?v=catalog-depth-20261024-1"');fs.writeFileSync(p,s);
 }
 replace('dist/app.js',"let selectedCategory='all',", "let catalogScope='curated';\nlet selectedCategory='all',");

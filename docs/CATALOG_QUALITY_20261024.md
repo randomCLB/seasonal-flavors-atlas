@@ -14,7 +14,7 @@ Base: 060d9315d343dfae6acb420b647397078121ab0e. Scope: seasonal duplication, hom
 
 Baseline: 136 entries had no usable cover. New local licensed photographs and reviewed existing assets reduce the gap to 33; 103 previously unpictured entries gain covers. Some existing pictures are also corrected, including Xiantao lychee that was matched as peach.
 
-47 new files are declared in CATALOG_PHOTOS_20261024.json, with original page, author, license and exact SHA-256. The build downloads only these reviewed files and fails if their content changes. Visitors load the images from the site itself. Generic species/family photographs remain labeled as references. Unidentified plants or fish are left without photographs rather than borrowing misleading images.
+47 repository-local WebP files are declared in CATALOG_PHOTOS_20261024.json, with original page, author, license and exact SHA-256. Reviewed originals were checked against the pinned hashes before conversion. Original and derivative hashes are both retained. The build verifies repository-local files and never downloads photos. Visitors load the images from the site itself. Generic species/family photographs remain labeled as references. Unidentified plants or fish are left without photographs rather than borrowing misleading images.
 
 ## Detail density
 
@@ -22,7 +22,7 @@ reader-depth.js explicitly rewrites 58 records and restores an allow-list of exi
 
 ## Build and checks
 
-Run `node scripts/prepare-reader-release.cjs` before preview, tests or publishing. It invokes the idempotent catalog integration and hash-pinned photo installer. Do not publish unprepared dist files.
+Run `node scripts/prepare-reader-release.cjs` before preview, tests or publishing. It invokes the idempotent catalog integration and repository-local photo verifier. Do not publish unprepared dist files.
 
 Run `node --test tests/*.test.cjs`, `node scripts/audit-tarot-pool.cjs 2027`, and compare docs/TAROT_POOL_COVERAGE_2027.json. catalog-quality.test.cjs checks families, no-photo visibility, canonical data preservation, credits and practical reader detail. The reader browser workflow checks desktop and narrow screens, the complete directory, all-season mode and real served resources after publishing.
 
