@@ -8,7 +8,7 @@ LIVE = os.environ.get('LIVE_VERIFY') == '1'
 BASE = 'https://randomclb.github.io/seasonal-flavors-atlas/' if LIVE else 'http://127.0.0.1:8774/'
 SHA = os.environ.get('RELEASE_SHA', '')
 PREFIX = 'live' if LIVE else 'preview'
-CASES = ['zhenning-honey-plum','wujiang-xiaoxue-fragrant-greens','cangnan-lidong-four-seasons-pomelo','fengqing-xinhua-walnut-flowers','cizhousun','suzhou-bailu-ginkgo','wenzhou-pancai','cigu','pucai','tengchong-fenghuang-xiaohan-yam','luocheng-dafu-xiaohan-black-wood-ear','lianjiang-xiaoshu-june-hemp-bamboo-shoot','suao-xiaohan-white-skin-sailfish','chuan-yu-dahan-pea-tips']
+CASES = ['zhenning-honey-plum','wujiang-xiaoxue-fragrant-greens','cangnan-lidong-four-seasons-pomelo','fengqing-xinhua-walnut-flowers','cizhousun','suzhou-bailu-ginkgo','wenzhou-pancai','cigu','pucai','tengchong-fenghuang-xiaohan-yam','luocheng-dafu-xiaohan-black-wood-ear','lianjiang-xiaoshu-june-hemp-bamboo-shoot','taiwan-jialiao-bream','chuan-yu-dahan-pea-tips']
 report = {'live':LIVE,'base':BASE,'releaseSha':SHA,'resources':[],'cases':[],'flows':[],'errors':[]}
 try:
     names=['index.html','app.js','food-detail.js','food-purchase.js','reader-copy.js','reader-copy-curation.js','reader-depth.js','catalog-photos.js','catalog-quality.css','tarot.html','tarot-spread-ui.js','lottery.html','lottery-ui.js','build-info.json','ingredient-identity.js','ingredient-identity.css','season-selection.js','food-records.js']
@@ -67,8 +67,8 @@ try:
                     if not section.evaluate('(e)=>e.open'):section.locator(':scope > summary').click()
                 if food_id in ['cigu','pucai']:assert len(dialog.inner_text())>250
                 if food_id=='tengchong-fenghuang-xiaohan-yam':assert '筷子能穿过' in dialog.inner_text()
-                if food_id=='suao-xiaohan-white-skin-sailfish':assert dialog.locator('.reader-variants [data-food]').count()>0
-                if food_id=='chuan-yu-dahan-pea-tips':assert dialog.locator('.ingredient-text-cover').count()==1
+                if food_id=='taiwan-jialiao-bream':assert dialog.locator('.identity-origins article').count()>0
+                if food_id=='chuan-yu-dahan-pea-tips':assert dialog.locator('.reader-portrait img').count()==1 and dialog.locator('.reader-dish img').count()==1
                 portrait=dialog.locator('.reader-portrait img')
                 if portrait.count():portrait.evaluate('(img)=>img.decode()')
                 body=dialog.inner_text();assert '2 人份' not in body;assert '本站试吃' not in body
