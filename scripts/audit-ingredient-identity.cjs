@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const W=require('./audit-reader-copy.cjs').load(),ctx={window:W};vm.createContext(ctx);
+for(const n of ['photo-review','catalog-photos','season-features','season-selection'])vm.runInContext(fs.readFileSync(path.join(__dirname,'../dist',n+'.js'),'utf8'),ctx);
+const rows=W.FOODS.map(f=>({id:f.id,name:f.name,category:f.category,alias:f.alias,region:f.region,months:f.peakMonths,terms:f.peakTerms,group:W.SeasonSelection.group(f),short:W.ReaderCopy.view({...f,...W.EDITORIAL_DETAILS?.[f.id]}).short}));
+const groups=Object.groupBy(rows,r=>r.group);
+console.log('REPEATED FAMILIES');
+for(const [group,items]of Object.entries(groups).filter(([,a])=>a.length>1))console.log(JSON.stringify({group,items}));
+console.log('UNGROUPED');for(const r of rows.filter(r=>groups[r.group].length===1))console.log(JSON.stringify(r));
+if(process.argv.includes('--full'))console.log(JSON.stringify(W.FOODS));
+if(process.env.IDENTITY_AUDIT_OUTPUT)fs.writeFileSync(process.env.IDENTITY_AUDIT_OUTPUT,JSON.stringify({rows,groups},null,2));
