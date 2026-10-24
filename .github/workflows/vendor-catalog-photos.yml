@@ -1,0 +1,109 @@
+name: Freeze reviewed catalog photographs
+on:
+  push:
+    branches: [fix/catalog-depth-20261024]
+    paths: [.github/workflows/vendor-catalog-photos.yml]
+permissions:
+  contents: read
+jobs:
+  freeze:
+    if: github.actor == 'randomCLB' && github.repository == 'randomCLB/seasonal-flavors-atlas'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: catalog-photo-candidates
+          run-id: 40105518912
+          github-token: ${{ github.token }}
+          path: /tmp/reviewed-photos
+      - uses: actions/download-artifact@v4
+        with:
+          name: catalog-photo-candidates-extra
+          run-id: 40106671575
+          github-token: ${{ github.token }}
+          path: /tmp/reviewed-photos-extra
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow==11.3.0
+      - name: Verify reviewed originals and prepare immutable local derivatives
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,re
+          from PIL import Image,ImageOps
+          manifest_path=Path('docs/CATALOG_PHOTOS_20261024.json')
+          manifest=json.loads(manifest_path.read_text())
+          registry_path=Path('dist/catalog-photos.js')
+          registry=registry_path.read_text()
+          total_before=total_after=0
+          for item in manifest:
+              old_path=Path(item['path'])
+              destination=Path('dist')/old_path
+              if item.get('vendored'):
+                  data=destination.read_bytes()
+                  assert hashlib.sha256(data).hexdigest()==item['sha256'],str(destination)
+                  total_before+=len(data);total_after+=len(data)
+                  continue
+              candidates=[base/old_path.name for base in [Path('/tmp/reviewed-photos'),Path('/tmp/reviewed-photos-extra')]]
+              source=next((p for p in candidates if p.is_file()),None)
+              assert source is not None,old_path.name
+              data=source.read_bytes()
+              assert hashlib.sha256(data).hexdigest()==item['sha256'],str(source)
+              total_before+=len(data)
+              with Image.open(source) as image:
+                  image=ImageOps.exif_transpose(image)
+                  image.thumbnail((960,960),Image.Resampling.LANCZOS)
+                  if image.mode not in ('RGB','RGBA'):image=image.convert('RGB')
+                  destination=destination.with_suffix('.webp')
+                  destination.parent.mkdir(parents=True,exist_ok=True)
+                  image.save(destination,format='WEBP',quality=82,method=6)
+              derivative=destination.read_bytes()
+              item['sourceSha256']=item['sha256']
+              item['sha256']=hashlib.sha256(derivative).hexdigest()
+              item['path']=str(destination.relative_to('dist'))
+              item['vendored']=True
+              item['modifications']='长边不超过960像素，转换为WebP；页面按版式裁切显示'
+              old_literal="'"+old_path.name+"'"
+              assert registry.count(old_literal)==1,old_literal
+              registry=registry.replace(old_literal,"'"+destination.name+"'")
+              total_after+=len(derivative)
+          manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+          registry_path.write_text(registry)
+          # On deferred draw pages, initialize the presentation modules after the catalog.
+          integration_path=Path('scripts/prepare-catalog-quality.cjs')
+          integration=integration_path.read_text()
+          anchor=" s=s.replace(/src=\"(season-selection\\.js)"
+          assert integration.count(anchor)==1
+          defer=" if(page!=='index.html')s=s.replace(/<script src=\"((?:catalog-photos|reader-copy|reader-copy-curation|reader-depth)\\.js[^\"]*)\"[^>]*><\\/script>/g,'<script src=\"$1\" defer></script>');\n"
+          integration_path.write_text(integration.replace(anchor,defer+anchor))
+          # All review files now live in Git; builds must never depend on a remote thumbnail.
+          Path('scripts/install-catalog-photos.cjs').write_text("'use strict';\nconst fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');\nconst manifest=require('../docs/CATALOG_PHOTOS_20261024.json');\nfor(const item of manifest){const file=path.join(__dirname,'../dist',item.path);if(!fs.existsSync(file))throw Error('Reviewed photograph missing: '+item.path);const actual=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');if(actual!==item.sha256)throw Error('Reviewed photograph changed: '+item.path);}\nconsole.log('Verified repository-local photographs:',manifest.length);\n")
+          tests=Path('tests/catalog-quality.test.cjs')
+          tests.write_text(tests.read_text()+"\ntest('deferred draw pages initialize photo and reader layers after their data',()=>{for(const page of ['tarot.html','lottery.html'])for(const name of ['catalog-photos','reader-copy','reader-copy-curation','reader-depth']){const tag=read(page).match(new RegExp('<script[^>]*src=\\\"'+name+'\\\\.js[^>]*>'))?.[0];assert.ok(tag&&/\\bdefer\\b/.test(tag),page+': '+name);}});\n")
+          docs=Path('docs/CATALOG_QUALITY_20261024.md')
+          text=docs.read_text().replace('47 new files are declared','47 repository-local WebP files are declared').replace('The build downloads only these reviewed files and fails if their content changes.','Reviewed originals were checked against the pinned hashes before conversion. Original and derivative hashes are both retained. The build verifies repository-local files and never downloads photos.').replace('hash-pinned photo installer','repository-local photo verifier')
+          docs.write_text(text)
+          print(json.dumps({'files':len(manifest),'originalBytes':total_before,'webpBytes':total_after},ensure_ascii=False))
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate before committing only scoped changes
+        run: |
+          node --check scripts/prepare-catalog-quality.cjs
+          node --check tests/catalog-quality.test.cjs
+          node scripts/install-catalog-photos.cjs
+          git add dist/assets/catalog dist/catalog-photos.js docs/CATALOG_PHOTOS_20261024.json docs/CATALOG_QUALITY_20261024.md scripts/prepare-catalog-quality.cjs scripts/install-catalog-photos.cjs tests/catalog-quality.test.cjs
+          git diff --cached --stat
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Vendor reviewed ingredient photographs as local WebP and align deferred readers'
+          git push origin HEAD:refs/heads/fix/catalog-depth-20261024
