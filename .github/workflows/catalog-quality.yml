@@ -37,10 +37,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/review-photo-candidates.cjs
+      - run: node scripts/review-extra-photos.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: catalog-photo-candidates
-          path: /tmp/catalog-photos/
+          name: catalog-photo-candidates-extra
+          path: /tmp/catalog-photos-extra/
           retention-days: 14
