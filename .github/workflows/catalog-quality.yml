@@ -16,8 +16,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Preserve reproducible review source
-        run: tar --exclude='./.git' --exclude='./dist/assets' -czf /tmp/atlas-source.tgz .
       - name: Audit visibility and reader detail density
         run: |
           node scripts/prepare-reader-release.cjs
@@ -25,8 +23,24 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: catalog-quality-source
-          path: |
-            /tmp/atlas-source.tgz
-            /tmp/catalog-quality.json
+          name: catalog-quality
+          path: /tmp/catalog-quality.json
+          retention-days: 14
+  photo-review:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/review-photo-candidates.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalog-photo-candidates
+          path: /tmp/catalog-photos/
           retention-days: 14
