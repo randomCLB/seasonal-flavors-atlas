@@ -1,0 +1,32 @@
+name: Catalog quality
+on:
+  push:
+    branches: [fix/catalog-depth-20261024]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preserve reproducible review source
+        run: tar --exclude='./.git' --exclude='./dist/assets' -czf /tmp/atlas-source.tgz .
+      - name: Audit visibility and reader detail density
+        run: |
+          node scripts/prepare-reader-release.cjs
+          node scripts/audit-catalog-quality.cjs > /tmp/catalog-quality.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalog-quality-source
+          path: |
+            /tmp/atlas-source.tgz
+            /tmp/catalog-quality.json
+          retention-days: 14
