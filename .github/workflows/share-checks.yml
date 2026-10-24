@@ -12,7 +12,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check dist/food-share.js && node --test tests/*.test.cjs
+      - run: node scripts/prepare-reader-release.cjs
+      - run: |
+          node --check dist/food-share.js
+          node --test tests/*.test.cjs > /tmp/share-tests.tap 2>&1 || { grep -A 24 '^not ok' /tmp/share-tests.tap; tail -12 /tmp/share-tests.tap; exit 1; }
+          tail -12 /tmp/share-tests.tap
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -28,4 +32,5 @@ jobs:
           path: |
             /tmp/atlas-share-*.png
             /tmp/atlas-share-browser.json
+            /tmp/share-tests.tap
           retention-days: 7

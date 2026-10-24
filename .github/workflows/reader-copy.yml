@@ -3,26 +3,55 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+  workflow_run:
+    workflows: [Publish atlas]
+    types: [completed]
 permissions:
   contents: read
 jobs:
-  audit:
+  reader:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        page: [0, 1, 2, 3, 4, 5, 6, 7]
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Audit reader fields and preserved evidence
-        run: node scripts/audit-reader-copy.cjs ${{ matrix.page }} /tmp/reader-audit.json
-      - uses: actions/upload-artifact@v4
-        if: matrix.page == 0
+      - name: Prepare exact release bytes and audit every record
+        env:
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          node scripts/prepare-reader-release.cjs
+          node - <<'JS'
+          const fs=require('node:fs'),a=require('./scripts/audit-reader-copy.cjs').audit();
+          fs.writeFileSync('/tmp/reader-audit.json',JSON.stringify(a,null,2));
+          console.log('CATALOG',a.total,'CHANGED',a.rows.filter(r=>r.changed).length,'ISSUE_RECORDS',a.rows.filter(r=>r.issues.length).length);
+          for(const r of a.rows.filter(r=>r.issues.length))console.log(JSON.stringify({id:r.id,issues:r.issues}));
+          JS
+      - name: Reader assertions
+        run: node --test tests/reader-copy.test.cjs
+      - uses: actions/setup-python@v5
         with:
-          name: reader-copy-audit
-          path: /tmp/reader-audit.json
-          retention-days: 7
+          python-version: '3.12'
+      - name: Install browser test runtime
+        run: pip install playwright==1.58.0 && python -m playwright install --with-deps chromium
+      - name: Desktop, mobile and live release verification
+        env:
+          LIVE_VERIFY: ${{ github.event_name == 'workflow_run' && '1' || '0' }}
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          python -m http.server 8774 --directory dist >/tmp/reader-server.log 2>&1 &
+          python scripts/test-reader-browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reader-copy-evidence-${{ github.event_name }}
+          path: |
+            /tmp/reader-audit.json
+            /tmp/reader-browser.json
+            /tmp/reader-*.png
+          retention-days: 30
