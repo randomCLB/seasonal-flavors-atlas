@@ -1,0 +1,33 @@
+name: Reader access and media
+on:
+  push:
+    branches: [fix/reader-access-media-20261024]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preserve exact source and audit prepared covers
+        run: |
+          git ls-files | grep -v -E '^dist/(assets|preview)/' > /tmp/reader-source-files.txt
+          git ls-files dist/assets/catalog >> /tmp/reader-source-files.txt
+          tar -czf /tmp/reader-access-source.tgz -T /tmp/reader-source-files.txt
+          node scripts/prepare-reader-release.cjs
+          node scripts/audit-reader-access.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reader-access-audit
+          path: |
+            /tmp/reader-access.json
+            /tmp/reader-access-source.tgz
+          retention-days: 14
