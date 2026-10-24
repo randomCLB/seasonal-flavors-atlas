@@ -5,8 +5,8 @@
  function ingredient(food){
   const choices=[root.ReaderMedia?.records?.[food.sourceId||food.id],root.ReaderMedia?.records?.[food.id],food.identityPhoto,root.PhotoReview?.records?.[food.sourceId||food.id],root.PhotoReview?.records?.[food.id]];
   const found=choices.find(v=>v&&usable(v.src));if(found)return {...found,kind:'ingredient',fit:found.fit||'cover',heroFit:found.heroFit||'cover'};
-  const src=[food.cardImage,food.image].find(usable)||'';
-  return {src,alt:food.cardImageAlt||food.imageAlt||food.name||'',note:src?(food.cardNote||food.imageCaption||'食材形态参考'):'',kind:'ingredient',fit:'cover',heroFit:'cover'};
+  const original=[food.image,food.cardImage].find(usable)||'',src=original==='assets/shajiguo.jpg'?'assets/shajiguo-400.webp':original;
+  return {src,alt:food.imageAlt||food.cardImageAlt||food.name||'',note:src?(food.imageCaption||food.cardNote||'食材形态参考'):'',kind:'ingredient',fit:'cover',heroFit:'cover'};
  }
  function dish(food){
   const explicit=root.ReaderMedia?.dishes?.[food.sourceId||food.id]||root.ReaderMedia?.dishes?.[food.id];if(explicit&&usable(explicit.src))return {...explicit,kind:'dish'};
