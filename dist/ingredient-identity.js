@@ -46,6 +46,13 @@
   'mengzi-june-red-pomegranate':'pomegranate',
   'henan-qiufen-tunisian-softseed-pomegranate':'pomegranate'
  });
+ // Keep the recently expanded recipe rather than reverting to an older short one
+ // merely because its source record supplied the stable identity ID.
+ const recipeSources=Object.freeze({
+  'guangning-lidong-ma-bamboo-shoot':'lianjiang-xiaoshu-june-hemp-bamboo-shoot',
+  'shidian-lixia-qingmei':'dazhou-tanzi-mangzhong-green-plum-last-pick',
+  'hejiang-late-lychee':'hejiang-xiaoshu-late-lychee'
+ });
  const key=value=>{const id=typeof value==='string'?value:value?.id;return lookup.get(id)?.id||id;};
  const descriptor=value=>lookup.get(typeof value==='string'?value:value?.id);
  const uniq=values=>[...new Set(values.filter(v=>v!==undefined&&v!==null&&v!==''))];
@@ -62,7 +69,7 @@
   const seen=new Map();
   for(const record of records)for(const p of record.placeSeasons||[]){
    const id=JSON.stringify([p.name,p.lat,p.lon,p.source,p.seasonNote,p.flavorNote,p.flavorSource]);
-   const old=seen.get(id);if(old)old.months=uniq([...old.months,...p.months]).sort((a,b)=>a-b);
+   const old=seen.get(id);if(old)old.months=uniq([...old.months,...(p.months||[])]).sort((a,b)=>a-b);
    else seen.set(id,{...p,months:[...(p.months||[])],sourceRecordId:record.id});
   }
   return [...seen.values()];
@@ -86,16 +93,28 @@
   const buckets=new Map();for(const f of records){const id=key(f);if(!buckets.has(id))buckets.set(id,[]);buckets.get(id).push(f);}return [...buckets.values()].map(make);
  }
  function detail(value,records=root.FOODS||[]){const list=members(value,records);return list.length?make(list):null;}
+ function reading(food){
+  const read=raw=>{const merged={...raw,...root.EDITORIAL_DETAILS?.[raw.id]};return root.ReaderCopy?root.ReaderCopy.view(merged):merged;};
+  const view=read(food);if(!food.identityMembers)return view;
+  for(const field of ['id','name','ingredientId','identityMembers','identityKind','region','alias','seasonLabel','placeSeasons','places','sources','identityPhoto'])if(Object.hasOwn(food,field))view[field]=food[field];
+  const sourceId=recipeSources[key(food)],raw=(root.FOODS||[]).find(f=>f.id===sourceId);
+  if(raw){const recipe=read(raw);for(const field of ['recipeTitle','ingredients','steps','finish','pitfall','pair','kitchen','storage','eatingMode'])if(Object.hasOwn(recipe,field))view[field]=Array.isArray(recipe[field])?[...recipe[field]]:recipe[field];view.recipeSourceId=sourceId;}
+  return view;
+ }
  function sourceHtml(food){
   const records=members(food.id);if(records.length<2)return '';
-  const rendered=new Set(),notes=new Set([food.safety]),rows=[];
+  const buckets=new Map(),notes=new Set([food.safety]);
   for(const raw of records){
    const f=root.ReaderCopy?root.ReaderCopy.view({...raw,...root.EDITORIAL_DETAILS?.[raw.id]}):raw;
-   const period=f.seasonLabel||(f.peakMonths||[]).map(m=>m+'月').join('、');
-   const token=JSON.stringify([f.region,period,f.sourceYears]);if(rendered.has(token))continue;rendered.add(token);
-   const safety=f.safety&&!notes.has(f.safety)?`<p class="identity-preparation">${esc(f.safety)}</p>`:'';notes.add(f.safety);
-   rows.push(`<article data-origin-record="${esc(raw.id)}"><h4>${esc(f.region)}</h4><p>${esc(period)}${f.sourceYears?.length?' · '+esc(f.sourceYears.join('、'))+'年':''}</p><p class="identity-local-name">当地名称：${esc(raw.name)}</p>${safety}${(f.sources||[]).map(([title,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title)} ↗</a>`).join(' · ')}</article>`);
+   const period=f.seasonLabel||(f.peakMonths||[]).map(m=>m+'月').join('、'),token=JSON.stringify([f.region,period,f.sourceYears]);
+   if(!buckets.has(token))buckets.set(token,{region:f.region,period,years:f.sourceYears||[],rows:[]});
+   buckets.get(token).rows.push({raw,view:f});
   }
+  const rows=[...buckets.values()].map(group=>{
+   const names=uniq(group.rows.map(x=>x.raw.name)),safety=uniq(group.rows.map(x=>x.view.safety)).filter(value=>!notes.has(value));safety.forEach(value=>notes.add(value));
+   const links=sources(group.rows.map(x=>x.view));
+   return `<article data-origin-record="${esc(group.rows.map(x=>x.raw.id).join(' '))}"><h4>${esc(group.region)}</h4><p>${esc(group.period)}${group.years.length?' · '+esc(group.years.join('、'))+'年':''}</p><p class="identity-local-name">当地名称：${esc(names.join('、'))}</p>${safety.map(value=>`<p class="identity-preparation">${esc(value)}</p>`).join('')}${links.map(([title,url])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title)} ↗</a>`).join(' · ')}</article>`;
+  });
   return `<div class="origin-details identity-origins"><h3>各地产期与名称</h3>${rows.join('')}</div>`;
  }
  function mapEntries(entries){
@@ -105,5 +124,5 @@
  function migrate(saved){
   const result={};for(const [id,value]of Object.entries(saved||{})){const canonical=key(id),prior=result[canonical];if(!prior||value.updatedAt>prior.updatedAt||value.updatedAt===prior.updatedAt&&value.state==='tried')result[canonical]={...value};}return result;
  }
- root.IngredientIdentity={version,groups:Object.freeze(groups),familyOverrides,key,descriptor,family,members,present,catalog,detail,sourceHtml,mapEntries,migrate};
+ root.IngredientIdentity={version,groups:Object.freeze(groups),familyOverrides,recipeSources,key,descriptor,family,members,present,catalog,detail,reading,sourceHtml,mapEntries,migrate};
 })(typeof window==='object'?window:globalThis);
