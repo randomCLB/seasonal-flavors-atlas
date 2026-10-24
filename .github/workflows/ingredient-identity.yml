@@ -1,0 +1,54 @@
+name: Ingredient identity
+on:
+  push:
+    branches: [fix/ingredient-identity-20261024]
+  pull_request:
+    branches: [main]
+  workflow_run:
+    workflows: [Publish atlas]
+    types: [completed]
+permissions:
+  contents: read
+jobs:
+  identity:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare exact release and verify identities
+        run: |
+          node scripts/prepare-reader-release.cjs
+          node --test tests/ingredient-identity.test.cjs
+          node scripts/audit-ingredient-identity.cjs > /tmp/identity-source-audit.txt
+        env:
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+          IDENTITY_AUDIT_OUTPUT: /tmp/ingredient-identity.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser runtime
+        run: pip install playwright==1.58.0 >/tmp/identity-browser-install.log 2>&1 && python -m playwright install --with-deps chromium >>/tmp/identity-browser-install.log 2>&1
+      - name: Check rendered term lists, aliases, legacy URLs and saved records
+        run: |
+          python -m http.server 8774 --directory dist >/tmp/identity-server.log 2>&1 &
+          python scripts/test-ingredient-identity-browser.py
+        env:
+          LIVE_VERIFY: ${{ github.event_name == 'workflow_run' && '1' || '0' }}
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ingredient-identity-${{ github.event_name }}
+          path: |
+            /tmp/ingredient-identity.json
+            /tmp/identity-source-audit.txt
+            /tmp/identity-browser.json
+            /tmp/identity-*.png
+          retention-days: 30

@@ -3,7 +3,7 @@
  'use strict';
  const esc=value=>root.FoodPurchase.esc(value),text=value=>typeof value==='string'?value.trim():'';
  function html(food,{recognition,seasonLabel,category,originHtml,variants=[],similar=[],imageAttrs=''}){
-  const merged={...food,...root.EDITORIAL_DETAILS?.[food.id]},f=root.ReaderCopy?root.ReaderCopy.view(merged):merged,fresh=f.eatingMode==='fresh',shown=new Set();
+  const merged={...food,...root.EDITORIAL_DETAILS?.[food.id]},f=food.identityMembers&&root.IngredientIdentity?root.IngredientIdentity.reading(food):root.ReaderCopy?root.ReaderCopy.view(merged):merged,fresh=f.eatingMode==='fresh',shown=new Set();
   const paragraph=(value,cls='')=>{const t=text(value);if(!t||shown.has(t))return '';shown.add(t);return `<p${cls?` class="${cls}"`:''}>${esc(t)}</p>`;};
   const labeled=(label,value,cls='')=>{const t=text(value);if(!t||shown.has(t))return '';shown.add(t);return `<p${cls?` class="${cls}"`:''}><strong>${esc(label)}</strong> · ${esc(t)}</p>`;};
   let number=0;
@@ -24,7 +24,7 @@
   const recipeLink=recipe?`<button type="button" class="reader-recipe-button" data-food="${esc(f.id)}" data-recipe="true">${fresh?'怎么吃':'看做法'} <span aria-hidden="true">↓</span></button>`:'';
   return `<div class="reader-overview"><figure class="reader-portrait" tabindex="0" aria-label="食材图片说明">${recognition.src?`<img src="${esc(recognition.src)}" alt="${esc(recognition.alt)}" ${imageAttrs} style="object-fit:${recognition.fit}" loading="eager">`:`<div class="ingredient-text-cover"><span>${esc(category)}</span><strong>${esc(f.name)}</strong><small>食材图待补</small></div>`}<figcaption>${esc(recognition.note)} · <a href="credits.html">图片出处 ↗</a></figcaption></figure><div class="reader-lead"><p class="reader-kicker">${esc(category)} · ${esc(f.region)}</p><h1>${esc(f.name)}</h1>${text(f.seasonLabel||seasonLabel)?`<p class="reader-season">${esc(f.seasonLabel||seasonLabel)}</p>`:''}${lead}${state}<div class="reader-actions">${root.FoodPurchase.render(f)}${recipeLink}</div>${root.FoodRecords.render(f)}</div></div>
    ${text(f.safety)?`<aside class="reader-safety"><strong>入口前先留意</strong><p>${esc(f.safety)}</p></aside>`:''}
-   <div class="reader-sections">${section('风味与区别',sensory)}${section('挑选、获取与保存',buy+storage,'foodBuying')}${section(fresh?'怎么吃':'家常做法',recipe,'foodRecipe')}${section('同类产地与时段',relatedRegions)}${section('来处、时令与来源',origins)}</div>
+   <div class="reader-sections">${section('风味与区别',sensory)}${section('挑选、获取与保存',buy+storage,'foodBuying')}${section(fresh?'怎么吃':'家常做法',recipe,'foodRecipe')}${section('相近品种与形态',relatedRegions)}${section('来处、时令与来源',origins)}</div>
    ${similar.length?`<section class="reader-next"><p class="detail-num">相近风味</p><h2>和它风味相近的，还有哪些？</h2><div>${similar.map(({food:other,why})=>`<button data-food="${esc(other.id)}"><strong>${esc(other.name)}</strong><span>${esc(why)} ↗</span></button>`).join('')}</div></section>`:''}`;
  }
  root.FoodDetail={html};

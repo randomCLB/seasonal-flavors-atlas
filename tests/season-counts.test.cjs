@@ -1,14 +1,14 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const C=require('../dist/lottery-core.js'),root=path.join(__dirname,'../dist');
-const runtimeData=new Set(['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','term-gap-additions','editorial-copy','photo-review','catalog-photos','reader-depth','season-features','season-selection','reader-copy','reader-copy-curation']);
+const runtimeData=new Set(['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','term-gap-additions','editorial-copy','photo-review','catalog-photos','ingredient-identity','reader-depth','season-features','season-selection','reader-copy','reader-copy-curation']);
 const categoryOf=food=>food.category==='vegetable'||food.category==='fruit'?food.category:['protein','seafood'].includes(food.category)?'protein':'other';
 function fixture(now='2026-10-22T04:00:00Z'){
  const nodes=new Map(),document={getElementById:id=>{if(!nodes.has(id))nodes.set(id,{style:{},classList:{toggle(){}},querySelectorAll:()=>[]});return nodes.get(id)},querySelectorAll:()=>[]};
  class Clock extends Date{constructor(...args){super(...(args.length?args:[now]))}static now(){return Date.parse(now)}}
  const ctx={window:{FengwuLottery:C},document,Date:Clock};vm.createContext(ctx);
  const scripts=[...fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll(/<script\b[^>]*\bsrc="([^"?]+)(?:\?[^" ]*)?"/g)].map(m=>m[1].replace(/\.js$/,'')),loaded=scripts.filter(name=>runtimeData.has(name));
- assert.deepEqual(new Set(loaded),runtimeData,'the fixture includes every production catalog and editorial layer');for(const name of loaded)vm.runInContext(fs.readFileSync(path.join(root,name+'.js'),'utf8'),ctx);
+ assert.deepEqual(new Set(loaded),runtimeData,'the fixture includes every production catalog, identity and editorial layer');for(const name of loaded)vm.runInContext(fs.readFileSync(path.join(root,name+'.js'),'utf8'),ctx);
  const app=fs.readFileSync(path.join(root,'app.js'),'utf8');vm.runInContext(app.slice(0,app.indexOf('function renderTermRail')),ctx);vm.runInContext(app.slice(app.indexOf('function renderCategoryFilter'),app.indexOf("$('termPrev').onclick")),ctx);return {ctx,nodes};
 }
 function counts(nodes){return Object.fromEntries([...nodes.get('categoryFilter').innerHTML.matchAll(/data-category="([^"]+)"[^>]*>[^<]*<span>(\d+)<\/span>/g)].map(m=>[m[1],Number(m[2])]))}

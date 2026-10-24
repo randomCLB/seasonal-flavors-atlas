@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const W=require('./audit-reader-copy.cjs').load(),ctx={window:W};vm.createContext(ctx);
+for(const n of ['ingredient-identity','photo-review','catalog-photos','season-features','season-selection'])vm.runInContext(fs.readFileSync(path.join(__dirname,'../dist',n+'.js'),'utf8'),ctx);
+const I=W.IngredientIdentity,rows=W.FOODS.map(f=>({id:f.id,ingredientId:I.key(f),name:f.name,category:f.category,alias:f.alias,region:f.region,months:f.peakMonths,terms:f.peakTerms,group:W.SeasonSelection.group(f),short:W.ReaderCopy.view({...f,...W.EDITORIAL_DETAILS?.[f.id]}).short}));
+const groups=Object.groupBy(rows,r=>r.group),ingredients=I.catalog(W.FOODS),summary={observations:rows.length,ingredients:ingredients.length,mergedCards:rows.length-ingredients.length,mergeGroups:I.groups.length};
+console.log('IDENTITY_SUMMARY',JSON.stringify(summary));
+console.log('MERGED_IDENTITIES');for(const group of I.groups)console.log(JSON.stringify({id:group.id,name:group.name,kind:group.kind,members:group.ids.map(id=>({id,name:W.FOODS.find(f=>f.id===id).name}))}));
+console.log('RELATED_VARIETIES');for(const [group,items]of Object.entries(groups).filter(([,a])=>a.length>1))console.log(JSON.stringify({group,items}));
+if(process.env.IDENTITY_AUDIT_OUTPUT)fs.writeFileSync(process.env.IDENTITY_AUDIT_OUTPUT,JSON.stringify({summary,merges:I.groups,rows,groups},null,2));
