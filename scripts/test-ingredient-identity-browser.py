@@ -34,7 +34,7 @@ try:
               const searches=[];for(const g of I.groups)for(const id of g.ids){
                 const raw=window.FOODS.find(f=>f.id===id);renderSearch(raw.name);
                 const ids=[...document.querySelectorAll('#searchResults [data-food]')].map(e=>e.dataset.food);
-                if(ids.filter(x=>x===g.id).length!==1||ids.some(x=>I.key(x)!==x))throw Error('Alias search '+raw.name);
+                const allowed=window.ReaderAccess.visible(raw);if(ids.filter(x=>x===g.id).length!==(allowed?1:0)||ids.some(x=>I.key(x)!==x))throw Error('Alias visibility '+raw.name);
                 searches.push({query:raw.name,canonical:g.id,count:ids.length});
               }
               renderSearch('');const all=[...document.querySelectorAll('#searchResults [data-food]')].map(e=>e.dataset.food);
@@ -48,7 +48,7 @@ try:
             image=f'/tmp/identity-{"live" if LIVE else "preview"}-search-{width}.png';page.screenshot(path=image);report['screens'].append(image)
             page.locator('#searchResults [data-food="hejiang-late-lychee"]').click()
             assert parse_qs(urlparse(page.url).query)['food']==['hejiang-late-lychee']
-            legacy=['qingdao-shazikou-li-xia-shrimp-2026','hejiang-xiaoshu-late-lychee','taiwan-rainwater-jialai-fish','taiwan-lichiu-red-eye-bream','taiwan-daxue-whitebelly-mackerel','jiangan-changsha-xiaohan-early-tea-first-pick']
+            legacy=['qingdao-shazikou-li-xia-shrimp-2026','hejiang-xiaoshu-late-lychee','taiwan-rainwater-jialai-fish','taiwan-lichiu-red-eye-bream','keelung-hanlu-cuttlefish','jiangan-changsha-xiaohan-early-tea-first-pick']
             redirects=[]
             for old in legacy:
                 page.goto(BASE+'index.html?'+urlencode({'food':old}),wait_until='load')

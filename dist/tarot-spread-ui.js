@@ -1,7 +1,7 @@
 /* A session-only three-card game; no saved preferences, accounts, or device sensors. */
 (function(){
 'use strict';
-const $=id=>document.getElementById(id),T=window.FengwuTarot,S=window.FengwuTarotSpread,C=window.FengwuLottery,foods=window.FOODS,profiles=window.LOTTERY_PROFILES;
+const $=id=>document.getElementById(id),T=window.FengwuTarot,S=window.FengwuTarotSpread,C=window.FengwuLottery,foods=(window.ReaderAccess?window.ReaderAccess.filter(window.FOODS):window.FOODS).filter(f=>!window.FoodMedia||window.FoodMedia.hasIngredient(f)),profiles=window.LOTTERY_PROFILES;
 const byId=Object.fromEntries((foods||[]).map(f=>[f.id,f]));
 let events=[],round=null,busy=false,result=null,history=[],noticeTimer;
 const choices=[['vegan','纯素'],['meat','不吃肉'],['seafood','不吃水产'],['egg','不吃蛋'],['milk','不吃奶'],['soy','避开大豆'],['wheat','避开小麦'],['peanut','避开花生'],['sesame','避开芝麻']];
@@ -64,26 +64,26 @@ async function copy(text,message){
  try{await navigator.clipboard.writeText(text);notify(message,true);}catch{let box=$('manual-copy');if(!box){box=document.createElement('textarea');box.id='manual-copy';box.setAttribute('aria-label','请长按或全选复制完整牌阵');box.style.cssText='width:100%;min-height:170px;margin-top:15px;padding:15px;background:#10231f;color:#eee7d8;border:1px solid #ceb784';$('reveal').append(box);}box.value=text;box.focus();box.select();notify('内容已选中，可长按或使用复制快捷键。',true);}
 }
 function show(r){
- const f=byId[r.foodId];result=r;
+ const f=window.ReaderCopy.view({...byId[r.foodId],...window.EDITORIAL_DETAILS?.[r.foodId]});result=r;
  $('reading-date').textContent=`${r.shared?'来自分享 · ':''}${r.day.replaceAll('-',' · ')} · ${r.term.name} · 三牌餐桌阵`;
  $('result-tableau').innerHTML=r.cards.map((entry,i)=>cardMarkup(entry,i,false,false)).join('');
  $('result-insights').innerHTML=r.reading.cards.map((text,i)=>`<details class="card-insight"><summary>${S.ROLES[i].name} · ${esc(text.name)} · ${esc(text.position)}<span aria-hidden="true">＋</span></summary><p>${esc(text.text)}</p></details>`).join('');
  $('pattern').textContent=r.reading.pattern;
  $('dish-title').textContent=r.dishTitle||T.dishName(f);$('dish-origin').textContent=`用到 ${r.foodName||f.name} · ${r.place.place}`;
- const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};const media=T.mediaFor(f);image.alt=media.alt;image.src=media.src;document.querySelector('.photo-label').textContent=media.kind==='ingredient'?'今日命定菜 · 原料参考':media.kind==='fresh'?'今日命定味 · 鲜果参考':'今日命定菜';
- $('image-note').textContent=T.imageNote(f);for(const key of ['opening','connection','closing','omen'])$(key).textContent=r.reading[key];
- $('dish-sensory').textContent=f.dishCaption||f.short||'';
- $('season-note').textContent=`时令线索：${f.season} 当前推荐依据产地记录，不代表库存或当年成熟日已确认。`;
+ const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};const media=window.FoodMedia?.recipe(f)||T.mediaFor(f);image.alt=media.alt;image.src=media.src;document.querySelector('.photo-label').textContent=media.kind==='ingredient'?'今日命定菜 · 原料参考':media.kind==='fresh'?'今日命定味 · 鲜果参考':'今日命定菜';
+ $('image-note').textContent=media.note||T.imageNote(f);for(const key of ['opening','connection','closing','omen'])$(key).textContent=r.reading[key];
+ $('dish-sensory').textContent=f.short||'';
+ $('season-note').textContent=f.seasonLabel||'';
  $('copy-search').innerHTML=window.FoodPurchase.render(f)+window.FoodRecords.render(f);window.FoodPurchase.bind($('copy-search'));window.FoodRecords.bind();
- $('recipe-ingredients').textContent=`准备（2 人份）：${f.ingredients}`;
+ $('recipe-ingredients').textContent=f.ingredients?`准备：${f.ingredients}`:'';$('recipe-ingredients').hidden=f.eatingMode==='fresh'||!f.ingredients;
  $('recipe-steps').innerHTML=f.steps.map(s=>`<li>${esc(s)}</li>`).join('');
- $('recipe-finish').textContent=`做到什么程度：${f.finish||'以完整食谱的熟制要求为准。'}`;
- $('recipe-safety').textContent=f.safety||'购买前确认实际商品配料和到货鲜度；本站不确认商品的过敏原交叉接触。';
- $('recipe-storage').textContent=`带回家后：${f.storage||'按实际商品说明保存，尽快安排食用。'}`;
+ $('recipe-finish').textContent=f.finish?`做到什么程度：${f.finish}`:'';$('recipe-finish').hidden=f.eatingMode==='fresh'||!f.finish;
+ $('recipe-safety').textContent=f.safety||'购买前核对商品配料和到货鲜度；食物过敏者还应向商家确认过敏原交叉接触风险。';
+ $('recipe-storage').textContent=f.storage?`带回家后：${f.storage}`:'';$('recipe-storage').hidden=!f.storage;
  const url=new URL('index.html',document.baseURI);url.searchParams.set('food',f.id);$('food-link').href=url.href;
  const source=$('season-source');try{const u=new URL(r.place.source);source.hidden=!['http:','https:'].includes(u.protocol);if(!source.hidden)source.href=u.href;}catch{source.hidden=true;}
  $('repeat-note').textContent=r.repeated?'此刻没有其他符合忌口的候选，新的牌阵仍将这一味留在桌上。':`当前有 ${r.eligibleCount} 道当季选择，本轮还可遇见 ${r.remainingCount} 道不同的。${r.cycleRestarted?'上一轮已抽完，新一轮开始。':'抽遍这一轮，再开始轮换。'}刷新页面会开启新记录。签文仅供娱乐。`;
- if(r.shared){$('repeat-note').textContent='这是分享者当时抽出的牌阵，未重新抽取，也未按你的忌口筛选。签文仅供娱乐；食材做法与安全资料以最新详情为准。';$('season-note').textContent=`原抽签日期：${r.day}。时令是当时的产地线索，不表示现在有货或适合你的忌口。`;}
+ if(r.shared){$('repeat-note').textContent='这是分享者当时抽出的牌阵，未重新抽取，也未按你的忌口筛选。签文仅供娱乐；食材做法与安全资料以最新详情为准。';$('season-note').textContent=`原抽签日期：${r.day}。购买时确认当季供应，并按自己的忌口核对配料。`;}
  $('table').hidden=true;$('reveal').hidden=false;document.querySelector('.recipe-preview').open=false;$('manual-copy')?.remove();notify('');$('result-title').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});
 }
 async function reveal(){

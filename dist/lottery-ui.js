@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   const $=id=>document.getElementById(id), C=window.FengwuLottery;
-  const foods=window.FOODS, profiles=window.LOTTERY_PROFILES;
+  const foods=(window.ReaderAccess?window.ReaderAccess.filter(window.FOODS):window.FOODS).filter(f=>!window.FoodMedia||window.FoodMedia.hasIngredient(f)), profiles=window.LOTTERY_PROFILES;
   const STORE='fengwu.lottery.v1.1', SCHEMA=2;
   let prefs={avoid:[],excludeText:'',tastes:[],textures:[],cooking:[],curiosity:1},step=0,plan=null,saved=null,noticeTimer;
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -58,9 +58,9 @@
     $('food-list').innerHTML=plan.slots.map((s,i)=>{
       const term=`<div class="term"><div class="term-number">${String(i+1).padStart(2,'0')}</div><h3 class="term-name">${esc(s.name)}</h3><p class="term-dates">${s.startDay.slice(5).replace('-',' / ')}<br>至 ${s.endDay.slice(5).replace('-',' / ')}<br>${s.year}</p></div>`;
       if(!s.foodId)return `<article class="food-entry reveal">${term}<div class="empty-slot"><h2>这一签，先为你留白。</h2><p>${esc(s.reason)}</p></div></article>`;
-      const f=byId[s.foodId],p=profiles[f.id];
-      const reason=plan.shared?s.recommendation:C.recommendationReason(f,p,plan.prefs);
-      return `<article class="food-entry reveal" data-slot="${esc(s.key)}">${term}<figure class="food-image"><img src="${esc(f.cardImage||f.image)}" alt="${esc(f.cardImageAlt||f.imageAlt||f.name)}" loading="lazy"><figcaption>${esc(f.cardNote||f.imageCaption||'形态参考 · 非产地鉴别')}</figcaption></figure><div class="food-copy"><p class="food-origin">${esc(s.place)} · ${families[p.family]} · ${s.eatDay} 暂定尝鲜</p><h2>${esc(s.foodName||f.name)}</h2><p class="reason">${esc(reason)}</p><p class="recipe">这一回试试 <a href="index.html?food=${encodeURIComponent(f.id)}" target="_blank" rel="noopener noreferrer">${esc(f.recipeTitle)} ↗</a></p><div class="food-note"><p><strong>买前：</strong>${esc(f.buy)}</p><p><strong>留意：</strong>${esc(f.safety||f.storage||'核对到货状态、商品配料和保存条件。')}</p><p>时令精度：${s.precision==='season'?'季节级近似':'月度或旬段参考'}，不保证该日正好上市。</p></div><div class="food-actions"><button class="text-button" data-swap="${esc(s.key)}">换这一味 ↻</button><button class="text-button" data-lock="${esc(s.key)}" aria-pressed="${!!s.locked}">${s.locked?'已留住 ✓':'留住它'}</button></div>${window.FoodPurchase.render(f)}</div></article>`;
+      const f=window.ReaderCopy.view({...byId[s.foodId],...window.EDITORIAL_DETAILS?.[s.foodId]}),p=profiles[f.id],media=window.FoodMedia?.ingredient(f);
+      const reason=plan.shared?s.recommendation:C.recommendationReason(byId[s.foodId],p,plan.prefs);
+      return `<article class="food-entry reveal" data-slot="${esc(s.key)}">${term}<figure class="food-image"><img src="${esc(media?.src||f.cardImage||f.image)}" alt="${esc(media?.alt||f.cardImageAlt||f.imageAlt||f.name)}" loading="lazy"><figcaption>${esc(media?.note||f.cardNote||f.imageCaption||'食材形态参考')}</figcaption></figure><div class="food-copy"><p class="food-origin">${esc(s.place)} · ${families[p.family]} · ${s.eatDay} 暂定尝鲜</p><h2>${esc(s.foodName||f.name)}</h2><p class="reason">${esc(reason)}</p><p class="recipe">这一回试试 <a href="index.html?food=${encodeURIComponent(f.id)}" target="_blank" rel="noopener noreferrer">${esc(f.recipeTitle)} ↗</a></p><div class="food-note"><p><strong>买前：</strong>${esc(f.buy)}</p><p><strong>留意：</strong>${esc(f.safety||f.storage||'核对到货状态、商品配料和保存条件。')}</p><p>产区时段：${s.precision==='season'?'季节参考':'月份或旬段参考'}。</p></div><div class="food-actions"><button class="text-button" data-swap="${esc(s.key)}">换这一味 ↻</button><button class="text-button" data-lock="${esc(s.key)}" aria-pressed="${!!s.locked}">${s.locked?'已留住 ✓':'留住它'}</button></div>${window.FoodPurchase.render(f)}</div></article>`;
     }).join('');
     window.FoodPurchase.bind($('food-list'));
     $('food-list').querySelectorAll('.food-entry[data-slot]').forEach(el=>{const s=plan.slots.find(s=>s.key===el.dataset.slot);el.querySelector('.food-copy').insertAdjacentHTML('beforeend',window.FoodRecords.render(byId[s.foodId]));});window.FoodRecords.bind();
