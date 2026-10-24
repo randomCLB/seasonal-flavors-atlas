@@ -16,18 +16,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Preserve exact source and audit prepared covers
-        run: |
-          git ls-files | grep -v -E '^dist/(assets|preview)/' > /tmp/reader-source-files.txt
-          git ls-files dist/assets/catalog >> /tmp/reader-source-files.txt
-          tar -czf /tmp/reader-access-source.tgz -T /tmp/reader-source-files.txt
-          node scripts/prepare-reader-release.cjs
-          node scripts/audit-reader-access.cjs
+      - run: node scripts/prepare-reader-release.cjs && node scripts/audit-reader-access.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: reader-access-audit
-          path: |
-            /tmp/reader-access.json
-            /tmp/reader-access-source.tgz
+          path: /tmp/reader-access.json
+          retention-days: 14
+  photograph-review:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/review-missing-covers.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: missing-cover-candidates
+          path: /tmp/missing-cover-candidates/
           retention-days: 14
