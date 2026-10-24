@@ -11,7 +11,8 @@
   const lead=paragraph(f.short||f.taste,'reader-expectation'),state=paragraph(f.state,'reader-state');
   const senses=[['味道',f.taste],['香气',f.aroma],['质地',f.texture]].map(([label,value])=>{const t=text(value);if(!t||shown.has(t))return '';shown.add(t);return `<div><dt>${label}</dt><dd>${esc(t)}</dd></div>`;}).join('');
   const sensory=(senses?`<dl class="sensory">${senses}</dl>`:'')+paragraph(f.intro||f.description)+paragraph(f.comparison?.text);
-  const buy=[f.buy,f.buyDetail,f.procurement?.route,f.market].map(value=>paragraph(value)).join('')+(root.ReaderAccess?.links(f)||'');
+  const purchaseKeyword=root.ReaderAccess?.entry(f)?.keyword;
+  const buy=[f.buy,f.buyDetail,f.procurement?.route,f.market].map(value=>paragraph(purchaseKeyword&&typeof value==='string'?value.replace(/^搜索“[^”]*”/,'搜索“'+purchaseKeyword+'”'):value)).join('')+(root.ReaderAccess?.links(f)||'');
   const storageText=paragraph(f.storage),storage=storageText?`<h3>带回家以后</h3>${storageText}`:'';
   const steps=(Array.isArray(f.steps)?f.steps:[]).filter(value=>text(value));
   const dishMedia=root.FoodMedia?.dish(f),edible=dishMedia?.src||f.dishImage||f.cutImage,hasEdible=edible&&edible!==recognition.src&&(dishMedia?.src||!f.tarotImage?.kind?.match(/ingredient|fresh/));
