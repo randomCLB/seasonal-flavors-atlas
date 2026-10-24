@@ -20,7 +20,7 @@
  add('taiwan-lidong-east-sailfish suao-xiaohan-white-skin-sailfish sihu-xiaohan-sailfish taiwan-lichiu-east-sailfish taiwan-qiufen-northeast-sailfish','sailfish.jpg','旗鱼类 · 同类实拍');
  add('dahan-green-carp','black_carp.jpg','青鱼 · 同类实拍');
  add('taiwan-winter-solstice-mullet-roe','mullet_roe.jpg','加工乌鱼子 · 同类实拍');
- add('taiwan-daxue-mullet','mullet.jpg','鲻鱼类 · 同类实拍');
+ add('taiwan-daxue-mullet','mullet.webp','鲻鱼类 · 同类实拍');
  add('taiwan-lidong-east-jiana-fish taiwan-jialiao-bream taiwan-jingzhe-jiala tamsui-xiaoshu-jiala','seabream.jpg','真鲷 · 同类实拍');
  add('gongliao-autumn-japanese-horse-mackerel','horse_mackerel.jpg','日本竹荚鱼 · 同类实拍');
  add('pengjia-xiaoshu-mahi-mahi','mahi_mahi.jpg','鬼头刀 · 同类实拍');
@@ -50,7 +50,6 @@
  add('keelung-north-xiaoshu-red-amberjack','amberjack-3.jpg','高体鰤实拍 · 红魽类参考');
  add('taiwan-daxue-eastern-striped-bonito taiwan-qingming-liuqiu-bullet-bonito ntpc-xiazhi-bullet-bonito taiwan-spring-equinox-east-coast-bonito','bonito-2.jpg','巴鲣实拍 · 鲣类参考');
  add('chengde-spring-equinox-elm-samaras','elm-1.jpg','枝头榆钱 · 实拍');
- // Reuse already licensed, visually appropriate ingredient photos.
  add('wujiang-xiaoxue-fragrant-greens suizhou-paopaoqing','takecai.jpg','塌棵菜植株 · 同类实拍','assets/');
  add('suzhou-dongshan-taihu-water-shield','jiande-chuncai.jpg','莼菜嫩梢 · 实拍','assets/');
  add('sanzhi-red-sheath-jiaobai hubei-ejiao4-summer-jiaobai','zhenlai-jiaobai.jpg','鲜茭白 · 同类实拍','assets/');
@@ -68,7 +67,9 @@
  add('yulin-xiaohan-sesame-melon','wenzhou-lingkun-baizhuogua-generic-korean-melon-cc-by-sa-2.0.jpg','甜瓜 · 同类实拍','assets/');
  add('lianjiang-xiaoshu-june-hemp-bamboo-shoot','cizhousun-shoot-800.webp','带壳竹笋 · 同类实拍','assets/');
  add('zengcheng-caixin nanxian-wushenggong-xiaohan-caitai','caixin-raw-cc-by-sa.webp','菜心嫩梢 · 同类实拍','assets/');
- const records=root.PhotoReview.records;
+ // Draw pages keep their canonical image/eligibility catalog untouched and may
+ // load this presentation registry without the homepage PhotoReview mutator.
+ const records=(root.PhotoReview||={records:{}}).records;
  for(const [ids,src,label]of groups)for(const id of ids){if(!(root.FOODS||[]).some(f=>f.id===id))throw Error('Unknown photo food: '+id);records[id]={src,alt:label,note:label,fit:'cover',heroFit:'cover'};}
  root.CatalogPhotos={groups,ids:groups.flatMap(g=>g[0])};
 })(window);
