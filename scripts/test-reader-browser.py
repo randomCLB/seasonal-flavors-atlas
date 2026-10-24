@@ -11,7 +11,7 @@ PREFIX = 'live' if LIVE else 'preview'
 CASES = ['zhenning-honey-plum','wujiang-xiaoxue-fragrant-greens','cangnan-lidong-four-seasons-pomelo','fengqing-xinhua-walnut-flowers','cizhousun','suzhou-bailu-ginkgo','wenzhou-pancai','cigu','pucai','tengchong-fenghuang-xiaohan-yam','luocheng-dafu-xiaohan-black-wood-ear','lianjiang-xiaoshu-june-hemp-bamboo-shoot','suao-xiaohan-white-skin-sailfish','chuan-yu-dahan-pea-tips']
 report = {'live':LIVE,'base':BASE,'releaseSha':SHA,'resources':[],'cases':[],'flows':[],'errors':[]}
 try:
-    names=['index.html','app.js','food-detail.js','food-purchase.js','reader-copy.js','reader-copy-curation.js','reader-depth.js','catalog-photos.js','catalog-quality.css','tarot.html','tarot-spread-ui.js','lottery.html','lottery-ui.js','build-info.json']
+    names=['index.html','app.js','food-detail.js','food-purchase.js','reader-copy.js','reader-copy-curation.js','reader-depth.js','catalog-photos.js','catalog-quality.css','tarot.html','tarot-spread-ui.js','lottery.html','lottery-ui.js','build-info.json','ingredient-identity.js','ingredient-identity.css','season-selection.js','food-records.js']
     names += [p['path'] for p in json.loads(Path('docs/CATALOG_PHOTOS_20261024.json').read_text())]
     for name in names:
         with urlopen(Request(BASE+name+'?'+urlencode({'reader_verify':SHA}),headers={'User-Agent':'SeasonalAtlasReleaseVerification'}),timeout=30) as response:
@@ -25,6 +25,7 @@ try:
             page=context.new_page();page.on('pageerror',lambda error:report['errors'].append(str(error)))
             page.goto(BASE+'?'+urlencode({'reader_verify':SHA}),wait_until='load');page.locator('.reader-build').wait_for()
             assert '2026.10.24-depth.1' in page.locator('.reader-build').inner_text()
+            assert '2026.10.24-identity.1' in page.locator('.identity-build').inner_text()
             assert page.locator('#categoryFilter [data-category]').evaluate_all('els=>els.map(e=>e.dataset.category)')==['all','vegetable','fruit','protein','other']
             if width==1400:
                 audit=page.evaluate("""()=>{
@@ -47,10 +48,11 @@ try:
             before=page.locator('#seasonCards article').count()
             page.locator('#allSeasonScope').click();assert page.locator('#allSeasonScope').get_attribute('aria-pressed')=='true'
             assert page.locator('#seasonCards article').count()>=before
-            page.locator('#catalogDirectory').click();assert page.locator('#searchResults [data-food]').count()==354
+            page.locator('#catalogDirectory').click()
+            assert page.locator('#searchResults [data-food]').count()==page.evaluate('canonicalCatalog.length')
             page.locator('#searchClose').click();page.locator('#curatedScope').click();assert page.locator('#seasonCards article').count()==before
             page.screenshot(path=f'/tmp/reader-{PREFIX}-homepage-{width}.png')
-            catalog=page.evaluate('''()=>({noPhoto:foods.filter(f=>!foodVisual(f).src).length,withPhoto:foods.filter(f=>foodVisual(f).src).length,terms:termWindow.map(t=>{const selected=rankSeasonFoods(chinaParts(new Date(t.time+86400000)).month,t);return {term:termNames[t.index],total:selected.length,unique:new Set(selected.map(window.SeasonSelection.group)).size}})})''')
+            catalog=page.evaluate('''()=>({noPhoto:foods.filter(f=>!foodVisual(f).src).length,withPhoto:foods.filter(f=>foodVisual(f).src).length,ingredients:canonicalCatalog.length,terms:termWindow.map(t=>{const selected=rankSeasonFoods(chinaParts(new Date(t.time+86400000)).month,t);return {term:termNames[t.index],total:selected.length,unique:new Set(selected.map(window.SeasonSelection.group)).size}})})''')
             assert catalog['noPhoto']<=33;assert all(t['total']==t['unique'] for t in catalog['terms'])
             report['catalogQuality']=catalog;report['flows'].append({'width':width,'flow':'all-season-and-full-directory','passed':True})
             for food_id in CASES:

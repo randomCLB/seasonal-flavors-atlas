@@ -1,7 +1,11 @@
 'use strict';
-/* Targeted integration into the existing static app. Each transformation is idempotent. */
+/* Targeted, idempotent integration into the existing static app. */
 const fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('node:child_process');
 const root=path.join(__dirname,'..');
+if(fs.readFileSync(path.join(root,'dist/app.js'),'utf8').includes('const canonicalCatalog=')){
+ execFileSync(process.execPath,[path.join(__dirname,'install-catalog-photos.cjs')],{stdio:'inherit'});
+ require('./prepare-ingredient-identity.cjs');return;
+}
 function replace(file,from,to){const p=path.join(root,file),s=fs.readFileSync(p,'utf8');if(s.includes(to))return;if(s.split(from).length!==2)throw Error(file+': catalog integration anchor missing: '+from.slice(0,90));fs.writeFileSync(p,s.replace(from,to));}
 const controls='<nav class="catalog-scope" aria-label="选择浏览范围"><button type="button" id="curatedScope" aria-pressed="true">当季精选</button><button type="button" id="allSeasonScope" aria-pressed="false">全部当季</button><button type="button" id="catalogDirectory">全年风物目录 ↗</button></nav>';
 replace('dist/index.html','<nav id="categoryFilter"',controls+'\n        <nav id="categoryFilter"');
@@ -30,3 +34,4 @@ const manifest=require('../docs/CATALOG_PHOTOS_20261024.json');
 const block='<section id="catalog-photo-credits"><h2>补充食材实拍 · 2026-10-24</h2>'+manifest.map(p=>`<article><h3>${esc(p.subject)}</h3><p>${esc(p.artist)} · <a href="${esc(p.licenseUrl||p.source)}">${esc(p.license)}</a></p><p>${esc(p.modifications)}；同类形态参考。</p><a href="${esc(p.source)}">原文件与完整署名 ↗</a></article>`).join('')+'</section>';
 const credits=path.join(root,'dist','credits.html');let text=fs.readFileSync(credits,'utf8').replace(/<section id="catalog-photo-credits">[\s\S]*?<\/section>/,'');if(!text.includes('id="catalog-photo-credits"')){if(!text.includes('</main>'))throw Error('Credits insertion point missing');fs.writeFileSync(credits,text.replace('</main>',block+'</main>'));}
 execFileSync(process.execPath,[path.join(__dirname,'install-catalog-photos.cjs')],{stdio:'inherit'});
+require('./prepare-ingredient-identity.cjs');
