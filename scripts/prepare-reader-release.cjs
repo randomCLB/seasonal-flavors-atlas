@@ -1,7 +1,5 @@
 'use strict';
-/* Reproducible presentation integration. The large inline terrain SVG is left byte-for-byte intact.
- * This runs before tests and publishing. Every edit has an exact anchor and is idempotent.
- * The catalog supplied to the draw engines is never replaced with presentation copies. */
+/* Reproducible reading integration, preserving the existing terrain and navigation. */
 const fs=require('node:fs'),path=require('node:path');
 const root=path.join(__dirname,'..');
 function replace(file,from,to){const p=path.join(root,file),s=fs.readFileSync(p,'utf8');if(s.includes(to))return;if(s.split(from).length!==2)throw Error(`${file}: expected one integration anchor: ${from.slice(0,95)}`);fs.writeFileSync(p,s.replace(from,to));}
@@ -10,13 +8,12 @@ const loader='<script src="reader-copy.js?v=reader-20261023-1"></script><script 
 for(const page of ['index.html','tarot.html','lottery.html']){
  const file='dist/'+page,p=path.join(root,file);let s=fs.readFileSync(p,'utf8');
  if(!s.includes('src="reader-copy.js')){const anchor=s.match(/<script\b[^>]*\bsrc="food-purchase\.js[^\"]*"[^>]*><\/script>/)?.[0];if(!anchor)throw Error(file+': missing purchase module');s=s.replace(anchor,loader+anchor);}
- // Keep original version identifiers as well as a separate reader revision, so unrelated UI checks stay useful.
  for(const script of ['app.js','food-detail.js','food-purchase.js','tarot-spread-ui.js','lottery-ui.js'])s=s.replace(new RegExp('src="('+script.replace('.','\\.')+'(?:\\?[^\"]*)?)"','g'),(all,url)=>url.includes('reader=20261023-1')?all:`src="${url}${url.includes('?')?'&':'?'}reader=20261023-1"`);
  if(page==='index.html'&&!s.includes('文案版 2026.10.23-reader.1'))s=s.replace('</footer>','<small class="build-version reader-build">文案版 2026.10.23-reader.1</small></footer>');
  s=s.replace('展开两人份做法与注意事项','展开做法与注意事项');fs.writeFileSync(p,s);
 }
 replace('dist/app.js','const foods=window.FOODS;','const foods=window.ReaderCopy ? window.FOODS.map(f=>window.ReaderCopy.view({...f,...window.EDITORIAL_DETAILS?.[f.id]})) : window.FOODS;');
-range('dist/app.js','const originDetails=food=>','const chinaParts=',`const originDetails=food=>food.placeSeasons.length<2?'':\`<div class="origin-details"><h3>各地产期</h3>\${food.placeSeasons.map(place=>\`<article><h4>\${place.name}</h4><p><strong>时令</strong> · \${formatMonths(place.months)}</p>\${place.flavorNote?\`<p><strong>产区风味</strong> · \${place.flavorNote}</p>\`:''}<p class="state-note"><a href="\${place.source}" target="_blank" rel="noopener">时令来源 ↗</a>\${place.flavorSource?\` · <a href="\${place.flavorSource}" target="_blank" rel="noopener">风味来源 ↗</a>\`:''}</p></article>\`).join('')}</div>\`;
+range('dist/app.js','const originDetails=food=>','const chinaParts=',`const originDetails=food=>food.placeSeasons.length<2?'':\`<div class="origin-details"><h3>各地产期</h3>\${food.placeSeasons.map((place,index)=>\`<article><h4>\${place.name}</h4><p><strong>时令</strong> · \${place.seasonNote||(food.id==='wenzhou-pancai'?['一月下旬起采收，冬批至二月。','九月采收，秋批至十月。'][index]:'')||formatMonths(place.months)}</p>\${place.flavorNote?\`<p><strong>产区风味</strong> · \${place.flavorNote}</p>\`:''}<p class="state-note"><a href="\${place.source}" target="_blank" rel="noopener">时令来源 ↗</a>\${place.flavorSource?\` · <a href="\${place.flavorSource}" target="_blank" rel="noopener">查看风味来源 ↗</a>\`:''}</p></article>\`).join('')}</div>\`;
 `);
 replace('dist/app.js',"${x.food.placeSeasons.length>1?`<small>${x.place.flavorNote||'产区风味差异待补充'}</small>`:''}","${x.place.flavorNote?`<small>${x.place.flavorNote}</small>`:''}");
 replace('dist/app.js',"${f.alias.join(' · ')} · ${f.taste}","${[...f.alias,...f.flavor].filter(Boolean).slice(0,4).join(' · ')}");
@@ -26,6 +23,8 @@ replace('dist/tarot-spread-ui.js',"$('season-note').textContent=`时令线索：
 replace('dist/tarot-spread-ui.js',"$('recipe-ingredients').textContent=`准备（2 人份）：${f.ingredients}`;","$('recipe-ingredients').textContent=f.ingredients?`准备：${f.ingredients}`:'';$('recipe-ingredients').hidden=f.eatingMode==='fresh'||!f.ingredients;");
 replace('dist/tarot-spread-ui.js',"$('recipe-finish').textContent=`做到什么程度：${f.finish||'以完整食谱的熟制要求为准。'}`;","$('recipe-finish').textContent=f.finish?`做到什么程度：${f.finish}`:'';$('recipe-finish').hidden=f.eatingMode==='fresh'||!f.finish;");
 replace('dist/tarot-spread-ui.js',"$('recipe-storage').textContent=`带回家后：${f.storage||'按实际商品说明保存，尽快安排食用。'}`;","$('recipe-storage').textContent=f.storage?`带回家后：${f.storage}`:'';$('recipe-storage').hidden=!f.storage;");
+replace('dist/tarot-spread-ui.js',"购买前确认实际商品配料和到货鲜度；本站不确认商品的过敏原交叉接触。","购买前核对商品配料和到货鲜度；食物过敏者还应向商家确认过敏原交叉接触风险。");
+replace('dist/tarot-spread-ui.js',"原抽签日期：${r.day}。时令是当时的产地线索，不表示现在有货或适合你的忌口。","原抽签日期：${r.day}。购买时确认当季供应，并按自己的忌口核对配料。");
 replace('dist/lottery-ui.js','const f=byId[s.foodId],p=profiles[f.id];','const f=window.ReaderCopy.view({...byId[s.foodId],...window.EDITORIAL_DETAILS?.[s.foodId]}),p=profiles[f.id];');
 replace('dist/lottery-ui.js','const reason=plan.shared?s.recommendation:C.recommendationReason(f,p,plan.prefs);','const reason=plan.shared?s.recommendation:C.recommendationReason(byId[s.foodId],p,plan.prefs);');
 replace('dist/lottery-ui.js',"时令精度：${s.precision==='season'?'季节级近似':'月度或旬段参考'}，不保证该日正好上市。","产区时段：${s.precision==='season'?'季节参考':'月份或旬段参考'}。");
