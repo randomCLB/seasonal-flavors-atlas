@@ -1,0 +1,30 @@
+name: Catalog quality
+on:
+  push:
+    branches: [fix/catalog-depth-20261024]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install reviewed photos and prepare readers
+        run: node scripts/prepare-reader-release.cjs
+      - name: Validate families, missing-photo visibility and detailed readers
+        run: |
+          node --test tests/catalog-quality.test.cjs
+          node scripts/audit-catalog-quality.cjs > /tmp/catalog-quality.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalog-quality
+          path: /tmp/catalog-quality.json
+          retention-days: 30

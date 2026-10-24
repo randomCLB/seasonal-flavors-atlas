@@ -1,72 +1,15 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const context={window:{}};vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'../dist/season-selection.js'),'utf8'),context);
-const S=context.window.SeasonSelection;
+const context={window:{}};vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'../dist/season-selection.js'),'utf8'),context);const S=context.window.SeasonSelection;
 test('different local pomelos have one seasonal winner and photographic foods keep distinct identities',()=>{
- const food=(id,name,image)=>({id,name,cardImage:image});
- const pomelos=[food('rongxian-shatian-pomelo','容县沙田柚','a.jpg'),food('tainan-madou-frost-white-pomelo','台南麻豆霜降白柚','b.jpg')];
- assert.equal(S.select(pomelos,19)[0].id,'tainan-madou-frost-white-pomelo');
- assert.equal(S.select([food('a','砂糖桔','a.jpg'),food('b','早橘','b.jpg')],18).length,1);
- assert.notEqual(S.group(food('a','樱桃')),S.group(food('b','蜜桃')));
- assert.notEqual(S.group(food('a','软枣猕猴桃')),S.group(food('b','蜜桃')));
- assert.notEqual(S.group(food('a','凤梨释迦')),S.group(food('b','莱阳梨')));
- assert.notEqual(S.group(food('a','西盟鲜竹虫')),S.group(food('b','刺竹笋')));
- assert.equal(S.group(food('a','启东吕四冬至带鱼')),S.group(food('b','苏澳霜降百带鱼')));
+ const food=(id,name,image)=>({id,name,cardImage:image}),pomelos=[food('rongxian-shatian-pomelo','容县沙田柚','a.jpg'),food('tainan-madou-frost-white-pomelo','台南麻豆霜降白柚','b.jpg')];assert.equal(S.select(pomelos,19)[0].id,'tainan-madou-frost-white-pomelo');assert.equal(S.select([food('a','砂糖桔','a.jpg'),food('b','早橘','b.jpg')],18).length,1);assert.notEqual(S.group(food('a','樱桃')),S.group(food('b','蜜桃')));assert.notEqual(S.group(food('a','软枣猕猴桃')),S.group(food('b','蜜桃')));assert.notEqual(S.group(food('a','凤梨释迦')),S.group(food('b','莱阳梨')));assert.notEqual(S.group(food('a','西盟鲜竹虫')),S.group(food('b','刺竹笋')));assert.equal(S.group(food('a','启东吕四冬至带鱼')),S.group(food('b','苏澳霜降百带鱼')));
 });
-test('the complete displayed list rotates repeats at fifty percent without altering sourced candidates',()=>{
- const f=id=>({id});const previous=[f('a'),f('b'),f('c')],pools=[[f('a'),f('b'),f('c'),f('d')],[f('a'),f('d'),f('e')]];
- const before=JSON.stringify(pools),lists=S.plan(pools,previous);let prior=previous;
- for(let i=0;i<lists.length;i++){
-  const ids=new Set(prior.map(food=>food.id));assert.ok(lists[i].filter(food=>ids.has(food.id)).length/lists[i].length<=.5);
-  assert.ok(lists[i].every(food=>pools[i].includes(food)));prior=lists[i];
- }
- assert.equal(JSON.stringify(pools),before);
-});
-test('a calendar quarter keeps one hairtail selection and favors the distinct northern-ocean variety',()=>{
- const f=(id,name)=>({id,name,cardImage:id+'.jpg'});
- const lists=S.plan([[f('suao-frost-beltfish','苏澳霜降百带鱼')],[f('ningbo-youdai','宁波北洋油带鱼'),f('qidong-lyusi-winter-solstice-hairtail','启东吕四冬至带鱼')]],[],['2026-Q4','2026-Q4']);
- assert.deepEqual(lists.map(list=>list.map(food=>food.id)),[[],['ningbo-youdai']]);
-});
-test('edible flowers, rose fruit and nuts are not discarded as ordinary pears or peaches',()=>{
- const f=(id,name,category)=>({id,name,category,cardImage:id+'.jpg'});
- const list=[f('pear','莱阳梨','fruit'),f('rose','刺梨','fruit'),f('blossom','棠梨花','vegetable'),f('peach','蜜桃','fruit'),f('catkin','凤庆鲜核桃花','vegetable'),f('hickory','歙县山核桃','fruit')];
- assert.equal(S.select(list,18).length,6);
- assert.equal(new Set(list.map(S.group)).size,6);
-});
-test('known seafood aliases deduplicate while different foods may share a reference photo',()=>{
- const f=(id,name,category='seafood',alias=[])=>({id,name,category,alias,cardImage:'shared-reference.jpg'});
- const list=[f('shrimp-a','黄渤海灯笼红虾','protein',['鹰爪虾']),f('shrimp-b','青岛蛎虾'),f('white-a','台湾寒露白腹鰆'),f('white-b','台湾大雪白腹鰆'),f('black','淡水黑鲷'),f('korean','台湾高丽马加鰆'),f('roe','台湾乌鱼子'),f('mullet','台湾乌鱼')];
- assert.deepEqual(Array.from(S.select(list,18),f=>f.id),['shrimp-a','white-a','black','korean','roe','mullet']);
-});
-test('different bamboo types and vegetable parts remain distinct tasting choices',()=>{
- const f=(id,name)=>({id,name,category:'vegetable',cardImage:id+'.jpg'});
- const list=[f('winter','溪口冬笋'),f('moso','溪口毛笋'),f('lei','临安雷笋'),f('ma','广宁麻竹笋'),f('thorn','刺竹笋'),f('choy','增城迟菜心'),f('red','洪山菜薹'),f('white','南县白菜薹'),f('water','沙洲竹梗芹'),f('land','马家沟芹菜')];
- assert.deepEqual(Array.from(S.select(list,7),f=>f.id),['winter','lei','ma','thorn','choy','red','white','water','land']);
-});
-test('a sourced featured food wins its family and survives the repeat quota',()=>{
- const f=(id,name)=>({id,name,category:'fruit',cardImage:id+'.jpg'});
- const standard=f('laiyang-pear','莱阳梨'),feature=f('featured-pear','地方小梨'),other=f('new','新鲜果');
- context.window.SEASON_FEATURES={18:{foodId:feature.id}};
- try{assert.equal(S.select([standard,feature],18)[0],feature)}finally{delete context.window.SEASON_FEATURES}
- const list=S.plan([[standard,feature,other]],[standard,feature],[],[feature.id])[0];
- assert.deepEqual(Array.from(list,f=>f.id),[feature.id,other.id]);
-});
-test('a fully repeated sourced pool retains one real food instead of an empty page',()=>{
- const a={id:'a'},b={id:'b'};
- assert.deepEqual(Array.from(S.plan([[a,b]],[a,b],[],['b'])[0],f=>f.id),['b']);
-});
-test('quarter filtering is included before the final adjacent-term balance',()=>{
- const a={id:'a'},b={id:'b'},fresh={id:'new'},f=(id,name)=>({id,name});
- const lists=S.plan([[a,b,fresh,f('other-hairtail','苏澳带鱼')],[f('ningbo-youdai','宁波北洋油带鱼')]], [a,b],['2026-Q4','2026-Q4']);
- assert.deepEqual(Array.from(lists[0],food=>food.id),['a','new']);
-});
-test('unidentified fishery leads stay in the input catalog but not in seasonal recommendations',()=>{
- const held=Object.keys(S.holds).map(id=>({id,name:'地方鱼名',category:'seafood',cardImage:'reference.jpg'}));
- const known={id:'verified-fish',name:'已确认食用鱼',category:'seafood',cardImage:'reference.jpg'};
- const input=[...held,known],before=JSON.stringify(input);
- assert.deepEqual(Array.from(S.select(input,4),food=>food.id),[known.id]);
- assert.equal(JSON.stringify(input),before);
- assert.equal(Object.isFrozen(S.holds),true);
- assert.equal(held.length,9);
- assert.ok(held.every(food=>/来源.*待确认/.test(S.holds[food.id])));
-});
+test('the complete displayed list rotates repeats at fifty percent without altering sourced candidates',()=>{const f=id=>({id}),previous=[f('a'),f('b'),f('c')],pools=[[f('a'),f('b'),f('c'),f('d')],[f('a'),f('d'),f('e')]],before=JSON.stringify(pools),lists=S.plan(pools,previous);let prior=previous;for(let i=0;i<lists.length;i++){const ids=new Set(prior.map(food=>food.id));assert.ok(lists[i].filter(food=>ids.has(food.id)).length/lists[i].length<=.5);assert.ok(lists[i].every(food=>pools[i].includes(food)));prior=lists[i];}assert.equal(JSON.stringify(pools),before);});
+test('a calendar quarter keeps one hairtail selection and favors the distinct northern-ocean variety',()=>{const f=(id,name)=>({id,name,cardImage:id+'.jpg'});const lists=S.plan([[f('suao-frost-beltfish','苏澳霜降百带鱼')],[f('ningbo-youdai','宁波北洋油带鱼'),f('qidong-lyusi-winter-solstice-hairtail','启东吕四冬至带鱼')]],[],['2026-Q4','2026-Q4']);assert.deepEqual(lists.map(list=>list.map(food=>food.id)),[[],['ningbo-youdai']]);});
+test('edible flowers, rose fruit and nuts are not discarded as ordinary pears or peaches',()=>{const f=(id,name,category)=>({id,name,category,cardImage:id+'.jpg'}),list=[f('pear','莱阳梨','fruit'),f('rose','刺梨','fruit'),f('blossom','棠梨花','vegetable'),f('peach','蜜桃','fruit'),f('catkin','凤庆鲜核桃花','vegetable'),f('hickory','歙县山核桃','fruit')];assert.equal(S.select(list,18).length,6);assert.equal(new Set(list.map(S.group)).size,6);});
+test('known seafood aliases deduplicate while different foods may share a reference photo',()=>{const f=(id,name,category='seafood',alias=[])=>({id,name,category,alias,cardImage:'shared-reference.jpg'}),list=[f('shrimp-a','黄渤海灯笼红虾','protein',['鹰爪虾']),f('shrimp-b','青岛蛎虾'),f('white-a','台湾寒露白腹鰆'),f('white-b','台湾大雪白腹鰆'),f('black','淡水黑鲷'),f('korean','台湾高丽马加鰆'),f('roe','台湾乌鱼子'),f('mullet','台湾乌鱼')];assert.deepEqual(Array.from(S.select(list,18),f=>f.id),['shrimp-a','white-a','black','roe','mullet']);});
+test('different bamboo types and vegetable parts remain distinct tasting choices',()=>{const f=(id,name)=>({id,name,category:'vegetable',cardImage:id+'.jpg'}),list=[f('winter','溪口冬笋'),f('moso','溪口毛笋'),f('lei','临安雷笋'),f('ma','广宁麻竹笋'),f('thorn','刺竹笋'),f('choy','增城迟菜心'),f('red','洪山菜薹'),f('white','南县白菜薹'),f('water','沙洲竹梗芹'),f('land','马家沟芹菜')];assert.deepEqual(Array.from(S.select(list,7),f=>f.id),['winter','lei','ma','thorn','choy','red','white','water','land']);});
+test('a sourced featured food wins its family and survives the repeat quota',()=>{const f=(id,name)=>({id,name,category:'fruit',cardImage:id+'.jpg'}),standard=f('laiyang-pear','莱阳梨'),feature=f('featured-pear','地方小梨'),other=f('new','新鲜果');context.window.SEASON_FEATURES={18:{foodId:feature.id}};try{assert.equal(S.select([standard,feature],18)[0],feature)}finally{delete context.window.SEASON_FEATURES}const list=S.plan([[standard,feature,other]],[standard,feature],[],[feature.id])[0];assert.deepEqual(Array.from(list,f=>f.id),[feature.id,other.id]);});
+test('a fully repeated sourced pool retains one real food instead of an empty page',()=>{const a={id:'a'},b={id:'b'};assert.deepEqual(Array.from(S.plan([[a,b]],[a,b],[],['b'])[0],f=>f.id),['b']);});
+test('quarter filtering is included before the final adjacent-term balance',()=>{const a={id:'a'},b={id:'b'},fresh={id:'new'},f=(id,name)=>({id,name});const lists=S.plan([[a,b,fresh,f('other-hairtail','苏澳带鱼')],[f('ningbo-youdai','宁波北洋油带鱼')]], [a,b],['2026-Q4','2026-Q4']);assert.deepEqual(Array.from(lists[0],food=>food.id),['a','new']);});
+test('unidentified fishery leads stay in the input catalog but not in seasonal recommendations',()=>{const held=Object.keys(S.holds).map(id=>({id,name:'地方鱼名',category:'seafood',cardImage:'reference.jpg'})),known={id:'verified-fish',name:'已确认食用鱼',category:'seafood',cardImage:'reference.jpg'},input=[...held,known],before=JSON.stringify(input);assert.deepEqual(Array.from(S.select(input,4),food=>food.id),[known.id]);assert.equal(JSON.stringify(input),before);assert.equal(Object.isFrozen(S.holds),true);assert.equal(held.length,9);assert.ok(held.every(food=>/来源.*待确认/.test(S.holds[food.id])));});
