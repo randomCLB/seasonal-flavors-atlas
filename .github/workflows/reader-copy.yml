@@ -1,0 +1,28 @@
+name: Check reader copy
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        page: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit reader fields and preserved evidence
+        run: node scripts/audit-reader-copy.cjs ${{ matrix.page }} /tmp/reader-audit.json
+      - uses: actions/upload-artifact@v4
+        if: matrix.page == 0
+        with:
+          name: reader-copy-audit
+          path: /tmp/reader-audit.json
+          retention-days: 7

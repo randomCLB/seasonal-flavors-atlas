@@ -1,21 +1,37 @@
-/* Reading hierarchy for the existing ingredient dialog; no new navigation state. */
+/* Reader sections are optional; research links and ingredient-specific safety stay available. */
 (function(root){
  'use strict';
  const esc=value=>root.FoodPurchase.esc(value);
- function html(f,{recognition,seasonLabel,category,originHtml,similar,imageAttrs}){
-  f={...f,...root.EDITORIAL_DETAILS?.[f.id]};
-  const comparison=f.comparison;
-  const hasEdible=(f.dishImage||f.cutImage)&&!f.tarotImage?.kind?.match(/ingredient|fresh/);
+ const text=value=>typeof value==='string'?value.trim():'';
+ function html(food,{recognition,seasonLabel,category,originHtml,similar=[],imageAttrs=''}){
+  const merged={...food,...root.EDITORIAL_DETAILS?.[food.id]};
+  const f=root.ReaderCopy?root.ReaderCopy.view(merged):merged;
+  const fresh=f.eatingMode==='fresh';
+  const shown=new Set();
+  const paragraph=(value,cls='')=>{const t=text(value);if(!t||shown.has(t))return '';shown.add(t);return `<p${cls?` class="${cls}"`:''}>${esc(t)}</p>`;};
+  const labeled=(label,value,cls='')=>{const t=text(value);if(!t||shown.has(t))return '';shown.add(t);return `<p${cls?` class="${cls}"`:''}><strong>${esc(label)}</strong> · ${esc(t)}</p>`;};
+  let number=0;
+  const section=(title,body,id='')=>body?`<details class="reader-section"${id?` id="${id}"`:''}><summary><span>${String(++number).padStart(2,'0')}</span><h2>${esc(title)}</h2><span aria-hidden="true">＋</span></summary><div class="reader-content">${body}</div></details>`:'';
+  const lead=paragraph(f.short||f.taste,'reader-expectation');
+  const state=paragraph(f.state,'reader-state');
+  const senses=[['味道',f.taste],['香气',f.aroma],['质地',f.texture]].filter(([,value])=>text(value)&&!shown.has(text(value))).map(([label,value])=>{shown.add(text(value));return `<div><dt>${label}</dt><dd>${esc(value)}</dd></div>`;}).join('');
+  const comparison=text(f.comparison?.text);
+  const sensory=(senses?`<dl class="sensory">${senses}</dl>`:'')+paragraph(f.intro||f.description)+(comparison?paragraph(comparison):'');
+  const buy=[f.buy,f.buyDetail,f.procurement?.route,f.market].map(value=>paragraph(value)).join('');
+  const storage=text(f.storage)?`<h3>带回家以后</h3>${paragraph(f.storage)}`:'';
+  const steps=(Array.isArray(f.steps)?f.steps:[]).filter(value=>text(value));
   const edible=f.dishImage||f.cutImage;
-  const secondary=hasEdible&&edible!==recognition.src?`<figure class="reader-dish" tabindex="0" aria-label="成菜图片说明，悬停或键盘聚焦查看"><img src="${esc(edible)}" alt="${esc(f.dishImageAlt||f.cutImageAlt||f.name)}" loading="lazy"><figcaption>${esc(f.dishCaption||f.cutCaption||'成菜参考')}${/generated|示意/.test(edible)?' · 生成示意，非实物摄影':''}</figcaption></figure>`:'';
-  return `<div class="reader-overview"><figure class="reader-portrait" tabindex="0" aria-label="食材图片说明，悬停或键盘聚焦查看">${recognition.src?`<img src="${esc(recognition.src)}" alt="${esc(recognition.alt)}" ${imageAttrs} style="object-fit:${recognition.fit}" loading="eager">`:''}<figcaption>${esc(recognition.note)} · <a href="credits.html">图片出处 ↗</a></figcaption></figure><div class="reader-lead"><p class="reader-kicker">${esc(category)} · ${esc(f.region)}</p><h1>${esc(f.name)}</h1><p class="reader-season">${esc(f.seasonLabel||seasonLabel)}</p><p class="reader-expectation">${esc(f.short||f.taste)}</p><p class="reader-state">${esc(f.state)}</p><div class="reader-actions">${root.FoodPurchase.render(f)}<button type="button" class="reader-recipe-button" data-food="${esc(f.id)}" data-recipe="true">看做法 <span aria-hidden="true">↓</span></button></div>${root.FoodRecords.render(f)}</div></div>
-   ${f.safety?`<aside class="reader-safety"><strong>入口前先留意</strong><p>${esc(f.safety)}</p></aside>`:''}
-   <div class="reader-sections">
-    <details class="reader-section"><summary><span>01</span><h2>风味与区别</h2><span aria-hidden="true">＋</span></summary><div class="reader-content"><dl class="sensory"><div><dt>味道</dt><dd>${esc(f.taste)}</dd></div>${f.aroma?`<div><dt>香气</dt><dd>${esc(f.aroma)}</dd></div>`:''}<div><dt>质地</dt><dd>${esc(f.texture)}</dd></div></dl><p>${esc(f.intro||f.description)}</p>${comparison?`<h3>与常见印象有什么不同</h3><p>${esc(comparison.text)}</p><p class="state-note"><a href="${esc(comparison.source)}" target="_blank" rel="noopener noreferrer">查看区别依据 ↗</a></p>`:''}</div></details>
-    <details class="reader-section" id="foodBuying"><summary><span>02</span><h2>挑选、获取与保存</h2><span aria-hidden="true">＋</span></summary><div class="reader-content"><h3>挑什么状态</h3><p>${esc(f.buy)}</p>${f.buyDetail?`<p>${esc(f.buyDetail)}</p>`:''}${f.procurement?.route?`<h3>怎么找</h3><p>${esc(f.procurement.route)}</p>`:''}${f.market?`<p>${esc(f.market)}</p>`:''}<h3>带回家以后</h3><p>${esc(f.storage)}</p></div></details>
-    <details class="reader-section" id="foodRecipe"><summary><span>03</span><h2>家常做法</h2><span aria-hidden="true">＋</span></summary><div class="reader-content"><p class="detail-num">第一次试 · 2 人份</p><h3>${esc(f.recipeTitle)}</h3><p><strong>准备</strong> · ${esc(f.ingredients)}</p><ol class="recipe-steps">${f.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol><p><strong>做到什么程度</strong> · ${esc(f.finish)}</p><p><strong>最容易失手</strong> · ${esc(f.pitfall)}</p>${f.kitchen?`<p>${esc(f.kitchen)}</p>`:''}<p class="pair-note">搭配的用意 · ${esc(f.pair)}</p>${secondary}<a class="bilibili-recipe-link" href="https://search.bilibili.com/all?keyword=${encodeURIComponent(f.name)}" target="_blank" rel="noopener noreferrer">去 B 站搜索“${esc(f.name)}” ↗</a></div></details>
-    <details class="reader-section"><summary><span>04</span><h2>来处、时令与来源</h2><span aria-hidden="true">＋</span></summary><div class="reader-content"><p><strong>${esc(f.seasonLabel||seasonLabel)}</strong></p><p>${esc(f.season)}</p>${f.seasonPhase?`<p class="season-phase-note">${esc(f.seasonPhase.label)} · ${esc(f.seasonPhase.note)}</p>`:''}${f.place?`<p>${esc(f.place)}</p>`:''}${f.context?`<p>${esc(f.context)}</p>`:''}${originHtml}<ol class="reader-sources">${f.sources.map(([title,url])=>`<li><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title)} ↗</a></li>`).join('')}</ol></div></details>
-   </div><section class="reader-next"><p class="detail-num">相近风味</p><h2>和它风味相近的，还有哪些？</h2><div>${similar.map(({food,why})=>`<button data-food="${esc(food.id)}"><strong>${esc(food.name)}</strong><span>${esc(why)} ↗</span></button>`).join('')}</div></section>`;
+  const hasEdible=edible&&edible!==recognition.src&&!f.tarotImage?.kind?.match(/ingredient|fresh/);
+  const secondary=hasEdible?`<figure class="reader-dish" tabindex="0" aria-label="成菜图片说明"><img src="${esc(edible)}" alt="${esc(f.dishImageAlt||f.cutImageAlt||f.name)}" loading="lazy"><figcaption>${esc(f.dishCaption||f.cutCaption||'成菜参考')}${/generated|示意/.test(edible)?' · 生成示意':''}</figcaption></figure>`:'';
+  const recipe=steps.length?(text(f.recipeTitle)?`<h3>${esc(f.recipeTitle)}</h3>`:'')+(!fresh?labeled('准备',f.ingredients):'')+`<ol class="recipe-steps">${steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol>`+(!fresh?labeled('做到什么程度',f.finish)+labeled('最容易失手',f.pitfall)+paragraph(f.kitchen)+labeled('搭配',f.pair,'pair-note'):'')+secondary:'';
+  const sourceEntries=[...(f.sources||[])];
+  if(f.comparison?.source&&!sourceEntries.some(([,url])=>url===f.comparison.source))sourceEntries.push(['品种与食用部位',f.comparison.source]);
+  const origins=paragraph(f.season)+(text(f.seasonPhase?.note)?paragraph(f.seasonPhase.note):'')+paragraph(f.place)+paragraph(f.context)+(originHtml||'')+(sourceEntries.length?`<ol class="reader-sources">${sourceEntries.map(([title,url])=>`<li><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title)} ↗</a></li>`).join('')}</ol>`:'');
+  const recipeLink=recipe?`<button type="button" class="reader-recipe-button" data-food="${esc(f.id)}" data-recipe="true">${fresh?'怎么吃':'看做法'} <span aria-hidden="true">↓</span></button>`:'';
+  return `<div class="reader-overview"><figure class="reader-portrait" tabindex="0" aria-label="食材图片说明">${recognition.src?`<img src="${esc(recognition.src)}" alt="${esc(recognition.alt)}" ${imageAttrs} style="object-fit:${recognition.fit}" loading="eager">`:''}<figcaption>${esc(recognition.note)} · <a href="credits.html">图片出处 ↗</a></figcaption></figure><div class="reader-lead"><p class="reader-kicker">${esc(category)} · ${esc(f.region)}</p><h1>${esc(f.name)}</h1>${text(f.seasonLabel||seasonLabel)?`<p class="reader-season">${esc(f.seasonLabel||seasonLabel)}</p>`:''}${lead}${state}<div class="reader-actions">${root.FoodPurchase.render(f)}${recipeLink}</div>${root.FoodRecords.render(f)}</div></div>
+   ${text(f.safety)?`<aside class="reader-safety"><strong>入口前先留意</strong><p>${esc(f.safety)}</p></aside>`:''}
+   <div class="reader-sections">${section('风味与区别',sensory)}${section('挑选、获取与保存',buy+storage,'foodBuying')}${section(fresh?'怎么吃':'家常做法',recipe,'foodRecipe')}${section('来处、时令与来源',origins)}</div>
+   ${similar.length?`<section class="reader-next"><p class="detail-num">相近风味</p><h2>和它风味相近的，还有哪些？</h2><div>${similar.map(({food:other,why})=>`<button data-food="${esc(other.id)}"><strong>${esc(other.name)}</strong><span>${esc(why)} ↗</span></button>`).join('')}</div></section>`:''}`;
  }
  root.FoodDetail={html};
 })(window);
