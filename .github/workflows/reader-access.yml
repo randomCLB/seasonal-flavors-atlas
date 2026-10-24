@@ -4,40 +4,52 @@ on:
     branches: [fix/reader-access-media-20261024]
   pull_request:
     branches: [main]
+  workflow_run:
+    workflows: [Publish atlas]
+    types: [completed]
+    branches: [main]
 permissions:
   contents: read
 jobs:
   audit:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/prepare-reader-release.cjs && node scripts/audit-reader-access.cjs
+      - name: Prepare and audit public admission and image roles
+        env:
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          node scripts/prepare-reader-release.cjs
+          node --test tests/reader-access.test.cjs
+          node scripts/audit-reader-access.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser runtime
+        run: |
+          pip install playwright==1.58.0 >/tmp/access-browser-install.log 2>&1
+          python -m playwright install --with-deps chromium >>/tmp/access-browser-install.log 2>&1 || { tail -60 /tmp/access-browser-install.log; exit 1; }
+      - name: Decode actual covers and verify desktop and mobile flows
+        env:
+          LIVE_VERIFY: ${{ github.event_name == 'workflow_run' && '1' || '0' }}
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          python -m http.server 8774 --directory dist >/tmp/access-server.log 2>&1 &
+          python scripts/test-reader-access-browser.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: reader-access-audit
-          path: /tmp/reader-access.json
-          retention-days: 14
-  photograph-review:
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-      - run: node scripts/review-missing-covers.cjs && node scripts/review-exact-covers.cjs
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: missing-cover-candidates
-          path: /tmp/missing-cover-candidates/
-          retention-days: 14
+          name: reader-access-evidence-${{ github.event_name }}
+          path: |
+            /tmp/reader-access.json
+            /tmp/reader-access-browser.json
+            /tmp/access-*.png
+          retention-days: 30
