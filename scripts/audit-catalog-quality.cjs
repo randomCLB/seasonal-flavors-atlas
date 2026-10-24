@@ -3,13 +3,12 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.join(__dirname,'..'),dir=path.join(root,'dist');
 function audit(){
  const ctx={window:{},document:{getElementById:()=>({style:{}})}};vm.createContext(ctx);
- const layers=['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','term-gap-additions','editorial-copy','photo-review','reader-copy','reader-copy-curation','season-features','season-selection'];
+ const layers=['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','term-gap-additions','editorial-copy','photo-review','catalog-photos','reader-copy','reader-copy-curation','reader-depth','season-features','season-selection'];
  for(const layer of layers)vm.runInContext(fs.readFileSync(path.join(dir,layer+'.js'),'utf8'),ctx);
  ctx.window.FengwuLottery=require('../dist/lottery-core.js');
  const app=fs.readFileSync(path.join(dir,'app.js'),'utf8');vm.runInContext(app.slice(0,app.indexOf('function renderTermRail')),ctx);
  const rows=ctx.window.FOODS.map(food=>{
-  const raw={...food,...ctx.window.EDITORIAL_DETAILS?.[food.id]},read=ctx.window.ReaderCopy.view(raw);
-  const visual=vm.runInContext(`foodVisual(byId[${JSON.stringify(food.id)}])`,ctx);
+  const raw={...food,...ctx.window.EDITORIAL_DETAILS?.[food.id]},read=ctx.window.ReaderCopy.view(raw),visual=vm.runInContext(`foodVisual(byId[${JSON.stringify(food.id)}])`,ctx);
   const lostFields=['intro','taste','aroma','texture','kitchen','finish','pair','season','context'].filter(key=>raw[key]&&!read[key]);
   return {id:food.id,name:food.name,image:visual.src||'',lostFields,steps:(read.steps||[]).length,readerCharacters:['short','intro','taste','aroma','texture','buy','buyDetail','storage','ingredients','finish','pair','kitchen'].reduce((n,k)=>n+String(read[k]||'').length,0)+(read.steps||[]).join('').length};
  });

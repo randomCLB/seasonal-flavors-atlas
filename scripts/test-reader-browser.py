@@ -1,4 +1,4 @@
-"""Verify all reader records, actual UI flows and exact release bytes; capture real screenshots."""
+"""Verify reader records, browsing and exact release bytes; capture actual browser screenshots."""
 import hashlib, json, os
 from pathlib import Path
 from urllib.parse import urlencode
@@ -8,21 +8,23 @@ LIVE = os.environ.get('LIVE_VERIFY') == '1'
 BASE = 'https://randomclb.github.io/seasonal-flavors-atlas/' if LIVE else 'http://127.0.0.1:8774/'
 SHA = os.environ.get('RELEASE_SHA', '')
 PREFIX = 'live' if LIVE else 'preview'
-CASES = ['zhenning-honey-plum', 'wujiang-xiaoxue-fragrant-greens', 'cangnan-lidong-four-seasons-pomelo', 'fengqing-xinhua-walnut-flowers', 'cizhousun', 'suzhou-bailu-ginkgo', 'wenzhou-pancai']
-report = {'live': LIVE, 'base': BASE, 'releaseSha': SHA, 'resources': [], 'cases': [], 'flows': [], 'errors': []}
+CASES = ['zhenning-honey-plum','wujiang-xiaoxue-fragrant-greens','cangnan-lidong-four-seasons-pomelo','fengqing-xinhua-walnut-flowers','cizhousun','suzhou-bailu-ginkgo','wenzhou-pancai','cigu','pucai','tengchong-fenghuang-xiaohan-yam','luocheng-dafu-xiaohan-black-wood-ear','lianjiang-xiaoshu-june-hemp-bamboo-shoot','suao-xiaohan-white-skin-sailfish','chuan-yu-dahan-pea-tips']
+report = {'live':LIVE,'base':BASE,'releaseSha':SHA,'resources':[],'cases':[],'flows':[],'errors':[]}
 try:
-    for name in ['index.html','app.js','food-detail.js','food-purchase.js','reader-copy.js','reader-copy-curation.js','tarot.html','tarot-spread-ui.js','lottery.html','lottery-ui.js','build-info.json']:
+    names=['index.html','app.js','food-detail.js','food-purchase.js','reader-copy.js','reader-copy-curation.js','reader-depth.js','catalog-photos.js','catalog-quality.css','tarot.html','tarot-spread-ui.js','lottery.html','lottery-ui.js','build-info.json']
+    names += [p['path'] for p in json.loads(Path('docs/CATALOG_PHOTOS_20261024.json').read_text())]
+    for name in names:
         with urlopen(Request(BASE+name+'?'+urlencode({'reader_verify':SHA}),headers={'User-Agent':'SeasonalAtlasReleaseVerification'}),timeout=30) as response:
             body=response.read();assert response.status==200
         assert hashlib.sha256(body).digest()==hashlib.sha256(Path('dist',name).read_bytes()).digest(),name+': served bytes differ'
         report['resources'].append({'path':name,'sha256':hashlib.sha256(body).hexdigest(),'match':True})
     with sync_playwright() as p:
-        browser=p.chromium.launch()
+        browser=p.chromium.launch(executable_path=os.environ.get('CHROME_BIN') or None)
         for width,height in [(1400,1000),(390,844)]:
             context=browser.new_context(viewport={'width':width,'height':height},device_scale_factor=1,reduced_motion='reduce')
             page=context.new_page();page.on('pageerror',lambda error:report['errors'].append(str(error)))
             page.goto(BASE+'?'+urlencode({'reader_verify':SHA}),wait_until='load');page.locator('.reader-build').wait_for()
-            assert '2026.10.23-reader.1' in page.locator('.reader-build').inner_text()
+            assert '2026.10.24-depth.1' in page.locator('.reader-build').inner_text()
             assert page.locator('#categoryFilter [data-category]').evaluate_all('els=>els.map(e=>e.dataset.category)')==['all','vegetable','fruit','protein','other']
             if width==1400:
                 audit=page.evaluate("""()=>{
@@ -42,10 +44,25 @@ try:
                   return {catalog:window.FOODS.length,sources,safety,failures};
                 }""")
                 report['wholeCatalog']=audit;assert audit['catalog']==354;assert not audit['failures'],audit['failures'][:20]
+            before=page.locator('#seasonCards article').count()
+            page.locator('#allSeasonScope').click();assert page.locator('#allSeasonScope').get_attribute('aria-pressed')=='true'
+            assert page.locator('#seasonCards article').count()>=before
+            page.locator('#catalogDirectory').click();assert page.locator('#searchResults [data-food]').count()==354
+            page.locator('#searchClose').click();page.locator('#curatedScope').click();assert page.locator('#seasonCards article').count()==before
+            page.screenshot(path=f'/tmp/reader-{PREFIX}-homepage-{width}.png')
+            catalog=page.evaluate('''()=>({noPhoto:foods.filter(f=>!foodVisual(f).src).length,withPhoto:foods.filter(f=>foodVisual(f).src).length,terms:termWindow.map(t=>{const selected=rankSeasonFoods(chinaParts(new Date(t.time+86400000)).month,t);return {term:termNames[t.index],total:selected.length,unique:new Set(selected.map(window.SeasonSelection.group)).size}})})''')
+            assert catalog['noPhoto']<=33;assert all(t['total']==t['unique'] for t in catalog['terms'])
+            report['catalogQuality']=catalog;report['flows'].append({'width':width,'flow':'all-season-and-full-directory','passed':True})
             for food_id in CASES:
                 page.goto(BASE+'index.html?'+urlencode({'food':food_id,'reader_verify':SHA}),wait_until='load')
                 dialog=page.locator('#detailDialog');dialog.wait_for(state='visible')
-                for summary in dialog.locator('.reader-section > summary').all():summary.click()
+                for summary in dialog.locator('.reader-section:not([open]) > summary').all():summary.click()
+                if food_id in ['cigu','pucai']:assert len(dialog.inner_text())>250
+                if food_id=='tengchong-fenghuang-xiaohan-yam':assert '筷子能穿过' in dialog.inner_text()
+                if food_id=='suao-xiaohan-white-skin-sailfish':assert dialog.locator('.reader-variants [data-food]').count()>0
+                if food_id=='chuan-yu-dahan-pea-tips':assert dialog.locator('.ingredient-text-cover').count()==1
+                portrait=dialog.locator('.reader-portrait img')
+                if portrait.count():portrait.evaluate('(img)=>img.decode()')
                 body=dialog.inner_text();assert '2 人份' not in body;assert '本站试吃' not in body
                 assert not dialog.locator('h2:empty,h3:empty,p:empty:not([role=status])').count()
                 if food_id=='zhenning-honey-plum':assert '果肉紧实酥脆，果香清楚' in body
@@ -68,8 +85,7 @@ try:
             page.goto(BASE+'lottery.html',wait_until='load');page.locator('#begin').click()
             for _ in range(5):page.locator('#next').click()
             page.locator('#results').wait_for(state='visible');assert page.locator('.food-entry[data-slot]').count()>0
-            report['flows'].append({'width':width,'flow':'five-question-flavor-draw','passed':True});print('PASS flavor draw',width,flush=True)
-            context.close()
+            report['flows'].append({'width':width,'flow':'five-question-flavor-draw','passed':True});print('PASS flavor draw',width,flush=True);context.close()
         browser.close()
     assert not report['errors'],report['errors'];report['passed']=True
 except Exception as exc:
