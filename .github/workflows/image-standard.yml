@@ -17,10 +17,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/review-final-corrections.cjs
+      - run: node scripts/review-botanical-replacements.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: visual-corrections
-          path: /tmp/visual-corrections/
+          name: botanical-replacements
+          path: /tmp/botanical-replacements/
           retention-days: 7
