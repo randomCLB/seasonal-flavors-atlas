@@ -17,10 +17,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/review-feature-plants.cjs
+      - run: node scripts/review-final-corrections.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: feature-plant-candidates
-          path: /tmp/feature-plants/
+          name: visual-corrections
+          path: /tmp/visual-corrections/
           retention-days: 7
