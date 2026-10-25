@@ -4,23 +4,50 @@ on:
     branches: [fix/plant-to-plate-20261024]
   pull_request:
     branches: [main]
+  workflow_run:
+    workflows: [Publish atlas]
+    types: [completed]
 permissions:
   contents: read
 jobs:
-  review:
+  verify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/review-botanical-replacements.cjs
+      - name: Prepare and verify image semantics and source integrity
+        env:
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+          VISUAL_AUDIT_OUTPUT: /tmp/visual-roles.json
+        run: |
+          node scripts/prepare-reader-release.cjs
+          node --test tests/visual-standard.test.cjs
+          node scripts/audit-visual-standard.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser runtime
+        run: pip install playwright==1.58.0 >/tmp/visual-install.log 2>&1 && python -m playwright install --with-deps chromium >>/tmp/visual-install.log 2>&1
+      - name: Render plant and plate roles on desktop and mobile
+        env:
+          LIVE_VERIFY: ${{ github.event_name == 'workflow_run' && '1' || '0' }}
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          python -m http.server 8774 --directory dist >/tmp/visual-server.log 2>&1 &
+          python scripts/test-visual-standard-browser.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: botanical-replacements
-          path: /tmp/botanical-replacements/
-          retention-days: 7
+          name: plant-to-plate-${{ github.event_name }}
+          path: |
+            /tmp/visual-roles.json
+            /tmp/visual-browser.json
+            /tmp/visual-*.png
+          retention-days: 30
