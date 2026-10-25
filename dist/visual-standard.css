@@ -10,4 +10,4 @@
 .visual-build{display:block;font-size:10px;color:#657768;margin:6px 0}
 #visual-media-credits article{padding:14px 0;border-bottom:1px solid var(--visual-line);overflow-wrap:anywhere}
 #visual-media-credits p{line-height:1.8}
-@media(max-width:650px){.reader-portrait .visual-frame{aspect-ratio:4/3}.reader-overview{gap:16px}.reader-portrait figcaption{font-size:10px}.visual-role{left:10px;bottom:10px}}
+@media(max-width:650px){.reader-portrait .visual-frame{aspect-ratio:4/3}.reader-overview{gap:16px}.reader-portrait figcaption{font-size:10px}.visual-role{left:10px;bottom:10px}#seasonCards img[src$="xiaozhou-harvest.webp"]{object-position:70% 55%!important}}
