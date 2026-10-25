@@ -1,10 +1,10 @@
 {
   "version": "2026.10.24-visual.1",
-  "publicIngredients": 291,
-  "homeCovered": 272,
+  "publicIngredients": 294,
+  "homeCovered": 275,
   "detailCovered": 95,
   "paired": 92,
-  "explicitHomeUpdates": 68,
+  "explicitHomeUpdates": 71,
   "missingHome": [
     {
       "id": "ruanzao-mihoutao",
@@ -867,6 +867,18 @@
     {
       "id": "wuxi-mashan-mangzhong-yangmei",
       "name": "无锡马山杨梅"
+    },
+    {
+      "id": "mengzi-lvzi-softseed-pomegranate",
+      "name": "蒙自绿籽软籽石榴"
+    },
+    {
+      "id": "baoshan-zaoqiu-sweet-persimmon",
+      "name": "保山早秋甜柿"
+    },
+    {
+      "id": "shanzhou-black-emperor-grape",
+      "name": "陕州黑皇葡萄"
     }
   ],
   "admittedObservationMissingHome": 24,

@@ -20,7 +20,7 @@ test('map and three-dimensional flavor globe expose pointer, trackpad, pinch and
  assert.match(app,/mapImage\.addEventListener\('wheel',[\s\S]*event\.ctrlKey/);
  assert.match(app,/startMapGesture\(\)[\s\S]*type:'pinch'/);
  assert.match(html,/id="flavorZoomOut"[\s\S]*id="flavorZoomIn"[\s\S]*id="flavorZoomReset"/);
- assert.match(app,/const starTerms=termWindow\.slice\(\)\.sort\(\(a,b\)=>a\.index-b\.index\)/);
+ assert.match(app,/const starTerms=\[\.\.\.new Map\(termWindow\.map\(event=>\[event\.index,event\]\)\)\.values\(\)\]/);
  assert.match(app,/rotateX:-\.18,rotateY:\.42/);
  assert.match(app,/const project3d=point=>\{const rotated=rotate3d\(point\),perspective=camera\/\(camera-rotated\.z\)/);
  assert.match(app,/uy=1-2\*t,ring=Math\.sqrt\(1-uy\*uy\)/);

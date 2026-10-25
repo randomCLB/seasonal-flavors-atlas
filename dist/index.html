@@ -12,6 +12,10 @@
 <link rel="stylesheet" href="food-purchase.css?v=local-city-20261018">
 <link rel="stylesheet" href="food-detail.css?v=reader-overview-clean-20261021">
 <link rel="stylesheet" href="social-experience.css?v=four-season-tree-20261023">
+<link rel="stylesheet" href="catalog-quality.css?v=20261024-1">
+<link rel="stylesheet" href="ingredient-identity.css?v=20261024-1">
+<link rel="stylesheet" href="reader-access.css?v=20261024-access1">
+<link rel="stylesheet" href="visual-standard.css?v=20261024-visual1">
 </head>
 <body>
   <div class="site-shell">
@@ -30,6 +34,7 @@
         <section class="hero term-hero" id="hero"></section>
         <section class="term-strip" aria-label="按节气浏览"><div class="strip-label"><span>沿节气游逛</span><strong id="termBookmark"></strong></div><button id="termPrev" class="rail-arrow" aria-label="上一节气">‹</button><button id="termNext" class="rail-arrow" aria-label="下一节气">›</button><details class="term-almanac"><summary>翻开全年节气 <span aria-hidden="true">＋</span></summary><div class="terms" id="terms"></div></details></section>
         <section class="section-intro"><div><p class="kicker" id="seasonKicker">本月风物</p><h2 id="seasonHeading"></h2></div><p id="seasonIntro"></p></section>
+        <nav class="catalog-scope" aria-label="选择浏览范围"><button type="button" id="curatedScope" aria-pressed="true">当季精选</button><button type="button" id="allSeasonScope" aria-pressed="false">全部当季</button><button type="button" id="catalogDirectory">全年风物目录 ↗</button></nav>
         <nav id="categoryFilter" class="category-filter" aria-label="按食材类别筛选"></nav>
         <section id="seasonCards" class="season-cards" aria-label="本节气当季食材"></section>
         <section class="season-explore" aria-labelledby="exploreHeading">
@@ -54,7 +59,7 @@
         <div class="flavor-mobile-list" id="flavorList" aria-label="风味星图的文字入口"></div>
       </section>
     </main>
-    <footer><div class="footer-main"><span class="footer-brand">时令风物</span><span>小众食材的季节、来处与吃法</span></div><p>从当季的一口出发，沿着山川、湖荡和风味去找下一味。各地上市时间会随天气变化，买前可以向当地摊主确认。</p><p class="credits">地图资料：<a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener">Natural Earth</a>（公共领域） · 食材照片及授权：<a href="credits.html">查看图片来源</a></p><small class="build-version">版次 2026.10.23 · 四类风物 / 3D立体星图</small></footer>
+    <footer><div class="footer-main"><span class="footer-brand">时令风物</span><span>小众食材的季节、来处与吃法</span></div><p>从当季的一口出发，沿着山川、湖荡和风味去找下一味。各地上市时间会随天气变化，买前可以向当地摊主确认。</p><p class="credits">地图资料：<a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener">Natural Earth</a>（公共领域） · 食材照片及授权：<a href="credits.html">查看图片来源</a></p><small class="build-version">版次 2026.10.23 · 四类风物 / 3D立体星图</small><small class="build-version reader-build">文案版 2026.10.24-depth.1</small><small class="identity-build">目录版 2026.10.24-identity.1</small><small class="media-build">食材与图片版 2026.10.24-access.1</small><small class="visual-build">影像版 2026.10.24-visual.1</small></footer>
   </div>
   <dialog id="detailDialog" class="detail-dialog">
     <div class="detail-actions">
@@ -66,6 +71,6 @@
   </dialog>
   <dialog id="searchDialog" class="search-dialog"><div class="search-head"><label for="searchInput">寻找食材</label><button id="searchClose" aria-label="关闭搜索">×</button></div><input id="searchInput" type="search" autocomplete="off" placeholder="搜食材、口感、香气、产地或做法"><div id="searchResults"></div></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="solar-terms.js"></script><script src="map-projection.js"></script><script src="data.js"></script><script src="editorial.js?v=food-photo-clarity-20261004"></script><script src="editorial-notes.js?v=yunnan-20261015"></script><script src="november-additions.js?v=season-repeat-20261019-shrimp"></script><script src="core-refinements.js?v=restore-editorial-20261021"></script><script src="winter-additions.js?v=sanyang-summary-20261021"></script><script src="seasonal-additions.js?v=suzhou-jinting-wumei-20261021"></script><script src="term-gap-additions.js?v=20261021"></script><script src="editorial-copy.js?v=curation-20261022"></script><script src="photo-review.js?v=restore-and-select-20261021"></script><script src="food-share.js?v=1"></script><script src="lottery-core.js?v=season-start-cycle-20261019"></script><script src="food-purchase.js?v=local-city-20261018"></script><script src="food-records.js?v=curation-20261022"></script><script src="food-detail.js?v=curation-20261022"></script><script src="season-features.js?v=curation-20261022"></script><script src="season-selection.js?v=curation-20261022"></script><script src="app.js?v=spherical-depth-3d-20261023"></script>
+<script src="solar-terms.js"></script><script src="map-projection.js"></script><script src="data.js"></script><script src="editorial.js?v=food-photo-clarity-20261004"></script><script src="editorial-notes.js?v=yunnan-20261015"></script><script src="november-additions.js?v=season-repeat-20261019-shrimp"></script><script src="core-refinements.js?v=restore-editorial-20261021"></script><script src="winter-additions.js?v=sanyang-summary-20261021"></script><script src="seasonal-additions.js?v=recipe-cut-image-20261025"></script><script src="term-gap-additions.js?v=20261021"></script><script src="editorial-copy.js?v=curation-20261022"></script><script src="photo-review.js?v=restore-and-select-20261021"></script><script src="food-share.js?v=1"></script><script src="lottery-core.js?v=season-start-cycle-20261019"></script><script src="catalog-photos.js?v=20261024-1"></script><script src="ingredient-identity.js?v=20261024-1"></script><script src="reader-copy.js?v=reader-20261023-1"></script><script src="reader-copy-curation.js?v=reader-20261023-1"></script><script src="reader-depth.js?v=20261024-1"></script><script src="reader-media-additions.js?v=20261024-access1"></script><script src="reader-access.js?v=20261024-access1"></script><script src="visual-standard.js?v=20261024-visual1"></script><script src="food-media.js?v=20261024-access1&visual=20261024-1"></script><script src="food-purchase.js?v=local-city-20261018&reader=20261024-1&access=20261024-1"></script><script src="food-records.js?v=curation-20261022&identity=20261024-1&access=20261024-1"></script><script src="food-detail.js?v=recipe-photo-20261025&reader=20261024-1&identity=20261024-1&access=20261024-1&visual=20261024-1"></script><script src="season-features.js?v=curation-20261022"></script><script src="season-selection.js?v=catalog-depth-20261024-1&identity=20261024-1&access=20261024-1"></script><script src="app.js?v=three-year-term-window-20261025&reader=20261024-1&identity=20261024-1&access=20261024-1&visual=20261024-1"></script>
 </body>
 </html>

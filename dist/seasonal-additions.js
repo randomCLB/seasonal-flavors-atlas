@@ -164,11 +164,11 @@ window.FOODS.push({
  recipeTitle:'春见鲜食',ingredients:'成熟蒲江春见 1 个。',steps:['购买时核对蒲江产地、春见品种和采摘批次；按当地当季标准确认成熟度，勿仅凭外观或“耙耙柑”商品名判断。','流动清水洗净外皮并擦干，剥皮分瓣。','直接鲜食；切开的果肉尽快吃完，避免久置。'],finish:'果肉无霉斑、渗液或发酵异味；甜酸因批次不同而变化。',pitfall:'蒲江采摘标准要求成熟度达标；其他产区的同类柑橘不能仅凭名称当作蒲江春见。',pair:'鲜食即可，先尝原味。',
  buy:'搜索“蒲江春见 耙耙柑 鲜果 产地 批次”；核对产地、品种与当季采收成熟度，2026年具体日期不能代替后续年度确认。',storage:'完整果实置于阴凉通风处短期保存；切开后冷藏并尽快食用，具体以到货状态和供应方说明为准。',safety:'食用前清洗外皮；霉变、渗液或有发酵异味的果实不要食用。',search:'四川成都 蒲江 春见 耙耙柑 鲜果 采摘批次',
  sources:[['四川农村日报：2024年1月蒲江春见进入成熟上市季','https://cbgc.scol.com.cn/news/4728051'],['四川在线：蒲江春见建议始采期为2026年1月下旬，成熟度达标后采收，续采至4月','https://sichuan.scol.com.cn/ggxw/202601/83187834.html'],['四川农村日报：蒲江县农业农村局、市场监管局发布春见采摘与品质标准','https://ny.scol.com.cn/news/202512/83171238.html']],
- image:'assets/pujiang-chunjian-generic.svg',imageAlt:'通用柑橘果实与叶片编辑插画，不是蒲江春见品种或产地实拍',imageCaption:'原创编辑示意 · 通用柑橘形态参考，非实物摄影，不用于品种或产地鉴别。',cardImage:'assets/pujiang-chunjian-generic.svg',cardImageAlt:'通用柑橘形态示意，非蒲江实拍',cardNote:'编辑示意 · 非品种鉴别',images:[],articleImages:[],
+ image:'assets/pujiang-chunjian-photo-cc-by-4.0.jpg',imageAlt:'春见耙耙柑实物果形参考；照片作者标注为中国春见，拍摄地哈尔滨，非蒲江产地实拍',imageCaption:'Hehua / Wikimedia Commons · CC BY 4.0 · 中国春见实物参考，不用于品种或产地鉴别',cardImage:'assets/pujiang-chunjian-photo-cc-by-4.0.jpg',cardImageAlt:'中国春见耙耙柑实物果形参考，非蒲江产地实拍',cardNote:'Hehua / Wikimedia Commons · CC BY 4.0 · 非蒲江产地实拍',images:[],articleImages:[],
  place:'地图点表示蒲江县域概略位置，不指向具体果园、商家或采摘点。',context:'春见又称耙耙柑；本条只记录蒲江产地。产季从大寒前后开始，后续成熟批次可续采至春季，不能据此认定每年同日开采或当前有货。',kitchen:'鲜食建议；糖度标准来自地方品质管理信息，不代表本站检测或试吃。',
  placeSeasons:[{name:'四川成都 · 蒲江县',lat:30.20,lon:103.50,months:[1,2,3,4],precision:'local-start-and-season-window',source:'https://sichuan.scol.com.cn/ggxw/202601/83187834.html',seasonNote:'报道记2026年建议始采期为1月下旬，并称采摘可持续至4月；后续年份按当年标准核对。'}],seasonEvidence:'2024年1月报道记录蒲江春见进入成熟上市季；2026年地方通告与同期报道将始采期定为1月下旬、以可溶性固形物≥13%或采摘始期为判据，采收延续至4月。',
  procurement:{checks:['核对蒲江县产地、春见品种与采摘批次；“耙耙柑”泛称不足以证明产地。','核对当季成熟度标准；2026年资料不能证明后续年度同日上市。','本站未核实具体商家、价格或当前库存。'],route:'可按“蒲江春见耙耙柑”查询产地渠道或正规果品市场，并以当地当季通告核实采摘批次。'},
- comparison:{text:'本条特指蒲江县的春见（耙耙柑）；与其他产区同名或近似柑橘分开核对。地方资料以成熟度和建议始采期约束采收，不把早上市等同于成熟。',source:'https://ny.scol.com.cn/news/202512/83171238.html'},dishImage:null,dishImageAlt:'',dishCaption:'',tarotImage:{src:'assets/pujiang-chunjian-generic.svg',alt:'通用柑橘形态示意，不用于蒲江春见鉴别',kind:'ingredient',note:'通用柑橘参考，不是蒲江实拍或品种鉴定。'}
+ comparison:{text:'本条特指蒲江县的春见（耙耙柑）；与其他产区同名或近似柑橘分开核对。地方资料以成熟度和建议始采期约束采收，不把早上市等同于成熟。',source:'https://ny.scol.com.cn/news/202512/83171238.html'},cutImage:'assets/mandarins-halved-ivar-cc-by-sa-4.0.jpg',cutImageAlt:'橘子整果与横切果肉实拍，通用柑橘切面参考，非春见或蒲江实拍',cutCaption:'Ivar Leidus / Wikimedia Commons · CC BY-SA 4.0 · 通用柑橘切面参考，非春见品种实拍',dishImage:null,dishImageAlt:'',dishCaption:'',tarotImage:{src:'assets/pujiang-chunjian-photo-cc-by-4.0.jpg',alt:'中国春见耙耙柑实物果形参考，非蒲江产地实拍',kind:'ingredient',note:'Hehua / Wikimedia Commons · CC BY 4.0 · 非蒲江产地实拍'}
 });
 
 (function(){window.FOODS.push({
@@ -1247,13 +1247,13 @@ window.FOODS.push({
  recipeTitle:'清炒鲜冬菜尖',ingredients:'鲜冬菜尖 200 克，蒜 1 瓣，食用油 1 茶匙，盐少许。',steps:['购买时确认是大足冬菜的鲜菜原料而非坛装、袋装腌制冬菜；询问采收日期和是否已风干或盐揉。','择去老叶和硬梗，流水洗净后切段；蒜切片。','锅中少油炒香蒜片，加入鲜菜尖炒至熟软；按口味少量加盐，避免与腌制成品的盐度混淆。'],finish:'鲜菜完全熟软、没有生硬梗；成品冬菜不可照此方式当作未腌鲜菜处理。',pitfall:'大足冬菜成品历经风脱水、盐揉和发酵；鲜菜尖只是原料，普通芥菜不能仅凭外观证明产地或用途。',pair:'鲜菜尖先用清淡快炒尝本味；传统发酵制法另按合规食品工艺处理。',
  buy:'搜索“大足 冬菜尖 鲜菜 原料 立春”，联系产区前先确认是否有鲜原料零售，以及鲜菜、风干菜和腌制冬菜的区别；平台搜索不代表现货。',storage:'鲜菜尖轻放冷藏，尽快处理；若商家已盐揉、风干或腌制，应按其食品标签储存，不能套用鲜菜保存方法。',safety:'清洗并充分加热鲜菜；盐揉腌制属于不同加工步骤，勿自行长期常温密封发酵。',search:'重庆 大足 冬菜尖 鲜菜 原料 立春',
  sources:[['重庆市档案馆：大足冬菜——古法淬炼 一味生香（立春采收与原料工艺）','https://jda.cq.gov.cn/web/article/web/content_1461657080928624640.html']],
- image:'assets/dazu-lichun-winter-vegetable-tip.svg',imageAlt:'大叶芥菜嫩尖通用编辑示意，非大足实拍或品种鉴定',imageCaption:'本站通用芥菜嫩尖编辑插画 · 非实物摄影，不用于产地或品种鉴别。',cardImage:'assets/dazu-lichun-winter-vegetable-tip.svg',cardImageAlt:'通用芥菜嫩尖插画，非大足冬菜原料实拍',cardNote:'编辑示意 · 非实物摄影、非产地鉴别',images:[],articleImages:[],
+ image:'assets/dazu-winter-mustard-tip-generated.webp',imageAlt:'大叶芥菜嫩尖的生成式形态参考，非大足实拍或品种鉴定',imageCaption:'生成示意 · 非实物摄影；参考大叶芥菜嫩尖形态，不用于产地或品种鉴别。',cardImage:'assets/dazu-winter-mustard-tip-generated.webp',cardImageAlt:'大叶芥菜嫩尖生成示意，非大足产地实拍',cardNote:'生成示意 · 非实物摄影、非产地鉴别',images:[],articleImages:[],
  place:'地图点表示大足区的大致区域，不指向具体菜田、加工厂或零售商。',context:'重庆市档案馆记载大足冬菜从白露播种，春化越冬，至来年立春采收鲜嫩菜尖；成品加工另有长期发酵工序。',kitchen:'鲜菜快炒是本站的普通家庭建议，不是来源所述的大足冬菜传统腌制工艺。',
  placeSeasons:[{name:'重庆大足',lat:29.71,lon:105.72,months:[2],precision:'season',source:'https://jda.cq.gov.cn/web/article/web/content_1461657080928624640.html',seasonNote:'重庆市档案馆2025年记录其传统采收在来年立春，挑选三至四寸鲜嫩菜尖。'}],
  seasonEvidence:'重庆市档案馆2025年工艺记录明确大足冬菜原料于越冬春化后在立春采收，且每年按菜尖长度挑选鲜嫩菜株；该来源同时指出后续还需风脱水、盐揉和发酵。',
  procurement:{checks:['确认买的是鲜菜尖原料，不是已经风干、盐揉、腌制或发酵的大足冬菜。','询问产地、采收日期、是否已加工；鲜原料零售供应未由来源确认。','嫩菜尖按来源以约三至四寸作为采割参考；外形不能单独证明大足产地。'],route:'可向大足冬菜产区或地方农产品渠道询问鲜菜尖原料；未核实具体商家或现货。'},
  comparison:{text:'鲜冬菜尖是大叶芥菜嫩原料；大足冬菜成品经风脱水、盐揉和发酵，风味、含盐量与储存方式都不同。',source:'https://jda.cq.gov.cn/web/article/web/content_1461657080928624640.html'},dishImage:null,dishImageAlt:'',dishCaption:'',
- tarotImage:{src:'assets/dazu-lichun-winter-vegetable-tip.svg',alt:'通用芥菜嫩尖编辑插画，非产地鉴别图',kind:'ingredient',note:'本站通用芥菜嫩尖插画，不用于产地或品种鉴别。'}
+ tarotImage:{src:'assets/dazu-winter-mustard-tip-generated.webp',alt:'大叶芥菜嫩尖生成示意，非产地鉴别图',kind:'ingredient',note:'生成示意，不用于产地或品种鉴别。'}
 });
 
 window.FOODS.push({
@@ -1266,12 +1266,12 @@ window.FOODS.push({
  recipeTitle:'蒜蓉白梗蕹菜',ingredients:'云霄柳叶白梗蕹菜 250 克，蒜 2 瓣，食用油 1 汤匙，盐少许。',steps:['买前核对云霄产地、柳叶白梗品种名和采收批次；仅写“空心菜”不能证明地方品种。','择去老梗和黄叶，流水洗净并沥干；蒜切末。','热锅少油炒香蒜末，放入蕹菜大火翻炒至叶片塌软、梗熟透，少量盐调味后即食。'],finish:'叶片熟软而白梗仍带脆感；避免久炒出水。',pitfall:'白梗或柳叶形态只是观察线索，不是产地鉴定；普通空心菜不能自动标成云霄地方品种。',pair:'蒜、油和少量盐足够，保留清淡鲜菜的口感。',
  buy:'搜索“云霄 柳叶白梗蕹菜 鲜菜”，询问产地、品种和采收时间；平台搜索不代表当前有货。',storage:'鲜菜轻放冷藏并尽快食用，烹调前再清洗；不以长期储存为目标。',safety:'去除黄腐叶，流水洗净并充分炒熟；鲜菜和腌制品分开处理。',search:'福建漳州 云霄 柳叶白梗蕹菜 鲜菜',
  sources:[['福建省农业农村厅：品食春菜，不负春来（云霄柳叶白梗蕹菜立春后上市及品种特点）','https://nynct.fujian.gov.cn/ztzl/fsfsfnyp/202404/t20240429_6441659.htm']],
- image:'assets/yunxiao-liuye-baigeng-wongcai.svg',imageAlt:'白梗空心菜通用编辑插画，非云霄实拍或品种鉴定',imageCaption:'本站通用空心菜编辑插画 · 非实物摄影，不用于产地或品种鉴别。',cardImage:'assets/yunxiao-liuye-baigeng-wongcai.svg',cardImageAlt:'白梗空心菜通用插画，非云霄实拍',cardNote:'编辑示意 · 非实物摄影、非产地鉴别',images:[],articleImages:[],
+ image:'assets/yunxiao-white-stem-water-spinach-generated.webp',imageAlt:'柳叶形白梗蕹菜生成式形态参考，非云霄实拍或品种鉴定',imageCaption:'生成示意 · 非实物摄影；参考柳叶白梗蕹菜形态，不用于产地或品种鉴别。',cardImage:'assets/yunxiao-white-stem-water-spinach-generated.webp',cardImageAlt:'白梗蕹菜生成示意，非云霄产地实拍',cardNote:'生成示意 · 非实物摄影、非产地鉴别',images:[],articleImages:[],
  place:'地图点表示云霄县的大致位置，不指向具体田块或售卖商家。',context:'福建省农业农村厅报道记载云霄柳叶白梗蕹菜立春后上市，并说明当地品种由农家品种提纯复壮；报道没有给出上市结束日期。',kitchen:'蒜蓉快炒为本站普通家庭建议，不是来源指定的传统吃法。',
  placeSeasons:[{name:'福建漳州 · 云霄县陈岱镇',lat:23.94,lon:117.42,months:[2],precision:'term-entry',source:'https://nynct.fujian.gov.cn/ztzl/fsfsfnyp/202404/t20240429_6441659.htm',seasonNote:'省农业农村厅报道记为立春过后上市；未提供完整产期。'}],seasonEvidence:'福建省农业农村厅记录立春过后云霄柳叶白梗蕹菜上市。此处保留为立春后的早春上市线索，不把未注明的季末写成确定窗口。',
  procurement:{checks:['核对云霄产地及“柳叶白梗”地方品种名；白梗或柳叶形态不能独立证明产地。','询问采收日期、鲜菜状态及是否冷藏；来源没有证明当前货源。'],route:'可按云霄县地方品种名查询本地渠道；未核实具体商家。'},
  comparison:{text:'云霄柳叶白梗蕹菜是当地农家品种提纯复壮的地方商品名；普通空心菜可同类食用，但不能因此替代产地或品种证明。',source:'https://nynct.fujian.gov.cn/ztzl/fsfsfnyp/202404/t20240429_6441659.htm'},dishImage:null,dishImageAlt:'',dishCaption:'',
- tarotImage:{src:'assets/yunxiao-liuye-baigeng-wongcai.svg',alt:'白梗空心菜通用编辑插画，非产地鉴别图',kind:'ingredient',note:'本站通用空心菜插画，不用于产地或品种鉴别。'}
+ tarotImage:{src:'assets/yunxiao-white-stem-water-spinach-generated.webp',alt:'白梗蕹菜生成示意，非产地鉴别图',kind:'ingredient',note:'生成示意，不用于产地或品种鉴别。'}
 });
 
 window.FOODS.push({
@@ -2064,7 +2064,7 @@ window.FOODS.push({
 
 // Historic late-season harvest observation for Guangning Ma bamboo shoots.
 window.FOODS.push({
- id:'guangning-lidong-ma-bamboo-shoot',name:'广宁洲仔麻竹笋·立冬收尾批',alias:['广宁麻竹笋','洲仔麻竹笋','富源村麻竹笋'],region:'广东肇庆 · 广宁县洲仔镇富源村',lat:23.61,lon:112.42,category:'vegetable',
+ id:'guangning-lidong-ma-bamboo-shoot',name:'广宁洲仔麻竹笋',alias:['广宁麻竹笋','洲仔麻竹笋','富源村麻竹笋'],region:'广东肇庆 · 广宁县洲仔镇富源村',lat:23.61,lon:112.42,category:'vegetable',
  months:[11],peakMonths:[11],peakTerms:[20],entryTerms:[20],seasonStartTerm:20,seasonBasis:'harvest',seasonPrecision:'historical-term-record',seasonLabel:'立冬前后曾见收尾采挖',
  season:'广宁县麻竹笋的常年收笋季报道为5月至11月；2024年地方报道在立冬时记录洲仔镇富源村迎来当年最后一波采挖。此条是有年份的历史收尾批次，不代表每年固定在立冬收尾，也不确认2026年仍有鲜笋或市场库存。',
  seasonPhase:{label:'历史收尾采挖记录',note:'2024年报道记录立冬时当地进入当年最后一波采挖；其他年份按当年产地批次核实。'},

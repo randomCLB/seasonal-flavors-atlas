@@ -1,5 +1,5 @@
 {
-  "catalogCount": 354,
+  "catalogCount": 357,
   "sampling": "Each month 1st/15th/28th at 12:00 China time; no dietary exclusions. Counts are site-data coverage, not market availability.",
   "minimum": 10,
   "rows": [
@@ -897,7 +897,7 @@
     },
     {
       "date": "2027-07-15",
-      "count": 20,
+      "count": 22,
       "ids": [
         "foshougua-miao",
         "dier",
@@ -918,7 +918,9 @@
         "changhua-xiaoshu-black-over",
         "changhua-xiaoshu-chishi",
         "taixing-sucui1-early-pear",
-        "pinggu-zhongpan9-xiaoshu-peach"
+        "pinggu-zhongpan9-xiaoshu-peach",
+        "lianjiang-xiaoshu-june-hemp-bamboo-shoot",
+        "hejiang-xiaoshu-late-lychee"
       ],
       "names": [
         "佛手瓜苗",
@@ -940,7 +942,9 @@
         "彰化小暑黄鳍鲷（黑过）",
         "彰化小暑乌宗（赤食）",
         "泰兴苏翠1号早熟梨",
-        "平谷中蟠9号桃"
+        "平谷中蟠9号桃",
+        "连江六月麻笋",
+        "合江小暑晚荔枝"
       ]
     },
     {
@@ -1041,7 +1045,7 @@
     },
     {
       "date": "2027-08-15",
-      "count": 20,
+      "count": 23,
       "ids": [
         "jitoumi",
         "dier",
@@ -1062,7 +1066,10 @@
         "taiwan-lichiu-east-sailfish",
         "fengxian-nanqiao-early-water-red-caltrop",
         "dongguan-tangxia-shixia-longan",
-        "huocheng-xiangfei-crabapple"
+        "huocheng-xiangfei-crabapple",
+        "mengzi-lvzi-softseed-pomegranate",
+        "baoshan-zaoqiu-sweet-persimmon",
+        "shanzhou-black-emperor-grape"
       ],
       "names": [
         "鸡头米",
@@ -1084,7 +1091,10 @@
         "台湾立秋东部立翅旗鱼",
         "奉贤南桥早熟水红菱",
         "东莞塘厦石硖龙眼",
-        "霍城香妃海棠果"
+        "霍城香妃海棠果",
+        "蒙自绿籽软籽石榴",
+        "保山早秋甜柿",
+        "陕州黑皇葡萄"
       ]
     },
     {
