@@ -44,7 +44,7 @@ try:
                   }
                   return {catalog:window.FOODS.length,sources,safety,failures};
                 }""")
-                report['wholeCatalog']=audit;assert audit['catalog']==354;assert not audit['failures'],audit['failures'][:20]
+                report['wholeCatalog']=audit;assert audit['catalog']==357;assert not audit['failures'],audit['failures'][:20]
             before=page.locator('#seasonCards article').count()
             page.locator('#allSeasonScope').click();assert page.locator('#allSeasonScope').get_attribute('aria-pressed')=='true'
             assert page.locator('#seasonCards article').count()>=before
