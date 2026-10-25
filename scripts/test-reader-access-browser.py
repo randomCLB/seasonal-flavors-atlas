@@ -35,7 +35,7 @@ try:
                 const drawIds=window.FOODS.filter(f=>A.visible(f)&&M.hasIngredient(f)).map(f=>f.id);
                 return {publicIngredients:canonicalCatalog.length,covered:covers.length,missing:canonicalCatalog.length-covers.length,withdrawn:removed.map(f=>({id:f.id,name:f.name})),terms,drawCandidates:drawIds.length,images:[...new Set(covers.map(f=>M.ingredient(f).src))]};
             }''')
-            assert state['covered']==275 and state['missing']==16
+            expected=json.loads(Path('docs/VISUAL_COVERAGE_20261024.json').read_text());assert state['covered']==expected['homeCovered'] and state['missing']==len(expected['missingHome'])
             if width==1400:
                 decoded=page.evaluate('''async paths=>{
                   const queue=[...paths],results=[];
@@ -49,8 +49,8 @@ try:
                 page.goto(BASE+'?'+urlencode({'food':food_id}),wait_until='load');dialog=page.locator('#detailDialog');dialog.wait_for(state='visible')
                 for img in dialog.locator('img').all():img.evaluate('(e)=>{e.loading="eager";return e.decode()}')
                 if food_id=='chuan-yu-dahan-pea-tips':
-                    assert 'pea_tips.webp' in dialog.locator('.reader-portrait img').get_attribute('src')
-                    assert 'pea_dish.webp' in dialog.locator('.reader-dish img').get_attribute('src')
+                    assert 'pea_dish.webp' in dialog.locator('.reader-portrait img').get_attribute('src')
+                    assert 'pea_tips.webp' in dialog.locator('.reader-ingredient img').get_attribute('src')
                     dialog.locator('#foodRecipe').scroll_into_view_if_needed()
                 else:
                     assert 'bilibili.com/video/BV' in dialog.locator('.verified-video').get_attribute('href')

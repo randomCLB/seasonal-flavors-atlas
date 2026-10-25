@@ -53,7 +53,7 @@ try:
             page.locator('#searchClose').click();page.locator('#curatedScope').click();assert page.locator('#seasonCards article').count()==before
             page.screenshot(path=f'/tmp/reader-{PREFIX}-homepage-{width}.png')
             catalog=page.evaluate('''()=>({noPhoto:foods.filter(f=>!foodVisual(f).src).length,withPhoto:foods.filter(f=>foodVisual(f).src).length,ingredients:canonicalCatalog.length,terms:termWindow.map(t=>{const selected=rankSeasonFoods(chinaParts(new Date(t.time+86400000)).month,t);return {term:termNames[t.index],total:selected.length,unique:new Set(selected.map(window.SeasonSelection.group)).size}})})''')
-            assert catalog['noPhoto']<=33;assert all(t['total']==t['unique'] for t in catalog['terms'])
+            assert catalog['noPhoto']==json.loads(Path('docs/VISUAL_COVERAGE_20261024.json').read_text())['admittedObservationMissingHome'];assert all(t['total']==t['unique'] for t in catalog['terms'])
             report['catalogQuality']=catalog;report['flows'].append({'width':width,'flow':'all-season-and-full-directory','passed':True})
             for food_id in CASES:
                 page.goto(BASE+'index.html?'+urlencode({'food':food_id,'reader_verify':SHA}),wait_until='load')
@@ -68,7 +68,7 @@ try:
                 if food_id in ['cigu','pucai']:assert len(dialog.inner_text())>250
                 if food_id=='tengchong-fenghuang-xiaohan-yam':assert '筷子能穿过' in dialog.inner_text()
                 if food_id=='taiwan-jialiao-bream':assert dialog.locator('.identity-origins article').count()>0
-                if food_id=='chuan-yu-dahan-pea-tips':assert dialog.locator('.reader-portrait img').count()==1 and dialog.locator('.reader-dish img').count()==1
+                if food_id=='chuan-yu-dahan-pea-tips':assert dialog.locator('.reader-portrait img').count()==1 and dialog.locator('.reader-ingredient img').count()==1
                 portrait=dialog.locator('.reader-portrait img')
                 if portrait.count():portrait.evaluate('(img)=>img.decode()')
                 body=dialog.inner_text();assert '2 人份' not in body;assert '本站试吃' not in body

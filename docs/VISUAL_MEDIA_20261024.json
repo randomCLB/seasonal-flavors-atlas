@@ -1,0 +1,1294 @@
+[
+  {
+    "source": "https://flyjy.swu.edu.cn/info/1265/1316.htm",
+    "url": "https://flyjy.swu.edu.cn/__local/7/4C/A7/B009021709ABFBF7834B35B8099_7247C2AC_8ABCE.jpg",
+    "artist": "",
+    "license": "Reference only; no redistribution permission established",
+    "licenseUrl": "",
+    "title": "",
+    "path": "assets/visual/yuzao100-plant.webp",
+    "subject": "渝早100青菜头 · 田间植株",
+    "role": "plant",
+    "sourceSha256": "309c63a99bcd6514a3e2db4d2603d45f12d36e2de8931f8ac368affcff71b1cf",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164026436,
+      "id": 12587462934,
+      "filename": "yuzao-plant-2.jpg"
+    },
+    "rightsNote": "西南大学涪陵研究院原报道配图引用；未取得开放许可，署名及权利归原来源。",
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "2225f18cfa30a772e812f560c31468ecc2bef53fea1453d48db0cf1fc94fd177",
+    "width": 600,
+    "height": 798
+  },
+  {
+    "source": "https://cqrb.cn/xiangcun/nongpin/2025-11-13/2477886_pc.html",
+    "url": "https://image2.cqrb.cn/2025/11/13/0079375b88dd6dfadb015b4cc7f9c309.jpg",
+    "artist": "",
+    "license": "Reference only; no redistribution permission established",
+    "licenseUrl": "",
+    "title": "",
+    "path": "assets/visual/yuzao100-plate.webp",
+    "subject": "青菜头成菜 · 品鉴活动实拍",
+    "role": "dish",
+    "sourceSha256": "cb2253bfe442ca3cd7be0d62221dc319b16ad276cba301d344cb81083a1f9333",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "yuzao-plate.jpg"
+    },
+    "rightsNote": "重庆日报张春晓摄影；原报道配图引用，不声明开放许可。",
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "83ae684964962632b8a954f48dcc158d3767606cb930e326d3d9445aa9a3a78c",
+    "width": 1000,
+    "height": 667
+  },
+  {
+    "source": "https://k.sina.com.cn/article_3428651360_cc5d116000100g6on.html",
+    "url": "https://k.sinaimg.cn/n/sinacn10110/533/w800h533/20190524/5c3b-hxntqyy0746016.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+    "artist": "",
+    "license": "Source reference; rights not established",
+    "licenseUrl": "",
+    "title": "",
+    "path": "assets/visual/xiaozhou-harvest.webp",
+    "subject": "小洲头菜 · 田间采收画面",
+    "role": "plant",
+    "sourceSha256": "5aa87e595ba10c4836f2cadb50e0a71d2317034a9d854c57f06eab4038b50f61",
+    "modifications": "按记录矩形裁切；等比例转WebP；未重绘食材形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164687311,
+      "id": 12587079801,
+      "filename": "xiaozhou-0.jpg"
+    },
+    "crop": [
+      0,
+      0,
+      700,
+      430
+    ],
+    "rightsNote": "原报道图片引用；原始摄影者及开放许可未核实。裁切区域见记录，原图入口保留。",
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "cd5d735e24a34c38083c0be613452f620e14a7e2733360bfa90e0a476f7a7028",
+    "width": 700,
+    "height": 430
+  },
+  {
+    "source": "https://k.sina.com.cn/article_3428651360_cc5d116000100g6on.html",
+    "url": "https://k.sinaimg.cn/n/sinacn10110/504/w790h514/20190524/4414-hxntqyy0750185.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+    "artist": "",
+    "license": "Source reference; rights not established",
+    "licenseUrl": "",
+    "title": "",
+    "path": "assets/visual/xiaozhou-preserved-plate.webp",
+    "subject": "腌头菜切片 · 地方吃法参考",
+    "role": "dish",
+    "sourceSha256": "4dac05bf268d70f63752e327e5bd4de752a6ab822e9036d61e600228668d9893",
+    "modifications": "按记录矩形裁切；等比例转WebP；未重绘食材形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164687311,
+      "id": 12587079801,
+      "filename": "xiaozhou-2.jpg"
+    },
+    "crop": [
+      146,
+      52,
+      668,
+      424
+    ],
+    "rightsNote": "原报道配图引用；画面为腌制品，与下方鲜炒做法分别呈现。裁切区域见记录，原图入口保留。",
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "b9e7757603474a3782410ce165e294c0573bc0da33398329efc70562f4a659fa",
+    "width": 522,
+    "height": 372
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Snow_mustard_Brassica_juncea.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Snow_mustard_Brassica_juncea.jpg/960px-Snow_mustard_Brassica_juncea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Cs california",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "title": "File:Snow mustard Brassica juncea.jpg",
+    "path": "assets/visual/snow-mustard-plant.webp",
+    "subject": "雪菜 · 莲座状嫩叶植株",
+    "role": "plant",
+    "sourceSha256": "1a4edefb690be14399c0850717159d6275eba5d49ec5ac517baf81cb87570353",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164687311,
+      "id": 12587079801,
+      "filename": "mustard-snow-plant-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "d4dbd4534bc0e91f8b48fe4ce5fd534913595913e997343a990db31baf4e5908",
+    "width": 675,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Gai_Choi_Mustard_Greens_-_J_K_Asian_Grocery_(5050526668).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Gai_Choi_Mustard_Greens_-_J_K_Asian_Grocery_%285050526668%29.jpg/960px-Gai_Choi_Mustard_Greens_-_J_K_Asian_Grocery_%285050526668%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10559879@N00\">Alpha</a> from Melbourne, Australia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "title": "File:Gai Choi Mustard Greens - J K Asian Grocery (5050526668).jpg",
+    "path": "assets/visual/mustard-leafy-shoots.webp",
+    "subject": "叶用芥菜嫩梢 · 形态参考",
+    "role": "whole-ingredient",
+    "sourceSha256": "61382d8f5b49254aba7bb713086045384dd7018761f8269b673f1f4d7f1d69fa",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164026436,
+      "id": 12587462934,
+      "filename": "mustard-dish-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "9754a614a040f8632c66b75238fccaed69f9e77eb5afb8f55abeca2e8c42c666",
+    "width": 960,
+    "height": 643
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Juglans_regia_(fruit)_20220715_125421.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Juglans_regia_%28fruit%29_20220715_125421.jpg/960px-Juglans_regia_%28fruit%29_20220715_125421.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Lesless\" title=\"User:Lesless\">Lesless</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Juglans regia (fruit) 20220715 125421.jpg",
+    "path": "assets/visual/walnut-on-tree.webp",
+    "subject": "核桃青果与复叶 · 同种植株参考",
+    "role": "plant",
+    "sourceSha256": "7b02001887fb8a93d39c513a1d525dc2d14cef559353d799d99f0ba5794971a0",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "walnut-4.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "af6fe6b7e7c9b9de934896de9e69ea95d28d5a9db07795e65e980eb8d61642aa",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Juglandaceae_Carya_cathayensis_1.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Juglandaceae_Carya_cathayensis_1.jpg/960px-Juglandaceae_Carya_cathayensis_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:NasserHalaweh\" title=\"User:NasserHalaweh\">NasserHalaweh</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Juglandaceae Carya cathayensis 1.jpg",
+    "path": "assets/visual/hickory-sapling.webp",
+    "subject": "山核桃 · 栽培植株参考",
+    "role": "plant",
+    "sourceSha256": "b657016935de0c565b5db8ba9f40c790d344cda7afd88b2f25d12cbe63cbfbb8",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "hickory-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "bd33c2ec05b5d1837e637c5ab7ee8dc5693e814d9d94ec65046585506dfd2d43",
+    "width": 567,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:2735SaySim_fields_in_the_Philippines_16.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/2735SaySim_fields_in_the_Philippines_16.jpg/960px-2735SaySim_fields_in_the_Philippines_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Judgefloro\" title=\"User:Judgefloro\">Judgefloro</a>",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "File:2735SaySim fields in the Philippines 16.jpg",
+    "path": "assets/visual/caixin-growing.webp",
+    "subject": "菜心 · 田间叶丛与嫩薹",
+    "role": "plant",
+    "sourceSha256": "372069aff5f5ed1a5a1130c26a44423e16e6b909a8e9ef97657db1dd0bbda457",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164687311,
+      "id": 12587079801,
+      "filename": "caixin-plant-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "242b56aea363d8a09934cc1dbe46b3b7c40acc0014d653e9f6a59dab61a09e90",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:2735SaySim_fields_in_the_Philippines_20.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2735SaySim_fields_in_the_Philippines_20.jpg/960px-2735SaySim_fields_in_the_Philippines_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Judgefloro\" title=\"User:Judgefloro\">Judgefloro</a>",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "File:2735SaySim fields in the Philippines 20.jpg",
+    "path": "assets/visual/white-caitai-field.webp",
+    "subject": "白菜薹 · 同类田间形态参考",
+    "role": "plant",
+    "sourceSha256": "b5a161ee510c08cb15071db325841aab8f3ce747678d2b0c29b09959ea0fc313",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164687311,
+      "id": 12587079801,
+      "filename": "caixin-plant-4.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "aa02cf727a388dc2036f9cd10591fe004442005d3ce6f508abbff2987aa4517a",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Sagittaria_trifolia_in_japan.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Sagittaria_trifolia_in_japan.JPG/960px-Sagittaria_trifolia_in_japan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Show_ryu",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "File:Sagittaria trifolia in japan.JPG",
+    "path": "assets/visual/cigu-growing.webp",
+    "subject": "慈姑 · 水田中的箭形叶片",
+    "role": "plant",
+    "sourceSha256": "ec1ac1f748fdb4d81055c808462dd98bb91050616012ded20feac4e6f1164f24",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164687311,
+      "id": 12587079801,
+      "filename": "cigu-plant-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "d2060e209559709fec17ff52b56ca8f589b4555b5d08dfd958d20290423f82ea",
+    "width": 960,
+    "height": 722
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Brasenia_schreberi_inat1.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Brasenia_schreberi_inat1.jpg/960px-Brasenia_schreberi_inat1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Sara Hollerich Giles",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "File:Brasenia schreberi inat1.jpg",
+    "path": "assets/visual/chuncai-growing.webp",
+    "subject": "莼菜 · 水面叶片与花",
+    "role": "plant",
+    "sourceSha256": "afcaeeff6fa414a079b8e2d5cd3a9956d46e678c7bb13fd617e687397dfa3777",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164687311,
+      "id": 12587079801,
+      "filename": "chuncai-plant-4.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "8a9ca7ddedb3c641ba931e930437d169191f4e423717524fff56c9981c5634a6",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Eriocheir_sinensis_280662056.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Eriocheir_sinensis_280662056.jpg/960px-Eriocheir_sinensis_280662056.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.inaturalist.org/users/1682329\">Claude Kolwelter</a>",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "title": "File:Eriocheir sinensis 280662056.jpg",
+    "path": "assets/visual/mitten-crab-whole.webp",
+    "subject": "中华绒螯蟹 · 活体形态参考",
+    "role": "animal",
+    "sourceSha256": "1611e2ede78efc85e6064dcda8fa54fd6095f6d46ed0a42d112d55129c6037ff",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164687311,
+      "id": 12587079801,
+      "filename": "crab-whole-3.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "76629478b83588548d925354e60abb93e02bd202ff58bb32b1914dc9e9573dac",
+    "width": 817,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Cumquat_al_parc_Central_de_Val%C3%A8ncia.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Cumquat_al_parc_Central_de_Val%C3%A8ncia.jpg/960px-Cumquat_al_parc_Central_de_Val%C3%A8ncia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Joanbanjo\" title=\"User:Joanbanjo\">Joanbanjo</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Cumquat al parc Central de València.jpg",
+    "path": "assets/visual/kumquat-on-tree.webp",
+    "subject": "金桔 · 枝头整果与叶片",
+    "role": "plant",
+    "sourceSha256": "2f0412de98d5c41d81c9ee4796cec99d3cc9d0967801745e6d6958e2a57b47a9",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164026436,
+      "id": 12587462934,
+      "filename": "kumquat-plant-5.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "8230e90487788c3a4f185780c1023ea6a365b6f2082d6335df344dc5b058cde0",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Starr-120522-6075-Citrus_maxima-fruit-Iao_Tropical_Gardens_of_Maui-Maui_(24775423789).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Starr-120522-6075-Citrus_maxima-fruit-Iao_Tropical_Gardens_of_Maui-Maui_%2824775423789%29.jpg/960px-Starr-120522-6075-Citrus_maxima-fruit-Iao_Tropical_Gardens_of_Maui-Maui_%2824775423789%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/97499887@N06\">Forest and Kim Starr</a>",
+    "license": "CC BY 3.0 us",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+    "title": "File:Starr-120522-6075-Citrus maxima-fruit-Iao Tropical Gardens of Maui-Maui (24775423789).jpg",
+    "path": "assets/visual/pomelo-growing.webp",
+    "subject": "柚类 · 枝头果实与叶片",
+    "role": "plant",
+    "sourceSha256": "a4b22cf5102f2293fd601ed19fec878ec9726d821df5765f907028ab15763717",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164026436,
+      "id": 12587462934,
+      "filename": "pomelo-plant-5.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "ef4534116a2e494dd3cad659898b7dffa519f9fe22a5c801d53f53c24f698414",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Citrus_reticulata_April_2013_Nordbaden.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Citrus_reticulata_April_2013_Nordbaden.JPG/960px-Citrus_reticulata_April_2013_Nordbaden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:4028mdk09\" title=\"User:4028mdk09\">4028mdk09</a>",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "File:Citrus reticulata April 2013 Nordbaden.JPG",
+    "path": "assets/visual/mandarin-growing.webp",
+    "subject": "柑橘 · 枝头成熟果实",
+    "role": "plant",
+    "sourceSha256": "8bea1eef3b92e74494d54ec64a1490db1d1c01429b56d59217fb1c1262ce6096",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164026436,
+      "id": 12587462934,
+      "filename": "citrus-plant-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "c88026536f4734cf95c5d26215e198fd2c506668ef1eff001ac013952f289002",
+    "width": 900,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Mandarins_in_my_Garden_Sochi.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Mandarins_in_my_Garden_Sochi.JPG/960px-Mandarins_in_my_Garden_Sochi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:SKas\" title=\"User:SKas\">SKas</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Mandarins in my Garden Sochi.JPG",
+    "path": "assets/visual/mandarin-leaf-fruit.webp",
+    "subject": "柑橘 · 整果与叶片参考",
+    "role": "plant",
+    "sourceSha256": "fd19243f57a133c8c66687fb19d7bd928eb67744ec3f37ade47a080957014cb0",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164026436,
+      "id": 12587462934,
+      "filename": "citrus-plant-4.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "28af8715a90e0c7f4b6d0984d5c9de099b45c8014a8c56874ea825ef186d2ea6",
+    "width": 960,
+    "height": 640
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%81rbol_de_mandarinas_en_temporada_de_cosecha.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/%C3%81rbol_de_mandarinas_en_temporada_de_cosecha.jpg/960px-%C3%81rbol_de_mandarinas_en_temporada_de_cosecha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Tubby3\" title=\"User:Tubby3\">Horacio Cambeiro</a>",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "File:Árbol de mandarinas en temporada de cosecha.jpg",
+    "path": "assets/visual/mandarin-fruiting.webp",
+    "subject": "柑橘 · 结果枝参考",
+    "role": "plant",
+    "sourceSha256": "efaa2f3d254a6632270fb286bc809daa84c3b1aa7022408a979ff268b107e530",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164026436,
+      "id": 12587462934,
+      "filename": "citrus-plant-5.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "5dbe6c4d6009defc879d1ac29951584143fb465bf2f36e8ef7f3825e89676b1e",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Dioscorea_polystachya_UGA2307129.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Dioscorea_polystachya_UGA2307129.jpg/960px-Dioscorea_polystachya_UGA2307129.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "James H. Miller, USDA Forest Service, Bugwood.org",
+    "license": "CC BY 3.0 us",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+    "title": "File:Dioscorea polystachya UGA2307129.jpg",
+    "path": "assets/visual/yam-vine.webp",
+    "subject": "山药 · 藤蔓与叶片参考",
+    "role": "plant",
+    "sourceSha256": "935eff61557409af7641197ac8d0ce5f5d32cd34c9db0c35c071852d843a19c3",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "yamplant-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "871fdbf18685331e9cfa7b5dd7a3d2ec153515f402d37be7ae568d9f9d873793",
+    "width": 800,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Eleocharis_dulcis.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Eleocharis_dulcis.jpg/960px-Eleocharis_dulcis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Tau%CA%BBolunga\" title=\"User:Tauʻolunga\">Tauʻolunga</a>",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "title": "File:Eleocharis dulcis.jpg",
+    "path": "assets/visual/waterchestnut-growing.webp",
+    "subject": "荸荠 · 挺水茎植株",
+    "role": "plant",
+    "sourceSha256": "c89eb376eb4f1172738dc3481486ccafd02192f564f7d49316b7b911f7dc19c2",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "waterchestnut-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "2411307ec964a1bddfd75cc961083e64d1a647ad98bb7ad89cf678b93412e6b9",
+    "width": 960,
+    "height": 700
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Eleocharis_dulcis_(153).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Eleocharis_dulcis_%28153%29.jpg/960px-Eleocharis_dulcis_%28153%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "François Nguyen",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "title": "File:Eleocharis dulcis (153).jpg",
+    "path": "assets/visual/waterchestnut-whole.webp",
+    "subject": "带皮荸荠 · 完整球茎",
+    "role": "whole-ingredient",
+    "sourceSha256": "15fdb8cfdaf0843c0df19b47c104c3b269b20ede48d6286917a0b1eea44dc4cc",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "waterchestnut-3.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "14363769df79125a11e0afac517f30ae1dc01139d480c05b7df1df06881f8250",
+    "width": 960,
+    "height": 960
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Lilium_davidii_5.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Lilium_davidii_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "artist": "Darm Crook",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "title": "File:Lilium davidii 5.jpg",
+    "path": "assets/visual/lily-growing.webp",
+    "subject": "百合 · 植株形态参考",
+    "role": "plant",
+    "sourceSha256": "5e54e5677bec4700276f8a775d8cf8d348ae5426c4d43935ac9c26b1c124341c",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "lilyplant-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "612b4cf467d307958488eef091d48a8ce0307c72d9f261f6d37ae4d2339960c8",
+    "width": 640,
+    "height": 480
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Stachys_affinis_kz01.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Stachys_affinis_kz01.jpg/960px-Stachys_affinis_kz01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Kenraiz\" title=\"User:Kenraiz\">Krzysztof Ziarnek, Kenraiz</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Stachys affinis kz01.jpg",
+    "path": "assets/visual/stachys-growing.webp",
+    "subject": "草石蚕 · 茎叶与花序",
+    "role": "plant",
+    "sourceSha256": "4bbe610c3287a39c42cc234d4a101dc6789e58b2c3739ee0a7532dae70a138ca",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "stachysplant-3.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "fbcee66b41d6d2c50d801b0c17e4115c75268f2528435e41dbccdc80ad2c2d28",
+    "width": 800,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Young_Banana_plant.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Young_Banana_plant.jpg/960px-Young_Banana_plant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Adesolive\" title=\"User:Adesolive\">Adesolive</a>",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "File:Young Banana plant.jpg",
+    "path": "assets/visual/banana-growing.webp",
+    "subject": "芭蕉花 · 植株上的花苞",
+    "role": "plant",
+    "sourceSha256": "9d3dbafd6669cbc30c9cb1decdda108f8e5b60e2d555671ab405f8213525947d",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "bananabud-3.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "b505cdb7edecdba7d161c8c9984b7b495e87c5d7aa806eb8ff6cbf0995fc3392",
+    "width": 900,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_Flower_in_Lantau_island,_Hong_Kong.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Bombax_ceiba_Flower_in_Lantau_island%2C_Hong_Kong.JPG/960px-Bombax_ceiba_Flower_in_Lantau_island%2C_Hong_Kong.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Earth100\" title=\"User:Earth100\">Earth100</a>",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "File:Bombax ceiba Flower in Lantau island, Hong Kong.JPG",
+    "path": "assets/visual/kapok-on-branch.webp",
+    "subject": "木棉 · 枝上鲜花",
+    "role": "plant",
+    "sourceSha256": "04981d25d9f237a1c7671b8a3e1ded24d59ea211a8652b779f5dc03502fe237d",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40164296237,
+      "id": 12587238965,
+      "filename": "kapokflower-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "d39d3f9b1af7d9728821b4d62a8a3a36159b985978ec52ed33ade3137ffb0f6e",
+    "width": 960,
+    "height": 627
+  },
+  {
+    "source": "https://www.tonghai.gov.cn/thxzfxxgk/xcjs/20230612/1451376.html",
+    "url": "https://www.tonghai.gov.cn/u/cms/thxzfxxgk/202306/17154922rm86.jpg",
+    "artist": "",
+    "license": "Original source reference; no open license established",
+    "licenseUrl": "",
+    "title": "",
+    "path": "assets/visual/tonghai-quince-orchard.webp",
+    "subject": "通海酸木瓜 · 果园植株",
+    "role": "plant",
+    "sourceSha256": "73cf041edcbcd4c1ac6c9db15701c6fd34477f221e787c014e93b0a9982df509",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40165206096,
+      "id": 12588590242,
+      "filename": "tonghai-plant.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "49324283fd8005af1c5d362edbc03f7bf634a5d49008f6eb9041b6f90fb535a0",
+    "width": 500,
+    "height": 277
+  },
+  {
+    "source": "https://zsrbapp.zsnews.cn/home/content/newsContent/0/698508",
+    "url": "https://zsrbapp.zsnews.cn/api-v2/storage/upload/20251123/FSvegQBEIB788zsB4UngXlCl6iw7elo5b2Lt66w8.jpg",
+    "artist": "",
+    "license": "Original source reference; no open license established",
+    "licenseUrl": "",
+    "title": "",
+    "path": "assets/visual/xiaolan-edible-chrysanthemum.webp",
+    "subject": "小榄食用菊 · 鲜采花朵",
+    "role": "whole-ingredient",
+    "sourceSha256": "faab21f4aa926598ac0774e2a07dabb24d0a81448681346b57f813cba9cbb9f7",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40165206096,
+      "id": 12588590242,
+      "filename": "xiaolan-flower.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "851ed6f3c945ba8d50fa587bf92cfcf20dd023b117bc97a5b6b212e0a4ec1c31",
+    "width": 1080,
+    "height": 607
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Typha-Orientalis.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Typha-Orientalis.jpg/960px-Typha-Orientalis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Grapeman4\" title=\"User:Grapeman4\">Grapeman4</a>",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "File:Typha-Orientalis.jpg",
+    "path": "assets/visual/caoya-parent-plant.webp",
+    "subject": "草芽的香蒲植株 · 形态参考",
+    "role": "plant",
+    "sourceSha256": "926ed91163c52825ce39557775a7c7415e153bc43f21e44e93d6933867e4dffb",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40165206096,
+      "id": 12588590242,
+      "filename": "caoya-typha-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "c6420b45d77f0a1408094fd6d3f37ab07d66f4276fc0ac0a137c30500f1162a8",
+    "width": 901,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:%E1%80%87%E1%80%AE%E1%80%B8%E1%80%96%E1%80%BC%E1%80%B0%E1%80%9E%E1%80%AE%E1%80%B8.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/%E1%80%87%E1%80%AE%E1%80%B8%E1%80%96%E1%80%BC%E1%80%B0%E1%80%9E%E1%80%AE%E1%80%B8.jpg/960px-%E1%80%87%E1%80%AE%E1%80%B8%E1%80%96%E1%80%BC%E1%80%B0%E1%80%9E%E1%80%AE%E1%80%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:SarKaLay_%E1%80%85%E1%80%AC%E1%80%80%E1%80%9C%E1%80%B1%E1%80%B8\" title=\"User:SarKaLay စာကလေး\">SarKaLay စာကလေး</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:ဇီးဖြူသီး.jpg",
+    "path": "assets/visual/emblica-whole.webp",
+    "subject": "余甘子 · 完整鲜果参考",
+    "role": "whole-ingredient",
+    "sourceSha256": "3f81c08128be9c60873f235e26ddd2748f7dd78b555936d8b57d43e8a6309516",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40165206096,
+      "id": 12588590242,
+      "filename": "emblica-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "91b9f8cc59af9221681cc7b8771c62a40d2ef280716051b44e4a228ca601abc0",
+    "width": 960,
+    "height": 978
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Starr-070206-4144-Saccharum_officinarum-stalks-Ukumehame-Maui_(24585957540).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Starr-070206-4144-Saccharum_officinarum-stalks-Ukumehame-Maui_%2824585957540%29.jpg/960px-Starr-070206-4144-Saccharum_officinarum-stalks-Ukumehame-Maui_%2824585957540%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/97499887@N06\">Forest and Kim Starr</a>",
+    "license": "CC BY 3.0 us",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+    "title": "File:Starr-070206-4144-Saccharum officinarum-stalks-Ukumehame-Maui (24585957540).jpg",
+    "path": "assets/visual/sugarcane-growing.webp",
+    "subject": "甘蔗 · 生长中的茎与叶",
+    "role": "plant",
+    "sourceSha256": "ecae00dc45f8c087a7470272d5ab2364f4cd24f60a439604133e389d4c8c7b60",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40165206096,
+      "id": 12588590242,
+      "filename": "sugarcane-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "c430a8ea75ed18dfb484caa9a4c9b67185a825f98b04607330025cdb1765ed37",
+    "width": 900,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Starr_081229-0484_Saccharum_officinarum.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Starr_081229-0484_Saccharum_officinarum.jpg/960px-Starr_081229-0484_Saccharum_officinarum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.starrenvironmental.com/\">Forest &amp; Kim Starr</a>",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "title": "File:Starr 081229-0484 Saccharum officinarum.jpg",
+    "path": "assets/visual/sugarcane-stem-leaf.webp",
+    "subject": "甘蔗 · 蔗茎与叶片参考",
+    "role": "plant",
+    "sourceSha256": "ffde0685b37de2a0f3d4244e0a0977c37f368b0725b2d8cef894cbc4b91039a8",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40165206096,
+      "id": 12588590242,
+      "filename": "sugarcane-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "2bade2b72b88f15415dde4cfa1fc370ba2ea11ddcd378312ba8e17b9079402fb",
+    "width": 900,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Sacred_lotus_leaves_and_flowers_covering_a_pond_in_Don_Det_Laos.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Sacred_lotus_leaves_and_flowers_covering_a_pond_in_Don_Det_Laos.jpg/960px-Sacred_lotus_leaves_and_flowers_covering_a_pond_in_Don_Det_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Sacred lotus leaves and flowers covering a pond in Don Det Laos.jpg",
+    "path": "assets/visual/lotus-pond.webp",
+    "subject": "莲 · 荷塘植株参考",
+    "role": "plant",
+    "sourceSha256": "d087ae052606b48c48246bbfd072362d1d156f54dda1f159b7f2d9783524d557",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40165206096,
+      "id": 12588590242,
+      "filename": "lotus-3.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "0717ea6a0a91892b27252036b1b0e23e912b4199ef9b6d1dbe6b98378295f97a",
+    "width": 960,
+    "height": 640
+  },
+  {
+    "source": "https://www.sohu.com/a/592408145_267106",
+    "url": "https://p6.itc.cn/q_70/images03/20221013/3da1d227398a405daabf5495bc50aa4f.png",
+    "artist": "",
+    "license": "Attributed source reference; open redistribution permission not established",
+    "licenseUrl": "",
+    "title": "",
+    "path": "assets/visual/bamboo-larvae-habitat.webp",
+    "subject": "西盟竹虫 · 竹节内原貌",
+    "role": "animal",
+    "sourceSha256": "08ebbb2d5ce2388edac1134f793b43b674a075d8040d87e9ae6987fac7212f80",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40165955183,
+      "id": 12587927842,
+      "filename": "bamboo-xinhua-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "336adcfd4e7cb7f4cedda461d8b454d92150204414877b9598c2f64fa59818be",
+    "width": 1124,
+    "height": 632
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Fruit_trees_%D7%A2%D7%A6%D7%99_%D7%A4%D7%A8%D7%99_(2).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Fruit_trees_%D7%A2%D7%A6%D7%99_%D7%A4%D7%A8%D7%99_%282%29.jpg/960px-Fruit_trees_%D7%A2%D7%A6%D7%99_%D7%A4%D7%A8%D7%99_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Chenspec\" title=\"User:Chenspec\">Chenspec</a>",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "File:Fruit trees עצי פרי (2).jpg",
+    "path": "assets/visual/loquat-fruiting-branch.webp",
+    "subject": "枇杷 · 枝头果实与叶片参考",
+    "role": "plant",
+    "sourceSha256": "ca32cba31c6bfc5fc487ab9a9409c91d6e16a91ab8f412e9495257eadc687bd2",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "loquat-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "efceedf5c9ec8f6a5dd8da2a7837042c4d0d61be77c5d3ea49ffb97e3fedc7ac",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Clausena_lansium_-_Fruit_and_Spice_Park_-_Homestead,_Florida_-_DSC08999.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Clausena_lansium_-_Fruit_and_Spice_Park_-_Homestead%2C_Florida_-_DSC08999.jpg/960px-Clausena_lansium_-_Fruit_and_Spice_Park_-_Homestead%2C_Florida_-_DSC08999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Daderot\" title=\"User:Daderot\">Daderot</a>",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "File:Clausena lansium - Fruit and Spice Park - Homestead, Florida - DSC08999.jpg",
+    "path": "assets/visual/wampi-fruiting.webp",
+    "subject": "黄皮 · 结果植株参考",
+    "role": "plant",
+    "sourceSha256": "aaa29c296a609cf594df44f6c9c4390026e8e8f362f41840ed9902d9f0af7a96",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "wampi-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "58b1a3808fc51575062867daae7220f503f69220f0e62e12a8db8dec0c4044b4",
+    "width": 960,
+    "height": 1159
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Taro_plant.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Taro_plant.jpg/960px-Taro_plant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Medhi_jyoti\" title=\"User:Medhi jyoti\">Medhi jyoti</a>",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "title": "File:Taro plant.jpg",
+    "path": "assets/visual/taro-growing.webp",
+    "subject": "芋 · 田间植株参考",
+    "role": "plant",
+    "sourceSha256": "ae57e0555cbb9e900475f5ebcbcc87f15ec929135fdbdd829e21f10ebb8dc106",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "taro-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "b2c25e7703416b7e20f1d400aa6ce441f7989e3d82d1d97005982b2e766b7664",
+    "width": 675,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Allium_hookeri.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Allium_hookeri.jpg/960px-Allium_hookeri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://pixabay.com/fr/users/manseok-1005494/\">Manseok Kim</a>",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "title": "File:Allium hookeri.jpg",
+    "path": "assets/visual/allium-hookeri-growing.webp",
+    "subject": "苤菜 · 植株形态参考",
+    "role": "plant",
+    "sourceSha256": "37f3205a79728a250b64370825f5e6505c4672b0fa89e6f737b527b1d87a18c9",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "allium-hookeri-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "96ed54ec59c9c5b3b389e64697ff45facc172bae5517ae550d083582b2526ecd",
+    "width": 960,
+    "height": 640
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Leaf_of_Kudzu55.jpeg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Leaf_of_Kudzu55.jpeg/960px-Leaf_of_Kudzu55.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "Yamato",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "File:Leaf of Kudzu55.jpeg",
+    "path": "assets/visual/kudzu-leaves.webp",
+    "subject": "葛藤 · 叶片形态参考",
+    "role": "plant",
+    "sourceSha256": "eb0609243f7a0b913fab30d485ad4da3d0b773b524d99b2e08627fcf8be22ee8",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "kudzu-3.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "91b03993e2d5751c9a10d869ed6ae35ae06b2e1aff1c2617ce2bd6ffd279ec9a",
+    "width": 960,
+    "height": 720
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Pomegranate_on_the_Branch.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Pomegranate_on_the_Branch.jpg/960px-Pomegranate_on_the_Branch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ezafer&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ezafer (page does not exist)\">Erol Zafer Ahmed</a>",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "title": "File:Pomegranate on the Branch.jpg",
+    "path": "assets/visual/pomegranate-branch.webp",
+    "subject": "石榴 · 枝头果实参考",
+    "role": "plant",
+    "sourceSha256": "7320e7605154a352e9db87d2cec6bc16115f15cadcdc50246897882e10e7137b",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "pomegranate-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "cc40c014d995028265baef19ecaf4dd4aa9b51099dca0d5183acbb52702558b8",
+    "width": 960,
+    "height": 640
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Three_pomegranates_among_tree_branches.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Three_pomegranates_among_tree_branches.jpg/960px-Three_pomegranates_among_tree_branches.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:%D9%81%D8%A7%D8%B7%D9%85%D8%A9_%D8%A7%D9%84%D8%B2%D9%87%D8%B1%D8%A7%D8%A1\" title=\"User:فاطمة الزهراء\">فاطمة الزهراء</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Three pomegranates among tree branches.jpg",
+    "path": "assets/visual/pomegranate-tree.webp",
+    "subject": "石榴 · 结果植株参考",
+    "role": "plant",
+    "sourceSha256": "c76781e5260ff55d45b8e2bb663fca89e6f1cab308a062b8c978a91e817a1924",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "pomegranate-3.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "3db5623a98a60320d05e08125e6024263d5ec99d2680685f627bb1f4a8d344f1",
+    "width": 675,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Kirschenpfl%C3%BCcken_im_Kirschbaum.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Kirschenpfl%C3%BCcken_im_Kirschbaum.jpg/960px-Kirschenpfl%C3%BCcken_im_Kirschbaum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Kutlusafa\" title=\"User:Kutlusafa\">Kutlusafa</a>",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "title": "File:Kirschenpflücken im Kirschbaum.jpg",
+    "path": "assets/visual/cherry-fruiting-branch.webp",
+    "subject": "甜樱桃 · 结果枝参考",
+    "role": "plant",
+    "sourceSha256": "01785fa222b6bac3de7f0f74d37baeb4093f92f0057951e1b4d0b19f485d5806",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "cherry-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "92558efe4f530e18b22ebdd99852c99332496116f144331bdfdeeb3ff93b944f",
+    "width": 900,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Bitter_gourd_2.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Bitter_gourd_2.jpg/960px-Bitter_gourd_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:SarKaLay_%E1%80%85%E1%80%AC%E1%80%80%E1%80%9C%E1%80%B1%E1%80%B8\" title=\"User:SarKaLay စာကလေး\">SarKaLay စာကလေး</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Bitter gourd 2.jpg",
+    "path": "assets/visual/bittermelon-vine.webp",
+    "subject": "苦瓜 · 藤蔓与果实参考",
+    "role": "plant",
+    "sourceSha256": "3c143ef17fd8343850b8e79a1e044d72160dbe1ce9a54e5991b27b286be383f4",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "bittermelon-2.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "baf8d23dbe3437275e7b5c4acf52f6271b41b8a50be1df45f3a9dce9f3b12119",
+    "width": 898,
+    "height": 1200
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Chinakohl_Bestand_mit_Tropfbew%C3%A4sserung,_Josef_Schlaghecken.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Chinakohl_Bestand_mit_Tropfbew%C3%A4sserung%2C_Josef_Schlaghecken.jpg/960px-Chinakohl_Bestand_mit_Tropfbew%C3%A4sserung%2C_Josef_Schlaghecken.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "artist": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Schlaghecken_Josef\" title=\"User:Schlaghecken Josef\">Schlaghecken Josef</a>",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "title": "File:Chinakohl Bestand mit Tropfbewässerung, Josef Schlaghecken.jpg",
+    "path": "assets/visual/cabbage-growing.webp",
+    "subject": "大白菜 · 田间叶丛参考",
+    "role": "plant",
+    "sourceSha256": "8ba586845cdb15c0e0a9d7f30c12f9d7a15c5d18734086e1f121018ce233c84a",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "cabbage-1.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "a1ea12273423fc4a0b2b0fadb2ace8b4993696160fbe1665d5ee3b99e8973e02",
+    "width": 960,
+    "height": 541
+  },
+  {
+    "source": "https://k.sina.com.cn/article_2275345674_879f050a02701avo6.html",
+    "url": "http://k.sinaimg.cn/n/sinakd20111/444/w1024h1820/20250115/bf18-6f9bab8612a8f44e6271ef0417b57fc8.jpg/w700d1q75cms.jpg?by=cms_fixed_width",
+    "artist": "",
+    "license": "People.cn source reference, photographer Yang Zhijun; no open license established",
+    "licenseUrl": "",
+    "title": "",
+    "path": "assets/visual/hongguoshen-fruiting.webp",
+    "subject": "红果参 · 枝头果实参考",
+    "role": "plant",
+    "sourceSha256": "9066ec37fff9870091ca521d03515b8b1c514d5566bccb1336ffdb1cba27e836",
+    "modifications": "等比例缩小并转为WebP；显示时按焦点裁切，保留原图形态；饱和度94%、对比度98%，未重绘主体或替换食材",
+    "reviewedAt": "2026-10-24",
+    "inputArtifact": {
+      "run": 40166178853,
+      "id": 12587993095,
+      "filename": "hongguoshen-14.jpg"
+    },
+    "treatment": {
+      "saturation": 0.94,
+      "contrast": 0.98,
+      "maxEdge": 1200,
+      "quality": 86,
+      "method": 6
+    },
+    "sha256": "9d54fa33f30a52a10baef28af9a852ed4b07524704f3d64af6367372623f3ddb",
+    "width": 675,
+    "height": 1200
+  }
+]

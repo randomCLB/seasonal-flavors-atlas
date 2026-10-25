@@ -31,6 +31,7 @@ replace('dist/lottery-ui.js','const reason=plan.shared?s.recommendation:C.recomm
 replace('dist/lottery-ui.js',"时令精度：${s.precision==='season'?'季节级近似':'月度或旬段参考'}，不保证该日正好上市。","产区时段：${s.precision==='season'?'季节参考':'月份或旬段参考'}。");
 require('./prepare-catalog-quality.cjs');
 require('./prepare-reader-access.cjs');
+require('./prepare-visual-standard.cjs');
 const version='2026.10.24-depth.1';
-fs.writeFileSync(path.join(root,'dist','build-info.json'),JSON.stringify({siteCommit:process.env.RELEASE_SHA||process.env.GITHUB_SHA||'local',readerVersion:version,accessVersion:'2026.10.24-access.1',catalogCount:require('./audit-reader-copy.cjs').load().FOODS.length},null,2)+'\n');
+fs.writeFileSync(path.join(root,'dist','build-info.json'),JSON.stringify({siteCommit:process.env.RELEASE_SHA||process.env.GITHUB_SHA||'local',readerVersion:version,accessVersion:'2026.10.24-access.1',visualVersion:'2026.10.24-visual.1',catalogCount:require('./audit-reader-copy.cjs').load().FOODS.length},null,2)+'\n');
 console.log('Prepared reader integration',version);
