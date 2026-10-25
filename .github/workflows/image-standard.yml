@@ -17,10 +17,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/review-visual-targets.cjs
+      - run: node scripts/review-final-visuals.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: visual-target-candidates
-          path: /tmp/visual-targets/
+          name: final-visual-candidates
+          path: /tmp/final-visuals/
           retention-days: 7
