@@ -14,10 +14,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Preserve exact review source
-        run: tar --exclude='./.git' -czf /tmp/atlas-image-standard-source.tgz .
-      - uses: actions/upload-artifact@v4
+      - uses: actions/setup-node@v4
         with:
-          name: image-standard-source
-          path: /tmp/atlas-image-standard-source.tgz
+          node-version: '22'
+      - run: node scripts/review-plant-to-plate.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: plant-to-plate-candidates
+          path: /tmp/plant-to-plate-review/
           retention-days: 7
