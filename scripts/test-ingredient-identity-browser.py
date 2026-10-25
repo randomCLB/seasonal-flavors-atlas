@@ -39,9 +39,10 @@ try:
               }
               renderSearch('');const all=[...document.querySelectorAll('#searchResults [data-food]')].map(e=>e.dataset.food);
               if(all.length!==canonicalCatalog.length||new Set(all).size!==all.length)throw Error('Duplicate directory');
-              return {version:I.version,observations:window.FOODS.length,ingredients:canonicalCatalog.length,groups:I.groups.length,terms:results,searches};
+              return {version:I.version,observations:window.FOODS.length,ingredients:canonicalCatalog.length,groups:I.groups.length,termCount:termWindow.length,terms:results,searches};
             }""")
-            assert len(summary['terms'])==48
+            assert summary['termCount']>=72
+            assert len(summary['terms'])==summary['termCount']*2
             page.locator('#catalogDirectory').click()
             page.locator('#searchInput').fill('合江')
             assert page.locator('#searchResults [data-food="hejiang-late-lychee"]').count()==1
