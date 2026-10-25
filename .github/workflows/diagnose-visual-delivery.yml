@@ -1,0 +1,36 @@
+name: Diagnose exact live image delivery
+on:
+  push:
+    branches: [verify/visual-delivery-20261024]
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare the pinned production tree
+        env:
+          RELEASE_SHA: 595a0f3f5ab83dbc7a5d3c9610d02b276ca17f54
+        run: |
+          node scripts/prepare-reader-release.cjs
+          node scripts/audit-reader-access.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image diagnostics
+        run: pip install Pillow==11.3.0 playwright==1.58.0 >/tmp/delivery-install.txt 2>&1 && python -m playwright install --with-deps chromium >>/tmp/delivery-install.txt 2>&1
+      - name: Compare live bytes and isolated browser decoding without editing production
+        run: python scripts/diagnose-visual-delivery.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: exact-live-image-delivery
+          path: /tmp/live-image-delivery.json
+          retention-days: 30
