@@ -1,0 +1,44 @@
+{
+  "reviewedHomeAssignments": 76,
+  "changed": [
+    {
+      "id": "helan-luosicai",
+      "previous": "assets/visual/stachys-growing.webp",
+      "restored": "assets/helan-luosicai-generated.webp",
+      "observation": "一节节乳白螺旋形鲜螺丝菜块茎",
+      "reason": "原替换画面只见地上花叶，缺少食用部位；恢复原料主体清楚的既有画面"
+    },
+    {
+      "id": "lanzhou-xianbaihe",
+      "previous": "assets/visual/lily-growing.webp",
+      "restored": "assets/lanzhou-xianbaihe-generated.webp",
+      "observation": "食用百合鳞茎与分离的鲜鳞片",
+      "reason": "原替换画面只见地上花叶，缺少食用部位；恢复原料主体清楚的既有画面"
+    },
+    {
+      "id": "heshi-xianfenge",
+      "previous": "assets/visual/kudzu-leaves.webp",
+      "restored": "assets/heshi-xianfenge-generated.webp",
+      "observation": "带皮鲜粉葛与洁白横切面",
+      "reason": "原替换画面只见地上花叶，缺少食用部位；恢复原料主体清楚的既有画面"
+    },
+    {
+      "id": "hanshou-yubiou",
+      "previous": "assets/visual/lotus-pond.webp",
+      "restored": "assets/hanshou-yubiou.jpg",
+      "observation": "完整莲藕藕节与孔洞横切面",
+      "reason": "原替换画面只见地上花叶，缺少食用部位；恢复原料主体清楚的既有画面"
+    },
+    {
+      "id": "huadu-jingtang-lotusroot",
+      "previous": "assets/visual/lotus-pond.webp",
+      "restored": "assets/huadu-jingtang-lotusroot-generated.png",
+      "observation": "带皮鲜莲藕与孔洞横切面",
+      "reason": "原替换画面只见地上花叶，缺少食用部位；恢复原料主体清楚的既有画面"
+    }
+  ],
+  "rejectedLilySource": "https://commons.wikimedia.org/wiki/File:Lilium_davidii_5.jpg",
+  "lilyIdentitySource": "https://zwy.njucm.edu.cn/2025/0616/c4723a157197/pagem.htm",
+  "dishAsset": "assets/visual/lanzhou-lily-steamed-generated.webp",
+  "scope": "逐张查看76个显式首页替换画面；本轮恢复5处已有原料图，未把对其余图的接触表查看等同于品种核验。"
+}

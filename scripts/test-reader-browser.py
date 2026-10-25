@@ -68,7 +68,7 @@ try:
                 if food_id in ['cigu','pucai']:assert len(dialog.inner_text())>250
                 if food_id=='tengchong-fenghuang-xiaohan-yam':assert '筷子能穿过' in dialog.inner_text()
                 if food_id=='taiwan-jialiao-bream':assert dialog.locator('.identity-origins article').count()>0
-                if food_id=='chuan-yu-dahan-pea-tips':assert dialog.locator('.reader-portrait img').count()==1 and dialog.locator('.reader-ingredient img').count()==1
+                if food_id=='chuan-yu-dahan-pea-tips':assert dialog.locator('.reader-portrait img').count()==1 and dialog.locator('#foodRecipe .reader-recipe-photo img').count()==1
                 portrait=dialog.locator('.reader-portrait img')
                 if portrait.count():portrait.evaluate('(img)=>img.decode()')
                 body=dialog.inner_text();assert '2 人份' not in body;assert '本站试吃' not in body

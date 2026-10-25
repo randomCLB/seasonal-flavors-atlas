@@ -1290,5 +1290,25 @@
     "sha256": "9d54fa33f30a52a10baef28af9a852ed4b07524704f3d64af6367372623f3ddb",
     "width": 675,
     "height": 1200
+  },
+  {
+    "source": "https://note.com/chijintianxia/n/n7ea60ba5fd67",
+    "url": "https://assets.st-note.com/production/uploads/images/235126247/67e175dac5b21b4c1f1c88c926616468.jpeg",
+    "artist": "时令风物 · 图像生成；蒸后鳞片形态参考：酒徒",
+    "license": "AI-generated editorial illustration; reference photograph is not redistributed",
+    "licenseUrl": "",
+    "title": "清蒸鲜百合 · 参考实拍重制示意",
+    "path": "assets/visual/lanzhou-lily-steamed-generated.webp",
+    "subject": "清蒸鲜百合 · 成菜生成示意",
+    "role": "dish",
+    "sourceSha256": "9d96048355aeab62b5fb79bf109ffe43b8312c498bbd29e3671eff9e54339fc6",
+    "sha256": "c20f014bd66a70e0be57d86fc1e1483aeefa1976e9ace6228f3037a52f37f96a",
+    "width": 1200,
+    "height": 900,
+    "modifications": "参照清蒸百合实拍的鳞片曲度与熟后质感，生成新的器皿、背景和无枸杞版本；非实物摄影，不用于品种鉴别。缩小并转为WebP。",
+    "reviewedAt": "2026-10-25",
+    "referenceNote": "参考文章使用江西鲜百合，仅核对通用蒸后形态；不作为兰州品种实拍。兰州食用部位另对照中国甘肃网原报道。",
+    "referenceSource": "https://www.gscn.com.cn/culture/system/2023/07/12/012989234.shtml",
+    "referenceSha256": "d3577d3ec75640e476e643257803fda318d636ec615f824c0df533dd414cb2cf"
   }
 ]
