@@ -1,0 +1,23 @@
+name: Plant to plate image standard
+on:
+  push:
+    branches: [fix/plant-to-plate-20261024]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Preserve exact review source
+        run: tar --exclude='./.git' -czf /tmp/atlas-image-standard-source.tgz .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: image-standard-source
+          path: /tmp/atlas-image-standard-source.tgz
+          retention-days: 7
