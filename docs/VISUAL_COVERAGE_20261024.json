@@ -1,9 +1,9 @@
 {
-  "version": "2026.10.24-visual.1",
+  "version": "2026.10.25-visual.2",
   "publicIngredients": 294,
   "homeCovered": 275,
-  "detailCovered": 95,
-  "paired": 92,
+  "detailCovered": 96,
+  "paired": 93,
   "explicitHomeUpdates": 71,
   "missingHome": [
     {
@@ -111,10 +111,6 @@
     {
       "id": "helan-luosicai",
       "name": "贺兰鲜螺丝菜"
-    },
-    {
-      "id": "lanzhou-xianbaihe",
-      "name": "兰州鲜甜百合"
     },
     {
       "id": "taitung-luoshen-calyx",

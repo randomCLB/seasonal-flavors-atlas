@@ -1,5 +1,15 @@
 # Plant-to-plate image standard · 2026-10-24
 
+## 2026-10-25 correction: identity and edible part come first
+
+This amendment takes precedence over the placement rules below. Keep an accepted ingredient cover unless the replacement improves identity, edible-part visibility and composition. A flowering relative, bare vine or distant pond is not an upgrade to a clear bulb, tuber or rhizome photograph. A raw whole ingredient with a small identification cross-section is eligible; a plate of prepared slices alone is not.
+
+The detail overview retains the recognizable ingredient. Place the reviewed cooked dish or fruit interior once inside “家常做法 / 怎么吃”, with its recipe. Source and generated-image captions appear on hover or keyboard focus; alt text remains explicit.
+
+Review actual pixels alongside the named food and source before assigning an image. Species-level evidence does not establish a named edible cultivar: the ordinary Lilium davidii flower was not evidence for Lanzhou Lilium davidii var. unicolor. Reject the cover even when its file is labeled “plant”.
+
+This correction restores five existing covers: fresh spiral stachys tubers, edible lily bulb/scales, Heshui fresh kudzu root, Hanshou lotus root and Huadu lotus root. The new plain steamed-lily recipe image is generated from a real cooking reference and is labeled as an illustration. The reference uses Jiangxi lily and supports cooked-scale shape only; it is not a Lanzhou cultivar photograph and is not redistributed. See EDIBLE_IMAGE_REVIEW_20261025.json for the decisions after viewing all 76 explicit home assignments.
+
 User request: the homepage shows the growing plant or whole identifiable ingredient; the opened detail leads with the prepared dish or fruit cut. Xiaozhou head mustard and Fuling Yuzao 100 must not reuse chopped generic mustard imagery.
 
 ## Role and identity
