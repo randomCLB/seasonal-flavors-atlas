@@ -24,9 +24,7 @@
   ['chestnut',/板栗|锥栗/],['fig',/无花果/]
  ];
  const plantFamilies=[
-  ['lei-bamboo-shoot',/雷竹笋|雷笋/],['ma-bamboo-shoot',/麻竹笋|麻笋/],
-  ['moso-bamboo-shoot',/毛笋|冬笋/],['thorn-bamboo-shoot',/刺竹笋/],
-  ['bitter-bamboo-shoot',/苦笋/],['sweet-bamboo-shoot',/甜笋/],
+  ['bamboo-shoot',/笋/],
   ['water-bamboo',/茭白/],['water-chestnut',/荸荠|马蹄/],['water-caltrop',/南湖菱|水红菱/],
   ['yam',/山药/],['radish',/萝卜/],['fava',/蚕豆/],['child-mustard',/儿菜|儿薹/],
   ['choy-sum',/菜心/],['white-caitai',/白菜薹/],['red-caitai',/红菜薹|洪山菜薹|鄂红4号.*菜薹/],
@@ -44,9 +42,11 @@
   ['eagle-claw-shrimp',/蛎虾|鹰爪虾|灯笼红虾/],
   ['june-yellow-crab',/六月黄/],['mud-crab',/青蟹|红鲟/],['jialai-fish',/加蚋鱼/]
  ];
- const preferred={19:['tainan-madou-frost-white-pomelo','xikou-xindongsun','lintong-huojing-shizi'],18:['laiyang-pear','cizhousun','lintong-huojing-shizi'],20:['cangnan-lidong-four-seasons-pomelo','rongan-jingju'],21:['wenzhou-sanyang-ougan'],23:['ningbo-youdai'],1:['pujiang-dahan-chunjian']};
+ // Editorial preferences describe a tasting choice, not an objective ranking of all cultivars.
+ const preferred={19:['tainan-madou-frost-white-pomelo','cizhousun','lintong-huojing-shizi'],18:['laiyang-pear','cizhousun','lintong-huojing-shizi'],20:['cangnan-lidong-four-seasons-pomelo','rongan-jingju','guangning-lidong-ma-bamboo-shoot'],21:['wenzhou-sanyang-ougan','cizhousun'],23:['ningbo-youdai'],1:['pujiang-dahan-chunjian'],4:['minhou-chayuan-highland-spring-shoot'],5:['conghua-lutian-bitter-shoot'],6:['huizhou-chengkan-qingming-tea-shoot'],7:['ningbo-xikou-spring-mao-bamboo-shoot'],12:['lianjiang-xiaoshu-june-hemp-bamboo-shoot'],14:['shidian-autumn-longzhu-shoot']};
  const match=(families,text)=>families.find(([,pattern])=>pattern.test(text))?.[0];
  function group(food){
+  const identityFamily=root.IngredientIdentity?.family(food);if(identityFamily)return identityFamily;
   if(food.category==='tea')return 'tea';
   const name=food.name||'',category=food.category;
   if(!category||category==='fruit'||category==='nuts'||category==='seed'){const family=match(fruitFamilies,name);if(family)return family;}
@@ -78,12 +78,12 @@
   let previous=previousPool;
   return pools.map((candidates,i)=>{
    const pool=candidates.filter(food=>group(food)!=='hairtail'||!quarterKeys[i]||winners.get(`${quarterKeys[i]}:hairtail`)?.id===food.id);
-   const ids=new Set(previous.map(food=>food.id)),fresh=pool.filter(food=>!ids.has(food.id)),feature=pool.find(food=>food.id===featuredIds[i]),repeated=pool.filter(food=>ids.has(food.id));
-   if(feature&&ids.has(feature.id))repeated.sort((a,b)=>Number(b===feature)-Number(a===feature));
+   const ids=new Set(previous.map(group)),fresh=pool.filter(food=>!ids.has(group(food))),feature=pool.find(food=>food.id===featuredIds[i]),repeated=pool.filter(food=>ids.has(group(food)));
+   if(feature&&ids.has(group(feature)))repeated.sort((a,b)=>Number(b===feature)-Number(a===feature));
    const keep=new Set(fresh.map(food=>food.id));for(const food of repeated.slice(0,fresh.length))keep.add(food.id);
    if(!keep.size&&pool.length)keep.add((feature||pool[0]).id);
    const list=pool.filter(food=>keep.has(food.id));previous=list;return list;
   });
  }
- root.SeasonSelection={select,group,plan,holds:editorialHolds,labels:{billfish:'旗鱼类',seerfish:'马鲛与鰆鱼','sea-bream':'海鲷类',cuttlefish:'乌贼类','neritic-squid':'锁管与小卷'},variants:(food,catalog)=>(catalog||[]).filter(other=>other.id!==food.id&&group(other)===group(food))};
+ root.SeasonSelection={select,group,plan,holds:editorialHolds,labels:{billfish:'旗鱼类',seerfish:'马鲛与鰆鱼','sea-bream':'海鲷类',cuttlefish:'乌贼类','neritic-squid':'锁管与小卷'},variants:(food,catalog)=>{const I=root.IngredientIdentity,list=I?I.catalog(catalog||[]):catalog||[];return list.filter(other=>(I?I.key(other)!==I.key(food):other.id!==food.id)&&group(other)===group(food));}};
 })(typeof window==='undefined'?globalThis:window);

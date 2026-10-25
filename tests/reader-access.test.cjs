@@ -3,7 +3,7 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const {load,audit}=require('../scripts/audit-reader-access.cjs'),ctx=load(),W=ctx.window,A=W.ReaderAccess,M=W.FoodMedia,I=W.IngredientIdentity,dir=path.join(__dirname,'../dist'),raw=W.FOODS,byId=Object.fromEntries(raw.map(f=>[f.id,f]));
 const read=n=>fs.readFileSync(path.join(dir,n),'utf8');
 test('Taiwan seafood without verified identity-matched access is absent from the reader catalog',()=>{
- const catalog=vm.runInContext('canonicalCatalog',ctx),withdrawn=I.catalog(raw).filter(f=>!A.visible(f));assert.equal(raw.length,354);assert.equal(catalog.length,291);assert.equal(withdrawn.length,31);
+ const catalog=vm.runInContext('canonicalCatalog',ctx),withdrawn=I.catalog(raw).filter(f=>!A.visible(f));assert.equal(raw.length,357);assert.equal(catalog.length,294);assert.equal(withdrawn.length,31);
  for(const id of ['taiwan-lichiu-kaohsiung-xiaochuan','taiwan-jingzhe-tongjian','suao-jingzhe-huahui','suao-jingzhe-muhou','suao-jingzhe-dingmian','keelung-jingzhe-wenyu','taiwan-lichiu-penghu-shrimp','taiwan-qiufen-northeast-shrimp']){assert.ok(byId[id]);assert.ok(!A.visible(byId[id]),id);assert.ok(!catalog.some(f=>f.id===I.key(id)));}
  // Region strings without the literal Taiwan must not bypass the policy.
  assert.ok(A.scope(byId['taiwan-lichun-mackerel']));assert.ok(A.visible(byId['taiwan-lichun-mackerel']));

@@ -227,3 +227,6 @@ Object.assign(window.LOTTERY_PROFILES['taiwan-qiufen-northeast-shrimp'],{senses:
 
 Object.assign(window.LOTTERY_PROFILES['jiangjin-bailu-late-harvest-pepper'],{senses:{signature:'3f0fa75e',tastes:['spicy'],recipeTastes:['spicy'],textures:[],cooking:['sauce'],features:['重庆市农业农村委员会2025年白露前后延迟采收试验','报道所述麻味物质比较仅适用于该试验批次，不是本站试吃']}});
 (function(){window.LOTTERY_PROFILES['suzhou-bailu-ginkgo'].senses={signature:'e45265c4',tastes:['bitter'],recipeTastes:[],textures:['soft'],cooking:['soup'],features:['苏州白果白露至秋分采收','白果去壳去衣膜去胚芽后充分加热']};})();
+window.LOTTERY_PROFILES["mengzi-lvzi-softseed-pomegranate"].senses={signature:"9b5d6a08",tastes:["sweet"],recipeTastes:[],textures:["juicy"],cooking:["fresh"],features:["蒙自市政府资料记载籽软、多汁、甜度高"]};
+window.LOTTERY_PROFILES["baoshan-zaoqiu-sweet-persimmon"].senses={signature:"a3ea93ca",tastes:["sweet"],recipeTastes:[],textures:["crisp","juicy"],cooking:["fresh"],features:["地方报道描述果肉紧实、汁水丰盈、脆爽清甜"]};
+window.LOTTERY_PROFILES["shanzhou-black-emperor-grape"].senses={signature:"763968d1",tastes:["sweet"],recipeTastes:[],textures:["juicy","tender"],cooking:["fresh"],features:["陕州区政府报道记录黑皇葡萄八月中下旬成熟采摘"]};
