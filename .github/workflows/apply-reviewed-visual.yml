@@ -111,8 +111,9 @@ jobs:
           assert len(manifest)==44
           manifest_path=Path('docs/VISUAL_MEDIA_20261024.json')
           manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          subprocess.run(['git','add',*sorted(allowed),str(manifest_path),'dist/assets/visual'],check=True)
-          print(json.dumps({'sourceFiles':len(allowed),'reviewedPhotographs':len(manifest)},ensure_ascii=False))
+          source_paths=sorted(allowed-{'.github/workflows/image-standard.yml'})
+          subprocess.run(['git','add',*source_paths,str(manifest_path),'dist/assets/visual'],check=True)
+          print(json.dumps({'sourceFiles':len(source_paths),'reviewedPhotographs':len(manifest)},ensure_ascii=False))
           PY
       - uses: actions/setup-node@v4
         with:
@@ -125,6 +126,7 @@ jobs:
           node scripts/prepare-reader-release.cjs
           node --test tests/visual-standard.test.cjs tests/reader-access.test.cjs tests/reader-copy.test.cjs tests/ingredient-photo-priority.test.cjs
           git diff --cached --stat
+          git diff --cached --name-only | grep -q '^.github/workflows/' && exit 1 || true
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Separate botanical covers from plated detail images and replace misleading shared photographs'
