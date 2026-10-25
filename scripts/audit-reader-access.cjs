@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.join(__dirname,'..'),dir=path.join(root,'dist');
 function load(){
  const ctx={window:{},document:{getElementById:()=>({style:{}})}};vm.createContext(ctx);
- const layers=['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','term-gap-additions','editorial-copy','photo-review','catalog-photos','ingredient-identity','reader-copy','reader-copy-curation','reader-depth','season-features','season-selection','reader-media-additions','reader-access','food-media'];
+ const layers=['solar-terms','data','editorial','editorial-notes','november-additions','core-refinements','winter-additions','seasonal-additions','term-gap-additions','editorial-copy','photo-review','catalog-photos','ingredient-identity','reader-copy','reader-copy-curation','reader-depth','season-features','season-selection','reader-media-additions','reader-access','visual-standard','food-media'];
  for(const n of layers)vm.runInContext(fs.readFileSync(path.join(dir,n+'.js'),'utf8'),ctx,{filename:n});
  ctx.window.FengwuLottery=require('../dist/lottery-core.js');const app=fs.readFileSync(path.join(dir,'app.js'),'utf8');vm.runInContext(app.slice(0,app.indexOf('function renderTermRail')),ctx);return ctx;
 }

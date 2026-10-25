@@ -19,3 +19,27 @@ Start from a reliable photograph of the correct subject. Background and lighting
 ## Acceptance
 
 Review actual pixels for all changed assignments. Report duplicated source images across public entries, suspicious cut/cooked homepage images, detail images and missing role pairs separately. Check desktop and narrow screens; preserve existing admission, identity, season selection, safety, sources, saved records and sharing. Publishing is complete only after live image-role checks and screenshots of the target foods.
+
+## Implemented review in this release
+
+Baseline: ad08d184. New presentation version: 2026.10.24-visual.1. This change does not alter source food observations, recipes, seasonal dates, access policy or saved records.
+
+- Explicitly replace the five formerly conflated mustard pictures. Xiaozhou uses its local harvest scene and a clearly labeled preserved-head-mustard plate; Yuzao100 uses the distinct swollen-stem plant and a documented tasting-event plate. The Xiaozhou plate is an alternative local preparation, not an assertion that the photograph shows the fresh garlic recipe below it.
+- Correct walnut/hickory pictures that were assigned through the character 桃. Replace the misleading red-lychee-like generated hongguoshen image with a source photograph of the actual dark berries on the plant.
+- Review 44 new photographic files and apply the same gentle treatment (94% saturation, 98% contrast), proportional resizing and WebP encoding. No food anatomy is redrawn. Crops and original source hashes are recorded. Exact local-food reportage is identified as an attributed source reference where no open license was established; it must never be relabeled as CC or public domain. Those rights limitations remain explicit in the credits and manifest.
+- Home and detail roles are separate. A prepared dish or cut fruit leads the detail when reviewed imagery exists; the plant/whole-ingredient photograph moves to the separate “认食材” section. The interface uses the same neutral frame, 4:3 detail ratio, restrained role labels and visible source caption. Existing recipe illustrations keep their illustration label.
+- The resolver rejects known cooked, sliced and unreviewed images as plant covers. It does not infer the subject from a filename ending in plant, raw or ingredient. A shared image retains its source identity; a second crop does not establish a distinct cultivar photograph.
+
+## Honest scope and remaining work
+
+The public catalog remains 291 entries. This release updates home imagery for 68 entries. There are 272 eligible home covers, 95 reviewed dish/fruit-cut detail images and 92 complete home/detail pairs. The initial image-generation attempt did not start; no newly synthesized image is included in these numbers.
+
+19 public entries lack an eligible home image: the previous 16 gaps plus three formerly counted cut/prepared images (soft kiwi, winter lamb and duoyi). These entries remain in the full directory and all-in-season view, outside curated recommendations. They are not deleted to improve a coverage percentage. The complete missing-home and missing-detail lists are in VISUAL_COVERAGE_20261024.json. Remaining same-food/variety reference sharing is reported by the visual audit, not represented as unique source photography.
+
+This is a first visual-standard pass, not a claim that all 291 entries now have a finished plant-to-plate pair or that every plant reference depicts the exact named cultivar. A photograph of a related species must not be used as an exact cultivar photo; use an explicit shape-reference caption only after identity review.
+
+## Next asset admission
+
+Each new assignment must have an explicit scene, food identity, source, original-image hash, derivative hash, crop/focus and reference/illustration status. Plant/whole scenes go to discovery surfaces; dish/cut scenes go to the detail lead. AI-assisted edits, when used, must start with a verified target reference and preserve leaves, edible organs, fruit interior, proportions and cooked texture. Background, lighting and plate styling may be adjusted; the result must be visually checked against the reference and labeled as edited illustration.
+
+Run `node scripts/prepare-reader-release.cjs` twice and compare hashes, run the full regression suite and unchanged 2027 draw snapshot, then run the visual/access/identity/reader browser checks. New image roles are verified on the actual DOM in two widths and new files are decoded in Chromium. Publishing is complete only after the live revision and served bytes match.

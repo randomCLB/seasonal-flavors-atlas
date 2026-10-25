@@ -1,0 +1,13 @@
+/* Consistent botanical / table photography without recoloring the actual food. */
+:root{--visual-paper:#eeeadf;--visual-ink:#284b3a;--visual-line:#d1d5c6}
+.visual-frame{position:relative;aspect-ratio:4/3;background:var(--visual-paper);overflow:hidden;border:1px solid var(--visual-line)}
+.visual-frame>img{display:block;width:100%;height:100%;object-fit:cover}
+.visual-role{position:absolute;left:12px;bottom:12px;padding:5px 9px;color:var(--visual-ink);background:rgba(249,248,240,.94);font-size:11px;letter-spacing:.12em;border-radius:2px}
+.reader-portrait{align-self:start}.reader-portrait>.visual-frame{min-height:0}
+.reader-portrait figcaption,.reader-ingredient figcaption{opacity:1!important;font-size:11px;line-height:1.75;color:#526455;margin:9px 0 0;overflow-wrap:anywhere}
+.reader-ingredient{margin:10px 0 24px;max-width:720px}.reader-ingredient .visual-frame{aspect-ratio:4/3}
+.reader-portrait figcaption a,.reader-ingredient figcaption a{color:inherit;text-underline-offset:3px}
+.visual-build{display:block;font-size:10px;color:#657768;margin:6px 0}
+#visual-media-credits article{padding:14px 0;border-bottom:1px solid var(--visual-line);overflow-wrap:anywhere}
+#visual-media-credits p{line-height:1.8}
+@media(max-width:650px){.reader-portrait .visual-frame{aspect-ratio:4/3}.reader-overview{gap:16px}.reader-portrait figcaption{font-size:10px}.visual-role{left:10px;bottom:10px}}

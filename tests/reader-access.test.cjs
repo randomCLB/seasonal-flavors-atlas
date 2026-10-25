@@ -21,7 +21,7 @@ test('one shared resolver supplies formerly registry-only images and keeps dish 
 });
 test('every curated term has real local covers and preserves its sourced feature; full catalog retains unresolved entries',()=>{
  for(const t of vm.runInContext('termWindow',ctx)){ctx.t=t;const list=vm.runInContext('seasonFoodsFor(t)',ctx);assert.ok(list.length);assert.ok(list.some(f=>f.id===W.SEASON_FEATURES[t.index].foodId),W.SOLAR_TERM_NAMES[t.index]);for(const f of list){assert.ok(A.visible(f));assert.ok(M.hasIngredient(f),f.id);assert.ok(fs.existsSync(path.join(dir,M.ingredient(f).src)),f.id);}}
- const report=audit();assert.equal(report.broken.length,0);assert.equal(report.missing.length,16);assert.equal(report.covered,275);
+ const report=audit();assert.equal(report.broken.length,0);const expected=require('../docs/VISUAL_COVERAGE_20261024.json');assert.equal(JSON.stringify(report.missing.map(f=>f.id).sort()),JSON.stringify(expected.missingHome.map(f=>f.id).sort()));assert.equal(report.covered,expected.homeCovered);
 });
 test('all added photographs retain source and derivative hashes with on-site credits',()=>{
  const manifest=require('../docs/READER_MEDIA_20261024.json');assert.equal(manifest.length,9);for(const p of manifest){assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(dir,p.path))).digest('hex'),p.sha256);assert.match(p.sourceSha256,/^[a-f0-9]{64}$/);assert.match(p.license,/^(CC0|CC BY|Public domain)/);assert.ok(read('credits.html').includes(p.source.replaceAll('&','&amp;')));}
