@@ -8,9 +8,9 @@ const loader='<script src="reader-copy.js?v=reader-20261023-1"></script><script 
 for(const page of ['index.html','tarot.html','lottery.html']){
  const file='dist/'+page,p=path.join(root,file);let s=fs.readFileSync(p,'utf8');
  if(!s.includes('src="reader-copy.js')){const anchor=s.match(/<script\b[^>]*\bsrc="food-purchase\.js[^\"]*"[^>]*><\/script>/)?.[0];if(!anchor)throw Error(file+': missing purchase module');s=s.replace(anchor,loader+anchor);}
- for(const script of ['app.js','food-detail.js','food-purchase.js','tarot-spread-ui.js','lottery-ui.js'])s=s.replace(new RegExp('src="('+script.replace('.','\\.')+'(?:\\?[^\"]*)?)"','g'),(all,url)=>`src="${/[?&]reader=/.test(url)?url.replace(/([?&])reader=[^&"]*/,'$1reader=20261024-1'):url+(url.includes('?')?'&':'?')+'reader=20261024-1'}"`);
- s=s.replace(/<small class="build-version reader-build">[^<]*<\/small>/g,'<small class="build-version reader-build">文案版 2026.10.24-depth.1</small>');
- if(page==='index.html'&&!s.includes('文案版 2026.10.24-depth.1'))s=s.replace('</footer>','<small class="build-version reader-build">文案版 2026.10.24-depth.1</small></footer>');
+ for(const script of ['app.js','food-detail.js','food-purchase.js','reader-media-additions.js','tarot-spread-ui.js','lottery-ui.js'])s=s.replace(new RegExp('src="('+script.replace('.','\\.')+'(?:\\?[^\"]*)?)"','g'),(all,url)=>`src="${/[?&]reader=/.test(url)?url.replace(/([?&])reader=[^&"]*/,'$1reader=20261026-1'):url+(url.includes('?')?'&':'?')+'reader=20261026-1'}"`);
+ s=s.replace(/<small class="build-version reader-build">[^<]*<\/small>/g,'<small class="build-version reader-build">文案版 2026.10.26-depth.1</small>');
+ if(page==='index.html'&&!s.includes('文案版 2026.10.26-depth.1'))s=s.replace('</footer>','<small class="build-version reader-build">文案版 2026.10.26-depth.1</small></footer>');
  s=s.replace('展开两人份做法与注意事项','展开做法与注意事项');fs.writeFileSync(p,s);
 }
 replace('dist/app.js','const foods=window.FOODS;','const readerCatalogData=window.ReaderAccess?window.ReaderAccess.filter(window.FOODS):window.FOODS;const foods=window.ReaderCopy ? readerCatalogData.map(f=>window.ReaderCopy.view({...f,...window.EDITORIAL_DETAILS?.[f.id]})) : readerCatalogData;');
@@ -32,6 +32,6 @@ replace('dist/lottery-ui.js',"时令精度：${s.precision==='season'?'季节级
 require('./prepare-catalog-quality.cjs');
 require('./prepare-reader-access.cjs');
 require('./prepare-visual-standard.cjs');
-const version='2026.10.24-depth.1';
-fs.writeFileSync(path.join(root,'dist','build-info.json'),JSON.stringify({siteCommit:process.env.RELEASE_SHA||process.env.GITHUB_SHA||'local',readerVersion:version,accessVersion:'2026.10.24-access.1',visualVersion:'2026.10.25-visual.2',catalogCount:require('./audit-reader-copy.cjs').load().FOODS.length},null,2)+'\n');
+const version='2026.10.26-depth.1';
+fs.writeFileSync(path.join(root,'dist','build-info.json'),JSON.stringify({siteCommit:process.env.RELEASE_SHA||process.env.GITHUB_SHA||'local',readerVersion:version,accessVersion:'2026.10.24-access.1',visualVersion:'2026.10.27-visual.1',catalogCount:require('./audit-reader-copy.cjs').load().FOODS.length},null,2)+'\n');
 console.log('Prepared reader integration',version);

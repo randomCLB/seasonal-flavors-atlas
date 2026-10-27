@@ -1,9 +1,9 @@
 {
-  "version": "2026.10.25-visual.2",
+  "version": "2026.10.27-visual.1",
   "publicIngredients": 294,
   "homeCovered": 275,
-  "detailCovered": 96,
-  "paired": 93,
+  "detailCovered": 98,
+  "paired": 95,
   "explicitHomeUpdates": 71,
   "missingHome": [
     {
@@ -85,20 +85,8 @@
   ],
   "missingDetail": [
     {
-      "id": "cizhousun",
-      "name": "刺竹笋"
-    },
-    {
       "id": "shajiguo",
       "name": "沙棘果"
-    },
-    {
-      "id": "xunyang-guizao",
-      "name": "旬阳拐枣"
-    },
-    {
-      "id": "jinjiang-toushui-zicai",
-      "name": "晋江头水紫菜"
     },
     {
       "id": "huizhou-chengkan-qingming-tea-shoot",
@@ -111,6 +99,10 @@
     {
       "id": "helan-luosicai",
       "name": "贺兰鲜螺丝菜"
+    },
+    {
+      "id": "binchuan-renong1-yuganzi",
+      "name": "宾川“热农1号”余甘子"
     },
     {
       "id": "taitung-luoshen-calyx",

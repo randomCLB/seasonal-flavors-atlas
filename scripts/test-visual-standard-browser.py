@@ -15,7 +15,7 @@ try:
         with urlopen(Request(BASE+name+'?'+urlencode({'visual_verify':SHA}),headers={'User-Agent':'SeasonalAtlasVisualAudit'}),timeout=30) as r:body=r.read()
         digest=hashlib.sha256(body).hexdigest();assert digest==hashlib.sha256(Path('dist',name).read_bytes()).hexdigest(),name
         if name=='build-info.json':
-            data=json.loads(body);assert data['visualVersion']=='2026.10.25-visual.2'
+            data=json.loads(body);assert data['visualVersion']=='2026.10.27-visual.1'
             if SHA:assert data['siteCommit']==SHA
         report['resources'].append({'path':name,'sha256':digest,'match':True})
     with sync_playwright() as p:

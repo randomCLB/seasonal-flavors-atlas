@@ -269,7 +269,7 @@
 
 9 张独立生成的鲜果或熟食示意图，非实物摄影，不作物种、品种和产地鉴别。原始输出、完整提示词、输入参考路径和输出 SHA-256 见 [图片登记](docs/yunnan-additions-20261015/image-manifest.json)。报道图只保留作食材形态参考，开放许可未明者限本地审阅，未发布。竹虫参考 Takoradee / Wikimedia Commons 的 Bamboo worms on plate.png（曼谷拍摄，CC BY-SA 3.0）；重做餐盘、排列与光线，改作沿用 CC BY-SA 3.0。
 
-- 保山亮脆余甘子：`dist/assets/baoshan-liangcui-emblica-serving-generated.webp` · 900×1200
+- 保山亮脆余甘子原貌：`dist/assets/baoshan-liangcui-emblica-serving-generated.webp` · 900×1200；果切生成候选暂留本地，果核形态与资料不符，未用于页面。宾川热农1号同类果切示意也暂停页面展示，待替换为可靠图像。
 - 宁洱同心甜笋：`dist/assets/ninger-tongxin-sweet-shoot-serving-generated.webp` · 900×1200
 - 永胜鲜攀枝花：`dist/assets/yongsheng-fresh-kapok-serving-generated.webp` · 900×1200
 - 建水草芽：`dist/assets/jianshui-caoya-serving-generated.webp` · 900×1200

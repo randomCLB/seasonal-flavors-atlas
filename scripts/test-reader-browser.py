@@ -24,7 +24,7 @@ try:
             context=browser.new_context(viewport={'width':width,'height':height},device_scale_factor=1,reduced_motion='reduce')
             page=context.new_page();page.on('pageerror',lambda error:report['errors'].append(str(error)))
             page.goto(BASE+'?'+urlencode({'reader_verify':SHA}),wait_until='load');page.locator('.reader-build').wait_for()
-            assert '2026.10.24-depth.1' in page.locator('.reader-build').inner_text()
+            assert '2026.10.26-depth.1' in page.locator('.reader-build').inner_text()
             assert '2026.10.24-identity.1' in page.locator('.identity-build').inner_text()
             assert page.locator('#categoryFilter [data-category]').evaluate_all('els=>els.map(e=>e.dataset.category)')==['all','vegetable','fruit','protein','other']
             if width==1400:
