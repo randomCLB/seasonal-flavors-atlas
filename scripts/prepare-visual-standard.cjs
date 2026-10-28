@@ -1,9 +1,9 @@
 "use strict";
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
-const root=path.join(__dirname,'..'),version='2026.10.27-visual.1';
+const root=path.join(__dirname,'..'),version='2026.10.27-visual.2';
 for(const name of ['index.html','tarot.html','lottery.html']){
  const p=path.join(root,'dist',name);let h=fs.readFileSync(p,'utf8').replaceAll('20261024-visual1','20261027-hover1').replaceAll('20261025-visual2','20261027-hover1').replaceAll('visual=20261024-1','visual=20261027-hover1').replaceAll('visual=20261025-2','visual=20261027-hover1').replaceAll('2026.10.24-visual.1',version);
- if(!h.includes('src="visual-standard.js')){const defer=name==='index.html'?'':' defer';h=h.replace('<script src="food-media.js',`<script src="visual-standard.js?v=20261027-verified1"${defer}></script><script src="food-media.js`);}
+ if(!h.includes('src="visual-standard.js')){const defer=name==='index.html'?'':' defer';h=h.replace('<script src="food-media.js',`<script src="visual-standard.js?v=20261027-frost2"${defer}></script><script src="food-media.js`);}
  if(!h.includes('href="visual-standard.css'))h=h.replace('</head>','<link rel="stylesheet" href="visual-standard.css?v=20261027-hover1">\n</head>');
  h=h.replace(/src="((?:app|food-media|food-detail)\.js[^"]*)"/g,(all,url)=>`src="${/[?&]visual=/.test(url)?url:url+(url.includes('?')?'&':'?')+'visual=20261027-hover1'}"`);
  if(name==='index.html'&&!h.includes('class="visual-build"'))h=h.replace('</footer>',`<small class="visual-build">影像版 ${version}</small></footer>`);

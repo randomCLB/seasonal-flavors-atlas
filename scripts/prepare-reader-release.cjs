@@ -33,5 +33,5 @@ require('./prepare-catalog-quality.cjs');
 require('./prepare-reader-access.cjs');
 require('./prepare-visual-standard.cjs');
 const version='2026.10.26-depth.1';
-fs.writeFileSync(path.join(root,'dist','build-info.json'),JSON.stringify({siteCommit:process.env.RELEASE_SHA||process.env.GITHUB_SHA||'local',readerVersion:version,accessVersion:'2026.10.24-access.1',visualVersion:'2026.10.27-visual.1',catalogCount:require('./audit-reader-copy.cjs').load().FOODS.length},null,2)+'\n');
+fs.writeFileSync(path.join(root,'dist','build-info.json'),JSON.stringify({siteCommit:process.env.RELEASE_SHA||process.env.GITHUB_SHA||'local',readerVersion:version,accessVersion:'2026.10.24-access.1',visualVersion:'2026.10.27-visual.2',catalogCount:require('./audit-reader-copy.cjs').load().FOODS.length},null,2)+'\n');
 console.log('Prepared reader integration',version);

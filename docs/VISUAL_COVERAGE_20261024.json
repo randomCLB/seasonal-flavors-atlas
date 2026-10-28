@@ -1,10 +1,10 @@
 {
-  "version": "2026.10.27-visual.1",
+  "version": "2026.10.27-visual.2",
   "publicIngredients": 294,
   "homeCovered": 275,
-  "detailCovered": 98,
-  "paired": 95,
-  "explicitHomeUpdates": 71,
+  "detailCovered": 102,
+  "paired": 99,
+  "explicitHomeUpdates": 72,
   "missingHome": [
     {
       "id": "ruanzao-mihoutao",
@@ -85,6 +85,10 @@
   ],
   "missingDetail": [
     {
+      "id": "nanhu-ling",
+      "name": "南湖菱"
+    },
+    {
       "id": "shajiguo",
       "name": "沙棘果"
     },
@@ -97,10 +101,6 @@
       "name": "保山亮脆余甘子"
     },
     {
-      "id": "helan-luosicai",
-      "name": "贺兰鲜螺丝菜"
-    },
-    {
       "id": "binchuan-renong1-yuganzi",
       "name": "宾川“热农1号”余甘子"
     },
@@ -111,10 +111,6 @@
     {
       "id": "luoping-hongguoshen",
       "name": "罗平红果参"
-    },
-    {
-      "id": "heshi-xianfenge",
-      "name": "合水鲜粉葛"
     },
     {
       "id": "xikou-xindongsun",
@@ -155,10 +151,6 @@
     {
       "id": "laiyang-pear",
       "name": "莱阳梨"
-    },
-    {
-      "id": "heze-shannong-crisp-pear",
-      "name": "菏泽山农酥梨"
     },
     {
       "id": "junan-jinqiuhongmi-peach",
@@ -385,10 +377,6 @@
       "name": "隆林三月李"
     },
     {
-      "id": "wuding-fawowo-winter-peach",
-      "name": "武定发窝冬桃"
-    },
-    {
       "id": "pinggu-yingshuanghong-late-peach",
       "name": "平谷金海湖映霜红大桃"
     },
@@ -491,10 +479,6 @@
     {
       "id": "shiping-shaochong-bailu-walnut",
       "name": "石屏哨冲白露鲜核桃"
-    },
-    {
-      "id": "wenxian-shuangjiang-tiegun-yam",
-      "name": "温县霜降铁棍山药"
     },
     {
       "id": "jiangmen-muzhou-qingming-huangsha-clam",
