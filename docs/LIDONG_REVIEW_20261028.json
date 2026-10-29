@@ -1,0 +1,218 @@
+[
+  {
+    "id": "helan-luosicai",
+    "name": "贺兰鲜螺丝菜",
+    "home": "assets/helan-luosicai-generated.webp",
+    "homeNote": "生成示意 · 非实物摄影",
+    "detail": "assets/helan-luosicai-stirfried-20261027-generated.webp",
+    "detailNote": "清炒螺丝菜 · 生成示意 · 图中搭配葱 · 非贺兰实拍",
+    "short": "乳白块茎一节节盘成小螺旋，逐节洗净煮熟，清炒尝脆嫩。"
+  },
+  {
+    "id": "lanzhou-xianbaihe",
+    "name": "兰州鲜甜百合",
+    "home": "assets/lanzhou-xianbaihe-generated.webp",
+    "homeNote": "生成示意 · 非实物摄影，非品种鉴别",
+    "detail": "assets/visual/lanzhou-lily-steamed-generated.webp",
+    "detailNote": "清蒸鲜百合 · 参考实拍重制的生成示意，非实物摄影",
+    "short": "食用百合拆开鲜鳞片，清蒸后细糯清甜，一片片慢慢尝。"
+  },
+  {
+    "id": "xiaolan-shiju-huaban",
+    "name": "小榄鲜食菊花瓣",
+    "home": "assets/visual/xiaolan-edible-chrysanthemum.webp",
+    "homeNote": "小榄食用菊 · 鲜采花朵",
+    "detail": "assets/xiaolan-shiju-huaban-generated.webp",
+    "detailNote": "鲜菊花瓣鸡汤 · 既有配方示意",
+    "short": "食用菊鲜花瓣放进清鸡汤，临起锅前煮熟，柔嫩里带轻轻花香。"
+  },
+  {
+    "id": "luoping-hongguoshen",
+    "name": "罗平红果参",
+    "home": "assets/visual/hongguoshen-fruiting.webp",
+    "homeNote": "红果参 · 枝头果实参考",
+    "detail": "",
+    "detailNote": "",
+    "short": "鲜果酸甜，细嚼带一点沙脆，洗净后原味鲜尝。"
+  },
+  {
+    "id": "heshi-xianfenge",
+    "name": "合水鲜粉葛",
+    "home": "assets/heshi-xianfenge-generated.webp",
+    "homeNote": "生成示意 · 非实物摄影，非产地鉴别",
+    "detail": "assets/heshi-fenge-fish-soup-20261027-generated.webp",
+    "detailNote": "粉葛鱼汤 · 生成示意 · 鱼种及产地非实拍",
+    "short": "鲜葛根粉糯清甜，炖汤或蒸熟尝原味。"
+  },
+  {
+    "id": "huangbohai-yingzhuaxia",
+    "name": "鹰爪虾（蛎虾）",
+    "home": "assets/lidong-shrimp-whole-illustration.webp",
+    "homeNote": "整虾形态生成示意 · 非鹰爪虾物种或产地鉴别",
+    "detail": "assets/lidong-shrimp-boiled.webp",
+    "detailNote": "姜葱盐煮虾生成示意，非鹰爪虾物种鉴别",
+    "short": "小个厚壳，虾肉绵软鲜甜；姜葱盐煮，剥壳趁热吃。"
+  },
+  {
+    "id": "mouding-winter-early-fava",
+    "name": "鲜蚕豆",
+    "home": "assets/catalog/fava-1.webp",
+    "homeNote": "蚕豆植株与鲜荚 · 实拍",
+    "detail": "assets/lidong-fava-boiled.webp",
+    "detailNote": "清煮蚕豆米生成示意",
+    "short": "鲜豆米清煮后甜糯，趁热吃，细尝豆香。"
+  },
+  {
+    "id": "cangnan-lidong-four-seasons-pomelo",
+    "name": "苍南四季柚",
+    "home": "assets/visual/pomelo-growing.webp",
+    "homeNote": "柚类 · 枝头果实与叶片",
+    "detail": "assets/xihu-wendan-pomelo-generic-ivar-leidus-cc-by-sa-4.0.jpg",
+    "detailNote": "柚类剥开与果肉 · 形态参考",
+    "short": "立冬前后采收，果肉脆嫩多汁、甜酸适口。"
+  },
+  {
+    "id": "dalian-jinzhou-hairyclam",
+    "name": "大连金州毛蚶",
+    "home": "assets/catalog/hairyclam.webp",
+    "homeNote": "毛蚶类 · 同类实拍",
+    "detail": "",
+    "detailNote": "",
+    "short": "蚶肉饱满多汁，配姜葱煮透，剥壳趁热吃。"
+  },
+  {
+    "id": "qingdao-shuangdongmi-peach",
+    "name": "青岛“双冬蜜”极晚熟桃",
+    "home": "assets/junan-ripe-peach-photo-cc-by-sa.jpg",
+    "homeNote": "桃果实拍 · Wikimedia Commons · CC BY-SA 4.0 · 不代表产地或品种",
+    "detail": "",
+    "detailNote": "",
+    "short": "绿白果肉脆甜、离核，切瓣鲜吃，细尝晚熟桃味。"
+  },
+  {
+    "id": "qixia-lidong-winter-after-apple",
+    "name": "栖霞“冬后”苹果",
+    "home": "assets/fresh-apples-tree-photo-cc-by.jpg",
+    "homeNote": "苹果实拍 · Wikimedia Commons · CC BY 4.0 · 不代表产地或具体品种",
+    "detail": "assets/lidong-apple-cut.webp",
+    "detailNote": "鲜切苹果生成示意，非栖霞或冬后品种实拍",
+    "short": "留树晚熟的甜，洗净切瓣，先吃一口原味。"
+  },
+  {
+    "id": "yongjia-hesheng-red-persimmon",
+    "name": "永嘉鹤盛红柿",
+    "home": "assets/lintong-huojing.webp",
+    "homeNote": "红柿 · 同类整果参考",
+    "detail": "assets/persimmon-editorial-v1-generated.webp",
+    "detailNote": "通用柿子形态参考，不用于产地或品种鉴别。",
+    "short": "皮薄味甜的地方晚熟柿，先确认成熟脱涩再吃。"
+  },
+  {
+    "id": "taiwan-lidong-east-red-eye-bream",
+    "name": "红目鰱",
+    "home": "assets/lidong-red-eye-illustration.webp",
+    "homeNote": "同类鱼形生成示意 · 非台湾产地实拍",
+    "detail": "",
+    "detailNote": "",
+    "short": "红目鰱清蒸熟透，姜葱只作提香，调味轻一些。"
+  },
+  {
+    "id": "taiwan-jialiao-bream",
+    "name": "真鲷（嘉鱲）",
+    "home": "assets/pagrus-major-miya-cc-by-sa.webp",
+    "homeNote": "真鲷参考照片 · 日本鱼店，非台湾产地实拍",
+    "detail": "assets/lidong-bream-steamed.webp",
+    "detailNote": "姜葱清蒸鱼段生成示意 · 非产地实拍或品种鉴别",
+    "short": "加纳鱼铺姜葱蒸熟，先尝原味，再配热饭。"
+  },
+  {
+    "id": "guangning-lidong-ma-bamboo-shoot",
+    "name": "麻竹笋",
+    "home": "assets/lidong-bamboo-illustration.webp",
+    "homeNote": "竹笋形态生成示意 · 非麻竹品种或广宁产地实拍",
+    "detail": "assets/lidong-bamboo-stirfry.webp",
+    "detailNote": "蒜炒竹笋生成示意，非麻竹品种鉴别",
+    "short": "笋香清淡、嫩处脆口，焯熟切片，和肉片同炒。"
+  },
+  {
+    "id": "pingdu-majiagou-celery",
+    "name": "平度马家沟芹菜",
+    "home": "assets/catalog/celery.webp",
+    "homeNote": "芹菜植株 · 同类实拍",
+    "detail": "assets/lidong-celery-stirfry.webp",
+    "detailNote": "蒜炒芹菜生成示意，非马家沟产地实拍",
+    "short": "立冬前后开采的地方芹菜；空心嫩黄、清香酥脆。"
+  },
+  {
+    "id": "xunyang-guizao",
+    "name": "旬阳拐枣",
+    "home": "assets/xunyang-guizao.jpg",
+    "homeNote": "枳椇果实与肉质果梗形态参考；摄影者 JMK，CC BY-SA 3.0，拍摄地未注明，不代表旬阳产地实拍。",
+    "detail": "assets/xunyang-guizao-juice-generated.webp",
+    "detailNote": "生成示意 · 果梗参考 JMK / CC BY-SA 3.0 · 非实物摄影",
+    "short": "弯曲小枝般的肉质果梗，成熟后柔软带甜，去掉旁边的小硬果再吃。"
+  },
+  {
+    "id": "lanxi-huitan-sugarcane",
+    "name": "兰溪汇潭甘蔗",
+    "home": "assets/visual/sugarcane-stem-leaf.webp",
+    "homeNote": "甘蔗 · 蔗茎与叶片参考",
+    "detail": "",
+    "detailNote": "",
+    "short": "蔗肉脆嫩多汁，削皮切段，慢慢嚼取清甜蔗汁。"
+  },
+  {
+    "id": "rongan-jingju",
+    "name": "融安脆蜜／滑皮金桔",
+    "home": "assets/visual/kumquat-on-tree.webp",
+    "homeNote": "金桔 · 枝头整果与叶片",
+    "detail": "assets/rongan-jingju-generated.webp",
+    "detailNote": "金桔果切 · 既有鲜食示意",
+    "short": "果皮爽脆，果肉多汁，甜中带一点清爽果酸。"
+  },
+  {
+    "id": "zhangqiu-dawutong-scallion",
+    "name": "章丘“大梧桐”大葱",
+    "home": "assets/reader-media/scallion-1.webp",
+    "homeNote": "大葱植株 · 同类实拍",
+    "detail": "assets/lidong-scallion-tofu.webp",
+    "detailNote": "葱烧豆腐生成示意，非章丘产地实拍",
+    "short": "葱白长而脆甜，蘸一点酱，或切段烧豆腐。"
+  },
+  {
+    "id": "lyg-shaguang-fish",
+    "name": "连云港沙光鱼",
+    "home": "assets/lyg-shaguang-fish.webp",
+    "homeNote": "沙光鱼整鱼参考，原图较小",
+    "detail": "assets/lyg-shaguang-soup.jpg",
+    "detailNote": "沙光鱼豆腐汤实拍 · 下厨房 小羽-12 · 非商业展示",
+    "short": "霜降前后鱼肉肥嫩，和豆腐煮一锅清汤。"
+  },
+  {
+    "id": "binchuan-renong1-yuganzi",
+    "name": "宾川“热农1号”余甘子",
+    "home": "assets/visual/emblica-whole.webp",
+    "homeNote": "余甘子 · 完整鲜果参考",
+    "detail": "",
+    "detailNote": "",
+    "short": "果肉紧实多汁，入口青酸，细嚼后慢慢回甘。"
+  },
+  {
+    "id": "taitung-luoshen-calyx",
+    "name": "台东鲜洛神花萼",
+    "home": "assets/taitung-luoshen-calyx-generated.webp",
+    "homeNote": "生成示意图，非实物摄影；食用部位为去籽花萼。",
+    "detail": "",
+    "detailNote": "",
+    "short": "鲜红花萼酸味鲜明，去籽蜜煮后柔韧透亮。"
+  },
+  {
+    "id": "sanmen-qingxie",
+    "name": "三门青蟹",
+    "home": "assets/reader-media/mudcrab-1.webp",
+    "homeNote": "青蟹 · 完整体态参考",
+    "detail": "assets/sanmen-qingxie-generated.webp",
+    "detailNote": "清蒸三门青蟹 · 生成示意图，非实物摄影。",
+    "short": "三门湾秋蟹肥美期延至十一月，蒸熟尝鲜。"
+  }
+]

@@ -126,7 +126,7 @@ const homeVisualOverrides={
 };
 function foodVisual(food,role='appetite'){
  const reviewed=window.FoodMedia?.ingredient(food)||food.identityPhoto||window.PhotoReview?.records?.[food.sourceId||food.id]||window.PhotoReview?.records?.[food.id];
- if(reviewed)return {...reviewed,fit:role==='recognition'&&wholeSubjects.has(food.id)?'contain':'cover',heroFit:'cover'};
+ if(reviewed)return {...reviewed,fit:role==='recognition'&&wholeSubjects.has(food.id)?'contain':(reviewed.fit||'cover'),heroFit:reviewed.heroFit||'cover'};
  const home=role==='appetite'&&!['houtui-cai','rugao-takecai','gaochun-liuyuehuang'].includes(food.id)&&homeVisualOverrides[food.id];
  if(home)return {...home,fit:home.fit||'cover',heroFit:home.fit||'cover'};
  const originalSrc=role==='appetite'||role==='recognition'?food.image||food.cardImage:food.cardImage||food.image;
@@ -274,7 +274,7 @@ $('detailClose').onclick=()=>closeFood();$('detailDialog').addEventListener('cli
 function toast(message){$('toast').textContent=message;$('toast').classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2300)}
 function renderSearch(query=''){
   const q=query.trim().toLowerCase();const matches=q?canonicalCatalog.filter(f=>[f.name,...f.alias,f.region,f.intro,f.description,f.short,f.season,f.taste,f.aroma,f.texture,f.state,f.recipeTitle,f.ingredients,...(f.steps||[]),f.buy,f.pair,foodCategoryLabel(f)].filter(Boolean).some(value=>value.toLowerCase().includes(q))):canonicalCatalog;
-  $('searchResults').innerHTML=matches.length?matches.map(f=>`<button data-food="${f.id}">${foodThumbnail(f)?`<img class="search-food-photo" src="${foodThumbnail(f)}" alt="${f.name}" loading="lazy" decoding="async">`:'<span class="search-food-placeholder">图待补</span>'}<span><strong>${f.name}</strong><small>${[...f.alias,...f.flavor].filter(Boolean).slice(0,4).join(' · ')}</small></span><em>${foodCategoryLabel(f)} · ${f.region} ↗</em></button>`).join(''):`<div class="search-empty"><p>没有找到匹配的食材。也可以按口感或香气试试：</p><div>${['脆嫩','清甜','酸爽','草本'].map(term=>`<button type="button" data-query="${term}">${term}</button>`).join('')}</div></div>`;
+  $('searchResults').innerHTML=matches.length?matches.map(f=>`<button data-food="${f.id}">${foodThumbnail(f)?`<img class="search-food-photo" src="${foodThumbnail(f)}" alt="${f.name}" loading="lazy" decoding="async">`:'<span class="search-food-placeholder">图待补</span>'}<span><strong>${f.name}</strong><small>${f.flavor.filter(Boolean).slice(0,4).join(' · ')}</small></span><em>${foodCategoryLabel(f)} · ${f.region} ↗</em></button>`).join(''):`<div class="search-empty"><p>没有找到匹配的食材。也可以按口感或香气试试：</p><div>${['脆嫩','清甜','酸爽','草本'].map(term=>`<button type="button" data-query="${term}">${term}</button>`).join('')}</div></div>`;
   $('searchResults').querySelectorAll('[data-food]').forEach(b=>b.onclick=()=>{$('searchDialog').close();openFood(b.dataset.food)});
   $('searchResults').querySelectorAll('[data-query]').forEach(b=>b.onclick=()=>{$('searchInput').value=b.dataset.query;renderSearch(b.dataset.query)});
 }

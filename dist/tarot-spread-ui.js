@@ -69,7 +69,7 @@ function show(r){
  $('result-tableau').innerHTML=r.cards.map((entry,i)=>cardMarkup(entry,i,false,false)).join('');
  $('result-insights').innerHTML=r.reading.cards.map((text,i)=>`<details class="card-insight"><summary>${S.ROLES[i].name} · ${esc(text.name)} · ${esc(text.position)}<span aria-hidden="true">＋</span></summary><p>${esc(text.text)}</p></details>`).join('');
  $('pattern').textContent=r.reading.pattern;
- $('dish-title').textContent=r.dishTitle||T.dishName(f);$('dish-origin').textContent=`用到 ${r.foodName||f.name} · ${r.place.place}`;
+ $('dish-title').textContent=r.dishTitle||T.dishName(f);$('dish-origin').textContent=`用到 ${window.READER_NAMES?.[r.foodId]||r.foodName||f.name} · ${r.place.place}`;
  const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};const media=window.FoodMedia?.recipe(f)||T.mediaFor(f);image.alt=media.alt;image.src=media.src;document.querySelector('.photo-label').textContent=media.kind==='ingredient'?'今日命定菜 · 原料参考':['fresh','fruit-cut'].includes(media.kind)?'今日命定味 · 果切参考':'今日命定菜';
  $('image-note').textContent=media.note||T.imageNote(f);for(const key of ['opening','connection','closing','omen'])$(key).textContent=r.reading[key];
  $('dish-sensory').textContent=f.short||'';

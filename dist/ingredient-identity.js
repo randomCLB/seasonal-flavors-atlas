@@ -5,7 +5,7 @@
  'use strict';
  const version='2026.10.24-identity.1',groups=[],lookup=new Map();
  function add(primary,name,family,others,kind='ingredient',references=[]){
-  const group=Object.freeze({id:primary,name,family,kind,ids:Object.freeze([primary,...others.split(' ').filter(Boolean)]),references});
+  const group=Object.freeze({id:primary,name:root.READER_NAMES?.[primary]||name,originalName:name,family,kind,ids:Object.freeze([primary,...others.split(' ').filter(Boolean)]),references});
   for(const id of group.ids){if(lookup.has(id))throw Error('Ambiguous ingredient identity: '+id);lookup.set(id,group);}groups.push(group);
  }
  add('huangbohai-yingzhuaxia','鹰爪虾（蛎虾）','eagle-claw-shrimp','qingdao-shazikou-li-xia qingdao-shazikou-li-xia-shrimp-2026');
@@ -73,13 +73,13 @@
   return [...seen.values()];
  }
  function make(records){
-  const d=descriptor(records[0]);if(!d||records.length===1&&records[0].identityMembers)return records[0];
+  const d=descriptor(records[0]);if(!d||records.length===1&&records[0].identityMembers){const f=records[0],old=root.READER_OLD_NAMES?.[f.id];return old?{...f,alias:uniq([...(f.alias||[]),old])}:f;}
   const primary=records.find(f=>f.id===d.id)||records[0],all=members(d.id);
   const origin=places(records),peakMonths=uniq(records.flatMap(f=>f.peakMonths||[])).sort((a,b)=>a-b);
   const known=records.find(f=>root.PhotoReview?.records?.[f.id]?.src)||records.find(f=>f.cardImage||f.image)||primary;
   return {...primary,id:d.id,name:d.name,ingredientId:d.id,sourceId:primary.id,
    identityMembers:records.map(f=>f.id),identityKind:d.kind,
-   alias:uniq([d.name,...records.flatMap(f=>[f.name,...(f.alias||[])]),...all.flatMap(f=>[f.name,...(f.alias||[])])]),
+   alias:uniq([d.name,d.originalName,...records.flatMap(f=>[f.name,root.READER_OLD_NAMES?.[f.id],...(f.alias||[])]),...all.flatMap(f=>[f.name,root.READER_OLD_NAMES?.[f.id],...(f.alias||[])])]),
    region:uniq(records.map(f=>f.region)).join(' / '),
    peakMonths,months:uniq(records.flatMap(f=>f.months||[])).sort((a,b)=>a-b),
    seasonLabel:peakMonths.map(m=>m+'月').join('、'),

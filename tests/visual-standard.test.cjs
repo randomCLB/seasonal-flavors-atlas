@@ -28,3 +28,12 @@ test('details keep the ingredient overview and place a single dish or cut-fruit 
  }
 });
 test('all entrypoints initialize reviewed image roles before media and load the shared presentation style',()=>{for(const name of ['index.html','tarot.html','lottery.html']){const h=fs.readFileSync(path.join(root,'dist',name),'utf8');assert.ok(h.indexOf('visual-standard.js')<h.indexOf('food-media.js'));assert.match(h,/visual-standard\.css/);if(name!=='index.html')assert.match(h,/<script src="visual-standard\.js[^>]+ defer>/);}assert.match(fs.readFileSync(path.join(root,'dist/index.html'),'utf8'),/2026\.10\.27-visual\.2/);});
+test('lidong revised dishes keep recognizable home images and labeled recipe illustrations',()=>{
+ const checks=[['huangbohai-yingzhuaxia','lidong-shrimp-boiled.webp'],['mouding-winter-early-fava','lidong-fava-boiled.webp'],['pingdu-majiagou-celery','lidong-celery-stirfry.webp'],['qixia-lidong-winter-after-apple','lidong-apple-cut.webp'],['zhangqiu-dawutong-scallion','lidong-scallion-tofu.webp']];
+ for(const [id,name] of checks){const f=byId[id],home=M.ingredient(f),dish=M.detail(f);assert.ok(home.src,id);assert.ok(dish.src.endsWith(name),id);assert.notEqual(home.src,dish.src,id);assert.match(dish.note,/生成示意/,id);assert.ok(fs.existsSync(path.join(root,'dist',dish.src)),id);}
+});
+test('lidong canonical food details do not carry unrelated regional recipe labels',()=>{
+ W.FoodPurchase=require('../dist/food-purchase.js');ctx.document.addEventListener=()=>{};ctx.document.querySelectorAll=()=>[];W.addEventListener=()=>{};
+ for(const n of ['food-records','food-detail'])vm.runInContext(fs.readFileSync(path.join(root,'dist',n+'.js'),'utf8'),ctx);
+ for(const [id,expected,unwanted] of [['guangning-lidong-ma-bamboo-shoot','蒜炒鲜麻竹笋','蒜炒连江麻笋'],['taiwan-jialiao-bream','具体捕捞或养殖来源','台湾北部沿海捕捞或养殖来源']]){const f=I.detail(id,W.FOODS);const html=W.FoodDetail.html(f,{recognition:M.ingredient(f),seasonLabel:'',category:'食材',originHtml:'',similar:[]});assert.ok(html.includes(expected),id);assert.ok(!html.includes(unwanted),id);}
+});

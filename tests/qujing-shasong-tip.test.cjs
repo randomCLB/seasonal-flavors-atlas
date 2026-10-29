@@ -8,5 +8,5 @@ test('Qujing shasong tips use a month-level sourced spring window and remain vis
  assert.ok(food.sources.some(item=>item[1]==='https://www.sohu.com/a/651393681_121123789'));assert.ok(food.sources.some(item=>item[1]==='https://m.yunnan.cn/system/2026/03/06/033902200.shtml'));
  vm.runInContext(fs.readFileSync(path.join(root,'dist','lottery-profiles.js'),'utf8'),ctx);vm.runInContext(fs.readFileSync(path.join(root,'dist','lottery-senses.js'),'utf8'),ctx);const profile=ctx.window.LOTTERY_PROFILES[food.id];assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
  const audit=JSON.parse(require('node:child_process').execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),pools=Object.fromEntries(audit.rows.map(row=>[row.term,row.foodIds]));assert.ok(pools['雨水'].includes(food.id));assert.ok(pools['惊蛰'].includes(food.id));assert.ok(pools['春分'].includes(food.id));assert.ok(pools['清明'].includes(food.id));
- const jingzhe=audit.rows.find(row=>row.term==='惊蛰');assert.equal(jingzhe.year,2027);assert.ok(jingzhe.foods.includes('温州瓯江子鲚'));
+ const jingzhe=audit.rows.find(row=>row.term==='惊蛰');assert.equal(jingzhe.year,2027);assert.ok(jingzhe.foodIds.includes('wenzhou-oujiang-ziji'));
 });

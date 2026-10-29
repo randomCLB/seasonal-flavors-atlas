@@ -2,9 +2,9 @@
   "version": "2026.10.27-visual.2",
   "publicIngredients": 294,
   "homeCovered": 275,
-  "detailCovered": 102,
-  "paired": 99,
-  "explicitHomeUpdates": 72,
+  "detailCovered": 109,
+  "paired": 106,
+  "explicitHomeUpdates": 77,
   "missingHome": [
     {
       "id": "ruanzao-mihoutao",
@@ -12,81 +12,81 @@
     },
     {
       "id": "atushi-winter-lamb",
-      "name": "阿图什冬宰羊肉"
+      "name": "冬宰羊肉"
     },
     {
       "id": "lancang-nannai-duoyi",
-      "name": "澜沧南乃多依果"
+      "name": "多依果"
     },
     {
       "id": "hechuan-qingshicao-winter-red-radish",
-      "name": "合川青草坝红皮萝卜"
+      "name": "红皮萝卜"
     },
     {
       "id": "hulin-liuhao-shoot",
-      "name": "虎林柳蒿芽"
+      "name": "柳蒿芽"
     },
     {
       "id": "enping-qingming-lecai-tender-shoots",
-      "name": "恩平簕菜·清明嫩芽"
+      "name": "簕菜嫩芽"
     },
     {
       "id": "suzhou-rainwater-caihua-tangli",
-      "name": "苏州菜花塘鳢鱼"
+      "name": "菜花塘鳢鱼"
     },
     {
       "id": "dujiangyan-spring-equinox-cotton-grass",
-      "name": "都江堰春分棉花草嫩苗"
+      "name": "棉花草嫩苗"
     },
     {
       "id": "shidian-guyu-fiddleheads",
-      "name": "施甸谷雨鲜蕨芽"
+      "name": "鲜蕨芽"
     },
     {
       "id": "qujing-shasong-tip",
-      "name": "曲靖沙松尖"
+      "name": "沙松尖"
     },
     {
       "id": "wenzhou-oujiang-ziji",
-      "name": "温州瓯江子鲚"
+      "name": "子鲚"
     },
     {
       "id": "nanjing-lishui-qingming-river-snail",
-      "name": "溧水晶桥清明螺蛳"
+      "name": "螺蛳"
     },
     {
       "id": "guangdong-qingming-fengwei-anchovy",
-      "name": "珠江口清明凤尾鱼"
+      "name": "凤尾鱼"
     },
     {
       "id": "guangdong-eighteen-streams-qingming-yellow-brow-fish",
-      "name": "广东十八涌清明黄眉头"
+      "name": "黄眉头"
     },
     {
       "id": "beijiang-spring-milk-fish",
-      "name": "北江春季奶鱼"
+      "name": "奶鱼"
     },
     {
       "id": "taitung-daxue-hangju",
-      "name": "台东知本杭菊"
+      "name": "杭菊"
     },
     {
       "id": "jiuzhaigou-lixia-water-fern",
-      "name": "九寨沟水蕨菜"
+      "name": "水蕨菜"
     },
     {
       "id": "fuzhou-jingzhe-zhaocai",
-      "name": "福州惊蛰糟菜"
+      "name": "糟菜"
     },
     {
       "id": "yingde-langbu-xiaohan-red-pine-mushroom",
-      "name": "英德廊步村红松茸"
+      "name": "红松茸"
     }
   ],
   "missingDetail": [
     {
       "id": "nanhu-ling",
-      "name": "南湖菱"
+      "name": "菱"
     },
     {
       "id": "shajiguo",
@@ -94,151 +94,139 @@
     },
     {
       "id": "huizhou-chengkan-qingming-tea-shoot",
-      "name": "徽州呈坎茶笋"
+      "name": "茶笋"
     },
     {
       "id": "baoshan-liangcui-emblica",
-      "name": "保山亮脆余甘子"
+      "name": "“亮脆”余甘子"
     },
     {
       "id": "binchuan-renong1-yuganzi",
-      "name": "宾川“热农1号”余甘子"
+      "name": "“热农1号”余甘子"
     },
     {
       "id": "taitung-luoshen-calyx",
-      "name": "台东鲜洛神花萼"
+      "name": "鲜洛神花萼"
     },
     {
       "id": "luoping-hongguoshen",
-      "name": "罗平红果参"
+      "name": "红果参"
     },
     {
       "id": "xikou-xindongsun",
-      "name": "溪口新冬笋"
-    },
-    {
-      "id": "huangbohai-yingzhuaxia",
-      "name": "鹰爪虾（蛎虾）"
+      "name": "新冬笋"
     },
     {
       "id": "huadu-jingtang-lotusroot",
-      "name": "花都京塘莲藕"
+      "name": "莲藕"
     },
     {
       "id": "ningbo-youdai",
-      "name": "宁波北洋油带鱼"
+      "name": "油带鱼"
     },
     {
       "id": "xinhui-winter-after-mandarin",
-      "name": "新会冬后柑"
+      "name": "冬后柑"
     },
     {
       "id": "wuhua-longcun-mountain-sweet-potato",
-      "name": "五华龙村高山红薯"
+      "name": "高山红薯"
     },
     {
       "id": "minhou-wenxi-juyou",
-      "name": "闽侯汶溪桔柚"
+      "name": "桔柚"
     },
     {
       "id": "xinhui-yamen-tianshui-radish",
-      "name": "新会甜水萝卜"
-    },
-    {
-      "id": "mouding-winter-early-fava",
-      "name": "鲜蚕豆"
+      "name": "甜水萝卜"
     },
     {
       "id": "laiyang-pear",
-      "name": "莱阳梨"
+      "name": "梨"
     },
     {
       "id": "junan-jinqiuhongmi-peach",
-      "name": "莒南团林金秋红蜜桃"
+      "name": "“金秋红蜜”桃"
     },
     {
       "id": "wujiang-xiaoxue-fragrant-greens",
-      "name": "吴江香青菜"
+      "name": "香青菜"
     },
     {
       "id": "zigong-baomiao-blood-orange",
-      "name": "自贡贡井白庙血橙"
+      "name": "血橙"
     },
     {
       "id": "xinhui-xinghuang-water-chestnut",
-      "name": "新会兴篁村鲜马蹄"
+      "name": "鲜荸荠（马蹄）"
     },
     {
       "id": "ntpc-dahan-native-yam",
-      "name": "新北基隆原生种山药"
+      "name": "原生种山药"
     },
     {
       "id": "huangpi-luzui-water-chestnut",
-      "name": "黄陂陆咀荸荠"
+      "name": "荸荠"
     },
     {
       "id": "luogang-sweet-orange",
-      "name": "广州萝岗橙"
+      "name": "甜橙"
     },
     {
       "id": "wenzhou-sanyang-ougan",
-      "name": "温州三垟瓯柑"
+      "name": "瓯柑"
     },
     {
       "id": "tongling-white-ginger",
-      "name": "铜陵白姜"
+      "name": "白姜"
     },
     {
       "id": "shawan-yuba-red-stropharia",
-      "name": "沙湾喻坝赤松茸"
+      "name": "赤松茸"
     },
     {
       "id": "conghua-zhouzhoumei-citrus",
-      "name": "从化洲洲美柑"
+      "name": "洲洲美柑"
     },
     {
       "id": "hechuan-qingshicao-winter-red-radish",
-      "name": "合川青草坝红皮萝卜"
+      "name": "红皮萝卜"
     },
     {
       "id": "dalian-jinzhou-hairyclam",
-      "name": "大连金州毛蚶"
+      "name": "毛蚶"
     },
     {
       "id": "renhua-danxia-gonggan",
-      "name": "仁化丹霞贡柑"
+      "name": "贡柑"
     },
     {
       "id": "donghai-dongzhi-cuttlefish",
-      "name": "墨鱼（乌贼）"
+      "name": "乌贼（墨鱼）"
     },
     {
       "id": "dahan-green-carp",
-      "name": "大寒青鱼"
+      "name": "青鱼"
     },
     {
       "id": "taiwan-winter-solstice-mullet-roe",
-      "name": "台湾冬至乌鱼子"
+      "name": "乌鱼子"
     },
     {
       "id": "qingdao-shuangdongmi-peach",
-      "name": "青岛“双冬蜜”极晚熟桃"
-    },
-    {
-      "id": "qixia-lidong-winter-after-apple",
-      "name": "栖霞“冬后”苹果"
+      "name": "“双冬蜜”极晚熟桃"
     },
     {
       "id": "zizhong-xiaohan-early-blood-orange",
-      "name": "资中早熟血橙"
+      "name": "早熟血橙"
     },
     {
       "id": "shantou-donghu-charcoal-zicai",
-      "name": "汕头东湖炭焙紫菜"
+      "name": "炭焙紫菜"
     },
     {
       "id": "shantou-haojiang-liqian-dongjingwan",
-      "name": "濠江里前东京丸"
+      "name": "东京丸"
     },
     {
       "id": "luquan-greenhouse-toon-first-pick",
@@ -246,111 +234,111 @@
     },
     {
       "id": "beian-xiaohan-white-lover-strawberry",
-      "name": "北安“白色恋人”白草莓"
+      "name": "“白色恋人”白草莓"
     },
     {
       "id": "chaoyang-xilu-wusu-waxberry",
-      "name": "潮阳西胪乌酥核杨梅"
+      "name": "乌酥核杨梅"
     },
     {
       "id": "minhou-chayuan-highland-spring-shoot",
-      "name": "闽侯茶苑高山春笋"
+      "name": "高山春笋"
     },
     {
       "id": "hulin-liuhao-shoot",
-      "name": "虎林柳蒿芽"
+      "name": "柳蒿芽"
     },
     {
       "id": "jiangning-bailu-white-dew-tea",
-      "name": "南京江宁白露龙针"
+      "name": "白露龙针"
     },
     {
       "id": "huishui-hanlu-autumn-tea-2026",
-      "name": "惠水寒露秋茶"
+      "name": "秋茶"
     },
     {
       "id": "pujiang-dahan-chunjian",
-      "name": "蒲江春见（耙耙柑）"
+      "name": "春见（耙耙柑）"
     },
     {
       "id": "lichuan-heyuan-girl-fruit",
-      "name": "黎川姑娘果"
+      "name": "姑娘果"
     },
     {
       "id": "baojing-huangjincha-spring-equinox-bulk",
-      "name": "保靖黄金茶"
+      "name": "黄金茶"
     },
     {
       "id": "enping-qingming-lecai-tender-shoots",
-      "name": "恩平簕菜·清明嫩芽"
+      "name": "簕菜嫩芽"
     },
     {
       "id": "fangshan-doudian-nongkenuo336-corn",
-      "name": "房山窦店农科糯336甜加糯玉米"
+      "name": "“农科糯336”甜加糯玉米"
     },
     {
       "id": "anji-xilong-baiye-first-pick",
-      "name": "安吉溪龙白茶"
+      "name": "白茶"
     },
     {
       "id": "linan-early-spring-leizun",
-      "name": "杭州临安雷笋"
+      "name": "雷笋"
     },
     {
       "id": "tonglu-late-april-gaojie-bamboo",
-      "name": "桐庐高节竹笋"
+      "name": "高节竹笋"
     },
     {
       "id": "kaohsiung-yuhebao-lychee-late-may",
-      "name": "高屏玉荷包荔枝"
+      "name": "玉荷包荔枝"
     },
     {
       "id": "sinan-qingming-cai-mouse-ear",
-      "name": "思南清明菜（鼠曲草嫩苗）"
+      "name": "鼠曲草（清明菜）"
     },
     {
       "id": "suzhou-rainwater-caihua-tangli",
-      "name": "苏州菜花塘鳢鱼"
+      "name": "菜花塘鳢鱼"
     },
     {
       "id": "dujiangyan-spring-equinox-cotton-grass",
-      "name": "都江堰春分棉花草嫩苗"
+      "name": "棉花草嫩苗"
     },
     {
       "id": "lanshan-baidieling-guyu-tea",
-      "name": "蓝山百叠岭谷雨茶"
+      "name": "谷雨茶"
     },
     {
       "id": "gejiu-cinaobao",
-      "name": "个旧刺脑包"
+      "name": "刺脑包"
     },
     {
       "id": "conghua-lutian-bitter-shoot",
-      "name": "从化吕田苦笋"
+      "name": "苦笋"
     },
     {
       "id": "wulong-taiwan-long-mulberry",
-      "name": "武隆台湾长果桑"
+      "name": "长果桑"
     },
     {
       "id": "fengxian-shihai-2026-japanese-sweet-mulberry",
-      "name": "奉贤石海村日本甜果桑"
+      "name": "甜果桑"
     },
     {
       "id": "yaoan-edible-rose",
-      "name": "姚安光禄食用玫瑰"
+      "name": "食用玫瑰"
     },
     {
       "id": "xuanzhou-shuidong-cherry",
-      "name": "宣州水东鲜樱桃"
+      "name": "鲜樱桃"
     },
     {
       "id": "shidian-autumn-longzhu-shoot",
-      "name": "施甸秋龙竹笋"
+      "name": "秋龙竹笋"
     },
     {
       "id": "wenchuan-qingcui-plum",
-      "name": "汶川青脆李"
+      "name": "青脆李"
     },
     {
       "id": "minhou-baisha-late-longan",
@@ -358,7 +346,7 @@
     },
     {
       "id": "taiwan-lichiu-northwest-tilefish",
-      "name": "台湾立秋西北海域马头鱼"
+      "name": "马头鱼"
     },
     {
       "id": "suao-frost-beltfish",
@@ -369,292 +357,276 @@
       "name": "红目鰱"
     },
     {
-      "id": "taiwan-jialiao-bream",
-      "name": "真鲷（嘉鱲）"
-    },
-    {
       "id": "longlin-march-plum",
-      "name": "隆林三月李"
+      "name": "三月李"
     },
     {
       "id": "pinggu-yingshuanghong-late-peach",
-      "name": "平谷金海湖映霜红大桃"
+      "name": "“映霜红”大桃"
     },
     {
       "id": "shidian-guyu-fiddleheads",
-      "name": "施甸谷雨鲜蕨芽"
+      "name": "鲜蕨芽"
     },
     {
       "id": "sanzhi-red-sheath-jiaobai",
-      "name": "三芝赤壳茭白筍"
+      "name": "赤壳茭白笋"
     },
     {
       "id": "bomi-gutong-crisp-red-plum",
-      "name": "波密古通脆红李"
+      "name": "脆红李"
     },
     {
       "id": "yuanmou-yangjie-autumn-shatangju",
-      "name": "元谋羊街金秋砂糖桔"
+      "name": "金秋砂糖桔"
     },
     {
       "id": "wanning-damao-baitangying-lychee",
-      "name": "万宁大茂白糖罂荔枝"
+      "name": "白糖罂荔枝"
     },
     {
       "id": "qiongshan-sanmenpo-xiantaoli",
-      "name": "琼山三门坡仙桃荔"
+      "name": "仙桃荔"
     },
     {
       "id": "hubei-ejiao4-summer-jiaobai",
-      "name": "鄂茭4号夏茭"
+      "name": "“鄂茭4号”夏茭"
     },
     {
       "id": "fuzhou-chunfen-baili-fish",
-      "name": "福州春分白鱱鱼"
+      "name": "白鱱鱼"
     },
     {
       "id": "fuzhou-chunfen-chunbihhao",
-      "name": "福州春碧蒿（春分野苋菜）"
+      "name": "春碧蒿（春分野苋菜）"
     },
     {
       "id": "wusheng-dayagan-lichun",
-      "name": "武胜大雅柑"
+      "name": "大雅柑"
     },
     {
       "id": "tianjin-huangya-cabbage",
-      "name": "天津黄芽菜"
+      "name": "黄芽菜"
     },
     {
       "id": "qujing-shasong-tip",
-      "name": "曲靖沙松尖"
+      "name": "沙松尖"
     },
     {
       "id": "yanqing-baleng-crisp-haitang",
-      "name": "延庆八棱脆海棠"
+      "name": "八棱脆海棠"
     },
     {
       "id": "wenzhou-oujiang-ziji",
-      "name": "温州瓯江子鲚"
+      "name": "子鲚"
     },
     {
       "id": "miaoli-gongguan-fresh-jujube",
-      "name": "苗栗公馆鲜红枣"
+      "name": "鲜红枣"
     },
     {
       "id": "dazu-lichun-winter-vegetable-tip",
-      "name": "大足立春冬菜尖"
+      "name": "冬菜尖"
     },
     {
       "id": "yunxiao-liuye-baigeng-wongcai",
-      "name": "云霄柳叶白梗蕹菜"
+      "name": "柳叶白梗蕹菜"
     },
     {
       "id": "shexian-qizili-hickory",
-      "name": "歙县杞梓里山核桃"
+      "name": "山核桃"
     },
     {
       "id": "chongming-malan-head",
-      "name": "崇明马兰头"
+      "name": "马兰头"
     },
     {
       "id": "taiwan-daxue-mullet",
-      "name": "台湾沿海冬季乌鱼"
+      "name": "乌鱼"
     },
     {
       "id": "gongliao-autumn-japanese-horse-mackerel",
-      "name": "贡寮秋分日本竹荚鱼"
+      "name": "日本竹荚鱼"
     },
     {
       "id": "cangyuan-bailu-lincang-macadamia",
-      "name": "沧源白露临沧坚果"
+      "name": "澳洲坚果（夏威夷果）"
     },
     {
       "id": "zhangmutou-mangzhong-guanyin-green-lychee",
-      "name": "樟木头芒种观音绿荔枝"
+      "name": "观音绿荔枝"
     },
     {
       "id": "taiwan-lichun-mackerel",
-      "name": "台湾立春洄游鲭鱼"
+      "name": "鲭鱼"
     },
     {
       "id": "shiping-shaochong-bailu-walnut",
-      "name": "石屏哨冲白露鲜核桃"
+      "name": "鲜核桃"
     },
     {
       "id": "jiangmen-muzhou-qingming-huangsha-clam",
-      "name": "江门睦洲黄沙蚬"
+      "name": "黄沙蚬"
     },
     {
       "id": "zhangzidao-daxue-sea-cucumber",
-      "name": "獐子岛大雪采捕海参"
+      "name": "鲜海参"
     },
     {
       "id": "mengzi-june-red-pomegranate",
-      "name": "蒙自“六月红”软籽石榴"
+      "name": "“六月红”软籽石榴"
     },
     {
       "id": "weixian-frost-radish",
-      "name": "寒亭潍县萝卜"
+      "name": "萝卜"
     },
     {
       "id": "dengkou-wallace-melon",
-      "name": "磴口华莱士瓜"
+      "name": "华莱士瓜"
     },
     {
       "id": "longyangxia-salmon",
-      "name": "龙羊峡三文鱼"
+      "name": "三文鱼"
     },
     {
       "id": "hejiang-late-lychee",
-      "name": "合江晚熟荔枝"
+      "name": "晚熟荔枝"
     },
     {
       "id": "shicheng-white-lotus",
-      "name": "石城白莲鲜莲子"
+      "name": "白莲鲜莲子"
     },
     {
       "id": "caidian-ehong4-early-caitai",
-      "name": "武汉蔡甸鄂红4号早熟菜薹"
-    },
-    {
-      "id": "zhangqiu-dawutong-scallion",
-      "name": "章丘“大梧桐”大葱"
+      "name": "“鄂红4号”早熟菜薹"
     },
     {
       "id": "suizhou-paopaoqing",
-      "name": "随州泡泡青"
+      "name": "泡泡青"
     },
     {
       "id": "yaan-chuancai3-lichun-first-pick",
-      "name": "雅安川茶3号立春头采"
+      "name": "“川茶3号”头采春茶"
     },
     {
       "id": "huairou-huaibei-hongxiaoli",
-      "name": "怀柔红肖梨"
+      "name": "红肖梨"
     },
     {
       "id": "tamsui-xiaoshu-black-bream",
-      "name": "淡水小暑黑鲷"
+      "name": "黑鲷"
     },
     {
       "id": "changhua-xiaoshu-black-over",
-      "name": "彰化小暑黄鳍鲷（黑过）"
+      "name": "黄鳍鲷（黑过）"
     },
     {
       "id": "youxi-lidong-kumquat",
-      "name": "尤溪立冬金柑"
-    },
-    {
-      "id": "guangning-lidong-ma-bamboo-shoot",
-      "name": "麻竹笋"
+      "name": "金柑"
     },
     {
       "id": "nanjing-lishui-qingming-river-snail",
-      "name": "溧水晶桥清明螺蛳"
+      "name": "螺蛳"
     },
     {
       "id": "eshan-jingzhe-mulberry-flower",
-      "name": "峨山鲜桑葚花"
+      "name": "鲜桑葚花"
     },
     {
       "id": "xihu-longjing-group-late-march",
-      "name": "西湖龙井群体种"
+      "name": "龙井茶（群体种）"
     },
     {
       "id": "chengde-spring-equinox-elm-samaras",
-      "name": "承德春分榆钱"
+      "name": "榆钱"
     },
     {
       "id": "wuhan-spring-equinox-hanpai-red-amaranth",
-      "name": "武汉春分汉派红苋菜"
+      "name": "红苋菜"
     },
     {
       "id": "ningbo-xikou-spring-mao-bamboo-shoot",
-      "name": "奉化溪口黄泥拱毛笋"
+      "name": "黄泥拱毛笋"
     },
     {
       "id": "ningbo-spring-equinox-alfalfa-shoots",
-      "name": "宁波春分苜蓿草籽"
+      "name": "苜蓿草籽"
     },
     {
       "id": "qingdao-shazikou-qingming-spring-mackerel",
-      "name": "青岛沙子口清明春鲅鱼"
+      "name": "鲅鱼"
     },
     {
       "id": "pearl-river-qingming-cao-shrimp",
-      "name": "珠江口清明曹虾"
+      "name": "曹虾"
     },
     {
       "id": "guangdong-qingming-fengwei-anchovy",
-      "name": "珠江口清明凤尾鱼"
+      "name": "凤尾鱼"
     },
     {
       "id": "guangdong-eighteen-streams-qingming-yellow-brow-fish",
-      "name": "广东十八涌清明黄眉头"
+      "name": "黄眉头"
     },
     {
       "id": "beijiang-spring-milk-fish",
-      "name": "北江春季奶鱼"
+      "name": "奶鱼"
     },
     {
       "id": "kaiyuan-xishan-hulu-pear",
-      "name": "开远西山葫芦梨"
-    },
-    {
-      "id": "pingdu-majiagou-celery",
-      "name": "平度马家沟芹菜"
+      "name": "葫芦梨"
     },
     {
       "id": "lanxi-huitan-sugarcane",
-      "name": "兰溪汇潭甘蔗"
+      "name": "甘蔗"
     },
     {
       "id": "taitung-daxue-hangju",
-      "name": "台东知本杭菊"
+      "name": "杭菊"
     },
     {
       "id": "yuanchang-heijingang-winter-peanut",
-      "name": "云林元长黑金刚花生"
+      "name": "黑金刚花生"
     },
     {
       "id": "songjiang-cangqiao-crystal-pear",
-      "name": "松江仓桥水晶梨"
+      "name": "水晶梨"
     },
     {
       "id": "lufeng-zhongcun-late-early-chestnut",
-      "name": "禄丰中村早熟板栗"
+      "name": "早熟板栗"
     },
     {
       "id": "nanhui-daxue-water-honey-peach",
-      "name": "南汇水蜜桃"
+      "name": "水蜜桃"
     },
     {
       "id": "jiading-malu-zuijinxiang-grape",
-      "name": "嘉定马陆“醉金香”葡萄"
+      "name": "“醉金香”葡萄"
     },
     {
       "id": "yunyang-winter-solstice-red-orange",
-      "name": "云阳红橙"
+      "name": "红橙"
     },
     {
       "id": "changning-hanlu-camellia-seed-oil",
-      "name": "常宁寒露籽茶油"
+      "name": "籽茶油"
     },
     {
       "id": "fuzhou-bailu-red-xun",
-      "name": "福州白露红鲟"
+      "name": "红鲟"
     },
     {
       "id": "tianshui-qinzhou-xiaoman-cherry",
-      "name": "天水秦州小满鲜樱桃"
+      "name": "鲜樱桃"
     },
     {
       "id": "lixian-hanlu-qincui-apple",
-      "name": "理县秦脆苹果"
+      "name": "秦脆苹果"
     },
     {
       "id": "yongtai-lianshan-shipaiju-you",
-      "name": "永泰连山石牌橘柚"
+      "name": "橘柚"
     },
     {
       "id": "shidian-lixia-qingmei",
@@ -662,195 +634,195 @@
     },
     {
       "id": "wuhan-hannan-fresh-sweet-corn",
-      "name": "武汉汉南鲜食甜玉米"
+      "name": "鲜食甜玉米"
     },
     {
       "id": "caidian-summer-solstice-fresh-lotus-pod",
-      "name": "蔡甸夏至鲜莲蓬"
+      "name": "鲜莲蓬"
     },
     {
       "id": "jiuzhaigou-lixia-water-fern",
-      "name": "九寨沟水蕨菜"
+      "name": "水蕨菜"
     },
     {
       "id": "suzhou-bailu-river-eel",
-      "name": "苏州白露鳗鲡"
+      "name": "鳗鲡"
     },
     {
       "id": "ningbo-zhanqi-dafeng-early-orange",
-      "name": "宁波瞻岐大丰早橘"
+      "name": "早橘"
     },
     {
       "id": "henan-qiufen-tunisian-softseed-pomegranate",
-      "name": "河南秋分突尼斯软籽石榴"
+      "name": "突尼斯软籽石榴"
     },
     {
       "id": "suzhou-guangfu-hanlu-late-osmanthus",
-      "name": "苏州光福寒露晚桂"
+      "name": "晚桂"
     },
     {
       "id": "fuzhou-hanlu-razor-clam-dry",
-      "name": "福州寒露蛏干"
+      "name": "蛏干"
     },
     {
       "id": "fuzhou-hanlu-liaozai-clam",
-      "name": "福州寒露蟟仔（蚬类俗名）"
+      "name": "蚬类（蟟仔）"
     },
     {
       "id": "fuzhou-jingzhe-zhaocai",
-      "name": "福州惊蛰糟菜"
+      "name": "糟菜"
     },
     {
       "id": "qidong-lyusi-winter-solstice-hairtail",
-      "name": "启东吕四冬至带鱼"
+      "name": "带鱼"
     },
     {
       "id": "dongguan-tangxia-shixia-longan",
-      "name": "东莞塘厦石硖龙眼"
+      "name": "石硖龙眼"
     },
     {
       "id": "enping-naji-tainung17-pineapple",
-      "name": "恩平那吉金钻17号凤梨"
+      "name": "“台农17号”凤梨（金钻凤梨）"
     },
     {
       "id": "guangzhou-qingming-jiaocai",
-      "name": "广州清明菜荞"
+      "name": "菜荞"
     },
     {
       "id": "panyu-qingming-sugarcane",
-      "name": "番禺清明蔗"
+      "name": "甘蔗"
     },
     {
       "id": "wenzhou-lingkun-baizhuogua",
-      "name": "温州灵昆白啄瓜"
+      "name": "白啄瓜"
     },
     {
       "id": "qingdao-youreka-greenhouse-blueberry",
-      "name": "青岛大棚优瑞卡蓝莓"
+      "name": "“优瑞卡”蓝莓"
     },
     {
       "id": "miyun-houchangjiawu-yuanwei1-tomato",
-      "name": "密云后焦家坞原味1号番茄"
+      "name": "“原味1号”番茄"
     },
     {
       "id": "taixing-sucui1-early-pear",
-      "name": "泰兴苏翠1号早熟梨"
+      "name": "“苏翠1号”早熟梨"
     },
     {
       "id": "fengqing-xinhua-walnut-flowers",
-      "name": "凤庆新华乡鲜核桃花"
+      "name": "鲜核桃花"
     },
     {
       "id": "zhenning-honey-plum",
-      "name": "镇宁蜂糖李"
+      "name": "蜂糖李"
     },
     {
       "id": "lingshan-dahan-spring-tea-first-pick",
-      "name": "灵山春茶·大寒前后首采"
+      "name": "春茶首采"
     },
     {
       "id": "pinggu-zhongpan9-xiaoshu-peach",
-      "name": "平谷中蟠9号桃"
+      "name": "“中蟠9号”桃"
     },
     {
       "id": "suzhou-jinting-wumei-mangzhong-waxberry",
-      "name": "苏州金庭乌梅种杨梅"
+      "name": "乌梅种杨梅"
     },
     {
       "id": "guangnan-mianhao-baba",
-      "name": "广南面蒿粑"
+      "name": "面蒿粑"
     },
     {
       "id": "xinzhou-qubeihu-gongdeng-water-chestnut",
-      "name": "新洲曲背湖宫灯荸荠"
+      "name": "宫灯荸荠"
     },
     {
       "id": "anlu-bailu-huaguoshan-fig",
-      "name": "安陆花果山无花果"
+      "name": "无花果"
     },
     {
       "id": "jiangjin-bailu-late-harvest-pepper",
-      "name": "江津白露迟收花椒"
+      "name": "迟收花椒"
     },
     {
       "id": "suzhou-bailu-ginkgo",
-      "name": "苏州白露鲜白果"
+      "name": "鲜白果"
     },
     {
       "id": "zigui-simian-no1-dahan-early-tea",
-      "name": "秭归丝绵茶1号早茶"
+      "name": "“丝绵茶1号”早茶"
     },
     {
       "id": "emei-wenchun-dahan-early-tea",
-      "name": "峨眉问春早茶"
+      "name": "问春早茶"
     },
     {
       "id": "tengchong-fenghuang-xiaohan-yam",
-      "name": "腾冲凤凰山鲜山药"
+      "name": "鲜山药"
     },
     {
       "id": "hezhou-xialiang-xiaohan-goji-greens",
-      "name": "贺州厦良鲜枸杞菜"
+      "name": "鲜枸杞菜"
     },
     {
       "id": "luocheng-dafu-xiaohan-black-wood-ear",
-      "name": "罗城大福村鲜黑木耳"
+      "name": "鲜黑木耳"
     },
     {
       "id": "ganyu-zhaohu-xiaohan-greenhouse-strawberry",
-      "name": "赣榆赵湖冬日大棚草莓"
+      "name": "大棚草莓"
     },
     {
       "id": "yingde-langbu-xiaohan-red-pine-mushroom",
-      "name": "英德廊步村红松茸"
+      "name": "红松茸"
     },
     {
       "id": "nanxian-wushenggong-xiaohan-caitai",
-      "name": "南县武圣宫白菜薹"
+      "name": "白菜薹"
     },
     {
       "id": "yulin-xiaohan-sesame-melon",
-      "name": "榆林西左界芝麻香瓜"
+      "name": "芝麻香瓜"
     },
     {
       "id": "danling-great-cold-late-citrus",
-      "name": "丹棱齐乐镇晚熟柑橘"
+      "name": "晚熟柑橘"
     },
     {
       "id": "suixian-lishan-great-cold-shiitake",
-      "name": "随县厉山明华社区鲜香菇"
+      "name": "鲜香菇"
     },
     {
       "id": "lianjiang-great-cold-abalone",
-      "name": "连江大寒时鲜鲍鱼"
+      "name": "鲜鲍鱼"
     },
     {
       "id": "lianjiang-great-cold-kelp-seedlings",
-      "name": "连江海带苗"
+      "name": "海带苗"
     },
     {
       "id": "jinghe-bajiahu-mangzhong-pearl-nectarine",
-      "name": "精河八家户珍珠油桃"
+      "name": "珍珠油桃"
     },
     {
       "id": "suzhou-dongshan-xidi-mangzhong-fine-stem-waxberry",
-      "name": "苏州东山细蒂杨梅"
+      "name": "细蒂杨梅"
     },
     {
       "id": "wuxi-mashan-mangzhong-yangmei",
-      "name": "无锡马山杨梅"
+      "name": "杨梅"
     },
     {
       "id": "mengzi-lvzi-softseed-pomegranate",
-      "name": "蒙自绿籽软籽石榴"
+      "name": "绿籽软籽石榴"
     },
     {
       "id": "baoshan-zaoqiu-sweet-persimmon",
-      "name": "保山早秋甜柿"
+      "name": "早秋甜柿"
     },
     {
       "id": "shanzhou-black-emperor-grape",
-      "name": "陕州黑皇葡萄"
+      "name": "黑皇葡萄"
     }
   ],
   "admittedObservationMissingHome": 24,

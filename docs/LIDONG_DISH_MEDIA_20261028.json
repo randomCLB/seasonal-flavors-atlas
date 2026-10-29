@@ -1,0 +1,44 @@
+[
+  {
+    "foodId": "mouding-winter-early-fava",
+    "path": "assets/lidong-fava-boiled.webp",
+    "sha256": "6f009c53937cb3483c10f358fd2816bd2fded1ca9e7248bcc165e17085d33ecb",
+    "note": "清煮蚕豆米生成示意"
+  },
+  {
+    "foodId": "huangbohai-yingzhuaxia",
+    "path": "assets/lidong-shrimp-boiled.webp",
+    "sha256": "2809d8560023342b4987c5e52b8921f7742314368141c48d5bb3188d2a74c88c",
+    "note": "姜葱盐煮虾生成示意，非鹰爪虾物种鉴别"
+  },
+  {
+    "foodId": "pingdu-majiagou-celery",
+    "path": "assets/lidong-celery-stirfry.webp",
+    "sha256": "ca4cdec9194eb5703b9eeb27ac2d7465c2162804d59a434ba74f27f8b903f29e",
+    "note": "蒜炒芹菜生成示意，非马家沟产地实拍"
+  },
+  {
+    "foodId": "guangning-lidong-ma-bamboo-shoot",
+    "path": "assets/lidong-bamboo-stirfry.webp",
+    "sha256": "a26fc21c2f0a73708544deffc42a755da9fa4ecca32524ffb19b60c3164fcaf8",
+    "note": "蒜炒竹笋生成示意，非麻竹品种鉴别"
+  },
+  {
+    "foodId": "qixia-lidong-winter-after-apple",
+    "path": "assets/lidong-apple-cut.webp",
+    "sha256": "262cb099f60f1b3127c23f08524122680c70567ef5774e09ffdd1a7e9c45e0e3",
+    "note": "鲜切苹果生成示意，非栖霞或冬后品种实拍"
+  },
+  {
+    "foodId": "zhangqiu-dawutong-scallion",
+    "path": "assets/lidong-scallion-tofu.webp",
+    "sha256": "ae98f66f2ef4df67a993f4053397d8689c5849fa3057b17a91bfa3cc6787729a",
+    "note": "葱烧豆腐生成示意，非章丘产地实拍"
+  },
+  {
+    "foodId": "taiwan-jialiao-bream",
+    "path": "assets/lidong-bream-steamed.webp",
+    "sha256": "5b222070129b033bf778ca9594084ea8afff00e64b9bb3d70df2340655ac3713",
+    "note": "姜葱清蒸鱼段生成示意 · 非产地实拍或品种鉴别"
+  }
+]

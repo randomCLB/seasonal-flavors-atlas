@@ -3,7 +3,9 @@
  'use strict';
  const esc=value=>root.FoodPurchase.esc(value),text=value=>typeof value==='string'?value.trim():'';
  function html(food,{recognition,seasonLabel,category,originHtml,variants=[],similar=[],imageAttrs=''}){
-  const merged={...food,...root.EDITORIAL_DETAILS?.[food.id]},f=food.identityMembers&&root.IngredientIdentity?root.IngredientIdentity.reading(food):root.ReaderCopy?root.ReaderCopy.view(merged):merged,fresh=f.eatingMode==='fresh',shown=new Set();
+  const merged={...food,...root.EDITORIAL_DETAILS?.[food.id]},reading=food.identityMembers&&root.IngredientIdentity?root.IngredientIdentity.reading(food):root.ReaderCopy?root.ReaderCopy.view(merged):merged,f={...reading},fresh=f.eatingMode==='fresh',shown=new Set();
+  if(food.id==='guangning-lidong-ma-bamboo-shoot'){f.recipeTitle='蒜炒鲜麻竹笋';if(f.intro)f.intro=f.intro.replace('连江麻笋','鲜麻竹笋');}
+  if(food.id==='taiwan-jialiao-bream'&&Array.isArray(f.steps))f.steps=f.steps.map(step=>step.replace('台湾北部沿海捕捞或养殖来源','具体捕捞或养殖来源'));
   const paragraph=(value,cls='')=>{const t=text(value);if(!t||shown.has(t))return '';shown.add(t);return `<p${cls?` class="${cls}"`:''}>${esc(t)}</p>`;};
   const labeled=(label,value,cls='')=>{const t=text(value);if(!t||shown.has(t))return '';shown.add(t);return `<p${cls?` class="${cls}"`:''}><strong>${esc(label)}</strong> · ${esc(t)}</p>`;};
   let number=0;
@@ -19,7 +21,7 @@
   const leadMedia=recognition.src?recognition:plated||recognition;
   const leadRole=leadMedia.scene||leadMedia.kind||'ingredient';
   const leadLabel=leadMedia===plated?(plated.kind==='fruit-cut'?'果切':'上桌'):'原貌';
-  const photo=(media,cls,label,loading='lazy',attrs='')=>media?.src?`<figure class="${cls}" data-photo-role="${esc(media.kind==='ingredient'?(media.scene||'whole-ingredient'):(media.scene||media.kind||'ingredient'))}" tabindex="0"><div class="visual-frame"><img src="${esc(media.src)}" alt="${esc(media.alt||f.name)}" ${attrs} style="object-fit:cover;object-position:${esc(media.position||'50% 50%')}" loading="${loading}" decoding="async"><span class="visual-role">${esc(label)}</span></div><figcaption>${esc(media.note||label)} · <a href="${esc(media.creditHref||'credits.html#visual-media-credits')}">图片出处 ↗</a></figcaption></figure>`:'';
+  const photo=(media,cls,label,loading='lazy',attrs='')=>media?.src?`<figure class="${cls}" data-photo-role="${esc(media.kind==='ingredient'?(media.scene||'whole-ingredient'):(media.scene||media.kind||'ingredient'))}" tabindex="0"><div class="visual-frame"><img src="${esc(media.src)}" alt="${esc(media.alt||f.name)}" ${attrs} style="object-fit:${esc(media.fit||'cover')};object-position:${esc(media.position||'50% 50%')}" loading="${loading}" decoding="async"><span class="visual-role">${esc(label)}</span></div><figcaption>${esc(media.note||label)} · <a href="${esc(media.creditHref||'credits.html#visual-media-credits')}">图片出处 ↗</a></figcaption></figure>`:'';
   const secondary=plated&&plated.src!==leadMedia.src?photo(plated,'reader-recipe-photo',plated.kind==='fruit-cut'?'果切':'上桌'):'';
 
   const recipe=steps.length?secondary+(text(f.recipeTitle)?`<h3>${esc(f.recipeTitle)}</h3>`:'')+(!fresh?labeled('准备',f.ingredients):'')+`<ol class="recipe-steps">${steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol>`+(!fresh?labeled('做到什么程度',f.finish)+labeled('最容易失手',f.pitfall)+paragraph(f.kitchen)+labeled('搭配',f.pair,'pair-note'):paragraph(f.kitchen))+(root.ReaderAccess?.entry(f)?.video?'':`<a class="bilibili-recipe-link" href="https://search.bilibili.com/all?keyword=${encodeURIComponent(f.name)}" target="_blank" rel="noopener noreferrer">去 B 站搜索“${esc(f.name)}” ↗</a>`):'';

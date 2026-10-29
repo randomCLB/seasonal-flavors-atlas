@@ -17,7 +17,7 @@ replace('dist/app.js','const foods=window.FOODS;','const readerCatalogData=windo
 range('dist/app.js','const originDetails=food=>','const chinaParts=',`const originDetails=food=>food.placeSeasons.length<2?'':\`<div class="origin-details"><h3>各地产期</h3>\${food.placeSeasons.map((place,index)=>\`<article><h4>\${place.name}</h4><p><strong>时令</strong> · \${place.seasonNote||(food.id==='wenzhou-pancai'?['一月下旬起采收，冬批至二月。','九月采收，秋批至十月。'][index]:'')||formatMonths(place.months)}</p>\${place.flavorNote?\`<p><strong>产区风味</strong> · \${place.flavorNote}</p>\`:''}<p class="state-note"><a href="\${place.source}" target="_blank" rel="noopener">时令来源 ↗</a>\${place.flavorSource?\` · <a href="\${place.flavorSource}" target="_blank" rel="noopener">查看风味来源 ↗</a>\`:''}</p></article>\`).join('')}</div>\`;
 `);
 replace('dist/app.js',"${x.food.placeSeasons.length>1?`<small>${x.place.flavorNote||'产区风味差异待补充'}</small>`:''}","${x.place.flavorNote?`<small>${x.place.flavorNote}</small>`:''}");
-replace('dist/app.js',"${f.alias.join(' · ')} · ${f.taste}","${[...f.alias,...f.flavor].filter(Boolean).slice(0,4).join(' · ')}");
+replace('dist/app.js',"${f.alias.join(' · ')} · ${f.taste}","${f.flavor.filter(Boolean).slice(0,4).join(' · ')}");
 replace('dist/tarot-spread-ui.js','const f=byId[r.foodId];result=r;','const f=window.ReaderCopy.view({...byId[r.foodId],...window.EDITORIAL_DETAILS?.[r.foodId]});result=r;');
 replace('dist/tarot-spread-ui.js',"$('dish-sensory').textContent=f.dishCaption||f.short||'';","$('dish-sensory').textContent=f.short||'';");
 replace('dist/tarot-spread-ui.js',"$('season-note').textContent=`时令线索：${f.season} 当前推荐依据产地记录，不代表库存或当年成熟日已确认。`;","$('season-note').textContent=f.seasonLabel||'';");
