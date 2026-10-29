@@ -1,0 +1,145 @@
+[
+  {
+    "path": "assets/black-carp-underwater-20261029.webp",
+    "subject": "青鱼 · 同种水中实拍，非中国产地",
+    "source": "https://commons.wikimedia.org/wiki/File:Asian_Black_Carp.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Asian_Black_Carp.jpg",
+    "artist": "Ryan Hagerty / U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": "https://www.fws.gov/disclaimer",
+    "sourceDimensions": [
+      5760,
+      3840
+    ],
+    "dimensions": [
+      1600,
+      1067
+    ],
+    "sourceSha256": "3da094858d5b0057f66882186d4fc12ded2da3d658aac740a662e9a0782d9ce5",
+    "sha256": "cc82eab08a0b7143c418da70f6c5d2d398f2b52a832af189fbb248384b9ef454",
+    "modifications": "长边缩至1600像素、转WebP；完整保留鱼体、不裁切；未生成或改动物种形态",
+    "reviewed": true
+  },
+  {
+    "path": "assets/redlip-mullet-opencage-20261029.webp",
+    "subject": "梭鱼 · 同种水族馆实拍，非青岛开凌捕捞实拍",
+    "source": "https://commons.wikimedia.org/wiki/File:Liza_haematocheila_by_OpenCage.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Liza_haematocheila_by_OpenCage.jpg",
+    "artist": "OpenCage",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "sourceDimensions": [
+      2001,
+      1287
+    ],
+    "dimensions": [
+      1600,
+      1029
+    ],
+    "sourceSha256": "67242c1de39a702c719ea07d9cef8bd3870ad529d8ebe1752bdaa0beb58142f3",
+    "sha256": "945c51068275682261dd08d86c2025e41909d32b329fa266f3545ae3cf50ad85",
+    "modifications": "长边缩至1600像素、转WebP；完整保留鱼体、不裁切；未生成或改动物种形态",
+    "reviewed": true
+  },
+  {
+    "path": "assets/nanhu-ling-xinhua-harvest-2021.jpg",
+    "subject": "南湖无角菱 · 嘉兴采收实拍",
+    "source": "https://www.news.cn/foto/2021-08/25/c_1211341160_3.htm",
+    "artist": "新华社记者 徐昱",
+    "license": "新闻摄影，未发现开放许可；沿用站内既有署名图源，保留原水印",
+    "sha256": "29cd231b4298eed3a9e8d613a4bf83aadaeba1a02b9955811cfafe6fe8db786b",
+    "dimensions": [
+      682,
+      1023
+    ],
+    "modifications": "沿用现有图片，不裁去水印",
+    "reviewed": true
+  },
+  {
+    "path": "assets/goat-reference-20261029.webp",
+    "subject": "山羊 · 同种形态参考，非徐州实拍或地方品种鉴别",
+    "source": "https://commons.wikimedia.org/wiki/File:Domestic_goat_portrait.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Domestic_goat_portrait.jpg",
+    "artist": "Von.grzanka",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceDimensions": [
+      2848,
+      4272
+    ],
+    "dimensions": [
+      1067,
+      1600
+    ],
+    "sourceSha256": "dfa1db659d5adebfcdfcf08bc2a4443a76166d9e65dbd3cbce2d2598b12216d4",
+    "sha256": "634264e4abaa2591c09246a7dd2cf2010c62310294cac2c81d9e5752ab9abde1",
+    "modifications": "长边缩至1600像素、转WebP；未生成或改动物种形态",
+    "reviewed": true
+  },
+  {
+    "path": "assets/duck-reference-20261029.webp",
+    "subject": "家鸭 · 同类形态参考，非苏州实拍，不证明鸭龄",
+    "source": "https://commons.wikimedia.org/wiki/File:Brown_domestic_duck_with_orange_beak_in_a_pond_at_golden_hour_in_Don_Det_Laos.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Brown_domestic_duck_with_orange_beak_in_a_pond_at_golden_hour_in_Don_Det_Laos.jpg",
+    "artist": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceDimensions": [
+      4590,
+      3443
+    ],
+    "dimensions": [
+      1600,
+      1200
+    ],
+    "sourceSha256": "b4d38e7e533bb997388c06ac935446a2d27a61932ca4ab4ce7bf33dae6cf0d4d",
+    "sha256": "6c19139173a21744f93eca6e88c122995faf83a6ba8ed0caf148676f1683aa41",
+    "modifications": "长边缩至1600像素、转WebP；未生成或改动物种形态",
+    "reviewed": true
+  },
+  {
+    "path": "assets/cicada-nymph-reference-20261029.webp",
+    "subject": "蝉若虫 · 同类形态参考，非甘棠实拍，不用于黑蚱物种鉴别",
+    "source": "https://commons.wikimedia.org/wiki/File:A_Cicada_nymph_at_Kamakura_%28cropped%29.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/A_Cicada_nymph_at_Kamakura_%28cropped%29.jpg",
+    "artist": "Ryosuke Yagi",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceDimensions": [
+      1996,
+      2086
+    ],
+    "dimensions": [
+      1531,
+      1600
+    ],
+    "sourceSha256": "b807d01c32db14b24afe09517c1c90d1363f025a4b7ad8e052300107082dd793",
+    "sha256": "ef3cd5b0a3b7ab54c80772a43ad8f0380a210fd5a6a00ac747777ab15fc60e91",
+    "modifications": "长边缩至1600像素、转WebP；未生成或改动物种形态",
+    "reviewed": true
+  },
+  {
+    "path": "assets/summer-goat-soup-generated-20261029.webp",
+    "source": "built-in image generation",
+    "license": "AI-generated serving illustration",
+    "sha256": "1f6baf41095daa7511c43b4d023418112e98bc21c74fe5a6b7752829e4a1f386",
+    "reviewed": true,
+    "scope": "非地域、品种或物种鉴别图"
+  },
+  {
+    "path": "assets/chushu-duck-soup-generated-20261029.webp",
+    "source": "built-in image generation",
+    "license": "AI-generated serving illustration",
+    "sha256": "c8e476757e4d1ca1b9aa1e4bc8b79b0bb3cba7ea481b02faaa574d09f6b03f15",
+    "reviewed": true,
+    "scope": "非地域、品种或物种鉴别图"
+  },
+  {
+    "path": "assets/summer-cicada-generated-20261029.webp",
+    "source": "built-in image generation",
+    "license": "AI-generated serving illustration",
+    "sha256": "21556260106b591f4d61e387e8000293e86efd20987cac08ac6f3fa6a66690c1",
+    "reviewed": true,
+    "scope": "非地域、品种或物种鉴别图"
+  }
+]

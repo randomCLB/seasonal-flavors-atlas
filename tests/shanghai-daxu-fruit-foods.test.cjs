@@ -8,5 +8,5 @@ test('上海大暑专题中的水蜜桃和醉金香葡萄保留单年来源精�
  for(const [id,sig,senseSig] of [['nanhui-daxue-water-honey-peach','388ce692','2177d576'],['jiading-malu-zuijinxiang-grape','f98ee4fc','fbca8939']]){
   const f=ctx.window.FOODS.find(x=>x.id===id),p=ctx.window.LOTTERY_PROFILES[id];assert.ok(f);assert.equal(f.seasonPrecision,'local-term-feature');assert.deepEqual([...f.peakTerms],[13]);assert.ok(f.sources.some(x=>x[1]===source));assert.ok(fs.existsSync(path.join(root,'dist',f.image)));assert.equal(p.signature,sig);assert.equal(p.senses.signature,senseSig);
  }
- const a=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),d=a.rows.find(x=>x.term==='大暑');assert.equal(d.repeatRate,.5);assert.equal(d.withinLimit,true);
+ const a=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),d=a.rows.find(x=>x.term==='大暑');assert.equal(d.repeatRate,12/25);assert.equal(d.withinLimit,true);
 });

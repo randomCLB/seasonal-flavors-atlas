@@ -22,5 +22,5 @@ test('sourced Great Heat additions are term-specific and accurately registered',
   assert.match(food.imageCaption,/非实物摄影/);assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
   assert.ok(heat.foodIds.includes(id));assert.ok(!previous.foodIds.includes(id));
  }
- ;assert.equal(heat.repeatRate,.5);
+ ;assert.equal(heat.repeatRate,12/25);
 });

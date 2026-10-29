@@ -26,11 +26,11 @@ try:
             page.goto(BASE,wait_until='load');page.locator('.media-build').wait_for()
             state=page.evaluate('''()=>{
                 const A=window.ReaderAccess,I=window.IngredientIdentity,M=window.FoodMedia,original=I.catalog(window.FOODS),removed=original.filter(f=>!A.visible(f));
-                if(canonicalCatalog.length!==294||removed.length!==31)throw Error('Admission counts');
+                if(canonicalCatalog.length!==297||removed.length!==31)throw Error('Admission counts');
                 const terms=[];for(const t of termWindow){selectedTerm=t;catalogScope='curated';selectedCategory='all';renderSeason();const cards=[...document.querySelectorAll('#seasonCards article')];if(cards.some(e=>!e.querySelector('img')))throw Error('Missing curated cover '+termNames[t.index]);const ids=cards.map(e=>e.querySelector('[data-food]').dataset.food);if(ids.some(id=>!A.visible(I.detail(id))))throw Error('Withdrawn seasonal food');terms.push({term:termNames[t.index],cards:ids.length,allHaveImages:true});}
                 selectedTerm=currentTerm;renderSeason();renderSearch('');
                 const buttons=[...document.querySelectorAll('#searchResults [data-food]')],covers=canonicalCatalog.filter(M.hasIngredient);
-                if(buttons.length!==294||document.querySelectorAll('#searchResults .search-food-photo').length!==covers.length)throw Error('Search photo registry mismatch');
+                if(buttons.length!==297||document.querySelectorAll('#searchResults .search-food-photo').length!==covers.length)throw Error('Search photo registry mismatch');
                 for(const f of removed){renderSearch(f.name);if(document.querySelector(`#searchResults [data-food="${f.id}"]`))throw Error('Withdrawn search '+f.id);}
                 const drawIds=window.FOODS.filter(f=>A.visible(f)&&M.hasIngredient(f)).map(f=>f.id);
                 return {publicIngredients:canonicalCatalog.length,covered:covers.length,missing:canonicalCatalog.length-covers.length,withdrawn:removed.map(f=>({id:f.id,name:f.name})),terms,drawCandidates:drawIds.length,images:[...new Set(covers.map(f=>M.ingredient(f).src))]};

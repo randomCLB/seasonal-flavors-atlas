@@ -847,3 +847,6 @@ window.LOTTERY_PROFILES["hejiang-xiaoshu-late-lychee"]={"signature":"51043509","
 window.LOTTERY_PROFILES["mengzi-lvzi-softseed-pomegranate"]={signature:"4dd98169",avoid:[],effort:0,family:"fruit",startTerm:14};
 window.LOTTERY_PROFILES["baoshan-zaoqiu-sweet-persimmon"]={signature:"44402562",avoid:[],effort:0,family:"fruit",startTerm:14};
 window.LOTTERY_PROFILES["shanzhou-black-emperor-grape"]={signature:"624720d6",avoid:[],effort:0,family:"fruit",startTerm:14};
+
+// Reviewed recipes for regional meat windows.
+Object.assign(window.LOTTERY_PROFILES,{"xuzhou-sanfu-lamb":{"signature":"2ea9af5b","avoid":["meat"],"effort":2,"family":"meat","senses":{"signature":"9d1ab838","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["soup"],"features":["三伏天喝热羊汤，羊肉煮软，配一块麦饼。"]}},"suzhou-chushu-old-duck":{"signature":"52c396d6","avoid":["meat"],"effort":2,"family":"meat","senses":{"signature":"50887717","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["soup"],"features":["处暑炖老鸭配扁尖，先给邻居端一碗。"]}},"gaoqing-taisun-jinchan":{"signature":"58cb5215","avoid":["meat"],"effort":2,"family":"insect","senses":{"signature":"26666d06","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["boil","stirfry"],"features":["盛夏出土、蜕壳前鲜收，做熟后外层紧实。"]}}});

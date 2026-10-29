@@ -1,7 +1,7 @@
 {
-  "catalogCount": 357,
+  "catalogCount": 360,
   "sampling": "Each month 1st/15th/28th at 12:00 China time; no dietary exclusions. Counts are site-data coverage, not market availability.",
-  "minimum": 10,
+  "minimum": 11,
   "rows": [
     {
       "date": "2027-01-01",
@@ -897,7 +897,7 @@
     },
     {
       "date": "2027-07-15",
-      "count": 22,
+      "count": 23,
       "ids": [
         "foshougua-miao",
         "dier",
@@ -919,6 +919,7 @@
         "changhua-xiaoshu-chishi",
         "taixing-sucui1-early-pear",
         "pinggu-zhongpan9-xiaoshu-peach",
+        "gaoqing-taisun-jinchan",
         "lianjiang-xiaoshu-june-hemp-bamboo-shoot",
         "hejiang-xiaoshu-late-lychee"
       ],
@@ -943,13 +944,14 @@
         "乌宗（赤食）",
         "“苏翠1号”早熟梨",
         "“中蟠9号”桃",
+        "金蝉",
         "麻竹笋",
         "晚熟荔枝"
       ]
     },
     {
       "date": "2027-07-28",
-      "count": 21,
+      "count": 22,
       "ids": [
         "foshougua-miao",
         "dier",
@@ -971,7 +973,8 @@
         "lufeng-zhongcun-late-early-chestnut",
         "nanhui-daxue-water-honey-peach",
         "jiading-malu-zuijinxiang-grape",
-        "dongguan-tangxia-shixia-longan"
+        "dongguan-tangxia-shixia-longan",
+        "xuzhou-sanfu-lamb"
       ],
       "names": [
         "佛手瓜苗",
@@ -994,12 +997,13 @@
         "早熟板栗",
         "水蜜桃",
         "“醉金香”葡萄",
-        "石硖龙眼"
+        "石硖龙眼",
+        "伏羊"
       ]
     },
     {
       "date": "2027-08-01",
-      "count": 19,
+      "count": 20,
       "ids": [
         "jitoumi",
         "dier",
@@ -1019,7 +1023,8 @@
         "nanhui-daxue-water-honey-peach",
         "jiading-malu-zuijinxiang-grape",
         "dongguan-tangxia-shixia-longan",
-        "huocheng-xiangfei-crabapple"
+        "huocheng-xiangfei-crabapple",
+        "xuzhou-sanfu-lamb"
       ],
       "names": [
         "鸡头米",
@@ -1040,7 +1045,8 @@
         "水蜜桃",
         "“醉金香”葡萄",
         "石硖龙眼",
-        "香妃海棠果"
+        "香妃海棠果",
+        "伏羊"
       ]
     },
     {
@@ -1099,7 +1105,7 @@
     },
     {
       "date": "2027-08-28",
-      "count": 10,
+      "count": 11,
       "ids": [
         "jitoumi",
         "dier",
@@ -1110,7 +1116,8 @@
         "xishuangbanna-wood-milk-fruit",
         "jianshui-caoya",
         "shidian-autumn-longzhu-shoot",
-        "dongguan-tangxia-shixia-longan"
+        "dongguan-tangxia-shixia-longan",
+        "suzhou-chushu-old-duck"
       ],
       "names": [
         "鸡头米",
@@ -1122,7 +1129,8 @@
         "木奶果",
         "草芽",
         "秋龙竹笋",
-        "石硖龙眼"
+        "石硖龙眼",
+        "老鸭"
       ]
     },
     {

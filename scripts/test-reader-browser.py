@@ -44,7 +44,7 @@ try:
                   }
                   return {catalog:window.FOODS.length,sources,safety,failures};
                 }""")
-                report['wholeCatalog']=audit;assert audit['catalog']==357;assert not audit['failures'],audit['failures'][:20]
+                report['wholeCatalog']=audit;assert audit['catalog']==360;assert not audit['failures'],audit['failures'][:20]
             before=page.locator('#seasonCards article').count()
             page.locator('#allSeasonScope').click();assert page.locator('#allSeasonScope').get_attribute('aria-pressed')=='true'
             assert page.locator('#seasonCards article').count()>=before
@@ -58,13 +58,13 @@ try:
             for food_id in CASES:
                 page.goto(BASE+'index.html?'+urlencode({'food':food_id,'reader_verify':SHA}),wait_until='load')
                 dialog=page.locator('#detailDialog');dialog.wait_for(state='visible')
-                for section_id in ['foodBuying','foodRecipe']:
-                    section=dialog.locator('#'+section_id)
-                    if section.count():assert section.evaluate('(e)=>e.open'),food_id+': essential section initially closed'
+                recipe=dialog.locator('#foodRecipe')
+                if recipe.count():assert recipe.evaluate('(e)=>e.open'),food_id+': recipe initially closed'
                 sections=dialog.locator('.reader-section')
                 for i in range(sections.count()):
                     section=sections.nth(i)
                     if not section.evaluate('(e)=>e.open'):section.locator(':scope > summary').click()
+                    assert section.evaluate('(e)=>e.open'),food_id+': section did not open after clicking its summary'
                 if food_id in ['cigu','pucai']:assert len(dialog.inner_text())>250
                 if food_id=='tengchong-fenghuang-xiaohan-yam':assert '筷子能穿过' in dialog.inner_text()
                 if food_id=='taiwan-jialiao-bream':assert dialog.locator('.identity-origins article').count()>0

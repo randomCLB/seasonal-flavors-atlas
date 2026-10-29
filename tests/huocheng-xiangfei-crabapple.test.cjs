@@ -9,5 +9,5 @@ test('Huocheng Xiangfei crabapple adds a cross-year August harvest window to Dax
  assert.ok(food.sources.some(x=>x[1]==='https://www.xjhc.gov.cn/xjhc/c113327/202508/3d03b2eaffe1408493ae7bee0af69541.shtml'));assert.ok(food.sources.some(x=>x[1]==='https://www.xjhc.gov.cn/xjhc/c113324/202608/b9c4edaca05b4639b33b323c9223fe3d.shtml'));
  assert.ok(fs.existsSync(path.join(root,'dist',food.image)));assert.match(food.imageCaption,/非霍城实拍/);assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
  const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),xiaoshu=audit.rows.find(x=>x.term==='小暑'),daxue=audit.rows.find(x=>x.term==='大暑');
- assert.ok(!xiaoshu.foodIds.includes(id));assert.ok(daxue.foodIds.includes(id));assert.equal(daxue.repeatRate,0.5);
+ assert.ok(!xiaoshu.foodIds.includes(id));assert.ok(daxue.foodIds.includes(id));assert.equal(daxue.repeatRate,12/25);
 });

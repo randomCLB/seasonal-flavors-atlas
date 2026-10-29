@@ -1,10 +1,10 @@
 {
   "version": "2026.10.27-visual.2",
-  "publicIngredients": 294,
-  "homeCovered": 275,
-  "detailCovered": 109,
-  "paired": 106,
-  "explicitHomeUpdates": 77,
+  "publicIngredients": 297,
+  "homeCovered": 278,
+  "detailCovered": 112,
+  "paired": 109,
+  "explicitHomeUpdates": 83,
   "missingHome": [
     {
       "id": "ruanzao-mihoutao",

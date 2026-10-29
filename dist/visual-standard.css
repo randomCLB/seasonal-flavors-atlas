@@ -11,3 +11,8 @@
 #visual-media-credits article{padding:14px 0;border-bottom:1px solid var(--visual-line);overflow-wrap:anywhere}
 #visual-media-credits p{line-height:1.8}
 @media(max-width:650px){.reader-portrait .visual-frame{aspect-ratio:4/3}.reader-overview{gap:16px}.reader-portrait figcaption{font-size:10px}.visual-role{left:10px;bottom:10px}#seasonCards img[src$="xiaozhou-harvest.webp"]{object-position:70% 55%!important}}
+
+/* Long fish need a wide frame so both head and tail remain visible. */
+.season-list-card.has-landscape-photo{display:flex;flex-direction:column;gap:16px}
+.season-list-card.has-landscape-photo .season-list-photo{width:100%;height:auto;min-height:0;aspect-ratio:2/1;flex:none}
+.season-list-card.has-landscape-photo>div{width:100%;align-self:start}

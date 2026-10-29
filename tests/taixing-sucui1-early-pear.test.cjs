@@ -11,5 +11,5 @@ test('Taixing Su Cui No. 1 pear is a sourced Xiaoshu entry and a distinct summer
  assert.ok(fs.existsSync(path.join(root,'dist',food.image)));assert.match(food.imageCaption,/Dusan Bicanski/);assert.match(food.imageCaption,/不代表泰兴产地或苏翠1号品种/);assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
  const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'}));
  const term=audit.rows.find(x=>x.term==='小暑'),previous=audit.rows.find(x=>x.term==='夏至');
- assert.ok(term.foodIds.includes(id));assert.ok(!previous.foodIds.includes(id));assert.equal(term.repeatRate,0.5);assert.equal(term.withinLimit,true);
+ assert.ok(term.foodIds.includes(id));assert.ok(!previous.foodIds.includes(id));assert.equal(term.repeatRate,13/27);assert.equal(term.withinLimit,true);
 });
