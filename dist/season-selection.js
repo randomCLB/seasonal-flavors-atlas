@@ -82,7 +82,16 @@
    if(feature&&ids.has(group(feature)))repeated.sort((a,b)=>Number(b===feature)-Number(a===feature));
    const keep=new Set(fresh.map(food=>food.id));for(const food of repeated.slice(0,fresh.length))keep.add(food.id);
    if(!keep.size&&pool.length)keep.add((feature||pool[0]).id);
-   const list=pool.filter(food=>keep.has(food.id));previous=list;return list;
+   let list=pool.filter(food=>keep.has(food.id));
+   // A large list consumes the next term's overlap budget; keep the edit bounded.
+   if(list.length>18){
+    const rankedFresh=[...fresh].sort((a,b)=>Number(b===feature)-Number(a===feature));
+    const selectedFresh=rankedFresh.slice(0,9),selectedRepeated=repeated.slice(0,Math.min(selectedFresh.length,18-selectedFresh.length));
+    const selected=new Set([...selectedFresh,...selectedRepeated].map(food=>food.id));
+    for(const food of rankedFresh)if(selected.size<18)selected.add(food.id);
+    list=pool.filter(food=>selected.has(food.id));
+   }
+   previous=list;return list;
   });
  }
  root.SeasonSelection={select,group,plan,holds:editorialHolds,labels:{billfish:'旗鱼类',seerfish:'马鲛与鰆鱼','sea-bream':'海鲷类',cuttlefish:'乌贼类','neritic-squid':'锁管与小卷'},variants:(food,catalog)=>{const I=root.IngredientIdentity,list=I?I.catalog(catalog||[]):catalog||[];return list.filter(other=>(I?I.key(other)!==I.key(food):other.id!==food.id)&&group(other)===group(food));}};

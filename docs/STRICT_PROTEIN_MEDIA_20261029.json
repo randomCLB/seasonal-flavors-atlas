@@ -1,0 +1,71 @@
+{
+  "assets": [
+    {
+      "path": "assets/doudan-larva-scientific-20261029.webp",
+      "subject": "豆天蛾5龄幼虫 · 文献实拍形态参考，非灌云当批货物",
+      "source": "https://www.nature.com/articles/s41597-024-03853-5",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-024-03853-5/MediaObjects/41597_2024_3853_Fig1_HTML.png",
+      "artist": "Yan, Y.; Zhao, K.; Yang, L. et al. (2024), Scientific Data 11:1062, Fig.1b",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "17207b70bfc2e27809f5b43c8a3590f1ffc057f15ff4598e589b7b4954208710",
+      "sha256": "0af2ca008ec1cfb9e0b54d5c89648fa58736f86e21e44ef41d23328ec225fd7f",
+      "dimensions": [
+        471,
+        480
+      ],
+      "modifications": "从Fig.1抽取b面板(476,0,947,480)，保留面板字母，转WebP；不放大",
+      "reviewed": true,
+      "approvedForUse": true
+    },
+    {
+      "path": "assets/doudan-harvest-scientific-20261029.webp",
+      "subject": "养殖收获豆天蛾5龄幼虫 · 文献实拍，非灌云当批货物",
+      "source": "https://www.nature.com/articles/s41597-024-03853-5",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-024-03853-5/MediaObjects/41597_2024_3853_Fig1_HTML.png",
+      "artist": "Yan, Y.; Zhao, K.; Yang, L. et al. (2024), Scientific Data 11:1062, Fig.1g",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceSha256": "17207b70bfc2e27809f5b43c8a3590f1ffc057f15ff4598e589b7b4954208710",
+      "sha256": "7dc2cd6ea48ef1731b25d4924a69288851075c5c6573a7c6ed945880d18c6003",
+      "dimensions": [
+        656,
+        497
+      ],
+      "modifications": "从Fig.1抽取g面板(1244,482,1900,979)，保留面板字母，转WebP；不放大",
+      "reviewed": true,
+      "approvedForUse": true
+    },
+    {
+      "path": "assets/scylla-female-reference-20261029.webp",
+      "subject": "拟穴青蟹雌蟹 · 同属形态参考，非南沙实拍、不用于黄油蟹转油鉴别",
+      "source": "https://commons.wikimedia.org/wiki/File:Scyl_param_180225-5311823_mrd.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Scyl_param_180225-5311823_mrd.JPG",
+      "artist": "Wibowo Djatmiko (Wie146)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceSha256": "bcbf956af43493b10b3cced36b93720a70770984d018f1c606a0d0b9a7f6362f",
+      "sha256": "ea1d11c5e556a32bd4840cfb4a1c409b9dba6e1035cafc005a7ad96cc31f5851",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "modifications": "长边缩至1600像素，转WebP，不裁切",
+      "reviewed": true,
+      "approvedForUse": true
+    }
+  ],
+  "gaps": [
+    {
+      "subject": "南沙黄油蟹整蟹与切开阶段实拍",
+      "source": "https://nyncj.gz.gov.cn/zw/zwyw/qzdt/content/post_9878601.html",
+      "status": "not_copied_to_assets",
+      "reason": "身份匹配且已目视核验，但页面明确未经授权禁止复制；不作为可发布素材"
+    },
+    {
+      "subject": "湛江奄仔蟹",
+      "status": "not_added",
+      "reason": "本轮不新增该词条；所见台山阶段图不能称为湛江实拍；未找到集中乡镇且农历五月同时支持的一条官方材料"
+    }
+  ]
+}

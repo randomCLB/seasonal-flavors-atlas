@@ -951,7 +951,7 @@
     },
     {
       "date": "2027-07-28",
-      "count": 22,
+      "count": 21,
       "ids": [
         "foshougua-miao",
         "dier",
@@ -973,8 +973,7 @@
         "lufeng-zhongcun-late-early-chestnut",
         "nanhui-daxue-water-honey-peach",
         "jiading-malu-zuijinxiang-grape",
-        "dongguan-tangxia-shixia-longan",
-        "xuzhou-sanfu-lamb"
+        "dongguan-tangxia-shixia-longan"
       ],
       "names": [
         "佛手瓜苗",
@@ -997,13 +996,12 @@
         "早熟板栗",
         "水蜜桃",
         "“醉金香”葡萄",
-        "石硖龙眼",
-        "伏羊"
+        "石硖龙眼"
       ]
     },
     {
       "date": "2027-08-01",
-      "count": 20,
+      "count": 19,
       "ids": [
         "jitoumi",
         "dier",
@@ -1023,8 +1021,7 @@
         "nanhui-daxue-water-honey-peach",
         "jiading-malu-zuijinxiang-grape",
         "dongguan-tangxia-shixia-longan",
-        "huocheng-xiangfei-crabapple",
-        "xuzhou-sanfu-lamb"
+        "huocheng-xiangfei-crabapple"
       ],
       "names": [
         "鸡头米",
@@ -1045,13 +1042,12 @@
         "水蜜桃",
         "“醉金香”葡萄",
         "石硖龙眼",
-        "香妃海棠果",
-        "伏羊"
+        "香妃海棠果"
       ]
     },
     {
       "date": "2027-08-15",
-      "count": 23,
+      "count": 24,
       "ids": [
         "jitoumi",
         "dier",
@@ -1073,6 +1069,7 @@
         "fengxian-nanqiao-early-water-red-caltrop",
         "dongguan-tangxia-shixia-longan",
         "huocheng-xiangfei-crabapple",
+        "guanyun-summer-doudan",
         "mengzi-lvzi-softseed-pomegranate",
         "baoshan-zaoqiu-sweet-persimmon",
         "shanzhou-black-emperor-grape"
@@ -1098,6 +1095,7 @@
         "早熟水红菱",
         "石硖龙眼",
         "香妃海棠果",
+        "豆丹",
         "绿籽软籽石榴",
         "早秋甜柿",
         "黑皇葡萄"
@@ -1117,7 +1115,7 @@
         "jianshui-caoya",
         "shidian-autumn-longzhu-shoot",
         "dongguan-tangxia-shixia-longan",
-        "suzhou-chushu-old-duck"
+        "nansha-longxue-butter-crab"
       ],
       "names": [
         "鸡头米",
@@ -1130,7 +1128,7 @@
         "草芽",
         "秋龙竹笋",
         "石硖龙眼",
-        "老鸭"
+        "黄油蟹"
       ]
     },
     {

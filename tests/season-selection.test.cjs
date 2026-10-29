@@ -13,3 +13,12 @@ test('a sourced featured food wins its family and survives the repeat quota',()=
 test('a fully repeated sourced pool retains one real food instead of an empty page',()=>{const a={id:'a'},b={id:'b'};assert.deepEqual(Array.from(S.plan([[a,b]],[a,b],[],['b'])[0],f=>f.id),['b']);});
 test('quarter filtering is included before the final adjacent-term balance',()=>{const a={id:'a'},b={id:'b'},fresh={id:'new'},f=(id,name)=>({id,name});const lists=S.plan([[a,b,fresh,f('other-hairtail','苏澳带鱼')],[f('ningbo-youdai','宁波北洋油带鱼')]], [a,b],['2026-Q4','2026-Q4']);assert.deepEqual(Array.from(lists[0],food=>food.id),['a','new']);});
 test('unidentified fishery leads stay in the input catalog but not in seasonal recommendations',()=>{const held=Object.keys(S.holds).map(id=>({id,name:'地方鱼名',category:'seafood',cardImage:'reference.jpg'})),known={id:'verified-fish',name:'已确认食用鱼',category:'seafood',cardImage:'reference.jpg'},input=[...held,known],before=JSON.stringify(input);assert.deepEqual(Array.from(S.select(input,4),food=>food.id),[known.id]);assert.equal(JSON.stringify(input),before);assert.equal(Object.isFrozen(S.holds),true);assert.equal(held.length,9);assert.ok(held.every(food=>/来源.*待确认/.test(S.holds[food.id])));});
+
+test('a large preceding edit leaves the next short season room without exceeding the repeat quota',()=>{
+ const f=id=>({id}),large=Array.from({length:30},(_,i)=>f('a'+i)),scarce=[large[17],...large.slice(20),...Array.from({length:5},(_,i)=>f('b'+i))];
+ const before=JSON.stringify([large,scarce]),lists=S.plan([large,scarce],[],[],['a29','b4']);
+ assert.equal(lists[0].length,18);assert.equal(lists[1].length,16);assert.ok(lists[0].some(f=>f.id==='a29'));assert.ok(lists[1].some(f=>f.id==='b4'));
+ assert.ok(Math.abs(lists[0].length-lists[1].length)<=4);
+ let previous=[];for(let i=0;i<lists.length;i++){const ids=new Set(previous.map(S.group));assert.ok(lists[i].every(f=>[large,scarce][i].includes(f)));assert.ok(lists[i].filter(f=>ids.has(S.group(f))).length/lists[i].length<=.5);previous=lists[i];}
+ assert.equal(JSON.stringify([large,scarce]),before);
+});

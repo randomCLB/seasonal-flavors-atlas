@@ -1,0 +1,5983 @@
+{
+  "min": 14,
+  "max": 18,
+  "maxAdjacentGap": 4,
+  "rows": [
+    {
+      "year": 2026,
+      "index": 19,
+      "term": "霜降",
+      "all": 29,
+      "foods": [
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "heze-shannong-crisp-pear",
+          "group": "pear"
+        },
+        {
+          "id": "wuding-fawowo-winter-peach",
+          "group": "peach"
+        },
+        {
+          "id": "wenxian-shuangjiang-tiegun-yam",
+          "group": "yam"
+        },
+        {
+          "id": "xunyang-guizao",
+          "group": "xunyang-guizao"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        },
+        {
+          "id": "tainan-madou-frost-white-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "weixian-frost-radish",
+          "group": "radish"
+        },
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        }
+      ],
+      "feature": "xunyang-guizao",
+      "count": 18,
+      "repeat": 0,
+      "repeatRate": null
+    },
+    {
+      "year": 2026,
+      "index": 20,
+      "term": "立冬",
+      "all": 25,
+      "foods": [
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "huangbohai-yingzhuaxia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "mouding-winter-early-fava",
+          "group": "fava"
+        },
+        {
+          "id": "cangnan-lidong-four-seasons-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "dalian-jinzhou-hairyclam",
+          "group": "dalian-jinzhou-hairyclam"
+        },
+        {
+          "id": "qingdao-shuangdongmi-peach",
+          "group": "peach"
+        },
+        {
+          "id": "qixia-lidong-winter-after-apple",
+          "group": "apple"
+        },
+        {
+          "id": "yongjia-hesheng-red-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "taiwan-lidong-east-red-eye-bream",
+          "group": "red-eye-fish"
+        },
+        {
+          "id": "taiwan-lidong-east-jiana-fish",
+          "group": "sea-bream"
+        },
+        {
+          "id": "guangning-lidong-ma-bamboo-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "pingdu-majiagou-celery",
+          "group": "celery"
+        },
+        {
+          "id": "lanxi-huitan-sugarcane",
+          "group": "sugarcane"
+        },
+        {
+          "id": "zhangqiu-dawutong-scallion",
+          "group": "zhangqiu-dawutong-scallion"
+        }
+      ],
+      "feature": "helan-luosicai",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2026,
+      "index": 21,
+      "term": "小雪",
+      "all": 27,
+      "foods": [
+        {
+          "id": "wenzhou-sanyang-ougan",
+          "group": "citrus"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard",
+          "group": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard"
+        },
+        {
+          "id": "shazhou-zhugengqin",
+          "group": "water-celery"
+        },
+        {
+          "id": "wujiang-xiaoxue-fragrant-greens",
+          "group": "tatsoi"
+        },
+        {
+          "id": "cigu",
+          "group": "cigu"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "huangbohai-yingzhuaxia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "mouding-winter-early-fava",
+          "group": "fava"
+        },
+        {
+          "id": "yongjia-hesheng-red-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        }
+      ],
+      "feature": "xiaolan-shiju-huaban",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2026,
+      "index": 22,
+      "term": "大雪",
+      "all": 20,
+      "foods": [
+        {
+          "id": "baoshan-liangcui-emblica",
+          "group": "emblica"
+        },
+        {
+          "id": "xinhui-yamen-tianshui-radish",
+          "group": "radish"
+        },
+        {
+          "id": "zhangzidao-daxue-sea-cucumber",
+          "group": "zhangzidao-daxue-sea-cucumber"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "yuanchang-heijingang-winter-peanut",
+          "group": "yuanchang-heijingang-winter-peanut"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "luogang-sweet-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "shazhou-zhugengqin",
+          "group": "water-celery"
+        },
+        {
+          "id": "cigu",
+          "group": "cigu"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        }
+      ],
+      "feature": "baoshan-liangcui-emblica",
+      "count": 16,
+      "repeat": 8,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2026,
+      "index": 23,
+      "term": "冬至",
+      "all": 29,
+      "foods": [
+        {
+          "id": "huadu-jingtang-lotusroot",
+          "group": "lotus-root"
+        },
+        {
+          "id": "ningbo-youdai",
+          "group": "hairtail"
+        },
+        {
+          "id": "bomi-winter-muli",
+          "group": "pear"
+        },
+        {
+          "id": "wuhua-longcun-mountain-sweet-potato",
+          "group": "wuhua-longcun-mountain-sweet-potato"
+        },
+        {
+          "id": "xinhui-xinghuang-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "shantou-haojiang-liqian-dongjingwan",
+          "group": "shantou-haojiang-liqian-dongjingwan"
+        },
+        {
+          "id": "taiwan-winter-solstice-mullet-roe",
+          "group": "mullet-roe"
+        },
+        {
+          "id": "minhou-wenxi-juyou",
+          "group": "pomelo"
+        },
+        {
+          "id": "donghai-dongzhi-cuttlefish",
+          "group": "cuttlefish"
+        },
+        {
+          "id": "yunyang-winter-solstice-red-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        },
+        {
+          "id": "baoshan-liangcui-emblica",
+          "group": "emblica"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        }
+      ],
+      "feature": "shantou-haojiang-liqian-dongjingwan",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 0,
+      "term": "小寒",
+      "all": 27,
+      "foods": [
+        {
+          "id": "zizhong-xiaohan-early-blood-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "luquan-greenhouse-toon-first-pick",
+          "group": "toon-shoot"
+        },
+        {
+          "id": "beian-xiaohan-white-lover-strawberry",
+          "group": "strawberry"
+        },
+        {
+          "id": "fuling-yuzao100-mustard-stem",
+          "group": "fuling-yuzao100-mustard-stem"
+        },
+        {
+          "id": "tianjin-huangya-cabbage",
+          "group": "tianjin-huangya-cabbage"
+        },
+        {
+          "id": "xinzhou-qubeihu-gongdeng-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "tengchong-fenghuang-xiaohan-yam",
+          "group": "yam"
+        },
+        {
+          "id": "hezhou-xialiang-xiaohan-goji-greens",
+          "group": "hezhou-xialiang-xiaohan-goji-greens"
+        },
+        {
+          "id": "luocheng-dafu-xiaohan-black-wood-ear",
+          "group": "luocheng-dafu-xiaohan-black-wood-ear"
+        },
+        {
+          "id": "jiangan-changsha-xiaohan-early-tea-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "nanxian-wushenggong-xiaohan-caitai",
+          "group": "white-caitai"
+        },
+        {
+          "id": "rongan-xiaozhou-winter-head-vegetable",
+          "group": "rongan-xiaozhou-winter-head-vegetable"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "minhou-wenxi-juyou",
+          "group": "pomelo"
+        },
+        {
+          "id": "shantou-donghu-charcoal-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        }
+      ],
+      "feature": "yanshi-fresh-yintiao",
+      "count": 18,
+      "repeat": 8,
+      "repeatRate": 0.4444444444444444
+    },
+    {
+      "year": 2027,
+      "index": 1,
+      "term": "大寒",
+      "all": 31,
+      "foods": [
+        {
+          "id": "dahan-green-carp",
+          "group": "dahan-green-carp"
+        },
+        {
+          "id": "fuling-yuzao100-mustard-stem",
+          "group": "fuling-yuzao100-mustard-stem"
+        },
+        {
+          "id": "qingdao-youreka-greenhouse-blueberry",
+          "group": "qingdao-youreka-greenhouse-blueberry"
+        },
+        {
+          "id": "miyun-houchangjiawu-yuanwei1-tomato",
+          "group": "miyun-houchangjiawu-yuanwei1-tomato"
+        },
+        {
+          "id": "lingshan-dahan-spring-tea-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "yulin-xiaohan-sesame-melon",
+          "group": "yulin-xiaohan-sesame-melon"
+        },
+        {
+          "id": "suixian-lishan-great-cold-shiitake",
+          "group": "suixian-lishan-great-cold-shiitake"
+        },
+        {
+          "id": "lianjiang-great-cold-abalone",
+          "group": "lianjiang-great-cold-abalone"
+        },
+        {
+          "id": "lianjiang-great-cold-kelp-seedlings",
+          "group": "lianjiang-great-cold-kelp-seedlings"
+        },
+        {
+          "id": "huangpi-luzui-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "ntpc-dahan-native-yam",
+          "group": "yam"
+        },
+        {
+          "id": "rongan-xiaozhou-winter-head-vegetable",
+          "group": "rongan-xiaozhou-winter-head-vegetable"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "pujiang-dahan-chunjian",
+          "group": "citrus"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "shantou-donghu-charcoal-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        }
+      ],
+      "feature": "bishan-ercai",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 2,
+      "term": "立春",
+      "all": 16,
+      "foods": [
+        {
+          "id": "wusheng-dayagan-lichun",
+          "group": "citrus"
+        },
+        {
+          "id": "dazu-lichun-winter-vegetable-tip",
+          "group": "dazu-lichun-winter-vegetable-tip"
+        },
+        {
+          "id": "yunxiao-liuye-baigeng-wongcai",
+          "group": "yunxiao-liuye-baigeng-wongcai"
+        },
+        {
+          "id": "yaan-chuancai3-lichun-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "jiaozhou-kailing-suo",
+          "group": "mullet"
+        },
+        {
+          "id": "taiwan-lichun-mackerel",
+          "group": "taiwan-lichun-mackerel"
+        },
+        {
+          "id": "taiwan-lichun-hairtail",
+          "group": "hairtail"
+        },
+        {
+          "id": "taiwan-jingzhe-jiala",
+          "group": "sea-bream"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "hongshan-caitai",
+          "group": "hongshan-caitai"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        },
+        {
+          "id": "wenzhou-pancai",
+          "group": "wenzhou-pancai"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        }
+      ],
+      "feature": "jiaozhou-kailing-suo",
+      "count": 16,
+      "repeat": 5,
+      "repeatRate": 0.3125
+    },
+    {
+      "year": 2027,
+      "index": 3,
+      "term": "雨水",
+      "all": 25,
+      "foods": [
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        },
+        {
+          "id": "dalian-haimaxian",
+          "group": "dalian-haimaxian"
+        },
+        {
+          "id": "juhuanao",
+          "group": "juhuanao"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "taiwan-lichun-mackerel",
+          "group": "taiwan-lichun-mackerel"
+        },
+        {
+          "id": "taiwan-lichun-hairtail",
+          "group": "hairtail"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "jiaozhou-kailing-suo",
+          "group": "mullet"
+        },
+        {
+          "id": "hongshan-caitai",
+          "group": "hongshan-caitai"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        }
+      ],
+      "feature": "wuding-jinquehua",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 4,
+      "term": "惊蛰",
+      "all": 25,
+      "foods": [
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "eshan-jingzhe-mulberry-flower",
+          "group": "eshan-jingzhe-mulberry-flower"
+        },
+        {
+          "id": "guangnan-mianhao-baba",
+          "group": "guangnan-mianhao-baba"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        },
+        {
+          "id": "dalian-haimaxian",
+          "group": "dalian-haimaxian"
+        },
+        {
+          "id": "juhuanao",
+          "group": "juhuanao"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "minhou-chayuan-highland-spring-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "taiwan-jingzhe-jiala",
+          "group": "sea-bream"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia-shrimp-2026",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "suzhou-dongshan-taihu-water-shield",
+          "group": "water-shield"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        }
+      ],
+      "feature": "yongsheng-fresh-kapok",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 5,
+      "term": "春分",
+      "all": 29,
+      "foods": [
+        {
+          "id": "baojing-huangjincha-spring-equinox-bulk",
+          "group": "tea"
+        },
+        {
+          "id": "gejiu-cinaobao",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "conghua-lutian-bitter-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "fuzhou-chunfen-baili-fish",
+          "group": "fuzhou-chunfen-baili-fish"
+        },
+        {
+          "id": "fuzhou-chunfen-chunbihhao",
+          "group": "fuzhou-chunfen-chunbihhao"
+        },
+        {
+          "id": "wuhan-spring-equinox-hanpai-red-amaranth",
+          "group": "wuhan-spring-equinox-hanpai-red-amaranth"
+        },
+        {
+          "id": "ningbo-spring-equinox-alfalfa-shoots",
+          "group": "ningbo-spring-equinox-alfalfa-shoots"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "chengde-spring-equinox-elm-samaras",
+          "group": "chengde-spring-equinox-elm-samaras"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        }
+      ],
+      "feature": "fengqing-xinhua-walnut-flowers",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 6,
+      "term": "清明",
+      "all": 26,
+      "foods": [
+        {
+          "id": "huizhou-chengkan-qingming-tea-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "gejiu-cinaobao",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "chongming-malan-head",
+          "group": "chongming-malan-head"
+        },
+        {
+          "id": "hanzhong-qingming-xiangchun-shoots",
+          "group": "toon-shoot"
+        },
+        {
+          "id": "jiangmen-muzhou-qingming-huangsha-clam",
+          "group": "jiangmen-muzhou-qingming-huangsha-clam"
+        },
+        {
+          "id": "qingdao-shazikou-qingming-spring-mackerel",
+          "group": "seerfish"
+        },
+        {
+          "id": "pearl-river-qingming-cao-shrimp",
+          "group": "pearl-river-qingming-cao-shrimp"
+        },
+        {
+          "id": "guangzhou-qingming-jiaocai",
+          "group": "guangzhou-qingming-jiaocai"
+        },
+        {
+          "id": "panyu-qingming-sugarcane",
+          "group": "sugarcane"
+        },
+        {
+          "id": "sinan-qingming-cai-mouse-ear",
+          "group": "sinan-qingming-cai-mouse-ear"
+        },
+        {
+          "id": "wulong-taiwan-long-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        }
+      ],
+      "feature": "eryuan-haicaihua",
+      "count": 18,
+      "repeat": 6,
+      "repeatRate": 0.3333333333333333
+    },
+    {
+      "year": 2027,
+      "index": 7,
+      "term": "谷雨",
+      "all": 19,
+      "foods": [
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninghai-white-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "shangyu-duanbing-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "lanshan-baidieling-guyu-tea",
+          "group": "tea"
+        },
+        {
+          "id": "wulong-taiwan-long-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "yaoan-edible-rose",
+          "group": "yaoan-edible-rose"
+        },
+        {
+          "id": "wanning-damao-baitangying-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "honghu-oudai",
+          "group": "honghu-oudai"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "cinenya",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "pujiang-dahan-chunjian",
+          "group": "citrus"
+        }
+      ],
+      "feature": "cinenya",
+      "count": 17,
+      "repeat": 8,
+      "repeatRate": 0.47058823529411764
+    },
+    {
+      "year": 2027,
+      "index": 8,
+      "term": "立夏",
+      "all": 22,
+      "foods": [
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninghai-white-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "shanzhou-green-wheat-nianzhuan",
+          "group": "shanzhou-green-wheat-nianzhuan"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lixian-highland-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "fengxian-shihai-2026-japanese-sweet-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "qiongshan-sanmenpo-xiantaoli",
+          "group": "lychee"
+        },
+        {
+          "id": "hubei-ejiao4-summer-jiaobai",
+          "group": "water-bamboo"
+        },
+        {
+          "id": "shidian-lixia-qingmei",
+          "group": "green-plum"
+        },
+        {
+          "id": "changshu-lixia-fresh-fava",
+          "group": "fava"
+        },
+        {
+          "id": "jiangmen-duruang-lixiang-cool-gourd",
+          "group": "jiangmen-duruang-lixiang-cool-gourd"
+        },
+        {
+          "id": "wenzhou-lingkun-baizhuogua",
+          "group": "wenzhou-lingkun-baizhuogua"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        }
+      ],
+      "feature": "jianshui-caoya",
+      "count": 14,
+      "repeat": 7,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 9,
+      "term": "小满",
+      "all": 23,
+      "foods": [
+        {
+          "id": "tongxiang-zhuili",
+          "group": "plum"
+        },
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "shanzhou-green-wheat-nianzhuan",
+          "group": "shanzhou-green-wheat-nianzhuan"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "lichuan-heyuan-girl-fruit",
+          "group": "lichuan-heyuan-girl-fruit"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jiande-chuncai",
+          "group": "water-shield"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "kaohsiung-yuhebao-lychee-late-may",
+          "group": "lychee"
+        },
+        {
+          "id": "suzhou-june-yellow-late-may-market",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "tangqi-tangbei-late-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "tianshui-qinzhou-xiaoman-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "cinenya",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        }
+      ],
+      "feature": "shanzhou-green-wheat-nianzhuan",
+      "count": 18,
+      "repeat": 8,
+      "repeatRate": 0.4444444444444444
+    },
+    {
+      "year": 2027,
+      "index": 10,
+      "term": "芒种",
+      "all": 17,
+      "foods": [
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "chaoyang-xilu-wusu-waxberry",
+          "group": "waxberry"
+        },
+        {
+          "id": "zhangmutou-mangzhong-guanyin-green-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "mengzi-june-red-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "wuhan-hannan-fresh-sweet-corn",
+          "group": "sweet-corn"
+        },
+        {
+          "id": "jinghe-bajiahu-mangzhong-pearl-nectarine",
+          "group": "peach"
+        },
+        {
+          "id": "dazhou-tanzi-mangzhong-green-plum-last-pick",
+          "group": "green-plum"
+        },
+        {
+          "id": "zhenning-honey-plum",
+          "group": "plum"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jiande-chuncai",
+          "group": "water-shield"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        },
+        {
+          "id": "honghu-oudai",
+          "group": "honghu-oudai"
+        }
+      ],
+      "feature": "tonghai-fresh-sour-quince",
+      "count": 14,
+      "repeat": 7,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 11,
+      "term": "夏至",
+      "all": 25,
+      "foods": [
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "yubei-xiazhi-sugar-peach",
+          "group": "peach"
+        },
+        {
+          "id": "caidian-summer-solstice-fresh-lotus-pod",
+          "group": "lotus-seed"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "minqin-field-shacong",
+          "group": "minqin-field-shacong"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "tongxiang-zhuili",
+          "group": "plum"
+        },
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "mengzi-june-red-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "wuhan-hannan-fresh-sweet-corn",
+          "group": "sweet-corn"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        }
+      ],
+      "feature": "harbin-fresh-honeyberry",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 12,
+      "term": "小暑",
+      "all": 20,
+      "foods": [
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "tamsui-xiaoshu-black-bream",
+          "group": "sea-bream"
+        },
+        {
+          "id": "taixing-sucui1-early-pear",
+          "group": "pear"
+        },
+        {
+          "id": "pinggu-zhongpan9-xiaoshu-peach",
+          "group": "peach"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dongguan-tangxia-shixia-longan",
+          "group": "longan"
+        },
+        {
+          "id": "gaoqing-taisun-jinchan",
+          "group": "gaoqing-taisun-jinchan"
+        },
+        {
+          "id": "lianjiang-xiaoshu-june-hemp-bamboo-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "hejiang-xiaoshu-late-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        }
+      ],
+      "feature": "chenghai-baoke",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 13,
+      "term": "大暑",
+      "all": 24,
+      "foods": [
+        {
+          "id": "wenchuan-qingcui-plum",
+          "group": "plum"
+        },
+        {
+          "id": "huocheng-xiangfei-crabapple",
+          "group": "crabapple"
+        },
+        {
+          "id": "miaoli-gongguan-fresh-jujube",
+          "group": "miaoli-gongguan-fresh-jujube"
+        },
+        {
+          "id": "dengkou-wallace-melon",
+          "group": "dengkou-wallace-melon"
+        },
+        {
+          "id": "longyangxia-salmon",
+          "group": "longyangxia-salmon"
+        },
+        {
+          "id": "hejiang-late-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "shicheng-white-lotus",
+          "group": "lotus-seed"
+        },
+        {
+          "id": "songjiang-cangqiao-crystal-pear",
+          "group": "pear"
+        },
+        {
+          "id": "lufeng-zhongcun-late-early-chestnut",
+          "group": "chestnut"
+        },
+        {
+          "id": "nanhui-daxue-water-honey-peach",
+          "group": "peach"
+        },
+        {
+          "id": "jiading-malu-zuijinxiang-grape",
+          "group": "jiading-malu-zuijinxiang-grape"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dongguan-tangxia-shixia-longan",
+          "group": "longan"
+        }
+      ],
+      "feature": "xishuangbanna-wood-milk-fruit",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 14,
+      "term": "立秋",
+      "all": 19,
+      "foods": [
+        {
+          "id": "shidian-autumn-longzhu-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "tainan-dongshan-fresh-longan",
+          "group": "longan"
+        },
+        {
+          "id": "taiwan-lichiu-kaohsiung-squid",
+          "group": "cuttlefish"
+        },
+        {
+          "id": "taiwan-lichiu-northwest-tilefish",
+          "group": "taiwan-lichiu-northwest-tilefish"
+        },
+        {
+          "id": "taiwan-lichiu-red-eye-bream",
+          "group": "red-eye-fish"
+        },
+        {
+          "id": "fengxian-nanqiao-early-water-red-caltrop",
+          "group": "water-caltrop"
+        },
+        {
+          "id": "huocheng-xiangfei-crabapple",
+          "group": "crabapple"
+        },
+        {
+          "id": "mengzi-lvzi-softseed-pomegranate",
+          "group": "mengzi-lvzi-softseed-pomegranate"
+        },
+        {
+          "id": "baoshan-zaoqiu-sweet-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "shanzhou-black-emperor-grape",
+          "group": "shanzhou-black-emperor-grape"
+        },
+        {
+          "id": "guanyun-summer-doudan",
+          "group": "guanyun-summer-doudan"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        }
+      ],
+      "feature": "jitoumi",
+      "count": 18,
+      "repeat": 5,
+      "repeatRate": 0.2777777777777778
+    },
+    {
+      "year": 2027,
+      "index": 15,
+      "term": "处暑",
+      "all": 24,
+      "foods": [
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "shidian-autumn-longzhu-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dongguan-tangxia-shixia-longan",
+          "group": "longan"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        }
+      ],
+      "feature": "ganbajun",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 16,
+      "term": "白露",
+      "all": 27,
+      "foods": [
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "miaoli-xihu-wendan",
+          "group": "pomelo"
+        },
+        {
+          "id": "jiangning-bailu-white-dew-tea",
+          "group": "tea"
+        },
+        {
+          "id": "shexian-qizili-hickory",
+          "group": "hickory"
+        },
+        {
+          "id": "cangyuan-bailu-lincang-macadamia",
+          "group": "cangyuan-bailu-lincang-macadamia"
+        },
+        {
+          "id": "shiping-shaochong-bailu-walnut",
+          "group": "walnut"
+        },
+        {
+          "id": "fuzhou-longxiangdao-bailu-longan",
+          "group": "longan"
+        },
+        {
+          "id": "fuzhou-bailu-red-xun",
+          "group": "mud-crab"
+        },
+        {
+          "id": "suzhou-bailu-ginkgo",
+          "group": "suzhou-bailu-ginkgo"
+        },
+        {
+          "id": "hanshou-yubiou",
+          "group": "lotus-root"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "anlu-bailu-huaguoshan-fig",
+          "group": "fig"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        }
+      ],
+      "feature": "huoshan-yanghe",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 17,
+      "term": "秋分",
+      "all": 29,
+      "foods": [
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "gongliao-autumn-japanese-horse-mackerel",
+          "group": "gongliao-autumn-japanese-horse-mackerel"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "binchuan-renong1-yuganzi",
+          "group": "emblica"
+        },
+        {
+          "id": "taitung-luoshen-calyx",
+          "group": "taitung-luoshen-calyx"
+        },
+        {
+          "id": "henan-qiufen-tunisian-softseed-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "hanshou-yubiou",
+          "group": "lotus-root"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        }
+      ],
+      "feature": "bayuegua",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 18,
+      "term": "寒露",
+      "all": 24,
+      "foods": [
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "laiyang-pear",
+          "group": "pear"
+        },
+        {
+          "id": "caidian-ehong4-early-caitai",
+          "group": "red-caitai"
+        },
+        {
+          "id": "changning-hanlu-camellia-seed-oil",
+          "group": "changning-hanlu-camellia-seed-oil"
+        },
+        {
+          "id": "fuzhou-hanlu-razor-clam-dry",
+          "group": "fuzhou-hanlu-razor-clam-dry"
+        },
+        {
+          "id": "ningbo-zhanqi-dafeng-early-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "binchuan-renong1-yuganzi",
+          "group": "emblica"
+        },
+        {
+          "id": "taitung-luoshen-calyx",
+          "group": "taitung-luoshen-calyx"
+        },
+        {
+          "id": "banan-wubu-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        },
+        {
+          "id": "ximeng-bamboo-worm",
+          "group": "ximeng-bamboo-worm"
+        },
+        {
+          "id": "yanqing-baleng-crisp-haitang",
+          "group": "crabapple"
+        }
+      ],
+      "feature": "ximeng-bamboo-worm",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 19,
+      "term": "霜降",
+      "all": 29,
+      "foods": [
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "heze-shannong-crisp-pear",
+          "group": "pear"
+        },
+        {
+          "id": "wuding-fawowo-winter-peach",
+          "group": "peach"
+        },
+        {
+          "id": "wenxian-shuangjiang-tiegun-yam",
+          "group": "yam"
+        },
+        {
+          "id": "xunyang-guizao",
+          "group": "xunyang-guizao"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        },
+        {
+          "id": "tainan-madou-frost-white-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        }
+      ],
+      "feature": "xunyang-guizao",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 20,
+      "term": "立冬",
+      "all": 25,
+      "foods": [
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "huangbohai-yingzhuaxia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "mouding-winter-early-fava",
+          "group": "fava"
+        },
+        {
+          "id": "cangnan-lidong-four-seasons-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "dalian-jinzhou-hairyclam",
+          "group": "dalian-jinzhou-hairyclam"
+        },
+        {
+          "id": "qingdao-shuangdongmi-peach",
+          "group": "peach"
+        },
+        {
+          "id": "qixia-lidong-winter-after-apple",
+          "group": "apple"
+        },
+        {
+          "id": "yongjia-hesheng-red-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "taiwan-lidong-east-red-eye-bream",
+          "group": "red-eye-fish"
+        },
+        {
+          "id": "taiwan-lidong-east-jiana-fish",
+          "group": "sea-bream"
+        },
+        {
+          "id": "guangning-lidong-ma-bamboo-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "pingdu-majiagou-celery",
+          "group": "celery"
+        },
+        {
+          "id": "lanxi-huitan-sugarcane",
+          "group": "sugarcane"
+        },
+        {
+          "id": "zhangqiu-dawutong-scallion",
+          "group": "zhangqiu-dawutong-scallion"
+        }
+      ],
+      "feature": "helan-luosicai",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 21,
+      "term": "小雪",
+      "all": 27,
+      "foods": [
+        {
+          "id": "wenzhou-sanyang-ougan",
+          "group": "citrus"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard",
+          "group": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard"
+        },
+        {
+          "id": "shazhou-zhugengqin",
+          "group": "water-celery"
+        },
+        {
+          "id": "wujiang-xiaoxue-fragrant-greens",
+          "group": "tatsoi"
+        },
+        {
+          "id": "cigu",
+          "group": "cigu"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "huangbohai-yingzhuaxia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "mouding-winter-early-fava",
+          "group": "fava"
+        },
+        {
+          "id": "yongjia-hesheng-red-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        }
+      ],
+      "feature": "xiaolan-shiju-huaban",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 22,
+      "term": "大雪",
+      "all": 20,
+      "foods": [
+        {
+          "id": "baoshan-liangcui-emblica",
+          "group": "emblica"
+        },
+        {
+          "id": "xinhui-yamen-tianshui-radish",
+          "group": "radish"
+        },
+        {
+          "id": "zhangzidao-daxue-sea-cucumber",
+          "group": "zhangzidao-daxue-sea-cucumber"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "yuanchang-heijingang-winter-peanut",
+          "group": "yuanchang-heijingang-winter-peanut"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "luogang-sweet-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "shazhou-zhugengqin",
+          "group": "water-celery"
+        },
+        {
+          "id": "cigu",
+          "group": "cigu"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        }
+      ],
+      "feature": "baoshan-liangcui-emblica",
+      "count": 16,
+      "repeat": 8,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2027,
+      "index": 23,
+      "term": "冬至",
+      "all": 29,
+      "foods": [
+        {
+          "id": "huadu-jingtang-lotusroot",
+          "group": "lotus-root"
+        },
+        {
+          "id": "ningbo-youdai",
+          "group": "hairtail"
+        },
+        {
+          "id": "bomi-winter-muli",
+          "group": "pear"
+        },
+        {
+          "id": "wuhua-longcun-mountain-sweet-potato",
+          "group": "wuhua-longcun-mountain-sweet-potato"
+        },
+        {
+          "id": "xinhui-xinghuang-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "shantou-haojiang-liqian-dongjingwan",
+          "group": "shantou-haojiang-liqian-dongjingwan"
+        },
+        {
+          "id": "taiwan-winter-solstice-mullet-roe",
+          "group": "mullet-roe"
+        },
+        {
+          "id": "minhou-wenxi-juyou",
+          "group": "pomelo"
+        },
+        {
+          "id": "donghai-dongzhi-cuttlefish",
+          "group": "cuttlefish"
+        },
+        {
+          "id": "yunyang-winter-solstice-red-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        },
+        {
+          "id": "baoshan-liangcui-emblica",
+          "group": "emblica"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        }
+      ],
+      "feature": "shantou-haojiang-liqian-dongjingwan",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 0,
+      "term": "小寒",
+      "all": 27,
+      "foods": [
+        {
+          "id": "zizhong-xiaohan-early-blood-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "luquan-greenhouse-toon-first-pick",
+          "group": "toon-shoot"
+        },
+        {
+          "id": "beian-xiaohan-white-lover-strawberry",
+          "group": "strawberry"
+        },
+        {
+          "id": "fuling-yuzao100-mustard-stem",
+          "group": "fuling-yuzao100-mustard-stem"
+        },
+        {
+          "id": "tianjin-huangya-cabbage",
+          "group": "tianjin-huangya-cabbage"
+        },
+        {
+          "id": "xinzhou-qubeihu-gongdeng-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "tengchong-fenghuang-xiaohan-yam",
+          "group": "yam"
+        },
+        {
+          "id": "hezhou-xialiang-xiaohan-goji-greens",
+          "group": "hezhou-xialiang-xiaohan-goji-greens"
+        },
+        {
+          "id": "luocheng-dafu-xiaohan-black-wood-ear",
+          "group": "luocheng-dafu-xiaohan-black-wood-ear"
+        },
+        {
+          "id": "jiangan-changsha-xiaohan-early-tea-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "nanxian-wushenggong-xiaohan-caitai",
+          "group": "white-caitai"
+        },
+        {
+          "id": "rongan-xiaozhou-winter-head-vegetable",
+          "group": "rongan-xiaozhou-winter-head-vegetable"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "minhou-wenxi-juyou",
+          "group": "pomelo"
+        },
+        {
+          "id": "shantou-donghu-charcoal-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        }
+      ],
+      "feature": "yanshi-fresh-yintiao",
+      "count": 18,
+      "repeat": 8,
+      "repeatRate": 0.4444444444444444
+    },
+    {
+      "year": 2028,
+      "index": 1,
+      "term": "大寒",
+      "all": 31,
+      "foods": [
+        {
+          "id": "dahan-green-carp",
+          "group": "dahan-green-carp"
+        },
+        {
+          "id": "fuling-yuzao100-mustard-stem",
+          "group": "fuling-yuzao100-mustard-stem"
+        },
+        {
+          "id": "qingdao-youreka-greenhouse-blueberry",
+          "group": "qingdao-youreka-greenhouse-blueberry"
+        },
+        {
+          "id": "miyun-houchangjiawu-yuanwei1-tomato",
+          "group": "miyun-houchangjiawu-yuanwei1-tomato"
+        },
+        {
+          "id": "lingshan-dahan-spring-tea-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "yulin-xiaohan-sesame-melon",
+          "group": "yulin-xiaohan-sesame-melon"
+        },
+        {
+          "id": "suixian-lishan-great-cold-shiitake",
+          "group": "suixian-lishan-great-cold-shiitake"
+        },
+        {
+          "id": "lianjiang-great-cold-abalone",
+          "group": "lianjiang-great-cold-abalone"
+        },
+        {
+          "id": "lianjiang-great-cold-kelp-seedlings",
+          "group": "lianjiang-great-cold-kelp-seedlings"
+        },
+        {
+          "id": "huangpi-luzui-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "ntpc-dahan-native-yam",
+          "group": "yam"
+        },
+        {
+          "id": "rongan-xiaozhou-winter-head-vegetable",
+          "group": "rongan-xiaozhou-winter-head-vegetable"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "pujiang-dahan-chunjian",
+          "group": "citrus"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "shantou-donghu-charcoal-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        }
+      ],
+      "feature": "bishan-ercai",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 2,
+      "term": "立春",
+      "all": 16,
+      "foods": [
+        {
+          "id": "wusheng-dayagan-lichun",
+          "group": "citrus"
+        },
+        {
+          "id": "dazu-lichun-winter-vegetable-tip",
+          "group": "dazu-lichun-winter-vegetable-tip"
+        },
+        {
+          "id": "yunxiao-liuye-baigeng-wongcai",
+          "group": "yunxiao-liuye-baigeng-wongcai"
+        },
+        {
+          "id": "yaan-chuancai3-lichun-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "jiaozhou-kailing-suo",
+          "group": "mullet"
+        },
+        {
+          "id": "taiwan-lichun-mackerel",
+          "group": "taiwan-lichun-mackerel"
+        },
+        {
+          "id": "taiwan-lichun-hairtail",
+          "group": "hairtail"
+        },
+        {
+          "id": "taiwan-jingzhe-jiala",
+          "group": "sea-bream"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "hongshan-caitai",
+          "group": "hongshan-caitai"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        },
+        {
+          "id": "wenzhou-pancai",
+          "group": "wenzhou-pancai"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        }
+      ],
+      "feature": "jiaozhou-kailing-suo",
+      "count": 16,
+      "repeat": 5,
+      "repeatRate": 0.3125
+    },
+    {
+      "year": 2028,
+      "index": 3,
+      "term": "雨水",
+      "all": 25,
+      "foods": [
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        },
+        {
+          "id": "dalian-haimaxian",
+          "group": "dalian-haimaxian"
+        },
+        {
+          "id": "juhuanao",
+          "group": "juhuanao"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "taiwan-lichun-mackerel",
+          "group": "taiwan-lichun-mackerel"
+        },
+        {
+          "id": "taiwan-lichun-hairtail",
+          "group": "hairtail"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "jiaozhou-kailing-suo",
+          "group": "mullet"
+        },
+        {
+          "id": "hongshan-caitai",
+          "group": "hongshan-caitai"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        }
+      ],
+      "feature": "wuding-jinquehua",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 4,
+      "term": "惊蛰",
+      "all": 25,
+      "foods": [
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "eshan-jingzhe-mulberry-flower",
+          "group": "eshan-jingzhe-mulberry-flower"
+        },
+        {
+          "id": "guangnan-mianhao-baba",
+          "group": "guangnan-mianhao-baba"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        },
+        {
+          "id": "dalian-haimaxian",
+          "group": "dalian-haimaxian"
+        },
+        {
+          "id": "juhuanao",
+          "group": "juhuanao"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "minhou-chayuan-highland-spring-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "taiwan-jingzhe-jiala",
+          "group": "sea-bream"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia-shrimp-2026",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "suzhou-dongshan-taihu-water-shield",
+          "group": "water-shield"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        }
+      ],
+      "feature": "yongsheng-fresh-kapok",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 5,
+      "term": "春分",
+      "all": 29,
+      "foods": [
+        {
+          "id": "baojing-huangjincha-spring-equinox-bulk",
+          "group": "tea"
+        },
+        {
+          "id": "gejiu-cinaobao",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "conghua-lutian-bitter-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "fuzhou-chunfen-baili-fish",
+          "group": "fuzhou-chunfen-baili-fish"
+        },
+        {
+          "id": "fuzhou-chunfen-chunbihhao",
+          "group": "fuzhou-chunfen-chunbihhao"
+        },
+        {
+          "id": "wuhan-spring-equinox-hanpai-red-amaranth",
+          "group": "wuhan-spring-equinox-hanpai-red-amaranth"
+        },
+        {
+          "id": "ningbo-spring-equinox-alfalfa-shoots",
+          "group": "ningbo-spring-equinox-alfalfa-shoots"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "chengde-spring-equinox-elm-samaras",
+          "group": "chengde-spring-equinox-elm-samaras"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        }
+      ],
+      "feature": "fengqing-xinhua-walnut-flowers",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 6,
+      "term": "清明",
+      "all": 26,
+      "foods": [
+        {
+          "id": "huizhou-chengkan-qingming-tea-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "gejiu-cinaobao",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "chongming-malan-head",
+          "group": "chongming-malan-head"
+        },
+        {
+          "id": "hanzhong-qingming-xiangchun-shoots",
+          "group": "toon-shoot"
+        },
+        {
+          "id": "jiangmen-muzhou-qingming-huangsha-clam",
+          "group": "jiangmen-muzhou-qingming-huangsha-clam"
+        },
+        {
+          "id": "qingdao-shazikou-qingming-spring-mackerel",
+          "group": "seerfish"
+        },
+        {
+          "id": "pearl-river-qingming-cao-shrimp",
+          "group": "pearl-river-qingming-cao-shrimp"
+        },
+        {
+          "id": "guangzhou-qingming-jiaocai",
+          "group": "guangzhou-qingming-jiaocai"
+        },
+        {
+          "id": "panyu-qingming-sugarcane",
+          "group": "sugarcane"
+        },
+        {
+          "id": "sinan-qingming-cai-mouse-ear",
+          "group": "sinan-qingming-cai-mouse-ear"
+        },
+        {
+          "id": "wulong-taiwan-long-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        }
+      ],
+      "feature": "eryuan-haicaihua",
+      "count": 18,
+      "repeat": 6,
+      "repeatRate": 0.3333333333333333
+    },
+    {
+      "year": 2028,
+      "index": 7,
+      "term": "谷雨",
+      "all": 19,
+      "foods": [
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninghai-white-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "shangyu-duanbing-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "lanshan-baidieling-guyu-tea",
+          "group": "tea"
+        },
+        {
+          "id": "wulong-taiwan-long-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "yaoan-edible-rose",
+          "group": "yaoan-edible-rose"
+        },
+        {
+          "id": "wanning-damao-baitangying-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "honghu-oudai",
+          "group": "honghu-oudai"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "cinenya",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "pujiang-dahan-chunjian",
+          "group": "citrus"
+        }
+      ],
+      "feature": "cinenya",
+      "count": 17,
+      "repeat": 8,
+      "repeatRate": 0.47058823529411764
+    },
+    {
+      "year": 2028,
+      "index": 8,
+      "term": "立夏",
+      "all": 22,
+      "foods": [
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninghai-white-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "shanzhou-green-wheat-nianzhuan",
+          "group": "shanzhou-green-wheat-nianzhuan"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lixian-highland-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "fengxian-shihai-2026-japanese-sweet-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "qiongshan-sanmenpo-xiantaoli",
+          "group": "lychee"
+        },
+        {
+          "id": "hubei-ejiao4-summer-jiaobai",
+          "group": "water-bamboo"
+        },
+        {
+          "id": "shidian-lixia-qingmei",
+          "group": "green-plum"
+        },
+        {
+          "id": "changshu-lixia-fresh-fava",
+          "group": "fava"
+        },
+        {
+          "id": "jiangmen-duruang-lixiang-cool-gourd",
+          "group": "jiangmen-duruang-lixiang-cool-gourd"
+        },
+        {
+          "id": "wenzhou-lingkun-baizhuogua",
+          "group": "wenzhou-lingkun-baizhuogua"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        }
+      ],
+      "feature": "jianshui-caoya",
+      "count": 14,
+      "repeat": 7,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 9,
+      "term": "小满",
+      "all": 25,
+      "foods": [
+        {
+          "id": "tongxiang-zhuili",
+          "group": "plum"
+        },
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "shanzhou-green-wheat-nianzhuan",
+          "group": "shanzhou-green-wheat-nianzhuan"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "lichuan-heyuan-girl-fruit",
+          "group": "lichuan-heyuan-girl-fruit"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jiande-chuncai",
+          "group": "water-shield"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "kaohsiung-yuhebao-lychee-late-may",
+          "group": "lychee"
+        },
+        {
+          "id": "suzhou-june-yellow-late-may-market",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "tangqi-tangbei-late-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "tianshui-qinzhou-xiaoman-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "fengxian-shihai-2026-japanese-sweet-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "hubei-ejiao4-summer-jiaobai",
+          "group": "water-bamboo"
+        }
+      ],
+      "feature": "shanzhou-green-wheat-nianzhuan",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 10,
+      "term": "芒种",
+      "all": 19,
+      "foods": [
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "chaoyang-xilu-wusu-waxberry",
+          "group": "waxberry"
+        },
+        {
+          "id": "zhangmutou-mangzhong-guanyin-green-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "mengzi-june-red-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "wuhan-hannan-fresh-sweet-corn",
+          "group": "sweet-corn"
+        },
+        {
+          "id": "jinghe-bajiahu-mangzhong-pearl-nectarine",
+          "group": "peach"
+        },
+        {
+          "id": "dazhou-tanzi-mangzhong-green-plum-last-pick",
+          "group": "green-plum"
+        },
+        {
+          "id": "zhenning-honey-plum",
+          "group": "plum"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jiande-chuncai",
+          "group": "water-shield"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        },
+        {
+          "id": "honghu-oudai",
+          "group": "honghu-oudai"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        }
+      ],
+      "feature": "tonghai-fresh-sour-quince",
+      "count": 16,
+      "repeat": 8,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 11,
+      "term": "夏至",
+      "all": 25,
+      "foods": [
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "yubei-xiazhi-sugar-peach",
+          "group": "peach"
+        },
+        {
+          "id": "caidian-summer-solstice-fresh-lotus-pod",
+          "group": "lotus-seed"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "minqin-field-shacong",
+          "group": "minqin-field-shacong"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "tongxiang-zhuili",
+          "group": "plum"
+        },
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "mengzi-june-red-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "wuhan-hannan-fresh-sweet-corn",
+          "group": "sweet-corn"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        }
+      ],
+      "feature": "harbin-fresh-honeyberry",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 12,
+      "term": "小暑",
+      "all": 20,
+      "foods": [
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "tamsui-xiaoshu-black-bream",
+          "group": "sea-bream"
+        },
+        {
+          "id": "taixing-sucui1-early-pear",
+          "group": "pear"
+        },
+        {
+          "id": "pinggu-zhongpan9-xiaoshu-peach",
+          "group": "peach"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dongguan-tangxia-shixia-longan",
+          "group": "longan"
+        },
+        {
+          "id": "gaoqing-taisun-jinchan",
+          "group": "gaoqing-taisun-jinchan"
+        },
+        {
+          "id": "lianjiang-xiaoshu-june-hemp-bamboo-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "hejiang-xiaoshu-late-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        }
+      ],
+      "feature": "chenghai-baoke",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 13,
+      "term": "大暑",
+      "all": 24,
+      "foods": [
+        {
+          "id": "wenchuan-qingcui-plum",
+          "group": "plum"
+        },
+        {
+          "id": "huocheng-xiangfei-crabapple",
+          "group": "crabapple"
+        },
+        {
+          "id": "miaoli-gongguan-fresh-jujube",
+          "group": "miaoli-gongguan-fresh-jujube"
+        },
+        {
+          "id": "dengkou-wallace-melon",
+          "group": "dengkou-wallace-melon"
+        },
+        {
+          "id": "longyangxia-salmon",
+          "group": "longyangxia-salmon"
+        },
+        {
+          "id": "hejiang-late-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "shicheng-white-lotus",
+          "group": "lotus-seed"
+        },
+        {
+          "id": "songjiang-cangqiao-crystal-pear",
+          "group": "pear"
+        },
+        {
+          "id": "lufeng-zhongcun-late-early-chestnut",
+          "group": "chestnut"
+        },
+        {
+          "id": "nanhui-daxue-water-honey-peach",
+          "group": "peach"
+        },
+        {
+          "id": "jiading-malu-zuijinxiang-grape",
+          "group": "jiading-malu-zuijinxiang-grape"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dongguan-tangxia-shixia-longan",
+          "group": "longan"
+        }
+      ],
+      "feature": "xishuangbanna-wood-milk-fruit",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 14,
+      "term": "立秋",
+      "all": 19,
+      "foods": [
+        {
+          "id": "shidian-autumn-longzhu-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "tainan-dongshan-fresh-longan",
+          "group": "longan"
+        },
+        {
+          "id": "taiwan-lichiu-kaohsiung-squid",
+          "group": "cuttlefish"
+        },
+        {
+          "id": "taiwan-lichiu-northwest-tilefish",
+          "group": "taiwan-lichiu-northwest-tilefish"
+        },
+        {
+          "id": "taiwan-lichiu-red-eye-bream",
+          "group": "red-eye-fish"
+        },
+        {
+          "id": "fengxian-nanqiao-early-water-red-caltrop",
+          "group": "water-caltrop"
+        },
+        {
+          "id": "huocheng-xiangfei-crabapple",
+          "group": "crabapple"
+        },
+        {
+          "id": "mengzi-lvzi-softseed-pomegranate",
+          "group": "mengzi-lvzi-softseed-pomegranate"
+        },
+        {
+          "id": "baoshan-zaoqiu-sweet-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "shanzhou-black-emperor-grape",
+          "group": "shanzhou-black-emperor-grape"
+        },
+        {
+          "id": "guanyun-summer-doudan",
+          "group": "guanyun-summer-doudan"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        }
+      ],
+      "feature": "jitoumi",
+      "count": 18,
+      "repeat": 5,
+      "repeatRate": 0.2777777777777778
+    },
+    {
+      "year": 2028,
+      "index": 15,
+      "term": "处暑",
+      "all": 24,
+      "foods": [
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "shidian-autumn-longzhu-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        },
+        {
+          "id": "tainan-dongshan-fresh-longan",
+          "group": "longan"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        }
+      ],
+      "feature": "ganbajun",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 16,
+      "term": "白露",
+      "all": 27,
+      "foods": [
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "miaoli-xihu-wendan",
+          "group": "pomelo"
+        },
+        {
+          "id": "jiangning-bailu-white-dew-tea",
+          "group": "tea"
+        },
+        {
+          "id": "shexian-qizili-hickory",
+          "group": "hickory"
+        },
+        {
+          "id": "cangyuan-bailu-lincang-macadamia",
+          "group": "cangyuan-bailu-lincang-macadamia"
+        },
+        {
+          "id": "shiping-shaochong-bailu-walnut",
+          "group": "walnut"
+        },
+        {
+          "id": "fuzhou-longxiangdao-bailu-longan",
+          "group": "longan"
+        },
+        {
+          "id": "fuzhou-bailu-red-xun",
+          "group": "mud-crab"
+        },
+        {
+          "id": "suzhou-bailu-ginkgo",
+          "group": "suzhou-bailu-ginkgo"
+        },
+        {
+          "id": "hanshou-yubiou",
+          "group": "lotus-root"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "anlu-bailu-huaguoshan-fig",
+          "group": "fig"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        }
+      ],
+      "feature": "huoshan-yanghe",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 17,
+      "term": "秋分",
+      "all": 29,
+      "foods": [
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "gongliao-autumn-japanese-horse-mackerel",
+          "group": "gongliao-autumn-japanese-horse-mackerel"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "binchuan-renong1-yuganzi",
+          "group": "emblica"
+        },
+        {
+          "id": "taitung-luoshen-calyx",
+          "group": "taitung-luoshen-calyx"
+        },
+        {
+          "id": "henan-qiufen-tunisian-softseed-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "hanshou-yubiou",
+          "group": "lotus-root"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        }
+      ],
+      "feature": "bayuegua",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 18,
+      "term": "寒露",
+      "all": 24,
+      "foods": [
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "laiyang-pear",
+          "group": "pear"
+        },
+        {
+          "id": "caidian-ehong4-early-caitai",
+          "group": "red-caitai"
+        },
+        {
+          "id": "changning-hanlu-camellia-seed-oil",
+          "group": "changning-hanlu-camellia-seed-oil"
+        },
+        {
+          "id": "fuzhou-hanlu-razor-clam-dry",
+          "group": "fuzhou-hanlu-razor-clam-dry"
+        },
+        {
+          "id": "ningbo-zhanqi-dafeng-early-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "binchuan-renong1-yuganzi",
+          "group": "emblica"
+        },
+        {
+          "id": "taitung-luoshen-calyx",
+          "group": "taitung-luoshen-calyx"
+        },
+        {
+          "id": "banan-wubu-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        },
+        {
+          "id": "ximeng-bamboo-worm",
+          "group": "ximeng-bamboo-worm"
+        },
+        {
+          "id": "yanqing-baleng-crisp-haitang",
+          "group": "crabapple"
+        }
+      ],
+      "feature": "ximeng-bamboo-worm",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 19,
+      "term": "霜降",
+      "all": 29,
+      "foods": [
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "heze-shannong-crisp-pear",
+          "group": "pear"
+        },
+        {
+          "id": "wuding-fawowo-winter-peach",
+          "group": "peach"
+        },
+        {
+          "id": "wenxian-shuangjiang-tiegun-yam",
+          "group": "yam"
+        },
+        {
+          "id": "xunyang-guizao",
+          "group": "xunyang-guizao"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        },
+        {
+          "id": "tainan-madou-frost-white-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        }
+      ],
+      "feature": "xunyang-guizao",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 20,
+      "term": "立冬",
+      "all": 25,
+      "foods": [
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "huangbohai-yingzhuaxia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "mouding-winter-early-fava",
+          "group": "fava"
+        },
+        {
+          "id": "cangnan-lidong-four-seasons-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "dalian-jinzhou-hairyclam",
+          "group": "dalian-jinzhou-hairyclam"
+        },
+        {
+          "id": "qingdao-shuangdongmi-peach",
+          "group": "peach"
+        },
+        {
+          "id": "qixia-lidong-winter-after-apple",
+          "group": "apple"
+        },
+        {
+          "id": "yongjia-hesheng-red-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "taiwan-lidong-east-red-eye-bream",
+          "group": "red-eye-fish"
+        },
+        {
+          "id": "taiwan-lidong-east-jiana-fish",
+          "group": "sea-bream"
+        },
+        {
+          "id": "guangning-lidong-ma-bamboo-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "pingdu-majiagou-celery",
+          "group": "celery"
+        },
+        {
+          "id": "lanxi-huitan-sugarcane",
+          "group": "sugarcane"
+        },
+        {
+          "id": "zhangqiu-dawutong-scallion",
+          "group": "zhangqiu-dawutong-scallion"
+        }
+      ],
+      "feature": "helan-luosicai",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 21,
+      "term": "小雪",
+      "all": 27,
+      "foods": [
+        {
+          "id": "wenzhou-sanyang-ougan",
+          "group": "citrus"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard",
+          "group": "ningbo-yinzhou-xiaoxue-fresh-snow-mustard"
+        },
+        {
+          "id": "shazhou-zhugengqin",
+          "group": "water-celery"
+        },
+        {
+          "id": "wujiang-xiaoxue-fragrant-greens",
+          "group": "tatsoi"
+        },
+        {
+          "id": "cigu",
+          "group": "cigu"
+        },
+        {
+          "id": "taiwan-daxue-mullet",
+          "group": "mullet"
+        },
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "huangbohai-yingzhuaxia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "mouding-winter-early-fava",
+          "group": "fava"
+        },
+        {
+          "id": "yongjia-hesheng-red-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        }
+      ],
+      "feature": "xiaolan-shiju-huaban",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 22,
+      "term": "大雪",
+      "all": 19,
+      "foods": [
+        {
+          "id": "baoshan-liangcui-emblica",
+          "group": "emblica"
+        },
+        {
+          "id": "xinhui-yamen-tianshui-radish",
+          "group": "radish"
+        },
+        {
+          "id": "zhangzidao-daxue-sea-cucumber",
+          "group": "zhangzidao-daxue-sea-cucumber"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "yuanchang-heijingang-winter-peanut",
+          "group": "yuanchang-heijingang-winter-peanut"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "luogang-sweet-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "shazhou-zhugengqin",
+          "group": "water-celery"
+        },
+        {
+          "id": "cigu",
+          "group": "cigu"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        }
+      ],
+      "feature": "baoshan-liangcui-emblica",
+      "count": 14,
+      "repeat": 7,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2028,
+      "index": 23,
+      "term": "冬至",
+      "all": 29,
+      "foods": [
+        {
+          "id": "huadu-jingtang-lotusroot",
+          "group": "lotus-root"
+        },
+        {
+          "id": "ningbo-youdai",
+          "group": "hairtail"
+        },
+        {
+          "id": "bomi-winter-muli",
+          "group": "pear"
+        },
+        {
+          "id": "wuhua-longcun-mountain-sweet-potato",
+          "group": "wuhua-longcun-mountain-sweet-potato"
+        },
+        {
+          "id": "xinhui-xinghuang-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "shantou-haojiang-liqian-dongjingwan",
+          "group": "shantou-haojiang-liqian-dongjingwan"
+        },
+        {
+          "id": "taiwan-winter-solstice-mullet-roe",
+          "group": "mullet-roe"
+        },
+        {
+          "id": "minhou-wenxi-juyou",
+          "group": "pomelo"
+        },
+        {
+          "id": "donghai-dongzhi-cuttlefish",
+          "group": "cuttlefish"
+        },
+        {
+          "id": "yunyang-winter-solstice-red-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "baoshan-liangcui-emblica",
+          "group": "emblica"
+        },
+        {
+          "id": "conghua-dajiecai",
+          "group": "conghua-dajiecai"
+        },
+        {
+          "id": "jinjiang-toushui-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "rongan-jingju",
+          "group": "kumquat"
+        },
+        {
+          "id": "shazhou-zhugengqin",
+          "group": "water-celery"
+        },
+        {
+          "id": "cigu",
+          "group": "cigu"
+        }
+      ],
+      "feature": "shantou-haojiang-liqian-dongjingwan",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 0,
+      "term": "小寒",
+      "all": 27,
+      "foods": [
+        {
+          "id": "zizhong-xiaohan-early-blood-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "luquan-greenhouse-toon-first-pick",
+          "group": "toon-shoot"
+        },
+        {
+          "id": "beian-xiaohan-white-lover-strawberry",
+          "group": "strawberry"
+        },
+        {
+          "id": "fuling-yuzao100-mustard-stem",
+          "group": "fuling-yuzao100-mustard-stem"
+        },
+        {
+          "id": "tianjin-huangya-cabbage",
+          "group": "tianjin-huangya-cabbage"
+        },
+        {
+          "id": "xinzhou-qubeihu-gongdeng-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "tengchong-fenghuang-xiaohan-yam",
+          "group": "yam"
+        },
+        {
+          "id": "hezhou-xialiang-xiaohan-goji-greens",
+          "group": "hezhou-xialiang-xiaohan-goji-greens"
+        },
+        {
+          "id": "luocheng-dafu-xiaohan-black-wood-ear",
+          "group": "luocheng-dafu-xiaohan-black-wood-ear"
+        },
+        {
+          "id": "jiangan-changsha-xiaohan-early-tea-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "nanxian-wushenggong-xiaohan-caitai",
+          "group": "white-caitai"
+        },
+        {
+          "id": "rongan-xiaozhou-winter-head-vegetable",
+          "group": "rongan-xiaozhou-winter-head-vegetable"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "yanshi-fresh-yintiao",
+          "group": "yanshi-fresh-yintiao"
+        },
+        {
+          "id": "minhou-wenxi-juyou",
+          "group": "pomelo"
+        },
+        {
+          "id": "shantou-donghu-charcoal-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "shazhou-zhugengqin",
+          "group": "water-celery"
+        },
+        {
+          "id": "cigu",
+          "group": "cigu"
+        }
+      ],
+      "feature": "yanshi-fresh-yintiao",
+      "count": 18,
+      "repeat": 8,
+      "repeatRate": 0.4444444444444444
+    },
+    {
+      "year": 2029,
+      "index": 1,
+      "term": "大寒",
+      "all": 31,
+      "foods": [
+        {
+          "id": "dahan-green-carp",
+          "group": "dahan-green-carp"
+        },
+        {
+          "id": "fuling-yuzao100-mustard-stem",
+          "group": "fuling-yuzao100-mustard-stem"
+        },
+        {
+          "id": "qingdao-youreka-greenhouse-blueberry",
+          "group": "qingdao-youreka-greenhouse-blueberry"
+        },
+        {
+          "id": "miyun-houchangjiawu-yuanwei1-tomato",
+          "group": "miyun-houchangjiawu-yuanwei1-tomato"
+        },
+        {
+          "id": "lingshan-dahan-spring-tea-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "yulin-xiaohan-sesame-melon",
+          "group": "yulin-xiaohan-sesame-melon"
+        },
+        {
+          "id": "suixian-lishan-great-cold-shiitake",
+          "group": "suixian-lishan-great-cold-shiitake"
+        },
+        {
+          "id": "lianjiang-great-cold-abalone",
+          "group": "lianjiang-great-cold-abalone"
+        },
+        {
+          "id": "lianjiang-great-cold-kelp-seedlings",
+          "group": "lianjiang-great-cold-kelp-seedlings"
+        },
+        {
+          "id": "huangpi-luzui-water-chestnut",
+          "group": "water-chestnut"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "ntpc-dahan-native-yam",
+          "group": "yam"
+        },
+        {
+          "id": "rongan-xiaozhou-winter-head-vegetable",
+          "group": "rongan-xiaozhou-winter-head-vegetable"
+        },
+        {
+          "id": "pujiang-dahan-chunjian",
+          "group": "citrus"
+        },
+        {
+          "id": "zengcheng-caixin",
+          "group": "choy-sum"
+        },
+        {
+          "id": "shantou-donghu-charcoal-zicai",
+          "group": "seaweed"
+        },
+        {
+          "id": "yongtai-lianshan-shipaiju-you",
+          "group": "pomelo"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        }
+      ],
+      "feature": "bishan-ercai",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 2,
+      "term": "立春",
+      "all": 16,
+      "foods": [
+        {
+          "id": "wusheng-dayagan-lichun",
+          "group": "citrus"
+        },
+        {
+          "id": "dazu-lichun-winter-vegetable-tip",
+          "group": "dazu-lichun-winter-vegetable-tip"
+        },
+        {
+          "id": "yunxiao-liuye-baigeng-wongcai",
+          "group": "yunxiao-liuye-baigeng-wongcai"
+        },
+        {
+          "id": "yaan-chuancai3-lichun-first-pick",
+          "group": "tea"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "jiaozhou-kailing-suo",
+          "group": "mullet"
+        },
+        {
+          "id": "taiwan-lichun-mackerel",
+          "group": "taiwan-lichun-mackerel"
+        },
+        {
+          "id": "taiwan-lichun-hairtail",
+          "group": "hairtail"
+        },
+        {
+          "id": "taiwan-jingzhe-jiala",
+          "group": "sea-bream"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "hongshan-caitai",
+          "group": "hongshan-caitai"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        },
+        {
+          "id": "wenzhou-pancai",
+          "group": "wenzhou-pancai"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        }
+      ],
+      "feature": "jiaozhou-kailing-suo",
+      "count": 16,
+      "repeat": 4,
+      "repeatRate": 0.25
+    },
+    {
+      "year": 2029,
+      "index": 3,
+      "term": "雨水",
+      "all": 25,
+      "foods": [
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        },
+        {
+          "id": "dalian-haimaxian",
+          "group": "dalian-haimaxian"
+        },
+        {
+          "id": "juhuanao",
+          "group": "juhuanao"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "taiwan-lichun-mackerel",
+          "group": "taiwan-lichun-mackerel"
+        },
+        {
+          "id": "taiwan-lichun-hairtail",
+          "group": "hairtail"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "jintang-fresh-morel",
+          "group": "jintang-fresh-morel"
+        },
+        {
+          "id": "jiaozhou-kailing-suo",
+          "group": "mullet"
+        },
+        {
+          "id": "hongshan-caitai",
+          "group": "hongshan-caitai"
+        },
+        {
+          "id": "bishan-ercai",
+          "group": "child-mustard"
+        },
+        {
+          "id": "rugao-takecai",
+          "group": "tatsoi"
+        },
+        {
+          "id": "yangxin-huhao",
+          "group": "yangxin-huhao"
+        }
+      ],
+      "feature": "wuding-jinquehua",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 4,
+      "term": "惊蛰",
+      "all": 25,
+      "foods": [
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "eshan-jingzhe-mulberry-flower",
+          "group": "eshan-jingzhe-mulberry-flower"
+        },
+        {
+          "id": "guangnan-mianhao-baba",
+          "group": "guangnan-mianhao-baba"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        },
+        {
+          "id": "dalian-haimaxian",
+          "group": "dalian-haimaxian"
+        },
+        {
+          "id": "juhuanao",
+          "group": "juhuanao"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "minhou-chayuan-highland-spring-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "taiwan-jingzhe-jiala",
+          "group": "sea-bream"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia-shrimp-2026",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "suzhou-dongshan-taihu-water-shield",
+          "group": "water-shield"
+        },
+        {
+          "id": "taitung-winter-atemoya",
+          "group": "taitung-winter-atemoya"
+        }
+      ],
+      "feature": "yongsheng-fresh-kapok",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 5,
+      "term": "春分",
+      "all": 29,
+      "foods": [
+        {
+          "id": "baojing-huangjincha-spring-equinox-bulk",
+          "group": "tea"
+        },
+        {
+          "id": "gejiu-cinaobao",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "conghua-lutian-bitter-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "fuzhou-chunfen-baili-fish",
+          "group": "fuzhou-chunfen-baili-fish"
+        },
+        {
+          "id": "fuzhou-chunfen-chunbihhao",
+          "group": "fuzhou-chunfen-chunbihhao"
+        },
+        {
+          "id": "wuhan-spring-equinox-hanpai-red-amaranth",
+          "group": "wuhan-spring-equinox-hanpai-red-amaranth"
+        },
+        {
+          "id": "ningbo-spring-equinox-alfalfa-shoots",
+          "group": "ningbo-spring-equinox-alfalfa-shoots"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "chengde-spring-equinox-elm-samaras",
+          "group": "chengde-spring-equinox-elm-samaras"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "tanglihua",
+          "group": "tanglihua"
+        },
+        {
+          "id": "yangnaiguo",
+          "group": "yangnaiguo"
+        },
+        {
+          "id": "yongsheng-fresh-kapok",
+          "group": "yongsheng-fresh-kapok"
+        },
+        {
+          "id": "kucihua",
+          "group": "kucihua"
+        },
+        {
+          "id": "yantai-haichang",
+          "group": "yantai-haichang"
+        },
+        {
+          "id": "wuding-jinquehua",
+          "group": "wuding-jinquehua"
+        }
+      ],
+      "feature": "fengqing-xinhua-walnut-flowers",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 6,
+      "term": "清明",
+      "all": 26,
+      "foods": [
+        {
+          "id": "huizhou-chengkan-qingming-tea-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "gejiu-cinaobao",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "chongming-malan-head",
+          "group": "chongming-malan-head"
+        },
+        {
+          "id": "hanzhong-qingming-xiangchun-shoots",
+          "group": "toon-shoot"
+        },
+        {
+          "id": "jiangmen-muzhou-qingming-huangsha-clam",
+          "group": "jiangmen-muzhou-qingming-huangsha-clam"
+        },
+        {
+          "id": "qingdao-shazikou-qingming-spring-mackerel",
+          "group": "seerfish"
+        },
+        {
+          "id": "pearl-river-qingming-cao-shrimp",
+          "group": "pearl-river-qingming-cao-shrimp"
+        },
+        {
+          "id": "guangzhou-qingming-jiaocai",
+          "group": "guangzhou-qingming-jiaocai"
+        },
+        {
+          "id": "panyu-qingming-sugarcane",
+          "group": "sugarcane"
+        },
+        {
+          "id": "sinan-qingming-cai-mouse-ear",
+          "group": "sinan-qingming-cai-mouse-ear"
+        },
+        {
+          "id": "wulong-taiwan-long-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "qingdao-shazikou-li-xia",
+          "group": "eagle-claw-shrimp"
+        },
+        {
+          "id": "fengqing-xinhua-walnut-flowers",
+          "group": "fengqing-xinhua-walnut-flowers"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "xinshe-dahan-early-loquat",
+          "group": "loquat"
+        }
+      ],
+      "feature": "eryuan-haicaihua",
+      "count": 18,
+      "repeat": 6,
+      "repeatRate": 0.3333333333333333
+    },
+    {
+      "year": 2029,
+      "index": 7,
+      "term": "谷雨",
+      "all": 19,
+      "foods": [
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninghai-white-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "shangyu-duanbing-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "lanshan-baidieling-guyu-tea",
+          "group": "tea"
+        },
+        {
+          "id": "wulong-taiwan-long-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "yaoan-edible-rose",
+          "group": "yaoan-edible-rose"
+        },
+        {
+          "id": "wanning-damao-baitangying-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "honghu-oudai",
+          "group": "honghu-oudai"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        },
+        {
+          "id": "ninghai-changjie-razor-clam",
+          "group": "ninghai-changjie-razor-clam"
+        },
+        {
+          "id": "cinenya",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "pucai",
+          "group": "pucai"
+        },
+        {
+          "id": "eryuan-haicaihua",
+          "group": "eryuan-haicaihua"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "pujiang-dahan-chunjian",
+          "group": "citrus"
+        }
+      ],
+      "feature": "cinenya",
+      "count": 17,
+      "repeat": 8,
+      "repeatRate": 0.47058823529411764
+    },
+    {
+      "year": 2029,
+      "index": 8,
+      "term": "立夏",
+      "all": 22,
+      "foods": [
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninghai-white-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "shanzhou-green-wheat-nianzhuan",
+          "group": "shanzhou-green-wheat-nianzhuan"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lixian-highland-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "fengxian-shihai-2026-japanese-sweet-mulberry",
+          "group": "mulberry"
+        },
+        {
+          "id": "qiongshan-sanmenpo-xiantaoli",
+          "group": "lychee"
+        },
+        {
+          "id": "hubei-ejiao4-summer-jiaobai",
+          "group": "water-bamboo"
+        },
+        {
+          "id": "shidian-lixia-qingmei",
+          "group": "green-plum"
+        },
+        {
+          "id": "changshu-lixia-fresh-fava",
+          "group": "fava"
+        },
+        {
+          "id": "jiangmen-duruang-lixiang-cool-gourd",
+          "group": "jiangmen-duruang-lixiang-cool-gourd"
+        },
+        {
+          "id": "wenzhou-lingkun-baizhuogua",
+          "group": "wenzhou-lingkun-baizhuogua"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        }
+      ],
+      "feature": "jianshui-caoya",
+      "count": 14,
+      "repeat": 7,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 9,
+      "term": "小满",
+      "all": 23,
+      "foods": [
+        {
+          "id": "tongxiang-zhuili",
+          "group": "plum"
+        },
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "shanzhou-green-wheat-nianzhuan",
+          "group": "shanzhou-green-wheat-nianzhuan"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "lichuan-heyuan-girl-fruit",
+          "group": "lichuan-heyuan-girl-fruit"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jiande-chuncai",
+          "group": "water-shield"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "kaohsiung-yuhebao-lychee-late-may",
+          "group": "lychee"
+        },
+        {
+          "id": "suzhou-june-yellow-late-may-market",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "tangqi-tangbei-late-loquat",
+          "group": "loquat"
+        },
+        {
+          "id": "tianshui-qinzhou-xiaoman-cherry",
+          "group": "cherry"
+        },
+        {
+          "id": "zhuhai-hechong",
+          "group": "zhuhai-hechong"
+        },
+        {
+          "id": "houtui-cai",
+          "group": "houtui-cai"
+        },
+        {
+          "id": "ninger-tongxin-sweet-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "cinenya",
+          "group": "aralia-shoot"
+        },
+        {
+          "id": "jianshui-caoya",
+          "group": "jianshui-caoya"
+        }
+      ],
+      "feature": "shanzhou-green-wheat-nianzhuan",
+      "count": 18,
+      "repeat": 8,
+      "repeatRate": 0.4444444444444444
+    },
+    {
+      "year": 2029,
+      "index": 10,
+      "term": "芒种",
+      "all": 19,
+      "foods": [
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "chaoyang-xilu-wusu-waxberry",
+          "group": "waxberry"
+        },
+        {
+          "id": "zhangmutou-mangzhong-guanyin-green-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "mengzi-june-red-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "wuhan-hannan-fresh-sweet-corn",
+          "group": "sweet-corn"
+        },
+        {
+          "id": "jinghe-bajiahu-mangzhong-pearl-nectarine",
+          "group": "peach"
+        },
+        {
+          "id": "dazhou-tanzi-mangzhong-green-plum-last-pick",
+          "group": "green-plum"
+        },
+        {
+          "id": "zhenning-honey-plum",
+          "group": "plum"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "jiande-chuncai",
+          "group": "water-shield"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        },
+        {
+          "id": "honghu-oudai",
+          "group": "honghu-oudai"
+        }
+      ],
+      "feature": "tonghai-fresh-sour-quince",
+      "count": 14,
+      "repeat": 7,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 11,
+      "term": "夏至",
+      "all": 25,
+      "foods": [
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "yubei-xiazhi-sugar-peach",
+          "group": "peach"
+        },
+        {
+          "id": "caidian-summer-solstice-fresh-lotus-pod",
+          "group": "lotus-seed"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "enping-naji-tainung17-pineapple",
+          "group": "enping-naji-tainung17-pineapple"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "minqin-field-shacong",
+          "group": "minqin-field-shacong"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "tongxiang-zhuili",
+          "group": "plum"
+        },
+        {
+          "id": "kuche-xiaobaixing",
+          "group": "kuche-xiaobaixing"
+        },
+        {
+          "id": "xiangyin-santang-jiaotou",
+          "group": "xiangyin-santang-jiaotou"
+        },
+        {
+          "id": "tonghai-fresh-sour-quince",
+          "group": "tonghai-fresh-sour-quince"
+        },
+        {
+          "id": "mengzi-june-red-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "wuhan-hannan-fresh-sweet-corn",
+          "group": "sweet-corn"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        }
+      ],
+      "feature": "harbin-fresh-honeyberry",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 12,
+      "term": "小暑",
+      "all": 20,
+      "foods": [
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "tamsui-xiaoshu-black-bream",
+          "group": "sea-bream"
+        },
+        {
+          "id": "taixing-sucui1-early-pear",
+          "group": "pear"
+        },
+        {
+          "id": "pinggu-zhongpan9-xiaoshu-peach",
+          "group": "peach"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dongguan-tangxia-shixia-longan",
+          "group": "longan"
+        },
+        {
+          "id": "gaoqing-taisun-jinchan",
+          "group": "gaoqing-taisun-jinchan"
+        },
+        {
+          "id": "lianjiang-xiaoshu-june-hemp-bamboo-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "hejiang-xiaoshu-late-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        },
+        {
+          "id": "foshougua-miao",
+          "group": "foshougua-miao"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "harbin-fresh-honeyberry",
+          "group": "harbin-fresh-honeyberry"
+        }
+      ],
+      "feature": "chenghai-baoke",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 13,
+      "term": "大暑",
+      "all": 24,
+      "foods": [
+        {
+          "id": "wenchuan-qingcui-plum",
+          "group": "plum"
+        },
+        {
+          "id": "huocheng-xiangfei-crabapple",
+          "group": "crabapple"
+        },
+        {
+          "id": "miaoli-gongguan-fresh-jujube",
+          "group": "miaoli-gongguan-fresh-jujube"
+        },
+        {
+          "id": "dengkou-wallace-melon",
+          "group": "dengkou-wallace-melon"
+        },
+        {
+          "id": "longyangxia-salmon",
+          "group": "longyangxia-salmon"
+        },
+        {
+          "id": "hejiang-late-lychee",
+          "group": "lychee"
+        },
+        {
+          "id": "shicheng-white-lotus",
+          "group": "lotus-seed"
+        },
+        {
+          "id": "songjiang-cangqiao-crystal-pear",
+          "group": "pear"
+        },
+        {
+          "id": "lufeng-zhongcun-late-early-chestnut",
+          "group": "chestnut"
+        },
+        {
+          "id": "nanhui-daxue-water-honey-peach",
+          "group": "peach"
+        },
+        {
+          "id": "jiading-malu-zuijinxiang-grape",
+          "group": "jiading-malu-zuijinxiang-grape"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "yunan-seedless-huangpi",
+          "group": "yunan-seedless-huangpi"
+        },
+        {
+          "id": "gaochun-liuyuehuang",
+          "group": "june-yellow-crab"
+        },
+        {
+          "id": "yanchi-huanghuacai",
+          "group": "yanchi-huanghuacai"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dongguan-tangxia-shixia-longan",
+          "group": "longan"
+        }
+      ],
+      "feature": "xishuangbanna-wood-milk-fruit",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 14,
+      "term": "立秋",
+      "all": 19,
+      "foods": [
+        {
+          "id": "shidian-autumn-longzhu-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "tainan-dongshan-fresh-longan",
+          "group": "longan"
+        },
+        {
+          "id": "taiwan-lichiu-kaohsiung-squid",
+          "group": "cuttlefish"
+        },
+        {
+          "id": "taiwan-lichiu-northwest-tilefish",
+          "group": "taiwan-lichiu-northwest-tilefish"
+        },
+        {
+          "id": "taiwan-lichiu-red-eye-bream",
+          "group": "red-eye-fish"
+        },
+        {
+          "id": "fengxian-nanqiao-early-water-red-caltrop",
+          "group": "water-caltrop"
+        },
+        {
+          "id": "huocheng-xiangfei-crabapple",
+          "group": "crabapple"
+        },
+        {
+          "id": "mengzi-lvzi-softseed-pomegranate",
+          "group": "mengzi-lvzi-softseed-pomegranate"
+        },
+        {
+          "id": "baoshan-zaoqiu-sweet-persimmon",
+          "group": "persimmon"
+        },
+        {
+          "id": "shanzhou-black-emperor-grape",
+          "group": "shanzhou-black-emperor-grape"
+        },
+        {
+          "id": "guanyun-summer-doudan",
+          "group": "guanyun-summer-doudan"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        }
+      ],
+      "feature": "jitoumi",
+      "count": 18,
+      "repeat": 5,
+      "repeatRate": 0.2777777777777778
+    },
+    {
+      "year": 2029,
+      "index": 15,
+      "term": "处暑",
+      "all": 24,
+      "foods": [
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "shidian-autumn-longzhu-shoot",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        },
+        {
+          "id": "chenghai-baoke",
+          "group": "chenghai-baoke"
+        },
+        {
+          "id": "xishuangbanna-wood-milk-fruit",
+          "group": "xishuangbanna-wood-milk-fruit"
+        },
+        {
+          "id": "dongguan-tangxia-shixia-longan",
+          "group": "longan"
+        },
+        {
+          "id": "jitoumi",
+          "group": "jitoumi"
+        },
+        {
+          "id": "dalian-zihaitan",
+          "group": "dalian-zihaitan"
+        },
+        {
+          "id": "dier",
+          "group": "dier"
+        },
+        {
+          "id": "congjun",
+          "group": "congjun"
+        },
+        {
+          "id": "ganbajun",
+          "group": "ganbajun"
+        }
+      ],
+      "feature": "ganbajun",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 16,
+      "term": "白露",
+      "all": 27,
+      "foods": [
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "miaoli-xihu-wendan",
+          "group": "pomelo"
+        },
+        {
+          "id": "jiangning-bailu-white-dew-tea",
+          "group": "tea"
+        },
+        {
+          "id": "shexian-qizili-hickory",
+          "group": "hickory"
+        },
+        {
+          "id": "cangyuan-bailu-lincang-macadamia",
+          "group": "cangyuan-bailu-lincang-macadamia"
+        },
+        {
+          "id": "shiping-shaochong-bailu-walnut",
+          "group": "walnut"
+        },
+        {
+          "id": "fuzhou-longxiangdao-bailu-longan",
+          "group": "longan"
+        },
+        {
+          "id": "fuzhou-bailu-red-xun",
+          "group": "mud-crab"
+        },
+        {
+          "id": "suzhou-bailu-ginkgo",
+          "group": "suzhou-bailu-ginkgo"
+        },
+        {
+          "id": "hanshou-yubiou",
+          "group": "lotus-root"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "anlu-bailu-huaguoshan-fig",
+          "group": "fig"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        }
+      ],
+      "feature": "huoshan-yanghe",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 17,
+      "term": "秋分",
+      "all": 29,
+      "foods": [
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "gongliao-autumn-japanese-horse-mackerel",
+          "group": "gongliao-autumn-japanese-horse-mackerel"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "binchuan-renong1-yuganzi",
+          "group": "emblica"
+        },
+        {
+          "id": "taitung-luoshen-calyx",
+          "group": "taitung-luoshen-calyx"
+        },
+        {
+          "id": "henan-qiufen-tunisian-softseed-pomegranate",
+          "group": "pomegranate"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "shajiguo",
+          "group": "shajiguo"
+        },
+        {
+          "id": "longyang-pupiao-allium-root",
+          "group": "longyang-pupiao-allium-root"
+        },
+        {
+          "id": "hanshou-yubiou",
+          "group": "lotus-root"
+        },
+        {
+          "id": "bayuegua",
+          "group": "bayuegua"
+        },
+        {
+          "id": "cili",
+          "group": "rose-fruit"
+        },
+        {
+          "id": "huoshan-yanghe",
+          "group": "huoshan-yanghe"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-baibiandou",
+          "group": "chongming-baibiandou"
+        }
+      ],
+      "feature": "bayuegua",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 18,
+      "term": "寒露",
+      "all": 24,
+      "foods": [
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "laiyang-pear",
+          "group": "pear"
+        },
+        {
+          "id": "caidian-ehong4-early-caitai",
+          "group": "red-caitai"
+        },
+        {
+          "id": "changning-hanlu-camellia-seed-oil",
+          "group": "changning-hanlu-camellia-seed-oil"
+        },
+        {
+          "id": "fuzhou-hanlu-razor-clam-dry",
+          "group": "fuzhou-hanlu-razor-clam-dry"
+        },
+        {
+          "id": "ningbo-zhanqi-dafeng-early-orange",
+          "group": "citrus"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "binchuan-renong1-yuganzi",
+          "group": "emblica"
+        },
+        {
+          "id": "taitung-luoshen-calyx",
+          "group": "taitung-luoshen-calyx"
+        },
+        {
+          "id": "banan-wubu-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "juema",
+          "group": "juema"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        },
+        {
+          "id": "ximeng-bamboo-worm",
+          "group": "ximeng-bamboo-worm"
+        },
+        {
+          "id": "yanqing-baleng-crisp-haitang",
+          "group": "crabapple"
+        }
+      ],
+      "feature": "ximeng-bamboo-worm",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    },
+    {
+      "year": 2029,
+      "index": 19,
+      "term": "霜降",
+      "all": 29,
+      "foods": [
+        {
+          "id": "helan-luosicai",
+          "group": "helan-luosicai"
+        },
+        {
+          "id": "lanzhou-xianbaihe",
+          "group": "lanzhou-xianbaihe"
+        },
+        {
+          "id": "xiaolan-shiju-huaban",
+          "group": "xiaolan-shiju-huaban"
+        },
+        {
+          "id": "luoping-hongguoshen",
+          "group": "luoping-hongguoshen"
+        },
+        {
+          "id": "heshi-xianfenge",
+          "group": "heshi-xianfenge"
+        },
+        {
+          "id": "heze-shannong-crisp-pear",
+          "group": "pear"
+        },
+        {
+          "id": "suao-frost-beltfish",
+          "group": "hairtail"
+        },
+        {
+          "id": "wuding-fawowo-winter-peach",
+          "group": "peach"
+        },
+        {
+          "id": "wenxian-shuangjiang-tiegun-yam",
+          "group": "yam"
+        },
+        {
+          "id": "xunyang-guizao",
+          "group": "xunyang-guizao"
+        },
+        {
+          "id": "tainan-madou-frost-white-pomelo",
+          "group": "pomelo"
+        },
+        {
+          "id": "lintong-huojing-shizi",
+          "group": "persimmon"
+        },
+        {
+          "id": "nanhu-ling",
+          "group": "nanhu-ling"
+        },
+        {
+          "id": "cizhousun",
+          "group": "bamboo-shoot"
+        },
+        {
+          "id": "lyg-shaguang-fish",
+          "group": "lyg-shaguang-fish"
+        },
+        {
+          "id": "minqing-tanxiang-olive",
+          "group": "minqing-tanxiang-olive"
+        },
+        {
+          "id": "jianou-zhuilli",
+          "group": "chestnut"
+        },
+        {
+          "id": "chongming-xiangsu-yu",
+          "group": "chongming-xiangsu-yu"
+        }
+      ],
+      "feature": "xunyang-guizao",
+      "count": 18,
+      "repeat": 9,
+      "repeatRate": 0.5
+    }
+  ]
+}
