@@ -9,5 +9,5 @@ test('Qingdao greenhouse Eureka blueberries have a sourced Dahan window and accu
  assert.ok(food.sources.some(x=>x[1]==='https://www.qingdao.gov.cn/zwgk/xxgk/fgw/ywfl/cyfz/202506/t20250609_9638028.shtml'));assert.match(food.season,/1月下旬率先上市/);assert.match(food.procurement.checks.join(' '),/优瑞卡/);
  assert.equal(profile.signature,C.signature(food));assert.equal(profile.senses.signature,C.sensorySignature(food));
  const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),term=audit.rows.find(x=>x.term==='大寒'),previous=audit.rows.find(x=>x.term==='小寒');
- assert.ok(term.foodIds.includes(food.id));assert.ok(!previous.foodIds.includes(food.id));assert.equal(term.count,42);assert.equal(term.repeated,21);assert.equal(term.requiredAdditionalFoodsNotInPreviousTerm,0);
+ assert.ok(term.foodIds.includes(food.id));assert.ok(!previous.foodIds.includes(food.id));assert.equal(term.count,43);assert.equal(term.repeated,21);assert.equal(term.requiredAdditionalFoodsNotInPreviousTerm,0);
 });

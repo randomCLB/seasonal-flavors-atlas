@@ -1,0 +1,2591 @@
+{
+  "date": "2026-11-06",
+  "sourceCommit": "1d9fd6dabbd3815e515d6a87bdb6852850af331f",
+  "scope": "当前正式FOODS及ReaderAccess筛选后的完整公开canonical动物蛋白；以既有数据和记录证据作编辑排查，不修改生产代码或时令。",
+  "criteria": "猎奇、小众、区域限定、最佳赏味期短均为加分项，不要求四项齐备；至少需有可说明的食材/地方商品/状态差异，地名标签或节气吃肉习俗不能独立充数。",
+  "counts": {
+    "rawProteinCategoryObservations": 99,
+    "publicProteinCategoryObservations": 60,
+    "publicProteinCategoryCanonical": 48,
+    "actualAnimalCanonical": 47,
+    "misclassifiedNonAnimal": 1,
+    "保留": 38,
+    "替换": 5,
+    "暂缓": 4
+  },
+  "limits": [
+    "这是按当前记录作出的编辑判断，不是对物种稀有程度的科学统计。",
+    "标题去地名不构成删除理由；逐条读取region、alias、identity成员及source范围。",
+    "单次上市或节气名录不能证明自然产季短、独特品质、独占产地或当年现货。",
+    "保留意味着具有足够探索价值，不表示所有地理/时令/身份细节都已完全核实；不确定性逐条保留。",
+    "本轮没有跑整站测试；根任务负责数据集成与验证。",
+    "现有库内替代候选只可按自身原证据窗口复用，不自动迁移到被替换条目的节气，也不重复新建来增加计数。"
+  ],
+  "classificationExceptions": [
+    {
+      "id": "lianjiang-great-cold-kelp-seedlings",
+      "name": "海带苗",
+      "currentCategory": "seafood",
+      "decision": "分类复核",
+      "reason": "这是褐藻而非动物蛋白，当前被seafood分类计入肉类；本轮不据此评价食材优劣，交根任务修正分类。"
+    }
+  ],
+  "priorityReplacements": [
+    {
+      "id": "dahan-green-carp",
+      "priority": 1,
+      "action": "退出精选；不新增普通鱼别名占位",
+      "sameSeasonExistingAlternatives": [
+        "atushi-winter-lamb",
+        "taiwan-daxue-mullet"
+      ],
+      "reason": "冬宰地方生产场景、冬季乌鱼汛比全国普通青鱼更具体；复用原记录，不当作新增食材。",
+      "sourceNeededForReturn": "有独立地域产品的青鱼（具体商品种/养殖条件/质量差异），并有可读来源；单挂一个地方名不足。"
+    },
+    {
+      "id": "longyangxia-salmon",
+      "priority": 2,
+      "action": "退出特色精选，保留档案供补证",
+      "existingStrongerAlternatives": [
+        "guanyun-summer-doudan",
+        "nansha-longxue-butter-crab",
+        "gaoqing-taisun-jinchan"
+      ],
+      "reason": "三项均有盛夏成熟或鲜收状态；原精选锚点分属小暑/立秋/处暑，需按已存自然窗口与相邻重复规则分配，不自动移入大暑。",
+      "sourceNeededForReturn": "明确鲑鳟物种/商品种、龙羊峡区别于普通养殖鲑鳟的风味或生产特性；适生水温不是收获或最佳赏味证据。"
+    },
+    {
+      "id": "lianjiang-great-cold-abalone",
+      "priority": 3,
+      "action": "退出泛鲜鲍鱼精选；暂不以新名字另建鲍鱼",
+      "sameSeasonExistingAlternatives": [
+        "atushi-winter-lamb",
+        "taiwan-daxue-mullet"
+      ],
+      "reason": "在大寒优先复用已经在库的更强季节动物档；如数量不足可用其他已核实地方食材，不能把鲍鱼单日新闻算短季。",
+      "sourceNeededForReturn": "明确区别于全国常见鲍鱼的连江特定商品、品种或生产条件及食用品质证据。"
+    },
+    {
+      "id": "fuzhou-hanlu-razor-clam-dry",
+      "priority": 4,
+      "action": "退出通用干货精选",
+      "sameSeasonExistingAlternatives": [
+        "ximeng-bamboo-worm",
+        "sanmen-qingxie",
+        "lyg-shaguang-fish"
+      ],
+      "reason": "鲜竹虫9—10月、三门青蟹9—11月、沙光鱼10—11月均有原始窗口；按寒露实际日期选取，复用现档。",
+      "sourceNeededForReturn": "具体福州产地、鲜原料品种与有别于普通干蛏的加工工艺，而非只补晒干习俗。"
+    },
+    {
+      "id": "nanjing-lishui-qingming-river-snail",
+      "priority": 5,
+      "action": "退出普通螺蛳精选；保留市集记录",
+      "sameSeasonExistingAlternatives": [
+        "jiangmen-muzhou-qingming-huangsha-clam",
+        "pearl-river-qingming-cao-shrimp"
+      ],
+      "reason": "黄沙蚬有地方产品与春季肥度，曹虾有咸淡水交界商品状态；已在清明池，不重复新建占数。",
+      "sourceNeededForReturn": "晶桥具体可食螺种、产地水域/养殖条件或品质差异的证据，地方市集发生地本身不足。"
+    },
+    {
+      "id": "donghai-dongzhi-cuttlefish",
+      "priority": 6,
+      "action": "暂缓泛化合并卡，先复核各原始产地记录",
+      "sameSeasonExistingAlternatives": [
+        "ningbo-youdai",
+        "taiwan-winter-solstice-mullet-roe"
+      ],
+      "reason": "冬至油带鱼商品特征与当季乌鱼子原料盛汛更强；墨鱼的其他海区记录不借冬至卡跨季使用。",
+      "sourceNeededForReturn": "至少一个可购买、身份清楚的地方乌贼商品与产区/品质或短窗口证据；不同海区可作为来源变体而非伪造新物种。"
+    }
+  ],
+  "rows": [
+    {
+      "id": "dalian-zihaitan",
+      "displayName": "紫海胆",
+      "aliases": [
+        "光棘球海胆",
+        "紫海胆",
+        "大连紫海胆"
+      ],
+      "region": "辽宁大连 · 长海 / 旅顺",
+      "sourceObservationIds": [
+        "dalian-zihaitan"
+      ],
+      "status": "保留",
+      "reason": "大连长海、旅顺采收区明确，海胆黄形态与食用部位有辨识度，已有7—8月主采收线索。",
+      "supportedDistinctiveness": "地域产品与海胆部位；采收窗",
+      "uncertainty": "主采收记录不等于其他海区无货。",
+      "currentSeasonBasis": "catch",
+      "currentSeasonLabel": null,
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "辽宁省发展和改革委员会：大连海胆主采收期与品种",
+          "url": "https://fgw.ln.gov.cn/fgw/xxgk/jgjc/fxyc/2023060514175777669/index.shtml"
+        },
+        {
+          "label": "农业农村部：大连紫海胆名称与捕捞管理条例",
+          "url": "https://yyj.moa.gov.cn/zcjd/201904/t20190419_6196440.htm"
+        },
+        {
+          "label": "大连市特种海产品资源保护管理条例（2017年修正）",
+          "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=64194"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "atushi-winter-lamb",
+      "displayName": "冬宰羊肉",
+      "aliases": [
+        "冬宰羊肉",
+        "阿图什冬宰羊肉"
+      ],
+      "region": "新疆克孜勒苏 · 阿图什",
+      "sourceObservationIds": [
+        "atushi-winter-lamb"
+      ],
+      "status": "保留",
+      "reason": "阿图什冬宰上市具有地方生产与保存场景，可作为冬季地方肉类保留，不能称独立羊种。",
+      "supportedDistinctiveness": "地方冬宰生产场景",
+      "uncertainty": "需补当地具体羊种或育肥品质差异；现证据未证明羊肉只在冬季供应。",
+      "currentSeasonBasis": "slaughter",
+      "currentSeasonLabel": null,
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "阿图什市政府：冬宰季与上市时间",
+          "url": "https://www.xjats.gov.cn/xjats/c104128/202512/66b545e1aeed44d39c5f7c041565e8b4.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "yantai-haichang",
+      "displayName": "海肠",
+      "aliases": [
+        "单环刺螠",
+        "烟台海肠"
+      ],
+      "region": "山东烟台 · 渤海湾",
+      "sourceObservationIds": [
+        "yantai-haichang"
+      ],
+      "status": "保留",
+      "reason": "海肠食用部位、脆弹质地和烟台早春捕捞线索都鲜明，明显强于泛称海鲜。",
+      "supportedDistinctiveness": "少见食材；地方春捕",
+      "uncertainty": "渤海湾范围宽，应继续以具体烟台来货与采收批次为准。",
+      "currentSeasonBasis": "catch",
+      "currentSeasonLabel": "早春",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "烟台市文旅局：海肠的捕捞时令与风味",
+          "url": "https://whlyj.yantai.gov.cn/col/col42216/art/2026/art_14a7063c9e384d8c89eb277488370aa3.html"
+        },
+        {
+          "label": "烟台市政府：海肠捞饭搭配",
+          "url": "https://www.yantai.gov.cn/col/col11771/art/2026/art_7a0649fbcdc14a5fa4d423ba5cc1e6d8.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "gaochun-liuyuehuang",
+      "displayName": "六月黄",
+      "aliases": [
+        "六月黄",
+        "高淳六月黄",
+        "童子蟹",
+        "苏州六月黄",
+        "苏州六月黄早市",
+        "苏州童子蟹早市"
+      ],
+      "region": "江苏南京 · 高淳固城湖 / 江苏苏州 · 南环桥市场（市场到货地，非捕捞产地）",
+      "sourceObservationIds": [
+        "gaochun-liuyuehuang",
+        "suzhou-june-yellow-late-may-market"
+      ],
+      "status": "保留",
+      "reason": "童子蟹这一生长阶段本身就有壳薄肉嫩的季节差异，固城湖地方来源成立。",
+      "supportedDistinctiveness": "生长阶段；产地",
+      "uncertainty": "合并资料含苏州市场到货地，市场不冒充养殖产地；5—7月是不同批次而非整段同样品质。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "5月、6月、7月",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "高淳区人民政府：六月黄批量上市与挑选",
+          "url": "https://www.njgc.gov.cn/jrgc/gcyw/202607/t20260714_5876163.html"
+        },
+        {
+          "label": "湖州新闻：六月黄首批采收",
+          "url": "https://zjnews.zjol.com.cn/zjnews/zjxw/202206/t20220626_24433351.shtml"
+        },
+        {
+          "label": "苏州市农业农村局：吃蟹不必“秋风起”，“六月黄”提前上市",
+          "url": "https://nyncj.suzhou.gov.cn/nlj/zwyw/202406/c0525c39d894432a815473ccc3a7df11.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "chenghai-baoke",
+      "displayName": "薄壳米",
+      "aliases": [
+        "盐鸿薄壳米",
+        "薄壳肉",
+        "澄海薄壳米"
+      ],
+      "region": "广东汕头 · 澄海盐鸿",
+      "sourceObservationIds": [
+        "chenghai-baoke"
+      ],
+      "status": "保留",
+      "reason": "盐鸿薄壳米是可辨认的小贝肉地方产品，七八月赏味和金不换吃法已有独立证据。",
+      "supportedDistinctiveness": "地方产品；少见形态；短窗",
+      "uncertainty": "薄壳米是加工取肉状态，不要包装成仅当地存在的物种。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": null,
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "南方+：盐鸿薄壳米七八月最佳品尝季",
+          "url": "https://static.nfnews.com/content/202107/15/c5526003.html"
+        },
+        {
+          "label": "人民网：薄壳肉质与上市时节",
+          "url": "https://travel.people.com.cn/n/2015/0611/c41570-27136750.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "zhuhai-hechong",
+      "displayName": "禾虫",
+      "aliases": [
+        "粉洲禾虫",
+        "珠海禾虫"
+      ],
+      "region": "广东珠海 · 斗门莲洲",
+      "sourceObservationIds": [
+        "zhuhai-hechong"
+      ],
+      "status": "保留",
+      "reason": "禾虫随潮短时出造，莲洲稻田与潮汐生产场景、食材形态均鲜明。",
+      "supportedDistinctiveness": "猎奇；随潮短窗；地方来源",
+      "uncertainty": "每造短但一年多造，不能把列出的三个月解释成连续鲜收。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "春、初夏、初秋随潮出造",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "珠海市博物馆：禾虫出造、潮汛与传统吃法",
+          "url": "https://www.zhmuseum.org.cn/yanjiu/msfqInfo?id=39"
+        },
+        {
+          "label": "广州市农业农村局：禾虫与稻作时令",
+          "url": "https://nyncj.gz.gov.cn/zw/zwyw/snyw/content/post_9773927.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "lyg-shaguang-fish",
+      "displayName": "沙光鱼",
+      "aliases": [
+        "连云港沙光",
+        "连云港沙光鱼"
+      ],
+      "region": "江苏连云港",
+      "sourceObservationIds": [
+        "lyg-shaguang-fish"
+      ],
+      "status": "保留",
+      "reason": "沙光鱼在连云港的秋末冬初成熟与地方俗名认知突出，食材自身有地方辨识度。",
+      "supportedDistinctiveness": "地方鱼；成熟赏味期",
+      "uncertainty": "仅秋季肥美线索，不承诺每日品质一致。",
+      "currentSeasonBasis": "maturity",
+      "currentSeasonLabel": "霜降至初冬",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "连云港市人民政府：沙光鱼形态与秋末冬初吃法",
+          "url": "https://www.lyg.gov.cn/zglygzfmhwz/szgc/content/efda9c3f-ea1e-4220-a6bb-476e14af6120.htm"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "ninghai-changjie-razor-clam",
+      "displayName": "蛏子",
+      "aliases": [
+        "长街蛏",
+        "蛏子",
+        "宁海长街蛏子"
+      ],
+      "region": "浙江宁波 · 宁海长街",
+      "sourceObservationIds": [
+        "ninghai-changjie-razor-clam"
+      ],
+      "status": "保留",
+      "reason": "显示名虽是普通蛏子，底层记录确指宁海长街地方产品与春季肥嫩，不能因去地名标题而误删。",
+      "supportedDistinctiveness": "地方产品；春季肥度",
+      "uncertainty": "捕挖季比最佳赏味期长，不能称只在3—4月有货。",
+      "currentSeasonBasis": "maturity",
+      "currentSeasonLabel": "春季肥嫩期",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "宁波电视台：长街蛏子春季肥嫩与品质监测",
+          "url": "https://www.ncmc.nbtv.cn/xwdsg/nb/40266653.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "jiaozhou-kailing-suo",
+      "displayName": "开凌梭",
+      "aliases": [
+        "开凌梭",
+        "开凌梭鱼",
+        "鮻鱼",
+        "胶州湾开凌梭"
+      ],
+      "region": "山东青岛 · 大沽河入海口",
+      "sourceObservationIds": [
+        "jiaozhou-kailing-suo"
+      ],
+      "status": "保留",
+      "reason": "开凌梭是开春特定状态和地方海域的组合，已有立春至惊蛰赏味窗口与货源核验。",
+      "supportedDistinctiveness": "地方春鲜；短赏味窗",
+      "uncertainty": "它不是独立物种；外地梭鱼不能自动充当本地开凌梭。",
+      "currentSeasonBasis": "quality",
+      "currentSeasonLabel": "立春至惊蛰前后",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "青岛日报：开凌梭的时节、产地与市场货源",
+          "url": "https://www.dailyqd.com/guanhai/369154_1.html"
+        },
+        {
+          "label": "观海新闻：立春至惊蛰的鲜味窗口",
+          "url": "https://m.guanhai.com.cn/p/304556.html"
+        },
+        {
+          "label": "美国食品药品管理局：鱼类熟制温度",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "ximeng-bamboo-worm",
+      "displayName": "鲜竹虫",
+      "aliases": [
+        "西盟竹虫",
+        "食用竹虫",
+        "竹虫",
+        "西盟鲜竹虫"
+      ],
+      "region": "云南普洱 · 西盟",
+      "sourceObservationIds": [
+        "ximeng-bamboo-worm"
+      ],
+      "status": "保留",
+      "reason": "西盟鲜竹虫有九月中旬至十月底鲜货窗，竹节内幼虫形态和食用方式都足够少见。",
+      "supportedDistinctiveness": "猎奇；短鲜货窗；产区",
+      "uncertainty": "必须区分食用养殖/合法来源、冷冻库存与当季鲜货。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "九月中旬至十月底鲜货期",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "新华社：西盟竹虫九月中旬至十月底时节及熟食",
+          "url": "https://www.sohu.com/a/592382239_267106"
+        },
+        {
+          "label": "云南网／绿春融媒体：食用竹虫与过敏提醒",
+          "url": "https://m.yunnan.cn/system/2021/11/01/031744485.shtml"
+        },
+        {
+          "label": "中国新闻网：食用昆虫的过敏风险采访",
+          "url": "https://www.chinanews.com/sh/2013/08-12/5150775.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "sanmen-qingxie",
+      "displayName": "青蟹",
+      "aliases": [
+        "三门湾青蟹",
+        "三门青蟹鲜货",
+        "三门青蟹"
+      ],
+      "region": "浙江台州 · 三门湾",
+      "sourceObservationIds": [
+        "sanmen-qingxie"
+      ],
+      "status": "保留",
+      "reason": "青蟹虽常见，记录实际限定三门湾秋季地方产品，不是全国任意青蟹；地域与肥度足以保留。",
+      "supportedDistinctiveness": "真实地方产品；秋季肥度",
+      "uncertainty": "9—11月不算极短，当前来源未给独立品系或独占产地，文案不要拔高。",
+      "currentSeasonBasis": "quality",
+      "currentSeasonLabel": "九月至十一月秋季肥美期",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "浙江在线：三门湾海鲜与青蟹秋季赏味时节",
+          "url": "https://tz.zjol.com.cn/xw18022/ms/201812/t20181219_9028269.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "huangbohai-yingzhuaxia",
+      "displayName": "蛎虾（鹰爪虾）",
+      "aliases": [
+        "蛎虾（鹰爪虾）",
+        "鹰爪虾（蛎虾）",
+        "黄渤海灯笼红虾",
+        "鹰爪虾",
+        "大连灯笼红虾",
+        "山东蛎虾",
+        "青岛沙子口蛎虾",
+        "沙子口蛎虾",
+        "青岛蛎虾",
+        "鸡爪虾",
+        "青岛沙子口春捕蛎虾（鹰爪虾）",
+        "青岛立虾"
+      ],
+      "region": "黄渤海 · 大连、山东沿海 / 山东青岛 · 沙子口近海 / 山东青岛 · 崂山沙子口渔港",
+      "sourceObservationIds": [
+        "huangbohai-yingzhuaxia",
+        "qingdao-shazikou-li-xia",
+        "qingdao-shazikou-li-xia-shrimp-2026"
+      ],
+      "status": "保留",
+      "reason": "鹰爪虾厚壳小个与绵软虾肉有品类区别，沙子口春捕等原始观察也具体。",
+      "supportedDistinctiveness": "区别于通用品类；地方春捕",
+      "uncertainty": "合并记录含黄渤海多产地和春秋两窗，需以分产地/批次呈现，不能说全年只有一个短季。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "3月、4月、11月",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "全国农业展览馆（中国农业博物馆）：顺时而食·立冬（2025-11-06）",
+          "url": "https://jgs.agri.gov.cn/detail/zh/39871.html"
+        },
+        {
+          "label": "青岛新闻网：青岛市面蛎虾多来自沙子口（渔汛与俗名释义，采访中国海洋大学渔业专家）",
+          "url": "https://news.qingdaonews.com/wap/2018-04/13/content_20121307.htm"
+        },
+        {
+          "label": "青岛市海洋发展局：春捕小海鲜上市（2026年渔获现场与当年活立虾供应窗口）",
+          "url": "https://ocean.qingdao.gov.cn/tpxw/202603/t20260310_10531025.shtml"
+        },
+        {
+          "label": "青岛市海洋发展局：沙子口春捕小海鲜上市，活立虾可供应至4月（2026年3月10日）",
+          "url": "https://ocean.qingdao.gov.cn/tpxw/202603/t20260310_10531025.shtml"
+        },
+        {
+          "label": "新华网：青岛沙子口春捕蛎虾集中上市，并标注为鹰爪虾（2024年3月13日）",
+          "url": "https://www.xinhuanet.com/city/20240313/06656a6480c54862b2f96d19e45ed5d6/c.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "ningbo-youdai",
+      "displayName": "油带鱼",
+      "aliases": [
+        "北洋带鱼",
+        "宁波油带",
+        "小眼睛带鱼",
+        "宁波北洋油带鱼"
+      ],
+      "region": "浙江宁波 · 奉化莼湖桐照码头及东海渔场",
+      "sourceObservationIds": [
+        "ningbo-youdai"
+      ],
+      "status": "保留",
+      "reason": "北洋小眼睛油带鱼是宁波地方可辨商品，冬至渔汛和肥度较笼统带鱼更有辨识力。",
+      "supportedDistinctiveness": "地方商品；冬至渔汛",
+      "uncertainty": "不能把所有带鱼都叫油带；继续保留季度内去重。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "冬至前后渔汛与赏味期",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "浙江在线：冬至时节，肥美小眼睛带鱼大批到岸",
+          "url": "https://zjnews.zjol.com.cn/zjnews/nbnews/202112/t20211218_23518462.shtml"
+        },
+        {
+          "label": "浙江省社会科学界联合会：浙江饮食文化中的冬至前后带鱼时令",
+          "url": "https://www.zjskw.gov.cn/art/2024/11/18/art_1229536556_61598.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "dalian-jinzhou-hairyclam",
+      "displayName": "毛蚶",
+      "aliases": [
+        "毛蚶",
+        "毛蛤",
+        "麻蚶",
+        "大连金州毛蚶"
+      ],
+      "region": "辽宁大连 · 金州沿海",
+      "sourceObservationIds": [
+        "dalian-jinzhou-hairyclam"
+      ],
+      "status": "保留",
+      "reason": "金州毛蚶这一具体贝类和初冬赏味线索成立，少见程度高于普通鲍鱼。",
+      "supportedDistinctiveness": "少见贝类；地方来源",
+      "uncertainty": "现有证据为初冬赏味线索，不足以给出精确起止采收日。",
+      "currentSeasonBasis": "best-taste",
+      "currentSeasonLabel": "初冬赏味线索",
+      "currentPeakTerms": [
+        20
+      ],
+      "existingSources": [
+        {
+          "label": "中国农业博物馆：顺时而食·立冬（毛蚶初冬赏味与大连金州地标产地）",
+          "url": "https://jgs.agri.gov.cn/detail/zh/39871.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "donghai-dongzhi-cuttlefish",
+      "displayName": "乌贼（墨鱼）",
+      "aliases": [
+        "乌贼（墨鱼）",
+        "墨鱼（乌贼）",
+        "东海冬至墨鱼",
+        "冬至墨鱼",
+        "东海墨鱼",
+        "乌贼",
+        "台湾立秋高雄外海乌贼",
+        "高雄乌贼",
+        "乌贼（目贼）",
+        "基隆寒露目贼（乌贼）",
+        "目贼",
+        "墨鱼",
+        "花枝"
+      ],
+      "region": "浙江沿海 · 宁波、舟山、台州渔获进入杭州市场 / 台湾高雄外海 / 台湾基隆近海",
+      "sourceObservationIds": [
+        "donghai-dongzhi-cuttlefish",
+        "taiwan-lichiu-kaohsiung-squid",
+        "keelung-hanlu-cuttlefish"
+      ],
+      "status": "暂缓",
+      "reason": "合并后的“乌贼/墨鱼”覆盖东海及台湾多海区和四个月，当前文案没有讲出地方种类或品质差异，特色被泛化。",
+      "supportedDistinctiveness": "仅多地节气渔获观察",
+      "uncertainty": "先复核各原始记录的具体商品种、海区与最佳状态；不是否认乌贼可食或来源真实。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "1月、8月、10月、12月",
+      "currentPeakTerms": [
+        23
+      ],
+      "existingSources": [
+        {
+          "label": "全国农业展览馆（中国农业博物馆）：墨鱼列为冬至前后时令海珍",
+          "url": "https://jgs.agri.gov.cn/detail/zh/39985.html"
+        },
+        {
+          "label": "浙江在线：冬至前后东海海鲜市场供应与墨鱼冬季产量记录",
+          "url": "https://zjnews.zjol.com.cn/202512/t20251222_31413805.shtml"
+        },
+        {
+          "label": "台湾农业部：立秋节气台湾高雄外海渔获线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507785"
+        },
+        {
+          "label": "台湾农业部食农教育平台：寒露节气基隆渔获名录",
+          "url": "https://fae.moa.gov.tw/theme_data.php?id=26&sub_theme=knowledge&theme=topics"
+        },
+        {
+          "label": "台湾农业部：目贼对应乌贼（Sepia spp.）俗名对照",
+          "url": "https://www.moa.gov.tw/theme_list.php?keyword=sepia&sub_theme=common_agri&theme=dictionary&type=fish"
+        },
+        {
+          "label": "台湾农业部农业知识入口网：乌贼肉质与切薄、快炒或焯熟建议",
+          "url": "https://kmweb.moa.gov.tw/subject/subject.php?id=33602&print=Y"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "dahan-green-carp",
+      "displayName": "青鱼",
+      "aliases": [
+        "黑鲩",
+        "乌青",
+        "螺蛳青",
+        "大寒青鱼"
+      ],
+      "region": "中国淡水养殖区（报道未限定产地）",
+      "sourceObservationIds": [
+        "dahan-green-carp"
+      ],
+      "status": "替换",
+      "reason": "全国常见养殖青鱼，产地未限定，现证据只是大寒食材报道，缺少独立地方品种、状态或明确最佳赏味差异。",
+      "supportedDistinctiveness": "无足够食材特色证据",
+      "uncertainty": "替换理由是当前条目弱，不是否认青鱼有地方特色产品可另行核验。",
+      "currentSeasonBasis": "market-season",
+      "currentSeasonLabel": "大寒时令报道中的鲜鱼",
+      "currentPeakTerms": [
+        1
+      ],
+      "existingSources": [
+        {
+          "label": "中国农业博物馆：践行大食物观——顺时而食·大寒",
+          "url": "https://www.ciae.com.cn/detail/zh/40113.html"
+        },
+        {
+          "label": "央视新闻：大寒时节的时令蔬菜与食材",
+          "url": "https://news.cctv.cn/2026/01/20/ARTIearXoZAZPeaJBXz7AUxQ260120.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "taiwan-winter-solstice-mullet-roe",
+      "displayName": "乌鱼子",
+      "aliases": [
+        "乌鱼子",
+        "乌金",
+        "乌鱼卵加工品",
+        "台湾冬至乌鱼子"
+      ],
+      "region": "台湾西南沿海 · 台南安平、屏东东港",
+      "sourceObservationIds": [
+        "taiwan-winter-solstice-mullet-roe"
+      ],
+      "status": "保留",
+      "reason": "乌鱼子是可辨认的鱼卵加工状态，冬至前后十日乌鱼盛汛与西南沿海加工场景明确。",
+      "supportedDistinctiveness": "特殊部位/加工品；短渔汛",
+      "uncertainty": "干制乌鱼子可长期销售，短季是原料盛汛与当季制作而非货架销售期。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "冬至前后十日盛汛加工",
+      "currentPeakTerms": [
+        23
+      ],
+      "existingSources": [
+        {
+          "label": "台湾农业部：冬至前后十天为乌鱼最佳捕获期，鱼卵可制作乌鱼子",
+          "url": "https://fae.moa.gov.tw/map/food_item.php?id=241&type=AS08"
+        },
+        {
+          "label": "台湾农业部水产试验所：乌鱼子加工与嚼感说明",
+          "url": "https://www.tfrin.gov.tw/theme_data.php?id=2&sub_theme=fishery&theme=qa"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "suzhou-rainwater-caihua-tangli",
+      "displayName": "菜花塘鳢鱼",
+      "aliases": [
+        "菜花塘鳢",
+        "塘鳢鱼",
+        "苏州春季时令鱼",
+        "苏州菜花塘鳢鱼"
+      ],
+      "region": "江苏苏州 · 南环桥市场时令上市线索（来货产地多样）",
+      "sourceObservationIds": [
+        "suzhou-rainwater-caihua-tangli"
+      ],
+      "status": "保留",
+      "reason": "菜花塘鳢是地方春鲜商品名，雨水上市和细嫩小鱼食用特点比普通养殖青鱼更鲜明。",
+      "supportedDistinctiveness": "地方春鲜商品；少见鱼类",
+      "uncertainty": "南环桥是市场到货地，不是唯一捕捞产地；没有证据时不说只出自苏州。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "苏州农业部门记录：雨水后鲜鱼上市",
+      "currentPeakTerms": [
+        3
+      ],
+      "existingSources": [
+        {
+          "label": "苏州市农业农村局：2024年雨水后菜花塘鳢鱼在南环桥市场上市及来源地区说明",
+          "url": "https://nyncj.suzhou.gov.cn/nlj/zwyw/202402/a8bc51a34b9a4818a30428edf3bd8054.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "taiwan-lichiu-northwest-tilefish",
+      "displayName": "马头鱼",
+      "aliases": [
+        "马头",
+        "马头鱼",
+        "台湾立秋西北海域马头鱼"
+      ],
+      "region": "台湾西北部海域",
+      "sourceObservationIds": [
+        "taiwan-lichiu-northwest-tilefish"
+      ],
+      "status": "保留",
+      "reason": "马头鱼对大陆一般读者有较高新鲜感，西北海域立秋渔获为具体地域选择线索。",
+      "supportedDistinctiveness": "少见商品鱼；地域渔获",
+      "uncertainty": "节气名录是发生记录，不等同于短暂最佳赏味期或当年必定有货。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "台湾农业部立秋节气渔获线索",
+      "currentPeakTerms": [
+        14
+      ],
+      "existingSources": [
+        {
+          "label": "台湾农业部：立秋节气台湾西北部海域渔获线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507785"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "suao-frost-beltfish",
+      "displayName": "白带鱼",
+      "aliases": [
+        "白带鱼",
+        "苏澳霜降百带鱼",
+        "苏澳百带鱼",
+        "台湾百带鱼",
+        "霜降百带鱼",
+        "台湾立春基隆彰化白带鱼",
+        "基隆外海白带鱼",
+        "彰化外海白带鱼"
+      ],
+      "region": "台湾宜兰 · 苏澳沿海 / 台湾基隆与彰化外海",
+      "sourceObservationIds": [
+        "suao-frost-beltfish",
+        "taiwan-lichun-hairtail"
+      ],
+      "status": "保留",
+      "reason": "原始观察指苏澳霜降等地方渔讯，而非任意带鱼；可保留地方记录，但不应反复当作全新物种占位。",
+      "supportedDistinctiveness": "地方渔讯",
+      "uncertainty": "合并了立春/雨水两地记录，2、3、10月并非一个短季；依既有季度去重规则轮换。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "2月、3月、10月",
+      "currentPeakTerms": [
+        19
+      ],
+      "existingSources": [
+        {
+          "label": "台湾农业部：霜降二十四节气与苏澳沿海百带鱼渔讯",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507790"
+        },
+        {
+          "label": "台湾农业部：立春节气基隆、彰化外海白带鱼渔讯",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507773"
+        },
+        {
+          "label": "台湾农业部：雨水节气沿用立春渔讯",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507774"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "taiwan-lidong-east-red-eye-bream",
+      "displayName": "红目鰱",
+      "aliases": [
+        "红目鰱",
+        "台湾东部立冬红目鰱",
+        "台湾东部红目鰱",
+        "立冬红目鰱",
+        "台湾立秋东北角红目鰱",
+        "立秋东北角红目鰱"
+      ],
+      "region": "台湾东部沿海 / 台湾东北角海域",
+      "sourceObservationIds": [
+        "taiwan-lidong-east-red-eye-bream",
+        "taiwan-lichiu-red-eye-bream"
+      ],
+      "status": "保留",
+      "reason": "红目鰱这一少见市场鱼名/品类本身有探索价值，东部与东北角的季节记录明确。",
+      "supportedDistinctiveness": "少见商品鱼；地域渔讯",
+      "uncertainty": "多个地区窗口不能合写为一个独有产季；生成形态图不能鉴种。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "8月、11月",
+      "currentPeakTerms": [
+        20
+      ],
+      "existingSources": [
+        {
+          "label": "台湾农业部：立冬二十四节气与东部沿海渔讯",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507791"
+        },
+        {
+          "label": "台湾农业部：立秋节气东北角渔获线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507785"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "taiwan-jialiao-bream",
+      "displayName": "真鲷（嘉鱲）",
+      "aliases": [
+        "真鲷（嘉鱲）",
+        "真鲷（加纳鱼）",
+        "台湾东部立冬加纳鱼",
+        "台湾东部加纳鱼",
+        "立冬加纳鱼",
+        "台湾嘉鱲（加腊）",
+        "嘉鱲鱼",
+        "加腊鱼",
+        "真鯛",
+        "真鲷",
+        "真鲷（嘉腊）",
+        "台湾云林四湖嘉腊",
+        "四湖嘉腊",
+        "嘉腊",
+        "台湾惊蛰云林四湖嘉腊",
+        "淡水小暑嘉腊",
+        "淡水嘉腊",
+        "加腊",
+        "真鲷（加蚋鱼）",
+        "台湾雨水澎湖、高雄加蚋鱼",
+        "台湾雨水加蚋鱼",
+        "加蚋鱼",
+        "基隆惊蛰加蚋鱼",
+        "基隆加蚋鱼"
+      ],
+      "region": "台湾东部沿海 / 台湾北部沿海 / 台湾澎湖、高雄与云林四湖外海 / 台湾新北 · 淡水海域 / 台湾澎湖、高雄外海 / 台湾基隆 · 基隆",
+      "sourceObservationIds": [
+        "taiwan-lidong-east-jiana-fish",
+        "taiwan-jialiao-bream",
+        "taiwan-jingzhe-jiala",
+        "tamsui-xiaoshu-jiala",
+        "taiwan-rainwater-jialai-fish",
+        "keelung-jingzhe-jiaranyu"
+      ],
+      "status": "保留",
+      "reason": "真鲷的嘉鱲、嘉腊等地方商品名与海区观察可支持地域探索，标题去地名后不代表底层没有地方性。",
+      "supportedDistinctiveness": "地方商品名与海区",
+      "uncertainty": "真鲷本身并非罕见鱼；合并横跨多海区和多季节，需把各原始产地窗讲清，不能声称独占产地。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "2月、3月、7月、11月",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "台湾农业部：立冬二十四节气与东部沿海渔讯",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507791"
+        },
+        {
+          "label": "台北市市场处：加纳鱼列入秋冬时令海鲜",
+          "url": "https://www.tcma.gov.taipei/News_Content.aspx?n=728F26CEC689313F&s=7AEF306D5AECA864&sms=030C2382AEF3FABC"
+        },
+        {
+          "label": "台湾农业部：立冬节气与北部海域渔获",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507791"
+        },
+        {
+          "label": "中央研究院数字典藏：嘉鱲鱼（Pagrus major）名称与食用信息",
+          "url": "https://digiarch.sinica.edu.tw/content/repository/resource_content.jsp?oid=4353596&queryString=%E5%8A%A0%E8%87%98+%E7%9C%9F%E9%AF%9B+%E9%AF%9B%E7%A7%91"
+        },
+        {
+          "label": "台湾农业部：立春时澎湖、高雄外海嘉腊与童尖渔获线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507773"
+        },
+        {
+          "label": "台湾农业部：惊蛰节气云林四湖外海渔获线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507775"
+        },
+        {
+          "label": "台湾农业部：小暑节气期间淡水海域嘉腊渔获线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507783"
+        },
+        {
+          "label": "台湾农业部食农教育资讯整合平台：雨水节气渔讯",
+          "url": "https://fae.moa.gov.tw/theme_data.php?id=38&sub_theme=knowledge&theme=topics"
+        },
+        {
+          "label": "台湾农业部：二十四节气·惊蛰（苏澳地方渔讯）",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507775"
+        },
+        {
+          "label": "台湾农业部食农教育平台：惊蛰与春分渔讯",
+          "url": "https://fae.moa.gov.tw/theme_data.php?id=42&sub_theme=knowledge&theme=topics"
+        },
+        {
+          "label": "台湾鱼类资料库：真鲷及嘉鱲、加蚋、加魶俗名",
+          "url": "https://fishdb.sinica.edu.tw/taxon/382642-fishdb/specimen"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "fuzhou-chunfen-baili-fish",
+      "displayName": "白鱱鱼",
+      "aliases": [
+        "白鱱",
+        "福州白鱱",
+        "三月白鱱",
+        "福州春分白鱱鱼"
+      ],
+      "region": "福建福州 · 闽江口沿海饮食传统",
+      "sourceObservationIds": [
+        "fuzhou-chunfen-baili-fish"
+      ],
+      "status": "暂缓",
+      "reason": "白鱱目前仅民谚和未鉴种通用鱼图，标准商品身份与可追溯食材对应不足。",
+      "supportedDistinctiveness": "地方民谚线索",
+      "uncertainty": "先核对白鱱的可购买标准商品名/物种与来源，不能凭泛鲱形目照片补齐身份。",
+      "currentSeasonBasis": "custom",
+      "currentSeasonLabel": "福州民谚里的春分时令鱼",
+      "currentPeakTerms": [
+        5
+      ],
+      "existingSources": [
+        {
+          "label": "福州市政府：春分习俗与“三月白鱱小鲥翅”民谚",
+          "url": "https://www.fuzhou.gov.cn/zgfzzt/zjrc/mdfc/msfq/202512/t20251205_5240958.htm"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "wenzhou-oujiang-ziji",
+      "displayName": "子鲚",
+      "aliases": [
+        "子鲚",
+        "凤尾鱼",
+        "温州子鲚",
+        "温州瓯江子鲚"
+      ],
+      "region": "浙江温州 · 瓯江江心屿一带",
+      "sourceObservationIds": [
+        "wenzhou-oujiang-ziji"
+      ],
+      "status": "保留",
+      "reason": "瓯江子鲚的洄游春汛、卵期地方吃法与较少见形态具有明确探索价值。",
+      "supportedDistinctiveness": "地方春汛；少见食材",
+      "uncertainty": "当前源是历史赏味报道，鲜干状态、现行可供应来源仍需按购买批次确认。",
+      "currentSeasonBasis": "catch",
+      "currentSeasonLabel": "惊蛰春汛赏味线索",
+      "currentPeakTerms": [
+        4
+      ],
+      "existingSources": [
+        {
+          "label": "华语环球：惊蛰·乡愁味道子鲚干（记载温州子鲚、瓯江洄游及惊蛰赏味）",
+          "url": "https://chinese.cri.cn/2024/03/05/ARTIr7ZpnaA5VgayvCyESfa3240228.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "taiwan-daxue-mullet",
+      "displayName": "乌鱼",
+      "aliases": [
+        "乌鱼",
+        "台湾乌鱼汛",
+        "台湾沿海冬季乌鱼"
+      ],
+      "region": "台湾沿海 · 淡水、彰化、台南、澎湖、高雄、东港外海",
+      "sourceObservationIds": [
+        "taiwan-daxue-mullet"
+      ],
+      "status": "保留",
+      "reason": "台湾冬季乌鱼汛与洄游状态成立，地域渔汛价值不同于普通全年养殖鲻鱼。",
+      "supportedDistinctiveness": "冬季洄游渔汛",
+      "uncertainty": "全鱼11—1月窗比鱼卵加工的冬至前后十日宽；不把普通同类图当产地证明。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "小雪至大寒 · 台湾沿海渔汛线索",
+      "currentPeakTerms": [
+        21,
+        22,
+        23,
+        0,
+        1
+      ],
+      "existingSources": [
+        {
+          "label": "台湾农业部：小雪至大寒乌鱼汛期与鱼货说明",
+          "url": "https://epost.moa.gov.tw/theme_data.php?id=1354&sub_theme=photo&theme=epost"
+        },
+        {
+          "label": "台湾农业部：大雪节气与沿海乌鱼渔汛",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507793"
+        },
+        {
+          "label": "台湾农业部：冬至节气与沿海乌鱼渔获",
+          "url": "https://www.moa.gov.tw/ws.php?RWD_mode=Y&id=2507794"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "gongliao-autumn-japanese-horse-mackerel",
+      "displayName": "日本竹荚鱼",
+      "aliases": [
+        "日本竹筴魚",
+        "竹荚鱼",
+        "日本竹荚鱼",
+        "贡寮秋分日本竹荚鱼"
+      ],
+      "region": "台湾新北 · 贡寮澳底、东北角海域",
+      "sourceObservationIds": [
+        "gongliao-autumn-japanese-horse-mackerel"
+      ],
+      "status": "保留",
+      "reason": "日本竹荚鱼虽非罕见鱼，贡寮东北角秋分鱼脂丰厚这一最佳状态有具体地方证据。",
+      "supportedDistinctiveness": "地域最佳赏味期",
+      "uncertainty": "保留的是该海域秋鱼状态，不是所有冷冻竹荚鱼的全年最佳期。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "秋分前后东北角盛产、鱼脂丰厚",
+      "currentPeakTerms": [
+        17
+      ],
+      "existingSources": [
+        {
+          "label": "新北市政府渔业及渔港事业管理处：盐烤日本竹筴鱼（秋分前后东北角赏味线索、捕法与盛产期）",
+          "url": "https://fishery.ntpc.gov.tw/cht/index.php/upload/cht/article/index.php?article_id=1404&code=list&flag=detail&ids=20"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "taiwan-lichun-mackerel",
+      "displayName": "鲭鱼",
+      "aliases": [
+        "台湾立春鲭鱼",
+        "花腹鲭",
+        "白腹鲭",
+        "台湾立春洄游鲭鱼"
+      ],
+      "region": "苏澳以北与高雄外海",
+      "sourceObservationIds": [
+        "taiwan-lichun-mackerel"
+      ],
+      "status": "保留",
+      "reason": "鲭鱼常见，但立春洄游与具体海域线索比单纯“节气吃鱼”更具体，可作为地方渔讯保留。",
+      "supportedDistinctiveness": "洄游与海区",
+      "uncertainty": "未有证据证明立春独占最佳口感，不应将两种鲭类通名写成一个特殊品种。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "台湾农业部立春鱼类洄游线索",
+      "currentPeakTerms": [
+        2,
+        3
+      ],
+      "existingSources": [
+        {
+          "label": "台湾农业部：立春节气与鲭鱼洄游线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507773"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "jiangmen-muzhou-qingming-huangsha-clam",
+      "displayName": "黄沙蚬",
+      "aliases": [
+        "睦洲黄沙蚬",
+        "石板沙黄沙蚬",
+        "江门睦洲黄沙蚬"
+      ],
+      "region": "广东江门 · 新会睦洲",
+      "sourceObservationIds": [
+        "jiangmen-muzhou-qingming-huangsha-clam"
+      ],
+      "status": "保留",
+      "reason": "睦洲、石板沙黄沙蚬有产地和春季肥度的多源支持，是普通贝类中的强地方产品。",
+      "supportedDistinctiveness": "地方产品；较短赏味期",
+      "uncertainty": "不同来源3—5月或春节后至五一前，清明只是精选锚点。",
+      "currentSeasonBasis": "best-taste-period",
+      "currentSeasonLabel": "清明前后较佳赏味",
+      "currentPeakTerms": [
+        6
+      ],
+      "existingSources": [
+        {
+          "label": "江门市政府：清明前后黄沙蚬较肥美及睦洲地方吃法",
+          "url": "https://www.jiangmen.gov.cn/newzjqx/lyzy/lyzx/content/post_3467192.html"
+        },
+        {
+          "label": "新会区政府：石板沙黄沙蚬春节后至五一前集中上市",
+          "url": "https://www.jiangmen.gov.cn/home/sqdt/xhzx/content/post_2621237.html"
+        },
+        {
+          "label": "广东省侨务办公室转载中新网：黄沙蚬地方风味与3—5月最佳食蚬季",
+          "url": "https://www.qb.gd.gov.cn/ztzl/2021ycsf/xwdt/content/post_524414.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "zhangzidao-daxue-sea-cucumber",
+      "displayName": "鲜海参",
+      "aliases": [
+        "獐子岛大雪海参",
+        "大雪采捕海参",
+        "獐子岛大雪采捕海参"
+      ],
+      "region": "辽宁大连 · 长海县獐子岛",
+      "sourceObservationIds": [
+        "zhangzidao-daxue-sea-cucumber"
+      ],
+      "status": "保留",
+      "reason": "獐子岛大雪潜水采参的生产方式、特定采捕节点与产地有特色，不能仅因海参全国常见就删除。",
+      "supportedDistinctiveness": "地方生产方式；采捕节点",
+      "uncertainty": "历史采捕活动不证明每年唯一采期；鲜参与干参泡发做法需分清。",
+      "currentSeasonBasis": "catch",
+      "currentSeasonLabel": "大雪节气历史采捕记录",
+      "currentPeakTerms": [
+        22
+      ],
+      "existingSources": [
+        {
+          "label": "全国农业展览馆：中国博物馆“顺时而食·大雪”獐子岛采捕民俗",
+          "url": "https://jgs.agri.gov.cn/detail/zh/39943.html"
+        },
+        {
+          "label": "中国新闻网：大连獐子岛“大雪”节气捕海参现场（2016-12-07）",
+          "url": "https://news.sina.cn/gn/2016-12-07/detail-ifxypizi9883738.d.html"
+        },
+        {
+          "label": "农业农村部渔业渔政管理局：獐子岛海参产地、养殖方式与采捕追溯信息",
+          "url": "https://yyj.moa.gov.cn/yqxx/201904/t20190428_6216029.htm"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "longyangxia-salmon",
+      "displayName": "三文鱼",
+      "aliases": [
+        "青海龙羊峡三文鱼",
+        "龙羊峡虹鳟",
+        "龙羊峡三文鱼"
+      ],
+      "region": "青海海南州 · 共和县龙羊峡",
+      "sourceObservationIds": [
+        "longyangxia-salmon"
+      ],
+      "status": "替换",
+      "reason": "龙羊峡是真实养殖产区，但现源只谈大暑适生水温，未证具体鲑鳟商品种、当季独特品质或短暂最佳期，正文仍是普通三文鱼吃法。",
+      "supportedDistinctiveness": "真实产区但特色证据不足",
+      "uncertainty": "不能从“适宜生长”推导采收/最佳赏味窗；若将来补出具体虹鳟地方产品证据可重新评估。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "大暑水温适宜生长",
+      "currentPeakTerms": [
+        13
+      ],
+      "existingSources": [
+        {
+          "label": "中国天气网：大暑节气全国名优特产品名录，记录龙羊峡水温与养殖生长线索",
+          "url": "https://news.weather.com.cn/2024/07/3818436.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "tamsui-xiaoshu-black-bream",
+      "displayName": "黑鲷",
+      "aliases": [
+        "淡水黑鲷",
+        "黑鲷",
+        "淡水小暑黑鲷"
+      ],
+      "region": "台湾新北 · 淡水海域",
+      "sourceObservationIds": [
+        "tamsui-xiaoshu-black-bream"
+      ],
+      "status": "暂缓",
+      "reason": "普通黑鲷加一条淡水海域小暑渔获名录，尚未体现地方种群、捕法、状态或风味差异。",
+      "supportedDistinctiveness": "仅单节气地方渔获观察",
+      "uncertainty": "保留原始来源线索待补特色证据；不要与“已有大陆供应”这一准入判断混为一谈。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "台湾农业部小暑渔获线索",
+      "currentPeakTerms": [
+        12
+      ],
+      "existingSources": [
+        {
+          "label": "台湾农业部：小暑节气期间淡水海域黑鲷渔获线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507783"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "changhua-xiaoshu-black-over",
+      "displayName": "黄鳍鲷（黑过）",
+      "aliases": [
+        "黑过",
+        "黄鳍鲷",
+        "彰化小暑黄鳍鲷（黑过）"
+      ],
+      "region": "台湾彰化海域",
+      "sourceObservationIds": [
+        "changhua-xiaoshu-black-over"
+      ],
+      "status": "保留",
+      "reason": "彰化“黑过”这一地方商品名对应黄鳍鲷，可留作地方鱼市场探索，重点是名称与海区而非宣称罕见。",
+      "supportedDistinctiveness": "地方商品名；海区",
+      "uncertainty": "现源未证独特品系或最短赏味窗；需要正式商品标签核对，不扩展超出现有映射。",
+      "currentSeasonBasis": "fishery",
+      "currentSeasonLabel": "台湾农业部小暑渔获线索",
+      "currentPeakTerms": [
+        12
+      ],
+      "existingSources": [
+        {
+          "label": "台湾农业部：小暑节气期间彰化海域地方渔获线索",
+          "url": "https://www.moa.gov.tw/ws.php?id=2507783"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "nanjing-lishui-qingming-river-snail",
+      "displayName": "螺蛳",
+      "aliases": [
+        "晶桥螺蛳",
+        "晶桥清明螺",
+        "溧水晶桥清明螺蛳"
+      ],
+      "region": "江苏南京 · 溧水晶桥镇芝山村",
+      "sourceObservationIds": [
+        "nanjing-lishui-qingming-river-snail"
+      ],
+      "status": "替换",
+      "reason": "普通螺蛳加晶桥市集与清明赏味线索，没有证实不同于各地螺蛳的地方种类/品质或生产条件，特色弱。",
+      "supportedDistinctiveness": "仅普通品类与地方市集",
+      "uncertainty": "若补到芝山村特殊食用种、养殖/水域或风味证据可重评，不否认清明吃螺的记录。",
+      "currentSeasonBasis": "seasonal-taste",
+      "currentSeasonLabel": "清明前后地方赏味线索",
+      "currentPeakTerms": [
+        6
+      ],
+      "existingSources": [
+        {
+          "label": "南京市农业农村局：清明时节晶桥螺蛳赏味与地方市集记录",
+          "url": "https://nyncj.nanjing.gov.cn/nygzdt/202504/t20250403_5110938.html"
+        },
+        {
+          "label": "潜江市市场监督管理局：螺类食品安全消费提示（来源与彻底熟制）",
+          "url": "https://www.hbqj.gov.cn/sscjgj/zfxxgk/fdzdgknr/gysyjs_34501/spypaq/202404/t20240424_5169281.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "qingdao-shazikou-qingming-spring-mackerel",
+      "displayName": "鲅鱼",
+      "aliases": [
+        "沙子口春鲅鱼",
+        "青岛本地春鲅",
+        "青岛沙子口清明春鲅鱼"
+      ],
+      "region": "山东青岛 · 沙子口近海",
+      "sourceObservationIds": [
+        "qingdao-shazikou-qingming-spring-mackerel"
+      ],
+      "status": "保留",
+      "reason": "本地春鲅与其他海区/冷冻鲅鱼的货源状态有实际区别，沙子口近海早春少量上市比普通鲅鱼更具体。",
+      "supportedDistinctiveness": "地方春捕；鲜货状态",
+      "uncertainty": "是2025年记录，不保证每年清明同日上市；不能移除单年与少量限定。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "2025年清明前本地春鲅少量上市记录",
+      "currentPeakTerms": [
+        6
+      ],
+      "existingSources": [
+        {
+          "label": "青岛新闻网：2025年清明前沙子口本地春鲅少量上市及近海春鲜记录",
+          "url": "https://www.qingdaonews.com/app/content/2025-04/03/content_23652319.htm"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "pearl-river-qingming-cao-shrimp",
+      "displayName": "曹虾",
+      "aliases": [
+        "清明虾",
+        "曹虾",
+        "珠江口清明曹虾"
+      ],
+      "region": "广东珠江口咸淡水交界",
+      "sourceObservationIds": [
+        "pearl-river-qingming-cao-shrimp"
+      ],
+      "status": "保留",
+      "reason": "曹虾是珠江口咸淡水交界的地方春鲜商品名，薄壳与嫩爽状态具有地域探索性。",
+      "supportedDistinctiveness": "地方商品名；赏味状态",
+      "uncertainty": "来源采用贸易俗名，未鉴定学名；不得自动套成任何普通白虾或斑节对虾。",
+      "currentSeasonBasis": "best-taste",
+      "currentSeasonLabel": "广州日报采访所记清明前后鲜食窗口",
+      "currentPeakTerms": [
+        6
+      ],
+      "existingSources": [
+        {
+          "label": "广州日报新花城：清明前后曹虾地方俗名、赏味与家常做法记录（2025）",
+          "url": "https://huacheng.gz-cmc.com/pages/2025/04/01/SF136133875ee5eacfabd34c57a3bab0.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "guangdong-qingming-fengwei-anchovy",
+      "displayName": "凤尾鱼",
+      "aliases": [
+        "凤尾鱼",
+        "珠江口凤尾鱼",
+        "珠江口清明凤尾鱼"
+      ],
+      "region": "广东珠江口咸淡水区域",
+      "sourceObservationIds": [
+        "guangdong-qingming-fengwei-anchovy"
+      ],
+      "status": "保留",
+      "reason": "珠江口回流凤尾鱼与春季肥美的在地采访有探索价值，可保留带地方俗名的渔食记录。",
+      "supportedDistinctiveness": "地方回流与春季状态",
+      "uncertainty": "凤尾鱼是多义俗名，采购仍须核对具体商品种，不将别处同名鱼合并。",
+      "currentSeasonBasis": "best-taste",
+      "currentSeasonLabel": "地方采访记录三月底至四五月的肥美窗口",
+      "currentPeakTerms": [
+        6
+      ],
+      "existingSources": [
+        {
+          "label": "广州日报新花城：珠江口凤尾鱼回流与三月底至四五月地方赏味采访（2025）",
+          "url": "https://huacheng.gz-cmc.com/pages/2025/04/01/SF136133875ee5eacfabd34c57a3bab0.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "guangdong-eighteen-streams-qingming-yellow-brow-fish",
+      "displayName": "黄眉头",
+      "aliases": [
+        "黄眉头",
+        "梅童鱼",
+        "狮子鱼",
+        "广东十八涌清明黄眉头"
+      ],
+      "region": "广东珠江口 · 十八涌一带",
+      "sourceObservationIds": [
+        "guangdong-eighteen-streams-qingming-yellow-brow-fish"
+      ],
+      "status": "保留",
+      "reason": "十八涌黄眉头的地方商品名与三四月肥美记录具体，对非当地读者有新鲜感。",
+      "supportedDistinctiveness": "地方商品名；短赏味期",
+      "uncertainty": "来源同时给梅童鱼等俗称，不能凭通用图把所有梅童鱼种均当同一条目。",
+      "currentSeasonBasis": "best-taste",
+      "currentSeasonLabel": "采访记载的三四月地方赏味期",
+      "currentPeakTerms": [
+        6
+      ],
+      "existingSources": [
+        {
+          "label": "广州日报新花城：十八涌黄眉头地方俗名、梅童鱼对应与三四月赏味采访（2025）",
+          "url": "https://huacheng.gz-cmc.com/pages/2025/04/01/SF136133875ee5eacfabd34c57a3bab0.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "beijiang-spring-milk-fish",
+      "displayName": "奶鱼",
+      "aliases": [
+        "奶鱼",
+        "河骨鱼",
+        "北江春季奶鱼"
+      ],
+      "region": "广东北江",
+      "sourceObservationIds": [
+        "beijiang-spring-milk-fish"
+      ],
+      "status": "保留",
+      "reason": "北江奶鱼/河骨鱼是明显地方贸易称呼，春季盛产和当地吃法比普通鱼名更有探索价值。",
+      "supportedDistinctiveness": "地方商品名；春季盛产",
+      "uncertainty": "标准商品种仍需进一步核对；不借俗名擅自认定为其他奶鱼或养殖虱目鱼。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "广州日报采访所记开春盛产期",
+      "currentPeakTerms": [
+        6
+      ],
+      "existingSources": [
+        {
+          "label": "广州日报新花城：北江奶鱼地方称呼、开春窗口与做法采访（2025）",
+          "url": "https://huacheng.gz-cmc.com/pages/2025/04/01/SF136133875ee5eacfabd34c57a3bab0.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "fuzhou-bailu-red-xun",
+      "displayName": "红鲟",
+      "aliases": [
+        "福州红鲟",
+        "红鲟糯米饭用蟹",
+        "福州白露红鲟"
+      ],
+      "region": "福建福州 · 闽江口沿海",
+      "sourceObservationIds": [
+        "fuzhou-bailu-red-xun"
+      ],
+      "status": "保留",
+      "reason": "红鲟强调雌青蟹膏满阶段与福州地方食材形态，不等于普通青蟹，地方菜与成熟状态足以保留。",
+      "supportedDistinctiveness": "成熟部位状态；地方食材",
+      "uncertainty": "现有来源含食俗，不能仅凭白露糯米饭习惯证明独有短季；红鲟也不是鲟鱼。",
+      "currentSeasonBasis": "maturity",
+      "currentSeasonLabel": "白露后 · 地方食俗记录",
+      "currentPeakTerms": [
+        16
+      ],
+      "existingSources": [
+        {
+          "label": "福州市人民政府：白露后福州红鲟与糯米饭食俗（2025）",
+          "url": "https://www.fuzhou.gov.cn/zgfzzt/zjrc/mdfc/msfq/202512/t20251205_5241002.htm"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "suzhou-bailu-river-eel",
+      "displayName": "鳗鲡",
+      "aliases": [
+        "苏州河鳗",
+        "苏州白鳝",
+        "苏州白露鳗鲡"
+      ],
+      "region": "江苏苏州 · 太湖及周边水域",
+      "sourceObservationIds": [
+        "suzhou-bailu-river-eel"
+      ],
+      "status": "保留",
+      "reason": "白露后约一月鳗鲡渔期有地方志记录，河鳗与普通全年鱼肉有品类及状态区别。",
+      "supportedDistinctiveness": "地方短渔期；少见食材",
+      "uncertainty": "记录不保证当前每批是太湖野捕；需核对实际养殖/采捕和来源。",
+      "currentSeasonBasis": "catch",
+      "currentSeasonLabel": "白露后约一月 · 地方志渔期记录",
+      "currentPeakTerms": null,
+      "existingSources": [
+        {
+          "label": "苏州市地方志编纂委员会办公室：白露时令美食与鳗鱼渔期",
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202209/a654d993a70c4c119b1db6f57dcfe9d5.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "fuzhou-hanlu-razor-clam-dry",
+      "displayName": "蛏干",
+      "aliases": [
+        "福州蛏干",
+        "寒露海味干货",
+        "福州寒露蛏干"
+      ],
+      "region": "福建福州沿海",
+      "sourceObservationIds": [
+        "fuzhou-hanlu-razor-clam-dry"
+      ],
+      "status": "替换",
+      "reason": "蛏干作为广泛干货，当前只以寒露晒海味习俗挂节气，没有具体地方工艺或特殊原料差异，特色不足。",
+      "supportedDistinctiveness": "仅通用干货与晾晒习俗",
+      "uncertainty": "若改成有明确产地与工艺的地方蛏干产品可重评，不能把库存销售期当鲜收期。",
+      "currentSeasonBasis": "custom",
+      "currentSeasonLabel": "寒露秋燥 · 沿海晾晒海味的时俗",
+      "currentPeakTerms": [
+        18
+      ],
+      "existingSources": [
+        {
+          "label": "福州市人民政府：寒露时节特色美食与“九月乌，晒蛏干”习俗（2025）",
+          "url": "https://www.fuzhou.gov.cn/zgfzzt/zjrc/mdfc/msfq/202512/t20251205_5241003.htm"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "fuzhou-hanlu-liaozai-clam",
+      "displayName": "蚬类（蟟仔）",
+      "aliases": [
+        "福州蟟仔",
+        "寒露蚬子",
+        "福州蚬类",
+        "福州寒露蟟仔（蚬类俗名）"
+      ],
+      "region": "福建福州",
+      "sourceObservationIds": [
+        "fuzhou-hanlu-liaozai-clam"
+      ],
+      "status": "暂缓",
+      "reason": "蟟仔仅为未核对到具体蚬类的地方俗名，且已经在精选编辑暂缓名单中。",
+      "supportedDistinctiveness": "身份未确认",
+      "uncertainty": "继续保留原始记录供研究，不能按普通蚬照片或同名猜种后恢复推荐。",
+      "currentSeasonBasis": "custom",
+      "currentSeasonLabel": "寒露食俗 · 地方俗名待物种核验",
+      "currentPeakTerms": [
+        18
+      ],
+      "existingSources": [
+        {
+          "label": "福州市人民政府：寒露时节特色美食与“食蟟仔”习俗（2025）",
+          "url": "https://www.fuzhou.gov.cn/zgfzzt/zjrc/mdfc/msfq/202512/t20251205_5241003.htm"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "qidong-lyusi-winter-solstice-hairtail",
+      "displayName": "带鱼",
+      "aliases": [
+        "吕四带鱼",
+        "启东冬至鲜带鱼",
+        "启东吕四冬至带鱼"
+      ],
+      "region": "江苏南通 · 启东吕四港",
+      "sourceObservationIds": [
+        "qidong-lyusi-winter-solstice-hairtail"
+      ],
+      "status": "保留",
+      "reason": "吕四港冬至带鱼有具体地方赏味节点，作为地域变体成立，不需要当成全新物种重复计数。",
+      "supportedDistinctiveness": "地方渔港；赏味节点",
+      "uncertainty": "与宁波油带鱼同季重复竞争应轮换；地区名称本身不证明品种差异。",
+      "currentSeasonBasis": "best-taste",
+      "currentSeasonLabel": "冬至前后 · 当地较佳赏味节点",
+      "currentPeakTerms": [
+        23
+      ],
+      "existingSources": [
+        {
+          "label": "南通市人民政府：冬至时节吕四港鲜带鱼的地方赏味记录（2025）",
+          "url": "https://en.nantong.gov.cn/2025-12/25/c_1150460.htm"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "gaoqing-taisun-jinchan",
+      "displayName": "金蝉",
+      "aliases": [
+        "知了猴",
+        "高青金蝉",
+        "蝉若虫"
+      ],
+      "region": "山东淄博 · 高青县台孙村及邻村",
+      "sourceObservationIds": [
+        "gaoqing-taisun-jinchan"
+      ],
+      "status": "保留",
+      "reason": "台孙村林地养殖蝉若虫的出土鲜收期与幼虫形态兼具地域、短窗和猎奇价值。",
+      "supportedDistinctiveness": "猎奇；出土鲜收短窗；核心产区",
+      "uncertainty": "不把冷冻全年供应写成鲜收；品牌名甘棠不充当村名。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "6月底至7月中下旬 · 出土鲜收",
+      "currentPeakTerms": [
+        12
+      ],
+      "existingSources": [
+        {
+          "label": "淄博市农业农村局：台孙村金蝉6月底至7月中下旬集中上市",
+          "url": "https://ny.zibo.gov.cn/art/2024/7/10/art_16388_2829932.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "guanyun-summer-doudan",
+      "displayName": "豆丹",
+      "aliases": [
+        "灌云豆丹",
+        "豆天蛾幼虫",
+        "豆虫"
+      ],
+      "region": "江苏连云港 · 灌云县杨集镇孙跳村一带",
+      "sourceObservationIds": [
+        "guanyun-summer-doudan"
+      ],
+      "status": "保留",
+      "reason": "灌云豆丹是有地理标志与核心生产区的特殊幼虫食材，夏季鲜收批次证据充分。",
+      "supportedDistinctiveness": "地方产品；猎奇；成熟阶段",
+      "uncertainty": "设施反季节供应已存在，7—8月是常规批次而非所有商品的唯一供应期。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "7—8月 · 常规夏季鲜收批次",
+      "currentPeakTerms": [
+        14
+      ],
+      "existingSources": [
+        {
+          "label": "国家知识产权局：灌云豆丹地理标志产品保护要求（印刷页908—910）",
+          "url": "https://www.cnipa.gov.cn/attach/0/20250826010509.pdf"
+        },
+        {
+          "label": "连云港市政府：灌云杨集镇孙跳村核心生产基地",
+          "url": "https://www.lyg.gov.cn/zglygzfmhwz/gcyw/content/564c94d5-e7cf-41d4-abfa-d5211a2c73c9.html"
+        },
+        {
+          "label": "农业农村部：家庭农场案例，含灌云反季节供应说明",
+          "url": "https://hzjjs.moa.gov.cn/nchzjj/202303/P020230329599044315626.pdf"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "nansha-longxue-butter-crab",
+      "displayName": "黄油蟹",
+      "aliases": [
+        "南沙黄油蟹",
+        "青蟹转油阶段"
+      ],
+      "region": "广东广州 · 南沙龙穴岛青蟹养殖区",
+      "sourceObservationIds": [
+        "nansha-longxue-butter-crab"
+      ],
+      "status": "保留",
+      "reason": "黄油蟹是雌青蟹的短暂转油状态，龙穴养殖区与盛夏集中期可辨，不与普通青蟹混同。",
+      "supportedDistinctiveness": "特殊成熟状态；地方产区；短窗",
+      "uncertainty": "现代养殖可跨季供货；普通母蟹或同属参考图不能证明转油状态。",
+      "currentSeasonBasis": "maturity",
+      "currentSeasonLabel": "7—8月 · 集中转油期",
+      "currentPeakTerms": [
+        15
+      ],
+      "existingSources": [
+        {
+          "label": "广州市农业农村局：南沙青蟹迎来黄油蟹季",
+          "url": "https://nyncj.gz.gov.cn/zw/zwyw/snyw/content/post_9094734.html"
+        },
+        {
+          "label": "广州市科技局：龙穴青蟹主产区与现代养殖供给",
+          "url": "https://kjj.gz.gov.cn/xwlb/yw/content/post_9709341.html"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    },
+    {
+      "id": "lianjiang-great-cold-abalone",
+      "displayName": "鲜鲍鱼",
+      "aliases": [
+        "连江鲜鲍鱼",
+        "福州大寒鲍鱼",
+        "连江大寒时鲜鲍鱼"
+      ],
+      "region": "福建福州 · 连江县沿海",
+      "sourceObservationIds": [
+        "lianjiang-great-cold-abalone"
+      ],
+      "status": "替换",
+      "reason": "连江是真实鲍鱼养殖产区，但当前只是普通鲜鲍鱼加大寒单日丰收稿，未说明具体地方品种/工法/特殊品质，探索性弱。",
+      "supportedDistinctiveness": "真实产区但普通商品",
+      "uncertainty": "单日采收不等于短最佳期；若补到特定品种或越冬养殖状态的差异可重评。",
+      "currentSeasonBasis": "harvest",
+      "currentSeasonLabel": "大寒 · 2025年1月20日地方采收记录",
+      "currentPeakTerms": [
+        1
+      ],
+      "existingSources": [
+        {
+          "label": "福州新闻网转福州晚报：大寒时节连江鲍鱼丰收上市",
+          "url": "https://news.fznews.com.cn/fzxw/20250120/55z2264658.shtml"
+        }
+      ],
+      "evidenceReview": "复用当前正式条目的已存来源及其范围限定；本轮为编辑价值审查，未重新抓取原网页，不将引用链接等同当前现货证明。"
+    }
+  ],
+  "rawObservationCoverage": [
+    {
+      "id": "dalian-zihaitan",
+      "name": "紫海胆",
+      "region": "辽宁大连 · 长海 / 旅顺",
+      "public": true,
+      "publicCanonicalId": "dalian-zihaitan",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "atushi-winter-lamb",
+      "name": "冬宰羊肉",
+      "region": "新疆克孜勒苏 · 阿图什",
+      "public": true,
+      "publicCanonicalId": "atushi-winter-lamb",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "yantai-haichang",
+      "name": "海肠",
+      "region": "山东烟台 · 渤海湾",
+      "public": true,
+      "publicCanonicalId": "yantai-haichang",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "gaochun-liuyuehuang",
+      "name": "六月黄",
+      "region": "江苏南京 · 高淳固城湖",
+      "public": true,
+      "publicCanonicalId": "gaochun-liuyuehuang",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "chenghai-baoke",
+      "name": "薄壳米",
+      "region": "广东汕头 · 澄海盐鸿",
+      "public": true,
+      "publicCanonicalId": "chenghai-baoke",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "zhuhai-hechong",
+      "name": "禾虫",
+      "region": "广东珠海 · 斗门莲洲",
+      "public": true,
+      "publicCanonicalId": "zhuhai-hechong",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "lyg-shaguang-fish",
+      "name": "沙光鱼",
+      "region": "江苏连云港",
+      "public": true,
+      "publicCanonicalId": "lyg-shaguang-fish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "ninghai-changjie-razor-clam",
+      "name": "蛏子",
+      "region": "浙江宁波 · 宁海长街",
+      "public": true,
+      "publicCanonicalId": "ninghai-changjie-razor-clam",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "jiaozhou-kailing-suo",
+      "name": "开凌梭",
+      "region": "山东青岛 · 大沽河入海口",
+      "public": true,
+      "publicCanonicalId": "jiaozhou-kailing-suo",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "ximeng-bamboo-worm",
+      "name": "鲜竹虫",
+      "region": "云南普洱 · 西盟",
+      "public": true,
+      "publicCanonicalId": "ximeng-bamboo-worm",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "sanmen-qingxie",
+      "name": "青蟹",
+      "region": "浙江台州 · 三门湾",
+      "public": true,
+      "publicCanonicalId": "sanmen-qingxie",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "huangbohai-yingzhuaxia",
+      "name": "蛎虾（鹰爪虾）",
+      "region": "黄渤海 · 大连、山东沿海",
+      "public": true,
+      "publicCanonicalId": "huangbohai-yingzhuaxia",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "ningbo-youdai",
+      "name": "油带鱼",
+      "region": "浙江宁波 · 奉化莼湖桐照码头及东海渔场",
+      "public": true,
+      "publicCanonicalId": "ningbo-youdai",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "dalian-jinzhou-hairyclam",
+      "name": "毛蚶",
+      "region": "辽宁大连 · 金州沿海",
+      "public": true,
+      "publicCanonicalId": "dalian-jinzhou-hairyclam",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-hanlu-whitebelly-mackerel",
+      "name": "白腹鰆",
+      "region": "台湾北部与西部沿海 · 淡水、彰化、台西、澎湖外海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "donghai-dongzhi-cuttlefish",
+      "name": "乌贼（墨鱼）",
+      "region": "浙江沿海 · 宁波、舟山、台州渔获进入杭州市场",
+      "public": true,
+      "publicCanonicalId": "donghai-dongzhi-cuttlefish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "dahan-green-carp",
+      "name": "青鱼",
+      "region": "中国淡水养殖区（报道未限定产地）",
+      "public": true,
+      "publicCanonicalId": "dahan-green-carp",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-winter-solstice-mullet-roe",
+      "name": "乌鱼子",
+      "region": "台湾西南沿海 · 台南安平、屏东东港",
+      "public": true,
+      "publicCanonicalId": "taiwan-winter-solstice-mullet-roe",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "suao-xiaoman-flying-fish-fishery",
+      "name": "飞鱼",
+      "region": "台湾宜兰 · 苏澳近海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-pengjia-lichun-chun-fish",
+      "name": "鰆鱼",
+      "region": "台湾东北海域 · 彭佳屿、钓鱼台附近",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "suzhou-june-yellow-late-may-market",
+      "name": "六月黄",
+      "region": "江苏苏州 · 南环桥市场（市场到货地，非捕捞产地）",
+      "public": true,
+      "publicCanonicalId": "gaochun-liuyuehuang",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "suzhou-rainwater-caihua-tangli",
+      "name": "菜花塘鳢鱼",
+      "region": "江苏苏州 · 南环桥市场时令上市线索（来货产地多样）",
+      "public": true,
+      "publicCanonicalId": "suzhou-rainwater-caihua-tangli",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-lichiu-kaohsiung-xiaochuan",
+      "name": "小串",
+      "region": "台湾高雄外海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-lichiu-kaohsiung-squid",
+      "name": "乌贼",
+      "region": "台湾高雄外海",
+      "public": true,
+      "publicCanonicalId": "donghai-dongzhi-cuttlefish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-lichiu-penghu-mackerel",
+      "name": "鰆",
+      "region": "台湾澎湖附近海域",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-lichiu-penghu-shrimp",
+      "name": "鲜虾",
+      "region": "台湾澎湖附近海域",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": "来源仅列虾类渔讯，具体虾种与可辨认商品待确认",
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-lichiu-northwest-tilefish",
+      "name": "马头鱼",
+      "region": "台湾西北部海域",
+      "public": true,
+      "publicCanonicalId": "taiwan-lichiu-northwest-tilefish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "suao-frost-beltfish",
+      "name": "白带鱼",
+      "region": "台湾宜兰 · 苏澳沿海",
+      "public": true,
+      "publicCanonicalId": "suao-frost-beltfish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-frost-white-belly-seerfish",
+      "name": "白腹鰆",
+      "region": "台湾淡水、彰化、台西、澎湖外海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-lidong-east-sailfish",
+      "name": "旗鱼",
+      "region": "台湾东部沿海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-lidong-east-red-eye-bream",
+      "name": "红目鰱",
+      "region": "台湾东部沿海",
+      "public": true,
+      "publicCanonicalId": "taiwan-lidong-east-red-eye-bream",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-lidong-east-jiana-fish",
+      "name": "真鲷（加纳鱼）",
+      "region": "台湾东部沿海",
+      "public": true,
+      "publicCanonicalId": "taiwan-jialiao-bream",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-jialiao-bream",
+      "name": "真鲷（嘉鱲）",
+      "region": "台湾北部沿海",
+      "public": true,
+      "publicCanonicalId": "taiwan-jialiao-bream",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "fuzhou-chunfen-baili-fish",
+      "name": "白鱱鱼",
+      "region": "福建福州 · 闽江口沿海饮食传统",
+      "public": true,
+      "publicCanonicalId": "fuzhou-chunfen-baili-fish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "chiayi-budai-douzai-fish",
+      "name": "豆仔鱼",
+      "region": "台湾嘉义 · 布袋沿海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "keelung-xiaojuan",
+      "name": "小卷",
+      "region": "台湾基隆北方外海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "qingdao-shazikou-li-xia",
+      "name": "蛎虾（鹰爪虾）",
+      "region": "山东青岛 · 沙子口近海",
+      "public": true,
+      "publicCanonicalId": "huangbohai-yingzhuaxia",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "wenzhou-oujiang-ziji",
+      "name": "子鲚",
+      "region": "浙江温州 · 瓯江江心屿一带",
+      "public": true,
+      "publicCanonicalId": "wenzhou-oujiang-ziji",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-daxue-mullet",
+      "name": "乌鱼",
+      "region": "台湾沿海 · 淡水、彰化、台南、澎湖、高雄、东港外海",
+      "public": true,
+      "publicCanonicalId": "taiwan-daxue-mullet",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-daxue-korean-seerfish",
+      "name": "高丽马加鰆",
+      "region": "台湾北部西岸 · 淡水、新竹、彰化近海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-daxue-eastern-striped-bonito",
+      "name": "疏齿鰆",
+      "region": "台湾台南以南 · 高雄、澎湖近海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "gongliao-autumn-japanese-horse-mackerel",
+      "name": "日本竹荚鱼",
+      "region": "台湾新北 · 贡寮澳底、东北角海域",
+      "public": true,
+      "publicCanonicalId": "gongliao-autumn-japanese-horse-mackerel",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "penghu-bailu-black-pomfret",
+      "name": "黑鲳",
+      "region": "台湾澎湖北方海域",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "pengjia-xiaoshu-mahi-mahi",
+      "name": "鬼头刀",
+      "region": "台湾东北海域 · 彭佳屿附近",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "suao-dahan-black-skin-marlin",
+      "name": "黑皮旗鱼",
+      "region": "台湾宜兰 · 苏澳附近海域",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "suao-xiaohan-white-skin-sailfish",
+      "name": "白皮旗鱼",
+      "region": "台湾宜兰 · 苏澳附近海域",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "sihu-xiaohan-sailfish",
+      "name": "旗鱼",
+      "region": "台湾云林 · 四湖外海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-lichiu-red-eye-bream",
+      "name": "红目鰱",
+      "region": "台湾东北角海域",
+      "public": true,
+      "publicCanonicalId": "taiwan-lidong-east-red-eye-bream",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-lichiu-east-sailfish",
+      "name": "立翅旗鱼",
+      "region": "台湾东部海域",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "penghu-qiufen-tuo-mackerel",
+      "name": "土托鰆",
+      "region": "台湾西南沿海、澎湖周边",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-lichun-mackerel",
+      "name": "鲭鱼",
+      "region": "苏澳以北与高雄外海",
+      "public": true,
+      "publicCanonicalId": "taiwan-lichun-mackerel",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-lichun-hairtail",
+      "name": "白带鱼",
+      "region": "台湾基隆与彰化外海",
+      "public": true,
+      "publicCanonicalId": "suao-frost-beltfish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-jingzhe-tongjian",
+      "name": "童尖",
+      "region": "台湾澎湖、高雄与云林四湖外海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-jingzhe-jiala",
+      "name": "真鲷（嘉腊）",
+      "region": "台湾澎湖、高雄与云林四湖外海",
+      "public": true,
+      "publicCanonicalId": "taiwan-jialiao-bream",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-qingming-liuqiu-bullet-bonito",
+      "name": "扁花鰹（烟仔鱼）",
+      "region": "台湾屏东 · 小琉球近海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "jiangmen-muzhou-qingming-huangsha-clam",
+      "name": "黄沙蚬",
+      "region": "广东江门 · 新会睦洲",
+      "public": true,
+      "publicCanonicalId": "jiangmen-muzhou-qingming-huangsha-clam",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "keelung-north-xiaoshu-red-amberjack",
+      "name": "红魽",
+      "region": "台湾基隆 · 北方外海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "keelung-north-xiaoshu-red-emperor-bream",
+      "name": "赤宗（赤鯮）",
+      "region": "台湾基隆 · 北方外海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "ntpc-northeast-cape-thorn-purple-algae",
+      "name": "刺紫菜",
+      "region": "台湾新北 · 贡寮东北角海岸",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "zhangzidao-daxue-sea-cucumber",
+      "name": "鲜海参",
+      "region": "辽宁大连 · 长海县獐子岛",
+      "public": true,
+      "publicCanonicalId": "zhangzidao-daxue-sea-cucumber",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "ntpc-xiazhi-bullet-bonito",
+      "name": "扁花鰹（炸弹鱼）",
+      "region": "台湾新北 · 东北角海域",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-qiufen-tamsui-maga",
+      "name": "马加",
+      "region": "台湾新北 · 淡水沿岸",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-qiufen-lukang-white-belly-seerfish",
+      "name": "白腹鰆",
+      "region": "台湾彰化 · 鹿港沿海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-qiufen-northeast-sailfish",
+      "name": "旗鱼",
+      "region": "台湾东北部沿海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-qiufen-northeast-black-marlin",
+      "name": "黑旗鱼",
+      "region": "台湾东北部沿海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-qiufen-northeast-red-emperor",
+      "name": "赤宗（赤鯮）",
+      "region": "台湾东北部沿海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-qiufen-northeast-shrimp",
+      "name": "鲜虾",
+      "region": "台湾东北部沿海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": "来源仅列虾类渔讯，具体虾种与可辨认商品待确认",
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "longyangxia-salmon",
+      "name": "三文鱼",
+      "region": "青海海南州 · 共和县龙羊峡",
+      "public": true,
+      "publicCanonicalId": "longyangxia-salmon",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "tamsui-xiaoshu-black-bream",
+      "name": "黑鲷",
+      "region": "台湾新北 · 淡水海域",
+      "public": true,
+      "publicCanonicalId": "tamsui-xiaoshu-black-bream",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "tamsui-xiaoshu-jiala",
+      "name": "真鲷（嘉腊）",
+      "region": "台湾新北 · 淡水海域",
+      "public": true,
+      "publicCanonicalId": "taiwan-jialiao-bream",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "changhua-xiaoshu-black-over",
+      "name": "黄鳍鲷（黑过）",
+      "region": "台湾彰化海域",
+      "public": true,
+      "publicCanonicalId": "changhua-xiaoshu-black-over",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "changhua-xiaoshu-chishi",
+      "name": "乌宗（赤食）",
+      "region": "台湾彰化海域",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "taiwan-rainwater-jialai-fish",
+      "name": "真鲷（加蚋鱼）",
+      "region": "台湾澎湖、高雄外海",
+      "public": true,
+      "publicCanonicalId": "taiwan-jialiao-bream",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "nanjing-lishui-qingming-river-snail",
+      "name": "螺蛳",
+      "region": "江苏南京 · 溧水晶桥镇芝山村",
+      "public": true,
+      "publicCanonicalId": "nanjing-lishui-qingming-river-snail",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-spring-equinox-east-coast-bonito",
+      "name": "鰹鱼",
+      "region": "台湾东部外海 · 黑潮洄游渔讯",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "qingdao-shazikou-qingming-spring-mackerel",
+      "name": "鲅鱼",
+      "region": "山东青岛 · 沙子口近海",
+      "public": true,
+      "publicCanonicalId": "qingdao-shazikou-qingming-spring-mackerel",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "pearl-river-qingming-cao-shrimp",
+      "name": "曹虾",
+      "region": "广东珠江口咸淡水交界",
+      "public": true,
+      "publicCanonicalId": "pearl-river-qingming-cao-shrimp",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "guangdong-qingming-fengwei-anchovy",
+      "name": "凤尾鱼",
+      "region": "广东珠江口咸淡水区域",
+      "public": true,
+      "publicCanonicalId": "guangdong-qingming-fengwei-anchovy",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "guangdong-eighteen-streams-qingming-yellow-brow-fish",
+      "name": "黄眉头",
+      "region": "广东珠江口 · 十八涌一带",
+      "public": true,
+      "publicCanonicalId": "guangdong-eighteen-streams-qingming-yellow-brow-fish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "beijiang-spring-milk-fish",
+      "name": "奶鱼",
+      "region": "广东北江",
+      "public": true,
+      "publicCanonicalId": "beijiang-spring-milk-fish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "taiwan-daxue-whitebelly-mackerel",
+      "name": "白腹鰆",
+      "region": "台湾台南以南 · 高雄、澎湖近海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "keelung-hanlu-cuttlefish",
+      "name": "乌贼（目贼）",
+      "region": "台湾基隆近海",
+      "public": true,
+      "publicCanonicalId": "donghai-dongzhi-cuttlefish",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "anping-dongzhi-mackerel",
+      "name": "马鲛",
+      "region": "台湾台南 · 安平近海",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": null,
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "fuzhou-bailu-red-xun",
+      "name": "红鲟",
+      "region": "福建福州 · 闽江口沿海",
+      "public": true,
+      "publicCanonicalId": "fuzhou-bailu-red-xun",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "suzhou-bailu-river-eel",
+      "name": "鳗鲡",
+      "region": "江苏苏州 · 太湖及周边水域",
+      "public": true,
+      "publicCanonicalId": "suzhou-bailu-river-eel",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "fuzhou-hanlu-razor-clam-dry",
+      "name": "蛏干",
+      "region": "福建福州沿海",
+      "public": true,
+      "publicCanonicalId": "fuzhou-hanlu-razor-clam-dry",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "fuzhou-hanlu-liaozai-clam",
+      "name": "蚬类（蟟仔）",
+      "region": "福建福州",
+      "public": true,
+      "publicCanonicalId": "fuzhou-hanlu-liaozai-clam",
+      "existingSeasonalHold": "来源仅列蚬类地方俗名，具体品类与可辨认商品待确认",
+      "note": null
+    },
+    {
+      "id": "qidong-lyusi-winter-solstice-hairtail",
+      "name": "带鱼",
+      "region": "江苏南通 · 启东吕四港",
+      "public": true,
+      "publicCanonicalId": "qidong-lyusi-winter-solstice-hairtail",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "suao-jingzhe-huahui",
+      "name": "花辉",
+      "region": "台湾宜兰 · 苏澳",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "suao-jingzhe-muhou",
+      "name": "目吼",
+      "region": "台湾宜兰 · 苏澳",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "suao-jingzhe-dingmian",
+      "name": "钉鮸",
+      "region": "台湾宜兰 · 苏澳",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "keelung-jingzhe-jiaranyu",
+      "name": "真鲷（加蚋鱼）",
+      "region": "台湾基隆 · 基隆",
+      "public": true,
+      "publicCanonicalId": "taiwan-jialiao-bream",
+      "existingSeasonalHold": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "note": null
+    },
+    {
+      "id": "keelung-jingzhe-wenyu",
+      "name": "鱼昷鱼",
+      "region": "台湾基隆 · 基隆",
+      "public": false,
+      "publicCanonicalId": null,
+      "existingSeasonalHold": "来源仅俗名，标准商品名与具体鱼种待确认",
+      "note": "现行准入筛选已暂不公开；本轮不把它误算成已推荐动物，也不擅自恢复。"
+    },
+    {
+      "id": "qingdao-shazikou-li-xia-shrimp-2026",
+      "name": "蛎虾（鹰爪虾）",
+      "region": "山东青岛 · 崂山沙子口渔港",
+      "public": true,
+      "publicCanonicalId": "huangbohai-yingzhuaxia",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "gaoqing-taisun-jinchan",
+      "name": "金蝉",
+      "region": "山东淄博 · 高青县台孙村及邻村",
+      "public": true,
+      "publicCanonicalId": "gaoqing-taisun-jinchan",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "guanyun-summer-doudan",
+      "name": "豆丹",
+      "region": "江苏连云港 · 灌云县杨集镇孙跳村一带",
+      "public": true,
+      "publicCanonicalId": "guanyun-summer-doudan",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "nansha-longxue-butter-crab",
+      "name": "黄油蟹",
+      "region": "广东广州 · 南沙龙穴岛青蟹养殖区",
+      "public": true,
+      "publicCanonicalId": "nansha-longxue-butter-crab",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "lianjiang-great-cold-abalone",
+      "name": "鲜鲍鱼",
+      "region": "福建福州 · 连江县沿海",
+      "public": true,
+      "publicCanonicalId": "lianjiang-great-cold-abalone",
+      "existingSeasonalHold": null,
+      "note": null
+    },
+    {
+      "id": "lianjiang-great-cold-kelp-seedlings",
+      "name": "海带苗",
+      "region": "福建福州 · 连江县沿海",
+      "public": true,
+      "publicCanonicalId": "lianjiang-great-cold-kelp-seedlings",
+      "existingSeasonalHold": null,
+      "note": null
+    }
+  ]
+}

@@ -8,7 +8,7 @@ LIVE = os.environ.get('LIVE_VERIFY') == '1'
 BASE = 'https://randomclb.github.io/seasonal-flavors-atlas/' if LIVE else 'http://127.0.0.1:8774/'
 SHA = os.environ.get('RELEASE_SHA', '')
 PREFIX = 'live' if LIVE else 'preview'
-CASES = ['zhenning-honey-plum','wujiang-xiaoxue-fragrant-greens','cangnan-lidong-four-seasons-pomelo','fengqing-xinhua-walnut-flowers','cizhousun','suzhou-bailu-ginkgo','wenzhou-pancai','cigu','pucai','tengchong-fenghuang-xiaohan-yam','luocheng-dafu-xiaohan-black-wood-ear','lianjiang-xiaoshu-june-hemp-bamboo-shoot','taiwan-jialiao-bream','chuan-yu-dahan-pea-tips']
+CASES = ['zhenning-honey-plum','wujiang-xiaoxue-fragrant-greens','cangnan-lidong-four-seasons-pomelo','fengqing-xinhua-walnut-flowers','cizhousun','suzhou-bailu-ginkgo','wenzhou-pancai','cigu','pucai','sanmen-winter-blood-cockle','lianjiang-xiaoshu-june-hemp-bamboo-shoot','taiwan-jialiao-bream']
 report = {'live':LIVE,'base':BASE,'releaseSha':SHA,'resources':[],'cases':[],'flows':[],'errors':[]}
 try:
     names=['index.html','app.js','food-detail.js','food-purchase.js','reader-copy.js','reader-copy-curation.js','reader-depth.js','catalog-photos.js','catalog-quality.css','tarot.html','tarot-spread-ui.js','lottery.html','lottery-ui.js','build-info.json','ingredient-identity.js','ingredient-identity.css','season-selection.js','food-records.js']
@@ -44,7 +44,7 @@ try:
                   }
                   return {catalog:window.FOODS.length,sources,safety,failures};
                 }""")
-                report['wholeCatalog']=audit;assert audit['catalog']==360;assert not audit['failures'],audit['failures'][:20]
+                report['wholeCatalog']=audit;assert audit['catalog']==361;assert not audit['failures'],audit['failures'][:20]
             before=page.locator('#seasonCards article').count()
             page.locator('#allSeasonScope').click();assert page.locator('#allSeasonScope').get_attribute('aria-pressed')=='true'
             assert page.locator('#seasonCards article').count()>=before
@@ -66,9 +66,7 @@ try:
                     if not section.evaluate('(e)=>e.open'):section.locator(':scope > summary').click()
                     assert section.evaluate('(e)=>e.open'),food_id+': section did not open after clicking its summary'
                 if food_id in ['cigu','pucai']:assert len(dialog.inner_text())>250
-                if food_id=='tengchong-fenghuang-xiaohan-yam':assert '筷子能穿过' in dialog.inner_text()
                 if food_id=='taiwan-jialiao-bream':assert dialog.locator('.identity-origins article').count()>0
-                if food_id=='chuan-yu-dahan-pea-tips':assert dialog.locator('.reader-portrait img').count()==1 and dialog.locator('#foodRecipe .reader-recipe-photo img').count()==1
                 portrait=dialog.locator('.reader-portrait img')
                 if portrait.count():portrait.evaluate('(img)=>img.decode()')
                 body=dialog.inner_text();assert '2 人份' not in body;assert '本站试吃' not in body
@@ -80,7 +78,7 @@ try:
                 if food_id=='wenzhou-pancai':assert '一月下旬' in body and '九月采收' in body
                 overflow=dialog.evaluate('(e)=>e.scrollWidth>e.clientWidth+2');assert not overflow,(food_id,width,'horizontal overflow')
                 dialog.evaluate('(e)=>{e.scrollTop=0}');page.screenshot(path=f'/tmp/reader-{PREFIX}-{food_id}-{width}.png')
-                if food_id in ['cigu','pucai','tengchong-fenghuang-xiaohan-yam']:
+                if food_id in ['cigu','pucai']:
                     dialog.locator('#foodRecipe').scroll_into_view_if_needed()
                     page.screenshot(path=f'/tmp/reader-{PREFIX}-{food_id}-recipe-{width}.png')
                 report['cases'].append({'food':food_id,'width':width,'text':body,'horizontalOverflow':overflow,'screenshot':f'reader-{PREFIX}-{food_id}-{width}.png'})

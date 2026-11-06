@@ -1,10 +1,10 @@
 {
   "version": "2026.10.27-visual.2",
-  "publicIngredients": 297,
-  "homeCovered": 278,
-  "detailCovered": 110,
-  "paired": 107,
-  "explicitHomeUpdates": 83,
+  "publicIngredients": 278,
+  "homeCovered": 261,
+  "detailCovered": 109,
+  "paired": 106,
+  "explicitHomeUpdates": 78,
   "missingHome": [
     {
       "id": "ruanzao-mihoutao",
@@ -51,10 +51,6 @@
       "name": "子鲚"
     },
     {
-      "id": "nanjing-lishui-qingming-river-snail",
-      "name": "螺蛳"
-    },
-    {
       "id": "guangdong-qingming-fengwei-anchovy",
       "name": "凤尾鱼"
     },
@@ -77,10 +73,6 @@
     {
       "id": "fuzhou-jingzhe-zhaocai",
       "name": "糟菜"
-    },
-    {
-      "id": "yingde-langbu-xiaohan-red-pine-mushroom",
-      "name": "红松茸"
     }
   ],
   "missingDetail": [
@@ -127,10 +119,6 @@
     {
       "id": "xinhui-winter-after-mandarin",
       "name": "冬后柑"
-    },
-    {
-      "id": "wuhua-longcun-mountain-sweet-potato",
-      "name": "高山红薯"
     },
     {
       "id": "minhou-wenxi-juyou",
@@ -205,10 +193,6 @@
       "name": "乌贼（墨鱼）"
     },
     {
-      "id": "dahan-green-carp",
-      "name": "青鱼"
-    },
-    {
       "id": "taiwan-winter-solstice-mullet-roe",
       "name": "乌鱼子"
     },
@@ -251,10 +235,6 @@
     {
       "id": "jiangning-bailu-white-dew-tea",
       "name": "白露龙针"
-    },
-    {
-      "id": "huishui-hanlu-autumn-tea-2026",
-      "name": "秋茶"
     },
     {
       "id": "pujiang-dahan-chunjian",
@@ -303,10 +283,6 @@
     {
       "id": "dujiangyan-spring-equinox-cotton-grass",
       "name": "棉花草嫩苗"
-    },
-    {
-      "id": "lanshan-baidieling-guyu-tea",
-      "name": "谷雨茶"
     },
     {
       "id": "gejiu-cinaobao",
@@ -405,10 +381,6 @@
       "name": "大雅柑"
     },
     {
-      "id": "tianjin-huangya-cabbage",
-      "name": "黄芽菜"
-    },
-    {
       "id": "qujing-shasong-tip",
       "name": "沙松尖"
     },
@@ -449,10 +421,6 @@
       "name": "日本竹荚鱼"
     },
     {
-      "id": "cangyuan-bailu-lincang-macadamia",
-      "name": "澳洲坚果（夏威夷果）"
-    },
-    {
       "id": "zhangmutou-mangzhong-guanyin-green-lychee",
       "name": "观音绿荔枝"
     },
@@ -483,10 +451,6 @@
     {
       "id": "dengkou-wallace-melon",
       "name": "华莱士瓜"
-    },
-    {
-      "id": "longyangxia-salmon",
-      "name": "三文鱼"
     },
     {
       "id": "hejiang-late-lychee",
@@ -523,10 +487,6 @@
     {
       "id": "youxi-lidong-kumquat",
       "name": "金柑"
-    },
-    {
-      "id": "nanjing-lishui-qingming-river-snail",
-      "name": "螺蛳"
     },
     {
       "id": "eshan-jingzhe-mulberry-flower",
@@ -661,10 +621,6 @@
       "name": "晚桂"
     },
     {
-      "id": "fuzhou-hanlu-razor-clam-dry",
-      "name": "蛏干"
-    },
-    {
       "id": "fuzhou-hanlu-liaozai-clam",
       "name": "蚬类（蟟仔）"
     },
@@ -687,10 +643,6 @@
     {
       "id": "guangzhou-qingming-jiaocai",
       "name": "菜荞"
-    },
-    {
-      "id": "panyu-qingming-sugarcane",
-      "name": "甘蔗"
     },
     {
       "id": "wenzhou-lingkun-baizhuogua",
@@ -737,10 +689,6 @@
       "name": "宫灯荸荠"
     },
     {
-      "id": "anlu-bailu-huaguoshan-fig",
-      "name": "无花果"
-    },
-    {
       "id": "jiangjin-bailu-late-harvest-pepper",
       "name": "迟收花椒"
     },
@@ -765,44 +713,16 @@
       "name": "黄油蟹"
     },
     {
-      "id": "tengchong-fenghuang-xiaohan-yam",
-      "name": "鲜山药"
+      "id": "sanmen-winter-blood-cockle",
+      "name": "血蚶"
     },
     {
       "id": "hezhou-xialiang-xiaohan-goji-greens",
       "name": "鲜枸杞菜"
     },
     {
-      "id": "luocheng-dafu-xiaohan-black-wood-ear",
-      "name": "鲜黑木耳"
-    },
-    {
-      "id": "ganyu-zhaohu-xiaohan-greenhouse-strawberry",
-      "name": "大棚草莓"
-    },
-    {
-      "id": "yingde-langbu-xiaohan-red-pine-mushroom",
-      "name": "红松茸"
-    },
-    {
-      "id": "nanxian-wushenggong-xiaohan-caitai",
-      "name": "白菜薹"
-    },
-    {
       "id": "yulin-xiaohan-sesame-melon",
       "name": "芝麻香瓜"
-    },
-    {
-      "id": "danling-great-cold-late-citrus",
-      "name": "晚熟柑橘"
-    },
-    {
-      "id": "suixian-lishan-great-cold-shiitake",
-      "name": "鲜香菇"
-    },
-    {
-      "id": "lianjiang-great-cold-abalone",
-      "name": "鲜鲍鱼"
     },
     {
       "id": "lianjiang-great-cold-kelp-seedlings",
@@ -833,6 +753,6 @@
       "name": "黑皇葡萄"
     }
   ],
-  "admittedObservationMissingHome": 24,
+  "admittedObservationMissingHome": 22,
   "sourceMissingHome": 50
 }

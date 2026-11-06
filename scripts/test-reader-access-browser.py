@@ -26,11 +26,11 @@ try:
             page.goto(BASE,wait_until='load');page.locator('.media-build').wait_for()
             state=page.evaluate('''()=>{
                 const A=window.ReaderAccess,I=window.IngredientIdentity,M=window.FoodMedia,original=I.catalog(window.FOODS),removed=original.filter(f=>!A.visible(f));
-                if(canonicalCatalog.length!==297||removed.length!==31)throw Error('Admission counts');
+                if(canonicalCatalog.length!==278||removed.length!==51)throw Error('Admission counts');
                 const terms=[];for(const t of termWindow){selectedTerm=t;catalogScope='curated';selectedCategory='all';renderSeason();const cards=[...document.querySelectorAll('#seasonCards article')];if(cards.some(e=>!e.querySelector('img')))throw Error('Missing curated cover '+termNames[t.index]);const ids=cards.map(e=>e.querySelector('[data-food]').dataset.food);if(ids.some(id=>!A.visible(I.detail(id))))throw Error('Withdrawn seasonal food');terms.push({term:termNames[t.index],cards:ids.length,allHaveImages:true});}
                 selectedTerm=currentTerm;renderSeason();renderSearch('');
                 const buttons=[...document.querySelectorAll('#searchResults [data-food]')],covers=canonicalCatalog.filter(M.hasIngredient);
-                if(buttons.length!==297||document.querySelectorAll('#searchResults .search-food-photo').length!==covers.length)throw Error('Search photo registry mismatch');
+                if(buttons.length!==278||document.querySelectorAll('#searchResults .search-food-photo').length!==covers.length)throw Error('Search photo registry mismatch');
                 for(const f of removed){renderSearch(f.name);if(document.querySelector(`#searchResults [data-food="${f.id}"]`))throw Error('Withdrawn search '+f.id);}
                 const drawIds=window.FOODS.filter(f=>A.visible(f)&&M.hasIngredient(f)).map(f=>f.id);
                 return {publicIngredients:canonicalCatalog.length,covered:covers.length,missing:canonicalCatalog.length-covers.length,withdrawn:removed.map(f=>({id:f.id,name:f.name})),terms,drawCandidates:drawIds.length,images:[...new Set(covers.map(f=>M.ingredient(f).src))]};
@@ -42,22 +42,22 @@ try:
                   await Promise.all(Array.from({length:6},async()=>{while(queue.length){const src=queue.shift(),img=new Image();img.src=src;try{await img.decode();results.push({src,width:img.naturalWidth,height:img.naturalHeight,ok:img.naturalWidth>0});}catch(e){results.push({src,ok:false,error:String(e)});}}}));return results;
                 }''',state['images'])
                 report['decodedImages']=decoded;assert all(x['ok'] for x in decoded),[x for x in decoded if not x['ok']]
-            page.locator('#catalogDirectory').click();page.locator('#searchInput').fill('豌豆');page.locator('#searchResults img').evaluate('(e)=>e.decode()')
+            page.locator('#catalogDirectory').click();page.locator('#searchInput').fill('血蚶');page.locator('#searchResults img').evaluate('(e)=>e.decode()')
             image=f'/tmp/access-{"live" if LIVE else "preview"}-search-{width}.png';page.screenshot(path=image);report['screens'].append(image)
             page.locator('#searchClose').click()
-            for food_id in ['chuan-yu-dahan-pea-tips','taiwan-jialiao-bream']:
+            for food_id in ['sanmen-winter-blood-cockle','taiwan-jialiao-bream']:
                 page.goto(BASE+'?'+urlencode({'food':food_id}),wait_until='load');dialog=page.locator('#detailDialog');dialog.wait_for(state='visible')
                 for img in dialog.locator('img').all():img.evaluate('(e)=>{e.loading="eager";return e.decode()}')
-                if food_id=='chuan-yu-dahan-pea-tips':
-                    assert 'pea_tips.webp' in dialog.locator('.reader-portrait img').get_attribute('src')
-                    assert 'pea_dish.webp' in dialog.locator('#foodRecipe .reader-recipe-photo img').get_attribute('src')
+                if food_id=='sanmen-winter-blood-cockle':
+                    assert 'sanmen-blood-cockle-reference' in dialog.locator('.reader-portrait img').get_attribute('src')
+                    assert '不生腌或半生食用' in dialog.locator('.reader-safety').inner_text()
                     dialog.locator('#foodRecipe').scroll_into_view_if_needed()
                 else:
                     assert 'bilibili.com/video/BV' in dialog.locator('.verified-video').get_attribute('href')
                     dialog.locator('.reader-access-links').scroll_into_view_if_needed()
                 assert not dialog.evaluate('(e)=>e.scrollWidth>e.clientWidth+2')
                 image=f'/tmp/access-{"live" if LIVE else "preview"}-{food_id}-{width}.png';page.screenshot(path=image);report['screens'].append(image)
-            for food_id in ['taiwan-lichiu-kaohsiung-xiaochuan','taiwan-jingzhe-tongjian','suao-xiaohan-white-skin-sailfish']:
+            for food_id in ['dahan-green-carp','ganyu-zhaohu-xiaohan-greenhouse-strawberry','taiwan-lichiu-kaohsiung-xiaochuan','taiwan-jingzhe-tongjian','suao-xiaohan-white-skin-sailfish']:
                 page.goto(BASE+'?'+urlencode({'food':food_id}),wait_until='load');assert page.locator('.reader-withdrawn').is_visible();assert not page.locator('.reader-overview').count()
                 assert 'food=' not in page.url
             saved={'version':1,'items':{'hezhou-xialiang-xiaohan-goji-greens':{'state':'want','updatedAt':10},'taiwan-jingzhe-tongjian':{'state':'want','updatedAt':20}}}

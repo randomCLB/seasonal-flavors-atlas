@@ -43,7 +43,7 @@
   ['june-yellow-crab',/六月黄/],['mud-crab',/青蟹|红鲟/],['jialai-fish',/加蚋鱼/]
  ];
  // Editorial preferences describe a tasting choice, not an objective ranking of all cultivars.
- const preferred={19:['tainan-madou-frost-white-pomelo','cizhousun','lintong-huojing-shizi'],18:['laiyang-pear','cizhousun','lintong-huojing-shizi'],20:['cangnan-lidong-four-seasons-pomelo','rongan-jingju','guangning-lidong-ma-bamboo-shoot'],21:['wenzhou-sanyang-ougan','cizhousun'],23:['ningbo-youdai'],1:['pujiang-dahan-chunjian'],4:['minhou-chayuan-highland-spring-shoot'],5:['conghua-lutian-bitter-shoot'],6:['huizhou-chengkan-qingming-tea-shoot'],7:['ningbo-xikou-spring-mao-bamboo-shoot'],12:['lianjiang-xiaoshu-june-hemp-bamboo-shoot'],14:['shidian-autumn-longzhu-shoot']};
+ const preferred={19:['tainan-madou-frost-white-pomelo','cizhousun','lintong-huojing-shizi'],18:['laiyang-pear','cizhousun','lintong-huojing-shizi'],20:['cangnan-lidong-four-seasons-pomelo','rongan-jingju','guangning-lidong-ma-bamboo-shoot'],21:['wenzhou-sanyang-ougan','cizhousun'],23:['ningbo-youdai'],1:['conghua-zhouzhoumei-citrus'],4:['minhou-chayuan-highland-spring-shoot'],5:['conghua-lutian-bitter-shoot'],6:['huizhou-chengkan-qingming-tea-shoot'],7:['ningbo-xikou-spring-mao-bamboo-shoot'],12:['lianjiang-xiaoshu-june-hemp-bamboo-shoot'],14:['shidian-autumn-longzhu-shoot']};
  const match=(families,text)=>families.find(([,pattern])=>pattern.test(text))?.[0];
  function group(food){
   const identityFamily=root.IngredientIdentity?.family(food);if(identityFamily)return identityFamily;

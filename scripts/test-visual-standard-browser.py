@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 LIVE=os.environ.get('LIVE_VERIFY')=='1'
 BASE='https://randomclb.github.io/seasonal-flavors-atlas/' if LIVE else 'http://127.0.0.1:8774/'
 SHA=os.environ.get('RELEASE_SHA','');PREFIX='live' if LIVE else 'preview'
-CASES=['helan-luosicai','lanzhou-xianbaihe','heshi-xianfenge','hanshou-yubiou','huadu-jingtang-lotusroot','rongan-xiaozhou-winter-head-vegetable','fuling-yuzao100-mustard-stem','conghua-dajiecai','chuan-yu-dahan-pea-tips','cangnan-lidong-four-seasons-pomelo','zengcheng-caixin','cigu','shajiguo']
+CASES=['helan-luosicai','lanzhou-xianbaihe','heshi-xianfenge','hanshou-yubiou','huadu-jingtang-lotusroot','rongan-xiaozhou-winter-head-vegetable','fuling-yuzao100-mustard-stem','conghua-dajiecai','sanmen-winter-blood-cockle','cangnan-lidong-four-seasons-pomelo','zengcheng-caixin','cigu','shajiguo']
 report={'live':LIVE,'releaseSha':SHA,'resources':[],'screens':[],'viewports':[],'errors':[]}
 try:
     paths=['index.html','app.js','food-media.js','food-detail.js','visual-standard.js','visual-standard.css','tarot-spread-ui.js','build-info.json']+[r['path'] for r in json.loads(Path('docs/VISUAL_MEDIA_20261024.json').read_text())]

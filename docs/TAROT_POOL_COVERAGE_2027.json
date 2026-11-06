@@ -1,5 +1,5 @@
 {
-  "catalogCount": 360,
+  "catalogCount": 361,
   "sampling": "Each month 1st/15th/28th at 12:00 China time; no dietary exclusions. Counts are site-data coverage, not market availability.",
   "minimum": 11,
   "rows": [
@@ -115,7 +115,7 @@
     },
     {
       "date": "2027-01-28",
-      "count": 35,
+      "count": 36,
       "ids": [
         "cigu",
         "zengcheng-caixin",
@@ -151,7 +151,8 @@
         "miyun-houchangjiawu-yuanwei1-tomato",
         "lingshan-dahan-spring-tea-first-pick",
         "zigui-simian-no1-dahan-early-tea",
-        "emei-wenchun-dahan-early-tea"
+        "emei-wenchun-dahan-early-tea",
+        "sanmen-winter-blood-cockle"
       ],
       "names": [
         "慈姑",
@@ -188,7 +189,8 @@
         "“原味1号”番茄",
         "春茶首采",
         "“丝绵茶1号”早茶",
-        "问春早茶"
+        "问春早茶",
+        "血蚶"
       ]
     },
     {

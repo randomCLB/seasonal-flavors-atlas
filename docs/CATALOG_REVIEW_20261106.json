@@ -1,0 +1,599 @@
+{
+  "date": "2026-11-06",
+  "baseCommit": "1d9fd6dabbd3815e515d6a87bdb6852850af331f",
+  "scope": {
+    "previousPublicCanonical": 297,
+    "plantReview": 249,
+    "proteinCategoryReview": 48
+  },
+  "criteria": [
+    "猎奇或有辨识度的食用部位、状态、口感",
+    "确有地域或品种差异；地点具体不等于区域独有",
+    "来源支持的成熟、采收或最佳赏味窗口；单日上市新闻和节气习俗不充作短季证据",
+    "这些是加分维度，不虚构每条同时满足全部条件"
+  ],
+  "withdrawn": [
+    {
+      "id": "wuhua-longcun-mountain-sweet-potato",
+      "name": "高山红薯",
+      "reason": "现有证据所指为普薯32号栽培红薯；高山与冬至后起薯不足以区别普通红薯的风味体验。"
+    },
+    {
+      "id": "chuan-yu-dahan-pea-tips",
+      "name": "豌豆尖",
+      "reason": "在川渝属于普遍冬季蔬菜，产区宽、无地方品种或较佳短窗；采嫩梢本身不足以突出。"
+    },
+    {
+      "id": "huishui-hanlu-autumn-tea-2026",
+      "name": "秋茶",
+      "reason": "单次寒露日秋茶开采，缺乏茶种、工艺或较佳短批次，感官描述通用，与其他茶条目重叠。"
+    },
+    {
+      "id": "lanshan-baidieling-guyu-tea",
+      "name": "谷雨茶",
+      "reason": "谷雨茶主要按时间命名，当前没有本地茶种或独特工艺证明，和多条春茶功能重复。"
+    },
+    {
+      "id": "tianjin-huangya-cabbage",
+      "name": "黄芽菜",
+      "reason": "现有正文已说明是大白菜旧称/黄色内叶；小寒食俗不是独立稀少食材，也未锁定真实覆盖软化批次。"
+    },
+    {
+      "id": "cangyuan-bailu-lincang-macadamia",
+      "name": "澳洲坚果（夏威夷果）",
+      "reason": "普通澳洲坚果成熟开季节点，常见成品为干燥熟仁；当前既无短季鲜食体验，也未限定地方品种。"
+    },
+    {
+      "id": "panyu-qingming-sugarcane",
+      "name": "甘蔗",
+      "reason": "清明假期集市销售高峰，非采收成熟或短赏味窗口；也未限定可辨识的蔗种。"
+    },
+    {
+      "id": "anlu-bailu-huaguoshan-fig",
+      "name": "无花果",
+      "reason": "普通无花果采摘园记录，未指品种，鲜果季9–11月；地点具体不等于食材区域独有。"
+    },
+    {
+      "id": "tengchong-fenghuang-xiaohan-yam",
+      "name": "鲜山药",
+      "reason": "未说明山药物种或地方品种；仅一次冬挖记录，与在库山药缺少可识别区别。"
+    },
+    {
+      "id": "luocheng-dafu-xiaohan-black-wood-ear",
+      "name": "鲜黑木耳",
+      "reason": "普通栽培黑木耳，鲜采状态未给出地方品种、独有风味或短季优势。"
+    },
+    {
+      "id": "ganyu-zhaohu-xiaohan-greenhouse-strawberry",
+      "name": "大棚草莓",
+      "reason": "普通设施草莓，仅一次采摘现场，未限定品种、独特形态或较佳赏味短窗。"
+    },
+    {
+      "id": "nanxian-wushenggong-xiaohan-caitai",
+      "name": "白菜薹",
+      "reason": "普通白菜薹，原记录采摘可延续到4月初，不能用1月单次新闻压成短时令。"
+    },
+    {
+      "id": "danling-great-cold-late-citrus",
+      "name": "晚熟柑橘",
+      "reason": "品种未指明，留树晚采概念在大量柑橘中存在；原料和在库春见/早熟血橙差异不清楚。"
+    },
+    {
+      "id": "suixian-lishan-great-cold-shiitake",
+      "name": "鲜香菇",
+      "reason": "普通栽培香菇，鲜采而非干品只是常见商品状态；大寒采收新闻不足以形成独特条目。"
+    },
+    {
+      "id": "dahan-green-carp",
+      "name": "青鱼",
+      "reason": "全国常见养殖青鱼，产地未限定，现证据只是大寒食材报道，缺少独立地方品种、状态或明确最佳赏味差异。"
+    },
+    {
+      "id": "longyangxia-salmon",
+      "name": "三文鱼",
+      "reason": "龙羊峡是真实养殖产区，但现源只谈大暑适生水温，未证具体鲑鳟商品种、当季独特品质或短暂最佳期，正文仍是普通三文鱼吃法。"
+    },
+    {
+      "id": "nanjing-lishui-qingming-river-snail",
+      "name": "螺蛳",
+      "reason": "普通螺蛳加晶桥市集与清明赏味线索，没有证实不同于各地螺蛳的地方种类/品质或生产条件，特色弱。"
+    },
+    {
+      "id": "fuzhou-hanlu-razor-clam-dry",
+      "name": "蛏干",
+      "reason": "蛏干作为广泛干货，当前只以寒露晒海味习俗挂节气，没有具体地方工艺或特殊原料差异，特色不足。"
+    },
+    {
+      "id": "lianjiang-great-cold-abalone",
+      "name": "鲜鲍鱼",
+      "reason": "连江是真实鲍鱼养殖产区，但当前只是普通鲜鲍鱼加大寒单日丰收稿，未说明具体地方品种/工法/特殊品质，探索性弱。"
+    },
+    {
+      "id": "yingde-langbu-xiaohan-red-pine-mushroom",
+      "name": "红松茸",
+      "reason": "仅有冬季采收报道，红松茸商品身份未厘清，并可能与已核实的赤松茸重复。"
+    }
+  ],
+  "added": [
+    {
+      "id": "sanmen-winter-blood-cockle",
+      "name": "血蚶（三门地理标志产区）",
+      "window": "小寒至大寒的冬季肥满线索，非独占供货期",
+      "evidenceLimit": "2015年一般血蚶的地方饮食记述，与2025年三门地理标志产区分别引用；非当年三门每批产品肥度实测",
+      "entry": "大寒单一推荐入口；完整赏味记述仍保留小寒至大寒，不将推荐入口冒充完整上市期"
+    }
+  ],
+  "retainedExamples": [
+    "nanhu-ling",
+    "pingdu-majiagou-celery",
+    "weixian-frost-radish"
+  ],
+  "selectionChange": "大寒柑橘组优先已有洲洲美；被撤条目的精选位置从各节气原有合格候选接替，未移植季节或为数量新建重复项。",
+  "categoryCorrection": {
+    "id": "lianjiang-great-cold-kelp-seedlings",
+    "from": "seafood",
+    "to": "vegetable",
+    "profile": "seaweed; vegan eligible"
+  },
+  "after": {
+    "sourceObservations": 361,
+    "rawCanonical": 329,
+    "publicCanonical": 278,
+    "previousAccessWithdrawals": 31,
+    "editorialWithdrawals": 20,
+    "totalWithdrawn": 51,
+    "publicWithHomeImage": 261,
+    "publicMissingHomeImage": 17,
+    "threeYearTerms": 73,
+    "minimum": 14,
+    "maximum": 18,
+    "largestAdjacentGap": 4,
+    "terms": [
+      {
+        "year": 2026,
+        "index": 19,
+        "term": "霜降",
+        "count": 18
+      },
+      {
+        "year": 2026,
+        "index": 20,
+        "term": "立冬",
+        "count": 18
+      },
+      {
+        "year": 2026,
+        "index": 21,
+        "term": "小雪",
+        "count": 18
+      },
+      {
+        "year": 2026,
+        "index": 22,
+        "term": "大雪",
+        "count": 16
+      },
+      {
+        "year": 2026,
+        "index": 23,
+        "term": "冬至",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 0,
+        "term": "小寒",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 1,
+        "term": "大寒",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 2,
+        "term": "立春",
+        "count": 16
+      },
+      {
+        "year": 2027,
+        "index": 3,
+        "term": "雨水",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 4,
+        "term": "惊蛰",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 5,
+        "term": "春分",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 6,
+        "term": "清明",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 7,
+        "term": "谷雨",
+        "count": 14
+      },
+      {
+        "year": 2027,
+        "index": 8,
+        "term": "立夏",
+        "count": 16
+      },
+      {
+        "year": 2027,
+        "index": 9,
+        "term": "小满",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 10,
+        "term": "芒种",
+        "count": 14
+      },
+      {
+        "year": 2027,
+        "index": 11,
+        "term": "夏至",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 12,
+        "term": "小暑",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 13,
+        "term": "大暑",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 14,
+        "term": "立秋",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 15,
+        "term": "处暑",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 16,
+        "term": "白露",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 17,
+        "term": "秋分",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 18,
+        "term": "寒露",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 19,
+        "term": "霜降",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 20,
+        "term": "立冬",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 21,
+        "term": "小雪",
+        "count": 18
+      },
+      {
+        "year": 2027,
+        "index": 22,
+        "term": "大雪",
+        "count": 16
+      },
+      {
+        "year": 2027,
+        "index": 23,
+        "term": "冬至",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 0,
+        "term": "小寒",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 1,
+        "term": "大寒",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 2,
+        "term": "立春",
+        "count": 16
+      },
+      {
+        "year": 2028,
+        "index": 3,
+        "term": "雨水",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 4,
+        "term": "惊蛰",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 5,
+        "term": "春分",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 6,
+        "term": "清明",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 7,
+        "term": "谷雨",
+        "count": 14
+      },
+      {
+        "year": 2028,
+        "index": 8,
+        "term": "立夏",
+        "count": 16
+      },
+      {
+        "year": 2028,
+        "index": 9,
+        "term": "小满",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 10,
+        "term": "芒种",
+        "count": 16
+      },
+      {
+        "year": 2028,
+        "index": 11,
+        "term": "夏至",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 12,
+        "term": "小暑",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 13,
+        "term": "大暑",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 14,
+        "term": "立秋",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 15,
+        "term": "处暑",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 16,
+        "term": "白露",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 17,
+        "term": "秋分",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 18,
+        "term": "寒露",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 19,
+        "term": "霜降",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 20,
+        "term": "立冬",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 21,
+        "term": "小雪",
+        "count": 18
+      },
+      {
+        "year": 2028,
+        "index": 22,
+        "term": "大雪",
+        "count": 14
+      },
+      {
+        "year": 2028,
+        "index": 23,
+        "term": "冬至",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 0,
+        "term": "小寒",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 1,
+        "term": "大寒",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 2,
+        "term": "立春",
+        "count": 16
+      },
+      {
+        "year": 2029,
+        "index": 3,
+        "term": "雨水",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 4,
+        "term": "惊蛰",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 5,
+        "term": "春分",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 6,
+        "term": "清明",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 7,
+        "term": "谷雨",
+        "count": 14
+      },
+      {
+        "year": 2029,
+        "index": 8,
+        "term": "立夏",
+        "count": 16
+      },
+      {
+        "year": 2029,
+        "index": 9,
+        "term": "小满",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 10,
+        "term": "芒种",
+        "count": 14
+      },
+      {
+        "year": 2029,
+        "index": 11,
+        "term": "夏至",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 12,
+        "term": "小暑",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 13,
+        "term": "大暑",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 14,
+        "term": "立秋",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 15,
+        "term": "处暑",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 16,
+        "term": "白露",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 17,
+        "term": "秋分",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 18,
+        "term": "寒露",
+        "count": 18
+      },
+      {
+        "year": 2029,
+        "index": 19,
+        "term": "霜降",
+        "count": 18
+      }
+    ]
+  },
+  "auditNotes": "原始记录保留用于出处追溯；公开目录、地图、风味星图、收藏展示和抽签统一读取公开筛选。暂缓项的原有限制继续保留，未将其当作新增填数。",
+  "reports": [
+    "PLANT_DISTINCTIVENESS_AUDIT_20261106.json",
+    "PROTEIN_DISTINCTIVENESS_AUDIT_20261106.json",
+    "DISTINCTIVE_REPLACEMENT_SOURCES_20261106.md",
+    "DISTINCTIVE_MEDIA_20261106.json"
+  ]
+}

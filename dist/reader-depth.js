@@ -62,7 +62,8 @@
   'suzhou-dongshan-xidi-mangzhong-fine-stem-waxberry':{short:'东山细蒂杨梅，果肉细、汁水足，轻洗后尽快吃。',intro:'东山细蒂杨梅初夏零星开采，随后进入采收高峰。鲜果容易压伤，浅盒轻放更方便检查。',buyDetail:'看果面完整、没有霉点和压烂渗汁，询问采摘日期与运输温控。',steps:['逐颗挑出霉烂和压伤果。','吃前用流水轻柔冲洗，沥干。','直接鲜食，剩余完整果干爽冷藏。'],storage:'浅盒冷藏，减少堆压；吃前再洗，洗后的果实尽快吃完。'},
   'wuxi-mashan-mangzhong-yangmei':{short:'马山芒种后开采的鲜杨梅，采收集中，冷链护鲜。',intro:'马山鲜杨梅的集中采收窗口短，果肉娇嫩。网购时优先问采摘、预冷和发货日期。',buyDetail:'到货先检查整盒，挑出霉烂、渗汁和严重挤伤的果；问清是否全程冷链。',steps:['挑出霉烂和挤伤果，保留完整鲜果。','吃前轻柔冲洗并沥干，避免久泡和搓揉。','直接鲜食，剩余果干爽冷藏。'],storage:'浅盒冷藏，避免堆压，尽快吃完。'},
   'lianjiang-xiaoshu-june-hemp-bamboo-shoot':{short:'夏季鲜麻笋，笋肉嫩脆；先煮透，再炒蒜香。',intro:'连江麻笋去壳后吃嫩笋肉。粗老根部纤维硬，先削去，笋片切成相近厚度。',buyDetail:'挑笋体紧实、切口新鲜的，避开酸味、黏滑和软烂。问清带壳鲜笋或已处理笋片。',steps:['剥去笋衣，削去粗老根端，洗净后切成厚薄均匀的片。','放足量水充分煮透，倒掉煮笋水，笋片沥干。','蒜末炒香，下处理好的笋片翻炒至全锅熟热，少量盐调味。'],kitchen:'厚片多检查中心。先煮后炒，保留嫩脆口感；生笋和已焯熟笋片分别安排处理步骤。'},
-  'hejiang-xiaoshu-late-lychee':{short:'合江晚荔枝，七月后接上荔枝季，果肉细嫩多汁。',intro:'合江晚熟荔枝接续初夏荔枝季，七月中下旬至八月初可留意鲜果。',buyDetail:'挑外壳完整、无霉斑和渗液的，询问采摘日期、品种和冷链运输。',steps:['洗净外壳，沥干。','剥壳去核，直接鲜食。'],storage:'整果冷藏，避免挤压和失水；剥好的果肉尽快食用。'}
+  'hejiang-xiaoshu-late-lychee':{short:'合江晚荔枝，七月后接上荔枝季，果肉细嫩多汁。',intro:'合江晚熟荔枝接续初夏荔枝季，七月中下旬至八月初可留意鲜果。',buyDetail:'挑外壳完整、无霉斑和渗液的，询问采摘日期、品种和冷链运输。',steps:['洗净外壳，沥干。','剥壳去核，直接鲜食。'],storage:'整果冷藏，避免挤压和失水；剥好的果肉尽快食用。'},
+  'sanmen-winter-blood-cockle':{intro:'血蚶即泥蚶，壳面有一条条明显的粗肋。三门湾沿岸是地理标志产区，食用前先核对来源，再充分煮熟。',season:'浙江地方饮食记述将小寒至大寒列为血蚶较肥满的一段；三门湾沿岸为地理标志产区。冬季购买时询问采捕、到货和鲜活状态。',buyDetail:'核对三门产区、采捕或到货日及检验追溯信息。挑鲜活、外壳完整的产品，按所在地经营规定选择合规渠道。',kitchen:'以蚶肉中心全熟、全锅热透为熟制要求，大小不同的个体分别检查。姜葱少量提香，煮透后及时食用。'}
  };
  const restore={
   intro:['dalian-zihaitan','ganbajun','juema','wuding-jinquehua','tongxiang-zhuili','huoshan-yanghe','kuche-xiaobaixing','minqing-tanxiang-olive','ninghai-white-loquat','xishuangbanna-wood-milk-fruit'],
