@@ -1,5 +1,5 @@
 {
-  "catalogCount": 361,
+  "catalogCount": 370,
   "sampling": "Each month 1st/15th/28th at 12:00 China time; no dietary exclusions. Counts are site-data coverage, not market availability.",
   "minimum": 11,
   "rows": [
@@ -231,7 +231,7 @@
     },
     {
       "date": "2027-02-15",
-      "count": 18,
+      "count": 19,
       "ids": [
         "hongshan-caitai",
         "yangxin-huhao",
@@ -250,7 +250,8 @@
         "taiwan-jingzhe-tongjian",
         "taiwan-jingzhe-jiala",
         "suizhou-paopaoqing",
-        "yaan-chuancai3-lichun-first-pick"
+        "yaan-chuancai3-lichun-first-pick",
+        "tengchong-late-winter-palm-bud"
       ],
       "names": [
         "菜薹",
@@ -270,7 +271,8 @@
         "童尖",
         "真鲷（嘉腊）",
         "泡泡青",
-        "“川茶3号”头采春茶"
+        "“川茶3号”头采春茶",
+        "棕包米"
       ]
     },
     {
@@ -591,7 +593,7 @@
     },
     {
       "date": "2027-04-28",
-      "count": 15,
+      "count": 17,
       "ids": [
         "foshougua-miao",
         "cinenya",
@@ -607,7 +609,9 @@
         "xuanzhou-shuidong-cherry",
         "shidian-guyu-fiddleheads",
         "wanning-damao-baitangying-lychee",
-        "qujing-shasong-tip"
+        "qujing-shasong-tip",
+        "longchuan-spring-ant-brood",
+        "suzhou-spring-pine-pollen"
       ],
       "names": [
         "佛手瓜苗",
@@ -624,12 +628,14 @@
         "鲜樱桃",
         "鲜蕨芽",
         "白糖罂荔枝",
-        "沙松尖"
+        "沙松尖",
+        "蚂蚁蛋",
+        "新制松花粉"
       ]
     },
     {
       "date": "2027-05-01",
-      "count": 14,
+      "count": 15,
       "ids": [
         "foshougua-miao",
         "cinenya",
@@ -644,7 +650,8 @@
         "yaoan-edible-rose",
         "xuanzhou-shuidong-cherry",
         "shidian-guyu-fiddleheads",
-        "wanning-damao-baitangying-lychee"
+        "wanning-damao-baitangying-lychee",
+        "suzhou-spring-pine-pollen"
       ],
       "names": [
         "佛手瓜苗",
@@ -660,12 +667,13 @@
         "食用玫瑰",
         "鲜樱桃",
         "鲜蕨芽",
-        "白糖罂荔枝"
+        "白糖罂荔枝",
+        "新制松花粉"
       ]
     },
     {
       "date": "2027-05-15",
-      "count": 21,
+      "count": 22,
       "ids": [
         "foshougua-miao",
         "cinenya",
@@ -687,7 +695,8 @@
         "shidian-lixia-qingmei",
         "jiuzhaigou-lixia-water-fern",
         "wenzhou-lingkun-baizhuogua",
-        "changshu-lixia-fresh-fava"
+        "changshu-lixia-fresh-fava",
+        "daishan-spring-yellow-mudsnail"
       ],
       "names": [
         "佛手瓜苗",
@@ -710,7 +719,8 @@
         "青梅",
         "水蕨菜",
         "白啄瓜",
-        "鲜蚕豆"
+        "鲜蚕豆",
+        "黄泥螺"
       ]
     },
     {
@@ -791,7 +801,7 @@
     },
     {
       "date": "2027-06-15",
-      "count": 16,
+      "count": 19,
       "ids": [
         "honghu-oudai",
         "tongxiang-zhuili",
@@ -808,7 +818,10 @@
         "wuhan-hannan-fresh-sweet-corn",
         "enping-naji-tainung17-pineapple",
         "zhenning-honey-plum",
-        "suzhou-jinting-wumei-mangzhong-waxberry"
+        "suzhou-jinting-wumei-mangzhong-waxberry",
+        "yueqing-meiyu-rainbow-clam",
+        "bazhong-spring-oak-silkworm-pupae",
+        "jinhua-early-summer-gardenia-buds"
       ],
       "names": [
         "藕带",
@@ -826,7 +839,10 @@
         "鲜食甜玉米",
         "“台农17号”凤梨（金钻凤梨）",
         "蜂糖李",
-        "乌梅种杨梅"
+        "乌梅种杨梅",
+        "海瓜子",
+        "春柞蚕蛹",
+        "食用栀子花"
       ]
     },
     {
@@ -1375,7 +1391,7 @@
     },
     {
       "date": "2027-10-28",
-      "count": 27,
+      "count": 28,
       "ids": [
         "nanhu-ling",
         "cizhousun",
@@ -1403,7 +1419,8 @@
         "tainan-madou-frost-white-pomelo",
         "rongxian-shatian-pomelo",
         "weixian-frost-radish",
-        "huairou-huaibei-hongxiaoli"
+        "huairou-huaibei-hongxiaoli",
+        "zhenkang-late-autumn-wasp-brood"
       ],
       "names": [
         "菱",
@@ -1432,7 +1449,8 @@
         "白柚",
         "沙田柚",
         "萝卜",
-        "红肖梨"
+        "红肖梨",
+        "鲜胡蜂蛹"
       ]
     },
     {
@@ -1647,7 +1665,7 @@
     },
     {
       "date": "2027-12-15",
-      "count": 26,
+      "count": 27,
       "ids": [
         "cigu",
         "zengcheng-caixin",
@@ -1674,7 +1692,8 @@
         "taitung-daxue-hangju",
         "yuanchang-heijingang-winter-peanut",
         "taiwan-daxue-whitebelly-mackerel",
-        "linwu-liping-golden-pomelo"
+        "linwu-liping-golden-pomelo",
+        "lijiang-winter-dobsonfly-larvae"
       ],
       "names": [
         "慈姑",
@@ -1702,7 +1721,8 @@
         "杭菊",
         "黑金刚花生",
         "白腹鰆",
-        "黄金贡柚"
+        "黄金贡柚",
+        "爬沙虫"
       ]
     },
     {

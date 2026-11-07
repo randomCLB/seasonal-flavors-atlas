@@ -1,0 +1,84 @@
+{
+  "created_on": "2026-11-06",
+  "generator": "Built-in image_gen.imagegen (no API, CLI or API key used)",
+  "media_kind": "original_generated_watercolor_illustrations",
+  "display_requirement": "站内必须明确标注“生成示意／非实拍”，不得作为地方实拍、物种或可食安全鉴别证据。",
+  "reference_handling": "先读公开原文并实际查看食材图片；仅提取事实形态写新创作prompt，未把新闻或机构照片作为图像生成输入。后续编辑仅输入本轮原创生成图，定点增加留白。",
+  "scope": "仅生成与复制两张资产、写本清单；未改生产JS、未跑测试、未发布。",
+  "items": [
+    {
+      "id": "yueqing-rainbow-clam",
+      "path": "dist/assets/replacement-yueqing-rainbow-clam-generated-20261106.png",
+      "absolute_path": "/Users/kennethj.michael/.codex/.chatgpt-projects/g-p-6ab6adfb764881919bb88987dd969923/seasonal-atlas/dist/assets/replacement-yueqing-rainbow-clam-generated-20261106.png",
+      "generator_final_path": "/Users/kennethj.michael/.codex/generated_images/01a18910-2817-7c03-98a5-aa0a53fe91ad/exec-f6f0b40b-9646-4491-a10e-c39c5292f410.png",
+      "sha256": "6a3e1269f584de3000944afd393ece3dad6491c37519cb4f875885724b5ad692",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "label": "乐清彩虹明樱蛤·生成示意",
+      "intended_subject": "小型薄壳粉白彩虹明樱蛤，Iridona iridescens（Moerella iridescens）",
+      "prompt": "Use case: scientific-educational. Asset type: original ingredient illustration for a Chinese seasonal food atlas. Create an ORIGINAL visibly hand-painted realistic watercolor illustration, NOT a photograph and NOT a copy of any existing image. Square composition. On a warm ivory tabletop place a single shallow, plain pale ivory ceramic plate, seen from a gentle elevated three-quarter angle in soft natural daylight. The plate and all contents are fully visible, centered, occupy about 70% of frame, with at least 10% empty margin on all four sides. The main subject is a modest loose heap of many very SMALL Chinese rainbow tellin clams, Iridona iridescens (synonym Moerella iridescens), locally called hai gua zi: each shell only up to 20 mm in life, thin delicate smooth-looking oval to rounded triangular shells, with unequal anterior and posterior ends, low off-center umbones, posterior end gently tapering with a small fold, fine closely spaced concentric growth lines. Shells ivory white with subtle blush pink, very pale peach and faint pearly grey, with a light pink to tan rim on some. Keep most shells closed and intact, and only two slightly open cooked specimens with tiny pale cream meat. No dark blotches, no strong patterned bands, no thick ridges, no large hard-shell clams. The whole heap should read as small thin delicate pale pink-white bivalves, not mussels. Show subtle paper grain, clearly visible watercolor washes and fine confident brushwork. Restrained, clean, appetizing natural-history food editorial style. No garnish, no vegetables, no cutlery, no other food, no labels, no text, no logos, no watermark, no hands, no people, no blood. Do not depict black or green mussels, variegated Manila clams, razor clams, cockles or giant clams. Accuracy is a morphology-informed artistic approximation, not a species identification plate or a real locality photograph.",
+      "reference_urls": [
+        "https://www.cmwetlands.com/index.php?classid=12997&t=show&z_id=1957",
+        "https://www.cmwetlands.com/themes/387/userfiles/images/2021/12/28/source/4c9jpmagyzajnyj.jpg",
+        "https://www.kogl.or.kr/recommend/recommendDivView.do?division=img&recommendIdx=165398"
+      ],
+      "reference_facts": "崇明湿地原文：壳长至20mm，圆三角形或长椭圆形、质薄、两侧不等、白略粉红、纹细密、壳后端小纵褶。已看刘文亮摄群壳原貌与韩国MABIK白壳标本预览。",
+      "reference_images_used_as_generator_inputs": false,
+      "source_claim": "原创生成示意，不是乐清产地或成菜照片。",
+      "limits": [
+        "颜色、细纹与两侧比例为示意性近似，不能鉴定种类。",
+        "不按图采集或判断可食安全。",
+        "微量熟肉为构图示意，不代表地方标准做法。"
+      ],
+      "visual_review": {
+        "method": "生成后及复制到dist后均用view_image实际看图",
+        "passed": true,
+        "findings": "粉白浅粉薄壳群体，两只稍开口带少量肉，未出现黑绿贻贝或花蛤斑纹；可见水彩纸纹与笔触，完整浅盘且四周留白；无文字人物或血腥。形态细部只作近似示意。"
+      }
+    },
+    {
+      "id": "tengchong-palm-bud",
+      "path": "dist/assets/replacement-tengchong-palm-bud-generated-20261106.png",
+      "absolute_path": "/Users/kennethj.michael/.codex/.chatgpt-projects/g-p-6ab6adfb764881919bb88987dd969923/seasonal-atlas/dist/assets/replacement-tengchong-palm-bud-generated-20261106.png",
+      "generator_final_path": "/Users/kennethj.michael/.codex/generated_images/01a18910-2817-7c03-98a5-aa0a53fe91ad/exec-1a0541e2-c60f-4ad9-aa80-0156e8c4eeb8.png",
+      "sha256": "bbd5574a2ec24462f85e0a3a4167c776f29074c47290d9f0591e74f7bcb07ab7",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "label": "腾冲棕包·生成示意",
+      "intended_subject": "当地食用棕包尚未露头开放的密集花穗和剥开苞片，不指派拉丁学名",
+      "prompt": "Use case: scientific-educational. Asset type: original ingredient illustration for a Chinese seasonal food atlas. Create an ORIGINAL visibly hand-painted realistic watercolor illustration, NOT a photograph and NOT a copy of any existing image. Square composition, warm ivory tabletop, a single shallow plain pale ivory ceramic plate, soft natural daylight, gentle elevated three-quarter view. Plate and every ingredient fully visible, centered, occupying about 70% of frame, minimum 10% empty margin on all four sides. Subject is Tengchong Yunnan local edible zongbao, the UNOPENED palm inflorescence harvested while still completely enclosed before it emerges. Depict three modest compact pieces of the peeled edible dense flower clusters in pale golden yellow and creamy maize-yellow. Each has densely packed tiny grain-like flower buds borne on very short tightly folded branched stems, forming a compact flattened oval/tapered lumpy cluster, with narrow maze-like divisions between densely bundled rows of tiny buds. The grain texture is delicate, like tightly packed millet sized buds, NOT large seeds or corn kernels. Place beside these one short unopened section of the fibrous enclosing spathe, its pale cream inner face and tan-purplish brown edge slightly parted to reveal the tightly packed yellow buds within. This is a harvested unopened inflorescence ingredient, not palm heart and not a mature open spray of palm flowers. All parts rest naturally on the plate; don't show a tree. Subtle paper grain, visible watercolor washes and fine brushwork make it obviously an illustration. Clean, restrained natural-history food editorial style, matching a warm white illustrated ingredient plate series. No elaborate culinary embellishment, no meat, no rice, no large leaves, no garnish, no cutlery, no people or hands, no text, labels, logo or watermark. Do not depict coconuts, coconut flower sprays, long hanging open flower tassels, bananas, bamboo shoots, corn cobs or cauliflower. This is an illustration of the documented local food form without assigning a Latin species or claiming food-safe identification.",
+      "reference_urls": [
+        "https://www.edehong.com/xinwen/znlgc/2026/0307/247284.html",
+        "https://upload.edehong.com/1/2026/0307/1772862950615383.jpg",
+        "https://upload.edehong.com/1/2026/0307/1772862951218110.jpg",
+        "https://upload.edehong.com/1/2026/0307/1772862950527047.jpg"
+      ],
+      "reference_facts": "腾冲市融媒体中心全文明确：尚未露头开放的花穗，冬季孕育初春取用，剥外层棕皮。已看外层披针苞片、剥出米黄色紧密花穗块和成菜金黄细粒花穗；插画据此画紧密未开放花穗。",
+      "reference_images_used_as_generator_inputs": false,
+      "source_claim": "原创生成示意，不是腾冲产地照片；不宣称某拉丁种或保证画中形态可用于识别甜棕。",
+      "limits": [
+        "地方甜棕与具体拉丁学名对应未由本资产核实，不附未经核准的拉丁名。",
+        "花穗分枝和颗粒排列为示意近似，未声称植物学鉴别精度。",
+        "不是普通棕榈、椰子花可食证明；不按图采集、试吃或作食品安全判断。"
+      ],
+      "visual_review": {
+        "method": "生成后及复制到dist后均用view_image实际看图",
+        "passed": true,
+        "findings": "金黄米粒状致密花穗成块，旁有剥开的浅色内面及棕紫边苞片；没有椰子、椰花垂挂长穗、玉米或棕榈树全景。水彩风格明显，主体完整，四周留白，无嵌入标签。"
+      }
+    }
+  ],
+  "iteration": {
+    "reason": "初稿盘沿过近边缘，唯一一次定点编辑只缩小盘与食材、增加留白。",
+    "edit_prompt": "Use case: precise-object-edit. This is an original generated watercolor illustration, not a photo. Change ONLY the framing: zoom the entire existing plate and contents out evenly, preserving all ingredient shapes, colors, arrangements and the watercolor medium exactly. The complete plate including rim must fit inside a centered box no wider than 75% of the square image; retain at least 12.5% clear uninterrupted warm ivory tabletop at the left and right and at least 10% at the top and bottom. Do not crop, add, remove or redesign food. Continue the warm ivory watercolor tabletop outside the existing composition. Keep image square. No text, logo or watermark. Do not convert to photography.",
+    "input_images": "本轮两张原创生成初稿，各自作为对应编辑目标；没有使用转载照片。",
+    "rounds": 1
+  },
+  "rights_note": "事实核对来源照片仍归其原权利人；研究照片不拷入dist，不把原照片许可或摄影署名错误套给本原创生成图。"
+}

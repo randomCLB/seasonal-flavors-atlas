@@ -1,0 +1,179 @@
+[
+  {
+    "id": "daishan-spring-yellow-mudsnail",
+    "path": "assets/replacement-daishan-mudsnail-reference-20261106.jpg",
+    "kind": "licensed-photo",
+    "sha256": "94b7e6253c78080212cb3df797b6716c16717d7513d1074a94582d121b819c61",
+    "source": "https://commons.wikimedia.org/wiki/File:Bullacta_caurina_2756451.jpg",
+    "creator": "Kim, Hyun-tae (pintail)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "dimensions": {
+      "width": 600,
+      "height": 400
+    },
+    "unchanged": true,
+    "note": "泥螺同种异地实拍 · 韩国滩涂，非岱山产地或食用状态鉴别"
+  },
+  {
+    "id": "yueqing-meiyu-rainbow-clam",
+    "path": "assets/replacement-yueqing-rainbow-clam-generated-20261106.png",
+    "kind": "generated-illustration",
+    "sha256": "6a3e1269f584de3000944afd393ece3dad6491c37519cb4f875885724b5ad692",
+    "creator": "内置图像生成工具",
+    "license": "Generated illustration",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "note": "彩虹明樱蛤形态生成示意 · 非实拍，不用于物种、产地或熟度鉴别",
+    "audit": {
+      "method": "生成后及复制到dist后均用view_image实际看图",
+      "passed": true,
+      "findings": "粉白浅粉薄壳群体，两只稍开口带少量肉，未出现黑绿贻贝或花蛤斑纹；可见水彩纸纹与笔触，完整浅盘且四周留白；无文字人物或血腥。形态细部只作近似示意。"
+    }
+  },
+  {
+    "id": "longchuan-spring-ant-brood",
+    "path": "assets/replacement-longchuan-ant-brood-generated-20261106.png",
+    "kind": "generated-illustration",
+    "sha256": "a1847a34458b0c4aaac8af8c04caee7654508814cfbb98eb3e19d662dab94796",
+    "creator": "内置图像生成工具",
+    "license": "Generated illustration",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG"
+    },
+    "note": "蚂蚁蛋熟汤生成示意 · 非实拍，不用于蚁种、产地或熟度鉴别",
+    "audit": {
+      "method": "view_image of original generated PNG",
+      "result": "accepted",
+      "checks": [
+        "一碗完整熟制汤，浅色无花碗，温暖白桌面，明显示意水彩",
+        "细小浅色椭圆原料有自然大小差异，漂在汤中，无鸡蛋/蛋壳/蛋黄",
+        "无成蚁、腿翅、血液、残肢、人物和文字",
+        "主体完整可见，主要食材在中央，边缘有留白"
+      ],
+      "limitations": [
+        "采用食材与做法的通用示意，不宣称可由图鉴定目盲切叶蚁、纯卵/蛹阶段或产地",
+        "碗沿占画面较大，食材本身集中于中央；精确百分比并非测量值"
+      ]
+    }
+  },
+  {
+    "id": "bazhong-spring-oak-silkworm-pupae",
+    "path": "assets/replacement-bazhong-oak-pupae-generated-20261106.png",
+    "kind": "generated-illustration",
+    "sha256": "80ae46ee7586e9b030b75050d639e4d41b3583a916c7d554fc4981e84ee19c82",
+    "creator": "内置图像生成工具",
+    "license": "Generated illustration",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG"
+    },
+    "note": "春柞蚕蛹生成示意 · 非实拍，不用于品种、产地或熟度鉴别",
+    "audit": {
+      "method": "view_image of original generated PNG",
+      "result": "accepted",
+      "checks": [
+        "5 枚黄褐完整蛹平置浅色无花浅盘，互有空隙，四周可见暖白桌面",
+        "短而饱满的纺锤体约 2:1 长宽比，前半部蛹壳轮廓与腹部节环可见",
+        "非白色幼虫，非细长桑蚕，未长出独立腿翅、触角或成虫",
+        "无开膛、断裂、残肢、人物、文字；温和水彩插画质感"
+      ],
+      "limitations": [
+        "生成示意不能核验 Antheraea pernyi 物种、巴中品系、春批来源或烹熟状态",
+        "盘沿较大，但五枚食材完整且主要轮廓位于中央约 70% 范围；比例为目测",
+        "缺巴中 primary 现场蛹照片，未拿桑蚕图替代；形态核对使用地方文字规范与中国农业出版社形态示意图"
+      ]
+    }
+  },
+  {
+    "id": "zhenkang-late-autumn-wasp-brood",
+    "path": "assets/replacement-zhenkang-wasp-brood-generated-20261106.png",
+    "kind": "generated-illustration",
+    "sha256": "de36e65f14c5af79fa3d3b9736ee58c57e0d86b849de0ba237651ad4f261ea0a",
+    "creator": "内置图像生成工具",
+    "license": "Generated illustration",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "note": "食用胡蜂蛹生成示意 · 非实拍，不用于蜂种、产地或熟度鉴别",
+    "audit": {
+      "tool": "view_image",
+      "result": "通过",
+      "details": "最终文件已以原尺寸看图：淡乳白/乳黄弯曲幼虫和少量浅色早蛹，整洁浅碗，主体完整；没有深褐桑蛹、蜂翅成蜂、血水、人物或文字。"
+    }
+  },
+  {
+    "id": "lijiang-winter-dobsonfly-larvae",
+    "path": "assets/replacement-lijiang-winter-dobsonfly-generated-20261106.png",
+    "kind": "generated-illustration",
+    "sha256": "a5ef5f5badcbb399e6d58ceaef423cbdb80246b42e01cad30261b925ea1de98d",
+    "creator": "内置图像生成工具",
+    "license": "Generated illustration",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "note": "爬沙虫食用形态生成示意 · 非实拍，不用于种类、产地或熟度鉴别",
+    "audit": {
+      "tool": "view_image",
+      "result": "通过",
+      "details": "最终文件已看图：五条完整熟制幼虫，胸足集中于前段，腹侧为未分节丝状结构，尾端成对附属物；头颚克制；没有海沙虫圆筒、竹虫或沿全身重复的蜈蚣步足。整体水彩、暖白桌面与完整浅盘，无血水、人物或文字。"
+    }
+  },
+  {
+    "id": "suzhou-spring-pine-pollen",
+    "path": "assets/replacement-suzhou-pine-male-strobili-20261106.jpg",
+    "kind": "licensed-photo",
+    "sha256": "46a80048361fa3ee7c19e15ea95141f81fe3e1fe7784075a59a0a37462206e07",
+    "source": "https://www.treesandshrubsonline.org/articles/pinus/pinus-massoniana/",
+    "creator": "P. de Spoelberch / Trees and Shrubs Online",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "dimensions": {
+      "width": 1280,
+      "height": 960
+    },
+    "unchanged": true,
+    "note": "马尾松雄球花实拍 · 花粉来源部位参考，非苏州食品批次或食用安全鉴别"
+  },
+  {
+    "id": "jinhua-early-summer-gardenia-buds",
+    "path": "assets/replacement-jinhua-gardenia-reference-20261106.jpg",
+    "kind": "licensed-photo",
+    "sha256": "12dfc39b932ed9716bd173f1132aae47031e171f6768af277c14b122ffb0955a",
+    "source": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_flower_and_bud.JPG",
+    "creator": "Alpsdake",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "dimensions": {
+      "width": 2560,
+      "height": 2400
+    },
+    "unchanged": true,
+    "note": "栀子花同种异地实拍 · 非金华食用批次，不用于可食来源鉴别"
+  },
+  {
+    "id": "tengchong-late-winter-palm-bud",
+    "path": "assets/replacement-tengchong-palm-bud-generated-20261106.png",
+    "kind": "generated-illustration",
+    "sha256": "bbd5574a2ec24462f85e0a3a4167c776f29074c47290d9f0591e74f7bcb07ab7",
+    "creator": "内置图像生成工具",
+    "license": "Generated illustration",
+    "dimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "note": "腾冲棕包食用花穗生成示意 · 非实拍，不用于棕树种类、产地或可食性鉴别",
+    "audit": {
+      "method": "生成后及复制到dist后均用view_image实际看图",
+      "passed": true,
+      "findings": "金黄米粒状致密花穗成块，旁有剥开的浅色内面及棕紫边苞片；没有椰子、椰花垂挂长穗、玉米或棕榈树全景。水彩风格明显，主体完整，四周留白，无嵌入标签。"
+    }
+  }
+]

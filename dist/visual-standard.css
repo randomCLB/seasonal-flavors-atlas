@@ -16,3 +16,6 @@
 .season-list-card.has-landscape-photo{display:flex;flex-direction:column;gap:16px}
 .season-list-card.has-landscape-photo .season-list-photo{width:100%;height:auto;min-height:0;aspect-ratio:2/1;flex:none}
 .season-list-card.has-landscape-photo>div{width:100%;align-self:start}
+
+.reader-portrait[data-illustration=true] .visual-role,.reader-recipe-photo[data-illustration=true] .visual-role{opacity:1}
+.season-list-photo[data-illustration=true]::after{content:"生成示意";position:absolute;top:8px;right:8px;z-index:2;padding:4px 7px;background:#f8f6eeeb;color:#30483d;font-size:10px;line-height:1.4;pointer-events:none}

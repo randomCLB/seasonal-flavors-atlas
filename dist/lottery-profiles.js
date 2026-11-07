@@ -854,3 +854,21 @@ Object.assign(window.LOTTERY_PROFILES,{"gaoqing-taisun-jinchan":{"signature":"58
 Object.assign(window.LOTTERY_PROFILES,{"guanyun-summer-doudan":{"signature":"f198f053","avoid":["meat"],"effort":2,"family":"insect","senses":{"signature":"5d91ba0c","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["stirfry"],"features":["豆田里的5龄幼虫，取出食用组织，和青椒炒得柔嫩。"]}},"nansha-longxue-butter-crab":{"signature":"8f9e905","avoid":["seafood"],"effort":2,"family":"crab","senses":{"signature":"9e533a7e","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["steam"],"features":["雌青蟹膏油充盈的少见阶段，关节透出黄，整只蒸熟。"]}}});
 
 window.LOTTERY_PROFILES["sanmen-winter-blood-cockle"]={"signature":"a83557f2","avoid":["seafood"],"effort":2,"family":"shellfish","senses":{"signature":"5633c93c","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["boil"],"features":["粗肋小贝壳里藏着冬季肥满的蚶肉，姜葱煮透后剥壳尝鲜。"]}};
+
+window.LOTTERY_PROFILES["daishan-spring-yellow-mudsnail"]={"signature":"474604f3","avoid":["seafood"],"effort":2,"family":"shellfish","senses":{"signature":"dfc16718","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["boil"],"features":["薄薄小壳裹着柔软螺肉，春末鲜收，洗净后用姜葱充分做熟。"]}};
+
+window.LOTTERY_PROFILES["yueqing-meiyu-rainbow-clam"]={"signature":"58c52ec1","avoid":["seafood"],"effort":2,"family":"shellfish","senses":{"signature":"1aa1d86c","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["stirfry"],"features":["瓜子般的粉白小薄壳，梅雨时肉肥，洗净后做一盘葱油熟炒。"]},"uncertain":["peanut","sesame"]};
+
+window.LOTTERY_PROFILES["longchuan-spring-ant-brood"]={"signature":"b4d7f0eb","avoid":["meat"],"effort":2,"family":"insect","senses":{"signature":"568b7b8c","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["soup"],"features":["四月陇川的地下蚁蛋，洗净泥沙后入汤，轻轻舀起细小柔嫩的一口。"]},"uncertain":["seafood"]};
+
+window.LOTTERY_PROFILES["bazhong-spring-oak-silkworm-pupae"]={"signature":"23024be4","avoid":["meat"],"effort":2,"family":"insect","senses":{"signature":"dbcceb85","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["boil","stirfry"],"features":["柞林里的春蚕结茧后，六月中旬取出淡黄褐鲜蛹，先煮熟再煎香。"]},"uncertain":["seafood","peanut","sesame"],"notBefore":{"6":11}};
+
+window.LOTTERY_PROFILES["zhenkang-late-autumn-wasp-brood"]={"signature":"5adc046a","avoid":["meat"],"effort":2,"family":"insect","senses":{"signature":"9f5f5879","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["boil","stirfry"],"features":["林下蜂巢在深秋收成，取食用胡蜂的幼虫与蛹，煮透后少油煎香。"]},"uncertain":["seafood","peanut","sesame"]};
+
+window.LOTTERY_PROFILES["lijiang-winter-dobsonfly-larvae"]={"signature":"927f21e9","avoid":["meat"],"effort":2,"family":"insect","senses":{"signature":"58897a6d","tastes":["umami"],"recipeTastes":["salty"],"textures":[],"cooking":["boil","stirfry"],"features":["滇西冬季市场上的水生幼虫，挑清楚食用来源，清理后充分做熟再煎香。"]},"uncertain":["seafood","peanut","sesame"]};
+
+window.LOTTERY_PROFILES["suzhou-spring-pine-pollen"]={"signature":"4d87834d","avoid":[],"effort":2,"family":"flower","senses":{"signature":"b02b36b0","tastes":[],"recipeTastes":["sweet"],"textures":[],"cooking":["steam"],"features":["清明后采下的一点松花香，化成细黄粉，裹在糯米小团上。"]}};
+
+window.LOTTERY_PROFILES["jinhua-early-summer-gardenia-buds"]={"signature":"ccd24e7e","avoid":["egg"],"effort":2,"family":"flower","senses":{"signature":"57d37c36","tastes":[],"recipeTastes":["salty"],"textures":[],"cooking":["boil","stirfry"],"features":["将开未开的白花苞，焯去涩味后配鸡蛋炒熟，把初夏花香端上桌。"]},"uncertain":["peanut","sesame"]};
+
+window.LOTTERY_PROFILES["tengchong-late-winter-palm-bud"]={"signature":"26230111","avoid":[],"effort":2,"family":"flower","senses":{"signature":"18264f8c","tastes":[],"recipeTastes":["salty"],"textures":[],"cooking":["soup"],"features":["剥开棕皮，里面是米粒般密集的金黄花穗，切碎煮汤，清苦后回甘。"]},"uncertain":["soy","wheat","seafood"]};

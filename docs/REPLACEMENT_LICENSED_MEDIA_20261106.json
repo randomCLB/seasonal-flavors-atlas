@@ -1,0 +1,90 @@
+[
+  {
+    "id": "bullacta-caurina-live2",
+    "local_file": "output/verified-replacements-20261106/bullacta-caurina-live2.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Bullacta_caurina_2756451.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Bullacta_caurina_2756451.jpg",
+    "creator": "Kim, Hyun-tae (pintail)",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_sha256": "94b7e6253c78080212cb3df797b6716c16717d7513d1074a94582d121b819c61",
+    "dimensions": {
+      "width": 600,
+      "height": 400
+    },
+    "species_label": "黄泥螺",
+    "taxon": "Bullacta caurina (syn. Bullacta exarata)",
+    "status": "recommended_with_caveat",
+    "role": "animal",
+    "species_evidence": "源文件明确Bullacta caurina，韩国原生观察；iNaturalist公开来源照片许可于2026-10-01由Commons bot复核。WoRMS AphiaID533828把Bullacta exarata列为Bullacta caurina异名（https://www.marinespecies.org/aphia.php?id=533828&p=taxdetails）；不是任意泡螺替代。",
+    "documented_place_date": "韩国滩涂，2006-06-04",
+    "visual_review": {
+      "viewed_local_original": true,
+      "assessment": "整只活体及壳和外套膜清晰，第二张较均匀明亮，优先第二张；原图仅600×400，保留作者水印，不宜放大为大主图。"
+    },
+    "use_boundary": "只能标同种韩国实拍／形态参考，不假称岱山产地照；不能用于可食安全鉴别或捕捞窗口佐证。",
+    "attribution": "Kim, Hyun-tae (pintail) / CC BY 4.0",
+    "file_page_reviewed": true,
+    "original_unmodified": true,
+    "path": "assets/replacement-daishan-mudsnail-reference-20261106.jpg"
+  },
+  {
+    "id": "pinus-massoniana-male-strobili-tso",
+    "local_file": "output/verified-replacements-20261106/pinus-massoniana-male-strobili-tso.jpg",
+    "source_page": "https://www.treesandshrubsonline.org/articles/pinus/pinus-massoniana/",
+    "original_url": "https://www.treesandshrubsonline.org/site/assets/files/6703/pinus-massoniana-1.jpg",
+    "creator": "P. de Spoelberch / Trees and Shrubs Online",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_sha256": "46a80048361fa3ee7c19e15ea95141f81fe3e1fe7784075a59a0a37462206e07",
+    "dimensions": {
+      "width": 1280,
+      "height": 960
+    },
+    "species_label": "马尾松雄球花",
+    "taxon": "Pinus massoniana",
+    "status": "recommended",
+    "role": "plant",
+    "species_evidence": "国际树木学会Trees and Shrubs Online该物种页面明确图注Male strobili developing at the base of the new shoot in Pinus massoniana；已读该站Licence页，站内容CC BY-SA4.0。",
+    "documented_place_date": "源未写拍摄地点与日期",
+    "visual_review": {
+      "viewed_local_original": true,
+      "assessment": "1280×960，雄球花与针叶清楚，背景自然，完整新梢；身份及部位依据优于另张iNaturalist未完成鉴定候选。"
+    },
+    "use_boundary": "同种形态参考，不声称苏州谷雨采花或食用级花粉实拍；不是食品安全鉴别图。",
+    "attribution": "P. de Spoelberch / Trees and Shrubs Online / CC BY-SA 4.0",
+    "file_page_reviewed": true,
+    "original_unmodified": true,
+    "additional_license_evidence": "https://www.treesandshrubsonline.org/about/licence/",
+    "path": "assets/replacement-suzhou-pine-male-strobili-20261106.jpg"
+  },
+  {
+    "id": "gardenia-jasminoides-flower-bud",
+    "local_file": "output/verified-replacements-20261106/gardenia-jasminoides-flower-bud.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_flower_and_bud.JPG",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Gardenia_jasminoides_flower_and_bud.JPG",
+    "creator": "Alpsdake",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source_sha256": "12dfc39b932ed9716bd173f1132aae47031e171f6768af277c14b122ffb0955a",
+    "dimensions": {
+      "width": 2560,
+      "height": 2400
+    },
+    "species_label": "栀子花",
+    "taxon": "Gardenia jasminoides",
+    "status": "recommended",
+    "role": "plant",
+    "species_evidence": "源文件英文说明Flower of Common gardenia (Gardenia jasminoides), in Aichi pref., Japan；作者Own work；花型为单瓣，非重瓣园艺照替代。",
+    "documented_place_date": "日本爱知县，2013-06-08",
+    "visual_review": {
+      "viewed_local_original": true,
+      "assessment": "2560×2400，单瓣白花及绿叶清晰自然，花瓣完整，微小蚂蚁可见；可作同种花朵形态参考。"
+    },
+    "use_boundary": "同种异地参考，非浙江金华产地或食用采花实拍，不用于食品安全鉴别。",
+    "attribution": "Alpsdake / CC BY-SA 3.0",
+    "file_page_reviewed": true,
+    "original_unmodified": true,
+    "path": "assets/replacement-jinhua-gardenia-reference-20261106.jpg"
+  }
+]

@@ -12,5 +12,5 @@ test('Zhenning honey plum is a sourced Grain-in-Ear entry with a generic real-ph
  const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'}));
  const grain=audit.rows.find(x=>x.term==='芒种'),previous=audit.rows.find(x=>x.term==='小满');
  assert.ok(grain.foodIds.includes(food.id));assert.ok(!previous.foodIds.includes(food.id));
- assert.equal(grain.count,22);assert.equal(grain.repeated,11);assert.equal(grain.requiredAdditionalFoodsNotInPreviousTerm,0);
+ assert.equal(grain.count,25);assert.equal(grain.repeated,11);assert.equal(grain.requiredAdditionalFoodsNotInPreviousTerm,0);
 });

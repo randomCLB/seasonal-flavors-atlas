@@ -14,5 +14,5 @@ test('Wenzhou Lingkun baizhuogua has a recurring spring-head-crop record, labele
  assert.ok(food.sources.some(x=>x[1]==='https://news.66wz.com/system/2026/04/21/105738079.shtml'));
  assert.match(food.season,/五一前后为采摘高峰/);assert.match(food.pitfall,/不同批次/);assert.match(food.procurement.checks.join(' '),/温州产地/);
  const audit=JSON.parse(execFileSync(process.execPath,['scripts/audit-term-repetition.cjs','2026'],{cwd:root,encoding:'utf8'})),term=audit.rows.find(x=>x.term==='立夏'),previous=audit.rows.find(x=>x.term==='谷雨');
- assert.ok(term.foodIds.includes(food.id));assert.ok(!previous.foodIds.includes(food.id));assert.equal(term.count,26);assert.equal(term.repeated,13);assert.equal(term.repeatRate,13/26);assert.equal(term.withinLimit,true);
+ assert.ok(term.foodIds.includes(food.id));assert.ok(!previous.foodIds.includes(food.id));assert.equal(term.count,27);assert.equal(term.repeated,13);assert.equal(term.repeatRate,13/27);assert.equal(term.withinLimit,true);
 });

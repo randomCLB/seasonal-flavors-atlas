@@ -31,9 +31,9 @@ test('24-term repetition audit compares each pool with the immediately preceding
  ;
  ;
  ;
- assert.equal(majorSnow.projectedTotalAfterExclusiveAdditions,28);
- assert.equal(majorSnow.projectedRepeatRateAfterExclusiveAdditions,0.5);
- assert.equal(majorSnow.repeatRate,0.5);
+ assert.equal(majorSnow.projectedTotalAfterExclusiveAdditions,29);
+ assert.equal(majorSnow.projectedRepeatRateAfterExclusiveAdditions,14/29);
+ assert.equal(majorSnow.repeatRate,14/29);
  for(const id of ['taitung-daxue-hangju','yuanchang-heijingang-winter-peanut','taiwan-daxue-whitebelly-mackerel','linwu-liping-golden-pomelo'])assert.ok(majorSnow.foodIds.includes(id),id);
  const lightSnow=audit.rows.find(row=>row.term==='小雪');
  ;assert.equal(lightSnow.repeatRate,0.5);assert.ok(lightSnow.foodIds.includes('renhua-danxia-gonggan'));assert.ok(lightSnow.foodIds.includes('luogang-sweet-orange'));assert.ok(lightSnow.foodIds.includes('wenzhou-sanyang-ougan'));assert.ok(lightSnow.foodIds.includes('suizhou-paopaoqing'));assert.ok(lightSnow.foodIds.includes('wujiang-xiaoxue-fragrant-greens'));assert.ok(lightSnow.foodIds.includes('ningbo-yinzhou-xiaoxue-fresh-snow-mustard'));

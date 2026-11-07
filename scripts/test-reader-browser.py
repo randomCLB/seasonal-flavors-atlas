@@ -8,7 +8,7 @@ LIVE = os.environ.get('LIVE_VERIFY') == '1'
 BASE = 'https://randomclb.github.io/seasonal-flavors-atlas/' if LIVE else 'http://127.0.0.1:8774/'
 SHA = os.environ.get('RELEASE_SHA', '')
 PREFIX = 'live' if LIVE else 'preview'
-CASES = ['zhenning-honey-plum','wujiang-xiaoxue-fragrant-greens','cangnan-lidong-four-seasons-pomelo','fengqing-xinhua-walnut-flowers','cizhousun','suzhou-bailu-ginkgo','wenzhou-pancai','cigu','pucai','sanmen-winter-blood-cockle','lianjiang-xiaoshu-june-hemp-bamboo-shoot','taiwan-jialiao-bream']
+CASES = ['zhenning-honey-plum', 'wujiang-xiaoxue-fragrant-greens', 'cangnan-lidong-four-seasons-pomelo', 'fengqing-xinhua-walnut-flowers', 'cizhousun', 'suzhou-bailu-ginkgo', 'wenzhou-pancai', 'cigu', 'pucai', 'sanmen-winter-blood-cockle', 'lianjiang-xiaoshu-june-hemp-bamboo-shoot', 'taiwan-jialiao-bream', 'daishan-spring-yellow-mudsnail', 'yueqing-meiyu-rainbow-clam', 'longchuan-spring-ant-brood', 'bazhong-spring-oak-silkworm-pupae', 'zhenkang-late-autumn-wasp-brood', 'lijiang-winter-dobsonfly-larvae', 'suzhou-spring-pine-pollen', 'jinhua-early-summer-gardenia-buds', 'tengchong-late-winter-palm-bud']
 report = {'live':LIVE,'base':BASE,'releaseSha':SHA,'resources':[],'cases':[],'flows':[],'errors':[]}
 try:
     names=['index.html','app.js','food-detail.js','food-purchase.js','reader-copy.js','reader-copy-curation.js','reader-depth.js','catalog-photos.js','catalog-quality.css','tarot.html','tarot-spread-ui.js','lottery.html','lottery-ui.js','build-info.json','ingredient-identity.js','ingredient-identity.css','season-selection.js','food-records.js']
@@ -44,7 +44,7 @@ try:
                   }
                   return {catalog:window.FOODS.length,sources,safety,failures};
                 }""")
-                report['wholeCatalog']=audit;assert audit['catalog']==361;assert not audit['failures'],audit['failures'][:20]
+                report['wholeCatalog']=audit;assert audit['catalog']==370;assert not audit['failures'],audit['failures'][:20]
             before=page.locator('#seasonCards article').count()
             page.locator('#allSeasonScope').click();assert page.locator('#allSeasonScope').get_attribute('aria-pressed')=='true'
             assert page.locator('#seasonCards article').count()>=before

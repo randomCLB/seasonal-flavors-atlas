@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-06",
+  "generationMode": "built-in image_gen.imagegen",
+  "purpose": "原创温和写实水彩食材示意；非产地实拍，非物种鉴别",
+  "productionCodeChanged": false,
+  "testsRun": false,
+  "referenceUse": "公开原图仅供形态研究；未转载、未作为编辑目标或图像生成输入。每张原始生成图均用 view_image 实际查看。",
+  "assets": [
+    {
+      "id": "longchuan-spring-ant-brood",
+      "file": "dist/assets/replacement-longchuan-ant-brood-generated-20261106.png",
+      "originalGeneratedFile": "/Users/kennethj.michael/.codex/generated_images/01a18921-9fce-7f90-ad6d-7bb14a867485/exec-f4160f1c-e50f-495c-a2d2-ffe83e0bde90.png",
+      "prompt": "Use case: illustration-story.\nAsset type: original food illustration for a Chinese seasonal ingredient website, square 1:1.\nCreate a new image from this description, not an edit or copy of any photograph.\nSubject: one small plain pale ivory ceramic bowl of fully cooked Longchuan underground-ant brood soup (陇川蚂蚁蛋汤). A light clear warm broth, with many tiny off-white oval morsels floating naturally and loosely in the liquid, a little natural size variation: most about 1–3 mm with a few about 4–6 mm; these are tiny ingredient grains relative to a roughly 12 cm bowl. Subtle slightly translucent ivory and cream, no dark adult ants, no large eggs, no yolks. Only a few tiny green herb flecks.\nStyle: gentle realistic watercolor food illustration, clearly hand-painted and illustrative, with soft paper grain and restrained fine detail, never documentary photography. Warm natural white tabletop and warm white background.\nComposition: overhead at a slight 25-degree angle, bowl centered and entirely visible; bowl and soup occupy about 70 percent of image width, at least 10 percent clear space on every side. The small ingredient shapes remain legible as food texture without becoming an enlarged insect macro. Soft daylight, calm clean appetizing presentation, no extra props.\nConstraints: no lettering, captions, labels, logos, watermarks, people, utensils, fake landmarks, blood, detached parts, adult insects, eggshells, chicken eggs, caviar spheres, caterpillars, legs or wings. Original explanatory illustration only; no claim of species identification or place photography.",
+      "generationCalls": 1,
+      "visualReview": {
+        "method": "view_image of original generated PNG",
+        "result": "accepted",
+        "checks": [
+          "一碗完整熟制汤，浅色无花碗，温暖白桌面，明显示意水彩",
+          "细小浅色椭圆原料有自然大小差异，漂在汤中，无鸡蛋/蛋壳/蛋黄",
+          "无成蚁、腿翅、血液、残肢、人物和文字",
+          "主体完整可见，主要食材在中央，边缘有留白"
+        ],
+        "limitations": [
+          "采用食材与做法的通用示意，不宣称可由图鉴定目盲切叶蚁、纯卵/蛹阶段或产地",
+          "碗沿占画面较大，食材本身集中于中央；精确百分比并非测量值"
+        ]
+      },
+      "referenceSources": [
+        {
+          "url": "https://yn.wenming.cn/gzdt/zhoushifengcai/dh/202204/t20220411_6336648.shtml",
+          "status": "已读公开 HTTP 正文，并实际查看文内第 1、4、5、6、7、8、9 张图；第 5–9 张用于熟食细小浅色椭圆形态研究。煮汤方向来自正文，非声称原图即为本幅汤。",
+          "imageUrls": [
+            "http://images.wenming.cn/web_yn/gzdt/zhoushifengcai/dh/202204/W020220411607054446048.jpg",
+            "http://images1.wenming.cn/web_yn/gzdt/zhoushifengcai/dh/202204/W020220411607054596336.jpg",
+            "http://images.wenming.cn/web_yn/gzdt/zhoushifengcai/dh/202204/W020220411607054626935.jpg"
+          ]
+        },
+        {
+          "url": "https://www.peopleapp.com/column/30051841094-500007432506",
+          "status": "已读正文以区分陇川地下蚁与树栖黄猄蚁；本次两幅现场挖巢图点击读取超时，不假称在其图中看到了食用原料。"
+        }
+      ],
+      "dimensions": {
+        "width": 1254,
+        "height": 1254,
+        "format": "PNG"
+      },
+      "originalGeneratedSha256": "a1847a34458b0c4aaac8af8c04caee7654508814cfbb98eb3e19d662dab94796",
+      "finalSha256": "a1847a34458b0c4aaac8af8c04caee7654508814cfbb98eb3e19d662dab94796",
+      "bytes": 2470682
+    },
+    {
+      "id": "bazhong-spring-oak-silkworm-pupae",
+      "file": "dist/assets/replacement-bazhong-oak-pupae-generated-20261106.png",
+      "originalGeneratedFile": "/Users/kennethj.michael/.codex/generated_images/01a18921-9fce-7f90-ad6d-7bb14a867485/exec-d67c608a-8997-4ed4-8396-37e6eead5195.png",
+      "prompt": "Use case: illustration-story.\nAsset type: original food illustration for a Chinese seasonal ingredient website, square 1:1.\nCreate an original image from this description, not an edit or copy of any photograph.\nSubject: a small serving of five fully cooked intact Chinese oak silkworm pupae, Antheraea pernyi, of the plump pale yellow-brown spring-pupa type associated with Bazhong. On a plain shallow ivory plate, lying flat in a loose natural arrangement with small gaps, each entire pupa visible, no heap. Correct body proportions approximately 3.8 cm long and 1.9 cm at the widest point, stout spindle-shaped with a rounded broad anterior, a smooth fused thoracic case and wing-case seams on the front half, and five to six readable soft transverse abdominal rings tapering gradually to a small blunt posterior. Length only about twice maximum width: not narrow or cylindrical. Light golden tan to soft yellow-brown cooked surfaces, intact, rounded, subtly varied, no black charring. Do not depict caterpillars or white larvae.\nStyle: gentle realistic watercolor food illustration, visibly hand-painted with soft paper grain, delicate restrained contour detail and calm food-editorial character; not a photographic macro or scientific specimen photo.\nScene: warm natural white tabletop, warm white background, no extra props. Soft natural daylight.\nComposition: near-overhead view at a slight angle, the complete shallow plate centered and occupying 70 percent of image width, generous clear background with at least 12 percent margin on all four sides; pupae collectively clearly legible but modest in scale, complete bodies and their real transverse rings visible.\nConstraints: no adult insects, no free-standing legs, antennae, wings, eyes, white grubs, cocoons, thin elongated Bombyx mori shapes, blood, openings, detached parts, chopped pieces, exaggerated grotesque macro, text, labels, logos, watermarks, people, utensils, garnish or fake landmarks. Original explanatory illustration only; no claim of species identification or place photography.",
+      "generationCalls": 1,
+      "visualReview": {
+        "method": "view_image of original generated PNG",
+        "result": "accepted",
+        "checks": [
+          "5 枚黄褐完整蛹平置浅色无花浅盘，互有空隙，四周可见暖白桌面",
+          "短而饱满的纺锤体约 2:1 长宽比，前半部蛹壳轮廓与腹部节环可见",
+          "非白色幼虫，非细长桑蚕，未长出独立腿翅、触角或成虫",
+          "无开膛、断裂、残肢、人物、文字；温和水彩插画质感"
+        ],
+        "limitations": [
+          "生成示意不能核验 Antheraea pernyi 物种、巴中品系、春批来源或烹熟状态",
+          "盘沿较大，但五枚食材完整且主要轮廓位于中央约 70% 范围；比例为目测",
+          "缺巴中 primary 现场蛹照片，未拿桑蚕图替代；形态核对使用地方文字规范与中国农业出版社形态示意图"
+        ]
+      },
+      "referenceSources": [
+        {
+          "url": "https://nongjixie.cast.org.cn/Library/Nmap/view?nmap_id=1792",
+          "status": "科协 primary 原站再次超时；未读到全文或现场图片。"
+        },
+        {
+          "url": "https://techan.isgoodgood.com/sichuan-techan/bazhong-techan/6033.html",
+          "status": "完整阅读的 secondary 地方规范转载：春蛹长约 3.8 cm、幅 1.9 cm、淡黄褐、纺锤体形；无权据其冒认现场实拍。"
+        },
+        {
+          "url": "https://www.pwsannong.com/c/2016-04-13/565010.shtml",
+          "status": "中国农业出版社《柞蚕外部形态》正文和图 7 已读/实际 view_image；用于一般柞蛹前部蛹壳、腹节、纺锤形核对，非巴中现场图。",
+          "imageUrl": "https://www.pwsannong.com/booklib/zeimage.zhtml?ID=41858&SiteID=123&Type=norm",
+          "researchCapture": "/Users/kennethj.michael/.agent-reach/captures/generated-media-20261106/oak-morphology.html"
+        }
+      ],
+      "dimensions": {
+        "width": 1254,
+        "height": 1254,
+        "format": "PNG"
+      },
+      "originalGeneratedSha256": "80ae46ee7586e9b030b75050d639e4d41b3583a916c7d554fc4981e84ee19c82",
+      "finalSha256": "80ae46ee7586e9b030b75050d639e4d41b3583a916c7d554fc4981e84ee19c82",
+      "bytes": 2550775
+    }
+  ]
+}

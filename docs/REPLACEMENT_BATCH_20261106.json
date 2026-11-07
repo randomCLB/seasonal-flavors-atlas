@@ -1,0 +1,801 @@
+{
+  "date": "2026-11-06",
+  "baseCommit": "1b26c7ff088ea3dc26f6b33918c141aa4537effe",
+  "before": {
+    "publicCanonical": 278,
+    "sourceObservations": 361
+  },
+  "added": [
+    {
+      "id": "daishan-spring-yellow-mudsnail",
+      "name": "黄泥螺",
+      "category": "seafood",
+      "region": "浙江舟山 · 岱山沿岸滩涂",
+      "months": [
+        4,
+        5
+      ],
+      "recommendationTerm": "立夏",
+      "fullWindow": "谷雨后至芒种前 · 立夏旺季",
+      "evidence": "岱山县非遗保护中心供稿明确谷雨后始发、立夏旺季、芒种前结束；本条以立夏为推荐入口，保留完整春季采集窗口。",
+      "sources": [
+        [
+          "岱山县非遗保护中心：黄泥螺春季采集周期",
+          "https://dsnews.zjol.com.cn/dsnews/system/2013/08/07/016761182.shtml"
+        ],
+        [
+          "台湾生物多样性网络：泥螺身份及异名",
+          "https://www.tbn.org.tw/taxa/bbbc6e34-746a-4159-91af-213ed1bf2444"
+        ]
+      ],
+      "media": "assets/replacement-daishan-mudsnail-reference-20261106.jpg"
+    },
+    {
+      "id": "yueqing-meiyu-rainbow-clam",
+      "name": "海瓜子",
+      "category": "seafood",
+      "region": "浙江温州 · 乐清湾水涨、西门岛一带",
+      "months": [
+        6,
+        7
+      ],
+      "recommendationTerm": "芒种",
+      "fullWindow": "梅雨期 · 约6月至7月上旬",
+      "evidence": "乐清地方介绍印刷79—80页记海瓜子肉肥、盛产于梅季；乐清湾群体原始研究另证彩虹明樱蛤的集中分布。以芒种为梅季推荐入口，不以论文采样日推断味期。",
+      "sources": [
+        [
+          "乐清地方介绍：海瓜子梅季肉肥（PDF第41页）",
+          "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web1828/site/attach/0/2109141756076487.pdf"
+        ],
+        [
+          "上海海洋大学学报：乐清湾彩虹明樱蛤群体研究",
+          "https://html.rhhz.net/shhydxxb/20151001576.htm"
+        ],
+        [
+          "浙江日报：梅季的常年时段与年际变化",
+          "https://zjnews.zjol.com.cn/zjnews/202406/t20240610_26902122.shtml"
+        ]
+      ],
+      "media": "assets/replacement-yueqing-rainbow-clam-generated-20261106.png"
+    },
+    {
+      "id": "longchuan-spring-ant-brood",
+      "name": "蚂蚁蛋",
+      "category": "protein",
+      "region": "云南德宏 · 陇川县陇把镇一带",
+      "months": [
+        4
+      ],
+      "recommendationTerm": "谷雨",
+      "fullWindow": "4月 · 地下蚁巢春季鲜收",
+      "evidence": "云南文明网2022年掌上德宏稿明确四月掏蛋季；人民日报2026年现场报道明确陇把镇地下目盲切叶蚁食用卵、陇川集中分布。仅按已证四月推荐谷雨，未补拉丁种名。",
+      "sources": [
+        [
+          "云南文明网（掌上德宏）：四月陇川蚂蚁蛋鲜收季",
+          "https://yn.wenming.cn/gzdt/zhoushifengcai/dh/202204/t20220411_6336648.shtml"
+        ],
+        [
+          "人民日报客户端：陇把镇地下蚁巢与食用身份现场报道",
+          "https://www.peopleapp.com/column/30051841094-500007432506"
+        ]
+      ],
+      "media": "assets/replacement-longchuan-ant-brood-generated-20261106.png"
+    },
+    {
+      "id": "bazhong-spring-oak-silkworm-pupae",
+      "name": "春柞蚕蛹",
+      "category": "protein",
+      "region": "四川巴中 · 巴州、通江、南江地标产区",
+      "months": [
+        6
+      ],
+      "recommendationTerm": "芒种",
+      "fullWindow": "6月中旬 · 春批鲜蛹",
+      "evidence": "完整读取巴中柞蚕蛹登记规范公开转载，记六月中旬春批上市、十月另有秋批；农业部公报证实地标登记。中国科协原站只核到公开索引，未冒称全文，春批不写成比秋批更好吃。",
+      "sources": [
+        [
+          "巴中柞蚕蛹登记规范公开转载：春批六月中旬鲜收",
+          "https://techan.isgoodgood.com/sichuan-techan/bazhong-techan/6033.html"
+        ],
+        [
+          "农业部公报：2016年巴中柞蚕蛹登记名单",
+          "https://www.moa.gov.cn/nybgb/2016/dijiuqi/202004/P020220916731684838802.pdf"
+        ],
+        [
+          "中国科学院：柞蚕Antheraea pernyi与桑蚕的区分",
+          "https://lssf.cas.cn/sszs/zyyj/dbzkxyjshss/kycg/201709/t20170904_5056325.html"
+        ],
+        [
+          "市场监管总局食审中心：蚕蛹列为普通食品的历史公告",
+          "https://cfe-samr.org.cn/zcfg/bjsp_134/qt_bjsp/202208/t20220802_4455.html"
+        ]
+      ],
+      "media": "assets/replacement-bazhong-oak-pupae-generated-20261106.png"
+    },
+    {
+      "id": "zhenkang-late-autumn-wasp-brood",
+      "name": "鲜胡蜂蛹",
+      "category": "protein",
+      "region": "云南临沧 · 镇康勐堆乡竹瓦村",
+      "months": [
+        10
+      ],
+      "recommendationTerm": "霜降",
+      "fullWindow": "深秋 · 林下挂养鲜收",
+      "evidence": "云南网2026年现场报道明确春育蜂王、秋收蜂蛹的年度模式及深秋旺季；十月下旬为当年尾批现场。保留年度模式和当年观察边界，不把某日最后一批变成每年固定截止日。",
+      "sources": [
+        [
+          "云南网：竹瓦村春育蜂王、深秋采收蜂蛹现场",
+          "https://society.yunnan.cn/system/2026/10/26/034181968.shtml"
+        ]
+      ],
+      "media": "assets/replacement-zhenkang-wasp-brood-generated-20261106.png"
+    },
+    {
+      "id": "lijiang-winter-dobsonfly-larvae",
+      "name": "爬沙虫",
+      "category": "protein",
+      "region": "云南丽江 · 华坪、永胜当地食用市场",
+      "months": [
+        12,
+        1
+      ],
+      "recommendationTerm": "大雪",
+      "fullWindow": "十冬腊月 · 冬季鲜售参考",
+      "evidence": "云南政协报2024年饮食记述明确华坪、永胜十冬腊月街市鲜售，记录的是广翅目幼虫。科研科普说明爬沙虫是齿蛉科多种幼虫的通称，不能把安宁河某种鉴定外推到丽江商品。月份用冬季近似，不固定农历与公历对应日。",
+      "sources": [
+        [
+          "云南政协报：华坪、永胜十冬腊月爬沙虫街市记述",
+          "https://www.ctdsb.net/c1664_202409/2254067.html"
+        ],
+        [
+          "科学传播：爬沙虫的齿蛉科幼虫身份与多种通称",
+          "https://www.thepaper.cn/newsDetail_forward_11228305"
+        ]
+      ],
+      "media": "assets/replacement-lijiang-winter-dobsonfly-generated-20261106.png"
+    },
+    {
+      "id": "suzhou-spring-pine-pollen",
+      "name": "新制松花粉",
+      "category": "other",
+      "region": "江苏苏州 · 吴中木渎、东山、越溪一带",
+      "months": [
+        4,
+        5
+      ],
+      "recommendationTerm": "谷雨",
+      "fullWindow": "清明后 · 不足一月的采制期",
+      "evidence": "苏州市旅游局2018年稿完整记述吴中木渎、东山、越溪清明后采制、不足一月窗口及四五月松花团；食品管理公告确认松花粉为普通食品原料。以谷雨推荐新制批次，不把干粉销售说成仅此一月。",
+      "sources": [
+        [
+          "苏州市旅游局（我苏网）：太湖松花粉不足一月采制期",
+          "https://www.ourjiangsu.com/wap/a/20180427/1524706738889.shtml"
+        ],
+        [
+          "市场监管总局食审中心：松花粉普通食品原料公告",
+          "https://cfe-samr.org.cn/zcfg/bjsp_134/qt_bjsp/202208/t20220802_4455.html"
+        ]
+      ],
+      "media": "assets/replacement-suzhou-pine-male-strobili-20261106.jpg"
+    },
+    {
+      "id": "jinhua-early-summer-gardenia-buds",
+      "name": "食用栀子花",
+      "category": "vegetable",
+      "region": "浙江金华 · 当地食用鲜花市场",
+      "months": [
+        5,
+        6
+      ],
+      "recommendationTerm": "芒种",
+      "fullWindow": "5—6月 · 花将开未开时",
+      "evidence": "湖南省林业局2009年科普记金华五六月菜场食用鲜花；温州网对浙江自然博物馆研究员采访说明六月栀子花及将开未开适采阶段。以芒种作为初夏推荐入口，不将观赏花一概当食用原料。",
+      "sources": [
+        [
+          "湖南省林业局：金华五六月食用栀子花记录（2009）",
+          "https://lyj.hunan.gov.cn/tslm_71206/lykp/syjs/201512/t20151227_2609415.html"
+        ],
+        [
+          "温州网：浙江自然博物馆研究员谈食用花采收阶段",
+          "https://news.66wz.com/system/2015/03/27/104397937.shtml"
+        ]
+      ],
+      "media": "assets/replacement-jinhua-gardenia-reference-20261106.jpg"
+    },
+    {
+      "id": "tengchong-late-winter-palm-bud",
+      "name": "棕包米",
+      "category": "vegetable",
+      "region": "云南保山 · 腾冲当地食用甜棕产区",
+      "months": [
+        1,
+        2
+      ],
+      "recommendationTerm": "立春",
+      "fullWindow": "冬末初春 · 未露头的嫩花苞",
+      "evidence": "腾冲市融媒体中心2026年风物文明确每年春节前后剥取金黄苞穗、冬季孕育初春食用，依据是未露头花穗的生长阶段，不以年夜饭习俗代替季节。按地方食用甜棕商品记录，未补未核实的拉丁种或品种。",
+      "sources": [
+        [
+          "腾冲市融媒体中心：棕包冬季孕育、初春未露头花穗与熟食做法",
+          "https://www.edehong.com/xinwen/znlgc/2026/0307/247284.html"
+        ]
+      ],
+      "media": "assets/replacement-tengchong-palm-bud-generated-20261106.png"
+    }
+  ],
+  "after": {
+    "sourceObservations": 370,
+    "publicCanonical": 287,
+    "publicCovered": 270,
+    "missingPublicImage": 17,
+    "withdrawn": 51,
+    "selectedMinimum": 16,
+    "selectedMaximum": 18,
+    "terms": [
+      {
+        "year": 2026,
+        "term": "霜降",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": [
+          "zhenkang-late-autumn-wasp-brood"
+        ]
+      },
+      {
+        "year": 2026,
+        "term": "立冬",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2026,
+        "term": "小雪",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2026,
+        "term": "大雪",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": [
+          "lijiang-winter-dobsonfly-larvae"
+        ]
+      },
+      {
+        "year": 2026,
+        "term": "冬至",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "小寒",
+        "count": 18,
+        "proteinCount": 1,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "大寒",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "立春",
+        "count": 17,
+        "proteinCount": 4,
+        "newFoods": [
+          "tengchong-late-winter-palm-bud"
+        ]
+      },
+      {
+        "year": 2027,
+        "term": "雨水",
+        "count": 18,
+        "proteinCount": 5,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "惊蛰",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "春分",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "清明",
+        "count": 18,
+        "proteinCount": 6,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "谷雨",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": [
+          "longchuan-spring-ant-brood",
+          "suzhou-spring-pine-pollen"
+        ]
+      },
+      {
+        "year": 2027,
+        "term": "立夏",
+        "count": 16,
+        "proteinCount": 1,
+        "newFoods": [
+          "daishan-spring-yellow-mudsnail"
+        ]
+      },
+      {
+        "year": 2027,
+        "term": "小满",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "芒种",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": [
+          "bazhong-spring-oak-silkworm-pupae",
+          "yueqing-meiyu-rainbow-clam",
+          "jinhua-early-summer-gardenia-buds"
+        ]
+      },
+      {
+        "year": 2027,
+        "term": "夏至",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "小暑",
+        "count": 18,
+        "proteinCount": 5,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "大暑",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "立秋",
+        "count": 18,
+        "proteinCount": 6,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "处暑",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "白露",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "秋分",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "寒露",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "霜降",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": [
+          "zhenkang-late-autumn-wasp-brood"
+        ]
+      },
+      {
+        "year": 2027,
+        "term": "立冬",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "小雪",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2027,
+        "term": "大雪",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": [
+          "lijiang-winter-dobsonfly-larvae"
+        ]
+      },
+      {
+        "year": 2027,
+        "term": "冬至",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "小寒",
+        "count": 18,
+        "proteinCount": 1,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "大寒",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "立春",
+        "count": 17,
+        "proteinCount": 4,
+        "newFoods": [
+          "tengchong-late-winter-palm-bud"
+        ]
+      },
+      {
+        "year": 2028,
+        "term": "雨水",
+        "count": 18,
+        "proteinCount": 5,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "惊蛰",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "春分",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "清明",
+        "count": 18,
+        "proteinCount": 6,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "谷雨",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": [
+          "longchuan-spring-ant-brood",
+          "suzhou-spring-pine-pollen"
+        ]
+      },
+      {
+        "year": 2028,
+        "term": "立夏",
+        "count": 16,
+        "proteinCount": 1,
+        "newFoods": [
+          "daishan-spring-yellow-mudsnail"
+        ]
+      },
+      {
+        "year": 2028,
+        "term": "小满",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "芒种",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": [
+          "bazhong-spring-oak-silkworm-pupae",
+          "yueqing-meiyu-rainbow-clam",
+          "jinhua-early-summer-gardenia-buds"
+        ]
+      },
+      {
+        "year": 2028,
+        "term": "夏至",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "小暑",
+        "count": 18,
+        "proteinCount": 5,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "大暑",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "立秋",
+        "count": 18,
+        "proteinCount": 6,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "处暑",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "白露",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "秋分",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "寒露",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "霜降",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": [
+          "zhenkang-late-autumn-wasp-brood"
+        ]
+      },
+      {
+        "year": 2028,
+        "term": "立冬",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "小雪",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2028,
+        "term": "大雪",
+        "count": 16,
+        "proteinCount": 3,
+        "newFoods": [
+          "lijiang-winter-dobsonfly-larvae"
+        ]
+      },
+      {
+        "year": 2028,
+        "term": "冬至",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "小寒",
+        "count": 18,
+        "proteinCount": 1,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "大寒",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "立春",
+        "count": 17,
+        "proteinCount": 4,
+        "newFoods": [
+          "tengchong-late-winter-palm-bud"
+        ]
+      },
+      {
+        "year": 2029,
+        "term": "雨水",
+        "count": 18,
+        "proteinCount": 5,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "惊蛰",
+        "count": 18,
+        "proteinCount": 4,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "春分",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "清明",
+        "count": 18,
+        "proteinCount": 6,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "谷雨",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": [
+          "longchuan-spring-ant-brood",
+          "suzhou-spring-pine-pollen"
+        ]
+      },
+      {
+        "year": 2029,
+        "term": "立夏",
+        "count": 16,
+        "proteinCount": 1,
+        "newFoods": [
+          "daishan-spring-yellow-mudsnail"
+        ]
+      },
+      {
+        "year": 2029,
+        "term": "小满",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "芒种",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": [
+          "bazhong-spring-oak-silkworm-pupae",
+          "yueqing-meiyu-rainbow-clam",
+          "jinhua-early-summer-gardenia-buds"
+        ]
+      },
+      {
+        "year": 2029,
+        "term": "夏至",
+        "count": 18,
+        "proteinCount": 3,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "小暑",
+        "count": 18,
+        "proteinCount": 5,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "大暑",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "立秋",
+        "count": 18,
+        "proteinCount": 6,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "处暑",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "白露",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "秋分",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "寒露",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      },
+      {
+        "year": 2029,
+        "term": "霜降",
+        "count": 18,
+        "proteinCount": 2,
+        "newFoods": []
+      }
+    ]
+  },
+  "mediaPolicy": "3张获许可实拍，6张对照形态资料核对的原创生成示意；各图独立注明部位和使用边界，不以生成图作物种或食用安全鉴定。",
+  "limits": [
+    "9个新增独立食材，6个为鱼以外动物食材；未恢复此前撤下20项。",
+    "推荐入口为编辑选择，完整来源窗口留在正文；不把鲜收批次或短花期说成全年独占供应。",
+    "巴中季节依据完整读取的登记规范公开转载；科协原站仅索引，未冒报全文。",
+    "蚂蚁蛋、胡蜂蛹、爬沙虫使用已核中文食用市场身份，未擅定未确认的拉丁种。"
+  ]
+}

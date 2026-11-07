@@ -1,0 +1,508 @@
+{
+  "audit_date": "2026-11-06",
+  "scope": "公开许可真实图片候选，仅可用性证据，未集成网站。下载文件未裁切、生成、修补或优化；KOGL海瓜子仅公开预览，非原始大图。",
+  "selection_summary": {
+    "recommended_or_with_caveat": 8,
+    "reserve_or_inactive_taxon": 4,
+    "rejected_visual": 3,
+    "identity_preview_only": 1
+  },
+  "candidates": [
+    {
+      "id": "capitulum-mitella-whole",
+      "local_file": "output/verified-replacements-20261106/capitulum-mitella-whole.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Capitulum_mitella_koh.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Capitulum_mitella_koh.jpg",
+      "creator": "Harum Koh",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_sha256": "6fdbb3219b6c55d8d1cb8d0bcc12edc8c80caa95a7acd76aab4433466648946b",
+      "dimensions": {
+        "width": 2048,
+        "height": 1365
+      },
+      "species_label": "佛手贝／笔架",
+      "taxon": "Capitulum mitella",
+      "status": "recommended",
+      "role": "animal",
+      "species_evidence": "文件描述明确Japanese goose barnacle，结构化 depicts Capitulum mitella；源为iNaturalist observation 2905082/photo3323286。",
+      "documented_place_date": "日本静冈沼津，2016-04-09",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "岩礁上整簇个体清晰，外形完整；适合食材形态图。"
+      },
+      "use_boundary": "同种异地实拍，不能声称中国某产地或指定采收季实拍。",
+      "attribution": "Harum Koh / Wikimedia Commons / CC BY-SA 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "capitulum-mitella-cooked",
+      "local_file": "output/verified-replacements-20261106/capitulum-mitella-cooked.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%A6%AC%E7%A5%96_%E7%82%92%E4%BD%9B%E6%89%8B%E8%B2%9D_20240912.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/%E9%A6%AC%E7%A5%96_%E7%82%92%E4%BD%9B%E6%89%8B%E8%B2%9D_20240912.jpg",
+      "creator": "Foxy1219",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_sha256": "67f375cfefd375dae8604e03e9e2c6f4737f8fce5384e29f23fb750825a0e28c",
+      "dimensions": {
+        "width": 4160,
+        "height": 3120
+      },
+      "species_label": "佛手贝／笔架",
+      "taxon": "Capitulum mitella",
+      "status": "recommended",
+      "role": "dish",
+      "species_evidence": "源文件中文说明炒佛手贝，马祖北竿乡；结构化 depicts Capitulum mitella；作者Own work。",
+      "documented_place_date": "台湾马祖北竿，2024-09-12",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "整盘带壳炒佛手贝，清晰自然，无血腥；可作成菜参考。"
+      },
+      "use_boundary": "真实马祖菜肴，可标马祖实拍；不得假称其他产区菜肴或短季佐证。",
+      "attribution": "Foxy1219 / Wikimedia Commons / CC BY-SA 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "halocynthia-roretzi-aquarium",
+      "local_file": "output/verified-replacements-20261106/halocynthia-roretzi-aquarium.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Halocynthia_roretzi_Uminomori.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Halocynthia_roretzi_Uminomori.jpg",
+      "creator": "Totti",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_sha256": "e804938e7e6ae55360b654dbdef6417f8ba4dcd74ce95f66073fd7e115b6c4f9",
+      "dimensions": {
+        "width": 4032,
+        "height": 3024
+      },
+      "species_label": "海菠萝／海鞘",
+      "taxon": "Halocynthia roretzi",
+      "status": "recommended",
+      "role": "animal",
+      "species_evidence": "文件名、说明与结构化信息指定 Halocynthia roretzi；拍摄地点Sendai Umino-Mori Aquarium。",
+      "documented_place_date": "日本仙台海洋森林水族馆，2021-04-10",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "水下橙红活体形态清晰，有水族馆枝架和装饰背景；可作同种形态参考。"
+      },
+      "use_boundary": "水族馆同种参考，不能写野生生态、国内原产地或当地当季实拍。",
+      "attribution": "Totti / Wikimedia Commons / CC BY-SA 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "halocynthia-roretzi-market",
+      "local_file": "output/verified-replacements-20261106/halocynthia-roretzi-market.jpeg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hoya_for_sale_-_2023_March_11.jpeg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Hoya_for_sale_-_2023_March_11.jpeg",
+      "creator": "Nesnad",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_sha256": "8b370db40873f7e6001ad3a6f02fbefbf44ade6c76eda0809b55e23cc50b682e",
+      "dimensions": {
+        "width": 1964,
+        "height": 1851
+      },
+      "species_label": "海菠萝／海鞘",
+      "taxon": "Halocynthia roretzi",
+      "status": "recommended_with_caveat",
+      "role": "ingredient",
+      "species_evidence": "文件描述指定 Halocynthia roretzi，Japanese market；包装标签标岩手县产。",
+      "documented_place_date": "日本市场；包装标岩手县产，2023-03-11",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "整只商品外形清楚；有塑料膜和日文价签，适合作备选参考，审美优先于无图但弱于活体图。"
+      },
+      "use_boundary": "同种异地商品实拍，保留标签，不假称国内产地实拍或季节证明。",
+      "attribution": "Nesnad / Wikimedia Commons / CC BY 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "bombyx-mori-pupae-dish",
+      "local_file": "output/verified-replacements-20261106/bombyx-mori-pupae-dish.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Roasted_Bombyx_mori_silkworm_pupae.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Roasted_Bombyx_mori_silkworm_pupae.jpg",
+      "creator": "Bondarev.gal",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_sha256": "a98f98ed977a8fb38dc45c079723ef587e2ef68289c3f57e0d62b66666ba8973",
+      "dimensions": {
+        "width": 3024,
+        "height": 4032
+      },
+      "species_label": "桑蚕蛹",
+      "taxon": "Bombyx mori",
+      "status": "reserve_not_for_current_candidate",
+      "role": "dish",
+      "species_evidence": "文件描述明确Roasted Bombyx mori silkworm pupae，Chinese restaurant, Vladivostok。",
+      "documented_place_date": "俄罗斯海参崴中餐馆，2024-02-25",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "清晰完整熟蛹成菜、辣椒与香菜配菜，观感可用。"
+      },
+      "use_boundary": "仅可用于桑蚕蛹同种异地成菜参考；绝不能替代巴中春柞蚕蛹 Antheraea pernyi。",
+      "attribution": "Bondarev.gal / Wikimedia Commons / CC0 1.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "ant-eggs-pupae-dish",
+      "local_file": "output/verified-replacements-20261106/ant-eggs-pupae-dish.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Aamroli.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Aamroli.jpg",
+      "creator": "Chiring chandan",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_sha256": "6cd2d07dd58e5ec02973aabac414b409f558d7f1c209406e241c95538c49151a",
+      "dimensions": {
+        "width": 2212,
+        "height": 1473
+      },
+      "species_label": "酸蚂蚁卵蛹",
+      "taxon": "Oecophylla smaragdina",
+      "status": "rejected_visual",
+      "role": "dish",
+      "species_evidence": "文件说明明确eggs AND pupae of Oecophylla smaragdina fried with onions，Assam。",
+      "documented_place_date": "印度阿萨姆",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "实际看图为虫卵蛹极近景，夹有成蚁碎片，油光强，不符合本次清爽有食欲要求。"
+      },
+      "use_boundary": "不能称纯蚁蛋、不能当成蚁形态图、不能用于陇川地下蚁蛋或中国地方菜实拍。",
+      "attribution": "Chiring chandan / Wikimedia Commons / CC BY-SA 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "saxidomus-purpurata-whole",
+      "local_file": "output/verified-replacements-20261106/saxidomus-purpurata-whole.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saxidomus_purpurata_(2020-05-01).jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Saxidomus_purpurata_(2020-05-01).jpg",
+      "creator": "Lombroso",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_sha256": "d0b6d2b2c4f8deba6e3e890a59f47c909f3e1107ea79c648f3452a4f01203560",
+      "dimensions": {
+        "width": 5056,
+        "height": 3792
+      },
+      "species_label": "紫石房蛤／天鹅蛋",
+      "taxon": "Saxidomus purpurata (syn. Saxidomus purpuratus)",
+      "status": "rejected_visual",
+      "role": "opened_raw",
+      "species_evidence": "文件说明ウチムラサキ，结构化 depicts Saxidomus purpurata；Commons类目列出S. purpuratus别名及中文紫石房蛤。",
+      "documented_place_date": "日本，2020-05-01",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "下载后目视：打开的生蛤肉组织特写，非完整带壳商品；湿亮组织细节过强，不推荐首页。"
+      },
+      "use_boundary": "身份参考可用；不得标中国地方实拍。文件本地名whole并不表示完整闭壳，实际内容以此核验为准。",
+      "attribution": "Lombroso / Wikimedia Commons / CC BY-SA 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "saxidomus-purpurata-whole-shell",
+      "local_file": "output/verified-replacements-20261106/saxidomus-purpurata-whole-shell.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saxidomus_purpurata_(2020-05-08).jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Saxidomus_purpurata_(2020-05-08).jpg",
+      "creator": "Lombroso",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_sha256": "c0b9322f41017d682a3dfe26a249dd15c84428197fb56ac3daefd75134d99bd3",
+      "dimensions": {
+        "width": 5056,
+        "height": 3792
+      },
+      "species_label": "紫石房蛤／天鹅蛋",
+      "taxon": "Saxidomus purpurata (syn. Saxidomus purpuratus)",
+      "status": "rejected_visual",
+      "role": "opened_raw",
+      "species_evidence": "文件说明ウチムラサキ，结构化 depicts Saxidomus purpurata；作者Own work。",
+      "documented_place_date": "日本，2020-05-08",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "下载后目视：单只剖开的生蛤肉组织超近景，非完整闭壳图；不符合清爽视觉要求。"
+      },
+      "use_boundary": "身份参考可用；不得标中国地方实拍。文件本地名whole-shell不准确，不可据名当闭壳图。",
+      "attribution": "Lombroso / Wikimedia Commons / CC BY-SA 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "saxidomus-purpurata-grilled",
+      "local_file": "output/verified-replacements-20261106/saxidomus-purpurata-grilled.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%91%B3%E9%87%8C_%E5%A4%A7%E3%81%82%E3%81%95%E3%82%8A%E7%84%BC%E3%81%8D_(%E6%84%9B%E7%9F%A5%E7%9C%8C%E7%9F%A5%E5%A4%9A%E9%83%A1%E5%8D%97%E7%9F%A5%E5%A4%9A%E7%94%BA%E5%B8%AB%E5%B4%8E)_-_panoramio.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/%E5%91%B3%E9%87%8C_%E5%A4%A7%E3%81%82%E3%81%95%E3%82%8A%E7%84%BC%E3%81%8D_(%E6%84%9B%E7%9F%A5%E7%9C%8C%E7%9F%A5%E5%A4%9A%E9%83%A1%E5%8D%97%E7%9F%A5%E5%A4%9A%E7%94%BA%E5%B8%AB%E5%B4%8E)_-_panoramio.jpg",
+      "creator": "gundam2345",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_sha256": "44c101ae7bcfcfd5e6d790cd2075d71838471a84a8ee3e3d8ebc9d88ebf40b77",
+      "dimensions": {
+        "width": 3200,
+        "height": 2400
+      },
+      "species_label": "紫石房蛤／天鹅蛋",
+      "taxon": "Saxidomus purpurata (syn. Saxidomus purpuratus)",
+      "status": "recommended_with_caveat",
+      "role": "dish",
+      "species_evidence": "文件说明大あさり焼き，结构化 depicts Saxidomus purpurata；Commons原Panoramio图片许可已由可信bot于2016-10-13复核。",
+      "documented_place_date": "日本爱知县南知多町师崎味里，2009-01-25",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "烤熟半壳蛤带汁与焦香色，观感比生剖组织清爽；浅景深，近侧蛤肉对焦清楚，壳缘局部出画。可作成菜参考，非原料形态主图。"
+      },
+      "use_boundary": "日本同种异地熟食参考；不能称中国地方菜实拍、不能据成菜外形鉴种、不能作为鲜捕季或产地证据。",
+      "attribution": "gundam2345 / Wikimedia Commons (from Panoramio) / CC BY 3.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "bullacta-caurina-live1",
+      "local_file": "output/verified-replacements-20261106/bullacta-caurina-live1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bullacta_caurina_1513752.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Bullacta_caurina_1513752.jpg",
+      "creator": "Kim, Hyun-tae (pintail)",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_sha256": "2a9b8467761cd037be06a15d069545887b65edcf7fa9967372c04767f2d23bfb",
+      "dimensions": {
+        "width": 600,
+        "height": 400
+      },
+      "species_label": "黄泥螺",
+      "taxon": "Bullacta caurina (syn. Bullacta exarata)",
+      "status": "reserve_alternative",
+      "role": "animal",
+      "species_evidence": "源文件明确Bullacta caurina，韩国原生观察；iNaturalist公开来源照片许可于2026-10-01由Commons bot复核。WoRMS AphiaID533828把Bullacta exarata列为Bullacta caurina异名（https://www.marinespecies.org/aphia.php?id=533828&p=taxdetails）；不是任意泡螺替代。",
+      "documented_place_date": "韩国滩涂，2006-06-04",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "整只活体可见，第一张暗且反光、第三张表面覆沙较多，作为同种备选；600×400，保留作者水印。"
+      },
+      "use_boundary": "只能标同种韩国实拍／形态参考，不假称岱山产地照；不能用于可食安全鉴别或捕捞窗口佐证。",
+      "attribution": "Kim, Hyun-tae (pintail) / CC BY 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "bullacta-caurina-live2",
+      "local_file": "output/verified-replacements-20261106/bullacta-caurina-live2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bullacta_caurina_2756451.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Bullacta_caurina_2756451.jpg",
+      "creator": "Kim, Hyun-tae (pintail)",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_sha256": "94b7e6253c78080212cb3df797b6716c16717d7513d1074a94582d121b819c61",
+      "dimensions": {
+        "width": 600,
+        "height": 400
+      },
+      "species_label": "黄泥螺",
+      "taxon": "Bullacta caurina (syn. Bullacta exarata)",
+      "status": "recommended_with_caveat",
+      "role": "animal",
+      "species_evidence": "源文件明确Bullacta caurina，韩国原生观察；iNaturalist公开来源照片许可于2026-10-01由Commons bot复核。WoRMS AphiaID533828把Bullacta exarata列为Bullacta caurina异名（https://www.marinespecies.org/aphia.php?id=533828&p=taxdetails）；不是任意泡螺替代。",
+      "documented_place_date": "韩国滩涂，2006-06-04",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "整只活体及壳和外套膜清晰，第二张较均匀明亮，优先第二张；原图仅600×400，保留作者水印，不宜放大为大主图。"
+      },
+      "use_boundary": "只能标同种韩国实拍／形态参考，不假称岱山产地照；不能用于可食安全鉴别或捕捞窗口佐证。",
+      "attribution": "Kim, Hyun-tae (pintail) / CC BY 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "bullacta-caurina-live3",
+      "local_file": "output/verified-replacements-20261106/bullacta-caurina-live3.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bullacta_caurina_2756452.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Bullacta_caurina_2756452.jpg",
+      "creator": "Kim, Hyun-tae (pintail)",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_sha256": "bc4b5cee6421ca745e9a5a6a2b53d771fa5d29c47fea51c11285de70640905bb",
+      "dimensions": {
+        "width": 600,
+        "height": 400
+      },
+      "species_label": "黄泥螺",
+      "taxon": "Bullacta caurina (syn. Bullacta exarata)",
+      "status": "reserve_alternative",
+      "role": "animal",
+      "species_evidence": "源文件明确Bullacta caurina，韩国原生观察；iNaturalist公开来源照片许可于2026-10-01由Commons bot复核。WoRMS AphiaID533828把Bullacta exarata列为Bullacta caurina异名（https://www.marinespecies.org/aphia.php?id=533828&p=taxdetails）；不是任意泡螺替代。",
+      "documented_place_date": "韩国滩涂，2006-06-04",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "整只活体可见，第一张暗且反光、第三张表面覆沙较多，作为同种备选；600×400，保留作者水印。"
+      },
+      "use_boundary": "只能标同种韩国实拍／形态参考，不假称岱山产地照；不能用于可食安全鉴别或捕捞窗口佐证。",
+      "attribution": "Kim, Hyun-tae (pintail) / CC BY 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "pinus-massoniana-male-strobili-tso",
+      "local_file": "output/verified-replacements-20261106/pinus-massoniana-male-strobili-tso.jpg",
+      "source_page": "https://www.treesandshrubsonline.org/articles/pinus/pinus-massoniana/",
+      "original_url": "https://www.treesandshrubsonline.org/site/assets/files/6703/pinus-massoniana-1.jpg",
+      "creator": "P. de Spoelberch / Trees and Shrubs Online",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_sha256": "46a80048361fa3ee7c19e15ea95141f81fe3e1fe7784075a59a0a37462206e07",
+      "dimensions": {
+        "width": 1280,
+        "height": 960
+      },
+      "species_label": "马尾松雄球花",
+      "taxon": "Pinus massoniana",
+      "status": "recommended",
+      "role": "plant",
+      "species_evidence": "国际树木学会Trees and Shrubs Online该物种页面明确图注Male strobili developing at the base of the new shoot in Pinus massoniana；已读该站Licence页，站内容CC BY-SA4.0。",
+      "documented_place_date": "源未写拍摄地点与日期",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "1280×960，雄球花与针叶清楚，背景自然，完整新梢；身份及部位依据优于另张iNaturalist未完成鉴定候选。"
+      },
+      "use_boundary": "同种形态参考，不声称苏州谷雨采花或食用级花粉实拍；不是食品安全鉴别图。",
+      "attribution": "P. de Spoelberch / Trees and Shrubs Online / CC BY-SA 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true,
+      "additional_license_evidence": "https://www.treesandshrubsonline.org/about/licence/"
+    },
+    {
+      "id": "pinus-massoniana-pollen-cones",
+      "local_file": "output/verified-replacements-20261106/pinus-massoniana-pollen-cones.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pinus_massoniana_male_cone_(01).jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Pinus_massoniana_male_cone_(01).jpg",
+      "creator": "angryphyco",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_sha256": "73062f93ac0d1252faade76bd6c722d1b17c991ea54288d7f70a03063a4e99a1",
+      "dimensions": {
+        "width": 2048,
+        "height": 1536
+      },
+      "species_label": "马尾松雄球花候选",
+      "taxon": "Pinus massoniana (observer identification)",
+      "status": "reserve_identity_caveat",
+      "role": "plant",
+      "species_evidence": "Commons标题male cone但描述误写female cone；源iNaturalist observation347400827/public API种名Pinus massoniana且quality_grade=needs_id，非独立完成物种鉴定。",
+      "documented_place_date": "福建宁德寿宁托溪冈后仔，2026-04-04",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "目视有花粉球花，清晰2048×1536；因原文部位矛盾、观测needs_id，优先使用TSO专家物种页面图。"
+      },
+      "use_boundary": "不用于严格鉴种或地方食用花粉证明；不得把Commons标题当成无争议鉴定。",
+      "attribution": "angryphyco / CC BY 4.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "gardenia-jasminoides-flower-bud",
+      "local_file": "output/verified-replacements-20261106/gardenia-jasminoides-flower-bud.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_flower_and_bud.JPG",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Gardenia_jasminoides_flower_and_bud.JPG",
+      "creator": "Alpsdake",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_sha256": "12dfc39b932ed9716bd173f1132aae47031e171f6768af277c14b122ffb0955a",
+      "dimensions": {
+        "width": 2560,
+        "height": 2400
+      },
+      "species_label": "栀子花",
+      "taxon": "Gardenia jasminoides",
+      "status": "recommended",
+      "role": "plant",
+      "species_evidence": "源文件英文说明Flower of Common gardenia (Gardenia jasminoides), in Aichi pref., Japan；作者Own work；花型为单瓣，非重瓣园艺照替代。",
+      "documented_place_date": "日本爱知县，2013-06-08",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "2560×2400，单瓣白花及绿叶清晰自然，花瓣完整，微小蚂蚁可见；可作同种花朵形态参考。"
+      },
+      "use_boundary": "同种异地参考，非浙江金华产地或食用采花实拍，不用于食品安全鉴别。",
+      "attribution": "Alpsdake / CC BY-SA 3.0",
+      "file_page_reviewed": true,
+      "original_unmodified": true
+    },
+    {
+      "id": "iridona-iridescens-mabik-preview",
+      "local_file": "output/verified-replacements-20261106/iridona-iridescens-mabik-preview.jpg",
+      "source_page": "https://www.kogl.or.kr/recommend/recommendDivView.do?division=img&recommendIdx=165398",
+      "original_url": "https://www.kogl.or.kr/upload_recommend/thumb_V/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EB%8F%99%EB%AC%BC/%EB%8F%99%EB%AC%BC/SIRM00000025289.jpg",
+      "creator": "National Marine Biodiversity Institute of Korea (MABIK／국립해양생물자원관)",
+      "license": "KOGL Type 1 (source indication)",
+      "license_url": "https://www.kogl.or.kr/info/license.do",
+      "source_sha256": "5ebee84ebc3d1e0a5c9adc4a75434e25d346ec218f765a5e1989087f3b4bcad0",
+      "dimensions": {
+        "width": 600,
+        "height": 448
+      },
+      "species_label": "乐清湾海瓜子／彩虹明樱蛤",
+      "taxon": "Iridona iridescens (syn. Moerella iridescens)",
+      "status": "identity_preview_only",
+      "role": "shell_specimen",
+      "species_evidence": "韩国公公누리官方该作品描述完整分类至Iridona iridescens，2021年、MABIK持有，作品明确KOGL第1型；允许商用、改作并要求机构与页面署名。不是澄海寻氏肌蛤。",
+      "documented_place_date": "韩国机构标本；2021年",
+      "visual_review": {
+        "viewed_local_original": true,
+        "assessment": "公开预览600×448，白壳标本带尺无血腥；实物仅约80像素宽，留白极多。许可与身份证据明确，但不满足高质量首页原图标准。"
+      },
+      "use_boundary": "只交可用性／身份预览证据；原始7356×4910图下载按钮要求登录，本次不取、不绕过。切勿放大伪称原图或标乐清产地实拍。",
+      "attribution": "National Marine Biodiversity Institute of Korea (MABIK／국립해양생물자원관) / KOGL Type 1 (source indication)",
+      "file_page_reviewed": true,
+      "original_unmodified": true,
+      "download_kind": "public_thumbnail_not_original",
+      "advertised_original_dimensions": {
+        "width": 7356,
+        "height": 4910
+      },
+      "access_limit": "Original download requires login; no personal account used."
+    }
+  ],
+  "gaps": [
+    {
+      "candidate": "巴中春柞蚕蛹",
+      "taxon": "Antheraea pernyi",
+      "status": "missing_exact_stage_photo",
+      "reason": "本次有界Commons检索未找到身份与蛹阶段同时明确、视觉适合的可复用照片；不以Bombyx mori或其他蛾蛹替代。"
+    },
+    {
+      "candidate": "酸蚂蚁蛋／陇川地下蚁蛋",
+      "status": "no_recommended_photo",
+      "reason": "Oecophylla卵蛹照有许可但观感拒用；陇川地下蚁蛋物种尚未确认，且不是树栖黄猄蚁，不混用。"
+    },
+    {
+      "candidate": "泥蒜／沙蒜",
+      "status": "identity_pending_no_download",
+      "reason": "地方俗名可能指星虫或海葵，等待marine代理确认，不用任意海葵替代。"
+    },
+    {
+      "candidate": "岱山黄泥螺",
+      "taxon": "Bullacta exarata",
+      "status": "resolved_same_species_foreign_live_photo",
+      "reason": "已沿Commons新分类Bullacta caurina找到3张韩国活体许可图，优先live2；旧类别空不能据此判无图。"
+    },
+    {
+      "candidate": "紫石房蛤",
+      "status": "missing_good_complete_photo",
+      "reason": "两张身份明确开放照均剖开生肉近景，拒用作首页，保持缺口。"
+    },
+    {
+      "candidate": "乐清湾海瓜子",
+      "taxon": "Moerella iridescens / Iridona iridescens",
+      "status": "original_image_still_unavailable_publicly",
+      "reason": "韩国MABIK明确身份KOGL第1型图已找到；本次只取得600×448公开预览（标本本体约80px），7356×4910原图下载需登录，不符合当前公开无账号范围。"
+    },
+    {
+      "candidate": "腾冲甜棕棕包花",
+      "status": "identity_pending_no_download",
+      "reason": "尚未得到地方食用品种与学名的可靠对应，不用普通棕榈或其他棕榈花替代。"
+    }
+  ],
+  "license_note": "CC BY-SA图片部署需署名、链接许可、说明改动，并遵守衍生图相同方式共享；CC BY需署名与许可链接；CC0仍保留来源便于追溯。无需将整个网站按图片许可授权。"
+}

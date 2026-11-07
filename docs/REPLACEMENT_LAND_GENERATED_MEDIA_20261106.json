@@ -1,0 +1,87 @@
+{
+  "createdAt": "2026-11-06",
+  "generator": "built-in image_gen.imagegen",
+  "mode": "原创生成，每资产一次调用；未使用API/CLI或凭据",
+  "style": "统一暖白桌面、浅色无纹陶器、写实水彩与纸纹；明确插画质感",
+  "sourceResearchDoc": "docs/REPLACEMENT_LAND_PROTEIN_SOURCES_20261106.md",
+  "notice": "AI原创生成示意，非实拍；不用于产地、物种、批次或熟度鉴别。参考照片仅在本地研究中查看，未转载到生产资产，生成时未传入参考照片。",
+  "assets": [
+    {
+      "id": "wasp",
+      "path": "dist/assets/replacement-zhenkang-wasp-brood-generated-20261106.png",
+      "absolutePath": "/Users/kennethj.michael/.codex/.chatgpt-projects/g-p-6ab6adfb764881919bb88987dd969923/seasonal-atlas/dist/assets/replacement-zhenkang-wasp-brood-generated-20261106.png",
+      "sourceGeneratedPath": "/Users/kennethj.michael/.codex/generated_images/01a1890f-f08d-7d80-8e72-664acc0c48d2/exec-f3d2da3a-22c5-4734-aaad-c9517a74eabb.png",
+      "sha256": "de36e65f14c5af79fa3d3b9736ee58c57e0d86b849de0ba237651ad4f261ea0a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 2586151,
+      "prompt": "Use case: illustration-story. Asset type: original seasonal-food atlas editorial illustration. Make one square image in visibly hand-painted realistic watercolor: soft translucent washes, delicate warm paper grain and refined brush edges, clearly an illustration rather than a photograph. Scene: a natural warm-white tabletop, a shallow plain pale ivory ceramic bowl, gentle daylight from upper left and very soft shadows. Subject: a small modest quantity, about fourteen, of clean pale cream and milk-yellow edible wasp brood removed from their nest, the mixed immature stages commonly sold as hu feng yong in southwest China. Several plump legless larvae are naturally C-curved with subtle rounded body segments and a very small warm amber head; a few very pale early pupae are slightly straighter with small folded appendage contours closely appressed to the body. Show individual whole pieces, varied gentle orientations, clean and delicate, without filling the bowl into an overwhelming heap. The food group is generalized immature Vespidae brood, not identified to any specific wasp species and not a claim of a real Zhenkang photograph. This must NOT resemble large hard brown silkworm chrysalises, long bamboo caterpillars, rice grains, adult bees, adult wasps or winged insects. No spread legs, striped adult abdomens, adult eyes or adult wings. Composition: a complete bowl seen from an overhead three-quarter angle, occupying 65 to 75 percent of the image; at least 10 percent breathing room around all four edges. All brood remain entirely in frame and comfortably small at natural table scale; calm, tidy and appetizing instead of a magnified insect macro. Palette: warm white, ivory, creamy yellow and a few subdued pale amber details. No nest, no honeycomb, no insects walking outside bowl, no garnishes, no text, no labels, no watermark, no decorative patterns, no people, no tools, no blood, no discarded body parts, no black background.",
+      "identityBoundary": "胡蜂科未成熟阶段（幼虫及早期蛹）的通用示意，非蜜蜂成蜂、非桑蚕蛹，不承诺某个镇康蜂种。",
+      "caption": "AI生成蜂蛹示意 · 非镇康产地实拍，不用于物种或熟度鉴别。",
+      "references": [
+        {
+          "url": "https://society.yunnan.cn/system/2026/10/26/034181968.shtml",
+          "imageUrl": "https://society.yunnan.cn/pic/003/082/665/00308266557_dfab150a.png",
+          "localResearchFile": "/Users/kennethj.michael/.agent-reach/captures/land-protein-20261106/wasp-primary.png",
+          "checked": "原报道fresh图实际看过，为白色封盖胡蜂巢；只用于确认原料来源与蜂巢，不能据此辨脱巢幼虫。未转载。"
+        },
+        {
+          "url": "https://www.hkcd.com/content_202177_6_46.html",
+          "imageUrl": "https://img.hkcd.com/userfiles/20260903/1788425218184620.jpg",
+          "localResearchFile": "/Users/kennethj.michael/.agent-reach/captures/land-protein-20261106/wasp-yanshan-2.jpg",
+          "checked": "已实际看清砚山原报道菜台上剥出的乳白/乳黄幼虫与不同发育阶段蛹；研究共通食材阶段，不把砚山照片或具体蜂种当镇康身份。未转载。"
+        },
+        {
+          "url": "https://www.hkcd.com/content_202177_6_46.html",
+          "imageUrl": "https://img.hkcd.com/userfiles/20260903/1788425206316203.jpg",
+          "localResearchFile": "/Users/kennethj.michael/.agent-reach/captures/land-protein-20261106/wasp-yanshan-1.jpg",
+          "checked": "已看清开放巢房中的乳白分节幼虫与封盖状态；无照片像素或构图传入生成工具。"
+        }
+      ],
+      "inspection": {
+        "tool": "view_image",
+        "result": "通过",
+        "details": "最终文件已以原尺寸看图：淡乳白/乳黄弯曲幼虫和少量浅色早蛹，整洁浅碗，主体完整；没有深褐桑蛹、蜂翅成蜂、血水、人物或文字。"
+      },
+      "calls": 1
+    },
+    {
+      "id": "dobsonfly",
+      "path": "dist/assets/replacement-lijiang-winter-dobsonfly-generated-20261106.png",
+      "absolutePath": "/Users/kennethj.michael/.codex/.chatgpt-projects/g-p-6ab6adfb764881919bb88987dd969923/seasonal-atlas/dist/assets/replacement-lijiang-winter-dobsonfly-generated-20261106.png",
+      "sourceGeneratedPath": "/Users/kennethj.michael/.codex/generated_images/01a1890f-f08d-7d80-8e72-664acc0c48d2/exec-4af7361c-8bc1-48f2-887e-fd6c45833552.png",
+      "sha256": "a5ef5f5badcbb399e6d58ceaef423cbdb80246b42e01cad30261b925ea1de98d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "bytes": 2775485,
+      "prompt": "Use case: illustration-story. Asset type: original ingredient/dish editorial illustration for a Chinese seasonal-food atlas. Create one square image, visibly hand-painted realistic watercolor with delicate paper grain and soft brush edges, clearly an illustration rather than a photograph. Scene: a natural warm-white tabletop, a shallow plain pale ivory ceramic plate, soft daylight from upper left, calm appetizing editorial mood. Subject: five small whole cooked aquatic dobsonfly-family larvae, the local Chinese food group called pa sha chong, presented neatly and separately on the plate with very sparse finely sliced green scallion. Use family-level generalized Corydalidae larval anatomy, do not imply identification to a particular species. Accurate recognizable form: flattened elongated bodies, about ten evident body sections, a small dark head with discreet short mandibles, three pairs of small articulated true legs clustered on the front thorax, paired slender lateral abdominal filaments along the middle and rear body, tapering rear with two short terminal appendages. These are NOT terrestrial centipedes: do not draw many identical walking legs along the full length. They are NOT bamboo worms, silkworm pupae, marine sandworms, shrimp, caterpillars, or adult winged insects. Cooked bodies are muted olive-brown and warm chestnut, lightly crisp with restrained sheen. Keep complete heads, bodies, lateral filaments, and tails visible, gentle natural curves, modest head size, no exaggerated fangs, no snarling or frightening monster anatomy. Composition: overhead three-quarter view with the complete plate and food group occupying about 70 percent of image, at least 10 percent clean breathing room on all four sides. No close-up macro scale, no crop, no dramatic dark shadows, no blood, no people, no tools, no discarded limbs, no text, no labels, no watermark, no decorative plate pattern.",
+      "identityBoundary": "齿蛉科多种幼虫地方市场食材的通用熟制示意，不承诺东方巨齿蛉种级鉴定。",
+      "caption": "AI生成爬沙虫熟制示意 · 非丽江产地实拍，不用于物种或熟度鉴别。",
+      "references": [
+        {
+          "url": "https://www.ctdsb.net/c1664_202409/2254067.html",
+          "imageUrl": "http://ctdsb.clouddiffuse.xyz/b9bfaaa8-e4ab-4a90-adfe-86bb81941f7d",
+          "localResearchFile": "/Users/kennethj.michael/.agent-reach/captures/land-protein-20261106/dobsonfly-primary-dish.png",
+          "checked": "云南政协报原文爬沙虫菜图已实际看清：多节扁长深褐幼虫、侧突、油炸食用状态。仅研究结构与食用形态，未复制构图和装饰。"
+        },
+        {
+          "url": "https://www.thepaper.cn/newsDetail_forward_11228305",
+          "imageUrl": "https://imagepphcloud.thepaper.cn/pph/image/114/149/652.png",
+          "localResearchFile": "/Users/kennethj.michael/.agent-reach/captures/land-protein-20261106/dobsonfly-scientific.png",
+          "checked": "曹成全拍摄东方巨齿蛉幼虫背腹面/成虫参考已实际看清：前胸三对足、腹侧丝状附属物与尾部结构。只作齿蛉科一般形态研究，不宣称丽江批次为同种。"
+        }
+      ],
+      "inspection": {
+        "tool": "view_image",
+        "result": "通过",
+        "details": "最终文件已看图：五条完整熟制幼虫，胸足集中于前段，腹侧为未分节丝状结构，尾端成对附属物；头颚克制；没有海沙虫圆筒、竹虫或沿全身重复的蜈蚣步足。整体水彩、暖白桌面与完整浅盘，无血水、人物或文字。"
+      },
+      "calls": 1
+    }
+  ],
+  "scope": "仅新增本manifest及指定两张dist/assets图片；未改JS、测试、发布状态。"
+}
