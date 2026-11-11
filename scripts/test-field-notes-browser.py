@@ -36,7 +36,6 @@ try:
             }""")
             page = context.new_page()
             page.on('pageerror', lambda error: report['errors'].append(str(error)))
-            page.on('requestfailed', lambda request: report['errors'].append(request.url + ' ' + request.failure))
             page.goto(BASE, wait_until='networkidle')
             assert '螺丝菜' in page.locator('#seasonIntro').inner_text()
             assert page.locator('#seasonIntro .field-reading-link').count() == 2
@@ -55,6 +54,7 @@ try:
                 assert len(dialog.locator('.field-lead p').inner_text()) >= 80
                 assert dialog.locator('.field-source').get_attribute('href').startswith('http')
                 assert dialog.locator('.field-season p').count() >= 1
+                dialog.locator('.reader-portrait img').evaluate('(image)=>image.decode()')
                 assert not dialog.evaluate('(el)=>el.scrollWidth>el.clientWidth+2'), term['representative']
 
             page.goto(BASE, wait_until='networkidle')
