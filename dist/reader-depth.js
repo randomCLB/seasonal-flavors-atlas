@@ -86,3 +86,163 @@
  };
  root.ReaderDepth={version:'2026.10.24-depth.1',ids:Object.keys(detail),restore};
 })(typeof window==='object'?window:globalThis);
+
+/* Place-specific reading notes. These explain existing evidence without changing season windows. */
+(function(root){
+ 'use strict';
+ const version='2026.11.10-depth.2';
+ const stories={
+  'yanshi-fresh-yintiao':{
+   term:0,lead:'洛阳偃师的冬菜里，银条是从泥土中挖出来的一把细白嫩茎。山化一带成片种植，霜后开始采挖，冬天还能遇到新鲜脆嫩的货。洗净折成短段，焯熟后拌姜醋，先尝到清脆，再有淡淡的甜。',
+   identity:'银条吃地下嫩茎，细长而带分叉。',season:'偃师霜后开始采挖，冬季可留意新挖鲜货。十一月已有采挖记录，腌渍品另有较长的供应期。',
+   place:'偃师山化及伊洛河一带有成片银条种植。',kitchen:'折成相近长度，焯熟后充分沥水再拌姜醋，避免盘底积水冲淡调味。',imageCue:'细白地下茎带着小分叉，长短和粗细并不整齐。'
+  },
+  'sanmen-winter-blood-cockle':{
+   term:1,lead:'三门沿海的血蚶，认名字时也可以认一认壳。壳面一道道放射肋像瓦楞，里面才是饱满的贝肉。浙江地方饮食记述把小寒至大寒视作较肥满的时段，三门则有单独的地理标志产区。买一小份来源清楚的鲜货，洗净后充分做熟，才把这一口冬鲜带上桌。',
+   identity:'血蚶也叫泥蚶，壳面有放射状瓦楞。',season:'浙江地方饮食记述偏重小寒至大寒的肥满状态。三门的具体采收与肥度，还要看当年养殖和到货。',
+   place:'三门血蚶有地理标志保护产区，采购时核对三门来源与具体品名。',kitchen:'刷净外壳，按食用产品的熟制要求彻底加热。开壳后仍应确认贝肉熟透。',imageCue:'开壳贝肉与壳面的放射状纹路都作形态示意。',sourceIndex:1
+  },
+  'tengchong-late-winter-palm-bud':{
+   term:2,lead:'腾冲的棕包米长在树上。冬天，花穗藏在棕皮里，到了初春，当地人取的是还没露头的嫩穗。剥开棕皮，里面是密密的金黄花粒。腾冲有一道棕包腌菜汤，把花穗切碎，和干腌菜一起煮，酸里有一点清苦，咽下去又回甜。',
+   identity:'棕包米吃当地食用甜棕尚未露头的嫩花穗。',season:'冬季孕育、初春取食，留意的是尚未露头开放的花穗。实际采收跟着花苞发育走。',
+   place:'腾冲当地食用甜棕产区，鲜花穗进入当地春季菜市和家常汤菜。',kitchen:'由供食商户指导去皮、去涩后，切碎充分煮熟。腌菜先少量放，尝过汤的咸度再补盐。',imageCue:'图中细粒密集的金黄花穗与外层棕皮作生成示意。'
+  },
+  'wuding-jinquehua':{
+   term:3,lead:'武定长青村的金雀花一开，枝头像落着一群黄色小鸟。三月的集中采摘，把花变成了当地的一盘春菜。供食鲜花常连着少量嫩叶出售，洗净择好后与鸡蛋同炒，蛋的柔软接住细小花瓣，也留下一点微苦和清香。',
+   identity:'金雀花取供食用的黄色小花，花形像展翅的小雀。',season:'武定长青村有三月集中采摘记录，花期和冷链到货时间需要分别询问。',
+   place:'武定县狮山镇乌龙村委会长青村有金雀花成片种植。',kitchen:'先择去粗硬枝梗，按供食鲜花的处理方法做熟。鸡蛋刚凝固后合炒，保留花朵柔软的口感。',imageCue:'黄色花瓣向两侧张开，花与嫩叶同在枝上。'
+  },
+  'yongsheng-fresh-kapok':{
+   term:4,lead:'永胜金沙江河谷的木棉先把高枝开红，随后才有餐桌上的攀枝花。入菜取花蕊，处理后是一束束细长的食材。涛源、片角一带有春季鲜花入菜的记述，焯泡处理妥当后，可凉拌、炖汤，也能与豆豉蒜苗同炒，吃那一口滑脆。',
+   identity:'鲜攀枝花入菜取经过处理的木棉花蕊。',season:'永胜涛源、片角等金沙江河谷有三月鲜花入菜记录。各地木棉花期各有早晚。',
+   place:'永胜涛源、片角一带的金沙江河谷。',kitchen:'遵循原料要求焯熟、浸泡和漂洗后充分沥水，再与豆豉蒜苗合炒。',imageCue:'红色花瓣中央聚着细长花蕊，入菜部位还需经过处理。'
+  },
+  'fengqing-xinhua-walnut-flowers':{
+   term:5,lead:'在凤庆新华乡，核桃树先垂下雄花穗，果仁还要继续等。这一串春菜的鲜食时段约从三月中旬到四月中旬，过季还能晒干保存。当地把花穗焯泡去苦后炒腊肉，腊肉的咸香裹住花茎，咬下去仍有一点脆韧。',
+   identity:'鲜核桃花吃核桃树细长下垂的雄花穗。',season:'凤庆新华乡的鲜花食用期约三月中旬至四月中旬，实际花期随天气变化。干花另行泡发处理。',
+   place:'凤庆县新华乡有鲜核桃花采食及炒腊肉的地方记述。',kitchen:'按原食谱焯煮、浸泡并中途换水，去苦后沥干再炒。腊肉先煸熟，尝过咸度再补盐。',imageCue:'枝头下垂的黄绿色细长花穗，是核桃的雄花序。'
+  },
+  'jiangmen-muzhou-qingming-huangsha-clam':{
+   term:6,lead:'去新会睦洲找黄沙蚬，清明前后的肥度比一个固定上市日更值得问。西江边的石板沙有这味小河鲜，鲜货上市能从春节后接到五一前。当地赶在春天尝，家里可以先从一锅简单的熟蚬汤认识它，让贝肉和汤的鲜味留得清楚。',
+   identity:'黄沙蚬是连壳销售的小型淡水贝，睦洲石板沙是所列产地。',season:'江门地方资料将清明前后列为较肥美的时段。鲜货集中上市的跨度可从春节后延续到五一前。',
+   place:'江门新会睦洲石板沙，位于西江水域。',kitchen:'依原料要求吐沙、刷洗并彻底煮熟。先尝蚬汤，再决定加多少盐。',imageCue:'黄绿色蚬壳表面可以看到一圈圈生长线。'
+  },
+  'longchuan-spring-ant-brood':{
+   term:7,lead:'陇川的这盘蚂蚁蛋，线索藏在地下蔗地的蚁巢里。当地四月有春季鲜收，采到后还要挑净杂质，再进入蒸蛋等熟食。名称虽小，来处却很具体，询问陇川当地供食种类和采收日，比只买一袋写着“蚂蚁蛋”的商品更能找到这一季。',
+   identity:'陇川这味蚂蚁蛋来自当地地下蚁巢的食用品类。',season:'陇川地方报道记录四月掏取食用蚂蚁蛋，采购时询问春批采收日期。',
+   place:'德宏陇川陇把一带的地下蔗地蚁巢，是报道所述鲜收场景。',kitchen:'选择已挑净、来源清楚的供食原料，依商户指导处理后加入蛋液，蒸到中心完全凝固、热透。',imageCue:'浅色细粒在熟食汤底中作生成示意，原料身份另看供货说明。'
+  },
+  'daishan-spring-yellow-mudsnail':{
+   term:8,lead:'岱山人记黄泥螺的春汛，用的是谷雨、立夏和芒种。谷雨过后开始见，立夏采集最旺，到了芒种这段春季采集期就收尾。泥螺的软体常露在薄壳外，鲜货带着黏液和泥沙，买回后清理妥当、充分烹熟，才能尝这口滩涂鲜味。',
+   identity:'黄泥螺壳薄，柔软身体常有一部分露在壳外。',season:'岱山地方记录的春季采集周期为谷雨后开始、立夏旺盛、芒种前后收尾。腌渍成品另有销售时段。',
+   place:'舟山岱山沿岸滩涂，地方非遗记录保留了春季采螺的节气节点。',kitchen:'按鲜货处理要求洗净黏液和泥沙，再彻底煮熟。酒和盐的腌渍工序另属加工方法。',imageCue:'柔软身体伸出薄壳，宽大的足部贴着地面。'
+  },
+  'shanzhou-green-wheat-nianzhuan':{
+   term:9,lead:'陕州人做碾转，赶在麦粒已经饱满、麦子还没全黄的时候。青麦仁经处理后推过石磨，出来的是青灰色短碎条。新麦这段状态就在小满前后，热锅和鸡蛋同炒，谷物香起来，短条还留一点咬劲。问一句麦仁何时采收，也能分清新麦鲜做与冷冻原料现磨。',
+   identity:'碾转是青麦仁经处理、石磨碾出的短碎条。',season:'小满前后约五月中下旬，可留意灌浆饱满的当年青麦制作批次。冷冻麦仁也可另时现磨。',
+   place:'三门峡陕州观音堂一带保留青麦碾转的加工吃法。',kitchen:'松散的熟制碾转下热锅炒匀，鸡蛋先炒成块再合入。水少量补，保持短条松散。',imageCue:'成品是青灰色的短碎条，盛在摊上的容器中。'
+  },
+  'bazhong-spring-oak-silkworm-pupae':{
+   term:10,lead:'巴中的春柞蚕蛹，要到六月中旬才迎来这一批鲜收。柞蚕取食柞树叶，春、秋批次分开生产，饱满的纺锤形蛹又是其中一个食用阶段。赶春批时先问采收和处理日期，确认是食用鲜蛹，再用简单的熟制方法尝它的肉质。',
+   identity:'春柞蚕蛹是巴中柞蚕的春批食用蛹，外形呈纺锤状。',season:'巴中春批柞蚕蛹在六月中旬鲜收，另有秋批。采购时说明春批鲜蛹，并核对储藏状态。',
+   place:'四川巴中柞蚕生产区，登记规范分别记载春、秋生产批次。',kitchen:'依供食产品指导处理并充分煮透，再做少油煎制。切开确认内部完全熟透。',imageCue:'饱满纺锤形和一圈圈腹节作生成形态示意。'
+  },
+  'dalian-zihaitan':{
+   term:11,lead:'长海和旅顺的紫海胆，厚厚的棘壳里藏着食用的海胆黄。鲜货讲究采收与冷链，剥出的黄要成瓣，带海水气息。家里做一碗蒸蛋，等蛋液将要凝固再放上海胆黄，继续蒸到中心熟透，柔软蛋羹就托住了这口海鲜。',
+   identity:'紫海胆吃壳内的海胆黄，完整个体外面覆着密棘。',season:'大连市场资料记主要采收期为五月至九月。采购时核对物种、采捕或养殖来源及采收日期。',
+   place:'辽宁大连，所列代表产区包括长海和旅顺。',kitchen:'蛋液先蒸至约八成凝固，再放海胆黄继续蒸熟。保持小火，避免蛋羹起孔、海胆黄散碎出水。',imageCue:'暗紫色球状个体覆着密棘，食用部位在壳内。'
+  },
+  'gaoqing-taisun-jinchan':{
+   term:12,lead:'高青台孙村一带的林地，盛夏等来的是蝉若虫出土。2024年的当地记录显示，六月底至七月中下旬集中上市，七月初出现产量高峰。供食金蝉赶在羽化前采收，温湿度会改变进度，买鲜货时问出土日期，才知道这一份离林地有多近。',
+   identity:'供食金蝉取蝉羽化前的若虫阶段。',season:'2024年高青台孙村及邻村的集中上市期为六月底至七月中下旬，七月初产量较高。鲜收进度随温湿度变化。',
+   place:'山东高青县台孙村及邻村的林地养殖区。',kitchen:'依原料指导清洗并充分熟制后再煎香。不要仅凭外皮上色判断内部已经熟透。',imageCue:'蝉类形态参考可见分节腹部和前足，食用货另核对羽化前状态。'
+  },
+  'chenghai-baoke':{
+   term:13,lead:'澄海盐鸿把细小的薄壳一颗颗分出贝肉，做成一盘薄壳米。七八月是当地惦记的肥美时候，摊上卖出的形态已经省去了剥壳这一步。下锅时先沥干水分，贝肉炒熟后让金不换的香气跟上来，细小一粒也有鲜甜和柔嫩的咬感。',
+   identity:'薄壳米是盐鸿剥出的细小贝肉，原料为当地薄壳。',season:'潮汕地方介绍偏重七、八月的肥美状态，鲜剥与盐渍加工品分别看处理日期。',
+   place:'汕头澄海盐鸿以“打薄壳米”的地方加工吃法见长。',kitchen:'鲜剥贝肉沥干再下锅，金不换稍后加入，充分炒熟即盛出，避免反复久焖。',imageCue:'照片展示薄壳的棕褐色长壳，薄壳米本身是剥出的肉。'
+  },
+  'guanyun-summer-doudan':{
+   term:14,lead:'灌云豆丹的鲜收，跟着豆田里幼虫的生长阶段走。豆天蛾幼虫取食豆叶，养到五龄才收取食用组织。保护要求列了春、夏大豆批次的放养安排，约三十天的生长把常规鲜收接到七八月。到杨集一带问鲜豆丹，也要问清是整虫还是已经取好的食用组织。',
+   identity:'豆丹是豆天蛾幼虫，入菜多取处理后的食用组织。',season:'依据放养月份及约三十天达到五龄的规范推算，常规鲜收约在七至八月。实际采收跟随放养时间和天气。',
+   place:'连云港灌云杨集镇孙跳村是所列核心生产基地。',kitchen:'选择正规商户处理的食用组织，依原食谱充分烧熟，再与青椒合炒。购买时核对净料重量。',imageCue:'绿色幼虫在叶上，体节与尾端短角作形态参考。'
+  },
+  'ganbajun':{
+   term:15,lead:'云南松林里的干巴菌，厚厚的菌丛一层层分叉，松针也容易夹在其中。雨季有了鲜菌，清理这一步就占了做饭的耐心。择净、撕小后充分炒熟，再和青椒米饭同炒，近似腌肉干的浓香留在饭里，一小份就能把整碗饭带香。',
+   identity:'干巴菌呈灰褐色分叉菌丛，处理时要挑净松针碎屑。',season:'云南雨季有鲜菌，原产区资料以六月至十月为参考，实际出菌跟着降雨和山林条件变化。',
+   place:'云南松林产区，昌宁地方介绍保留了干巴菌炒饭的吃法。',kitchen:'选来源明确的食用菌，逐层挑净松针后撕小，充分炒熟再拌饭。菌丛缝隙也要检查。',imageCue:'菌丛灰褐、层层分叉，生在松针覆盖的地面。',sourceIndex:1
+  },
+  'huoshan-yanghe':{
+   term:16,lead:'霍山佛子岭的阳荷嫩苞，贴近地面冒出，紫红苞片把白嫩部分抱在里面。高岭村有九月鲜采的地方记录，嫩苞切开后带温和的姜香。鲜货可切片炒肉，经过腌渍的成品又有另一段供应期，找这一口清脆时先问清商品状态。',
+   identity:'阳荷嫩苞是姜科阳荷贴地长出的花苞。',season:'阳荷在夏秋间采食，霍山佛子岭高岭村有九月鲜采记录。腌制成品的销售期较长。',
+   place:'安徽霍山佛子岭镇高岭村有阳荷种植和鲜采记录。',kitchen:'剥去粗老苞片，切成厚薄一致的片。肉片炒熟后加入嫩苞，充分炒熟，保持脆嫩。',imageCue:'紫红尖苞连着白色嫩基，外层苞片层层相抱。'
+  },
+  'jitoumi':{
+   term:17,lead:'苏州人说的鸡头米，是从芡实果里手剥出的鲜粒。入秋采收时，剥壳的人把大果变成一颗颗白色小珠，留下的是鲜粒特有的滑、弹和微糯。做一小碗桂花糖水，等鲜粒煮熟再调甜，桂花少放，舌头就能尝清那一点轻轻的咬劲。',
+   identity:'鸡头米是芡实果中剥出的鲜粒。',season:'苏州产区约八月至十月初采收，鲜剥日期和保存方式值得询问。干芡实需另行泡发炖煮。',
+   place:'苏州水乡产区，地方资料记录采收、剥米及桂花糖水吃法。',kitchen:'鲜粒煮熟后再调糖，桂花只放少量。干芡实按干货要求另行浸泡、炖煮。',imageCue:'照片是带刺的芡实果与剖面，鲜粒要从果中剥出。'
+  },
+  'ximeng-bamboo-worm':{
+   term:18,lead:'西盟的竹虫季，藏在一节一节的竹腔里。新华社的地方记录把九月中旬至十月底列作鲜收时段，当地拉祜族、佤族和傣族都有熟食吃法。处理后充分炸熟，外层酥香，内里仍柔软，想认识这一味可以先从正规供食商户的一小份熟食开始。',
+   identity:'食用竹虫取竹节中生长的幼虫，采购时确认当地供食品类。',season:'西盟地方记录的鲜收时段为九月中旬至十月底。冷冻、干制品另有销售期。',
+   place:'普洱西盟当地竹林与食用竹虫鲜收场景。',kitchen:'先按原料指导充分熟制，再煎至外层干香。外表酥黄时仍需确认中心熟透。',imageCue:'剖开的竹腔里可见浅色细长幼虫。'
+  },
+  'zhenkang-late-autumn-wasp-brood':{
+   term:19,lead:'镇康竹瓦村的胡蜂生产，从春天培育蜂王开始，到深秋收取蜂蛹。林下挂养把这一季的鲜收和蜂群的生长连在一起。市场上一份“蜂蛹”可能含幼虫与蛹，订购时看清具体状态、采收日和处理方法，再交给充分熟制的一锅饭菜。',
+   identity:'鲜胡蜂蛹商品可含幼虫与蛹，购买时看清组成。',season:'竹瓦村按春育蜂王、深秋采收的周期生产，实际进度受蜂群与天气影响。',
+   place:'临沧镇康竹瓦村有人工繁育、林下挂养及深秋收蛹的现场记录。',kitchen:'选已清理、供食用的原料，依商户指导充分熟制，外层煎香后检查内部状态。',imageCue:'浅色分节虫体作生成示意，实际幼虫与蛹比例看商品。'
+  },
+  'helan-luosicai':{
+   term:20,lead:'贺兰的螺丝菜收在泥土下面，挖出来一颗颗乳白，环节盘成小螺旋。十一月的地方采收记录里，金贵镇、常信乡把鲜货直接卖出田间。它也叫草石蚕，摊上遇见整颗带泥的鲜货，洗净每一道凹槽，煮熟后就能尝到清脆。',
+   identity:'螺丝菜也叫草石蚕，吃螺旋状的地下块茎。',season:'宁夏2023年十一月的地方记录有贺兰螺丝菜采收和鲜货销售。留意鲜货时询问当年的采挖日期。',
+   place:'宁夏银川贺兰县金贵镇、常信乡有螺丝菜种植和鲜货采收。',kitchen:'用软刷逐节刷净泥土，充分煮熟后沥干清炒。酱渍成品先核对咸度与处理说明。',imageCue:'乳白小块茎有螺旋环节，凹槽间仍可看到泥土。'
+  },
+  'xiaolan-shiju-huaban':{
+   term:21,lead:'小榄把食用菊开成一桌宴席，花瓣也能进普通人家的一锅汤。当地十一月下旬的赏味介绍，惦记的是花瓣饱满、清甜和香气。选明确供食用的鲜花瓣，清鸡汤煮好后再加入，短时加热至熟，汤里就多了一层轻轻的花香。',
+   identity:'鲜食菊花瓣取供食用栽培菊的鲜花瓣。',season:'小榄2025年的地方赏味报道偏重十一月、尤其下旬。改良食用菊也有全年供应批次，买时仍问鲜度。',
+   place:'广东中山小榄，地方鲜花生产与菊花宴相互连接。',kitchen:'先把鸡肉与汤煮熟，再加洗净的食用鲜花瓣，短时加热到熟，保留柔嫩。',imageCue:'饱满黄色花瓣层叠，照片呈现整朵食用菊形态。'
+  },
+  'lijiang-winter-dobsonfly-larvae':{
+   term:22,lead:'丽江一带叫爬沙虫的食材，身上有分节，两侧伸着细长附突，身份是齿蛉科的水生幼虫。华坪、永胜有冬季街市销售的地方记述。真正找这一味时，要让正规供食商户说清来处与处理方法，清理后充分做熟，再认识这份山水间的地方吃食。',
+   identity:'爬沙虫是齿蛉科水生幼虫的地方商品名。',season:'华坪、永胜有“十冬腊月”街市销售的地方记述，冬季到货以具体供食商户为线索。',
+   place:'丽江华坪、永胜冬季街市的地方饮食记录。',kitchen:'使用已经清理、来源明确的供食原料，按产品指导充分熟制，再煎香，确认中心熟透。',imageCue:'分节身体两侧的细长附突作生成形态示意。'
+  },
+  'donghai-dongzhi-cuttlefish':{
+   term:23,lead:'冬至前后，浙江沿海菜市的墨鱼进入冬鲜食单。当地市场记述把十二月至春节列作产量较高的一段，鲜货、冷冻品和泡发干货在摊上各有样子。想吃一盘姜葱炒墨鱼，先问清捕捞或销售地、鲜冻状态，切片沥干后炒熟即出锅。',
+   identity:'墨鱼也叫乌贼，采购时看清鲜品、冻品与泡发干货的状态。',season:'浙江沿海市场的冬季记录以十二月至春节为墨鱼产量较高的阶段，实际到货要看当天供应。',
+   place:'这一段冬鲜线索来自浙江沿海市场，同种商品在其他海区另有产期。',kitchen:'清理后切薄片并沥干，姜葱炒香再下锅，充分熟透后盛出，避免反复久焖。',imageCue:'水中个体呈宽椭圆形，身体边缘有连续的鳍。',sourceIndex:1
+  }
+ };
+ const rawById=new Map((root.FOODS||[]).map(food=>[food.id,food]));
+ const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ function prose(value){
+  if(typeof value!=='string')return '';
+  return value.replace(/[；;]/g,'。').split(/(?<=。)/).filter(s=>s.trim()&&!/^(?:地图|坐标|本条|本轮|本页|本站|网站按|页面|此处标为|这里(?:收|选|将|只|仍|以|写|呈现|推荐)|这不表示|这不是)/.test(s.trim())&&!/不代表.*(?:库存|现货|已确认)|未(?:提供|描述|记录)|不补写试吃|仅作.*线索|地方采收记录把这味|家庭建议|家常建议|简易建议|本站|便于家里尝鲜|这里是资料整理|官方资料描述|第一次试 · 2 人份/.test(s)).join('').trim();
+ }
+ function source(food,place){
+  if(place){const match=(root.FOODS||[]).find(f=>(root.IngredientIdentity?root.IngredientIdentity.key(f)===root.IngredientIdentity.key(food):f.id===food.id)&&(f.placeSeasons||[]).some(p=>p.name===place.name&&p.source===place.source));if(match)return match;}
+  return rawById.get(food.sourceId)||rawById.get(food.id)||food;
+ }
+ function entry(food,place){
+  const raw=source(food,place),note=stories[raw.id]||{},reading=root.ReaderCopy?root.ReaderCopy.view({...raw,...root.EDITORIAL_DETAILS?.[raw.id]}):raw;
+  const originalIntro=prose(raw.intro),intro=(originalIntro.length>=60?originalIntro:prose(reading.intro)||originalIntro)||prose(raw.context)||reading.short||'';
+  const timing=prose(place?.seasonNote||raw.season).split('。')[0];
+  const lead=note.lead||intro+(timing&&!intro.includes(timing)?' '+timing+'。':'');
+  return {id:raw.id,lead,identity:note.identity||prose(reading.intro||raw.intro||reading.short).split('。')[0]+'。',season:note.season||prose(place?.seasonNote)||prose(raw.season)||reading.seasonLabel||'',place:note.place||prose(raw.place),kitchen:note.kitchen||prose(reading.kitchen)||prose(raw.kitchen),texture:prose(reading.texture),aroma:prose(reading.aroma),imageCue:note.imageCue||'',sources:note.sources||raw.sources||[],sourceIndex:note.sourceIndex||0};
+ }
+ function cite(food,place){const note=entry(food,place),link=note.sources.find(([,url])=>url===place?.source)||note.sources[note.sourceIndex]||note.sources[0];return link?`<a class="field-source" href="${esc(link[1])}" target="_blank" rel="noopener noreferrer">${esc(link[0])} ↗</a>`:'';}
+ function leadHtml(food,place){const note=entry(food,place);return note.lead?`<div class="field-lead"><p>${esc(note.lead)}</p>${cite(food,place)}</div>`:'';}
+ function seasonHtml(food,place){const note=entry(food,place),parts=[note.season,note.place].filter(Boolean);return parts.length?`<div class="field-season">${parts.map(p=>`<p>${esc(p)}</p>`).join('')}</div>`:'';}
+ function mapHtml(food,place){const note=entry(food,place);return `<small class="field-map">${esc([note.place,note.season].filter(Boolean).join(' '))}</small>`;}
+ function sense(food,other){const n=entry(food),o=other?entry(other):{};return [n.texture,n.aroma].find(s=>s&&s!==o.texture&&s!==o.aroma)||'';}
+ function caption(food,media){const note=entry(food);if(note.imageCue&&media.src===root.FoodMedia?.ingredient(food).src)return [note.imageCue,media.note].filter(Boolean).join(' · ');return ['dish','fruit-cut'].includes(media.kind||media.scene)&&media.alt?[media.alt,media.note].filter(Boolean).join(' · '):media.note||'';}
+ function nextWindow(food,now=Date.now()){
+  const date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'numeric'}).formatToParts(new Date(now)),year=Number(date.find(p=>p.type==='year').value),month=Number(date.find(p=>p.type==='month').value);
+  const places=(root.IngredientIdentity?.members(food)||[source(food)]).filter(f=>!root.ReaderAccess||root.ReaderAccess.visible(f)).flatMap(f=>(f.placeSeasons||[]).filter(p=>p.source).map(p=>({food:f,place:p,months:(p.months||[]).filter(m=>Number.isInteger(m)&&m>=1&&m<=12)})));
+  const choices=places.flatMap(item=>item.months.map(m=>({...item,month:m,distance:(m-month+12)%12}))).sort((a,b)=>a.distance-b.distance);
+  if(!choices.length)return '';
+  const first=choices[0],nextYear=year+(first.month<month?1:0),years=first.food.sourceYears||[],period=first.place.seasonNote||entry(first.food,first.place).season;
+  return `${nextYear}年${first.month}月可留意 · ${first.place.name}。${period}${years.length?'（'+years.join('、')+'年产地记录）':''}`;
+ }
+ root.FieldNotes={version,stories,source,entry,cite,leadHtml,seasonHtml,mapHtml,sense,caption,nextWindow,esc};
+})(typeof window==='object'?window:globalThis);

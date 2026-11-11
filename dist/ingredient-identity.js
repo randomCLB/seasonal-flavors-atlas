@@ -122,7 +122,7 @@
    return {...items[0],food:present(items[0].food),identityPlaces:[...locations.values()],place:{...items[0].place,name:uniq(items.map(x=>x.place.name)).join('、'),months:uniq(items.flatMap(x=>x.place.months||[])).sort((a,b)=>a-b)}};
   });
  }
- function mapPlacesHtml(entry,formatMonths){return (entry.identityPlaces||[entry.place]).map(p=>`<small class="identity-map-place">${esc(p.name)} · ${esc(formatMonths(p.months||[]))}${p.flavorNote?' · '+esc(p.flavorNote):''}</small>`).join('');}
+ function mapPlacesHtml(entry,formatMonths){return (entry.identityPlaces||[entry.place]).slice().sort((a,b)=>Math.min(...a.months)-Math.min(...b.months)).map(p=>`<small class="identity-map-place">${esc(p.name)} · ${esc(formatMonths(p.months||[]))}${p.flavorNote?' · '+esc(p.flavorNote):''}</small>${root.FieldNotes?root.FieldNotes.mapHtml(entry.food,p):''}`).join('');}
  function migrate(saved){
   const result={};for(const [id,value]of Object.entries(saved||{})){const canonical=key(id),prior=result[canonical];if(!prior||value.updatedAt>prior.updatedAt||value.updatedAt===prior.updatedAt&&value.state==='tried')result[canonical]={...value};}return result;
  }

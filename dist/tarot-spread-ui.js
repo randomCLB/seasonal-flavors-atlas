@@ -71,9 +71,11 @@ function show(r){
  $('pattern').textContent=r.reading.pattern;
  $('dish-title').textContent=r.dishTitle||T.dishName(f);$('dish-origin').textContent=`用到 ${window.READER_NAMES?.[r.foodId]||r.foodName||f.name} · ${r.place.place}`;
  const image=$('dish-image');$('image-failed').hidden=true;image.hidden=false;image.onload=()=>{image.hidden=false;$('image-failed').hidden=true;};image.onerror=()=>{image.hidden=true;$('image-failed').hidden=false;};const media=window.FoodMedia?.recipe(f)||T.mediaFor(f);image.alt=media.alt;image.src=media.src;document.querySelector('.photo-label').textContent=media.kind==='ingredient'?'今日命定菜 · 原料参考':['fresh','fruit-cut'].includes(media.kind)?'今日命定味 · 果切参考':'今日命定菜';
- $('image-note').textContent=media.note||T.imageNote(f);for(const key of ['opening','connection','closing','omen'])$(key).textContent=r.reading[key];
+ $('image-note').textContent=window.FieldNotes?.caption(f,media)||media.note||T.imageNote(f);for(const key of ['opening','connection','closing','omen'])$(key).textContent=r.reading[key];
  $('dish-sensory').textContent=f.short||'';
  $('season-note').textContent=f.seasonLabel||'';
+ const origin=(f.placeSeasons||[]).find(place=>place.name===r.place?.place);
+ $('dish-field-note').innerHTML=window.FieldNotes?window.FieldNotes.leadHtml(f,origin)+window.FieldNotes.seasonHtml(f,origin):'';
  $('copy-search').innerHTML=window.FoodPurchase.render(f)+window.FoodRecords.render(f);window.FoodPurchase.bind($('copy-search'));window.FoodRecords.bind();
  $('recipe-ingredients').textContent=f.ingredients?`准备：${f.ingredients}`:'';$('recipe-ingredients').hidden=f.eatingMode==='fresh'||!f.ingredients;
  $('recipe-steps').innerHTML=f.steps.map(s=>`<li>${esc(s)}</li>`).join('');

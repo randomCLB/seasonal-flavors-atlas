@@ -1,0 +1,34 @@
+.field-lead p,.field-season p{line-height:1.85}
+.field-lead p{margin:16px 0 8px}
+.field-source{display:inline-block;color:inherit;font-size:12px;line-height:1.7;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.reader-overview .reader-portrait figcaption,.reader-recipe-photo figcaption{opacity:1}
+.field-reading-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:12px}
+.field-reading-link{border:0;border-bottom:1px solid currentColor;padding:0 0 3px;background:transparent;color:inherit;font:inherit;font-size:13px;cursor:pointer}
+.map-popover{max-height:min(66vh,620px);overflow:auto;overscroll-behavior:contain}
+.map-popover .field-map{display:block;margin:6px 0;font-size:12px;line-height:1.7;white-space:normal}
+.map-popover .field-source{margin:0 12px 12px;font-size:11px}
+.field-flavor-sense{line-height:1.8;font-size:14px}
+.relation .field-flavor-contrast{display:block;margin-top:7px;font-size:12px;font-weight:400;line-height:1.75}
+.field-lottery{margin:12px 0;font-size:14px;line-height:1.85}
+.field-tarot{max-width:68ch;margin:24px auto;text-align:left}
+.field-tarot .field-season{font-size:14px}
+.record-entry .record-identity,.record-entry .record-window{display:block;white-space:normal;font-style:normal;line-height:1.7;margin-top:8px}
+.record-entry .record-window{font-size:12px}
+#searchResults button span{min-width:0}
+#searchResults button small{white-space:normal;line-height:1.6}
+#field-image-index{margin:28px 0}
+#field-image-index summary{cursor:pointer;font-size:18px;padding:14px 0}
+.field-image-row{display:grid;grid-template-columns:minmax(110px,.4fr) 1fr;gap:18px;border-top:1px solid #d6d0c0;padding:16px 0}
+.field-image-row p{margin:0 0 8px;line-height:1.8}
+.field-image-row a{overflow-wrap:anywhere}
+.field-image-row>*{min-width:0}
+.credits-page{overflow-wrap:anywhere}
+.credits-page img{max-width:100%;height:auto}
+.credits-page>section{max-width:860px;margin:0 auto;padding:0 24px}
+@media(max-width:600px){
+ .field-lead{font-size:15px}
+ .field-reading-links{gap:10px 14px}
+ .map-popover{max-height:65vh}
+ .field-image-row{grid-template-columns:1fr;gap:8px}
+ .record-entry .record-window{font-size:11px}
+}
