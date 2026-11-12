@@ -235,7 +235,9 @@
  taxa.muzhouHuangshaClam={name:'黄沙蚬（双壳纲，种待核）',latin:'Bivalvia',id:'7NF3C',checked:'2026-11-12',ranks:['Animalia','Mollusca','Bivalvia',null,null,null,null],note:'睦洲黄沙蚬是西江水域的地方商品名称，地方政府资料未给出学名。同名“黄沙蚬”在其他地区可指不同贝类，因此目前仅能确认双壳类，目、科、属和种均待核实。',origin:'睦洲黄沙蚬的具体种类尚未鉴定，最早人工繁育地点与年代暂未见可对应的可靠研究；野生分布或其他同名贝类的养殖史不能替代。',originSources:[['https://www.xinhui.gov.cn/attachment/0/159/159080/2240826.pdf','新会区政府：睦洲黄沙蚬地方记录'],['https://amr.sz.gov.cn/attachment/1/1315/1315322/9772236.pdf','深圳水产品名称标准：其他同名贝类']],source:'https://sannong.cntv.cn/2015/11/12/ARTI1447306580562847.shtml'};
  taxa.zhangzidaoSeaCucumber={name:'仿刺参（獐子岛海参）',latin:'Apostichopus japonicus',synonyms:['Stichopus japonicus'],id:'FVH9',checked:'2026-11-12',ranks:['Animalia','Echinodermata','Holothuroidea','Synallactida','Stichopodidae','Apostichopus','Apostichopus japonicus'],note:'獐子岛海参产品标准及当地刺参研究将其对应仿刺参；大雪采捕报道未逐只鉴定，本条据地方产品关联，不能据此判定个体是野生或人工增养殖。',origin:'联合国粮农组织培育手册记载，日本1930年代开始研究刺参人工繁殖，1937年有受精卵培育至耳状幼体的记录；中国烟台地方志记载1950年代末开始育苗试验。不同培育阶段不能混为一谈，全球最早人工繁育的确切地点与时间仍未核实。',originSources:[['https://www.fao.org/4/ab729e/AB729E02.htm','联合国粮农组织：刺参人工繁殖史'],['https://shandong-chorography.org/database/c61/section/1/article/358/','芝罘区志：烟台刺参育苗'],['https://file.jgvogel.cn/134/upload/resources/file/490923.pdf','獐子岛海参产品标准'],['https://xuebao.dlou.edu.cn/CN/PDF/10.3969/j.issn.1000-9957.2006.03.016','獐子岛刺参研究']],source:'https://jgs.agri.gov.cn/detail/zh/39943.html'};
  taxa.taiwanSpringMackerel={name:'鲭鱼（鲭属，种待核）',latin:'Scomber',id:'KVSXP',checked:'2026-11-12',ranks:['Animalia','Chordata','Teleostei','Scombriformes','Scombridae','Scomber',null],note:'台湾农业部门将沿近海常见鲭鱼归入鲭属，主要有花腹鲭和白腹鲭；立春渔讯只写鲭鱼，未对实际渔获鉴定到种，暂按台湾通称关联至鲭属。',origin:'本条渔获具体种未核实，最早人工繁育地点与年代暂未见可对应的可靠研究。花腹鲭和白腹鲭的繁育资料不能互相替代。',originSources:[['https://fae.moa.gov.tw/theme_data.php?id=38&sub_theme=knowledge&theme=topics','台湾农业部门：立春鲭鱼渔讯'],['https://fae.moa.gov.tw/map/food_item.php?id=185&type=AS01','台湾农业部门：鲭鱼物种']],source:'https://fae.moa.gov.tw/map/food_item.php?id=185&type=AS01'};
+ taxa.oujiangFengji={name:'凤鲚（温州子鲚）',latin:'Coilia mystus',id:'WWGF',checked:'2026-11-12',ranks:['Animalia','Chordata','Teleostei','Clupeiformes','Engraulidae','Coilia','Coilia mystus'],note:'温州地方资料将瓯江“子鲚”称为凤鲚，瓯江口鱼类研究将凤鲚记为 Coilia mystus；本条实际渔获未逐尾鉴定。其他地区“凤尾鱼”可能指不同物种。',origin:'凤鲚最早人工繁育地点与年代暂未见可靠研究。已查到瓯江口及长江口野生种群繁殖研究，但自然产卵记录不等于人工繁育起点。',originSources:[['https://www.sciengine.com/doi/pdf/ED475B5CDB1D4A0EB159584D8E0A9E3E','2022年瓯江口凤鲚研究'],['https://yykxjz.ijournals.cn/yykxjz/article/abstract/20110501','长江口凤鲚生殖研究'],['https://news.66wz.com/system/2016/05/09/104822695.shtml','温州网：子鲚与凤鲚名称']],source:'https://bwg.shou.edu.cn/2020/0709/c15622a272637/page.htm'};
  const foods={
+  'wenzhou-oujiang-ziji':['oujiangFengji'],
   'taiwan-lichun-mackerel':['taiwanSpringMackerel'],
   'zhangzidao-daxue-sea-cucumber':['zhangzidaoSeaCucumber'],
   'jiangmen-muzhou-qingming-huangsha-clam':['muzhouHuangshaClam'],
@@ -447,6 +449,7 @@
  Object.assign(chinese,{Acanthopagrus:'棘鲷属'});
  Object.assign(chinese,{Echinodermata:'棘皮动物门',Holothuroidea:'海参纲',Synallactida:'合殖目',Stichopodidae:'刺参科',Apostichopus:'仿刺参属'});
  Object.assign(chinese,{Scomber:'鲭属'});
+ Object.assign(chinese,{Clupeiformes:'鲱形目',Engraulidae:'鳀科',Coilia:'鲚属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
