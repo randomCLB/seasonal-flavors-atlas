@@ -183,7 +183,9 @@
  taxa.wallaceMelon={name:'甜瓜（华莱士瓜）',latin:'Cucumis melo',id:'329TQ',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Cucurbitales','Cucurbitaceae','Cucumis','Cucumis melo'],note:'华莱士瓜是甜瓜的一种栽培类型；本条登口鲜果未独立进行品种鉴定。',origin:'甜瓜最早人工栽培的确切地点与年代尚未确定。2019年对1175份材料的基因组研究提出三次独立驯化，分别在印度发生两次、非洲发生一次；2018年研究也支持非洲与亚洲存在独立栽培谱系。这些物种范围的结果不能直接确定华莱士瓜品种的育成地。',cultivar:'1980年报道记载白兰瓜曾称华莱士瓜，并称其由蜜露瓜引入；具体育种地点和最初育成时间暂未核实。登口是后续种植地。',originSources:[['https://pubmed.ncbi.nlm.nih.gov/31676864/','2019年甜瓜基因组与多次驯化研究'],['https://pubmed.ncbi.nlm.nih.gov/30299543/','2018年非洲与亚洲甜瓜谱系研究'],['https://www.rmrb.zhouenlai.info/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%EF%BC%881946-2003%EF%BC%89/1980/09/1980-09-29.htm','1980年白兰瓜与华莱士瓜名称资料']],source:'https://www.rmrb.zhouenlai.info/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%EF%BC%881946-2003%EF%BC%89/1980/09/1980-09-29.htm'};
  taxa.sesameMelon={...taxa.wallaceMelon,name:'甜瓜（榆林芝麻香瓜）',note:'芝麻香瓜是当地甜瓜商品名称；本条具体品系未独立鉴定。',cultivar:'榆林地方报道记录西左界村温室种植芝麻香瓜；具体育种单位、育成地点和年代暂未核实，不能借用华莱士瓜的历史。',originSources:[taxa.wallaceMelon.originSources[0],taxa.wallaceMelon.originSources[1],['https://ylrb.com/2/2xw/yl/879531.shtml','榆林日报：西左界芝麻香瓜']],source:'https://ylrb.com/2/2xw/yl/879531.shtml'};
  taxa.gejiuAralia={name:'楤木属（个旧刺脑包）',latin:'Aralia',id:'8VV5X',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Apiales','Araliaceae','Aralia',''],note:'云南地方资料将刺脑包称为楤木嫩芽；这一俗名可能涉及楤木属不同植物，本条个旧鲜芽未独立鉴定，种暂未核实。',origin:'本条原料尚不能确定到种，暂不能指定唯一的最早人工栽培地点和年代。云南地方报道记录林下套种刺老包，不能据此证明该植物的首次人工栽培。',cultivar:'个旧条目记录当地刺脑包嫩芽，具体物种、栽培品种及育成时间暂未核实。',originSources:[['https://www.longyang.gov.cn/info/16705/13980579.htm','隆阳区政府：刺脑包与楤木属'],['https://www.ynnh.gov.cn/info/1050/30702.htm','南华县政府：刺老包栽培'],['https://www.casb.org.cn/CN/abstract/abstract21265.shtml','辽东楤木繁殖综述（近属材料）']],source:'https://www.longyang.gov.cn/info/16705/13980579.htm'};
+ taxa.jinjiangLaver={name:'红毛菜科紫菜（晋江头水紫菜）',latin:'Bangiaceae',id:'72T',checked:'2026-11-12',ranks:['Plantae','Rhodophyta','Bangiophyceae','Bangiales','Bangiaceae','',''],note:'“头水”是当季第一次采收的称呼，不是物种名。福建养殖紫菜常有坛紫菜，但本条商品未标明藻种，暂列红毛菜科，属和种待核。',origin:'本条原料未确定到种，不能指定唯一的首次人工培育地点和年代。紫菜栽培史研究记载福建平潭长期利用菜坛方式养殖；中国水产科学研究院资料记录1964年在福建开展坛紫菜人工育苗和栽培研究。这些记录不证明本条原料即坛紫菜，也不等于全球首次栽培。',cultivar:'“头水”表示采收次序，不能据此确定藻种或具体栽培品系。',originSources:[['https://www.jinjiang.gov.cn/xxgk/jjyw/202512/t20251209_3239496.htm','晋江市：头水紫菜采收'],['https://www.sciengine.com/doi/pdf/201F15BE7ADA43F3B570821998B62B1D','紫菜栽培历史研究'],['https://cast.caas.cn/kj/cgtj/121712.html','中国水产科学研究院：坛紫菜人工养殖研究'],['https://www.fao.org/4/ab727e/AB727E03.htm','联合国粮农组织：不同地区养殖紫菜']],source:'https://www.jinjiang.gov.cn/xxgk/jjyw/202512/t20251209_3239496.htm'};
  const foods={
+  'jinjiang-toushui-zicai':['jinjiangLaver'],
   'gejiu-cinaobao':['gejiuAralia'],
   'dengkou-wallace-melon':['wallaceMelon'],'yulin-xiaohan-sesame-melon':['sesameMelon'],
   'fengqing-xinhua-walnut-flowers':['fengqingWalnutFlowers'],'shiping-shaochong-bailu-walnut':['shipingWalnut'],
@@ -327,6 +329,7 @@
  Object.assign(chinese,{Solanales:'茄目',Convolvulaceae:'旋花科',Ipomoea:'番薯属'});
  Object.assign(chinese,{Vitales:'葡萄目',Vitaceae:'葡萄科',Vitis:'葡萄属'});
  Object.assign(chinese,{Juglandaceae:'胡桃科',Juglans:'胡桃属'});
+ Object.assign(chinese,{Rhodophyta:'红藻门',Bangiophyceae:'红毛菜纲',Bangiales:'红毛菜目',Bangiaceae:'红毛菜科'});
  Object.assign(chinese,{Cucumis:'黄瓜属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
