@@ -12,3 +12,17 @@ test('reviewed identities render evidence without inventing species or origins',
  assert.match(biology.html({id:'ganbajun'}),/Thelephora/);
  assert.equal(biology.html({id:'unknown'}),'');
 });
+test('every public ingredient has a sourced, renderable biological profile',()=>{
+ const ctx=load();vm.runInContext(fs.readFileSync('dist/biology.js','utf8'),ctx);
+ const catalog=vm.runInContext('canonicalCatalog',ctx), biology=ctx.window.FoodBiology;
+ assert.equal(catalog.length,287);
+ for(const food of catalog){
+  const entries=biology.entry(food);assert.ok(entries.length,`${food.id}: missing profile`);
+  for(const record of entries){
+   assert.ok(record.name && record.latin && record.ranks?.length===7,`${food.id}: missing classification`);
+   assert.ok(record.origin && record.source && record.originSources?.length && (record.id||record.catalogUrl),`${food.id}: missing evidence`);
+   assert.ok(record.originSources.every(source=>source.length===2 && /^https?:\/\//.test(source[0]) && source[1]),`${food.id}: invalid origin source`);
+  }
+  assert.match(biology.html(food),/早期人工培育/,`${food.id}: profile does not render`);
+ }
+});
