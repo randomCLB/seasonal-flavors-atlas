@@ -230,7 +230,9 @@
  taxa.huairouHongxiaoli={...taxa.wildpearflowers,name:'红肖梨（梨属，种待核）',note:'怀柔河防口红肖梨是当地栽培的梨果；现有地方资料未说明其物种或亲本，暂列梨属，种待核实。',origin:'具体物种与亲本尚未核实，最早人工栽培地点与年代暂未见可对应的可靠研究。梨属各类群驯化史不能直接套用到红肖梨。',cultivar:'怀柔区政府称河防口村有约600年红肖梨种植历史，并记录当地有百年以上老梨树；这些地方种植记录不能确定品种最早育成人、育成地点或确切年代。',originSources:[['https://www.bjhr.gov.cn/ywdt/zxdt/202502/t20250207_4005620.html','怀柔区：红肖梨地方种植史'],['https://www.bjhr.gov.cn/ywdt/zxdt/202410/t20241015_3921257.html','怀柔区：河防口老梨树'],['https://pmc.ncbi.nlm.nih.gov/articles/PMC5996476/','梨属驯化基因组研究']],source:'https://www.bjhr.gov.cn/ywdt/zxdt/202410/t20241015_3921257.html'};
  taxa.youxiKumquat={name:'金柑（尤溪金柑，种待核）',latin:'Citrus',id:'3QB2',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Sapindales','Rutaceae','Citrus',null],note:'尤溪金柑是当地栽培金柑类果实；不同资料对金柑类群及其属、种划分有不同处理，本站鲜果具体品种未独立鉴定，此处按所用名录先列柑橘属。',origin:'具体品种及其分类关系尚未确定，最早人工栽培地点与年代暂未见可对应的可靠研究。尤溪老树的现存产地不等同于金柑类群的最早栽培地点。',cultivar:'农业农村部种质资源资料记载尤溪老树金柑是福建地方品种，当地两棵超过150年的老树长期作为母树繁育；此为地方种质保存和繁殖记录，不足以确定其育成时间，也不能认定每批尤溪鲜果均出自该材料。',originSources:[['https://zys.moa.gov.cn/gsgg/202412/P020241210416238205736.pdf','农业农村部：尤溪老树金柑种质'],['https://fae.moa.gov.tw/files/topics/1160/A02_2.pdf','台湾农业部门：金柑分类与品种'],['https://www.fjyx.gov.cn/ztzl/gjncpzlaqx/202610/t20261008_2325047.htm','尤溪县：金柑产区']],source:'https://zys.moa.gov.cn/gsgg/202412/P020241210416238205736.pdf'};
  taxa.xikouSpringBamboo={...taxa.mosobamboo,name:'毛竹（溪口春笋）',note:'奉化溪口地方报道将三月鲜笋称为毛笋，黄泥拱是其出土状态的俗称；此处关联毛竹，本条具体鲜笋样本未独立鉴定。',originSources:[...taxa.mosobamboo.originSources,['https://news.cnnb.com.cn/system/2025/03/25/030657631.shtml','宁波网：溪口毛笋鲜采']],source:'https://news.cnnb.com.cn/system/2025/03/25/030657631.shtml'};
+ taxa.tamsuiBlackBream={name:'黑棘鲷（黑鲷）',latin:'Acanthopagrus schlegelii',id:'8YVQ',checked:'2026-11-12',ranks:['Animalia','Chordata','Teleostei',null,'Sparidae','Acanthopagrus','Acanthopagrus schlegelii'],note:'台湾农业资料将黑鲷称为黑棘鲷 Acanthopagrus schlegelii；淡水这条渔获资料没有逐尾鉴定，本条依据当地通用名关联。所用名录未提供目级，暂不补填。',origin:'台湾水产试验所1980年论文记载日本于1960年代初已开展黑鲷繁殖，台湾于1979年取得当地繁殖成功；这些早期记录并不足以确认全球首次人工繁育的确切地点与年份。',originSources:[['https://en.tfrin.gov.tw/redirect_files.php?file_name=dw0B9ybTVWxk03Q2FvpcohvwdQGIRXzkCJ0P9Nfo7a3Yl4Me0aOaZ2Gwdax9A9mh&id=42283','1980年黑鲷人工繁殖研究'],['https://www.moa.gov.tw/ws.php?id=2507783','台湾农业部门：淡水黑鲷节气资料']],source:'https://kmweb.moa.gov.tw/theme_data.php?id=536&theme=fisheasy'};
  const foods={
+  'tamsui-xiaoshu-black-bream':['tamsuiBlackBream'],
   'ningbo-xikou-spring-mao-bamboo-shoot':['xikouSpringBamboo'],
   'youxi-lidong-kumquat':['youxiKumquat'],
   'huairou-huaibei-hongxiaoli':['huairouHongxiaoli'],
@@ -434,6 +436,7 @@
  Object.assign(chinese,{Ulmaceae:'榆科',Ulmus:'榆属'});
  Object.assign(chinese,{Carangiformes:'鲹形目',Carangidae:'鲹科',Trachurus:'竹荚鱼属'});
  Object.assign(chinese,{Myrtales:'桃金娘目',Lythraceae:'千屈菜科',Punica:'石榴属'});
+ Object.assign(chinese,{Acanthopagrus:'棘鲷属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
