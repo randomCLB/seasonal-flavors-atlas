@@ -192,7 +192,9 @@
  taxa.wenzhouOugan={name:'瓯柑（柑橘属）',latin:'Citrus',id:'3QB2',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Sapindales','Rutaceae','Citrus',null],note:'瓯柑是温州地方柑橘；部分研究用 Citrus suavissima，亦有文献作为 Citrus reticulata 的栽培品种处理。不同分类体系处理有差异，此处保守展示至属，具体种暂未核实。',origin:'柑橘属包含众多物种和杂交品种，不能把属的起源直接当作瓯柑的人工栽培起源；瓯柑最早人工培育地点与年代暂未确定。',cultivar:'关于瓯柑与古籍中名称的关系，有乳柑／真柑和海红柑两种考证意见，不能据此断定唯一祖先或最早栽培年份。',originSources:[['https://www.pwsannong.com/booklib/bookIntroduce?ID=6508307&SiteID=123','瓯柑历史：不同古名考证'],['https://agri-history.ihns.ac.cn/books/julu.htm','中国科学院自然科学史研究所：橘录及注释'],['https://zlxb.zafu.edu.cn/cn/article/doi/10.11833/j.issn.2095-0756.2019.05.013','浙江农林大学：瓯柑研究']],source:'https://www.pwsannong.com/booklib/bookIntroduce?ID=6508307&SiteID=123'};
  taxa.tonghaiSourQuince={name:'酸木瓜（蔷薇科，具体物种待核）',latin:'Rosaceae',id:'FTK',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Rosales','Rosaceae',null,null],note:'通海里山报道将当地果实称为滇木瓜或酸木瓜，但未给出学名。云南酸木瓜可指不同蔷薇科木瓜类植物，包括皱皮木瓜和木瓜；在缺少当地植株鉴定前，仅列到这些材料共同的科，不能确定具体属和种，也不能与番木瓜混同。',origin:'具体物种尚未核实，最早人工栽培地点和年代暂未见可对应里山这一食材的可靠研究，不能把其他木瓜类植物的记载直接套用。',cultivar:'通海2023年报道记载当地果农于约三年前引种滇木瓜，这是当地种植记录，不代表品种育成或物种最初栽培地点。',originSources:[['https://www.tonghai.gov.cn/thxzfxxgk/xcjs/20230612/1451376.html','通海县：里山滇木瓜种植报道'],['https://epub.nmns.edu.tw/e202312-1/','自然科学博物馆：酸木瓜对应多种植物'],['https://kib.cas.cn/kxcb/kpwz/201503/t20150318_4323416.html','中科院昆明植物研究所：云南酸木瓜与番木瓜']],source:'https://www.tonghai.gov.cn/thxzfxxgk/xcjs/20230612/1451376.html'};
  taxa.wenxiTangelo={name:'汶溪桔柚（柑橘属）',latin:'Citrus',id:'3QB2',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Sapindales','Rutaceae','Citrus',null],note:'汶溪的当地报道称其为桔柚，没有列出具体品种或亲本。桔柚名称可用于多类柑橘杂交品种；在核实当地品系前，只展示至柑橘属，不指定种或杂交亲本。',origin:'汶溪所售桔柚的具体品种和亲本尚未核实，故其最早人工培育地点及年代暂未见可对应的可靠研究。',cultivar:'浙江庆元的甜桔柚有日本引进及亲本记录，但目前没有证据证明汶溪种植的就是该品种，不能将其引种或育种史套用到汶溪。',originSources:[['https://www.fjdaily.com/app/content/2025-12/27/content_3791806.html','福建日报：汶溪桔柚采摘报道'],['https://zjlykj.xml-journal.net/cn/article/pdf/preview/10.3969/j.issn.1001-3776.2019.05.014.pdf','庆元甜桔柚品种及引种记录']],source:'https://www.fjdaily.com/app/content/2025-12/27/content_3791806.html'};
+ taxa.lichuanGroundCherry={name:'姑娘果（酸浆属，种待核）',latin:'Physalis',id:'6PW6',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Solanales','Solanaceae','Physalis',null],note:'黎川报道将当地果实称姑娘果、灯笼果，描述金黄色果实包在膨大的外衣内；同类食用果可来自酸浆属不同物种。当地报道未给学名，本条按名称和形态暂关联酸浆属，具体物种及当地样品仍待鉴定。',origin:'黎川姑娘果的具体物种和品种尚未核实，最早人工栽培地点与年代暂未见可对应的可靠研究；不能将某一种灯笼果的原生分布当作当地产品的栽培起源。',originSources:[['https://www.jxlcx.gov.cn/art/2025/5/30/art_2466_4314371.html','黎川县：荷源姑娘果采摘报道'],['https://bowuguan.bucm.edu.cn/kpzl/zyyzs/44682.htm','北京中医药大学博物馆：不同酸浆属食用果']],source:'https://www.jxlcx.gov.cn/art/2025/5/30/art_2466_4314371.html'};
  const foods={
+  'lichuan-heyuan-girl-fruit':['lichuanGroundCherry'],
   'minhou-wenxi-juyou':['wenxiTangelo'],
   'tonghai-fresh-sour-quince':['tonghaiSourQuince'],
   'wenzhou-sanyang-ougan':['wenzhouOugan'],
@@ -350,6 +352,7 @@
  Object.assign(chinese,{Cucumis:'黄瓜属'});
  Object.assign(chinese,{Gastropoda:'腹足纲',Cephalaspidea:'头楯目',Haminoeidae:'阿地螺科',Bullacta:'泥螺属'});
  Object.assign(chinese,{Annelida:'环节动物门',Polychaeta:'多毛纲',Phyllodocida:'叶须虫目',Nereididae:'沙蚕科',Tylorrhynchus:'疣吻沙蚕属'});
+ Object.assign(chinese,{Physalis:'酸浆属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
