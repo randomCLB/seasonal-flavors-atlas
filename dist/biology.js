@@ -226,7 +226,9 @@
  taxa.japaneseHorseMackerel={name:'日本竹荚鱼',latin:'Trachurus japonicus',id:'57PKM',checked:'2026-11-12',ranks:['Animalia','Chordata','Teleostei','Carangiformes','Carangidae','Trachurus','Trachurus japonicus'],note:'台湾鱼类资料库将日本竹筴鱼对应 Trachurus japonicus；本站条目按这一具体名称关联，贡寮实际渔获未逐尾鉴定。',origin:'1982年论文记录日本土佐市实验室将受精卵培育至稚鱼；另有1980—1981年养殖及人工产卵试验的论文记录。这些是可核实的早期研究，并不足以确认全球首次人工繁育地点和年代。',originSources:[['https://www.jstage.jst.go.jp/article/jji1950/29/1/29_1_86/_article','1982年日本土佐实验室卵至稚鱼培育研究'],['https://cir.nii.ac.jp/crid/1390282681387515392','日本竹荚鱼人工产卵试验']],source:'https://fishdb.sinica.edu.tw/taxon/381555-fishdb'};
  taxa.taiwanWinterMullet={...taxa.mulletroe,name:'鲻（台湾冬季乌鱼）',note:'台湾海洋大学资料将冬季沿岸洄游的乌鱼对应鲻 Mugil cephalus；本条具体渔获未逐尾鉴定，野生与养殖鱼的来源应分别确认。',origin:'台湾海洋大学资料记载乌鱼人工繁殖试验可追溯至1930年，但未注明该次试验地点；研究回顾记载1963年在台湾高雄汕尾开展试验、1969年在东港育活两尾，1977年完成全人工养殖。这些是有据可查的阶段记录，最早人工繁殖的确切地点仍未核实。'};
  taxa.weixianRadish={...taxa.tianshuiradish,name:'萝卜（潍县萝卜）',note:'潍县萝卜又称高脚青，是潍坊地方萝卜类型；本条鲜品具体品系尚未独立鉴定。',cultivar:'《潍坊年鉴》记载潍县萝卜经长期培育形成大缨、小缨和二缨三个品系，称当地有三百余年栽培史；各品系确切育成人和育成年代暂未核实。地方品种的历史不能当作萝卜物种的驯化起点。',originSources:[...taxa.tianshuiradish.originSources.filter(([url])=>!url.includes('chinanews.com')),['https://shandong-chorography.org/database/d70/section/3/article/20/','潍坊年鉴：潍县萝卜与地方品系'],['https://www.cnveg.org/CN/article/downloadArticleFile.do?attachType=PDF&id=17485','中国蔬菜：潍县萝卜地方品种']],source:'https://shandong-chorography.org/database/d70/section/3/article/20/'};
+ taxa.mengziJuneRed={name:'石榴（六月红）',latin:'Punica granatum',id:'4QHX8',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Myrtales','Lythraceae','Punica','Punica granatum'],note:'蒙自报道将“六月红”称为早熟软籽石榴；本条具体果实及品种亲本未独立鉴定。',origin:'石榴最早人工驯化地点与年代仍不确定。2024年果树考古综述列出黎凡特早期青铜时代石榴遗存并认为可能反映栽培；2025年基因组研究亦指出驯化起源尚不明。果实遗存本身不能确证全球最初的栽培地点。',cultivar:'关于“六月红”的来历，2025年蒙自市政府答复将其列为引进品种；2026年云南农业部门报道则称蒙自自主培育。两种说法存在差异，是否同一材料、引进后如何选育以及确切育成年代暂未核实。',originSources:[['https://www.tandfonline.com/doi/full/10.1080/01916122.2024.2347905','2024年黎凡特果树考古综述'],['https://bmcgenomics.biomedcentral.com/counter/pdf/10.1186/s12864-025-11993-0.pdf','2025年石榴基因组研究'],['https://www.hhmz.gov.cn/info/28941/612931.htm','蒙自市政府：引进品种答复'],['https://nync.yn.gov.cn/html/2026/zhoushilianbo-new_0720/1427574.html','云南农业部门：六月红报道']],source:'https://nync.yn.gov.cn/html/2026/zhoushilianbo-new_0720/1427574.html'};
  const foods={
+  'mengzi-june-red-pomegranate':['mengziJuneRed'],
   'weixian-frost-radish':['weixianRadish'],
   'taiwan-daxue-mullet':['taiwanWinterMullet'],
   'gongliao-autumn-japanese-horse-mackerel':['japaneseHorseMackerel'],
@@ -425,6 +427,7 @@
  Object.assign(chinese,{Rhamnaceae:'鼠李科',Ziziphus:'枣属'});
  Object.assign(chinese,{Ulmaceae:'榆科',Ulmus:'榆属'});
  Object.assign(chinese,{Carangiformes:'鲹形目',Carangidae:'鲹科',Trachurus:'竹荚鱼属'});
+ Object.assign(chinese,{Myrtales:'桃金娘目',Lythraceae:'千屈菜科',Punica:'石榴属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
