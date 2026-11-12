@@ -251,7 +251,9 @@
  taxa.fuzhouRedXun={name:'红鲟（青蟹属，种待核）',latin:'Scylla',id:'L2P3S',checked:'2026-11-12',ranks:['Animalia','Arthropoda','Malacostraca','Decapoda','Portunidae','Scylla',null],note:'红鲟是福建青蟹的地方商品名，通常指成熟雌蟹；青蟹属包含多个物种，福州本条商品未逐只鉴定，暂列至属。',origin:'具体物种尚未核实，最早人工繁育地点与年代暂未见可对应的可靠研究。拟穴青蟹等不同种的育苗研究不能自动代表所有红鲟。',originSources:[['https://m.yc6318.cn/gqrj/aritcle20438.html','青蟹研究综述：红鲟与青蟹属'],['https://t-smart.xmu.edu.cn/info/2101/3874.htm','厦门大学：青蟹种类与膏蟹'],['https://www.moa.gov.cn/xw/bmdt/202107/P020210729522344049650.pdf','农业农村部：拟穴青蟹资源']],source:'https://t-smart.xmu.edu.cn/info/2101/3874.htm'};
  taxa.qinzhouCherry={...taxa.shuidongCherry,name:'鲜樱桃（秦州大樱桃，种待核）',note:'秦州地理标志资料列出红灯、美早、早大果等多种大樱桃品种；本条小满鲜果没有具体品种与物种鉴定，暂列李属。',origin:'本条果品具体品种与物种未核实，最早人工栽培地点与年代暂未见可对应的可靠研究；不同樱桃物种的栽培起源不能互相替代。',cultivar:'秦州大樱桃地理标志产品包括多个早、中、晚熟品种，产区并不等于各个品种的育成地；本条未指定品种，不能确定其育成人及育成年代。',originSources:[['https://www.cnipa.gov.cn/attach/0/20250826010509.pdf','国家知识产权局：秦州大樱桃品种要求'],['https://news.cri.cn/n/20260525/284f9117-e727-451e-9a72-8c5d4a56cf22.html','秦州早熟樱桃品种报道'],['https://www.pwsannong.com/booklib/wenda/detail?ID=130971&SiteID=123','樱桃种类与李属']],source:'https://www.cnipa.gov.cn/attach/0/20250826010509.pdf'};
  taxa.yongtaiLianshanJuyou={...taxa.youxiKumquat,name:'橘柚（永泰连山，种待核）',note:'福州市报道将连山橘柚描述为柑橘类果实，称栽种材料从建阳引入，但未给出标准品种名或亲本；具体杂交背景未核实，暂列柑橘属。',origin:'具体品种、亲本及对应物种尚未核实，最早人工培育地点与年代暂未见可对应的可靠研究；柚类或橘类其他品种的起源不能直接套用。',cultivar:'福州市报道记载连山石牌农场自2016年起种植、材料从建阳引入；这是当地引种记录，不足以确定原品种的育成地点和年代。',originSources:[['https://www.fuzhou.gov.cn/zwgk/zdlyxxgk/xczx/dxsf/202501/t20250122_4966594.htm','福州市：连山橘柚引种报道'],['https://www.moa.gov.cn/ztzl/sqxzjcgs/xzjcbz/202506/P020250626539290435933.pdf','农业农村部：柑橘类果品分类']],source:'https://www.fuzhou.gov.cn/zwgk/zdlyxxgk/xczx/dxsf/202501/t20250122_4966594.htm'};
+ taxa.suzhouRiverEel={name:'河鳗（鳗鲡属，种待核）',latin:'Anguilla',id:'KTX79',checked:'2026-11-12',ranks:['Animalia','Chordata','Teleostei','Anguilliformes','Anguillidae','Anguilla',null],note:'苏州地方志称此鱼为鳗鲡、白鳝或河鳗；农业农村部资料记录日本鳗鲡亦有这些俗名，但苏州本条渔获没有独立物种鉴定，因此暂列鳗鲡属。',origin:'苏州本条具体种未核实，最早人工繁育地点与年代暂未见可对应的可靠研究。作为比较，日本鳗鲡的人工繁殖研究始于日本1960年代，2010年取得全人工生命周期繁育；这一记录不能直接套用到其他鳗鲡。',originSources:[['https://dfzb.suzhou.gov.cn/dfzb/szdq/202209/a654d993a70c4c119b1db6f57dcfe9d5.shtml','苏州地方志：河鳗'],['https://www.moa.gov.cn/xw/bmdt/202107/P020210729522344049650.pdf','农业农村部：日本鳗鲡与俗名'],['https://link.springer.com/article/10.1007/s12562-014-0821-z','日本鳗鲡人工育苗研究综述']],source:'https://dfzb.suzhou.gov.cn/dfzb/szdq/202209/a654d993a70c4c119b1db6f57dcfe9d5.shtml'};
  const foods={
+  'suzhou-bailu-river-eel':['suzhouRiverEel'],
   'yongtai-lianshan-shipaiju-you':['yongtaiLianshanJuyou'],
   'tianshui-qinzhou-xiaoman-cherry':['qinzhouCherry'],
   'fuzhou-bailu-red-xun':['fuzhouRedXun'],
@@ -485,6 +487,7 @@
  Object.assign(chinese,{Apiaceae:'伞形科',Apium:'芹属'});
  Object.assign(chinese,{Saccharum:'甘蔗属'});
  Object.assign(chinese,{Fagales:'壳斗目',Fagaceae:'壳斗科',Castanea:'栗属'});
+ Object.assign(chinese,{Anguilliformes:'鳗鲡目',Anguillidae:'鳗鲡科',Anguilla:'鳗鲡属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
