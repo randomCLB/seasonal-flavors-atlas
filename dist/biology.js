@@ -253,7 +253,9 @@
  taxa.yongtaiLianshanJuyou={...taxa.youxiKumquat,name:'橘柚（永泰连山，种待核）',note:'福州市报道将连山橘柚描述为柑橘类果实，称栽种材料从建阳引入，但未给出标准品种名或亲本；具体杂交背景未核实，暂列柑橘属。',origin:'具体品种、亲本及对应物种尚未核实，最早人工培育地点与年代暂未见可对应的可靠研究；柚类或橘类其他品种的起源不能直接套用。',cultivar:'福州市报道记载连山石牌农场自2016年起种植、材料从建阳引入；这是当地引种记录，不足以确定原品种的育成地点和年代。',originSources:[['https://www.fuzhou.gov.cn/zwgk/zdlyxxgk/xczx/dxsf/202501/t20250122_4966594.htm','福州市：连山橘柚引种报道'],['https://www.moa.gov.cn/ztzl/sqxzjcgs/xzjcbz/202506/P020250626539290435933.pdf','农业农村部：柑橘类果品分类']],source:'https://www.fuzhou.gov.cn/zwgk/zdlyxxgk/xczx/dxsf/202501/t20250122_4966594.htm'};
  taxa.suzhouRiverEel={name:'河鳗（鳗鲡属，种待核）',latin:'Anguilla',id:'KTX79',checked:'2026-11-12',ranks:['Animalia','Chordata','Teleostei','Anguilliformes','Anguillidae','Anguilla',null],note:'苏州地方志称此鱼为鳗鲡、白鳝或河鳗；农业农村部资料记录日本鳗鲡亦有这些俗名，但苏州本条渔获没有独立物种鉴定，因此暂列鳗鲡属。',origin:'苏州本条具体种未核实，最早人工繁育地点与年代暂未见可对应的可靠研究。作为比较，日本鳗鲡的人工繁殖研究始于日本1960年代，2010年取得全人工生命周期繁育；这一记录不能直接套用到其他鳗鲡。',originSources:[['https://dfzb.suzhou.gov.cn/dfzb/szdq/202209/a654d993a70c4c119b1db6f57dcfe9d5.shtml','苏州地方志：河鳗'],['https://www.moa.gov.cn/xw/bmdt/202107/P020210729522344049650.pdf','农业农村部：日本鳗鲡与俗名'],['https://link.springer.com/article/10.1007/s12562-014-0821-z','日本鳗鲡人工育苗研究综述']],source:'https://dfzb.suzhou.gov.cn/dfzb/szdq/202209/a654d993a70c4c119b1db6f57dcfe9d5.shtml'};
  taxa.zhanqiDafengOrange={...taxa.youxiKumquat,name:'早橘（瞻岐大丰，种待核）',note:'宁波地方报道将瞻岐橘子分为“大丰”和“宫川”等名称；本条“大丰”未核实是否与“大分”等相近名称为同一品种，暂列柑橘属。',origin:'具体品种、亲本及物种尚未核实，最早人工培育地点与年代暂未见可对应的可靠研究；相近名称的其他柑橘品种不能直接代替。',cultivar:'瞻岐地方报道记录“大丰”与“宫川”采收时间不同，但未提供本条“大丰”的育种者及育成年代；不能仅凭同音字认定其育成史。',originSources:[['https://news.cnnb.com.cn/system/2020/11/02/030200980.shtml','宁波网：瞻岐“大丰”与宫川'],['https://cs.zjol.com.cn/zjbd/nb16504/201803/t20180312_6774370.shtml','浙江在线：宁波柑橘品种'],['https://njsw.cbg.cn/show/47976-2116538.html','柑橘栽培资料：大分等品种']],source:'https://news.cnnb.com.cn/system/2020/11/02/030200980.shtml'};
+ taxa.guangfuOsmanthus={name:'桂花（光福晚桂）',latin:'Osmanthus fragrans',id:'74ZQZ',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Lamiales','Oleaceae','Osmanthus','Osmanthus fragrans'],note:'光福晚桂是当地用于糖桂花的桂花原料；“晚桂”是花期称呼，具体植株及品种未独立鉴定。',origin:'桂花最早人工栽培的确切地点与年代暂未确定。2021年桂花群体基因组研究提及中国约2500年的栽培驯化历史；历史时长不能单独证明最初种植地点。',cultivar:'光福晚桂按地方花期称呼，未限定某一个登记品种；具体品系的育成人、育成地点与年代暂未核实。',originSources:[['https://www.nature.com/articles/s41438-021-00531-0','桂花群体基因组与栽培历史研究'],['https://pmc.ncbi.nlm.nih.gov/articles/PMC13104502/','桂花栽培品种与遗传研究'],['https://powo.science.kew.org/taxon/610878-1','Kew：桂花物种档案']],source:'https://powo.science.kew.org/taxon/610878-1'};
  const foods={
+  'suzhou-guangfu-hanlu-late-osmanthus':['guangfuOsmanthus'],
   'ningbo-zhanqi-dafeng-early-orange':['zhanqiDafengOrange'],
   'suzhou-bailu-river-eel':['suzhouRiverEel'],
   'yongtai-lianshan-shipaiju-you':['yongtaiLianshanJuyou'],
@@ -490,6 +492,7 @@
  Object.assign(chinese,{Saccharum:'甘蔗属'});
  Object.assign(chinese,{Fagales:'壳斗目',Fagaceae:'壳斗科',Castanea:'栗属'});
  Object.assign(chinese,{Anguilliformes:'鳗鲡目',Anguillidae:'鳗鲡科',Anguilla:'鳗鲡属'});
+ Object.assign(chinese,{Oleaceae:'木犀科',Osmanthus:'木犀属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
