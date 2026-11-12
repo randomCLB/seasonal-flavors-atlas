@@ -223,7 +223,9 @@
  taxa.eshanMulberryFlower={name:'桑葚花（桑属，种待核）',latin:'Morus',id:'5VCQ',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Rosales','Moraceae','Morus',null],note:'峨山地方资料将桑葚花列为春季野菜，附近江川报道说它采自桑树；两份资料没有鉴定本站条目的具体桑树种类，此处暂关联桑属。食用部位的具体花序类型也未核实。',origin:'具体物种未核实，最早人工栽培地点与年代暂未见可对应的可靠研究。桑属不同物种可能有不同栽培历史，不能将养蚕桑树的起源直接套用到峨山野采花序。',originSources:[['https://www.yxes.gov.cn/es/esxjjdgzdt7322/20260324/1655271.html','峨山县：桑葚花'],['https://www.ccwb.cn/content/202402/27/c669612.html','玉溪江川：桑树与桑葚花'],['https://pmc.ncbi.nlm.nih.gov/articles/PMC10460887/','桑树不同类群驯化研究']],source:'https://www.yxes.gov.cn/es/esxjjdgzdt7322/20260324/1655271.html'};
  taxa.chengdeElm={name:'榆钱（榆属，种待核）',latin:'Ulmus',id:'84MS',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Rosales','Ulmaceae','Ulmus',null],note:'承德地方报道将榆钱列为春菜，北京市场监管资料解释其为榆树的嫩翅果；两份资料没有鉴定承德所采榆树的具体种，暂列榆属。',origin:'具体物种未核实，最早人工栽培地点与年代暂未见可对应的可靠研究。野采翅果及榆属不同物种的栽培史不能直接证明本条榆树的培育起源。',originSources:[['https://www.chengde.gov.cn/art/2026/3/19/art_3248_1110464.html','承德市：春分山野菜'],['https://scjgj.beijing.gov.cn/zwxx/scjgdt/202604/t20260426_4614236.html','北京市：榆钱与食用部位'],['https://www.iplant.cn/z/frps/1319','中国植物志：榆属']],source:'https://scjgj.beijing.gov.cn/zwxx/scjgdt/202604/t20260426_4614236.html'};
  taxa.wuhanRedAmaranth={...taxa.fuzhouChunbihao,name:'红苋菜（苋属，种待核）',note:'武汉农业部门称汉产红苋菜为地方叶菜，但报道没有给出确切学名或品种亲本。苋属有多个可食种，本站武汉鲜菜未独立鉴定，暂列到属。',origin:'具体物种尚未核实，最早人工栽培地点与年代暂未见可对应的可靠研究。2019年研究提到食用苋 Amaranthus tricolor 在南亚或东南亚驯化，但不能在物种未确认时直接套用到武汉红苋菜。',cultivar:'武汉地方报道称红苋菜为长江中下游种植的地方品种，未提供该条目具体品种的育成地与年代。',originSources:[['https://sw.wuhan.gov.cn/xwdt/mtbd/202405/t20240517_2403427.shtml','武汉市：红苋菜种植报道'],['https://nyncj.wuhan.gov.cn/xwzx_25/whsn/202503/t20250307_2548576.html','武汉市：汉派红苋菜'],['https://pmc.ncbi.nlm.nih.gov/articles/PMC6977444/','食用苋种质资源研究']],source:'https://sw.wuhan.gov.cn/xwdt/mtbd/202405/t20240517_2403427.shtml'};
+ taxa.japaneseHorseMackerel={name:'日本竹荚鱼',latin:'Trachurus japonicus',id:'57PKM',checked:'2026-11-12',ranks:['Animalia','Chordata','Teleostei','Carangiformes','Carangidae','Trachurus','Trachurus japonicus'],note:'台湾鱼类资料库将日本竹筴鱼对应 Trachurus japonicus；本站条目按这一具体名称关联，贡寮实际渔获未逐尾鉴定。',origin:'1982年论文记录日本土佐市实验室将受精卵培育至稚鱼；另有1980—1981年养殖及人工产卵试验的论文记录。这些是可核实的早期研究，并不足以确认全球首次人工繁育地点和年代。',originSources:[['https://www.jstage.jst.go.jp/article/jji1950/29/1/29_1_86/_article','1982年日本土佐实验室卵至稚鱼培育研究'],['https://cir.nii.ac.jp/crid/1390282681387515392','日本竹荚鱼人工产卵试验']],source:'https://fishdb.sinica.edu.tw/taxon/381555-fishdb'};
  const foods={
+  'gongliao-autumn-japanese-horse-mackerel':['japaneseHorseMackerel'],
   'wuhan-spring-equinox-hanpai-red-amaranth':['wuhanRedAmaranth'],
   'chengde-spring-equinox-elm-samaras':['chengdeElm'],
   'eshan-jingzhe-mulberry-flower':['eshanMulberryFlower'],
@@ -418,6 +420,7 @@
  Object.assign(chinese,{Cephalopoda:'头足纲',Sepiida:'乌贼目',Sepiidae:'乌贼科',Caryophyllales:'石竹目',Amaranthaceae:'苋科',Amaranthus:'苋属'});
  Object.assign(chinese,{Rhamnaceae:'鼠李科',Ziziphus:'枣属'});
  Object.assign(chinese,{Ulmaceae:'榆科',Ulmus:'榆属'});
+ Object.assign(chinese,{Carangiformes:'鲹形目',Carangidae:'鲹科',Trachurus:'竹荚鱼属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
