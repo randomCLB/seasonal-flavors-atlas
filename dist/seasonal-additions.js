@@ -3272,7 +3272,7 @@ window.FOODS.push({
 window.FOODS.push({
  id:'jiangjin-bailu-late-harvest-pepper',name:'江津白露迟收花椒（2025试验批次）',alias:['江津白露花椒','江津白露延迟采收花椒'],region:'重庆江津 · 2025年试验点',lat:29.28,lon:106.26,category:'spice',
  months:[9],peakMonths:[9],peakTerms:[16],entryTerms:[16],seasonStartTerm:16,sourceYears:[2025],seasonBasis:'harvest',seasonPrecision:'single-year-harvest-record',seasonLabel:'2025年白露延迟采收试验',
- season:'重庆市农业农村委员会2025年9月报道，江津玉溪镇丹凤社区一个试验点在白露前后开展花椒延迟采收，较常规夏季采收推迟至白露；报道时有3个试验点、近50亩推广。这里只记录这项试验，不代表每年都有白露批次或当前供应。',
+ season:'重庆市农业农村委员会2025年9月报道，江津油溪镇丹凤社区一个试验点在白露前后开展花椒延迟采收，较常规夏季采收推迟至白露；报道时有3个试验点、近50亩推广。这里只记录这项试验，不代表每年都有白露批次或当前供应。',
  description:'白露迟收的卖点是延长树上成熟时间。报道比较称该试验批次麻味物质含量较常规采收高4倍以上，可用于火锅底料、花椒油及提取物；这是报道中的试验结果，不是本站试吃，也不等于所有江津花椒。',
  intro:'夏季之外，江津在白露前后试收一批迟熟花椒。',short:'重庆市农业农村委员会记录的2025年白露延迟采收试验；不是常年固定批次。',
  taste:'报道描述麻味物质含量较常规夏季采收高4倍以上；未提供本站试吃或具体商品批次检测。',aroma:'来源称试验批次麻味和香气更强；没有给出具体批次感官评测。',texture:'来源未描述果皮或椒粒质地；鲜干状态需按具体批次确认。',flavor:['麻香'],state:'先确认迟收试验批次、采收年份及鲜干状态，再少量入菜',
@@ -3280,8 +3280,8 @@ window.FOODS.push({
  buy:'搜索“重庆江津 白露 延迟采收 花椒 2025 试验批次”，询问采收年份、具体试验点、鲜干状态和检测信息。平台搜索不代表当前有货。',storage:'干花椒密封避光、防潮并远离异味；花椒油冷藏并尽快用完，不将自制油常温久存。',safety:'花椒作调味少量使用；对相关香辛料过敏或有特殊饮食限制者按自身情况处理。',search:'重庆 江津 玉溪镇 丹凤社区 白露 延迟采收 花椒 2025 试验批次',
  sources:[['重庆市农业农村委员会：江津花椒白露前后延迟采收试验','https://nyncw.cq.gov.cn/zwxx_161/qxlb/202509/t20250930_15056093.html']],
  image:'assets/jiangjin-white-dew-pepper-branch-pascalvieu-cc-by-sa-4.0.jpg',imageAlt:'花椒结果枝实拍，同种形态参考，非江津试验点或白露迟收批次',imageCaption:'Pascal Vieu / Wikimedia Commons · 花椒结果枝同种参考，异地产区，不用于江津产地或试验批次鉴别。',cardImage:'assets/jiangjin-white-dew-pepper-branch-pascalvieu-cc-by-sa-4.0.jpg',cardImageAlt:'花椒结果枝通用参考，非江津试验批次实拍',cardNote:'异地产区同种形态参考 · 非试验批次实拍',images:[],articleImages:[],
- place:'地图点表示江津玉溪镇丹凤社区的大致位置，来源记录试验点，不指向可购买地点。',context:'当地农业部门2025年报道记录3个试验点、近50亩应用情况；这不能证明后续年份继续开展或当前供应。',kitchen:'花椒油为本站家常建议；报道提及火锅底料、花椒油和提取物用途。',
- placeSeasons:[{name:'重庆江津 · 玉溪镇丹凤社区试验点',lat:29.28,lon:106.26,months:[9],precision:'single-year-harvest-record',source:'https://nyncw.cq.gov.cn/zwxx_161/qxlb/202509/t20250930_15056093.html',seasonNote:'2025年白露前后延迟采收试验记录；不外推常年窗口或后续年份供应。'}],seasonEvidence:'重庆市农业农村委员会2025年报道记录江津花椒延迟至白露前后采收的试验，报道时共3个试验点；未确认其他年份批次。',
+ place:'地图点表示江津油溪镇丹凤社区的大致位置，来源记录试验点，不指向可购买地点。',context:'当地农业部门2025年报道记录3个试验点、近50亩应用情况；这不能证明后续年份继续开展或当前供应。',kitchen:'花椒油为本站家常建议；报道提及火锅底料、花椒油和提取物用途。',
+ placeSeasons:[{name:'重庆江津 · 油溪镇丹凤社区试验点',lat:29.28,lon:106.26,months:[9],precision:'single-year-harvest-record',source:'https://nyncw.cq.gov.cn/zwxx_161/qxlb/202509/t20250930_15056093.html',seasonNote:'2025年白露前后延迟采收试验记录；不外推常年窗口或后续年份供应。'}],seasonEvidence:'重庆市农业农村委员会2025年报道记录江津花椒延迟至白露前后采收的试验，报道时共3个试验点；未确认其他年份批次。',
  procurement:{checks:['核对2025年试验批次、采收年份和具体产地；普通夏季花椒不等于白露迟收批次。','确认鲜花椒或干花椒，并询问是否有对应批次检测资料。','本条记录不提供已核实商家、价格或当前库存。'],route:'可按“江津白露延迟采收花椒 2025 试验批次”查询，再向卖家核对年份、试验点与加工状态。'},
  comparison:{text:'该条记录的是白露前后延迟采收的试验批次，不能与常规夏季采收的江津花椒混为一谈；来源报道的麻味物质比较只适用于该试验，非所有产区或商品的品质承诺。',source:'https://nyncw.cq.gov.cn/zwxx_161/qxlb/202509/t20250930_15056093.html'},dishImage:null,dishImageAlt:'',dishCaption:'',tarotImage:{src:'assets/jiangjin-white-dew-pepper-branch-pascalvieu-cc-by-sa-4.0.jpg',alt:'异地产区花椒结果枝实拍，仅作同种形态参考',kind:'ingredient',note:'不用于江津产地或白露迟收试验批次鉴别。'}
 });
