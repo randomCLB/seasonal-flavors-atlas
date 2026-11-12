@@ -221,7 +221,9 @@
  taxa.miaoliJujube={name:'枣（苗栗公馆鲜红枣）',latin:'Ziziphus jujuba',id:'5D5Z9',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Rosales','Rhamnaceae','Ziziphus','Ziziphus jujuba'],note:'台湾农业部门将苗栗红枣对应枣 Ziziphus jujuba；食材是鲜果，本条果实未逐个鉴定。',origin:'2024年考古研究根据枣核形态提出，河南淇河流域至迟约6200年前已有枣树栽培；这是研究者对遗存的解释，并非已确认的全球首次栽培地点。更早的人工栽培起点仍待研究。',cultivar:'台湾农业部门记载公馆红枣由广东潮安引入，在1875年前栽于公馆石墙村，称“焕南种”；引种记录不等于该品种最初育成年代。',originSources:[['https://pmc.ncbi.nlm.nih.gov/articles/PMC10821880/','2024年淇河流域枣核考古研究'],['https://fae.moa.gov.tw/map/food_item.php?id=377&type=AS01','台湾农业部门：公馆红枣']],source:'https://fae.moa.gov.tw/map/food_item.php?id=377&type=AS01'};
  taxa.maBamboo={name:'麻竹',latin:'Dendrocalamus latiflorus',id:'34P33',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Liliopsida','Poales','Poaceae','Dendrocalamus','Dendrocalamus latiflorus'],note:'广东植物资料与《中国植物志》将麻竹对应 Dendrocalamus latiflorus；本站广宁及廉江麻竹笋条目依名称关联到此种，各地鲜笋样本尚未独立鉴定。',origin:'最早人工栽培的地点和年代暂未见可靠研究。东南亚植物资源资料称其确切起源不明，分布于缅甸、华南及台湾并有栽培；现有分布范围不能直接当作人工栽培起点。',originSources:[['https://prosea-bamboos.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=95657','东南亚植物资源：麻竹分布与栽培'],['https://www.iplant.cn/z/frps/71500','中国植物志：麻竹'],['https://www.gdwc.gov.cn/attachment/0/212/212252/1908586.pdf','广东植物名录：麻竹']],source:'https://www.iplant.cn/z/frps/71500'};
  taxa.eshanMulberryFlower={name:'桑葚花（桑属，种待核）',latin:'Morus',id:'5VCQ',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Rosales','Moraceae','Morus',null],note:'峨山地方资料将桑葚花列为春季野菜，附近江川报道说它采自桑树；两份资料没有鉴定本站条目的具体桑树种类，此处暂关联桑属。食用部位的具体花序类型也未核实。',origin:'具体物种未核实，最早人工栽培地点与年代暂未见可对应的可靠研究。桑属不同物种可能有不同栽培历史，不能将养蚕桑树的起源直接套用到峨山野采花序。',originSources:[['https://www.yxes.gov.cn/es/esxjjdgzdt7322/20260324/1655271.html','峨山县：桑葚花'],['https://www.ccwb.cn/content/202402/27/c669612.html','玉溪江川：桑树与桑葚花'],['https://pmc.ncbi.nlm.nih.gov/articles/PMC10460887/','桑树不同类群驯化研究']],source:'https://www.yxes.gov.cn/es/esxjjdgzdt7322/20260324/1655271.html'};
+ taxa.chengdeElm={name:'榆钱（榆属，种待核）',latin:'Ulmus',id:'84MS',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Rosales','Ulmaceae','Ulmus',null],note:'承德地方报道将榆钱列为春菜，北京市场监管资料解释其为榆树的嫩翅果；两份资料没有鉴定承德所采榆树的具体种，暂列榆属。',origin:'具体物种未核实，最早人工栽培地点与年代暂未见可对应的可靠研究。野采翅果及榆属不同物种的栽培史不能直接证明本条榆树的培育起源。',originSources:[['https://www.chengde.gov.cn/art/2026/3/19/art_3248_1110464.html','承德市：春分山野菜'],['https://scjgj.beijing.gov.cn/zwxx/scjgdt/202604/t20260426_4614236.html','北京市：榆钱与食用部位'],['https://www.iplant.cn/z/frps/1319','中国植物志：榆属']],source:'https://scjgj.beijing.gov.cn/zwxx/scjgdt/202604/t20260426_4614236.html'};
  const foods={
+  'chengde-spring-equinox-elm-samaras':['chengdeElm'],
   'eshan-jingzhe-mulberry-flower':['eshanMulberryFlower'],
   'lianjiang-xiaoshu-june-hemp-bamboo-shoot':['maBamboo'],
   'miaoli-gongguan-fresh-jujube':['miaoliJujube'],
@@ -413,6 +415,7 @@
  Object.assign(chinese,{Chromista:'色藻界',Ochrophyta:'黄藻门',Phaeophyceae:'褐藻纲',Ectocarpales:'水云目',Scytosiphonaceae:'萱藻科',Scytosiphon:'萱藻属'});
  Object.assign(chinese,{Cephalopoda:'头足纲',Sepiida:'乌贼目',Sepiidae:'乌贼科',Caryophyllales:'石竹目',Amaranthaceae:'苋科',Amaranthus:'苋属'});
  Object.assign(chinese,{Rhamnaceae:'鼠李科',Ziziphus:'枣属'});
+ Object.assign(chinese,{Ulmaceae:'榆科',Ulmus:'榆属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
