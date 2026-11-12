@@ -9,6 +9,6 @@ test('reviewed identities render evidence without inventing species or origins',
  assert.match(chayote,/1991 年起源研究/);assert.match(chayote,/年代仍有争议/);
  assert.match(biology.html({id:'congjun'}),/种暂未核实/);
  assert.match(biology.html({id:'binchuan-renong1-yuganzi'}),/2019/);
- assert.equal(biology.html({id:'ganbajun'}),'');
+ assert.match(biology.html({id:'ganbajun'}),/Thelephora/);
  assert.equal(biology.html({id:'unknown'}),'');
 });
