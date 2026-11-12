@@ -1,0 +1,82 @@
+{
+  "foodId": "shanzhou-green-wheat-nianzhuan",
+  "name": "新麦碾转",
+  "kind": "加工食品与原料物种",
+  "taxonId": "5944Q",
+  "latin": "Triticum aestivum",
+  "synonyms": [
+    "Triticum vulgare"
+  ],
+  "identity": "2026 年陕州观音堂制作报道确认使用青麦穗，并明确写作小麦。本档案关联原料普通小麦的物种档案，碾转是加工食品；具体小麦品种未公布。",
+  "origin": {
+    "status": "multiple_evidence",
+    "place": "西亚：里海南岸及南高加索等候选地区",
+    "period": "不同研究给出约 8000—11000 年前的形成范围；精确起点未定",
+    "evidenceType": "基因组研究与植物考古",
+    "summary": "2024 年基因组研究将普通小麦的形成主要联系到里海南岸约 8000—11000 年前的杂交，同时揭示后续多次基因交流。2026 年南高加索格鲁吉亚遗址研究提供当地普通小麦与节节麦的考古证据。两类资料不能合并为一个已经确定的首个村镇或单一年份；这也是原料小麦的历史，不是碾转制作技艺的起源年代。"
+  },
+  "cultivar": {
+    "status": "not_specified",
+    "summary": "原报道未写出小麦品种，种内品种暂未核实。"
+  },
+  "sources": [
+    {
+      "title": "2026 年河南经济报观音堂碾转制作报道",
+      "url": "https://www.hnjjbs.com/article/2026-06/178062497758909.html",
+      "evidenceType": "当地原始采访",
+      "read": "公开 HTTP 原文已读取，明确写作小麦；网页阅读器返回正文不完整，已核对原 HTML。"
+    },
+    {
+      "title": "2026 年三门峡日报观音堂碾转制作报道",
+      "url": "https://szb.ismx.cn/smxrb/images/2026-06/05/07/smxrb2026060507.pdf",
+      "evidenceType": "当地原始采访",
+      "read": "PDF 已提取正文，确认青麦原料与加工过程。"
+    },
+    {
+      "title": "中国科学院植物研究所植物智：小麦",
+      "url": "https://www.iplant.cn/info/%E5%B0%8F%E9%BA%A6?t=n",
+      "evidenceType": "专业植物名录",
+      "read": "小麦与普通小麦名称、学名及异名"
+    },
+    {
+      "title": "Origin and evolution of the bread wheat D genome，2024",
+      "url": "https://eprints.whiterose.ac.uk/id/eprint/216171/",
+      "fullText": "https://eprints.whiterose.ac.uk/id/eprint/216171/1/s41586-024-07808-z.pdf",
+      "doi": "10.1038/s41586-024-07808-z",
+      "evidenceType": "原始基因组研究",
+      "read": "作者机构公开存档全文，已提取 PDF 验证年代与区域"
+    },
+    {
+      "title": "An independent center for the origin of bread wheat in the Neolithic period of Georgia in the South Caucasus，2026",
+      "url": "https://weizmann.elsevierpure.com/en/publications/an-independent-center-for-the-origin-of-bread-wheat-in-the-neolit/",
+      "doi": "10.1073/pnas.2537697123",
+      "evidenceType": "原始植物考古与年代研究",
+      "read": "作者机构公开原始论文摘要，未读取全文"
+    }
+  ],
+  "queries": [
+    "bread wheat Triticum aestivum origin Caspian earliest archaeological evidence hexaploid 2024 Nature",
+    "碾转 小麦 陕州",
+    "观音堂 碾转 小麦",
+    "Origin and evolution of the bread wheat D genome PMC"
+  ],
+  "limitations": [
+    "物种形成、人工栽培与地方食品技艺起源是不同事件；公开报道的宋代技艺说未据原始历史文献核实，未写入物种起源。"
+  ],
+  "taxonomy": {
+    "backbone": "Catalogue of Life Base",
+    "version": "2026-10-14",
+    "datasetKey": 316595,
+    "retrieved": "2026-11-11",
+    "source": "https://api.checklistbank.org/dataset/316595/nameusage/5944Q",
+    "ranks": {
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "class": "Liliopsida",
+      "order": "Poales",
+      "family": "Poaceae",
+      "genus": "Triticum",
+      "species": "Triticum aestivum"
+    }
+  }
+}

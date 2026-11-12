@@ -1,0 +1,62 @@
+{
+  "datasetKey": 316595,
+  "version": "2026-10-14",
+  "retrieved": "2026-11-11",
+  "lineage": [
+    {
+      "id": "39G5G",
+      "rank": "species",
+      "name": "Emblica officinalis"
+    },
+    {
+      "id": "8WFGT",
+      "rank": "genus",
+      "name": "Emblica"
+    },
+    {
+      "id": "V5QTT",
+      "rank": "tribe",
+      "name": "Phyllantheae"
+    },
+    {
+      "id": "V56VQ",
+      "rank": "subfamily",
+      "name": "Phyllanthoideae"
+    },
+    {
+      "id": "RCXBV",
+      "rank": "family",
+      "name": "Phyllanthaceae"
+    },
+    {
+      "id": "MLP",
+      "rank": "order",
+      "name": "Malpighiales"
+    },
+    {
+      "id": "MG",
+      "rank": "class",
+      "name": "Magnoliopsida"
+    },
+    {
+      "id": "TP",
+      "rank": "phylum",
+      "name": "Tracheophyta"
+    },
+    {
+      "id": "CMQ8S",
+      "rank": "subkingdom",
+      "name": "Pteridobiotina"
+    },
+    {
+      "id": "P",
+      "rank": "kingdom",
+      "name": "Plantae"
+    },
+    {
+      "id": "CS5HF",
+      "rank": "domain",
+      "name": "Eukaryota"
+    }
+  ]
+}

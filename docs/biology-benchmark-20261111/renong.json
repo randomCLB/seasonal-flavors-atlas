@@ -1,0 +1,82 @@
+{
+  "foodId": "binchuan-renong1-yuganzi",
+  "name": "“热农1号”余甘子",
+  "kind": "命名地方品种",
+  "taxonId": "39G5G",
+  "latin": "Emblica officinalis",
+  "synonyms": [
+    "Phyllanthus emblica"
+  ],
+  "identity": "2023、2025 年果实研究将热农1号标作 Phyllanthus emblica；CoL Base 2026-10-14 将此名称作为 Emblica officinalis 的异名，关联至同一物种。",
+  "native": "亚洲热带、亚热带（专业植物名录记录）；不据此推定人工栽培原产地。",
+  "origin": {
+    "status": "not_found",
+    "place": null,
+    "period": null,
+    "evidenceType": "历史栽培与资源资料检索",
+    "summary": "暂未见研究（本轮尚未检得能可靠确定最早人工栽培地点与年代的原始研究）。印度的传统利用和分布介绍不能直接证明最早人工栽培起点。"
+  },
+  "cultivar": {
+    "name": "热农1号",
+    "status": "partially_verified",
+    "breeder": "云南省农业科学院热区生态农业研究所",
+    "place": null,
+    "period": null,
+    "recognitionYear": 2019,
+    "recognitionId": "云R-SC-PE-055-2019",
+    "summary": "已核实由云南省农业科学院热区生态农业研究所选育，2019 年通过良种认定。具体选育地点、开始与完成育种的年份尚未核实；宾川是本站果实研究产地，不能据此填写为育成地。"
+  },
+  "sources": [
+    {
+      "title": "云南省农业科学院机构知识库：2021 年品种特性与栽培技术论文",
+      "url": "https://yunnan.agriir.cn/resources/detail/1/E93F76D6-2A8D-4806-B40A-D88AD6F0D12B.html?projectId=405d92be-2997-11e7-b5f5-3440b5b17484",
+      "evidenceType": "育种团队论文摘要",
+      "read": "机构摘要与作者单位，未取得全文"
+    },
+    {
+      "title": "2025 年果实矿质元素研究",
+      "url": "https://jxnyxb.xml-journal.net/cn/article/pdf/preview/10.19386/j.cnki.jxnyxb.2025.11.008.pdf",
+      "evidenceType": "原始研究",
+      "read": "PDF 已提取正文，第 57 页核实 2019 认定及编号"
+    },
+    {
+      "title": "2023 年宾川热农1号果实研究",
+      "url": "https://www.spgykj.com/article/doi/10.13386/j.issn1002-0306.2022060331",
+      "evidenceType": "原始研究",
+      "read": "期刊摘要核实地方条目与物种对应"
+    },
+    {
+      "title": "新加坡国家公园局余甘子物种档案",
+      "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/6/3699",
+      "evidenceType": "专业植物名录",
+      "read": "专业档案支持 Emblica officinalis 与 Phyllanthus emblica 名称对应"
+    }
+  ],
+  "queries": [
+    "热农1号 余甘子 选育 审定",
+    "Phyllanthus emblica domestication origin cultivation history study",
+    "云R-SC-PE-055-2019",
+    "余甘子 热农1号 site:lcj.yn.gov.cn",
+    "余甘子 热农1号 site:yaas.org.cn"
+  ],
+  "limitations": [
+    "2019 年是认定年份，不是已证明的育成年份。",
+    "Kew 页面本轮直接读取为 403，搜索索引仍使用 Phyllanthus emblica；保存为待复核的名录意见差异，不据索引覆盖 CoL 固定版本。"
+  ],
+  "taxonomy": {
+    "backbone": "Catalogue of Life Base",
+    "version": "2026-10-14",
+    "datasetKey": 316595,
+    "retrieved": "2026-11-11",
+    "source": "https://api.checklistbank.org/dataset/316595/nameusage/39G5G",
+    "ranks": {
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "class": "Magnoliopsida",
+      "order": "Malpighiales",
+      "family": "Phyllanthaceae",
+      "genus": "Emblica",
+      "species": "Emblica officinalis"
+    }
+  }
+}

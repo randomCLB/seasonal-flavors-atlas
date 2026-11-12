@@ -1,0 +1,42 @@
+{
+  "datasetKey": 316595,
+  "version": "2026-10-14",
+  "retrieved": "2026-11-11",
+  "lineage": [
+    {
+      "id": "87GPP",
+      "rank": "genus",
+      "name": "Lactarius"
+    },
+    {
+      "id": "62794",
+      "rank": "family",
+      "name": "Russulaceae"
+    },
+    {
+      "id": "3ZF",
+      "rank": "order",
+      "name": "Russulales"
+    },
+    {
+      "id": "7C",
+      "rank": "class",
+      "name": "Agaricomycetes"
+    },
+    {
+      "id": "BM",
+      "rank": "phylum",
+      "name": "Basidiomycota"
+    },
+    {
+      "id": "F",
+      "rank": "kingdom",
+      "name": "Fungi"
+    },
+    {
+      "id": "CS5HF",
+      "rank": "domain",
+      "name": "Eukaryota"
+    }
+  ]
+}

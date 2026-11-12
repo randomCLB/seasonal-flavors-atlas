@@ -1,0 +1,62 @@
+{
+  "datasetKey": 316595,
+  "version": "2026-10-14",
+  "retrieved": "2026-11-11",
+  "lineage": [
+    {
+      "id": "9Y6DM",
+      "rank": "species",
+      "name": "Trachysalambria curvirostris"
+    },
+    {
+      "id": "9XDZG",
+      "rank": "genus",
+      "name": "Trachysalambria"
+    },
+    {
+      "id": "9XBTP",
+      "rank": "family",
+      "name": "Penaeidae"
+    },
+    {
+      "id": "B3HG3",
+      "rank": "superfamily",
+      "name": "Penaeoidea"
+    },
+    {
+      "id": "9XCS2",
+      "rank": "suborder",
+      "name": "Dendrobranchiata"
+    },
+    {
+      "id": "33N",
+      "rank": "order",
+      "name": "Decapoda"
+    },
+    {
+      "id": "MC",
+      "rank": "class",
+      "name": "Malacostraca"
+    },
+    {
+      "id": "KZX8B",
+      "rank": "subphylum",
+      "name": "Crustacea"
+    },
+    {
+      "id": "RT",
+      "rank": "phylum",
+      "name": "Arthropoda"
+    },
+    {
+      "id": "N",
+      "rank": "kingdom",
+      "name": "Animalia"
+    },
+    {
+      "id": "CS5HF",
+      "rank": "domain",
+      "name": "Eukaryota"
+    }
+  ]
+}

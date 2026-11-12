@@ -1,0 +1,52 @@
+{
+  "datasetKey": 316595,
+  "version": "2026-10-14",
+  "retrieved": "2026-11-11",
+  "lineage": [
+    {
+      "id": "4TYSX",
+      "rank": "species",
+      "name": "Sagittaria trifolia"
+    },
+    {
+      "id": "8W392",
+      "rank": "genus",
+      "name": "Sagittaria"
+    },
+    {
+      "id": "675",
+      "rank": "family",
+      "name": "Alismataceae"
+    },
+    {
+      "id": "62287",
+      "rank": "order",
+      "name": "Alismatales"
+    },
+    {
+      "id": "L2L",
+      "rank": "class",
+      "name": "Liliopsida"
+    },
+    {
+      "id": "TP",
+      "rank": "phylum",
+      "name": "Tracheophyta"
+    },
+    {
+      "id": "CMQ8S",
+      "rank": "subkingdom",
+      "name": "Pteridobiotina"
+    },
+    {
+      "id": "P",
+      "rank": "kingdom",
+      "name": "Plantae"
+    },
+    {
+      "id": "CS5HF",
+      "rank": "domain",
+      "name": "Eukaryota"
+    }
+  ]
+}

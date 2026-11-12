@@ -1,0 +1,48 @@
+{
+  "startedAt": "2026-11-11T14:22:33Z",
+  "sampleStart": "2026-11-11T14:23:24Z",
+  "samples": [
+    {
+      "id": "cigu",
+      "startedAt": "2026-11-11T14:23:23Z",
+      "endedAt": "2026-11-11T14:25:27Z",
+      "seconds": 124
+    },
+    {
+      "id": "shrimp",
+      "startedAt": "2026-11-11T14:25:27Z",
+      "endedAt": "2026-11-11T14:27:21Z",
+      "seconds": 114
+    },
+    {
+      "id": "congjun",
+      "startedAt": "2026-11-11T14:27:21Z",
+      "endedAt": "2026-11-11T14:28:49Z",
+      "seconds": 88
+    },
+    {
+      "id": "renong",
+      "startedAt": "2026-11-11T14:28:49Z",
+      "endedAt": "2026-11-11T14:31:51Z",
+      "seconds": 182
+    },
+    {
+      "id": "wheat",
+      "startedAt": "2026-11-11T14:31:51Z",
+      "endedAt": "2026-11-11T14:34:26Z",
+      "seconds": 155
+    }
+  ],
+  "researchEndedAt": "2026-11-11T14:34:26Z",
+  "protocol": "串行核查 5 个未建档风物；逐味计时包含分类名录核对、食材/物种关联、起源与品种记录检索、结论及来源记录。排除前置环境准备、收尾统一复查、网页制作、全站回归与部署。",
+  "selection": "有意覆盖食用植物、海产动物、野生菌、命名地方品种、加工食品；不是随机抽样，也不是完整档案完成时间的无偏估计。",
+  "catalogSize": 287,
+  "totalResearchSeconds": 663,
+  "meanResearchSeconds": 132.6,
+  "setupSeconds": 50,
+  "estimatedCatalogFirstPassHours": 10.571166666666667,
+  "validatedAt": "2026-11-11T14:36:03Z",
+  "totalToValidationSeconds": 810,
+  "meanIncludingSharedSeconds": 162,
+  "sharedReviewSeconds": 97
+}

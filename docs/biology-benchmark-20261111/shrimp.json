@@ -1,0 +1,78 @@
+{
+  "foodId": "huangbohai-yingzhuaxia",
+  "name": "蛎虾（鹰爪虾）",
+  "kind": "海产动物",
+  "taxonId": "9Y6DM",
+  "latin": "Trachysalambria curvirostris",
+  "synonyms": [
+    "Trachypenaeus curvirostris"
+  ],
+  "identity": "本站限黄渤海及青岛俗称蛎虾的鹰爪虾，关联至 Trachysalambria curvirostris；不据此推定其他地区全部同名虾的物种。",
+  "origin": {
+    "status": "early_record",
+    "place": "日本（广岛大学研究人员；具体实验场所待原文确认）",
+    "period": "不晚于 1991 年发表",
+    "evidenceType": "实验室卵与早期幼体培育原始论文摘要",
+    "summary": "1991 年已发表鹰爪虾卵和早期幼体实验室培育记录；国内文献另追溯至 1999 年的人工繁殖论文。1991 年是本轮检得的较早记录，尚不能声称为全球最早，也不等于完成全生活史人工繁育或建立商业养殖。"
+  },
+  "cultivar": {
+    "status": "not_applicable",
+    "summary": "未指向命名的人工选育品种。"
+  },
+  "sources": [
+    {
+      "title": "WoRMS 接受名称及分类",
+      "url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=107113",
+      "api": "https://www.marinespecies.org/rest/AphiaRecordByAphiaID/107113",
+      "read": "公开 API 已读取接受名称与七级分类"
+    },
+    {
+      "title": "1991 实验室培育论文原始摘要（日本农业信息中心提供）",
+      "url": "https://agris.fao.org/search/en/providers/122558/records/6471edd369d6cbfdd4a32d72",
+      "evidenceType": "原始论文摘要",
+      "read": "全文摘要，未取得原论文全文"
+    },
+    {
+      "title": "日本科学技术振兴机构书目记录",
+      "url": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200902065456672996",
+      "evidenceType": "机构文献目录",
+      "read": "作者与 1991 年 6 月出版信息"
+    },
+    {
+      "title": "中国海洋大学鹰爪虾资源研究",
+      "url": "https://html.rhhz.net/ZGHYDXXBZRKXB/html/2ac6e3fd-5814-422b-80e9-ba685b3fa06e.htm",
+      "evidenceType": "原始研究与历史文献线索",
+      "read": "1999 年繁育论文仅核实到参考文献与后续研究的引用"
+    },
+    {
+      "title": "青岛蛎虾俗名与海捕来源",
+      "url": "https://news.qingdaonews.com/wap/2018-04/13/content_20121307.htm",
+      "evidenceType": "渔业专家采访",
+      "read": "正文第 40 行俗名对应关系"
+    }
+  ],
+  "queries": [
+    "鹰爪虾 学名 人工育苗 首次 繁育 历史",
+    "Trachysalambria curvirostris first breeding artificial hatchery culture history",
+    "Trachypenaeus curvirostris reared larvae 1971 1970"
+  ],
+  "limitations": [
+    "较早育苗记录和全球首次驯养是不同结论。原论文全文与实验地点仍待核实。"
+  ],
+  "taxonomy": {
+    "backbone": "Catalogue of Life Base",
+    "version": "2026-10-14",
+    "datasetKey": 316595,
+    "retrieved": "2026-11-11",
+    "source": "https://api.checklistbank.org/dataset/316595/nameusage/9Y6DM",
+    "ranks": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Malacostraca",
+      "order": "Decapoda",
+      "family": "Penaeidae",
+      "genus": "Trachysalambria",
+      "species": "Trachysalambria curvirostris"
+    }
+  }
+}

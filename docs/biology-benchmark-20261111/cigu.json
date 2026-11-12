@@ -1,0 +1,67 @@
+{
+  "foodId": "cigu",
+  "name": "慈姑",
+  "kind": "食用植物与地方品种",
+  "taxonId": "4TYSX",
+  "latin": "Sagittaria trifolia",
+  "identity": "食用慈姑关联至 Sagittaria trifolia；植物志另区分栽培亚种，本站不把亚种或品种名称当作独立物种。",
+  "synonymNote": "旧文献常用 Sagittaria sagittifolia 指中国食用慈姑；该名称存在分类应用差异，本档案不将整个 S. sagittifolia 名称简单列作异名。",
+  "origin": {
+    "status": "not_resolved",
+    "place": null,
+    "period": null,
+    "evidenceType": "基因组与表型研究；历史综述线索",
+    "summary": "2024 年对 111 份材料的研究提到中国慈姑栽培已有约 800 年，但仍需研究驯化时间尺度。本次未定位到能确定最早人工栽培地点和年代的直接证据；不能把宝应产区或食用遗存作为驯化起点。"
+  },
+  "cultivar": {
+    "name": "侉老乌",
+    "status": "not_found",
+    "place": null,
+    "period": null,
+    "summary": "国家知识产权局地理标志文件确认宝应慈姑采用本地侉老乌品种。关于它的具体育成地点与年代，暂未见研究；现产地范围不能替代育成地。"
+  },
+  "sources": [
+    {
+      "title": "2024 慈姑群体与表型研究",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0302313",
+      "evidenceType": "原始研究",
+      "read": "全文"
+    },
+    {
+      "title": "Flora of China 慈姑属",
+      "url": "https://www.iplant.cn/foc/pdf/Sagittaria.pdf",
+      "evidenceType": "专业植物志",
+      "read": "物种与栽培亚种对照"
+    },
+    {
+      "title": "宝应慈姑地理标志产品保护要求，正文第 843 页",
+      "url": "https://www.cnipa.gov.cn/attach/0/20250826010509.pdf",
+      "evidenceType": "官方地理标志文件",
+      "read": "PDF 已提取正文，品种名为侉老乌"
+    }
+  ],
+  "queries": [
+    "Sagittaria trifolia domestication cultivated arrowhead China earliest cultivation history study",
+    "宝应 慈姑 老乌 原产 培育 历史",
+    "老乌 慈姑 育成 年代"
+  ],
+  "limitations": [
+    "2005 年罗桂环栽培史论文仅取得摘要线索，全文公共读取失败，未据此填写早期地点或年代。"
+  ],
+  "taxonomy": {
+    "backbone": "Catalogue of Life Base",
+    "version": "2026-10-14",
+    "datasetKey": 316595,
+    "retrieved": "2026-11-11",
+    "source": "https://api.checklistbank.org/dataset/316595/nameusage/4TYSX",
+    "ranks": {
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "class": "Liliopsida",
+      "order": "Alismatales",
+      "family": "Alismataceae",
+      "genus": "Sagittaria",
+      "species": "Sagittaria trifolia"
+    }
+  }
+}

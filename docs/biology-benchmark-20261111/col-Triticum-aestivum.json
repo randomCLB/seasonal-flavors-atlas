@@ -1,0 +1,52 @@
+{
+  "datasetKey": 316595,
+  "version": "2026-10-14",
+  "retrieved": "2026-11-11",
+  "lineage": [
+    {
+      "id": "5944Q",
+      "rank": "species",
+      "name": "Triticum aestivum"
+    },
+    {
+      "id": "8W4FX",
+      "rank": "genus",
+      "name": "Triticum"
+    },
+    {
+      "id": "627FW",
+      "rank": "family",
+      "name": "Poaceae"
+    },
+    {
+      "id": "627VM",
+      "rank": "order",
+      "name": "Poales"
+    },
+    {
+      "id": "L2L",
+      "rank": "class",
+      "name": "Liliopsida"
+    },
+    {
+      "id": "TP",
+      "rank": "phylum",
+      "name": "Tracheophyta"
+    },
+    {
+      "id": "CMQ8S",
+      "rank": "subkingdom",
+      "name": "Pteridobiotina"
+    },
+    {
+      "id": "P",
+      "rank": "kingdom",
+      "name": "Plantae"
+    },
+    {
+      "id": "CS5HF",
+      "rank": "domain",
+      "name": "Eukaryota"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "foodId": "congjun",
+  "name": "枞菌",
+  "kind": "野生菌与地方俗名",
+  "taxonId": "87GPP",
+  "latin": "Lactarius",
+  "identity": "湖南枞菌为地方食用名称。中科院研究团队将该俗名对应至乳菇属松乳菇组，涉及松乳菇、红汁乳菇等；本站条目目前只能落实到乳菇属，种暂未核实。",
+  "synonyms": [],
+  "origin": {
+    "status": "species_unresolved",
+    "place": null,
+    "period": null,
+    "evidenceType": "研究团队栽培试验报告；培养历史综述",
+    "summary": "种暂未核实，不能为湘西枞菌指定一个培育起点。作为相关种的比较：松乳菇有 1970 年代法国试验栽培的综述记录；中科院团队报告 2018 年开始移栽、2020 年在贵阳取得松乳菇和红汁乳菇的栽培出菇证据。上述记录不代表湘西所售全部枞菌的最早培育起源。"
+  },
+  "cultivar": {
+    "status": "not_applicable",
+    "summary": "地方俗名，不是已确认的命名栽培品种。"
+  },
+  "sources": [
+    {
+      "title": "湖南省文化和旅游厅：枞菌",
+      "url": "https://whhlyt.hunan.gov.cn/whhlyt/wldh2022ms/202208/t20220817_27585146.html",
+      "evidenceType": "地方食用身份",
+      "read": "正文含红枞、乌枞俗名"
+    },
+    {
+      "title": "中国科学院：我国乳菇人工栽培（培育）取得系列重要进展",
+      "url": "https://lssf.cas.cn/sszs/gykj/zgxnyssw/kycg/202011/t20201126_5057370.html",
+      "evidenceType": "研究机构原始试验报道",
+      "read": "正文核实湖南枞菌与松乳菇组关系，以及 2018—2020 年贵阳出菇记录"
+    },
+    {
+      "title": "The cultivation of Lactarius with edible mushrooms",
+      "url": "https://italianmycology.unibo.it/article/view/12908",
+      "evidenceType": "研究者撰写的培养历史综述",
+      "read": "摘要与参考文献，记录法国 1970 年代松乳菇培养"
+    }
+  ],
+  "queries": [
+    "湘西 枞菌 Lactarius 学名 红汁乳菇 松乳菇 物种",
+    "乌枞菌 学名 Lactarius",
+    "湖南 枞菌 乳菇属",
+    "Lactarius deliciosus first cultivated New Zealand 1990 mycorrhizal cultivation"
+  ],
+  "limitations": [
+    "Lactarius 同名属同时存在于真菌与鱼类；采用 CoL 真菌属 87GPP，排除鱼类属 L2876。",
+    "不能以欧洲松乳菇栽培史替代未经鉴定的湘西市场枞菌。"
+  ],
+  "taxonomy": {
+    "backbone": "Catalogue of Life Base",
+    "version": "2026-10-14",
+    "datasetKey": 316595,
+    "retrieved": "2026-11-11",
+    "source": "https://api.checklistbank.org/dataset/316595/nameusage/87GPP",
+    "ranks": {
+      "kingdom": "Fungi",
+      "phylum": "Basidiomycota",
+      "class": "Agaricomycetes",
+      "order": "Russulales",
+      "family": "Russulaceae",
+      "genus": "Lactarius",
+      "species": null
+    }
+  }
+}
