@@ -185,7 +185,9 @@
  taxa.gejiuAralia={name:'楤木属（个旧刺脑包）',latin:'Aralia',id:'8VV5X',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Apiales','Araliaceae','Aralia',''],note:'云南地方资料将刺脑包称为楤木嫩芽；这一俗名可能涉及楤木属不同植物，本条个旧鲜芽未独立鉴定，种暂未核实。',origin:'本条原料尚不能确定到种，暂不能指定唯一的最早人工栽培地点和年代。云南地方报道记录林下套种刺老包，不能据此证明该植物的首次人工栽培。',cultivar:'个旧条目记录当地刺脑包嫩芽，具体物种、栽培品种及育成时间暂未核实。',originSources:[['https://www.longyang.gov.cn/info/16705/13980579.htm','隆阳区政府：刺脑包与楤木属'],['https://www.ynnh.gov.cn/info/1050/30702.htm','南华县政府：刺老包栽培'],['https://www.casb.org.cn/CN/abstract/abstract21265.shtml','辽东楤木繁殖综述（近属材料）']],source:'https://www.longyang.gov.cn/info/16705/13980579.htm'};
  taxa.jinjiangLaver={name:'红毛菜科紫菜（晋江头水紫菜）',latin:'Bangiaceae',id:'72T',checked:'2026-11-12',ranks:['Plantae','Rhodophyta','Bangiophyceae','Bangiales','Bangiaceae','',''],note:'“头水”是当季第一次采收的称呼，不是物种名。福建养殖紫菜常有坛紫菜，但本条商品未标明藻种，暂列红毛菜科，属和种待核。',origin:'本条原料未确定到种，不能指定唯一的首次人工培育地点和年代。紫菜栽培史研究记载福建平潭长期利用菜坛方式养殖；中国水产科学研究院资料记录1964年在福建开展坛紫菜人工育苗和栽培研究。这些记录不证明本条原料即坛紫菜，也不等于全球首次栽培。',cultivar:'“头水”表示采收次序，不能据此确定藻种或具体栽培品系。',originSources:[['https://www.jinjiang.gov.cn/xxgk/jjyw/202512/t20251209_3239496.htm','晋江市：头水紫菜采收'],['https://www.sciengine.com/doi/pdf/201F15BE7ADA43F3B570821998B62B1D','紫菜栽培历史研究'],['https://cast.caas.cn/kj/cgtj/121712.html','中国水产科学研究院：坛紫菜人工养殖研究'],['https://www.fao.org/4/ab727e/AB727E03.htm','联合国粮农组织：不同地区养殖紫菜']],source:'https://www.jinjiang.gov.cn/xxgk/jjyw/202512/t20251209_3239496.htm'};
  taxa.donghuLaver={...taxa.jinjiangLaver,name:'红毛菜科紫菜（东湖炭焙紫菜）',note:'东湖炭焙紫菜以紫菜为原料；地方报道未鉴定具体藻种，暂列红毛菜科，属和种待核。炭焙是加工方式。',origin:'本条原料未确定到种，不能指定唯一的首次人工培育地点和年代。地方资料描述东湖紫菜随潮汐采收；福建坛紫菜的人工养殖史不能直接套到该条野采原料。',cultivar:'本条记录东湖紫菜及炭焙技艺，来源没有确定具体藻种和栽培品系。',originSources:[['https://www.haojiang.gov.cn/sthjwgltj/gkmlpt/content/2/2398/post_2398856.html','濠江区：东湖紫菜采收与炭焙'],['https://www.sciengine.com/doi/pdf/201F15BE7ADA43F3B570821998B62B1D','紫菜栽培史研究'],['https://www.fao.org/4/ab727e/AB727E03.htm','联合国粮农组织：紫菜养殖种类']],source:'https://www.haojiang.gov.cn/sthjwgltj/gkmlpt/content/2/2398/post_2398856.html'};
+ taxa.shexianHickory={name:'山核桃（歙县山核桃）',latin:'Carya cathayensis',id:'RHS2',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Fagales','Juglandaceae','Carya','Carya cathayensis'],note:'林业研究将浙皖天目山区所产山核桃记为 Carya cathayensis，歙县在其产区内；本条鲜果未独立进行物种鉴定。',origin:'山核桃最早人工栽培的确切地点与年代暂未见可靠研究。地方产业资料称歙县山核桃栽培有较长历史，并引用地方志记载；地方文献和自然分布不能单独证明全球首次栽培地。',cultivar:'歙县山核桃是产地名称，本条未限定具体栽培品种；具体育成人及形成时间暂未核实。',originSources:[['https://files.sciengine.com/pdfs/1001-1498/2B64869621624BD8A03317EC38859490.pdf','山核桃无性系及浙皖产区研究'],['https://www.fx361.com/page/2021/1112/10864110.shtml','歙县山核桃产业历史资料'],['https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:442154-1','Kew：山核桃档案']],source:'https://files.sciengine.com/pdfs/1001-1498/2B64869621624BD8A03317EC38859490.pdf'};
  const foods={
+  'shexian-qizili-hickory':['shexianHickory'],
   'shantou-donghu-charcoal-zicai':['donghuLaver'],
   'jinjiang-toushui-zicai':['jinjiangLaver'],
   'gejiu-cinaobao':['gejiuAralia'],
@@ -331,6 +333,7 @@
  Object.assign(chinese,{Solanales:'茄目',Convolvulaceae:'旋花科',Ipomoea:'番薯属'});
  Object.assign(chinese,{Vitales:'葡萄目',Vitaceae:'葡萄科',Vitis:'葡萄属'});
  Object.assign(chinese,{Juglandaceae:'胡桃科',Juglans:'胡桃属'});
+ Object.assign(chinese,{Carya:'山核桃属'});
  Object.assign(chinese,{Rhodophyta:'红藻门',Bangiophyceae:'红毛菜纲',Bangiales:'红毛菜目',Bangiaceae:'红毛菜科'});
  Object.assign(chinese,{Cucumis:'黄瓜属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
