@@ -180,7 +180,10 @@
  taxa.heihuangGrape={...taxa.zuijinxiangGrape,name:'葡萄属杂交品种（黑皇）',note:'地方资料将黑皇描述为巨峰系葡萄品种；涉及不同亲本谱系，分类暂保留至属，种暂未核实。',cultivar:'上海农业资料称黑皇是巨峰与贝蕾A杂交后代培育的品种；武汉农业报道称其来自日本。具体育种机构、杂交和育成年份暂未核实，陕州是后来的种植地。',originSources:[['https://nyncw.sh.gov.cn/mtbd/20230818/f1d3dadaaeb64fab8366f9927604e305.html','上海市农业农村委员会：黑皇亲本'],['https://nyncj.wuhan.gov.cn/xwzx_25/whsn/202507/t20250721_2622858.html','武汉市农业农村局：黑皇引种']],source:'https://nyncw.sh.gov.cn/mtbd/20230818/f1d3dadaaeb64fab8366f9927604e305.html'};
  taxa.fengqingWalnutFlowers={name:'胡桃属（凤庆鲜核桃花）',latin:'Juglans',id:'56VV',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Fagales','Juglandaceae','Juglans',''],note:'凤庆鲜核桃花指核桃的雄花穗相关食材；当地有不同核桃种质，本条未对花穗样本做物种鉴定，种暂未核实。',origin:'本条原料尚不能确定到种，无法指定唯一的最早人工栽培地点和年代。2022年研究发现普通核桃与中国西南铁核桃之间存在基因交流；不同种质的栽培历史不能互相代替。',cultivar:'凤庆调查记录多个核桃类型，但本条食用花穗未指定品种，不能据产区推断具体品种或育成地点。',originSources:[['https://link.springer.com/article/10.1186/s13059-022-02720-z','普通核桃与铁核桃群体基因组研究'],['https://www.yunnanforestry.cn/uploadDir/pdf/20230831/1693446679077.pdf','凤庆核桃种质调查'],['https://doi.org/10.48130/forres-0026-0018','中国西南栽培核桃遗传来源研究']],source:'https://www.yunnanforestry.cn/uploadDir/pdf/20230831/1693446679077.pdf'};
  taxa.shipingWalnut={...taxa.fengqingWalnutFlowers,name:'胡桃属（石屏哨冲鲜核桃）',note:'哨冲鲜核桃记录的是当地采收的核桃果实；具体树种和品种尚未独立核实，分类暂列胡桃属。',cultivar:'当地报道记录白露核桃采收，但未限定品种；具体育成人及育成时间暂未核实。',originSources:[['https://link.springer.com/article/10.1186/s13059-022-02720-z','普通核桃与铁核桃群体基因组研究'],['https://doi.org/10.48130/forres-0026-0018','中国西南栽培核桃遗传来源研究'],['https://www.hhsp.gov.cn/info/1051/399941.htm','石屏县：哨冲核桃采收']],source:'https://www.hhsp.gov.cn/info/1051/399941.htm'};
+ taxa.wallaceMelon={name:'甜瓜（华莱士瓜）',latin:'Cucumis melo',id:'329TQ',checked:'2026-11-12',ranks:['Plantae','Tracheophyta','Magnoliopsida','Cucurbitales','Cucurbitaceae','Cucumis','Cucumis melo'],note:'华莱士瓜是甜瓜的一种栽培类型；本条登口鲜果未独立进行品种鉴定。',origin:'甜瓜最早人工栽培的确切地点与年代尚未确定。2019年对1175份材料的基因组研究提出三次独立驯化，分别在印度发生两次、非洲发生一次；2018年研究也支持非洲与亚洲存在独立栽培谱系。这些物种范围的结果不能直接确定华莱士瓜品种的育成地。',cultivar:'1980年报道记载白兰瓜曾称华莱士瓜，并称其由蜜露瓜引入；具体育种地点和最初育成时间暂未核实。登口是后续种植地。',originSources:[['https://pubmed.ncbi.nlm.nih.gov/31676864/','2019年甜瓜基因组与多次驯化研究'],['https://pubmed.ncbi.nlm.nih.gov/30299543/','2018年非洲与亚洲甜瓜谱系研究'],['https://www.rmrb.zhouenlai.info/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%EF%BC%881946-2003%EF%BC%89/1980/09/1980-09-29.htm','1980年白兰瓜与华莱士瓜名称资料']],source:'https://www.rmrb.zhouenlai.info/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%EF%BC%881946-2003%EF%BC%89/1980/09/1980-09-29.htm'};
+ taxa.sesameMelon={...taxa.wallaceMelon,name:'甜瓜（榆林芝麻香瓜）',note:'芝麻香瓜是当地甜瓜商品名称；本条具体品系未独立鉴定。',cultivar:'榆林地方报道记录西左界村温室种植芝麻香瓜；具体育种单位、育成地点和年代暂未核实，不能借用华莱士瓜的历史。',originSources:[taxa.wallaceMelon.originSources[0],taxa.wallaceMelon.originSources[1],['https://ylrb.com/2/2xw/yl/879531.shtml','榆林日报：西左界芝麻香瓜']],source:'https://ylrb.com/2/2xw/yl/879531.shtml'};
  const foods={
+  'dengkou-wallace-melon':['wallaceMelon'],'yulin-xiaohan-sesame-melon':['sesameMelon'],
   'fengqing-xinhua-walnut-flowers':['fengqingWalnutFlowers'],'shiping-shaochong-bailu-walnut':['shipingWalnut'],
   'jiading-malu-zuijinxiang-grape':['zuijinxiangGrape'],'shanzhou-black-emperor-grape':['heihuangGrape'],
   'baoshan-zaoqiu-sweet-persimmon':['zaoqiuPersimmon'],
@@ -322,6 +325,7 @@
  Object.assign(chinese,{Solanales:'茄目',Convolvulaceae:'旋花科',Ipomoea:'番薯属'});
  Object.assign(chinese,{Vitales:'葡萄目',Vitaceae:'葡萄科',Vitis:'葡萄属'});
  Object.assign(chinese,{Juglandaceae:'胡桃科',Juglans:'胡桃属'});
+ Object.assign(chinese,{Cucumis:'黄瓜属'});
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function entry(food){const key=root.IngredientIdentity?.key(food)||food.id;return (foods[key]||[]).map(id=>taxa[id]);}
  function html(food){
