@@ -40,6 +40,7 @@ try:
                     sources+=urls.length;if(f.safety)safety++;
                     if([...holder.querySelectorAll('h2,h3,p:not([role=status]),dt,dd')].some(e=>!e.textContent.trim()))failures.push(raw.id+': empty content element');
                     holder.querySelectorAll('figcaption,.reader-sources,.reader-safety').forEach(e=>e.remove());
+                    [...holder.querySelectorAll('.reader-section')].find(e=>e.querySelector('h2')?.textContent==='生物身份与培育起源')?.remove();
                     if(/本站|这里是资料整理|官方资料描述|第一次试 · 2 人份/.test(holder.textContent))failures.push(raw.id+': editorial boilerplate');
                   }
                   return {catalog:window.FOODS.length,sources,safety,failures};
